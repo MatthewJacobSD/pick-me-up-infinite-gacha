@@ -1,5 +1,7 @@
 # Development Roadmap
 
+> **Note:** This roadmap covers both engine implementations. Engine-specific tasks are in `v1/docs/tasks.md` and `v2/docs/tasks.md`.
+
 ## Stage 1: The Foundation
 
 - Setup ASP.NET Core Project

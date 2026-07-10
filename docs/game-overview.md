@@ -1,5 +1,7 @@
 # Pick Me Up Gacha — Overall Design Ideas Representation
 
+> **Note:** This folder contains general knowledge and design docs that apply to both engine implementations (Unity C# and Unreal C++). Engine-specific details live in `v1/` and `v2/`.
+
 ## DEVELOPMENT UPDATES
 
 **Basic Game Development Info — Infinite Gacha TM**
