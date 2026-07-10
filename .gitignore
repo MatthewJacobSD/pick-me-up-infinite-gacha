@@ -1,0 +1,87 @@
+# OS
+.DS_Store
+Thumbs.db
+Desktop.ini
+*.swp
+*.swo
+*~
+
+# IDEs
+.vs/
+.vscode/
+.idea/
+*.suo
+*.user
+*.sln.docstates
+
+# Unity (v1/)
+v1/[Ll]ibrary/
+v1/[Tt]emp/
+v1/[Oo]bj/
+v1/[Bb]uild/
+v1/[Bb]uilds/
+v1/[Ll]ogs/
+v1/[Uu]ser[Ss]ettings/
+v1/[Mm]emoryCaptures/
+v1/[Rr]ecordings/
+v1/*.csproj
+v1/*.sln
+v1/*.suo
+v1/*.user
+v1/*.userprefs
+v1/*.pidb
+v1/*.booproj
+v1/*.unityproj
+v1/*.pidb.meta
+v1/*.pdb
+v1/*.mdb
+v1/Assembly-CSharp.csproj
+v1/Assembly-CSharp-Editor.csproj
+
+# Unreal (v2/)
+v2/Binaries/
+v2/Intermediate/
+v2/Saved/
+v2/DerivedDataCache/
+v2/*.sln
+v2/*.vcxproj
+v2/*.vcxproj.filters
+v2/*.VC.db
+v2/*.opensdf
+v2/*.sdf
+v2/*.suo
+v2/encodings.txt
+v2/Modules/
+
+# C# / .NET
+*.pdb
+*.dll
+*.exe
+*.cache
+*.nupkg
+*.snupkg
+packages/
+obj/
+bin/
+*.nuget.props
+*.nuget.targets
+
+# Node (if used for tooling)
+node_modules/
+package-lock.json
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Misc
+*.bak
+*.tmp
+*.temp
