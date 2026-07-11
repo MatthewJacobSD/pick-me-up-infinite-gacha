@@ -1,7 +1,7 @@
 # Character Tracker — Pick Me Up, Infinite Gacha
 
 > Tracks all characters introduced, their status, and fate.
-> Updated through Chapter 2.
+> Updated through Chapter 3.
 
 ---
 
@@ -9,8 +9,11 @@
 
 | Name | Star | Class | Notes |
 |---|---|---|---|
-| **Islat Han** (Han Seojin) | 1★ | Novice | Protagonist. Real player from Earth (Seoul, Gangseo-Gu). Summoned by Level 999 bugged entity. In-game identity: Han Islat from Hime province. |
-| **Jenna Cirai** | 1★ | — | From remote forest. Father was a hunter. Calm, analytical. Can use a bow. Calls Han "Oppa". |
+| **Islat Han** (Han Seojin) | 1★ | Novice | Protagonist. Real player from Earth (Seoul, Gangseo-Gu). Summoned by Level 999 bugged entity. In-game identity: Han Islat from Hime province. Level 5. Skills: Low-rank swordsmanship, Low-rank shield techniques. |
+| **Jenna Cirai** | 1★ | Novice | From remote forest. Father was a hunter. Calm, analytical. Can use a bow. Calls Han "Oppa". Level 2. Skills: Low-rank archery. Intimacy bonus with Han. |
+| **Aaron** | 1★ | — | Newly summoned in Chapter 3. Joined Party 1. |
+| **Toby** | 1★ | — | Newly summoned in Chapter 3. Joined Party 1. |
+| **Yelson** | 1★ | — | Newly summoned in Chapter 3. Joined Party 1. |
 
 ---
 
@@ -55,7 +58,7 @@
 
 | Status | Count |
 |---|---|
-| **Alive** | 2 (Islat Han, Jenna Cirai) |
+| **Alive** | 5 (Islat Han, Jenna Cirai, Aaron, Toby, Yelson) |
 | **Deceased (Combat)** | 11 |
 | **Deceased (Synthesis)** | 1 (Shay) |
-| **Total Introduced** | 14 |
+| **Total Introduced** | 17 |
