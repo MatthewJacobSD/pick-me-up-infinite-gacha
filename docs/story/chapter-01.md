@@ -15,7 +15,7 @@
 | Lyle | Carpenter Shop Owner | Edola | Clueless, Curious | Questioning, observant |
 | Gritte | Street Stall Shop Owner | Halsia | Clueless, Shy, Scared | Timid, nervous |
 | Jenna | Lived in Remote Forest | — | Clueless, Calm | Analytical, resourceful |
-| Islan Han | Farmer (real name: Han Seojin) | — | Clueless, Composed, Collected | Strategic, experienced, knows more than he lets on |
+| Islat Han | Farmer (real name: Han Seojin) | — | Clueless, Composed, Collected | Strategic, experienced, knows more than he lets on |
 | Iselle | Pixie / Fairy Manager | — | — | Aggressive, authoritative, smug |
 
 ---
@@ -42,7 +42,7 @@
 - Lived in a Remote Forest
 - Status: Clueless, Calm
 
-**Islan Han:** Islat Han. I was a farmer. I don't know anything either.
+**Islat Han:** Islat Han. I was a farmer. I don't know anything either.
 
 - Farmer
 - Status: Clueless, Composed, Collected
@@ -126,15 +126,15 @@
 
 **Iselle:** Lyla, Ranto, Marlin, Kelcard, Jaksen! You see this gate, don't you? Go into it if you don't want to die like that last guy.
 
-**Islan Han:** Wait a minute!
+**Islat Han:** Wait a minute!
 
 **Iselle:** You again?! What is it now?
 
-**Islan Han:** You also want to climb the 'Tower' right? Let the master choose the weapons. We're 1 stars. We don't even have basic weapons. You don't want to just send out a suicide squad, right?
+**Islat Han:** You also want to climb the 'Tower' right? Let the master choose the weapons. We're 1 stars. We don't even have basic weapons. You don't want to just send out a suicide squad, right?
 
 **Jenna:** *within her mind* again? …tower? What is he going on about?
 
-**Islan Han:** A precious 2-star hero just died. Shouldn't you at least allow this?
+**Islat Han:** A precious 2-star hero just died. Shouldn't you at least allow this?
 
 ---
 
@@ -162,15 +162,15 @@
 
 **Lyle:** H-Hey, You're Han, right? Do you know something about this place?!
 
-**Islan Han:** I don't know much because I haven't been here for long.
+**Islat Han:** I don't know much because I haven't been here for long.
 
 **Jenna:** *in her mind* Haven't been here for long? This person…
 
-**Islan Han:** What I do know is you'll die if you don't do this properly. It'd be best for everyone to take weapons from over there. It'll start soon.
+**Islat Han:** What I do know is you'll die if you don't do this properly. It'd be best for everyone to take weapons from over there. It'll start soon.
 
 **NPC11:** H… Hey, start?! What's starting?!
 
-**Islan Han:** The battle.
+**Islat Han:** The battle.
 
 **NPC12:** Battle? Did you just say Battle?
 
@@ -198,7 +198,7 @@
 
 **Jenna:** You know what's going to happen, right? Why do we need weapons? Where are we? And what's with the fairy?
 
-**Islan Han:** You have so many questions. Just go into the arena and kill all the enemies. The rest will take care of itself.
+**Islat Han:** You have so many questions. Just go into the arena and kill all the enemies. The rest will take care of itself.
 
 ---
 
@@ -208,7 +208,7 @@
 - Marlin (1 star) has returned to the goddess' embrace.
 - His fighting spirit will be remembered for eternity.
 
-**Islan Han:** Shit…
+**Islat Han:** Shit…
 
 **Jenna:** What? What is it?
 
@@ -224,11 +224,11 @@
 - Jaksen (1 star) has returned to the goddess' embrace.
 - His fighting spirit will be remembered for eternity.
 
-**Islan Han:** I guess that's why they're 1 star
+**Islat Han:** I guess that's why they're 1 star
 
 **Jenna:** What is it? What happened?
 
-**Islan Han:** Be quiet.
+**Islat Han:** Be quiet.
 
 **Notification:**
 - Lyle (1 star) has returned to the goddess' embrace.
@@ -236,7 +236,7 @@
 
 **Notification:** Party 1 has been annihilated. You lose!
 
-**Islan Han:** Annihilated already?
+**Islat Han:** Annihilated already?
 
 **Iselle:** *frustrated, angry* Useless bastards!!! They were annihilated on the 1st floor?!
 
@@ -256,7 +256,7 @@
 
 **Iselle:** Whoever's left, come out!
 
-**Islan Han:** It's our turn next.
+**Islat Han:** It's our turn next.
 
 **Jenna:** Why aren't those who went in coming back out…?
 
@@ -290,7 +290,7 @@
 
 **Notification:** The gate is opening. Get ready!
 
-**Islan Han:** *shouts* Don't freeze up! Here we go!!!
+**Islat Han:** *shouts* Don't freeze up! Here we go!!!
 
 ---
 
@@ -298,18 +298,18 @@
 
 **NPC6:** Wh-where are we?
 
-**Islan Han:** Where else…
+**Islat Han:** Where else…
 
 **Notification:**
 - Floor 1
 - Mission Type – Subjugation
 - Objective – Annihilate your enemies!
 
-**Islan Han:** It's the battlefield.
+**Islat Han:** It's the battlefield.
 
-**Islan Han:** I told you just now, didn't I? You'll die if you don't fight. So, pull yourselves together…
+**Islat Han:** I told you just now, didn't I? You'll die if you don't fight. So, pull yourselves together…
 
-**Islan Han:** Fuck
+**Islat Han:** Fuck
 
 **Jenna:** *shouts* Old Man, don't you have arthritis?!
 
@@ -343,23 +343,23 @@
 
 **NPC20:** What is this?! Get rid of it immediately!
 
-**Islan Han:** How pathetic.
+**Islat Han:** How pathetic.
 
 **Jenna:** Han.
 
 **Jenna:** Can we get out if we kill those goblins?
 
-**Islan Han:** Do you know how to use a bow?
+**Islat Han:** Do you know how to use a bow?
 
 **Jenna:** My father was a hunter.
 
-**Islan Han:** I'll go out and fight them while you shoot arrows at them. You can do that right?
+**Islat Han:** I'll go out and fight them while you shoot arrows at them. You can do that right?
 
 **Jenna:** Yes!
 
 **Jenna:** Those people…
 
-**Islan Han:** Ignore them. They won't be of help.
+**Islat Han:** Ignore them. They won't be of help.
 
 **Goblin:** Kyaaa!!
 
@@ -369,7 +369,7 @@
 
 **Group of goblins:** Kyaaaa
 
-**Han:** My name is Islan Han. My real name is Han Seojin. It seems I've come into a darn game that is all about luck.
+**Han:** My name is Islat Han. My real name is Han Seojin. It seems I've come into a darn game that is all about luck.
 
 ---
 
@@ -399,7 +399,7 @@
 - STR: 14 | INT: 10 | HP: 12 | AGI: 12
 - Skills: Basic Swordsmanship (Lv.1)
 
-**Islan Han / Han Seojin**
+**Islat Han / Han Seojin**
 - Class: Farmer (disguised)
 - Actual identity unknown to others
 - Knowledgeable about the game system
