@@ -2,6 +2,7 @@
 
 > Reference material for game narrative and character design.
 > Iselle is a Pixie.
+> **Note:** NPC numbering resets from 1 each chapter unless written otherwise.
 
 ---
 
