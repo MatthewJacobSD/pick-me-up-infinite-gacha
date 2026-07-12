@@ -1,7 +1,7 @@
 # Character Tracker — Pick Me Up, Infinite Gacha
 
 > Tracks all characters introduced, their status, and fate.
-> Updated through Chapter 5.
+> Updated through Chapter 8.
 
 ---
 
@@ -10,8 +10,13 @@
 | Name | Star | Class | Notes |
 |---|---|---|---|
 | **Islat Han** (Han Seojin) | 1★ | Novice | Protagonist. Real player from Earth (Seoul, Gangseo-Gu). Summoned by Level 999 bugged entity. In-game identity: Han Islat from Hime province. **Revealed as Loki** (Rank 5, "Master of Masters"). Skills: Basic Sword-Shield Techniques (Lv.3), Composure, Pain Tolerance. |
-| **Jenna Cirai** | 1★ | Novice | From remote forest. Father was a hunter. Calm, analytical. Can use a bow. Calls Han "Oppa". Skills: Low-rank archery, Eagle's Eye. Intimacy bonus with Han. |
-| **Aaron** | 1★ | — | Summoned Ch. 3. Weapon: Spear. Has younger sister. Training under Han. |
+| **Jenna Cirai** | 1★ | Novice | From remote forest. Father was a hunter. Calm, analytical. Can use a bow. Calls Han "Oppa". Skills: Low-rank archery (Lv.5), Low-rank dagger (Lv.2), Eagle's Eye. Intimacy bonus with Han. |
+| **Aaron** | 1★ | — | Summoned Ch. 3. Weapon: Spear. Has younger sister. Training under Han. Spear skill Lv.2 (stuck). Added to favourites (Ch.7). |
+| **Enok** | 1★ | Carpenter | Non-combat role. Assigned as carpenter. |
+| **Chloe** | 1★ | Cook | Non-combat role. Assigned as cook (replaced Dolf). |
+| **Gide** | 1★ | Trainee | Joined training Ch.8. Age under 20. Swordsmanship Lv.1. |
+| **Hansen** | 1★ | Trainee | Joined training Ch.8. Age under 20. Swordsmanship Lv.1. |
+| **Dika** | 1★ | Trainee | Joined training Ch.8. Age under 20. Swordsmanship Lv.1. |
 
 ---
 
@@ -32,6 +37,9 @@
 | **Madelyn** | — | — | Died in combat | — |
 | **Toby** | 1★ | — | Synthesis sacrifice (Han gained Composure) | Ch. 5 |
 | **Yelson (Elson)** | 1★ | — | Synthesis sacrifice (Jenna gained Eagle's Eye) | Ch. 5 |
+| **John** | 1★ | — | Died on Floor 1 (Party 2 thinning) | Ch. 8 |
+| **Teddy** | 1★ | — | Died on Floor 1 (Party 2 thinning) | Ch. 8 |
+| 1 unnamed hero | 1★ | — | Died in thinning process | Ch. 8 |
 
 ---
 
@@ -51,6 +59,7 @@
 | NPC11-20 | Various unnamed Townia citizens |
 | Iselle | Pixie/Fairy manager. Aggressive, smug. Recognizes "Islat Han" but Han Seojin looks different. |
 | Anytng | The "Master" (player account). Reckless — sacrificed 4★ Shay to enhance 1★ Han. |
+| Dolf (NPC2) | Claimed to be a cook but has no cooking skill. Lied. Was replaced by Chloe. Survived. |
 
 ---
 
@@ -58,7 +67,7 @@
 
 | Status | Count |
 |---|---|
-| **Alive** | 3 (Islat Han, Jenna Cirai, Aaron) |
-| **Deceased (Combat)** | 11 |
+| **Alive** | 8 (Islat Han, Jenna Cirai, Aaron, Enok, Chloe, Gide, Hansen, Dika) |
+| **Deceased (Combat)** | 14 |
 | **Deceased (Synthesis)** | 3 (Shay, Toby, Yelson) |
-| **Total Introduced** | 17 |
+| **Total Introduced** | 25 |
