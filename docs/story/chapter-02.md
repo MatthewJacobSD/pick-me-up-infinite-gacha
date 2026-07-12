@@ -257,7 +257,7 @@ Until yesterday, he was living an ordinary life.
 
 **Iselle:** Anyways, Go in!
 
-**Shay:** So cold.
+**Shay:** So load.
 
 **Han:** …… .
 
