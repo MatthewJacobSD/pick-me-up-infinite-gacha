@@ -114,7 +114,7 @@
 
 ---
 
-### Scene 4: The World's真相
+### Scene 4: The World's Truth
 
 **Han:** *in his mind* Mobius summon. A system that summons an infinite number of heroes with thousands of patterns was a lie. Quantum A.I. The Heroes who were thought to be AI were real humans. Roguelike. A system thought to have infinite content had 1 million separate worlds.
 

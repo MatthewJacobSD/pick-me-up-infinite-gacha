@@ -58,9 +58,9 @@ Until yesterday, he was living an ordinary life.
 **Han:** An obvious system error.
 
 **Notification:**
-- Diora (6 stars) has returned to the goddess' arms. Her grit will be remembered forever.
-- Nicolas (6 stars) has returned to the goddess' arms. Her grit will be remembered forever.
-- Kent (6 stars) has returned to the goddess' arms. Her grit will be remembered forever.
+- Diora (6 stars) has returned to the goddess' embrace. Her grit will be remembered forever.
+- Nicolas (6 stars) has returned to the goddess' embrace. Her grit will be remembered forever.
+- Kent (6 stars) has returned to the goddess' embrace. Her grit will be remembered forever.
 
 **Han:** They died before I even saw the patterns of the boss. I got nothing out of it.
 
@@ -233,31 +233,31 @@ Until yesterday, he was living an ordinary life.
 
 **Han:** Me? I'm Han Seojin.
 
-**Islette:** Han Seojin, No way. Not Islat Han?
+**Iselle:** Han Seojin, No way. Not Islat Han?
 
-**Islette:** Wh-what? Why are you different from the picture? You don't look like the Townia Hime Islat Han?
+**Iselle:** Wh-what? Why are you different from the picture? You don't look like the Townia Hime Islat Han?
 
 **Han:** I'm Han Seojin from Seoul Gangseo-Gu. Send me back while I'm still being nice.
 
-**Islette:** *curious and surprised* Are you from earth?
+**Iselle:** *curious and surprised* Are you from earth?
 
 **Han:** Of course I am, Or should I be from Mars?
 
-**Islette:** …… .
+**Iselle:** …… .
 
-**Islette:** *panics* Ack!!! What the hell happened? I'm gonna go crazy!
+**Iselle:** *panics* Ack!!! What the hell happened? I'm gonna go crazy!
 
-**Islette:** Just go in first!
+**Iselle:** Just go in first!
 
 **Han:** No! If I go in I'll die!!
 
-**Islette:** You won't, you'll get synthesized!
+**Iselle:** You won't, you'll get synthesized!
 
 **Han:** That's the same thing!
 
-**Islette:** Anyways, Go in!
+**Iselle:** Anyways, Go in!
 
-**Shay:** So load.
+**Shay:** So cold.
 
 **Han:** …… .
 

@@ -125,7 +125,7 @@
 
 **Iselle:** The master has finally started. Everyone, get ready!! *shout* Open up, crack of space and time!!!
 
-**Iselle:** Lyla, Ranto, Marlin, Kelcard, Jaksen! You see this gate, don't you? Go into it if you don't want to die like that last guy.
+**Iselle:** Lyle, Ranto, Marlin, Kelcard, Jaksen! You see this gate, don't you? Go into it if you don't want to die like that last guy.
 
 **Islat Han:** Wait a minute!
 
@@ -142,7 +142,7 @@
 ### Scene 5: Equipment Summon
 
 **Notification:**
-- Momont Carl (2 stars) Level 1 (Exp 0/10)
+- Molmont Carl (2 stars) Level 1 (Exp 0/10)
 - Class: Novice
 - Strength: 14/14 | Intelligence: 10/10 | HP: 12/12
 - Agility: 12/12
