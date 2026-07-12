@@ -1,7 +1,7 @@
 # Character Tracker — Pick Me Up, Infinite Gacha
 
 > Tracks all characters introduced, their status, and fate.
-> Updated through Chapter 3.
+> Updated through Chapter 5.
 
 ---
 
@@ -9,11 +9,9 @@
 
 | Name | Star | Class | Notes |
 |---|---|---|---|
-| **Islat Han** (Han Seojin) | 1★ | Novice | Protagonist. Real player from Earth (Seoul, Gangseo-Gu). Summoned by Level 999 bugged entity. In-game identity: Han Islat from Hime province. Level 5. Skills: Low-rank swordsmanship, Low-rank shield techniques. |
-| **Jenna Cirai** | 1★ | Novice | From remote forest. Father was a hunter. Calm, analytical. Can use a bow. Calls Han "Oppa". Level 2. Skills: Low-rank archery. Intimacy bonus with Han. |
-| **Aaron** | 1★ | — | Newly summoned in Chapter 3. Joined Party 1. |
-| **Toby** | 1★ | — | Newly summoned in Chapter 3. Joined Party 1. |
-| **Yelson** | 1★ | — | Newly summoned in Chapter 3. Joined Party 1. |
+| **Islat Han** (Han Seojin) | 1★ | Novice | Protagonist. Real player from Earth (Seoul, Gangseo-Gu). Summoned by Level 999 bugged entity. In-game identity: Han Islat from Hime province. **Revealed as Loki** (Rank 5, "Master of Masters"). Skills: Basic Sword-Shield Techniques (Lv.3), Composure, Pain Tolerance. |
+| **Jenna Cirai** | 1★ | Novice | From remote forest. Father was a hunter. Calm, analytical. Can use a bow. Calls Han "Oppa". Skills: Low-rank archery, Eagle's Eye. Intimacy bonus with Han. |
+| **Aaron** | 1★ | — | Summoned Ch. 3. Weapon: Spear. Has younger sister. Training under Han. |
 
 ---
 
@@ -32,6 +30,8 @@
 | **Cale** | 1★ | — | Floor 1 combat (Party 2) | Ch. 1 |
 | **Rail** | — | — | Died in combat | — |
 | **Madelyn** | — | — | Died in combat | — |
+| **Toby** | 1★ | — | Synthesis sacrifice (Han gained Composure) | Ch. 5 |
+| **Yelson (Elson)** | 1★ | — | Synthesis sacrifice (Jenna gained Eagle's Eye) | Ch. 5 |
 
 ---
 
@@ -58,7 +58,7 @@
 
 | Status | Count |
 |---|---|
-| **Alive** | 5 (Islat Han, Jenna Cirai, Aaron, Toby, Yelson) |
+| **Alive** | 3 (Islat Han, Jenna Cirai, Aaron) |
 | **Deceased (Combat)** | 11 |
-| **Deceased (Synthesis)** | 1 (Shay) |
+| **Deceased (Synthesis)** | 3 (Shay, Toby, Yelson) |
 | **Total Introduced** | 17 |
