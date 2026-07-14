@@ -19,7 +19,8 @@ Lyle: Sorry, but I don't remember.
 •	Carpenter's shop owner in Edola
 •	Status: Clueless, Curious
 
-Gritte: I'm Gritte. I ran a street stall shop in Halsia.
+Gritte: I'm Gritte.
+Gritte: I ran a street stall shop in Halsia.
 Gritte: I don't know why I'm here either.
 •	Ran a street stall shop in Halsia
 •	Status: Clueless, Shy, Scared
@@ -44,7 +45,8 @@ NPC5: Did we get dragged here by a mage to be used as experimental subjects…?
 
 Molmont Carl: *shouting* DON'T SAY NONSENSE LIKE THAT!
 
-Lyle: What's certain is that everyone is from 'Townia'. If we keep talking, we might be able to get good information.
+Lyle: What's certain is that everyone is from 'Townia'.
+Lyle: If we keep talking, we might be able to get good information.
 
 ---
 
@@ -97,7 +99,8 @@ NPC8: Wh-what? He's Dead?
 NPC9: He's dead! What the hell is this?!
 NPC10: Wh-What did you do?! You should tell us what you want!
 
-Iselle: What I want? I want you all to be obedient, fight well, and win well. That's all. Easy, right?
+Iselle: What I want? I want you all to be obedient, fight well, and win well.
+Iselle: That's all. Easy, right?
 
 ---
 
@@ -124,7 +127,8 @@ Iselle: You again?! What is it now?
 
 Islat Han: You also want to climb the 'Tower' right?
 Islat Han: Let the master choose the weapons.
-Islat Han: We're 1-stars. We don't even have basic weapons. You don't want to just send out a suicide squad, right?
+Islat Han: We're 1-stars. We don't even have basic weapons.
+Islat Han: You don't want to just send out a suicide squad, right?
 
 Jenna: *within her mind* again? …tower? What is he going on about?
 
@@ -193,7 +197,8 @@ NPC18: KYAAA!
 Jenna: You know what's going to happen, right?
 Jenna: Why do we need weapons? Where are we? And what's with the fairy?
 
-Islat Han: You have so many questions. Just go into the arena and kill all the enemies. The rest will take care of itself.
+Islat Han: You have so many questions.
+Islat Han: Just go into the arena and kill all the enemies. The rest will take care of itself.
 
 ---
 
@@ -249,7 +254,8 @@ Islat Han: It's our turn next.
 
 Jenna: Why aren't those who went in coming back out…?
 
-NPC20: Hey, fairy. My arthritis is acting up and I can't walk anymore. Please leave me out.
+NPC20: Hey, fairy.
+NPC20: My arthritis is acting up and I can't walk anymore. Please leave me out.
 
 Jenna: *bruh moment* Arthritis? You're walking just fine, though?
 

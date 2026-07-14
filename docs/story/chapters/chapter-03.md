@@ -11,7 +11,8 @@ Han - narrating: In a battle or by being compounded. I'm only a 1-star.
 
 Han: *in his mind* It's meaningless to be a 1-star hero in pick me up.
 Han: *in his mind* 1-star are disposable, and the lowest quality ones too.
-Han: *in his mind* Our basic stats are pathetic, and our growth rate is low, too. At this rate, I won't be able to escape the danger of being compounded.
+Han: *in his mind* Our basic stats are pathetic, and our growth rate is low, too.
+Han: *in his mind* At this rate, I won't be able to escape the danger of being compounded.
 
 Notification:
 •	Islat Han (1 star) level 5 (exp 44/50)
@@ -78,7 +79,8 @@ Han: *in his mind* I guess she got four points in stats from yesterday.
 Han: *in his mind* She's lower than me in stats, but she has her own unique skills.
 Han: *in his mind* Even if she wasn't that good because it was her first time fighting, she still managed to kill a goblin.
 
-Han: *in his mind* It looks like she moves on from other's deaths quickly too, and she knows what the goal is.
+Han: *in his mind* It looks like she moves on from other's deaths quickly too,
+Han: *in his mind* and she knows what the goal is.
 Han: *in his mind* She's a diamond in the rough.
 
 Han: Alright, I'll help you.
@@ -106,7 +108,8 @@ Iselle: *shouts, angry* Ah, what now?! I'm busy, you know?!
 
 Han: You sure are fast despite being busy.
 
-Iselle: I'm not gonna answer anything, no matter how many times you ask! Make your way up the tower if you're curious!
+Iselle: I'm not gonna answer anything, no matter how many times you ask!
+Iselle: Make your way up the tower if you're curious!
 Iselle: The answer's in the tower.
 
 Han: Am I the only one who can see the stats window above your head?
@@ -139,7 +142,8 @@ Han: *in his mind* Last time, I went on it a week after the first time.
 
 Han: Is the time here different from Earth's?
 
-Iselle: *annoyed, screams* I told you not to ask me any questions! I'm not gonna answer them!
+Iselle: *annoyed, screams* I told you not to ask me any questions!
+Iselle: I'm not gonna answer them!
 
 Han: So the time is different, huh? Thanks for the tip just now. Keep it up.
 
@@ -148,7 +152,8 @@ Iselle: *screams* Ee-eeeek! You little 1-star trash!
 Han - narrating: The fairy can't do anything to me.
 Han - narrating: She can only interfere in cases of self-defence and when master's orders have been disobeyed.
 
-Han: I'll figure out the rules one by one like this. I'll be eliminated if I can't adapt.
+Han: I'll figure out the rules one by one like this.
+Han: I'll be eliminated if I can't adapt.
 Han - narrating: That's how this world works.
 
 ---
@@ -159,17 +164,20 @@ Jenna: What are you guys talking about?
 
 Han: We have to go through this tower that has 100 stages.
 
-Han: Somebody called master can give us orders through Iselle. We have to complete the missions he gives.
+Han: Somebody called master can give us orders through Iselle.
+Han: We have to complete the missions he gives.
 
 Han: We'll probably be able to get out of here once we get to the 100th stage.
 
 Jenna: So we have to fight a lot of monsters?
 
-Han: That's why I'm training. I have to get stronger.
+Han: That's why I'm training.
+Han: I have to get stronger.
 
 Jenna: Will it just be the two of us?
 
-Han: Master can summon other guys. Other people will continue to be summoned.
+Han: Master can summon other guys.
+Han: Other people will continue to be summoned.
 
 Han - narrating: My life hand on the choices I make from now on.
 Han - narrating: Although ultimately, our lives are in hands of master.
@@ -189,9 +197,11 @@ Han - narrating: the result of training are also different.
 Han - narrating: I can now understand some thing that I didn't know while playing pick me up.
 Han - narrating: There are occasionally heroes that have different combat power than others despite being the same rank.
 Han - narrating: They have one thing in common: They're not lay with their training.
-Han - narrating: Training doesn't increase stats or level. But it refines skill learning and skills in general.
+Han - narrating: Training doesn't increase stats or level.
+Han - narrating: But it refines skill learning and skills in general.
 
-Han: *in his mind* Now that I think about it, I don't think they were AI. I didn't know at first.
+Han: *in his mind* Now that I think about it, I don't think they were AI.
+Han: *in his mind* I didn't know at first.
 
 Han - narrating: The observant master will soon categorize the main heroes into three groups.
 Han - narrating: First will be by mentality.
@@ -220,7 +230,8 @@ Notification:
 •	Stamina: 15/15 Dexterity 15/15
 •	Unique skills: Low-rank swordsmanship (level 1), low-rank shield techniques (level1)
 
-Han: *in his mind* I got two from skills from training. I did all that I could.
+Han: *in his mind* I got two from skills from training.
+Han: *in his mind* I did all that I could.
 
 Han: Get ready. Master's here.
 
@@ -230,7 +241,8 @@ Han: What do you mean, "already"? It's been three days.
 
 Notification: Master, beginning summoning.
 
-Han: Master's summoning new heroes. A party can have five people.
+Han: Master's summoning new heroes.
+Han: A party can have five people.
 Han: He'll probably summon three more.
 
 Notification: Click, RRRRRRR.
@@ -242,7 +254,8 @@ Notification: Master Anytng has obtained hero Yelson (1 star)!
 NPC1: *shouts* Where am I?
 NPC2: That's what I wanna know.
 
-Jenna: *shouts* Ahjussi! Get ready to fight. We'll explain everything once we're safe!
+Jenna: *shouts* Ahjussi! Get ready to fight.
+Jenna: We'll explain everything once we're safe!
 
 NPC1: *shouts, not understanding* "get ready to fight"? who are you?!
 
@@ -257,7 +270,9 @@ Han: Jenna, get your weapon before it's too late
 
 Jenna: Yes!
 
-TIPS: Heroes without weapons will enter the battle with an "old iron sword (F)". You will equip a weapon if you place the weapon in the weapons storage. You can also choose which weapon will be held by others. Don't forget!
+TIPS: Heroes without weapons will enter the battle with an "old iron sword (F)".
+TIPS: You will equip a weapon if you place the weapon in the weapons storage.
+TIPS: You can also choose which weapon will be held by others. Don't forget!
 
 Han: *in his mind* I don't have any weapons to give them because the guys from last time all died.
 
@@ -276,7 +291,8 @@ NPC1: *shouts* Are you on her side?! Did you bring us here?!
 
 Jenna: *shouts* It wasn't me! I was brought here too!
 
-Han: What's the point of explaining it right now? He'll figure it all out in a few minutes.
+Han: What's the point of explaining it right now?
+Han: He'll figure it all out in a few minutes.
 
 NPC1: *shouts* My wife's waiting! Take me back right now!
 NPC2: *shouts* I'm just a poor farmer. I don't have any money. You've got the wrong person!
@@ -292,7 +308,8 @@ NPC2: Oh boy…
 
 Aaron: I-I'm sorry…
 
-Iselle: Listen to me when I tell you something, like those guys over there.
+Iselle: Listen to me when I tell you something,
+Iselle: like those guys over there.
 Iselle: *sarcastic smile, playful* Have fun~
 
 Notification:

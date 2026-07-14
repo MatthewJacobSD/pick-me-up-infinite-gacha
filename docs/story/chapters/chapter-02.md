@@ -24,7 +24,8 @@ Han: A dungeon that has a low drop rate of the "book of reserval", which can mak
 Han - narrating: Unlike other similar games, pick me up has hardcore rules to it.
 Han - narrating: Even the heroes that you put your all into, if they die once, they cannot be revived.
 
-Han: *in his mind* So regardless of whether it's a 1 star or 6 star, if they die a single time, it's over. I should send a recon team that I don't care about first in the dungeon to scout things out.
+Han: *in his mind* So regardless of whether it's a 1 star or 6 star, if they die a single time, it's over.
+Han: *in his mind* I should send a recon team that I don't care about first in the dungeon to scout things out.
 
 Notification: The advent dungeon has opened!
 
@@ -61,7 +62,8 @@ Notification:
 •	Nicolas (6 stars) has returned to the goodness' arms. Her grit will be remembered forever.
 •	Kent (6 stars) has returned to the goodness' arms. Her grit will be remembered forever.
 
-Han: They died before I even saw the patterns of the boss. I git nothing out of it.
+Han: They died before I even saw the patterns of the boss.
+Han: I git nothing out of it.
 
 Entity: *evil smile* Found you
 
@@ -179,7 +181,7 @@ Notification:
 Han: H-Han Seojin
 
 Shay: I am Shat Lathasterie. A knight.
-Shay: HHan Seojin, What a weid name.
+Shay: Han Seojin, What a weid name.
 
 Han: No, It's Han Seojin…
 
@@ -199,7 +201,8 @@ Shay: Are you a newbie? Your form is bad.
 
 Han: *shouts* It's my first time!
 
-Han - narrating: Unlike me, who has never held a sword before, the 4 star shay took down the goblins in a flash.
+Han - narrating: Unlike me, who has never held a sword before,
+Han - narrating: the 4 star shay took down the goblins in a flash.
 
 Notification:
 •	Stage clear!
@@ -247,7 +250,8 @@ Islette: Han Seojin, No way. Not Islat Han?
 Islette: Wh-what? Why are you different from the picture?
 Iselle: You don't look like the townia hime Islat Han?
 
-Han: I'm Han Seojin from Seoul Gangseo-Gu. Send me back while I'm still being nice.
+Han: I'm Han Seojin from Seoul Gangseo-Gu.
+Han: Send me back while I'm still being nice.
 
 Islette: *curious and surprised* Are you from earth?
 
@@ -283,11 +287,11 @@ Han - narrating: Synthesis. Enhances a hero by combining them.
 Han - narrating: One of the two becomes a sacrifice to enhance the other.
 Han - narrating: One hero gets consumed in that process.
 
-Han - narrating: The problem is that I'm a star, and that female knight is a 4 star.
+Han - narrating: The problem is that I'm a 1 star, and that female knight is a 4 star.
 Han - narrating: A normal player would have zero reason to kill off shay and leave me.
 
 Han: *in his mind, starting to accept it* so is this how I die.
-Han: *in his mind, starting to accept it* Who would add a 4 star toa 1 star?
+Han: *in his mind, starting to accept it* Who would add a 4 star to a 1 star?
 
 Notification: Synthesis Complete!
 
@@ -298,7 +302,8 @@ Shay: So this is it.
 Notification: Shay (4 stars) has become light and is disappearing.
 
 Han: *confused, shouts* Why are you disappearing?!
-Han: It makes no sense! You're a 4 star and I'm a 1 star!
+Han: It makes no sense!
+Han: You're a 4 star and I'm a 1 star!
 
 Shay: I wasn't chosen. That's all.
 Shay: I'll leave it to you,
@@ -322,7 +327,8 @@ Han - narrating: Anyways. I survived.
 Han - narrating: Synthesizing heroes is a drag and drop function.
 Han - narrating: You touch and drag the hero you want to sacrifice.
 
-Han: *in his mind* either he made a mistake in dragging or he's playing without thinking things through!
+Han: *in his mind* either he made a mistake in dragging
+Han: *in his mind* or he's playing without thinking things through!
 
 Han: *In his mind* I was lucky and Shay died because the master was stupid.
 Han: *in his mind* That is why is a shit game!
@@ -341,7 +347,7 @@ Gobling: KYACK!!
 
 Han - narrating: I don't know how I was summoned inside pick me up.
 Han - narrating: But I knew one thing,
-Han - narrating: Han Seojin, me, got summonsed as a 1 star hero Han Islat.
+Han - narrating: Han Seojin, me, got summoned as a 1 star hero Han Islat.
 
 Han: *in pain, shouts* You damned bastard!
 
@@ -357,7 +363,8 @@ Jenna: Oppa, Your arm…
 
 Han: I'll be fine once we go back.
 
-Han - narrating: There is almost no player control with combat in this game. Because of this, the heroes automatically so most of the combat.
+Han - narrating: There is almost no player control with combat in this game.
+Han - narrating: Because of this, the heroes automatically do most of the combat.
 
 Han - narrating: Still, this game has 1 million downloads from all over the world.
 Han - narrating: The reason being,
@@ -366,7 +373,8 @@ Han - narrating: You can observe this world like a god.
 Han: Are you having fun?
 
 Han - narrating: I was also a player who enjoyed pick me up.
-Han - narrating: Item crafting, tactics and strategy, hero ascension. With hidden features.
+Han - narrating: Item crafting, tactics and strategy, hero ascension.
+Han - narrating: With hidden features.
 
 Han: Even if it's called a shit doomed game, don't quit.
 
@@ -385,7 +393,13 @@ Notification:
 
 MVP – Han (1 star)
 
-•	Mormont (2 stars) died in combat Rail (Lyle) (1 star) died in combat Ranto (1 star) died in combat
-•	Kelcard (1 star) died in combat Jaksen (1 star) died in combat Madelyn (1 star) died in combat
-•	Greet (Gritte) died in combat Dajeel (1 star) died in combat Cale ( 1 star) died in combat
+•	Mormont (2 stars) died in combat
+•	Rail (Lyle) (1 star) died in combat
+•	Ranto (1 star) died in combat
+•	Kelcard (1 star) died in combat
+•	Jaksen (1 star) died in combat
+•	Madelyn (1 star) died in combat
+•	Greet (Gritte) died in combat
+•	Dajeel (1 star) died in combat
+•	Cale ( 1 star) died in combat
 •	Islan Han (1 star) Jenna Ciran (1 star)
