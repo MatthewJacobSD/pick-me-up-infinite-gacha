@@ -1,427 +1,391 @@
 # MANWHA – Pick Me Up, Infinite Gacha
 
-## Chapter 2: The Player Becomes a Hero
+## Chapter 2
 
-### Context
+> It's not Islan Han but Islat Han
 
-Han Seojin (Seoul, Gangseo-Gu) was an ordinary player of "Pick Me Up" — a mobile game by Mobius. He was a mid-tier player (5th place ranker: Loki, "Master of Masters") who had never pulled a hero above 5 stars despite thousands of paid gacha pulls.
+Han - narrating: Pick Me Up!
+Han - narrating: A mobile game by Mobius.
+Han - narrating: The goal of the game is to get to the 100th floor of the tower,
+Han - narrating: you create materials to fortify and support your hero,
+Han - narrating: and use strategy and tactics to clear the tower.
+Han - narrating: Until yesterday, I was living an ordinary life.
 
-Until yesterday, he was living an ordinary life.
+Han: *in his mind* transcendental advent?
+Han: A shitty inflated game finally got a proper event.
 
----
+Han - narrating: Heroes have from 1 star to 7 stars.
 
-### Scene 1: The Bugged Boss
+Han - narrating: I'm a guy who has horrible luck.
+Han - narrating: Even with thousands of paid Gacha pulls, I've never gotten a hero over 5 stars once, even though everyone else has them.
 
-**Notification:** Pick Me Up!
-**Notification:** A mobile game by Mobius.
-**Notification:** The goal of the game is to get to the 100th floor of the tower, you create materials to fortify and support your hero, and use strategy and tactics to clear the tower.
+Han: A dungeon that has a low drop rate of the "book of reserval", which can make 7 stars. There's no reason not to join.
 
-**Han:** *in his mind* Transcendental advent?
+Han - narrating: Unlike other similar games, pick me up has hardcore rules to it.
+Han - narrating: Even the heroes that you put your all into, if they die once, they cannot be revived.
 
-**Han:** A shitty inflated game finally got a proper event.
+Han: *in his mind* So regardless of whether it's a 1 star or 6 star, if they die a single time, it's over. I should send a recon team that I don't care about first in the dungeon to scout things out.
 
-**Notification:** Heroes have from 1 star to 7 stars.
+Notification: The advent dungeon has opened!
 
-**Han:** I'm a guy who has horrible luck. Even with thousands of paid Gacha pulls, I've never gotten a hero over 5 stars once, even though everyone else has them.
+Alert-Notification: Warning!
+Alert-Notification: Warning!
+Alert-Notification: Warning!
 
-**Han:** A dungeon that has a low drop rate of the "book of reserval", which can make 7 stars. There's no reason to join.
+Notification: All members of the 38 party feel fear.
 
-**Han:** Unlike other similar games, Pick Me Up has hardcore rules to it. Even the heroes that you put your all into, if they die once, they cannot be revived.
+Notification:
+•	Diora (6 stars)'s stats have been reduced by 30%.
+•	Nicolas (6 stars)'s stats have been reduced by 30%.
+•	Kent (6 stars)'s stats have been reduced by 30%.
+•	Akela (6 stars)'s stats have been reduced by 30%.
+•	Melky (6 stars)'s stats have been reduced by 30%.
 
-**Han:** *in his mind* So regardless of whether it's a 1 star or 6 star, if they die a single time, it's over. I should send a recon team that I don't care about first in the dungeon to scout things out.
+Han: Why are these guys so scared?
 
-**Notification:** The advent dungeon has opened!
-**Notification:** Warning! Warning! Warning!
-**Notification:** All members of the 38 party feel fear.
+Notification: Diora (6 stars) suggests retreating.
 
-**Notification:**
-- Diora (6 stars)'s stats have been reduced by 30%.
-- Nicolas (6 stars)'s stats have been reduced by 30%.
-- Kent (6 stars)'s stats have been reduced by 30%.
-- Akela (6 stars)'s stats have been reduced by 30%.
-- Melky (6 stars)'s stats have been reduced by 30%.
+Han: Well, regardless I just have to look at the patterns or shape of the boss.
 
-**Han:** Why are these guys so scared?
+Notification: Dora (6 stars) is in a panic!
 
-**Notification:** Diora (6 stars) suggests retreating.
+Han: *in his mind* Level 999?
+Han: *in his mind* What kind of name is that? A bug?
 
-**Han:** Well, regardless I just have to look at the patterns or shape of the boss.
+Entity notification: *bugged* you lose.
 
-**Notification:** Dora (6 stars) is in a panic!
+Han: An obvious system error.
 
-**Han:** *in his mind* Level 999?
+Notification:
+•	Diora (6 stars) has returned to the goodness' arms. Her grit will be remembered forever.
+•	Nicolas (6 stars) has returned to the goodness' arms. Her grit will be remembered forever.
+•	Kent (6 stars) has returned to the goodness' arms. Her grit will be remembered forever.
 
-**Han:** *in his mind* What kind of name is that? A bug?
+Han: They died before I even saw the patterns of the boss. I git nothing out of it.
 
-**Entity notification:** *bugged* you lose.
+Entity: *evil smile* Found you
 
-**Han:** An obvious system error.
-
-**Notification:**
-- Diora (6 stars) has returned to the goddess' embrace. Her grit will be remembered forever.
-- Nicolas (6 stars) has returned to the goddess' embrace. Her grit will be remembered forever.
-- Kent (6 stars) has returned to the goddess' embrace. Her grit will be remembered forever.
-
-**Han:** They died before I even saw the patterns of the boss. I got nothing out of it.
-
-**Entity:** *evil smile* Found you
-
-**Han:** *in his mind* Huh? A pattern? The game should be over— what? I can't see anything!
-
----
-
-### Scene 2: Summoned as a Hero
-
-**Notification:** Creating your account.
-
-**Han:** *in his mind* Account?
-
-**Notification:**
-- Choose your name
-- 2-6 characters, space/special characters are not allowed.
-- Yes / no
-
-**Han:** *in his mind* What is this? Huh?
-
-**Notification:**
-- Anytng
-- You will use this name.
-- Will you use it?
-- Yes / no
-
-**Han:** *in his mind* Anytng? Is it short for "anything"?
-
-**Notification:** Yes
-
-**Han:** *in his mind, sudden panic* I'm not entering it! What is it doing?! It's acting on its own!
-
-**Notification:** Anytng, welcome to the world of Pick Me Up!
-
-**Notification:**
-- Will you start the tutorial? On competition, you will receive a predetermined reward.
-- Yes / no
-
-**Han:** *opens eyes*
-
-**Notification:** In a small town of the Hime province, there was a boy named "Han Islat".
-
-**Han:** *in his mind* Wh…What? Th…This is
-
-**Notification:** Townia, the ground where humans live alongside species.
-**Notification:** An unknown enemy invades this peaceful land!
-**Notification:** You, Master! If you wish to save the world, climb the tower!
-**Notification:** Many heroes will join you.
-
-**Notification:** Tutorial Quest
-1. Take down the goblins that invaded the town!
-
-**Han:** G-Goblins?!?
-
-**Han:** *in his mind* What is this message?
-
-**Han:** *panics, scared, unbelieving, in his mind* It's not realistic at all?!
-
-**Han:** But I didn't need a long time to accept reality.
+Han: *in his mind* huh? A pattern?
+Han: *in his mind* The game should be ove-
+Han: *in his mind* what?
+Han: *in his mind* I can't see anything!
 
 ---
 
-### Scene 3: First Combat
+### Summoned as a Hero
 
-**Notification:** Combat will automatically proceed. Watch a high class battle made by the hero's AI!
+Notification: Creating your account.
 
-**Han:** *struggles* …Kyek!!!
+Han: *in his mind* account?
 
-**Han:** My brain couldn't follow the feeling of killing another organism.
+Notification:
+•	Choose your name
+•	2-6 characters, space/special characters are not allowed.
+•	Yes / no
 
-**Notification:**
-- Stage clear!
-- Han (1 star) level up!
-- Rewards have been given. Check your mailbox.
+Han: *in his mind* What is this?
+Han: *in his mind* Huh?
 
-**Han:** *pants* What happened?! Am I inside of a game?
+Notification:
+•	Anytng
+•	You will use this name.
+•	Will you use it?
+•	Yes / no
 
-**Han:** This familiar scene… Pick me up?
+Han: *in his mind* Anytng? Is it short for "anything"?
 
-**Notification:** Master, will you pull for a comrade before the next stage?
+Notification: Yes
 
-**Notification:**
-- Click the "summon" tab in the menu!
-- The first summon is free! 500 gems for high rank summon have been given.
+Han: *shouts, in his mind, sudden panic* I'm not entering it! What is it doing?! It's acting on its own!
 
-**Han:** Just what is happening…
+Notification: Anytng, welcome to the world of pick me up!
 
----
+Notification:
+•	Will you start the tutorial? On competition, you will receive a predetermined reward.
+•	Yes / no
 
-### Scene 4: The First Summon — Shay
+Han: *opens eyes*
 
-**Notification:** !!Super!!Rare!!
+Notification: In a small town of the hime province, there was a boy named "Han Islat".
 
-**Notification:** Master Anytng has received hero Shay (4 stars)!
+Han: *in his mind* Wh…What? Th…This is
 
-**Han:** *in his mind* Summon? A summon? Then did I get summoned like that too? From a pick me player's summon?
+Notification: Townia, the ground where humans live alongside species.
+Notification: An unknown enemy invades this peaceful land!
+Notification: You, Master! If you wish to save the world, climb the tower!
+Notification: Many heroes will join you.
 
-**Shay:** Did you summon me? Who are you?
+Notification:
+Tutorial Quest
+1.	Take down the goblins that invaded the town!
 
-**Notification:**
-- Shay Lathasterie (4 stars)
-- Level 1 (exp 0/10)
-- Class: Knight
-- Strength: 19/19 | Intelligence: 10/10 | Health: 18/18
-- Agility: 22/22
-- Possessed Skill: Combat Logic (level 1), Intermediate Swordsmanship (level 1), Knight's Determination (level 1)
+Han: G-Goblins?!?
+Han: *in his mind* What is this message?
+Han: *panics, scared, unbelieving, in his mind, shouts* it's not realistic at all?!
 
-**Han:** H-Han Seojin
-
-**Shay:** I am Shay Lathasterie. A knight. Han Seojin, What a weird name.
-
-**Han:** No, It's Han Seojin…
-
-**Notification:** Will you form a party with heroes? Drag the hero to the party slot and drop, make your own party!
-
-**Notification:** Han (1 star) and Shay (4 stars) have formed a party
+Han - narrating: But I didn't need a long time to accept reality.
 
 ---
 
-### Scene 5: Tutorial Battle
+### First Combat
 
-**Han:** Our master "Anytng" has sent me and Shay to the dungeon again.
+Notification: Combat will automatically proceed. Watch a high class battle made by the hero's AI!
 
-**Shay:** Are you a newbie? Your form is bad.
+Han: *struggles* …Kyek!!!
 
-**Han:** *shouts* It's my first time!
+Han - narrating: My brain couldn't follow the feeling of killing another organism.
 
-**Han:** Unlike me, who has never held a sword before, the 4 star Shay took down the goblins in a flash.
+Notification:
+•	Stage clear!
+•	Han (1 star) level up!
+•	Rewards have been given.
+•	Check your mailbox.
 
-**Notification:**
-- Stage clear!
-- Shay (4 stars) level up!
-- Rewards have been given. Check your mailbox.
-- MVP – Shay (4 stars)
+Han: *pants* What happened?!
+Han: *pants* Am I inside of a game?
+Han: This familiar scene… Pick me up?
 
-**Han:** An overwhelming stat difference. Since she was 3 stars higher than me, I had no complaints.
+Notification: Master, will you pull for a comrade before the next stage?
 
-**Han:** But the problem started from here.
+Notification:
+•	Click the "summon" tab in the menu!
+•	The first summon is free!
+•	500 gems for high rank summon have been given.
 
----
-
-### Scene 6: The Synthesis Horror
-
-**Notification:**
-- Master, your heroes have fought well.
-- The final tutorial stage awaits.
-
-**Notification:**
-- A way to enhance heroes.
-- Synthesis!
-- The doors have opened!
-
-**Notification:** Click the "synthesis" tab in the menu.
-
-**Han:** *scared, in panic* I'm fucked!
-
-**Iselle:** Hey, You! Go in fast! Master awaits!
-
-**Han:** …… .
-
-**Han:** …Iselle?
-
-**Iselle:** *shocked* Yes, I'm Iselle…
-
-**Iselle:** N-Not you, how do you know my name? What are you?!
-
-**Han:** *in his mind* I know because I was a pick me up user…
-
-**Han:** Me? I'm Han Seojin.
-
-**Iselle:** Han Seojin, No way. Not Islat Han?
-
-**Iselle:** Wh-what? Why are you different from the picture? You don't look like the Townia Hime Islat Han?
-
-**Han:** I'm Han Seojin from Seoul Gangseo-Gu. Send me back while I'm still being nice.
-
-**Iselle:** *curious and surprised* Are you from earth?
-
-**Han:** Of course I am, Or should I be from Mars?
-
-**Iselle:** …… .
-
-**Iselle:** *panics* Ack!!! What the hell happened? I'm gonna go crazy!
-
-**Iselle:** Just go in first!
-
-**Han:** No! If I go in I'll die!!
-
-**Iselle:** You won't, you'll get synthesized!
-
-**Han:** That's the same thing!
-
-**Iselle:** Anyways, Go in!
-
-**Shay:** So load.
-
-**Han:** …… .
-
-**Notification:** Master, the synthesis is starting.
-
-**Han:** !!
-
-**Han:** *in his mind* Damnit, it started!
-
-**Han:** Synthesis. Enhances a hero by combining them. One of the two becomes a sacrifice to enhance the other. One hero gets consumed in that process.
-
-**Han:** The problem is that I'm a 1 star, and that female knight is a 4 star. A normal player would have zero reason to kill off Shay and leave me.
-
-**Han:** *in his mind, starting to accept it* So is this how I die. Who would add a 4 star to a 1 star?
+Han: Just what is happening…
 
 ---
 
-### Scene 7: Shay's Sacrifice
+### The First Summon — Shay
 
-**Notification:** Synthesis Complete!
+Notification: !!Super!!Rare!!
 
-**Han:** Huh?
+Notification: Master Anytng has received hero Shay (4 stars)!
 
-**Shay:** So this is it.
+Han: *in his mind* Summon?
+Han: *in his mind* A summon?
+Han: *in his mind* Then did I get summoned like that too?
+Han: *in his mind* From a pick me player's summon?
 
-**Notification:** Shay (4 stars) has become light and is disappearing.
+Shay: Did you summon me? Who are you?
 
-**Han:** *confused, shouts* Why are you disappearing?! It makes no sense! You're a 4 star and I'm a 1 star!
+Notification:
+•	Shay Lathasterie (4 stars)
+•	Level 1 (exp 0/10)
+•	Class: Knight
+•	Strength: 19/19 Intelligence: 10/10 Health: 18/18
+•	Agility: 22/22 Possessed Skill: Combat Logic (level 1), Intermediate Swordsmanship (level 1), knight's determination (level 1)
 
-**Shay:** I wasn't chosen. That's all.
+Han: H-Han Seojin
 
-**Shay:** I'll leave it to you, Han…
+Shay: I am Shat Lathasterie. A knight.
+Shay: HHan Seojin, What a weid name.
 
-**Han:** I don't know what is happening.
+Han: No, It's Han Seojin…
 
----
+Notification:
+•	Will you form a party with heroes?
+•	Drag the hero to the party slot and drop, make your own party!
 
-### Scene 8: Back to the Tower
-
-**Gritte:** Kyack!!
-
-**Notification:** Gritte (1 star) has returned to the goddess' arms. His grit will be remembered forever.
-
-**Han:** *shouts* Don't let your guard down! If you do, you'll die!
-
-**Jenna:** Hey old men, fight! The monsters are coming!
-
-**Han:** Anyways. I survived. Synthesizing heroes is a drag and drop function. You touch and drag the hero you want to sacrifice.
-
-**Han:** *in his mind* Either he made a mistake in dragging or he's playing without thinking things through!
-
-**Han:** *in his mind* I was lucky and Shay died because the master was stupid. That is why it's a shit game!
-
-**Han:** *shouts* And the other two?!
-
-**Jenna:** *shouts* I got one of them but the others…!
-
-**Han:** Let's think about that later, so come her-
-
-**Goblin:** Kyack!!
+Notification: Han (1 star) and Shay (4 stars) have formed a party
 
 ---
 
-### Scene 9: Realization
+### Tutorial Battle
 
-**Han:** I don't know how I was summoned inside Pick Me Up. But I knew one thing, Han Seojin, me, got summoned as a 1 star hero Han Islat.
+Han - narrating: Our master "Anytng" has sent me and shay to the dungeon again.
 
-**Han:** *in pain, shouts* You damned bastard!
+Shay: Are you a newbie? Your form is bad.
 
-**Han:** Right before coming over to this world
+Han: *shouts* It's my first time!
 
-**Han:** A level 999 bugged monster looked at me and laughed.
+Han - narrating: Unlike me, who has never held a sword before, the 4 star shay took down the goblins in a flash.
 
-**Han:** *in his mind* It must've been that. That thing dragged me here!
+Notification:
+•	Stage clear!
+•	Shay (4 stars) level up!
+•	Rewards have been given. Check your mailbox.
+•	Mvp – Shay (4 stars)
 
-**Han:** You messed with the wrong person.
+Han - narrating: An overwhelming stat difference.
+Han - narrating: Since she was 3 stars higher than me, I had no complaints.
 
-**Jenna:** Oppa, Your arm…
-
-**Han:** I'll be fine once we go back.
-
-**Han:** There is almost no player control with combat in this game. Because of this, the heroes automatically do most of the combat.
-
-**Han:** Still, this game has 1 million downloads from all over the world. The reason being, you can observe this world like a god.
-
-**Han:** Are you having fun?
-
-**Han:** I was also a player who enjoyed pick me up. Item crafting, tactics and strategy, hero ascension. With hidden features.
-
-**Han:** Even if it's called a shit doomed game, don't quit.
-
-**The 5th place ranker, Loki — Master of Masters**
-
-**Han:** *locked in* Watch me survive until the end.
-
-**Notification:**
-- Stage Clear!
-- Jenna (1 star) Level up!
-
-**Notification:**
-- Reward
-- 2000G, Steel (C) x2, Copper (C) x1, Leather (C) x1
-
-**MVP – Han (1 star)**
+Han - narrating: But the problem started from here.
 
 ---
 
-### Key Revelations
+### The Synthesis Horror
 
-| Revelation | Details |
-|---|---|
-| **Han Seojin is the protagonist** | Real person from Seoul, Gangseo-Gu, Earth |
-| **He was a Pick Me Up player** | Rank 5 ("Loki — Master of Masters") |
-| **He was summoned by the Level 999 bugged entity** | The entity "Found you" and dragged him in |
-| **He became Han Islat** | 1 star hero in the game world |
-| **The Master (ANYTNG) is reckless** | Sacrificed Shay (4★) to enhance Han (1★) |
-| **Islat Han is the in-game identity** | The "picture" shows a different person |
-| **Iselle recognizes "Islat Han"** | But Han Seojin looks different |
-| **Iselle is from the game world** | Not from Earth |
-| **Synthesis = sacrifice** | One hero consumed to enhance another |
+Notification:
+•	Master, your heroes have fought well.
+•	The final tutorial stage awaits.
+
+Notification:
+•	A way to enhance heroes.
+•	Synthesis!
+•	The doors have opened!
+
+Notification: Click the "synthesis" tab in the menu.
+
+Han: *scared, in panic, in his mind* I'm fucked!
+
+Iselle: Hey, You!
+Iselle: Go in fast!
+Iselle: Master awaits!
+
+Han: *ain't no way, bruh, unbelieving* …… .
+Han: *curious, doubting* …Iselle?
+
+Iselle: *shocked* Yes, I'm Iselle…
+Iselle: N-Not, you, how do you know my name? What are you?!
+
+Han: *duh, bruh, in his mind* I know because I was a pick me up user…
+
+Han: Me? I'm Han Seojin.
+
+Islette: Han Seojin, No way. Not Islat Han?
+Islette: Wh-what? Why are you different from the picture?
+Iselle: You don't look like the townia hime Islat Han?
+
+Han: I'm Han Seojin from Seoul Gangseo-Gu. Send me back while I'm still being nice.
+
+Islette: *curious and surprised* Are you from earth?
+
+Han: Of course I am, Or should I be from Mars?
+
+Islette: …… .
+Islette: *panicks* Ack!!!
+Iselle: What the hell happened? I'm gonna go crazy!
+Islette: Just go in first!
+
+Han: No! If I go in I'll die!!
+
+Islette: Yu won't you'll get synthesized!
+
+Han: That's the same thing!
+
+Islette: Anyways, Go in!
+
+Shay: So loud.
+
+Han: *deafeted* …… .
+
+Notification: Master, the synthesis is starting.
+
+Han: !!
+Han: *in his mind, starts to panic* Damnit, it started!
 
 ---
 
-### Character Status Updates
+### Shay's Sacrifice
 
-**Han Seojin / Han Islat (1★)**
-- Real identity: Player from Earth
-- In-game identity: Han Islat (Hime province)
-- Class: Novice
-- Status: Survived synthesis (was supposed to die)
+Han - narrating: Synthesis. Enhances a hero by combining them.
+Han - narrating: One of the two becomes a sacrifice to enhance the other.
+Han - narrating: One hero gets consumed in that process.
 
-**Shay Lathasterie (4★) — Deceased**
-- Class: Knight
-- STR: 19 | INT: 10 | HP: 18 | AGI: 22
-- Skills: Combat Logic (Lv.1), Intermediate Swordsmanship (Lv.1), Knight's Determination (Lv.1)
-- Cause of Death: Synthesis sacrifice (Master's choice)
+Han - narrating: The problem is that I'm a star, and that female knight is a 4 star.
+Han - narrating: A normal player would have zero reason to kill off shay and leave me.
 
-**Gritte (1★) — Deceased**
-- Cause of Death: Goblin attack (low focus)
+Han: *in his mind, starting to accept it* so is this how I die.
+Han: *in his mind, starting to accept it* Who would add a 4 star toa 1 star?
 
----
+Notification: Synthesis Complete!
 
-### Game Mechanics Expanded
+Han: Huh?
 
-| Mechanic | Description |
-|---|---|
-| **Synthesis** | Drag hero to sacrifice → enhances the other hero |
-| **Transcendental Advent** | Special event dungeon with bugged content |
-| **Book of Reserval** | Rare drop that can make 7★ heroes |
-| **Hero Ascension** | Enhancement system (referenced, not yet shown) |
-| **Mailbox** | Rewards delivered here after stages |
-| **MVP System** | Most valuable player/hero highlighted after combat |
-| **Player Names** | 2-6 characters, no spaces/special chars |
-| **Auto-Combat** | Heroes fight automatically, player observes |
-| **Fear Status** | 30% stat reduction (applies to high-star heroes too) |
+Shay: So this is it.
+
+Notification: Shay (4 stars) has become light and is disappearing.
+
+Han: *confused, shouts* Why are you disappearing?!
+Han: It makes no sense! You're a 4 star and I'm a 1 star!
+
+Shay: I wasn't chosen. That's all.
+Shay: I'll leave it to you,
+Shay: Han…
+
+Han: I don't know what is happening.
 
 ---
 
-### In-Game Economy References
+### Back to the Tower
 
-| Item | Grade | Source |
-|---|---|---|
-| Gold (G) | — | Stage rewards |
-| Steel | C | Stage rewards |
-| Copper | C | Stage rewards |
-| Leather | C | Stage rewards |
-| Gems | — | Login/tutorial rewards |
+Gritte: *screams in pains* KYACK!!
+
+Notification: Gritte (1 star) has returned to the goddess' arms. His grit will be remembered forever.
+
+Han: *shouts* Don't let your guard down! If you do, you'll die!
+
+Jenna: Hey old men, fight! The monsters are coming!
+
+Han - narrating: Anyways. I survived.
+Han - narrating: Synthesizing heroes is a drag and drop function.
+Han - narrating: You touch and drag the hero you want to sacrifice.
+
+Han: *in his mind* either he made a mistake in dragging or he's playing without thinking things through!
+
+Han: *In his mind* I was lucky and Shay died because the master was stupid.
+Han: *in his mind* That is why is a shit game!
+
+Han: *shouts* And the other two?!
+
+Jenna: *shouts* I got one of them! But the others…!
+
+Han: Let's think about that later, so come her-
+
+Gobling: KYACK!!
+
+---
+
+### Realization
+
+Han - narrating: I don't know how I was summoned inside pick me up.
+Han - narrating: But I knew one thing,
+Han - narrating: Han Seojin, me, got summonsed as a 1 star hero Han Islat.
+
+Han: *in pain, shouts* You damned bastard!
+
+Han - narrating: Right before coming over to this world
+Han - narrating: A level 999 bugged monster looked at me and laughed.
+
+Han: *in his mind* it must've been that.
+Han: *in his mind* That thing dragged me here!
+
+Han - narrating: You messed with the wrong person.
+
+Jenna: Oppa, Your arm…
+
+Han: I'll be fine once we go back.
+
+Han - narrating: There is almost no player control with combat in this game. Because of this, the heroes automatically so most of the combat.
+
+Han - narrating: Still, this game has 1 million downloads from all over the world.
+Han - narrating: The reason being,
+Han - narrating: You can observe this world like a god.
+
+Han: Are you having fun?
+
+Han - narrating: I was also a player who enjoyed pick me up.
+Han - narrating: Item crafting, tactics and strategy, hero ascension. With hidden features.
+
+Han: Even if it's called a shit doomed game, don't quit.
+
+Han - narrating: The 5th place ranker, Loki
+Han - narrating: Master of Masters
+
+Han: *locked in* Watch me survive until the end.
+
+Notification:
+•	Stage Clear!
+•	Jenna (1 star) Level up!
+
+Notification:
+•	Reward
+•	2000G, Steel (C) x2, Copper (C) x1, Leather (C) x1
+
+MVP – Han (1 star)
+
+•	Mormont (2 stars) died in combat Rail (Lyle) (1 star) died in combat Ranto (1 star) died in combat
+•	Kelcard (1 star) died in combat Jaksen (1 star) died in combat Madelyn (1 star) died in combat
+•	Greet (Gritte) died in combat Dajeel (1 star) died in combat Cale ( 1 star) died in combat
+•	Islan Han (1 star) Jenna Ciran (1 star)
