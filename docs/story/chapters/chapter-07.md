@@ -3,15 +3,15 @@
 ## Chapter 7
 
 Notification:
-•	!Compete success!
+•	!Complete success!
 •	Han (1 star) has created "Balanced Shortbow (C)"!
 
 Notification:
-•	!Compete success!
+•	!Complete success!
 •	Han (1 star) has created "Sharp Long Spear (C-)"!
 
 Notification:
-•	!Compete success!
+•	!Complete success!
 •	Han (1 star) has created "Hard Iron Shield (C)"!
 
 Han: They're all C-Ranks. I guess it's because the materials were bad.
@@ -90,7 +90,7 @@ Han: *in his mind* My subordinate number one would technically be Niflheimr's Si
 ### Niflheimr's Elite
 
 Han - narrating: Five members per party.
-Han - narrating: 6-stars and level 99. Personally created five divine sills and other ultimate skills.
+Han - narrating: 6-stars and level 99. Personally created five divine skills and other ultimate skills.
 
 •	Nihaku Gasteel (6 stars)
 •	Muden Nighdelk (6 stars)
@@ -100,9 +100,9 @@ Han - narrating: 6-stars and level 99. Personally created five divine sills and 
 
 Han - narrating: I may run into them somewhere in the tower.
 
-Han: *in his mind* It's an afk game, so the vice master – Sirris – will take care of Niflheirm. There's Yurneth too.
+Han: *in his mind* It's an afk game, so the vice master – Sirris – will take care of Niflheimr. There's Yurneth too.
 Han: *in his mind* They're both so wise and smart, it makes you wonder if they're really AI.
-Han: *in his mind* Although they weren't Ais, now that I think about it.
+Han: *in his mind* Although they weren't AIs, now that I think about it.
 
 ---
 
@@ -144,11 +144,11 @@ Aaron: Is this "master" person a great mage? Wow, how can this be possible?
 Han: Master put his money into it. It makes sense, considering things are getting fun.
 
 Han: *in his mind* Heroes' various reactions and lively battles.
-Han: *in his mind* It probably feels like he's playing with real people instead of a bunch of zeroes and ones.
+Han: *in his mind* It probably feels like he's playing with real people instead of a bunch of zeros and ones.
 Han: *in his mind* Although that's because we are real people.
 
 Han: The waiting rooms get better the higher we go in the tower.
-Han: Antyng's online time is set. He's probably an office worker. It looks like he's doing his research too and can spend money on the game.
+Han: Anytng's online time is set. He's probably an office worker. It looks like he's doing his research too and can spend money on the game.
 
 Iselle: *chuckles* Hehe. It's better than a broke student, right? He's rich enough to buy a new package for 65,000 won.
 
@@ -188,7 +188,7 @@ NPC4: Who knows what's happening?
 NPC2: Heuk…!
 NPC2: Wh-Who are you guys?!
 
-Han: Quite down. I'm not gonna explain things to you right now.
+Han: Quiet down. I'm not gonna explain things to you right now.
 Han: Survive on your own. I'll explain everything to those who survive.
 
 NPC2: Ughh…
@@ -205,7 +205,7 @@ NPC2: *shouts* What…? I want an explanation…
 NPC5: What…? What's happening?
 NPC6: What's that small thing?!!
 
-Iselle: *shouts enranged* Shut up!
+Iselle: *shouts enraged* Shut up!
 
 Jenna: What is she doing?
 
@@ -214,4 +214,4 @@ Han: Since there are new facilities.
 Han: If the guys died earlier were summoned, they might have had other careers.
 Han: The system in waiting room's changing.
 
-<Nilflheirm>
+<Niflheimr>

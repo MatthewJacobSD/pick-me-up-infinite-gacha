@@ -32,11 +32,12 @@ Notification: You will proceed to the 3rd floor.
 
 Jenna: *confused, curious, on alert* What's happening?!
 
-Han: You saw what happened on the second floor we're going to the third floor now.
+Han: You saw what happened on the second floor.
+Han: We're going to the third floor now.
 
 Han: *in his mind* If you're a master, you're going to be forced to go to the third floor straight away.
 Han: *in his mind* However in this state…
-Han: *in his mind* Now what's going to happened?
+Han: *in his mind* Now what's going to happen?
 Han: *in his mind* Complete the third floor?
 
 Notification: The master has logged off.
@@ -51,7 +52,7 @@ Han: *in his mind* So, it's a floor a day, huh.
 Han: *in his mind* If time flows three times faster in here and lobby, then next time I can log in will be in three days.
 
 Notification:
-Islan Han (1 star) level 6 (exp 13/50)
+Islat Han (1 star) level 6 (exp 13/50)
 Class: Novice
 Strength: 17/17 Intelligence: 14/14
 Stamina: 16/16 Dexterity 16/16
@@ -78,7 +79,7 @@ NPC2: *shouts* I've never held a sword in my life, how am I supposed to fight th
 
 Jenna: *shouts* And who said I have?!
 
-Han - narrating: Now I understand why they call 1-satrs disposables.
+Han - narrating: Now I understand why they call 1-stars disposables.
 
 Han: *in his mind* A 2-star Molmont. They're called mercenaries.
 Han: *in his mind* Does that mean the higher your number of stars, the more you're summoned?
@@ -105,7 +106,8 @@ Han: We'll see what happens.
 Han - narrating: You don't die while fighting.
 Han - narrating: At that rate, they'll just disappear.
 
-Han: In the next battle, the two of us are the only ones who are going to fight. The rest od you don't need to worry.
+Han: In the next battle, the two of us are the only ones who are going to fight.
+Han: The rest of you don't need to worry.
 
 NPC1: *shouts* Het, I have something to ask you!
 
@@ -138,7 +140,7 @@ Notification:
 Han - narrating: The other three didn't even come to the training hall.
 Han - narrating: They said they were going to look for the exit to escape, but of course, there was no exit.
 
-Han: Tsk! *get's hit by an arrow by Jenna through an exchange of a sparring match training between the two*
+Han: Tsk! *gets hit by an arrow by Jenna through an exchange of a sparring match training between the two*
 
 Jenna: *preoccupied* A-Are you okay?
 
@@ -161,7 +163,7 @@ Han: Again!
 
 Notification:
 •	Skill awakened!
-•	Hero Han (1 star)'s 'Basic Swordsmanship' and 'Basic Sheild Techniques' are combining to create a new skill.
+•	Hero Han (1 star)'s 'Basic Swordsmanship' and 'Basic Shield Techniques' are combining to create a new skill.
 
 Notification: Han (1 star)'s 'Basic Sword-Shield Techniques (level 3)' have been acquired!
 
@@ -171,8 +173,8 @@ Notification: Han (1 star)'s 'Basic Sword-Shield Techniques (level 3)' have been
 
 Notification: Welcome to Pick me up!
 
-Iselle: *shouts, authorative* If the master appears, tell them to come to the square!
-Iselle: *shouts, authorative* Do you want to get into trouble?
+Iselle: *shouts, authoritative* If the master appears, tell them to come to the square!
+Iselle: *shouts, authoritative* Do you want to get into trouble?
 
 Jenna: That's good. I was itching to do something after all that training.
 
@@ -202,7 +204,7 @@ NPC1,2, Aaron: Y-Yes.
 Notification:
 •	Floor 3
 •	Mission Category – Subjugation
-•	Goal – Annihiliate all the enemies!
+•	Goal – Annihilate all the enemies!
 
 Han: My weapons and combat techniques have gotten better.
 Han: There's nothing to it.
@@ -213,7 +215,7 @@ Han - narrating: Just as I thought, the third floor was nothing.
 
 Notification:
 •	Stage clear!
-•	Jennea (1 star) has levelled up!
+•	Jenna (1 star) has levelled up!
 •	MVP – Jenna (1 star)
 
 Notification:
@@ -311,4 +313,4 @@ Notification: Heroes who are sacrificed will die.
 
 Han: *in his mind* Those idiots who don't know when they're given opportunities.
 
-Within the base it contains a systhesis chamber, armory, dorms, training hall, flying dock, holding facility where the summon hall is, within the sware the crack of space and time is placed.
+Within the base it contains a synthesis chamber, armory, dorms, training hall, flying dock, holding facility where the summon hall is, within the square the crack of space and time is placed.

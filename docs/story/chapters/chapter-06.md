@@ -41,14 +41,14 @@ Han: Is that so? Never heard of it before.
 
 Iselle: *realising her mistake* Wait, Have I been saying all these cocky things to the real Loki all along? Damn it…
 
-Han: I'm just a 1-satr right now. Who cares about being cocky?
+Han: I'm just a 1-star right now. Who cares about being cocky?
 
 Iselle: *shouts* Wait, wait, wait!
-Iselle: *shouts* What will happen to Nilflheimr without you?
+Iselle: *shouts* What will happen to Niflheimr without you?
 
 Han: No clue.
 
-Han - narrating: Niflheirm is the name of the lounge in my account.
+Han - narrating: Niflheimr is the name of the lounge in my account.
 Han - narrating: 13 floors in just the lounge alone.
 Han - narrating: A capacity of 20000.
 Han - narrating: Most of the buildings are level 18-22 infrastructure, so it's end game, but…
@@ -78,7 +78,7 @@ Han: *in his mind* Since the heroes are just products of entertainment, they fac
 
 Han: Anyway, if I reach the 100th stage, can I return to Earth?
 
-Iselle: I… don't known.
+Iselle: I… don't know.
 
 Han: You don't know?
 
@@ -112,7 +112,7 @@ Han - narrating: Mobius summon.
 Han - narrating: A system that summons an infinite number of heroes with thousands of patterns was a lie.
 
 Han - narrating: Quantum A.I.
-Han - narrating: The Heroes who were thought to be AI were real humans.
+Han - narrating: The heroes who were thought to be AI were real humans.
 
 Han: Roguelike.
 Han - narrating: A system thought to have infinite content had 1 million separate worlds.
@@ -124,7 +124,8 @@ Han: Iselle.
 
 Iselle: Yes?
 
-Han: If you want to climb the tower, listen to me. I'll help you climb it.
+Han: If you want to climb the tower, listen to me.
+Han: I'll help you climb it.
 
 ---
 
@@ -132,12 +133,12 @@ Han: If you want to climb the tower, listen to me. I'll help you climb it.
 
 Han - narrating: Jenna is a genius.
 Han - narrating: She has grown at an unthinkable speed that can't be considered 1-star.
-Han - narrating: She has never held a dagger before, but she figured out the principles
+Han - narrating: She has never held a dagger before, but she figured out the principles.
 
 Han - narrating: On the other hand, Aaron is sluggish.
 Han - narrating: He could end up dying if this keeps up.
 
-Jenna: I went easy on Aaron Oppa, be he wasn't much.
+Jenna: I went easy on Aaron Oppa, but he wasn't much.
 
 Han: *bruh* Don't get cocky and follow me.
 
@@ -182,7 +183,7 @@ Han - narrating: From the conversation with Iselle,
 Han - narrating: I found out that I was half-master, half-hero.
 
 Han: *in his mind* Then, is it possible…
-Han: *in his mind* To got into areas only masters can?
+Han: *in his mind* To get into areas only masters can?
 
 Iselle: What are you making, Loki? Levatain? Or Brunac?
 

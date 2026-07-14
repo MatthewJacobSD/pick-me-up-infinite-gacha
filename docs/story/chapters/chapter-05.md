@@ -87,7 +87,7 @@ Han: Why do you look so gloomy? Didn't you complain about cleaning up after them
 
 Jenna: *scared* Would I end up like them if I become useless one day?
 
-Han: The higher the floor, the stringer the monsters and summoned humans will be. You'll either die to our foes, or end up as a sacrifice.
+Han: The higher the floor, the stronger the monsters and summoned humans will be. You'll either die to our foes, or end up as a sacrifice.
 
 Jenna: I see. You knew it all, huh?
 
@@ -132,9 +132,9 @@ Han: That's because I'm determined to fight to survive.
 
 Han: That's a spear.
 Han: I'm not an expert but I heard it's one of the easiest weapons to learn.
-Han: Try suing that. Do you know the concept of melee, mid, and long?
+Han: Try using that. Do you know the concept of melee, mid, and long?
 
-Jenna: Aha! Melee-ranged, sword! Middle-ranged, Spear! Long-ranged, Bow! That males up melee, mid and long, huh?
+Jenna: Aha! Melee-ranged, sword! Middle-ranged, Spear! Long-ranged, Bow! That makes up melee, mid and long, huh?
 
 Han: For three people with nothing, this is one of the most effective combinations.
 
@@ -151,10 +151,10 @@ Aaron: *startled, surprised, confused, agitated, not ready* Weren't you going to
 Han: How can I teach you when I've never held a spear before?!
 Han: I learned this by myself! You can do the same!
 
-Han: you should at least be grateful you got someone to practice with!
+Han: You should at least be grateful you got someone to practice with!
 Han: All I had was a scarecrow!
 
-Aaron: *screams with closed eyes, and tries to attcak* Ahhhhhhh!!!
+Aaron: *screams with closed eyes, and tries to attack* Ahhhhhhh!!!
 
 Han: Closing your eyes in the middle of a fight? *kicks Aaron in the gut*
 Han: Is this all you can do even though this isn't a fight with your life on the line?
@@ -166,14 +166,14 @@ Han: I don't intend to carry burdens along. I'll throw away anyone who can't cat
 
 Han: Hey, do you have family?
 
-Aaron: *still trembling from the pain* I-I have a younder sister… waiting for me.
+Aaron: *still trembling from the pain* I-I have a younger sister… waiting for me.
 
 Han: You're better off than me. I have no one.
-Han: What would happened if you don't go back?
-Han: If you get get killed by monsters, it'd hurt like hell. You're better off getting synthesized instead.
+Han: What would happen if you don't go back?
+Han: If you get killed by monsters, it'd hurt like hell. You're better off getting synthesized instead.
 Han: Don't start anything if you can't finish it.
 
-Han: *smiles* the look in your eyes is better now.
+Han: *smiles* The look in your eyes is better now.
 
 ---
 
@@ -183,7 +183,7 @@ Notification: You've selected weapon storage (level1)'s annex building, blacksmi
 Notification: 500 gems have been consumed on construction.
 
 Han: We're able to move freely now.
-Han: And the fact that the blacksmith is available not…
+Han: And the fact that the blacksmith is available now…
 
 Han: Iselle, come out if you're there.
 
@@ -193,9 +193,10 @@ Han: I'm sick of that response. Say something else.
 
 Iselle: *fuming* ARGhhhhhh!
 
-Han: You were the one that sent tips to Anytng, right? Can you use the internet? If you can interfere with the system then you can use the internet as well, right?
+Han: You were the one that sent tips to Anytng, right?
+Han: Can you use the internet? If you can interfere with the system then you can use the internet as well, right?
 
-Iselle: I can. Wen surfing is my hobby after all.
+Iselle: I can. Web surfing is my hobby after all.
 
 Han: The tips you sent were probably from the strategy forum. Put 1 level into the training center after summoning 10 weapons. The next is to unlock the blacksmith.
 
@@ -232,7 +233,7 @@ Han: Am Loki.
 ### Facilities Upgrade
 
 Facility level 1
-•	The basic facility only contains necessary equipement
+•	The basic facility only contains necessary equipment
 
 Facility level 2
 •	Additional facilities are added and other buildings can be extended.

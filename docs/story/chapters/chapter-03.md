@@ -6,13 +6,13 @@ Han - narrating: I decided to accept it.
 Han - narrating: Whining is for children. I won't complain anymore.
 Han - narrating: This is the world of pick me up,
 Han - narrating: and I was summoned as a 1 star hero from birth.
-Han - narrating: there are two ways for a hero to die.
-Han - narrating: In a battle or by being compounded. I'm only a 1-star.
+Han - narrating: There are two ways for a hero to die.
+Han - narrating: In a battle or by being synthesized. I'm only a 1-star.
 
 Han: *in his mind* It's meaningless to be a 1-star hero in pick me up.
-Han: *in his mind* 1-star are disposable, and the lowest quality ones too.
+Han: *in his mind* 1-stars are disposable, and the lowest quality ones too.
 Han: *in his mind* Our basic stats are pathetic, and our growth rate is low, too.
-Han: *in his mind* At this rate, I won't be able to escape the danger of being compounded.
+Han: *in his mind* At this rate, I won't be able to escape the danger of being synthesized.
 
 Notification:
 •	Islat Han (1 star) level 5 (exp 44/50)
@@ -20,12 +20,12 @@ Notification:
 •	Strength: 15/15 dexterity: 15/15
 •	Unique skills: none
 
-Han: *in his mind, resolve, determination* I have to become stronger
+Han: *in his mind, resolve, determination* I have to become stronger.
 Han: *in his mind, resolve, determination* I have to survive, take revenge, and return.
 Han: *in his mind, resolve, determination* Those things are impossible if I don't get stronger.
 
 Han - narrating: I don't know how things will progress from now on.
-Han - narrating: I'll die if I didn't adjust.
+Han - narrating: I'll die if I don't adjust.
 Han - narrating: I will be eaten if I don't accept things as they are.
 
 Han: *in his mind* This reminds me of when I was in the military, dammit!
@@ -41,7 +41,7 @@ Han: *in his mind* I need the tension from back then.
 
 ### Jenna's Resolve
 
-Jenna: What are you doin?
+Jenna: What are you doing?
 
 Han: !
 Han: I'm training to kill monsters. Why?
@@ -122,7 +122,7 @@ Han: It says 257 right there.
 
 Iselle: You can see this?
 Iselle: Is it because something got mixed up?
-Iselle: He sure did some real irritating thin-oh my!
+Iselle: He sure did some real irritating thing-oh my!
 Iselle: What am I saying?!
 
 Han: *in his mind* Her reaction has made me certain.
@@ -133,7 +133,7 @@ Han: Iselle, what happens if master quits?
 Iselle: Master? Just pray that he doesn't.
 
 Han: *in his mind* Compounding me and Shay wasn't a regular mistake.
-Han: *in his mind* He compounded a 4-star with a 1-star.
+Han: *in his mind* He synthesized a 4-star with a 1-star.
 Han: *in his mind* There's a 1% chance of getting a 4-star with a paid summoning.
 Han: *in his mind* He wasted that luck on this mistake.
 
@@ -179,7 +179,7 @@ Jenna: Will it just be the two of us?
 Han: Master can summon other guys.
 Han: Other people will continue to be summoned.
 
-Han - narrating: My life hand on the choices I make from now on.
+Han - narrating: My life hangs on the choices I make from now on.
 Han - narrating: Although ultimately, our lives are in hands of master.
 
 ---
@@ -190,13 +190,13 @@ Han - narrating: After completing a day of training
 Han - narrating: I discovered an interesting rule of this world.
 
 Han - narrating: Daily necessities and food are refilled the next day,
-Han - narrating: and if you image something you would like to have, it appears in a drawer or in the closet.
+Han - narrating: and if you imagine something you would like to have, it appears in a drawer or in the closet.
 Han - narrating: Of course, guns and similar things don't work.
 
-Han - narrating: the result of training are also different.
+Han - narrating: The result of training are also different.
 Han - narrating: I can now understand some thing that I didn't know while playing pick me up.
 Han - narrating: There are occasionally heroes that have different combat power than others despite being the same rank.
-Han - narrating: They have one thing in common: They're not lay with their training.
+Han - narrating: They have one thing in common: They don't slack with their training.
 Han - narrating: Training doesn't increase stats or level.
 Han - narrating: But it refines skill learning and skills in general.
 
@@ -224,13 +224,13 @@ Notification: Welcome to pick me up!
 Han - narrating: Master logged in.
 
 Notification:
-•	Islan Hat (1 star) level 5 (exp/44/50)
+•	Islat Han (1 star) level 5 (exp 44/50)
 •	Class: novice
 •	Strength: 15/15 Intelligence: 15/15
 •	Stamina: 15/15 Dexterity 15/15
 •	Unique skills: Low-rank swordsmanship (level 1), low-rank shield techniques (level1)
 
-Han: *in his mind* I got two from skills from training.
+Han: *in his mind* I got two new skills from training.
 Han: *in his mind* I did all that I could.
 
 Han: Get ready. Master's here.
@@ -264,7 +264,7 @@ Iselle: *acts cool and mysterious* open, crack of space and timeee!!!!
 Notification:
 •	Aaron (1 star) has joined party 1!
 •	Toby (1 star) has joined party1!
-•	Yelsons (1 star) has joined party 1!
+•	Yelson (1 star) has joined party 1!
 
 Han: Jenna, get your weapon before it's too late
 
@@ -299,7 +299,7 @@ NPC2: *shouts* I'm just a poor farmer. I don't have any money. You've got the wr
 
 Iselle: *pissed* Get out of here!
 
-Jenna: Will those people ide?
+Jenna: Will those people die?
 
 Han: We just need to not bother Iselle.
 
@@ -326,7 +326,7 @@ Jenna: *shouts* Y-Yeah!
 Notification:
 •	Aaron (1 star) is in a state of fear. Stats are decreased by 30%.
 •	Toby (1 star) is in a state of fear. Stats are decreased by 30%.
-•	Yelsons (1 star) is in a state of fear. Stats are decreased by 30%.
+•	Yelson (1 star) is in a state of fear. Stats are decreased by 30%.
 
 NPC2, NPC1, Aaron: *scared* Wh-Wh-What is this?!
 
@@ -344,7 +344,7 @@ Han: I'll take care of the wolves.
 
 Notification: Jenna (1 star) is no longer in a state of fear.
 
-Han: *in his mind* I guess she was sonly a little sacred.
+Han: *in his mind* I guess she was only a little scared.
 Han: *in his mind* That's good.
 Han: *in his mind* On the other hand, the newbies are no help at all.
 

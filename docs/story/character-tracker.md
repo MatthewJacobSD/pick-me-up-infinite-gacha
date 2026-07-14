@@ -57,9 +57,19 @@
 |---|---|
 | NPC6 | Present in Party 2, survived through Ch. 1 |
 | NPC11-20 | Various unnamed Townia citizens |
-| Iselle | Pixie/Fairy manager. Aggressive, smug. Recognizes "Islat Han" but Han Seojin looks different. |
-| Anytng | The "Master" (player account). Reckless — sacrificed 4★ Shay to enhance 1★ Han. |
 | Dolf (NPC2) | Claimed to be a cook but has no cooking skill. Lied. Was replaced by Chloe. Survived. |
+
+---
+
+## Niflheimr's Elite 5 (6★ Lv.99)
+
+| Name | Role | Notes |
+|---|---|---|
+| **Nihaku Gasteel** | Combat | One of the elite 5 |
+| **Muden Nighdelk** | Combat | One of the elite 5 |
+| **Lidigyon** | Combat | One of the elite 5 |
+| **Sirris Argenth** | Vice Master | Dispatched to find Han (Ch. 7) |
+| **Yurneth Syd** | Investigator | Investigating master's whereabouts (Ch. 7) |
 
 ---
 
@@ -70,4 +80,5 @@
 | **Alive** | 8 (Islat Han, Jenna Cirai, Aaron, Enok, Chloe, Gide, Hansen, Dika) |
 | **Deceased (Combat)** | 14 |
 | **Deceased (Synthesis)** | 3 (Shay, Toby, Yelson) |
-| **Total Introduced** | 25 |
+| **Niflheimr Elite** | 5 (Nihaku, Muden, Lidigyon, Sirris, Yurneth) |
+| **Total Introduced** | 30 |

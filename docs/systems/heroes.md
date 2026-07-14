@@ -11,6 +11,7 @@
 | Regular Summon | Gold | Unlimited |
 | Advanced Summon | Gems | Limited |
 | Free 10-Pull | Free | Every few days |
+| Equipment 10-Pull | 50,000 Gold | Unlimited |
 
 ---
 
@@ -24,6 +25,16 @@
 | 4★ | Epic | Strong (Shay was 4★) |
 | 5★ | Legendary | Very rare |
 | 6★ | Mythic | Niflheimr's elite (Lv.99) |
+| 7★ | Divine | Requires "Book of Reserval" to create |
+
+---
+
+## Hero Naming
+
+| Rule | Details |
+|---|---|
+| Length | 2-6 characters |
+| Restrictions | No spaces or special characters allowed |
 
 ---
 
@@ -32,18 +43,36 @@
 ### Stats
 - **Strength**: Physical damage
 - **Intelligence**: Skill learning, magic
-- **Health**: Survivability
-- **Agility**: Speed, evasion
+- **Health/Stamina**: Survivability
+- **Agility/Dexterity**: Speed, evasion
+
+### Stat Rules
+- ~4 stat points per level-up (random distribution)
+- Intelligence can **decrease** on level-up (uneven allocation)
+- 1★ heroes have pathetic base stats and low growth rate
+- Higher star ranks have better base stats and growth
 
 ### Skills
 - Learn through combat and training
 - Level up with use (Lv.1 → Lv.5+)
-- Some heroes plateau at certain levels
-- **Combat Desire**: Heroes perform better when they want to fight
+- Some heroes plateau at certain levels (hard cap per hero)
+- **Skill Combining**: Two skills that both reach Lv.3 can fuse into a single combined skill
+- **Damage-Based Learning**: Skills can be learned from being hit (e.g., Pain Tolerance)
+- **Star-Rank Difference**: High-ranking heroes start with skills; low-ranking heroes have hidden talents
+
+### Skill Progression Rules
+- Training does NOT increase stats or level — only refines skill learning
+- Skills level at vastly different rates per hero
+- Some heroes cannot progress skills past certain levels despite max training
+- Non-participants get zero experience
 
 ### Class Evolution
 - Novice → Specialized class (based on skills/stats)
 - Class determines role in party
+
+### Combat Desire
+- Heroes perform better when they want to fight
+- "Combat Desire" system boosts performance
 
 ---
 
@@ -68,13 +97,45 @@
 |---|---|
 | Purpose | Merge heroes to strengthen others |
 | Cost | Sacrifice one hero |
-| Benefit | Gains skill/stat boost |
+| Benefit | Grants skill AND stat boost |
 | Risk | Permanent death for sacrificed hero |
 
 ### Synthesis Examples
 - **Toby** → Han gains Composure
 - **Yelson** → Jenna gains Eagle's Eye
 - **Shay (4★)** → Han gains enhanced stats
+
+---
+
+## Intimacy System
+
+| Aspect | Details |
+|---|---|
+| Trigger | Heroes bond through shared combat |
+| Benefit | Stat bonuses when forming party together |
+| Display | "Intimacy bonus has been created" notification |
+
+---
+
+## Fear Mechanic
+
+| Aspect | Details |
+|---|---|
+| Trigger | First encounter with monsters |
+| Effect | ALL stats reduced by 30% |
+| Duration | Temporary — can be overcome mid-battle |
+| Recovery | Willpower/composure can break fear state |
+
+---
+
+## Combat Rules
+
+| Rule | Details |
+|---|---|
+| Automation | Combat is fully automated — no player control |
+| MVP | Awarded to highest contributor after stage clear |
+| Experience | Only participants gain XP — non-participants get zero |
+| Mission Types | Subjugation, Conquest (varies by floor) |
 
 ---
 

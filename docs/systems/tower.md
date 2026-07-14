@@ -22,13 +22,36 @@
 - Goblins, slimes, basic enemies
 - Designed for 1★-3★ heroes
 - Thin resource consumption
+- **Grinding**: Earlier floors can be replayed for reduced rewards
+- **Reward Scaling**: First clear gives more gold/materials than replays
 
 ### Boss Floors (5, 10, 15, etc.)
-- **Major difficulty spike**
-- Requires fully trained team
+- **Major difficulty spike** — "completely different level"
+- Requires fully trained team and deliberate composition
 - Unique boss mechanics
 - Higher star-rank heroes required
 - Even Han isn't 100% sure he'll survive
+- Master pauses before boss floors to prepare
+
+---
+
+## Time Flow
+
+| Aspect | Details |
+|---|---|
+| Time Dilation | 3x faster inside the game than real world |
+| Master Login | Roughly once every ~3 real-world days |
+| Session Length | One floor per login session (in-game day) |
+| Master Schedule | Regular login pattern (probably office worker) |
+
+---
+
+## Communication
+
+| Aspect | Details |
+|---|---|
+| Hero → Master | Filtered — heroes cannot communicate directly |
+| Master → Hero | Through Iselle and notification system |
 
 ---
 

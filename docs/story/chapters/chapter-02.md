@@ -58,12 +58,12 @@ Entity notification: *bugged* you lose.
 Han: An obvious system error.
 
 Notification:
-•	Diora (6 stars) has returned to the goodness' arms. Her grit will be remembered forever.
-•	Nicolas (6 stars) has returned to the goodness' arms. Her grit will be remembered forever.
-•	Kent (6 stars) has returned to the goodness' arms. Her grit will be remembered forever.
+•	Diora (6 stars) has returned to the goddess' arms. Her grit will be remembered forever.
+•	Nicolas (6 stars) has returned to the goddess' arms. Her grit will be remembered forever.
+•	Kent (6 stars) has returned to the goddess' arms. Her grit will be remembered forever.
 
 Han: They died before I even saw the patterns of the boss.
-Han: I git nothing out of it.
+Han: I got nothing out of it.
 
 Entity: *evil smile* Found you
 
@@ -180,8 +180,8 @@ Notification:
 
 Han: H-Han Seojin
 
-Shay: I am Shat Lathasterie. A knight.
-Shay: Han Seojin, What a weid name.
+Shay: I am Shay Lathasterie. A knight.
+Shay: Han Seojin, what a weird name.
 
 Han: No, It's Han Seojin…
 
@@ -246,33 +246,33 @@ Han: *duh, bruh, in his mind* I know because I was a pick me up user…
 
 Han: Me? I'm Han Seojin.
 
-Islette: Han Seojin, No way. Not Islat Han?
-Islette: Wh-what? Why are you different from the picture?
+Iselle: Han Seojin, no way. Not Islat Han?
+Iselle: Wh-what? Why are you different from the picture?
 Iselle: You don't look like the townia hime Islat Han?
 
 Han: I'm Han Seojin from Seoul Gangseo-Gu.
 Han: Send me back while I'm still being nice.
 
-Islette: *curious and surprised* Are you from earth?
+Iselle: *curious and surprised* Are you from earth?
 
 Han: Of course I am, Or should I be from Mars?
 
-Islette: …… .
-Islette: *panicks* Ack!!!
+Iselle: …… .
+Iselle: *panics* Ack!!!
 Iselle: What the hell happened? I'm gonna go crazy!
-Islette: Just go in first!
+Iselle: Just go in first!
 
 Han: No! If I go in I'll die!!
 
-Islette: Yu won't you'll get synthesized!
+Iselle: If you don't, you'll get synthesized!
 
 Han: That's the same thing!
 
-Islette: Anyways, Go in!
+Iselle: Anyways, go in!
 
 Shay: So loud.
 
-Han: *deafeted* …… .
+Han: *defeated* …… .
 
 Notification: Master, the synthesis is starting.
 
@@ -331,15 +331,15 @@ Han: *in his mind* either he made a mistake in dragging
 Han: *in his mind* or he's playing without thinking things through!
 
 Han: *In his mind* I was lucky and Shay died because the master was stupid.
-Han: *in his mind* That is why is a shit game!
+Han: *in his mind* That is why it is a shit game!
 
 Han: *shouts* And the other two?!
 
 Jenna: *shouts* I got one of them! But the others…!
 
-Han: Let's think about that later, so come her-
+Han: Let's think about that later, so come here-
 
-Gobling: KYACK!!
+Goblin: KYACK!!
 
 ---
 
@@ -359,7 +359,7 @@ Han: *in his mind* That thing dragged me here!
 
 Han - narrating: You messed with the wrong person.
 
-Jenna: Oppa, Your arm…
+Jenna: Oppa, your arm…
 
 Han: I'll be fine once we go back.
 
@@ -402,4 +402,4 @@ MVP – Han (1 star)
 •	Greet (Gritte) died in combat
 •	Dajeel (1 star) died in combat
 •	Cale ( 1 star) died in combat
-•	Islan Han (1 star) Jenna Ciran (1 star)
+•	Islat Han (1 star) Jenna Cirai (1 star)

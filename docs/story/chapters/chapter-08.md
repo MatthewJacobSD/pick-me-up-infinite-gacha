@@ -7,7 +7,7 @@ Iselle: Are there any carpenters amongst you? If there are, come to the side.
 
 Jenna: What are they doing?
 
-Han: Diving the roles,
+Han: Dividing the roles,
 Han: since there are many facilities now.
 Han: If the previous guys who died are summoned now, I'm sure they can do non-combat jobs.
 Han: The system of the lounge will change now.
@@ -23,7 +23,7 @@ Notification:
 And if you don't have to use your body.
 As for useless people, it would be a waste to feed them with even cold rice or potatoes.
 Master will start to separate the useful ones.
-He will thin out the fresh 1-stars by sending them into the dungeon/
+He will thin out the fresh 1-stars by sending them into the dungeon.
 
 Iselle: Hurry up and get in there!
 
@@ -84,7 +84,7 @@ Han: The sky is bright.
 Han: It's looking at us,
 Han: Like how a god looks down upon the world.
 
-Jenna: *gets sturtled, want to eat her own words back*
+Jenna: *gets startled, wants to eat her own words back*
 
 Han: Don't worry. The god isn't that free to listen every single person's voice.
 
@@ -105,9 +105,9 @@ Jenna: Are we finally escaping potatoes?
 Jenna: Ooh~!
 Jenna: The building definitely got better. Since there is a dining room now, can we eat expensive food?
 
-Han: As long the master doesn't consider us useless.
+Han: As long as the master doesn't consider us useless.
 
-Jenna: *shout in excitement* It's like we got the highest grade of lamb steak!
+Jenna: *shouts in excitement* It's like we got the highest grade of lamb steak!
 
 Aaron: Hyung-nim, I'm okay with turkey!
 
@@ -226,7 +226,7 @@ Han: You guys will see soon.
 ### New Thinning
 
 Han - narrating: A few days later, the free 10 pull happened again.
-Han - narrating: This time, without me even have to act, Aaron and the other three handled it.
+Han - narrating: This time, without me even having to act, Aaron and the other three handled it.
 Han - narrating: Only one person died in the "thinning" process.
 
 Jenna: More people are coming

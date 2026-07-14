@@ -8,10 +8,20 @@
 
 | Resource | Source | Usage |
 |---|---|---|
-| **Gold** | Stage clears, quests | Regular summoning, upgrades |
+| **Gold** | Stage clears, quests | Regular summoning, upgrades, equipment summoning |
 | **Gems** | Rare drops, real money | Advanced summoning, premium items |
 | **Food** | Restaurant, foraging | Hero sustenance |
 | **Materials** | Monster drops, crafting | Equipment, facility upgrades |
+
+---
+
+## Item Manifestation
+
+| Rule | Details |
+|---|---|
+| Daily Items | Refilled the next day |
+| Imagined Items | Heroes can manifest items by thinking (appear in drawer/closet) |
+| Excluded Items | Guns, weapons, and similar things cannot be manifested |
 
 ---
 
@@ -28,6 +38,24 @@
 
 ## Crafting System
 
+### Crafting Rules
+- Exclusive weapons stay with heroes
+- Regular weapons can be taken away
+- Higher rank = better stats
+- Materials required from monster drops
+- **Exclusive Weapon Feature**: Prevents other heroes from stealing equipped weapons
+
+### Crafting Minigame
+- Master can choose manual crafting (puzzle minigame)
+- Difficulty tiers: Easy → Extreme Hell (highest, triple penalty)
+- 3-minute time limit
+- Higher difficulty = better rewards
+
+### Crafting Penalties (Stack Independently)
+1. Missing facility → penalty
+2. Missing expert → penalty
+3. Missing blueprint → penalty
+
 ### Weapons Crafted (Ch. 7)
 | Weapon | Rank | Stats |
 |---|---|---|
@@ -35,23 +63,22 @@
 | Long Spear | C- | Normal |
 | Iron Shield | C | Normal |
 
-### Crafting Rules
-- Exclusive weapons stay with heroes
-- Regular weapons can be taken away
-- Higher rank = better stats
-- Materials required from monster drops
-
 ---
 
 ## Facility Upgrades
 
 | Facility | Level | Function |
 |---|---|---|
-| Lodging | Lv.2 | Hero capacity |
-| Restaurant | Lv.1 | Food quality |
-| Training Center | Lv.2 | Skill learning |
-| Equipment Workshop | Lv.1 | Crafting |
-| Square | Lv.2 | Social hub |
+| Synthesis Chamber | Lv.1 | Hero synthesis (permanent death) |
+| Armory / Weapon Storage | Lv.1 | Store and equip weapons |
+| Blacksmith's Forge | Lv.1 | Annex building for weapon storage. Craft weapons |
+| Lodging / Dorms | Lv.2 | Hero capacity, rest |
+| Restaurant / Dining Room | Lv.1 | Food quality, hero sustenance |
+| Training Center | Lv.2 | Skill learning, combat training |
+| Equipment Workshop | Lv.1 | Combined from smithy, woodworking shop, metal processing shop |
+| Square | Lv.2 | Social hub, space-time crack portal |
+| Flying Dock | Lv.1 | Transportation (mentioned but not detailed) |
+| Holding Facility | Lv.1 | Summon hall, where heroes first appear |
 
 ---
 

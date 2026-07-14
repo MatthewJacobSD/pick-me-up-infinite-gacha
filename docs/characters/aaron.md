@@ -57,7 +57,7 @@
 ## Key Moments
 
 1. **Ch. 3**: Summoned, first to volunteer for combat
-2. **Ch. 5**: Added to favourites (Ch. 7)
+2. **Ch. 7**: Added to favourites
 3. **Ch. 7**: Crafted weapons with Han
 4. **Ch. 8**: Spear skill stuck at Lv.2 despite training
 
