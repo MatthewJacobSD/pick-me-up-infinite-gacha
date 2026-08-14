@@ -28,13 +28,12 @@
 | **Ranto** | 1★ | — | Annihilated on Floor 1 (Party 1) | Ch. 1 |
 | **Kelcard** | 1★ | — | Annihilated on Floor 1 (Party 1) | Ch. 1 |
 | **Jaksen** | 1★ | — | Annihilated on Floor 1 (Party 1) | Ch. 1 |
-| **Lyle** | 1★ | — | Annihilated on Floor 1 (Party 1) | Ch. 1 |
+| **Lyle** | 1★ | — | Annihilated on Floor 1 (Party 1). Listed as "Rail (Lyle)" in the Ch. 2 death log. | Ch. 1 |
 | **Marlin** | 1★ | — | Annihilated on Floor 1 (Party 1) | Ch. 1 |
 | **Dajeel** | 1★ | — | Floor 1 combat (Party 2) | Ch. 1 |
 | **Gritte** | 1★ | — | Floor 1 combat (Party 2). Goblin attack. | Ch. 1-2 |
 | **Cale** | 1★ | — | Floor 1 combat (Party 2) | Ch. 1 |
-| **Rail** | — | — | Died in combat | — |
-| **Madelyn** | — | — | Died in combat | — |
+| **Madelyn** | 1★ | — | Died in combat | Ch. 2 |
 | **Toby** | 1★ | — | Synthesis sacrifice (Han gained Composure) | Ch. 5 |
 | **Yelson (Elson)** | 1★ | — | Synthesis sacrifice (Jenna gained Eagle's Eye) | Ch. 5 |
 | **John** | 1★ | — | Died on Floor 1 (Party 2 thinning) | Ch. 8 |
@@ -59,6 +58,8 @@
 | NPC11-20 | Various unnamed Townia citizens |
 | Dolf (NPC2) | Claimed to be a cook but has no cooking skill. Lied. Was replaced by Chloe. Survived. |
 
+> NPC numbering rule: ids start from 1 and reset each chapter; unnamed NPCs share numeric ids, once named they go by name only. See `docs/decisions.md`.
+
 ---
 
 ## Niflheimr's Elite 5 (6★ Lv.99)
@@ -78,7 +79,7 @@
 | Status | Count |
 |---|---|
 | **Alive** | 8 (Islat Han, Jenna Cirai, Aaron, Enok, Chloe, Gide, Hansen, Dika) |
-| **Deceased (Combat)** | 14 |
+| **Deceased (Combat)** | 13 |
 | **Deceased (Synthesis)** | 3 (Shay, Toby, Yelson) |
 | **Niflheimr Elite** | 5 (Nihaku, Muden, Lidigyon, Sirris, Yurneth) |
-| **Total Introduced** | 30 |
+| **Total Introduced** | 29 |

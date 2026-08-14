@@ -33,10 +33,10 @@
 
 | Stat | Value |
 |---|---|
-| Level | 1 (low) |
-| Strength | Low |
+| Level | 7 (as of Ch. 5; leveled up Lv.6→7 after first synthesis) |
+| Strength | Low (physical), compensating with game knowledge |
 | Intelligence | High (player knowledge) |
-| Skills | Basic Sword-Shield Techniques (Lv.3), Composure, Pain Tolerance |
+| Skills | Basic Sword-Shield Techniques (Lv.3, Ch. 4), Pain Tolerance (Ch. 4), Composure (Ch. 5) |
 
 ---
 

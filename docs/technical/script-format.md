@@ -192,7 +192,7 @@ Sound lines
 - `Niflheimr` (not Nilflheim)
 - `ANYTNG` (not Anytng)
 - `Molmont` (not Mormont)
-- `Lyla` (not Lyle - when referring to character)
+- `Lyle` (not Lyla - when referring to character)
 
 ### Name Variations
 - `Han` = short for Islat Han

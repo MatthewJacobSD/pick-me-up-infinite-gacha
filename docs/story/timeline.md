@@ -1,6 +1,8 @@
 # Story Timeline
 
 > Chronological events through Chapter 8.
+>
+> **Note:** The timeline is not 1 chapter = 1 day. Time skips between chapters are normal and expected.
 
 ---
 

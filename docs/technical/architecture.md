@@ -24,7 +24,7 @@ The Unity client will maintain a persistent SignalR (WebSocket) connection to th
 
 ## Database Strategy — The Abstracted Codex
 
-Since the database engine is undecided, we design the Data Access Layer (DAL) using interfaces. This allows us to swap from a local file (for prototyping) to SQL/NoSQL later without rewriting game logic.
+The database stack is confirmed as **MySQL** (account data) + **MongoDB** (gameplay data). We still design the Data Access Layer (DAL) using interfaces, so swapping or extending engines later does not require rewriting game logic.
 
 ### Core Entities (Schema Concepts)
 
