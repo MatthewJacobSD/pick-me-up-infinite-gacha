@@ -1,6 +1,6 @@
 # Story Timeline
 
-> Chronological events through Chapter 8.
+> Chronological events through Chapter 9.
 >
 > **Note:** The timeline is not 1 chapter = 1 day. Time skips between chapters are normal and expected.
 
@@ -68,11 +68,24 @@
 
 ---
 
+## Day 7-8 (approx., after time skip)
+
+| Event | Chapter |
+|---|---|
+| Floor 4 subjugation replay cleared by training party | Ch. 9 |
+| Gide and Hansen level up; MVP – Jenna | Ch. 9 |
+| Second ten pull: blacksmith + tanner summoned; equipment production begins | Ch. 9 |
+| Three inactive heroes synthesized (incl. Dolf) | Ch. 9 |
+| Floor 5 entered — survival mission revealed (~1,846 goblins) | Ch. 9 |
+| Survival goal: stay alive 10 minutes; game timer 30:00 starts on engagement | Ch. 9 |
+
+---
+
 ## Pending Events
 
 | Event | Expected Chapter |
 |---|---|
-| Stage 5 boss fight | Ch. 9+ |
+| Floor 5 survival mission outcome | Ch. 10 |
 | Sirris arrives | Ch. 10+ |
 | Yurneth finds master | Ch. 10+ |
 | Han vs Niflheimr | Ch. 15+ |
@@ -85,4 +98,5 @@
 |---|---|
 | Earth Time | ~30 minutes per chapter |
 | Game Time | Hours to days per chapter |
-| Current Game Time | ~5-6 days since summoning |
+| Current Game Time | ~7-8 days since summoning (after Ch. 9 time skip) |
+| Master Logoff | Time between logins has increased a lot (Ch. 9) |

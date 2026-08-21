@@ -24,6 +24,8 @@
 | Story text source | Chapter 2 manhwa dialogue used for story screens | Source of truth for tutorial flow |
 | Tutorial skip | "No" on tutorial choice skips to main menu | User preference — some players skip tutorials |
 | Auth flow | Mock only — no real OAuth, no passwords, no backend | Prototype requirement |
+| Memory routing | Root `AGENTS.md` auto-loads and points every session to `agents/opencode/OPENCODE.md` | Guarantees memory is read without the user reminding |
+| Interfaces isolation | `interfaces/` is a self-contained UI prototyping experiment, isolated from project structure; kept to preview the game before implementation | User clarification (v0.0.23+) |
 
 ## Historical Decision Log (by version)
 
@@ -35,11 +37,12 @@
 - **v0.0.18–0.0.19:** Script format reference; chapters re-formatted to user's format.
 - **v0.0.20–0.0.21:** Dialogue line formatting; chapter fixes, character files, game mechanics docs (economy/heroes/tower).
 - **v0.0.22:** Added `docs/decisions.md`, recorded confirmed conventions, deduped Lyle/Rail, refreshed Han state.
-- **v0.0.23 (uncommitted):** React UI prototype (22 screens), opencode memory system, frame redesign.
+- **v0.0.23:** React UI prototype (22 screens), opencode memory system, .gitignore for interfaces artifacts (user commit).
+- **v0.0.24:** Chapter 9 (Survival Mission) documented; trackers/timeline/progression/systems updated; root `AGENTS.md` added.
 
 ## Open Questions / Pending
 
-- Chapter 9 content: not yet provided by user; expected when user supplies it (Stage 5 boss fight is the next major event).
+- Chapter 10 content: not yet provided by user; Floor 5 survival mission outcome pending.
 - Task statuses (backend/frontend/design) remain Pending — code development has not been announced.
 - `docs/licenses/` directory exists but is empty (placeholder).
 - Whether the prototype should be wired to real backend APIs or remain mock-only.

@@ -1,7 +1,7 @@
 # Character Tracker — Pick Me Up, Infinite Gacha
 
 > Tracks all characters introduced, their status, and fate.
-> Updated through Chapter 8.
+> Updated through Chapter 9.
 
 ---
 
@@ -36,6 +36,7 @@
 | **Madelyn** | 1★ | — | Died in combat | Ch. 2 |
 | **Toby** | 1★ | — | Synthesis sacrifice (Han gained Composure) | Ch. 5 |
 | **Yelson (Elson)** | 1★ | — | Synthesis sacrifice (Jenna gained Eagle's Eye) | Ch. 5 |
+| **Dolf (NPC2)** | 1★ | — | Synthesis sacrifice — inactive, never trained, planned to flee; had lied about cook title | Ch. 9 |
 | **John** | 1★ | — | Died on Floor 1 (Party 2 thinning) | Ch. 8 |
 | **Teddy** | 1★ | — | Died on Floor 1 (Party 2 thinning) | Ch. 8 |
 | 1 unnamed hero | 1★ | — | Died in thinning process | Ch. 8 |
@@ -56,7 +57,8 @@
 |---|---|
 | NPC6 | Present in Party 2, survived through Ch. 1 |
 | NPC11-20 | Various unnamed Townia citizens |
-| Dolf (NPC2) | Claimed to be a cook but has no cooking skill. Lied. Was replaced by Chloe. Survived. |
+| Unnamed blacksmith | Summoned in second ten pull (Ch. 9). Produces equipment with the tanner and carpenter (Enok). |
+| Unnamed tanner | Summoned in second ten pull (Ch. 9). Produces equipment with the blacksmith and carpenter (Enok). |
 
 > NPC numbering rule: ids start from 1 and reset each chapter; unnamed NPCs share numeric ids, once named they go by name only. See `docs/decisions.md`.
 
@@ -80,6 +82,6 @@
 |---|---|
 | **Alive** | 8 (Islat Han, Jenna Cirai, Aaron, Enok, Chloe, Gide, Hansen, Dika) |
 | **Deceased (Combat)** | 13 |
-| **Deceased (Synthesis)** | 3 (Shay, Toby, Yelson) |
+| **Deceased (Synthesis)** | 4 (Shay, Toby, Yelson, Dolf) |
 | **Niflheimr Elite** | 5 (Nihaku, Muden, Lidigyon, Sirris, Yurneth) |
-| **Total Introduced** | 29 |
+| **Total Introduced** | 30 |

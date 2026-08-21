@@ -13,6 +13,9 @@
 | **Food** | Restaurant, foraging | Hero sustenance |
 | **Materials** | Monster drops, crafting | Equipment, facility upgrades |
 
+### Stage Reward Example (Floor 4 clear, Ch. 9)
+2,000G, Iron Ore (C) x2, Leather (C) x1
+
 ---
 
 ## Item Manifestation
@@ -62,6 +65,12 @@
 | Shortbow | C | Normal |
 | Long Spear | C- | Normal |
 | Iron Shield | C | Normal |
+
+### Mass Production (Ch. 9)
+- Second ten pull summoned a **blacksmith** and a **tanner**
+- Blacksmith + tanner collaborate with the carpenter (Enok) to produce equipment
+- Output: mostly **E-rank swords and shields** for new heroes — increased their survivability exponentially
+- Main party receives **higher quality** equipment
 
 ---
 

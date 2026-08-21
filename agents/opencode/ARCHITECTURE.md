@@ -8,23 +8,22 @@
 
 ```
 /  (root)
+├── AGENTS.md                auto-loaded by OpenCode at session start; routes to agents/opencode/
 ├── CONTRIBUTING.md          versioning + branching + folder conventions
-├── .gitignore
+├── .gitignore               covers Unity/Unreal/Node artifacts
 ├── docs/                    engine-agnostic general knowledge
 │   ├── game-overview.md     game facts, core features
 │   ├── roadmap.md           build stages 1-4
 │   ├── decisions.md         standing decisions & conventions (authoritative)
 │   ├── quantum-ai-player.md + dev-notes/quantum-ai-dev-note.md
 │   ├── trello-board.md      board design, labels, sprint 1
-│   ├── story/               chapters 1-8, character-tracker, timeline, player-progression
+│   ├── story/               chapters 1-9, character-tracker, timeline, player-progression
 │   ├── characters/          han, jenna, aaron, iselle, anytng, shay, niflheimr-elite
 │   ├── psychology/          emotional_rules, han_behaviour
 │   ├── systems/             tower, heroes, economy
 │   ├── technical/           architecture, server-modules, script-format, glossary, folder-structure
 │   └── tasks/               backend, frontend, design (9 Discord tasks, all Pending)
-├── v1/                      Unity C# specifics (README, docs/tasks, docs/technical-reference)
-├── v2/                      Unreal C++ specifics (README, docs/tasks, docs/technical-reference)
-├── interfaces/              React+Vite+TypeScript UI prototype (NEW)
+├── interfaces/              React+Vite+TypeScript UI prototype (self-contained experiment)
 │   ├── src/
 │   │   ├── App.tsx          main flow router (22 screens)
 │   │   ├── types.ts         ScreenId, DeviceType, AuthState, etc.
@@ -34,6 +33,8 @@
 │   │   ├── data/            storyScreens.ts (Chapter 2 text)
 │   │   └── styles/          global.css (CSS vars, animations, responsive)
 │   └── package.json         React 19, Vite 6, TypeScript 5
+├── v1/                      Unity C# specifics (README, docs/) + empty engine scaffolding (Assets/, Packages/, ProjectSettings/)
+├── v2/                      Unreal C++ specifics (README, docs/) + empty engine scaffolding (Config/, Content/, Plugins/, Source/)
 └── agents/opencode/         THIS memory system
 ```
 

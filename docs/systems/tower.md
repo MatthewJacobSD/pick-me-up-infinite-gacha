@@ -9,9 +9,18 @@
 | Aspect | Details |
 |---|---|
 | Total Floors | 100 |
-| Current Progress | Floor 4 cleared |
+| Current Progress | Floor 5 in progress (survival mission, Ch. 9) |
 | Boss Floors | Every 5 stages (5, 10, 15, etc.) |
 | Difficulty Scaling | Exponential after boss floors |
+
+---
+
+## Mission Categories
+
+| Category | Goal | Seen On |
+|---|---|---|
+| Subjugation | Annihilate all the enemies | Floors 1-4 (Ch. 9 replay) |
+| Survival | Survive the horde for a set time | Floor 5 (Ch. 9) |
 
 ---
 
@@ -33,6 +42,19 @@
 - Even Han isn't 100% sure he'll survive
 - Master pauses before boss floors to prepare
 
+### Survival Missions (Floor 5, Ch. 9)
+- Goal: stay alive for a set time (Floor 5: **10 minutes**), not annihilate enemies
+- Historical party survival rate on survival missions: **9%**
+- Enemy hordes can number **1,000+** (Floor 5: ~1,846 goblins, Level ?)
+- Buildings cannot be entered ("You can not enter this area" pop-up)
+- Game timer: 30:00 shown at start; aligned with real time; countdown starts when enemies engage
+- Environment: empty city (no civilians, dried blood stains) — a change from earlier floors
+- Tactics used by Han:
+  - Funnel enemies into narrow alley passageways so they can only come one at a time
+  - Split passageways between fighters; fight in turns to catch breath
+  - Archer on standby at the intersection, shooting only on command
+  - Corpse-wall barricades when there is no time to build proper ones
+
 ---
 
 ## Time Flow
@@ -40,9 +62,10 @@
 | Aspect | Details |
 |---|---|
 | Time Dilation | 3x faster inside the game than real world |
-| Master Login | Roughly once every ~3 real-world days |
+| Master Login | Roughly once every ~3 real-world days; logoff time has increased a lot (Ch. 9) |
 | Session Length | One floor per login session (in-game day) |
 | Master Schedule | Regular login pattern (probably office worker) |
+| Mission Timer | Survival missions show a 30:00 game-time clock, aligned with real time (Ch. 9) |
 
 ---
 
@@ -58,8 +81,8 @@
 ## Difficulty Progression
 
 ```
-Floor 1-4: Tutorial zone (easy)
-Floor 5:   Boss spike (medium)
+Floor 1-4: Tutorial zone (easy, subjugation)
+Floor 5:   Survival mission spike (medium) — horde defence
 Floor 6-9: Gradual increase
 Floor 10:  Major boss spike (hard)
 Floor 15+: Endgame territory

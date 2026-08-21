@@ -85,3 +85,8 @@
 - Keep responses concise.
 - Never commit secrets.
 - Only commit when explicitly asked.
+
+## 10. Memory System
+
+- Root `AGENTS.md` is auto-loaded at session start and routes to `agents/opencode/OPENCODE.md` — keep that pointer valid.
+- After substantial changes, update the relevant memory file here so it reflects reality (see `OPENCODE.md` maintenance policy).

@@ -58,6 +58,18 @@
 - Han confirms he is "high-level" relative to new recruits.
 - Stage 4 cleared; Stage 5 boss looming.
 
+### Chapter 9
+
+- Floor 4 subjugation replay cleared by the training party (Han deliberately did not fight, so Gide/Hansen practised formation fighting).
+- Gide and Hansen levelled up; MVP – Jenna.
+- Floor 4 reward: 2,000G, Iron Ore (C) x2, Leather (C) x1.
+- Master's logoff time increased a lot.
+- Second ten pull: gained a **blacksmith** and a **tanner**; equipment production began (blacksmith + tanner + carpenter collaborating).
+- Production: mostly E-rank swords and shields for new heroes (survivability up exponentially); higher quality for the main party.
+- Three inactive heroes synthesized (incl. Dolf, who had lied about his title).
+- Entered Floor 5: **survival mission** — ~1,846 goblins, survive 10 minutes; historical party survival rate 9%.
+- Party 1: Jenna, Islat Han, Aaron, Gide, Hansen.
+
 ---
 
 ## Tracking Notes

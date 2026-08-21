@@ -60,6 +60,7 @@
 4. **Ch. 6**: Revealed he knows Niflheimr's secrets
 5. **Ch. 7**: Crafted weapons, prepared for Stage 5 boss
 6. **Ch. 8**: Assigned non-combat roles, thinned weak heroes
+7. **Ch. 9**: Stayed out of the Floor 4 fight so trainees practised formations; led Party 1 into the Floor 5 survival mission (funnel defence in an alley, corpse-wall barricades)
 
 ---
 
@@ -79,5 +80,6 @@
 | Denial | ✅ Overcome (Ch. 1-2) |
 | Acceptance | ✅ Accepted fate (Ch. 3) |
 | Strategy | ✅ Building team (Ch. 4-8) |
+| Survival | ⏳ Floor 5 survival mission vs ~1,846 goblins (Ch. 9, ongoing) |
 | Confrontation | ⏳ Pending (Niflheimr) |
 | Resolution | ⏳ Pending |

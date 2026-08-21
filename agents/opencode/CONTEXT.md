@@ -12,7 +12,7 @@
 - **Platform:** PC, Mobile, Console (cross-platform), fully online
 - **Mode:** Fully online; 24/7 server connectivity; client never trusted
 
-## The Story (as of Ch. 8)
+## The Story (as of Ch. 9)
 
 - **Protagonist:** Han Seojin, real player from Seoul (Gangseo-Gu, South Earth). Summoned into his own game as a **1★ hero "Islat Han"** by a Level-999 bugged entity (the God of Death).
 - **Big reveal:** Han **is Loki** (Account #46631913, Rank 5, "Master of Masters"). Heroes are real humans from across ~1M worlds.
@@ -22,19 +22,21 @@
 - **Aaron:** Loyal disciple, calls Han "Hyung-nim"; spear skill stuck at Lv.2.
 - **Niflheimr:** The evil guild/order that killed Loki; their **Elite 5** (6★ Lv.99) are investigating Loki's return — Sirris dispatched to find Han, Yurneth investigating the master.
 
-## Current State Snapshot (through Ch. 8)
+## Current State Snapshot (through Ch. 9)
 
 - **Alive (8):** Islat Han, Jenna Cirai, Aaron, Enok (carpenter), Chloe (cook), Gide, Hansen, Dika (trainees).
 - **Combat team:** 6 members; **Support team:** 2 members.
 - **Facilities:** Lodging, Restaurant, Training Center, Equipment Workshop, Square, Weapons Storage + Blacksmith's Forge annex, etc.
 - **Han:** Lv.7 (up from Lv.6 after first synthesis, Ch.5). Skills: Basic Sword-Shield Techniques (Lv.3), Pain Tolerance, Composure.
-- **Synthesis used:** Toby → Han (Composure); Yelson/Elson → Jenna (Eagle's Eye); Shay (4★) sacrificed by ANYTNG.
-- **Tower progress:** Floor 4 / Stage 4 cleared. **Stage 5 boss** is the next major difficulty spike (boss floors every 5 stages).
-- **Deaths:** ~13 combat + synthesis sacrifices + 1 unnamed hero lost in thinning. Total introduced: 29.
+- **Synthesis used:** Toby → Han (Composure); Yelson/Elson → Jenna (Eagle's Eye); Shay (4★) sacrificed by ANYTNG; three inactive heroes incl. Dolf (Ch. 9).
+- **Equipment production (Ch. 9):** second ten pull summoned a blacksmith + tanner; with carpenter Enok they mass-produce E-rank swords/shields for new heroes; higher quality for the main party.
+- **Tower progress:** Floor 4 cleared (replayed in Ch. 9 as training: Gide & Hansen levelled up, MVP Jenna). **Floor 5 = survival mission in progress**: ~1,846 goblins, survive 10 minutes, historical survival rate 9%; Party 1 = Jenna, Islat Han, Aaron, Gide, Hansen fighting a funnel defence in an alley (corpse-wall barricades).
+- **Master behaviour change (Ch. 9):** logoff time between sessions has increased a lot.
+- **Deaths:** ~13 combat + 4 synthesis sacrifices (Shay, Toby, Yelson, Dolf) + 1 unnamed hero lost in thinning. Total introduced: 30.
 
 ## Pending Story Beats
 
-- Stage 5 boss fight (Ch. 9+ expected).
+- Floor 5 survival mission outcome (Ch. 10 expected).
 - Sirris arrives (Ch. 10+).
 - Yurneth finds the master (Ch. 10+).
 - Han vs Niflheimr (Ch. 15+).
