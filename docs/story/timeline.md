@@ -1,6 +1,6 @@
 # Story Timeline
 
-> Chronological events through Chapter 9.
+> Chronological events through Chapter 10.
 >
 > **Note:** The timeline is not 1 chapter = 1 day. Time skips between chapters are normal and expected.
 
@@ -78,6 +78,10 @@
 | Three inactive heroes synthesized (incl. Dolf) | Ch. 9 |
 | Floor 5 entered — survival mission revealed (~1,846 goblins) | Ch. 9 |
 | Survival goal: stay alive 10 minutes; game timer 30:00 starts on engagement | Ch. 9 |
+| Survival battle: rotation fighting in alley; 5 minutes elapsed | Ch. 10 |
+| Gide inflicted with bleeding, falls into fear (-30% stats), hand injured | Ch. 10 |
+| Hansen's sword goes blunt; rotated out to repair | Ch. 10 |
+| Gide collapses — on the brink of death (chapter ends mid-battle) | Ch. 10 |
 
 ---
 

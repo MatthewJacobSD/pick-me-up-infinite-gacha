@@ -1,7 +1,7 @@
 # Character Tracker — Pick Me Up, Infinite Gacha
 
 > Tracks all characters introduced, their status, and fate.
-> Updated through Chapter 9.
+> Updated through Chapter 10.
 
 ---
 
@@ -14,8 +14,8 @@
 | **Aaron** | 1★ | — | Summoned Ch. 3. Weapon: Spear. Has younger sister. Training under Han. Spear skill Lv.2 (stuck). Added to favourites (Ch.7). |
 | **Enok** | 1★ | Carpenter | Non-combat role. Assigned as carpenter. |
 | **Chloe** | 1★ | Cook | Non-combat role. Assigned as cook (replaced Dolf). |
-| **Gide** | 1★ | Trainee | Joined training Ch.8. Age under 20. Swordsmanship Lv.1. |
-| **Hansen** | 1★ | Trainee | Joined training Ch.8. Age under 20. Swordsmanship Lv.1. |
+| **Gide** | 1★ | Trainee | Joined training Ch.8. Age under 20. Swordsmanship Lv.1. Levelled up Floor 4 replay (Ch.9). During Floor 5 survival battle (Ch.10): inflicted with bleeding, fell into fear (-30% stats), hand injured, on the brink of death — fate unknown. |
+| **Hansen** | 1★ | Trainee | Joined training Ch.8. Age under 20. Swordsmanship Lv.1. Levelled up Floor 4 replay (Ch.9). During Floor 5 survival battle (Ch.10): sword went blunt, rotated out to repair it. |
 | **Dika** | 1★ | Trainee | Joined training Ch.8. Age under 20. Swordsmanship Lv.1. |
 
 ---

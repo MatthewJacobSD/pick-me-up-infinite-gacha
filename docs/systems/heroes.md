@@ -121,10 +121,29 @@
 
 | Aspect | Details |
 |---|---|
-| Trigger | First encounter with monsters |
+| Trigger | First encounter with monsters; also severe mid-battle injury (e.g. Gide, Ch. 10) |
 | Effect | ALL stats reduced by 30% |
 | Duration | Temporary — can be overcome mid-battle |
-| Recovery | Willpower/composure can break fear state |
+| Recovery | Willpower/composure can break fear state; Han uses shock tactics (kicking Gide) and duty pressure ("If you don't switch, Hansen will die!") |
+
+---
+
+## Status Effects (Ch. 10)
+
+| Status | Effect | Notes |
+|---|---|---|
+| Bleeding | HP reduced over a period of time | Inflicted by combat injury; must be treated (Jenna ordered to stop Gide's bleeding) |
+| Fear | All stats -30% | See Fear Mechanic |
+| On the Brink of Death | Life in danger | Critical warning notification before death |
+
+---
+
+## Equipment Durability
+
+- Normal iron swords go **blunt** during prolonged battle (Hansen, Ch. 10)
+- Blunt weapons can still kill (goblins), and shields become fallback weapons
+- Repairs happen outside the fight — fighters rotate out to repair
+- E-rank mass-produced gear is better than F-rank old Iron sword but still ordinary quality
 
 ---
 
@@ -135,7 +154,7 @@
 | Automation | Combat is fully automated — no player control |
 | MVP | Awarded to highest contributor after stage clear |
 | Experience | Only participants gain XP — non-participants get zero |
-| Mission Types | Subjugation, Conquest (varies by floor) |
+| Mission Types | Subjugation, Conquest, Survival (varies by floor) |
 
 ---
 

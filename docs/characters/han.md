@@ -61,6 +61,7 @@
 5. **Ch. 7**: Crafted weapons, prepared for Stage 5 boss
 6. **Ch. 8**: Assigned non-combat roles, thinned weak heroes
 7. **Ch. 9**: Stayed out of the Floor 4 fight so trainees practised formations; led Party 1 into the Floor 5 survival mission (funnel defence in an alley, corpse-wall barricades)
+8. **Ch. 10**: Ran the survival battle through strict rotations and one-slash efficiency; kicked Gide out of his fear spiral; ordered all of Jenna's arrows to Hansen's side to prevent a breach
 
 ---
 

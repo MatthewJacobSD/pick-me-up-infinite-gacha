@@ -70,6 +70,16 @@
 - Entered Floor 5: **survival mission** — ~1,846 goblins, survive 10 minutes; historical party survival rate 9%.
 - Party 1: Jenna, Islat Han, Aaron, Gide, Hansen.
 
+### Chapter 10
+
+- Survival battle ongoing: Han manages **rotations** (fight in turns, switch exhausted fighters) across three alley passageways.
+- Han's efficiency doctrine revealed: one slash per monster, stab-slash-stab, minimising stamina use. He still does not fight directly.
+- Goblin assessment: individually as weak as Floor 1 goblins, but overwhelming numbers with no fear.
+- Equipment limits exposed: normal iron swords (better than F-rank old Iron sword) go **blunt** mid-battle; Hansen rotated out to repair; shields used as fallback weapons.
+- 5 of 10 minutes elapsed when Aaron asked; "three minutes left" later in the battle.
+- Casualty crisis: Gide inflicted with **bleeding**, fell into **fear (-30% all stats)**, hand injured; Han kicked him to break the panic and ordered Jenna to stop the bleeding.
+- Cliffhanger: Gide collapses — **on the brink of death**, life in danger.
+
 ---
 
 ## Tracking Notes
