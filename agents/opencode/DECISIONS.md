@@ -1,0 +1,47 @@
+# Decisions
+
+> Decisions made during development and their rationale. `docs/decisions.md` in the project is the authoritative record; this file is the memory mirror and history.
+
+---
+
+## Current Standing Decisions (mirrors docs/decisions.md)
+
+| Topic | Decision | Reason |
+|---|---|---|
+| Project phase | UI prototype exists in `interfaces/`; backend code deferred | User's direction to prototype UI first |
+| Versioning | `1.0.0` = Unity, `2.0.0` = Unreal, intentional dual numbering | Keeps two engine environments for future scope discussion; Unity chosen so far |
+| Database | MySQL (accounts) + MongoDB (gameplay), behind repository interfaces | Confirmed by user; keep DAL abstracted for future swaps |
+| Lyle naming | `Lyle` correct; `Lyla` was a wording error | User clarification |
+| NPC numbering | Start from 1, reset each chapter; unnamed share numeric ids; named → name only | Avoids runaway global ids like `NPC672920`; clean organisation |
+| Repeated panels | Intentional across chapters (e.g. well-forged longsword) | Manhwa links chapters together |
+| Timeline | Not 1 chapter = 1 day; time skips normal | User clarification |
+| Progression tracking | Two viewpoints: `han.md` = latest-state snapshot; `player-progression.md` = per-chapter growth | Clarity of two viewpoints |
+| Han level | Lv.7 as of Ch.5 (not stale Lv.1) | Verified from chapter text |
+| Lyle/Rail | Same character — "Rail" is his in-game death-log alias (Ch.2 log) | Ch.2 "Rail (Lyle)" dedup |
+| UI prototype scope | `interfaces/` is standalone Vite project, not monorepo | No other Node projects exist; simpler setup |
+| Prototype vs production | `interfaces/` is UI prototype only — not game logic | Clean separation from future Unity/Unreal code |
+| Frame style | Angular/spiky white corners, dark body (#121020), 3D depth | Matches reference images from game |
+| Story text source | Chapter 2 manhwa dialogue used for story screens | Source of truth for tutorial flow |
+| Tutorial skip | "No" on tutorial choice skips to main menu | User preference — some players skip tutorials |
+| Auth flow | Mock only — no real OAuth, no passwords, no backend | Prototype requirement |
+
+## Historical Decision Log (by version)
+
+- **v0.0.1–0.0.5:** Initial docs structure, .gitignore, Chapter 1, CONTRIBUTING guide with versioning/branching.
+- **v0.0.6–0.0.8:** Chapters 1–2, character tracker, NPC numbering convention.
+- **v0.0.9–0.0.14:** Tracker, Chapters 3–5, chapter corrections, Shay's line reverted to source, Chapter 6.
+- **v0.0.14.1–0.0.16:** Corrections, Chapter 7 (Forging Ahead), Chapter 8 (Thinning and Roles).
+- **v0.0.17:** Restructured docs into story/characters/psychology/systems; added emotional analysis.
+- **v0.0.18–0.0.19:** Script format reference; chapters re-formatted to user's format.
+- **v0.0.20–0.0.21:** Dialogue line formatting; chapter fixes, character files, game mechanics docs (economy/heroes/tower).
+- **v0.0.22:** Added `docs/decisions.md`, recorded confirmed conventions, deduped Lyle/Rail, refreshed Han state.
+- **v0.0.23 (uncommitted):** React UI prototype (22 screens), opencode memory system, frame redesign.
+
+## Open Questions / Pending
+
+- Chapter 9 content: not yet provided by user; expected when user supplies it (Stage 5 boss fight is the next major event).
+- Task statuses (backend/frontend/design) remain Pending — code development has not been announced.
+- `docs/licenses/` directory exists but is empty (placeholder).
+- Whether the prototype should be wired to real backend APIs or remain mock-only.
+- Whether to add more story screens beyond the current 5 + 3 tutorial screens.
+- Mobile-specific UI refinements beyond layout adaptation.

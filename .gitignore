@@ -68,7 +68,8 @@ bin/
 
 # Node (if used for tooling)
 node_modules/
-package-lock.json
+interfaces/dist/
+interfaces/tsconfig.tsbuildinfo
 
 # Environment
 .env

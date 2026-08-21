@@ -1,0 +1,182 @@
+:root {
+  --color-bg-deep: #06050b;
+  --color-bg-dark: #0a0914;
+  --color-bg-panel: #110f1c;
+  --color-bg-panel-light: #1a1728;
+  --color-purple-dark: #2a1f4e;
+  --color-purple-mid: #6b4fba;
+  --color-purple-light: #a088e0;
+  --color-purple-glow: rgba(120, 90, 200, 0.4);
+  --color-purple-glow-strong: rgba(140, 110, 220, 0.6);
+  --color-silver: #d0c8e8;
+  --color-silver-light: #e8e4f5;
+  --color-white: #f2f0f8;
+  --color-white-dim: rgba(242, 240, 248, 0.7);
+  --color-text-glow: rgba(200, 180, 255, 0.55);
+  --font-primary: "Cinzel", serif;
+  --font-decorative: "Cinzel Decorative", "Cinzel", serif;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  perspective: 1200px;
+}
+
+body {
+  background: var(--color-bg-deep);
+  color: var(--color-white);
+  font-family: var(--font-primary);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+button {
+  font-family: var(--font-primary);
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+button:focus-visible {
+  outline: 2px solid var(--color-purple-light);
+  outline-offset: 2px;
+}
+
+input {
+  font-family: var(--font-primary);
+  outline: none;
+}
+
+input:focus-visible {
+  outline: 2px solid var(--color-purple-light);
+  outline-offset: 2px;
+}
+
+::selection {
+  background: var(--color-purple-mid);
+  color: var(--color-white);
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes fadeOut {
+  from { opacity: 1; }
+  to { opacity: 0; }
+}
+
+@keyframes scaleIn {
+  from { opacity: 0; transform: scale(0.95); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+@keyframes pulseGlow {
+  0%, 100% {
+    filter: drop-shadow(0 4px 12px rgba(120, 90, 200, 0.3)) drop-shadow(0 8px 24px rgba(0, 0, 0, 0.4));
+  }
+  50% {
+    filter: drop-shadow(0 4px 18px rgba(150, 120, 230, 0.55)) drop-shadow(0 8px 28px rgba(0, 0, 0, 0.5));
+  }
+}
+
+@keyframes subtlePulse {
+  0%, 100% { opacity: 0.6; }
+  50% { opacity: 1; }
+}
+
+@keyframes dotBounce {
+  0%, 80%, 100% { transform: scale(0.6); opacity: 0.4; }
+  40% { transform: scale(1); opacity: 1; }
+}
+
+@keyframes textGlowPulse {
+  0%, 100% { text-shadow: 0 0 10px rgba(200, 180, 255, 0.4); }
+  50% { text-shadow: 0 0 18px rgba(200, 180, 255, 0.7); }
+}
+
+@keyframes panelBreathe {
+  0%, 100% {
+    box-shadow:
+      0 25px 80px rgba(0, 0, 0, 0.7),
+      0 10px 30px rgba(0, 0, 0, 0.5),
+      0 0 20px rgba(120, 90, 200, 0.15),
+      inset 0 1px 0 rgba(232, 228, 245, 0.1),
+      inset 0 -1px 0 rgba(0, 0, 0, 0.5),
+      inset 0 0 30px rgba(120, 90, 200, 0.05);
+  }
+  50% {
+    box-shadow:
+      0 30px 90px rgba(0, 0, 0, 0.75),
+      0 12px 36px rgba(0, 0, 0, 0.55),
+      0 0 35px rgba(150, 120, 230, 0.25),
+      inset 0 1px 0 rgba(232, 228, 245, 0.14),
+      inset 0 -1px 0 rgba(0, 0, 0, 0.5),
+      inset 0 0 40px rgba(120, 90, 200, 0.08);
+  }
+}
+
+@keyframes float3d {
+  0%, 100% {
+    transform: rotateX(1.5deg) translateY(0) translateZ(0);
+  }
+  50% {
+    transform: rotateX(1.5deg) translateY(-4px) translateZ(6px);
+  }
+}
+
+@keyframes particleFloat {
+  0% { transform: translateY(0) translateX(0); opacity: 0; }
+  10% { opacity: 1; }
+  90% { opacity: 1; }
+  100% { transform: translateY(-100vh) translateX(20px); opacity: 0; }
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+/* ─── Responsive ─── */
+
+@media (max-width: 768px) {
+  .gothic-frame > svg {
+    display: none;
+  }
+
+  .gothic-frame > .gothic-panel {
+    border: 1.5px solid rgba(200, 180, 255, 0.3);
+    padding: 24px 20px;
+    box-shadow:
+      0 15px 50px rgba(0, 0, 0, 0.6),
+      0 6px 18px rgba(0, 0, 0, 0.4),
+      0 0 20px rgba(120, 90, 200, 0.15),
+      inset 0 1px 0 rgba(232, 228, 245, 0.08);
+    transform: rotateX(1deg);
+  }
+}
+
+@media (max-width: 480px) {
+  .gothic-button {
+    padding: 12px 28px !important;
+    font-size: 0.85rem !important;
+    letter-spacing: 2px !important;
+  }
+
+  .banner-wrapper {
+    width: 95vw !important;
+  }
+}
