@@ -10,14 +10,26 @@
 |---|---|---|
 | **Gold** | Stage clears, quests | Regular summoning, upgrades, equipment summoning |
 | **Gems** | Rare drops, real money | Advanced summoning, premium items |
-| **Food** | Restaurant, foraging | Hero sustenance |
-| **Materials** | Monster drops, crafting | Equipment, facility upgrades |
+| **Food** | Restaurant, foraging, hunted game | Hero sustenance |
+| **Materials** | Monster drops, crafting, daily dungeon gathering | Equipment, facility upgrades, promotions |
 
 ### Stage Reward Example (Floor 4 clear, Ch. 9)
 2,000G, Iron Ore (C) x2, Leather (C) x1
 
 ### Stage Reward Example (Floor 5 clear — survival mission, Ch. 12)
 5,000G, Iron Ore (C) x1, Leather (C) x3, Wooden Planks (B) x2
+
+---
+
+## Material Gathering (Daily Dungeon, Ch. 13)
+
+- Heroes gather materials by hand — each pickup logged by notification ('Branch', 'Trash(F)', …)
+- **Trash(F)** items are flagged useless ("Please throw it away")
+- A shared container receives discarded goods so storage doesn't pile up
+- Conversion example: **100 x Branch → Lumber**, requires a carpenter's shop
+- Harvests are split into each hero's **dimension window**
+- Hunting: wild game can be butchered for meat (Jenna learned from her hunter father)
+- Rare drop: **low rank attribute stone** from the Queen of the Forest — promotion material
 
 ---
 

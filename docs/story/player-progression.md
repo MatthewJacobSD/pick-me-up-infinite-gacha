@@ -104,9 +104,19 @@
 - **Daily dungeon unlocked**; master told to gather materials and strengthen heroes in the waiting room.
 - Aftermath: Jenna collapses, relieved crying; Dika learns of Gide's and Hansen's deaths; Party 1 roster shows two "Died in battle" entries.
 
----
+### Chapter 13
 
-## Tracking Notes
+- Han reflects on the deaths: Composure and Berserker can't logically co-exist — he suspects a **bug** tied to being half master and half hero.
+- Han reaches **Lv.9** (exp 54/70). Stat block: STR 23/23, INT 11/11, HP 21/21, AGI 21/21; Skills: Basic Swordsmanship (Lv.5), Pain Tolerance (Lv.2), Composure (Lv.3), Berserker (Lv.1). Quick Movements absent from this stat block.
+- Growth cost fixed at 5 = normal 3★ rate; 1★ max level is 10 → **promotion to 2★ imminent**.
+- Jenna gained a skill from the Floor 5 battle (unnamed); Aaron gained none despite hard training.
+- Login-pattern deduction: ANYTNG logs in **three times a day** (morning/afternoon/night); waiting room dilation is 3x while battle stages run real-time.
+- **Party 4 formed** (Han, Jenna, Louis, Joffrey, Owen) → daily dungeon **Kendert Forest (lowest rank)** for material gathering; gatherers don't have to fight.
+- Gathering mechanics learned: Trash(F) flagged for discard; Branch x100 → Lumber via carpenter's shop; harvests split into dimension windows.
+- Jenna hunts and butchers wild game (her father was a hunter) — meat beyond the usual potatoes.
+- Rare monster **Queen of the Forest** found near dungeon end — drops a low-rank attribute stone, a promotion material. Cliffhanger: fight begins.
+
+---
 
 - Update this file after every documented chapter.
 - Only record events that meaningfully change the player's/master's position or Han's growth.

@@ -29,6 +29,16 @@
 
 ---
 
+## Level Cap & Promotion (Ch. 13)
+
+| Rule | Details |
+|---|---|
+| Max Level per Rank | Each star rank has a level cap — 1★ max is **Level 10** |
+| Promotion | At the cap, a hero can be promoted to the next star rank (1★ → 2★) |
+| Promotion Materials | Attribute stones — e.g., low rank attribute stone from the Queen of the Forest (rare daily dungeon monster) |
+
+---
+
 ## Hero Naming
 
 | Rule | Details |
@@ -51,6 +61,7 @@
 - Intelligence can **decrease** on level-up (uneven allocation)
 - 1★ heroes have pathetic base stats and low growth rate
 - Higher star ranks have better base stats and growth
+- **Growth Cost** (Ch. 13): Han's growth cost is fixed at 5 — a normal growth rate at 3★
 
 ### Skills
 - Learn through combat and training
@@ -71,6 +82,11 @@
 - Under extreme, limit-testing situations, skills can **jump multiple levels mid-battle** and new skills can be learned instantly
 - Example: Han in the Floor 5 survival battle — Basic Swordsmanship Lv.3 + learned Quick Movements; Basic Sword-Shield Techniques Lv.5; Pain Tolerance Lv.2; Composure Lv.3 (two levels at once)
 - At the absolute edge of death, despair can break into rage and awaken a defining skill: Han obtained **'Berserker'** (Ch. 12)
+
+### Skill Conflicts (Ch. 13)
+- Contradictory skills normally cannot co-exist: Composure (keeps one rational) vs Berserker (loses rationality for battle power)
+- Han holds both simultaneously — he considers it a **bug**, related to being half master and half hero
+- He does not yet know everything about his dual nature
 
 ### Class Evolution
 - Novice → Specialized class (based on skills/stats)
@@ -175,15 +191,18 @@
 
 ---
 
-## Current Roster (Ch. 11)
+## Current Roster (Ch. 13)
 
 | Name | Star | Role | Status |
 |---|---|---|---|
-| Han Islat | 1★ | Combat (Leader) | Alive — injured at Ch.11 cliffhanger; skills Awakened |
-| Jenna Cirai | 1★ | Combat (Ranged) | Alive |
-| Aaron Delcut | 1★ | Combat (Melee) | Alive — bleeding + brink of death (Ch.11) |
+| Han Islat | 1★ | Combat (Leader) | Alive — Lv.9 (exp 54/70), near 1★ cap; Berserker awakened |
+| Jenna Cirai | 1★ | Combat (Ranged) | Alive — gained an unnamed skill from the Floor 5 battle (Ch. 13) |
+| Aaron Delcut | 1★ | Combat (Melee) | Alive — no new skills despite hard training (Ch. 13) |
 | Dika | 1★ | Combat (Trainee) | Alive (not in Party 1) |
 | Enok | 1★ | Support (Carpenter) | Alive |
 | Chloe | 1★ | Support (Cook) | Alive |
+| Louis | 1★ | Gatherer (Party 4) | Named Ch. 13 — daily dungeon run |
+| Joffrey | 1★ | Gatherer (Party 4) | Named Ch. 13 — daily dungeon run |
+| Owen | 1★ | Gatherer (Party 4) | Named Ch. 13 — nervous; told he won't have to fight |
 
 > Gide and Hansen (trainees) died during the Floor 5 survival mission (Ch. 11).

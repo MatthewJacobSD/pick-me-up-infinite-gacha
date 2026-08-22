@@ -12,7 +12,7 @@
 | Current Progress | Floor 5 cleared (survival mission, Ch. 9-12) |
 | Boss Floors | Every 5 stages (5, 10, 15, etc.) |
 | Difficulty Scaling | Exponential after boss floors |
-| Daily Dungeon | Unlocked after clearing the 5th floor (Ch. 12) |
+| Daily Dungeon | Unlocked after clearing the 5th floor (Ch. 12); first run in Ch. 13 |
 
 ### Waiting Room (Ch. 12)
 - Between-floor space where the master gathers materials and strengthens heroes
@@ -70,14 +70,52 @@
 
 ---
 
+## Daily Dungeon (Ch. 13)
+
+Material-gathering dungeon accessed through the space-time crack. No mandatory combat for gathering parties.
+
+| Aspect | Details |
+|---|---|
+| Purpose | Gather crafting materials |
+| Entry | Party-based ("Party 4 has entered...") |
+| Duration | Kendert Forest: ~11 hours; auto-return when time is up |
+| Difficulty Tier | Starts at lowest rank |
+| Combat | Optional for non-combat parties — but hunting is allowed |
+
+### Weekly Schedule
+
+| Day | Dungeon |
+|---|---|
+| Monday – Tuesday | Isralta Mine |
+| Wednesday – Thursday | Kendert Forest |
+| Friday – Saturday | Sinmiel Plateau |
+| Sunday | All dungeons open |
+
+### Gathering Mechanics
+
+- Heroes collect materials by hand ('Branch', 'Trash(F)', etc.) — each pickup logged by notification
+- **Trash(F)** items are flagged useless ("Please throw it away")
+- A shared container ("trash bin" / "grocery basket") receives discarded items; otherwise storage piles up
+- Items are crafted from gathered materials
+- Conversion example: **100 x Branch → Lumber**, requires a carpenter's shop
+- Harvested materials are split into each hero's dimension window
+
+### Rare Monster — Queen of the Forest
+
+- Rare spawn in forest-type daily dungeons
+- Drops a **low rank attribute stone** — a promotion material
+- Doesn't always appear, but its location is easy to find when it does
+
+---
+
 ## Time Flow
 
 | Aspect | Details |
 |---|---|
-| Time Dilation | 3x faster inside the game than real world |
-| Master Login | Roughly once every ~3 real-world days; logoff time has increased a lot (Ch. 9) |
-| Session Length | One floor per login session (in-game day) |
-| Master Schedule | Regular login pattern (probably office worker) |
+| Time Dilation | Waiting room runs 3x faster than Earth (confirmed Ch. 13) |
+| Battle Stages | Time flows the same as real time during battle stages (Ch. 13); if dilated 3x, a 30-minute stage would take 1.5 real hours |
+| Master Login | ANYTNG logs in three times a day — morning, afternoon, night (pattern deduced by Han, Ch. 13) |
+| Session Length | One floor per login session (in-game day); logoff time had increased a lot (Ch. 9) |
 | Mission Timer | Survival missions show a 30:00 game-time clock, aligned with real time (Ch. 9) |
 
 ---

@@ -1,7 +1,7 @@
 # Character Tracker — Pick Me Up, Infinite Gacha
 
 > Tracks all characters introduced, their status, and fate.
-> Updated through Chapter 12.
+> Updated through Chapter 13.
 
 ---
 
@@ -9,12 +9,15 @@
 
 | Name | Star | Class | Notes |
 |---|---|---|---|
-| **Islat Han** (Han Seojin) | 1★ | Novice | Protagonist. Real player from Earth (Seoul, Gangseo-Gu). Summoned by Level 999 bugged entity. In-game identity: Han Islat from Hime province. **Revealed as Loki** (Rank 5, "Master of Masters"). Skills after Ch.12 Awakening: Basic Sword-Shield Techniques (Lv.5), Basic Swordsmanship (Lv.3), Quick Movements, Pain Tolerance (Lv.2), Composure (Lv.3), **Berserker**. Floor 5 MVP — levelled up to Lv.8; bleeding but survived. |
-| **Jenna Cirai** | 1★ | Novice | From remote forest. Father was a hunter. Calm, analytical. Can use a bow. Calls Han "Oppa". Skills: Low-rank archery (Lv.5), Low-rank dagger (Lv.2), Eagle's Eye. Intimacy bonus with Han. Survived Floor 5; bleeding, collapsed in relieved tears afterwards; levelled up. |
-| **Aaron** | 1★ | — | Summoned Ch. 3. Weapon: Spear. Has younger sister. Training under Han. Spear skill Lv.2 (stuck). Added to favourites (Ch.7). Foot freed by Han's blade during survival battle (bleeding + brink of death) but survived; levelled up (Ch.12). |
+| **Islat Han** (Han Seojin) | 1★ | Novice | Protagonist. Real player from Earth (Seoul, Gangseo-Gu). Summoned by Level 999 bugged entity. In-game identity: Han Islat from Hime province. **Revealed as Loki** (Rank 5, "Master of Masters"). Floor 5 MVP. Lv.9 (exp 54/70) in Ch. 13 — near the 1★ cap of 10, promotion to 2★ imminent. Skills: Basic Swordsmanship (Lv.5), Pain Tolerance (Lv.2), Composure (Lv.3), Berserker (Lv.1). Holds Composure + Berserker simultaneously — a bug tied to being half master, half hero (Ch. 13). Growth cost fixed at 5 = normal 3★ rate. |
+| **Jenna Cirai** | 1★ | Novice | From remote forest. Father was a hunter (taught her butchering). Calm, analytical. Can use a bow. Calls Han "Oppa". Skills: Low-rank archery (Lv.5), Low-rank dagger (Lv.2), Eagle's Eye, + a new unnamed skill from the Floor 5 battle (Ch. 13). Intimacy bonus with Han. Survived Floor 5; levelled up. Trains obsessively ("Because I don't want to die!"); hunts and butchers game in the daily dungeon. |
+| **Aaron** | 1★ | — | Summoned Ch. 3. Weapon: Spear. Has younger sister. Training under Han. Spear skill Lv.2 (stuck). Added to favourites (Ch.7). Survived Floor 5 (foot freed by Han's blade); levelled up (Ch.12). Grieved hard for Gide and Hansen; no new skills despite hard training (Ch. 13). |
 | **Enok** | 1★ | Carpenter | Non-combat role. Assigned as carpenter. Produces equipment with blacksmith/tanner (Ch.9). |
 | **Chloe** | 1★ | Cook | Non-combat role. Assigned as cook (replaced Dolf). |
-| **Dika** | 1★ | Trainee | Joined training Ch.8. Age under 20. Swordsmanship Lv.1. Not in Party 1 for Floor 5. |
+| **Dika** | 1★ | Trainee | Joined training Ch.8. Age under 20. Swordsmanship Lv.1. Not in Party 1 for Floor 5. Trains very hard; took Gide's and Hansen's deaths badly (Ch. 13). |
+| **Louis** | 1★ | Gatherer | Named Ch. 13 — Party 4 member for the Kendert Forest daily dungeon run. |
+| **Joffrey** | 1★ | Gatherer | Named Ch. 13 — Party 4 member for the Kendert Forest daily dungeon run. |
+| **Owen** | 1★ | Gatherer | Named Ch. 13 (spoke as NPC1). Nervous about fighting; Han told the gatherers they won't have to fight. |
 
 ---
 
@@ -80,8 +83,8 @@
 
 | Status | Count |
 |---|---|
-| **Alive** | 6 (Islat Han, Jenna Cirai, Aaron, Enok, Chloe, Dika) |
+| **Alive** | 9 (Islat Han, Jenna Cirai, Aaron, Enok, Chloe, Dika + newly named: Louis, Joffrey, Owen) |
 | **Deceased (Combat)** | 15 |
 | **Deceased (Synthesis)** | 4 (Shay, Toby, Yelson, Dolf) |
 | **Niflheimr Elite** | 5 (Nihaku, Muden, Lidigyon, Sirris, Yurneth) |
-| **Total Introduced** | 30 |
+| **Total Introduced** | 33 |
