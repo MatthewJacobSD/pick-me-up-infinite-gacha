@@ -1,6 +1,6 @@
 # Story Timeline
 
-> Chronological events through Chapter 11.
+> Chronological events through Chapter 12.
 >
 > **Note:** The timeline is not 1 chapter = 1 day. Time skips between chapters are normal and expected.
 
@@ -88,6 +88,13 @@
 | Aaron's foot freed by Han's blade; bleeding + on the brink of death; pulled up the wall | Ch. 11 |
 | Last-stand wall defence (goblins piling up); Jenna loses the spear, kicks goblins | Ch. 11 |
 | Game time 00:32 — Han overwhelmed in pain (cliffhanger) | Ch. 11 |
+| Han and Jenna inflicted with bleeding; Han near death | Ch. 12 |
+| Han's despair breaks into rage — awakens **Berserker** | Ch. 12 |
+| Game time 00:00 — **Stage Clear!** Floor 5 survival mission cleared | Ch. 12 |
+| Han, Jenna, Aaron level up; MVP – Han | Ch. 12 |
+| Rewards: 5,000G, Iron Ore (C), Leather (C) x3, Wooden Planks (B) x2 | Ch. 12 |
+| **Daily dungeon unlocked** after clearing the 5th floor; waiting room available | Ch. 12 |
+| Dika learns Gide and Hansen died | Ch. 12 |
 
 ---
 

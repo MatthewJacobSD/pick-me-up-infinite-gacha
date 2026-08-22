@@ -9,9 +9,14 @@
 | Aspect | Details |
 |---|---|
 | Total Floors | 100 |
-| Current Progress | Floor 5 in progress (survival mission, Ch. 9) |
+| Current Progress | Floor 5 cleared (survival mission, Ch. 9-12) |
 | Boss Floors | Every 5 stages (5, 10, 15, etc.) |
 | Difficulty Scaling | Exponential after boss floors |
+| Daily Dungeon | Unlocked after clearing the 5th floor (Ch. 12) |
+
+### Waiting Room (Ch. 12)
+- Between-floor space where the master gathers materials and strengthens heroes
+- Heroes return here after a floor is cleared
 
 ---
 
@@ -42,7 +47,7 @@
 - Even Han isn't 100% sure he'll survive
 - Master pauses before boss floors to prepare
 
-### Survival Missions (Floor 5, Ch. 9)
+### Survival Missions (Floor 5, Ch. 9-12) — CLEARED
 - Goal: stay alive for a set time (Floor 5: **10 minutes**), not annihilate enemies
 - Historical party survival rate on survival missions: **9%**
 - Enemy hordes can number **1,000+** (Floor 5: ~1,846 goblins, Level ?)

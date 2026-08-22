@@ -33,10 +33,11 @@
 
 | Stat | Value |
 |---|---|
-| Level | 7 (as of Ch. 5; leveled up Lv.6→7 after first synthesis) |
+| Level | 8 (levelled up after Floor 5 clear, Ch. 12) |
 | Strength | Low (physical), compensating with game knowledge |
 | Intelligence | High (player knowledge) |
-| Skills (after Ch.11 Awakening) | Basic Sword-Shield Techniques (Lv.5), Basic Swordsmanship (Lv.3), Quick Movements, Pain Tolerance (Lv.2), Composure (Lv.3) |
+| Skills (after Ch.12 Awakening) | Basic Sword-Shield Techniques (Lv.5), Basic Swordsmanship (Lv.3), Quick Movements, Pain Tolerance (Lv.2), Composure (Lv.3), **Berserker** |
+| Condition | Bleeding after Floor 5 survival battle; survived |
 
 ---
 
@@ -63,6 +64,7 @@
 7. **Ch. 9**: Stayed out of the Floor 4 fight so trainees practised formations; led Party 1 into the Floor 5 survival mission (funnel defence in an alley, corpse-wall barricades)
 8. **Ch. 10**: Ran the survival battle through strict rotations and one-slash efficiency; kicked Gide out of his fear spiral; ordered all of Jenna's arrows to Hansen's side to prevent a breach
 9. **Ch. 11**: Cold triage under collapse (declared Gide dead and kept fighting); skills Awakened mid-battle; freed Aaron's trapped foot with his blade; led the last-stand wall defence to the final seconds
+10. **Ch. 12**: At the edge of death, rage broke his despair and awakened **Berserker**; refused to fall ("Even if I do collapse… I will never stop!"); carried the party to Stage Clear — MVP
 
 ---
 
@@ -82,6 +84,6 @@
 | Denial | ✅ Overcome (Ch. 1-2) |
 | Acceptance | ✅ Accepted fate (Ch. 3) |
 | Strategy | ✅ Building team (Ch. 4-8) |
-| Survival | ⏳ Floor 5 survival mission vs ~1,846 goblins (Ch. 9, ongoing) |
+| Survival | ✅ Floor 5 survival mission cleared — MVP (Ch. 9-12); Gide & Hansen lost |
 | Confrontation | ⏳ Pending (Niflheimr) |
 | Resolution | ⏳ Pending |

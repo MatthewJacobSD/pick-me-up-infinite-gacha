@@ -93,6 +93,17 @@
 - Last stand on the wall: goblins pile up stepping on each other; Jenna stabs with Aaron's spear until she loses it, then kicks.
 - Final 30 seconds: **Game time 00:32** — chapter ends with Han overwhelmed and in pain.
 
+### Chapter 12
+
+- Han and Jenna inflicted with bleeding; Han at the edge of death.
+- Han's despair ("Am I dying here? On the fucking 5th floor?!") breaks into rage → **Awakens 'Berserker'**.
+- Defiance: "DO YOU WANT TO KILL ME?! GIVE IT YOUR BEST SHOT!" — "I won't fall here… I will never stop!"
+- **Game time 00:00 → Stage Clear!** Floor 5 survival mission survived (9% odds beaten).
+- Han, Jenna, Aaron level up; **MVP – Han**.
+- Rewards: 5,000G, Iron Ore (C) x1, Leather (C) x3, Wooden Planks (B) x2.
+- **Daily dungeon unlocked**; master told to gather materials and strengthen heroes in the waiting room.
+- Aftermath: Jenna collapses, relieved crying; Dika learns of Gide's and Hansen's deaths; Party 1 roster shows two "Died in battle" entries.
+
 ---
 
 ## Tracking Notes

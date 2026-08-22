@@ -16,6 +16,9 @@
 ### Stage Reward Example (Floor 4 clear, Ch. 9)
 2,000G, Iron Ore (C) x2, Leather (C) x1
 
+### Stage Reward Example (Floor 5 clear — survival mission, Ch. 12)
+5,000G, Iron Ore (C) x1, Leather (C) x3, Wooden Planks (B) x2
+
 ---
 
 ## Item Manifestation

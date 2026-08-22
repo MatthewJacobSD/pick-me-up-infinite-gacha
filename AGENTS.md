@@ -22,7 +22,7 @@ That directory (`agents/opencode/`) is OpenCode's persistent development memory:
 
 ## Open Questions / Awaiting User Input
 
-- **Chapter 12**: not yet provided. Floor 5 survival outcome pending (Ch.11 cliffhanger: Gide and Hansen dead; Han, Jenna, Aaron cornered at Game time 00:32).
+- **Chapter 13**: not yet provided. Floor 5 cleared (Ch.12); daily dungeon unlocked; waiting room next.
 - **Task definitions**: backend/frontend/design tasks are all "Pending" with no definition of done; code development has not been announced.
 - **`docs/licenses/`**: empty placeholder folder.
 

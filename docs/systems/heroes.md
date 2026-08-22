@@ -66,10 +66,11 @@
 - Some heroes cannot progress skills past certain levels despite max training
 - Non-participants get zero experience
 
-### Awakening (Ch. 11)
+### Awakening (Ch. 11-12)
 - "The heroes' souls are being awakened in the situation that tests the heroes' limits!"
 - Under extreme, limit-testing situations, skills can **jump multiple levels mid-battle** and new skills can be learned instantly
 - Example: Han in the Floor 5 survival battle — Basic Swordsmanship Lv.3 + learned Quick Movements; Basic Sword-Shield Techniques Lv.5; Pain Tolerance Lv.2; Composure Lv.3 (two levels at once)
+- At the absolute edge of death, despair can break into rage and awaken a defining skill: Han obtained **'Berserker'** (Ch. 12)
 
 ### Class Evolution
 - Novice → Specialized class (based on skills/stats)
