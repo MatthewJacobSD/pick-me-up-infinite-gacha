@@ -28,8 +28,9 @@
 - A shared container receives discarded goods so storage doesn't pile up
 - Conversion example: **100 x Branch → Lumber**, requires a carpenter's shop
 - Harvests are split into each hero's **dimension window**
-- Hunting: wild game can be butchered for meat (Jenna learned from her hunter father)
-- Rare drop: **low rank attribute stone** from the Queen of the Forest — promotion material
+- Hunting: wild game can be butchered for meat (Jenna learned from her hunter father); teeth/claws ripped off and separated; Queen's blood collected
+- Rare drops: **low rank attribute stone** (Queen of the Forest) and **elemental stones** — wind (forest energy), water (plateau energy), Rank D- — used in many item crafting recipes and hero promotion ("You need elemental stones to get stronger", Ch. 14)
+- **Plants of Life**: key ingredient in healing potions; found on the Sinmiel Plateau (Ch. 14)
 
 ---
 

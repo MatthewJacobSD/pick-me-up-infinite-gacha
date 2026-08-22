@@ -26,6 +26,7 @@
 |---|---|---|
 | Subjugation | Annihilate all the enemies | Floors 1-4 (Ch. 9 replay) |
 | Survival | Survive the horde for a set time | Floor 5 (Ch. 9) |
+| Explore | Investigate an unfamiliar location — satisfy requirements to pass safely | Floor 6 (Ch. 14) |
 
 ---
 
@@ -38,6 +39,7 @@
 - Thin resource consumption
 - **Grinding**: Earlier floors can be replayed for reduced rewards
 - **Reward Scaling**: First clear gives more gold/materials than replays
+- **Blowing horn alarm** (Floor 6, Ch. 14): goblin scouts carrying horns signal nearby allies; killing them quietly (or ambushing fast) prevents a village-sized reinforcement swarm from surrounding the party
 
 ### Boss Floors (5, 10, 15, etc.)
 - **Major difficulty spike** — "completely different level"
@@ -103,8 +105,16 @@ Material-gathering dungeon accessed through the space-time crack. No mandatory c
 ### Rare Monster — Queen of the Forest
 
 - Rare spawn in forest-type daily dungeons
-- Drops a **low rank attribute stone** — a promotion material
+- Giant horned deer; drops a **low rank attribute stone** and a **wind elemental stone** (Rank D-) plus Queen's blood
 - Doesn't always appear, but its location is easy to find when it does
+
+### Elemental Stones & Special Resources
+
+- **Elemental stones** are the growth currency: "You need elemental stones to get stronger" (Ch. 14)
+- Wind stone (forest energy) from the Queen of the Forest; water stone (plateau energy, Rank D-) from Sinmiel Plateau hunts
+- Used in many item crafting recipes **and hero promotion**
+- **Plants of Life** spawn on the Sinmiel Plateau — key ingredient in healing potions (Ch. 14)
+- Harvestable by-products: Queen's blood, teeth/claws ripped off and separated
 
 ---
 

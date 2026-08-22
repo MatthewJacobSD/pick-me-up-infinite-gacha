@@ -1,6 +1,6 @@
 # Story Timeline
 
-> Chronological events through Chapter 13.
+> Chronological events through Chapter 14.
 >
 > **Note:** The timeline is not 1 chapter = 1 day. Time skips between chapters are normal and expected.
 
@@ -118,12 +118,34 @@
 
 ---
 
+## Days 31+ (Sinmiel Plateau → Floor 6)
+
+> Explicit time skips: Kendert Forest day → Sinmiel Plateau day (Fri/Sat rotation) → "A few days later" → Floor 6.
+
+| Event | Chapter |
+|---|---|
+| **Queen of the Forest defeated** — drops Low Rank Wind Elemental Stone (Rank D-); Jenna collects Queen's blood; head kept because the horn can't be severed | Ch. 14 |
+| **Jenna awakens 'Hunter of the Forest'** mid-hunt — second documented awakening (triggered by achievement, not mortal danger) | Ch. 14 |
+| Party 4 feasts on the catch (a full deer already eaten) | Ch. 14 |
+| Temporary party (Han, Jenna) enters the Sinmiel Plateau daily dungeon (lowest rank) | Ch. 14 |
+| Wolf killed quickly (blood-scent caution); water elemental stone (Rank D-) earned; teeth/claws ripped off and separated | Ch. 14 |
+| **Plants of Life** spotted — key healing potion ingredient; Han plans to gather later | Ch. 14 |
+| Jenna dreams of a hunting/gathering paradise without a master; Han privately reflects: "I was a past master too"; Niflheimr musing | Ch. 14 |
+| Han hints at a future non-combat spot for Jenna if the situation improves | Ch. 14 |
+| A few days later: **Floor 6** — mission type **Explore** ("Investigate the Unfamiliar location!") | Ch. 14 |
+| Dika joins Party 1 for Floor 6 | Ch. 14 |
+| Goblin scouts (Level 8 x3) carry a blowing horn — allies nearby; Jenna spots a goblin village of ~100 behind them: trap confirmed | Ch. 14 |
+| Ambush set (Han aggroes, Jenna shoots the right goblin, Aaron spears the other, Dika reserve); "I won't let you call for reinforcements!" cliffhanger | Ch. 14 |
+
+---
+
 ## Pending Events
 
 | Event | Expected Chapter |
 |---|---|
-| Queen of the Forest fight outcome + first attribute stone | Ch. 14 |
-| Han's promotion to 2★ | Ch. 14 (imminent) |
+| Floor 6 Explore outcome (goblin village ambush) | Ch. 15 |
+| Han's promotion to 2★ (wind/water elemental stones acquired) | Ch. 15 (imminent) |
+| Plants of Life gathering | Ch. 15+ |
 | Sirris arrives | Ch. 10+ |
 | Yurneth finds master | Ch. 10+ |
 | Han vs Niflheimr | Ch. 15+ |

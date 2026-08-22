@@ -104,6 +104,8 @@
 - **Daily dungeon unlocked**; master told to gather materials and strengthen heroes in the waiting room.
 - Aftermath: Jenna collapses, relieved crying; Dika learns of Gide's and Hansen's deaths; Party 1 roster shows two "Died in battle" entries.
 
+---
+
 ### Chapter 13
 
 - Han reflects on the deaths: Composure and Berserker can't logically co-exist — he suspects a **bug** tied to being half master and half hero.
@@ -117,6 +119,21 @@
 - Rare monster **Queen of the Forest** found near dungeon end — drops a low-rank attribute stone, a promotion material. Cliffhanger: fight begins.
 
 ---
+
+### Chapter 14
+
+- **Queen of the Forest defeated.** Drop: **Low Rank Wind Elemental Stone (Rank D-)** — forest energy; used in many item crafting and hero promotion. Queen's blood collected by Jenna; head kept (horn can't be severed).
+- **Second awakening event**: Jenna receives **'Hunter of the Forest'** — triggered mid-success while field-dressing the Queen, *not* at a near-death limit-test. Broadens the awakening trigger pattern. Han: "Promotion should be easy for her."
+- Sinmiel Plateau daily dungeon run (temporary party Han + Jenna): wolf killed quickly to avoid blood-scent attracting others; **Low Rank Water Elemental Stone (Rank D-)** earned; teeth/claws ripped off and separated.
+- **Plants of Life** spotted on the plateau — key ingredient for healing potions; Han plans to gather later (game-knowledge recognition).
+- Elemental stones confirmed as the growth currency: "You need elemental stones to get stronger."
+- Jenna reveals her dream: a hunting/gathering paradise without a master ("I hope master never comes back"). Han privately: "Hey, I was a past master too" — and muses whether Niflheimr's heroes felt the same about losing theirs. He hints at a future non-combat spot for her if the situation improves.
+- **Floor 6 revealed**: new mission type — **Explore** ("Investigate the Unfamiliar location!"). Uncommon mission, no enemies visible at start. Dika joins Party 1.
+- Trap discovery: goblin Level 8 x3 carrying a **blowing horn** = reinforcements nearby; Jenna spots a goblin village (~100). Ambush planned (Han aggro / Jenna right goblin / Aaron spear / Dika reserve). Cliffhanger as engagement begins.
+
+---
+
+## Tracking Notes
 
 - Update this file after every documented chapter.
 - Only record events that meaningfully change the player's/master's position or Han's growth.

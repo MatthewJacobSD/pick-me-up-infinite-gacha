@@ -25,6 +25,7 @@
 - **Encouraging**: Motivates new recruits ("Everyone, you got this")
 - **Tactless**: Sometimes says inappropriate things
 - **Survival-driven**: After Floor 5, trains obsessively and shows up before anyone else — "Because I don't want to die!"
+- **Peace-seeking**: Dreams of a quiet life of hunting and gathering — paradise, if only there were no master (Ch. 14)
 
 ---
 
@@ -35,7 +36,7 @@
 | Low-rank Archery | Lv.5 | Fastest growing skill |
 | Low-rank Dagger | Lv.2 | Secondary weapon |
 | Eagle's Eye | — | Gained via synthesis (Yelson sacrificed) |
-| Unnamed skill | — | Gained from the Floor 5 battle (implied Ch. 13); name/effect not yet revealed |
+| Hunter of the Forest | — | **Awakened** while field-dressing the Queen of the Forest (Ch. 14) — her forest upbringing made it inevitable |
 
 ---
 
@@ -71,7 +72,8 @@
 4. **Ch. 9**: MVP of the Floor 4 replay clear
 5. **Ch. 11**: Held the last-stand wall — used Aaron's spear until she lost it, then kicked goblins; told by Han to grieve only after surviving
 6. **Ch. 12**: Survived Floor 5; levelled up; collapsed in relieved tears
-7. **Ch. 13**: Gained an unnamed skill from the Floor 5 battle; hunts and butchers game in the Kendert Forest daily dungeon
+7. **Ch. 14**: Awakens **'Hunter of the Forest'** during the Queen of the Forest kill; runs the Sinmiel Plateau with Han (wolf hunt, water elemental stone)
+8. **Ch. 14**: Reveals her dream of a peaceful non-combat life; Han hints he could make a spot for her if things improve
 
 ---
 
@@ -88,3 +90,7 @@
 > "What do we need to hunt? … Will we be able to finally eat some meat?!" (Ch.13)
 
 > "Wait for me, meat!" (Ch.13)
+
+> "This would be paradise if there wasn't a master!" (Ch.14)
+
+> "I hope master never comes back." (Ch.14)

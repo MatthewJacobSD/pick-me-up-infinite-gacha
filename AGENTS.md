@@ -22,7 +22,7 @@ That directory (`agents/opencode/`) is OpenCode's persistent development memory:
 
 ## Open Questions / Awaiting User Input
 
-- **Chapter 14**: not yet provided. Ch.13 ended on the Queen of the Forest fight (daily dungeon); Han is near the 1★ cap with promotion to 2★ imminent.
+- **Chapter 15**: not yet provided. Ch.14 ended mid-Floor 6 ambush (Explore mission, goblin village trap); Han holds promotion materials for 2★.
 - **Task definitions**: backend/frontend/design tasks are all "Pending" with no definition of done; code development has not been announced.
 - **`docs/licenses/`**: empty placeholder folder.
 

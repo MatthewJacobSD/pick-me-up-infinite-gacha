@@ -71,6 +71,7 @@
 9. **Ch. 11**: Cold triage under collapse (declared Gide dead and kept fighting); skills Awakened mid-battle; freed Aaron's trapped foot with his blade; led the last-stand wall defence to the final seconds
 10. **Ch. 12**: At the edge of death, rage broke his despair and awakened **Berserker**; refused to fall ("Even if I do collapse… I will never stop!"); carried the party to Stage Clear — MVP
 11. **Ch. 13**: Identified the Composure/Berserker co-existence as a bug tied to being half master, half hero; deduced ANYTNG's login pattern (three logins/day); led Party 4 into the Kendert Forest daily dungeon; hunted down the Queen of the Forest for its promotion material
+12. **Ch. 14**: Defeated the Queen of the Forest (wind elemental stone); spotted Plants of Life and planned a later gathering run; offered Jenna a possible non-combat spot; on Floor 6 read the blowing-horn trap before engaging and set an ambush to keep the goblin village from reinforcing
 
 ---
 

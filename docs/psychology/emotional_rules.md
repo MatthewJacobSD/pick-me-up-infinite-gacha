@@ -1,7 +1,7 @@
 # Emotional Rules
 
 > Comprehensive emotional states, triggers, and responses for all characters.
-> Based on Chapters 1-13. Ensures human-like emotional continuity.
+> Based on Chapters 1-14. Ensures human-like emotional continuity.
 
 ---
 
@@ -29,6 +29,7 @@ Every character must show consistent emotional responses across chapters. Emotio
 | **Contempt** | Cowardice — NPCs dodging sacrifice | Deems them worthless, expendable | Ch.13: "Those guys should have died instead of the other two" |
 | **Respect** | Worthy fighters, even dead ones | Praises their potential openly | Ch.13: "Gide and Hansen actually had good potential" |
 | **Detachment** | Death of heroes in general | Doesn't mourn; states it plainly | Ch.13: "I didn't care much about who died." |
+| **Wistful Empathy** | Heroes wishing the master away | Private acknowledgment of his own past as a player-master; muses on Niflheimr's masterless heroes | Ch.14: "Hey, I was a past master too." |
 
 ### Emotional Patterns
 
@@ -81,6 +82,7 @@ Every character must show consistent emotional responses across chapters. Emotio
 | **Survival Drive** | Post-Floor 5 mortality awareness | Trains obsessively, earlier than everyone | Ch.13: "Because I don't want to die!" |
 | **Excitement** | Meat hunt in daily dungeon | Shouts, charges off ahead | Ch.13: "Wait for me, meat!" |
 | **Grief (managed)** | Comrades lost at Floor 5 | Grieves through action, not paralysis | Ch.11-13: told to grieve after surviving; back to training first thing |
+| **Contentment / Peace-longing** | Quiet days of plenty in daily dungeons | Dreams of permanent paradise | Ch.14: "This would be paradise if there wasn't a master!", "I hope master never comes back." |
 
 ### Emotional Patterns
 

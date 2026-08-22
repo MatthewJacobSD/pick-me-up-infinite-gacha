@@ -77,11 +77,13 @@
 - Some heroes cannot progress skills past certain levels despite max training
 - Non-participants get zero experience
 
-### Awakening (Ch. 11-12)
+### Awakening (Ch. 11-14)
 - "The heroes' souls are being awakened in the situation that tests the heroes' limits!"
 - Under extreme, limit-testing situations, skills can **jump multiple levels mid-battle** and new skills can be learned instantly
 - Example: Han in the Floor 5 survival battle — Basic Swordsmanship Lv.3 + learned Quick Movements; Basic Sword-Shield Techniques Lv.5; Pain Tolerance Lv.2; Composure Lv.3 (two levels at once)
 - At the absolute edge of death, despair can break into rage and awaken a defining skill: Han obtained **'Berserker'** (Ch. 12)
+- **Not only mortal danger** — awakening can also trigger in moments of achievement/mastery: Jenna awakened **'Hunter of the Forest'** while field-dressing the defeated Queen of the Forest (Ch. 14), a successful hunt rather than a limit-test
+- Han's comment ("Another awakening? Promotion should be easy for her") suggests awakened heroes promote more easily
 
 ### Skill Conflicts (Ch. 13)
 - Contradictory skills normally cannot co-exist: Composure (keeps one rational) vs Berserker (loses rationality for battle power)
@@ -191,18 +193,18 @@
 
 ---
 
-## Current Roster (Ch. 13)
+## Current Roster (Ch. 14)
 
 | Name | Star | Role | Status |
 |---|---|---|---|
-| Han Islat | 1★ | Combat (Leader) | Alive — Lv.9 (exp 54/70), near 1★ cap; Berserker awakened |
-| Jenna Cirai | 1★ | Combat (Ranged) | Alive — gained an unnamed skill from the Floor 5 battle (Ch. 13) |
-| Aaron Delcut | 1★ | Combat (Melee) | Alive — no new skills despite hard training (Ch. 13) |
-| Dika | 1★ | Combat (Trainee) | Alive (not in Party 1) |
+| Han Islat | 1★ | Combat (Leader) | Alive — Lv.9 (exp 54/70), near 1★ cap; Berserker awakened; promotion materials acquired |
+| Jenna Cirai | 1★ | Combat (Ranged) / Hunter | Alive — awakened 'Hunter of the Forest' (Ch. 14); dreams of a non-combat life, Han hinted at a spot for her |
+| Aaron Delcut | 1★ | Combat (Melee) | Alive — no new skills despite hard training (Ch. 13); Floor 6 ambush spear role |
+| Dika | 1★ | Combat (Trainee) | Alive — joined Party 1 for the Floor 6 Explore mission as reserve (Ch. 14) |
 | Enok | 1★ | Support (Carpenter) | Alive |
 | Chloe | 1★ | Support (Cook) | Alive |
-| Louis | 1★ | Gatherer (Party 4) | Named Ch. 13 — daily dungeon run |
-| Joffrey | 1★ | Gatherer (Party 4) | Named Ch. 13 — daily dungeon run |
+| Louis | 1★ | Gatherer (Party 4) | Named Ch. 13 — daily dungeon runs, feast (Ch. 14) |
+| Joffrey | 1★ | Gatherer (Party 4) | Named Ch. 13 — daily dungeon runs; startled by the Forest Queen (Ch. 14) |
 | Owen | 1★ | Gatherer (Party 4) | Named Ch. 13 — nervous; told he won't have to fight |
 
 > Gide and Hansen (trainees) died during the Floor 5 survival mission (Ch. 11).
