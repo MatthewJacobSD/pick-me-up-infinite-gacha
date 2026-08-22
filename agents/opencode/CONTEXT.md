@@ -12,7 +12,7 @@
 - **Platform:** PC, Mobile, Console (cross-platform), fully online
 - **Mode:** Fully online; 24/7 server connectivity; client never trusted
 
-## The Story (as of Ch. 10)
+## The Story (as of Ch. 11)
 
 - **Protagonist:** Han Seojin, real player from Seoul (Gangseo-Gu, South Earth). Summoned into his own game as a **1★ hero "Islat Han"** by a Level-999 bugged entity (the God of Death).
 - **Big reveal:** Han **is Loki** (Account #46631913, Rank 5, "Master of Masters"). Heroes are real humans from across ~1M worlds.
@@ -22,21 +22,22 @@
 - **Aaron:** Loyal disciple, calls Han "Hyung-nim"; spear skill stuck at Lv.2.
 - **Niflheimr:** The evil guild/order that killed Loki; their **Elite 5** (6★ Lv.99) are investigating Loki's return — Sirris dispatched to find Han, Yurneth investigating the master.
 
-## Current State Snapshot (through Ch. 9)
+## Current State Snapshot (through Ch. 11)
 
-- **Alive (8):** Islat Han, Jenna Cirai, Aaron, Enok (carpenter), Chloe (cook), Gide, Hansen, Dika (trainees).
-- **Combat team:** 6 members; **Support team:** 2 members.
+- **Alive (6):** Islat Han, Jenna Cirai, Aaron, Enok (carpenter), Chloe (cook), Dika (trainee).
+- **Combat team:** 4 members (Jenna, Han, Aaron, Dika); **Support team:** 2 members.
 - **Facilities:** Lodging, Restaurant, Training Center, Equipment Workshop, Square, Weapons Storage + Blacksmith's Forge annex, etc.
-- **Han:** Lv.7 (up from Lv.6 after first synthesis, Ch.5). Skills: Basic Sword-Shield Techniques (Lv.3), Pain Tolerance, Composure.
+- **Han:** Lv.7. **Skills after Ch.11 Awakening:** Basic Sword-Shield Techniques (Lv.5), Basic Swordsmanship (Lv.3) + Quick Movements, Pain Tolerance (Lv.2), Composure (Lv.3). Injured at the Ch.11 cliffhanger.
 - **Synthesis used:** Toby → Han (Composure); Yelson/Elson → Jenna (Eagle's Eye); Shay (4★) sacrificed by ANYTNG; three inactive heroes incl. Dolf (Ch. 9).
 - **Equipment production (Ch. 9):** second ten pull summoned a blacksmith + tanner; with carpenter Enok they mass-produce E-rank swords/shields for new heroes; higher quality for the main party.
-- **Tower progress:** Floor 4 cleared (replayed in Ch. 9 as training: Gide & Hansen levelled up, MVP Jenna). **Floor 5 = survival battle ongoing through Ch. 10**: ~1,846 goblins, survive 10 minutes, historical survival rate 9%; Party 1 = Jenna, Islat Han, Aaron, Gide, Hansen in a funnel defence. Ch.10: rotation fighting, 5+ min survived; Gide bleeding + fear (-30%) + hand injured → **on the brink of death (cliffhanger)**; Hansen's sword went blunt (rotated out to repair); equipment limits exposed (normal iron swords blunt mid-battle).
+- **Tower progress:** Floor 4 cleared (replayed Ch. 9 as training). **Floor 5 survival mission (~1,846 goblins, 10 minutes)** fought through Ch. 10-11: rotation fighting → Gide died (bleeding/fear/hand wound), Hansen died (bleeding, begged for rescue), Aaron's foot freed by Han's blade (bleeding + brink of death), last stand on a wall, spear lost, Game time 00:32 cliffhanger with Han overwhelmed.
+- **Awakening mechanic revealed (Ch.11):** limit-testing situations make heroes' souls awaken — skills jump levels mid-battle.
 - **Master behaviour change (Ch. 9):** logoff time between sessions has increased a lot.
-- **Deaths:** ~13 combat + 4 synthesis sacrifices (Shay, Toby, Yelson, Dolf) + 1 unnamed hero lost in thinning. Total introduced: 30.
+- **Deaths:** ~15 combat (incl. Gide, Hansen) + 4 synthesis sacrifices (Shay, Toby, Yelson, Dolf) + 1 unnamed hero lost in thinning. Total introduced: 30.
 
 ## Pending Story Beats
 
-- Floor 5 survival mission outcome (Ch. 11 expected) — Gide's fate unknown.
+- Floor 5 survival mission outcome (Ch. 12 expected) — Han/Jenna/Aaron survival unknown at 00:32.
 - Sirris arrives (Ch. 10+).
 - Yurneth finds the master (Ch. 10+).
 - Han vs Niflheimr (Ch. 15+).

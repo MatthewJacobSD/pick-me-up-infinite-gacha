@@ -80,6 +80,19 @@
 - Casualty crisis: Gide inflicted with **bleeding**, fell into **fear (-30% all stats)**, hand injured; Han kicked him to break the panic and ordered Jenna to stop the bleeding.
 - Cliffhanger: Gide collapses — **on the brink of death**, life in danger.
 
+### Chapter 11
+
+- **Gide dies** from his wounds mid-battle ("gone back into the goddess' arms"). Han: cold triage — "Gide is already dead. Help over here."
+- **Awakening event**: "The heroes' souls are being awakened in the situation that tests the heroes' limits!" Han's skills jump mid-battle:
+  - Basic Swordsmanship → Lv.3, learns **Quick Movements**
+  - Basic Sword-Shield Techniques → Lv.5
+  - Pain Tolerance → Lv.2
+  - Composure → Lv.3 (levelled up twice)
+- **Hansen dies**: bleeding (stamina drain over time), begging Han to save him; Han keeps fighting. Jenna told to grieve only after surviving.
+- Escape to the wall behind them: Aaron's trapped foot freed by Han's blade (bleeding + brink of death), pulled up.
+- Last stand on the wall: goblins pile up stepping on each other; Jenna stabs with Aaron's spear until she loses it, then kicks.
+- Final 30 seconds: **Game time 00:32** — chapter ends with Han overwhelmed and in pain.
+
 ---
 
 ## Tracking Notes

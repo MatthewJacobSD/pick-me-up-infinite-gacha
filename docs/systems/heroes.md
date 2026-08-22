@@ -66,6 +66,11 @@
 - Some heroes cannot progress skills past certain levels despite max training
 - Non-participants get zero experience
 
+### Awakening (Ch. 11)
+- "The heroes' souls are being awakened in the situation that tests the heroes' limits!"
+- Under extreme, limit-testing situations, skills can **jump multiple levels mid-battle** and new skills can be learned instantly
+- Example: Han in the Floor 5 survival battle — Basic Swordsmanship Lv.3 + learned Quick Movements; Basic Sword-Shield Techniques Lv.5; Pain Tolerance Lv.2; Composure Lv.3 (two levels at once)
+
 ### Class Evolution
 - Novice → Specialized class (based on skills/stats)
 - Class determines role in party
@@ -169,15 +174,15 @@
 
 ---
 
-## Current Roster (Ch. 8)
+## Current Roster (Ch. 11)
 
 | Name | Star | Role | Status |
 |---|---|---|---|
-| Han Islat | 1★ | Combat (Leader) | Alive |
+| Han Islat | 1★ | Combat (Leader) | Alive — injured at Ch.11 cliffhanger; skills Awakened |
 | Jenna Cirai | 1★ | Combat (Ranged) | Alive |
-| Aaron Delcut | 1★ | Combat (Melee) | Alive |
-| Gide | 1★ | Combat (Trainee) | Alive |
-| Hansen | 1★ | Combat (Trainee) | Alive |
-| Dika | 1★ | Combat (Trainee) | Alive |
+| Aaron Delcut | 1★ | Combat (Melee) | Alive — bleeding + brink of death (Ch.11) |
+| Dika | 1★ | Combat (Trainee) | Alive (not in Party 1) |
 | Enok | 1★ | Support (Carpenter) | Alive |
 | Chloe | 1★ | Support (Cook) | Alive |
+
+> Gide and Hansen (trainees) died during the Floor 5 survival mission (Ch. 11).

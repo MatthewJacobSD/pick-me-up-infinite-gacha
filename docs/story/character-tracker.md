@@ -1,7 +1,7 @@
 # Character Tracker — Pick Me Up, Infinite Gacha
 
 > Tracks all characters introduced, their status, and fate.
-> Updated through Chapter 10.
+> Updated through Chapter 11.
 
 ---
 
@@ -9,14 +9,12 @@
 
 | Name | Star | Class | Notes |
 |---|---|---|---|
-| **Islat Han** (Han Seojin) | 1★ | Novice | Protagonist. Real player from Earth (Seoul, Gangseo-Gu). Summoned by Level 999 bugged entity. In-game identity: Han Islat from Hime province. **Revealed as Loki** (Rank 5, "Master of Masters"). Skills: Basic Sword-Shield Techniques (Lv.3), Composure, Pain Tolerance. |
-| **Jenna Cirai** | 1★ | Novice | From remote forest. Father was a hunter. Calm, analytical. Can use a bow. Calls Han "Oppa". Skills: Low-rank archery (Lv.5), Low-rank dagger (Lv.2), Eagle's Eye. Intimacy bonus with Han. |
-| **Aaron** | 1★ | — | Summoned Ch. 3. Weapon: Spear. Has younger sister. Training under Han. Spear skill Lv.2 (stuck). Added to favourites (Ch.7). |
-| **Enok** | 1★ | Carpenter | Non-combat role. Assigned as carpenter. |
+| **Islat Han** (Han Seojin) | 1★ | Novice | Protagonist. Real player from Earth (Seoul, Gangseo-Gu). Summoned by Level 999 bugged entity. In-game identity: Han Islat from Hime province. **Revealed as Loki** (Rank 5, "Master of Masters"). Skills after Ch.11 awakening: Basic Sword-Shield Techniques (Lv.5), Basic Swordsmanship (Lv.3), Quick Movements, Pain Tolerance (Lv.2), Composure (Lv.3). Injured at Ch.11 cliffhanger. |
+| **Jenna Cirai** | 1★ | Novice | From remote forest. Father was a hunter. Calm, analytical. Can use a bow. Calls Han "Oppa". Skills: Low-rank archery (Lv.5), Low-rank dagger (Lv.2), Eagle's Eye. Intimacy bonus with Han. Defending the wall with Han (Ch.11). |
+| **Aaron** | 1★ | — | Summoned Ch. 3. Weapon: Spear. Has younger sister. Training under Han. Spear skill Lv.2 (stuck). Added to favourites (Ch.7). Foot injured by Han to free him during survival battle; bleeding + on the brink of death (Ch.11 cliffhanger). |
+| **Enok** | 1★ | Carpenter | Non-combat role. Assigned as carpenter. Produces equipment with blacksmith/tanner (Ch.9). |
 | **Chloe** | 1★ | Cook | Non-combat role. Assigned as cook (replaced Dolf). |
-| **Gide** | 1★ | Trainee | Joined training Ch.8. Age under 20. Swordsmanship Lv.1. Levelled up Floor 4 replay (Ch.9). During Floor 5 survival battle (Ch.10): inflicted with bleeding, fell into fear (-30% stats), hand injured, on the brink of death — fate unknown. |
-| **Hansen** | 1★ | Trainee | Joined training Ch.8. Age under 20. Swordsmanship Lv.1. Levelled up Floor 4 replay (Ch.9). During Floor 5 survival battle (Ch.10): sword went blunt, rotated out to repair it. |
-| **Dika** | 1★ | Trainee | Joined training Ch.8. Age under 20. Swordsmanship Lv.1. |
+| **Dika** | 1★ | Trainee | Joined training Ch.8. Age under 20. Swordsmanship Lv.1. Not in Party 1 for Floor 5. |
 
 ---
 
@@ -40,6 +38,8 @@
 | **John** | 1★ | — | Died on Floor 1 (Party 2 thinning) | Ch. 8 |
 | **Teddy** | 1★ | — | Died on Floor 1 (Party 2 thinning) | Ch. 8 |
 | 1 unnamed hero | 1★ | — | Died in thinning process | Ch. 8 |
+| **Gide** | 1★ | Trainee | Floor 5 survival battle — bleeding, fear (-30% stats), hand injured; died from wounds (Han: "He's resting") | Ch. 11 |
+| **Hansen** | 1★ | Trainee | Floor 5 survival battle — sword went blunt (Ch.10), then bleeding; begged Han to save him while dying | Ch. 11 |
 
 ---
 
@@ -80,8 +80,8 @@
 
 | Status | Count |
 |---|---|
-| **Alive** | 8 (Islat Han, Jenna Cirai, Aaron, Enok, Chloe, Gide, Hansen, Dika) |
-| **Deceased (Combat)** | 13 |
+| **Alive** | 6 (Islat Han, Jenna Cirai, Aaron, Enok, Chloe, Dika) |
+| **Deceased (Combat)** | 15 |
 | **Deceased (Synthesis)** | 4 (Shay, Toby, Yelson, Dolf) |
 | **Niflheimr Elite** | 5 (Nihaku, Muden, Lidigyon, Sirris, Yurneth) |
 | **Total Introduced** | 30 |

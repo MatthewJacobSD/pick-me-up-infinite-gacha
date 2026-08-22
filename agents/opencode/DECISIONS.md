@@ -40,10 +40,11 @@
 - **v0.0.23:** React UI prototype (22 screens), opencode memory system, .gitignore for interfaces artifacts (user commit).
 - **v0.0.24:** Chapter 9 (Survival Mission) documented; trackers/timeline/progression/systems updated; root `AGENTS.md` added.
 - **v0.0.25:** Chapter 10 (survival battle) documented; new mechanics recorded (bleeding status, mid-battle fear trigger, weapon durability); Gide on brink of death cliffhanger tracked.
+- **v0.0.26:** Chapter 11 documented — Gide and Hansen confirmed dead; Awakening mechanic added to heroes.md; roster/trackers updated to 6 alive.
 
 ## Open Questions / Pending
 
-- Chapter 11 content: not yet provided by user; Floor 5 survival outcome + Gide's fate pending.
+- Chapter 12 content: not yet provided by user; survival outcome + Aaron's fate pending.
 - Task statuses (backend/frontend/design) remain Pending — code development has not been announced.
 - `docs/licenses/` directory exists but is empty (placeholder).
 - Whether the prototype should be wired to real backend APIs or remain mock-only.

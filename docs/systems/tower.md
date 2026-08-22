@@ -54,12 +54,14 @@
   - Split passageways between fighters; fight in turns to catch breath
   - Archer on standby at the intersection, shooting only on command
   - Corpse-wall barricades when there is no time to build proper ones
-- Battle realities (Ch. 10):
+- Battle realities (Ch. 10-11):
   - Goblins are individually Floor-1 weak but charge fearlessly in overwhelming numbers
   - Injuries accumulate mid-battle: bleeding (HP drain over time), fear (-30% stats), brink of death
   - Swords go blunt from prolonged fighting; fighters rotate out to repair; shields as fallback
   - Han's efficiency doctrine: one slash per monster (stab-slash-stab) to conserve stamina
   - Exhausted/low-skill fighters waste stamina when excited — rotation discipline is critical
+  - **Limit-testing situations trigger Awakening** — skills jump levels mid-battle (Ch. 11)
+  - Casualties are real even for trained teams: Gide and Hansen died in this mission
 
 ---
 

@@ -1,6 +1,6 @@
 # Story Timeline
 
-> Chronological events through Chapter 10.
+> Chronological events through Chapter 11.
 >
 > **Note:** The timeline is not 1 chapter = 1 day. Time skips between chapters are normal and expected.
 
@@ -82,6 +82,12 @@
 | Gide inflicted with bleeding, falls into fear (-30% stats), hand injured | Ch. 10 |
 | Hansen's sword goes blunt; rotated out to repair | Ch. 10 |
 | Gide collapses — on the brink of death (chapter ends mid-battle) | Ch. 10 |
+| **Gide dies** — "gone back into the goddess' arms" | Ch. 11 |
+| Han's skills awaken: Basic Swordsmanship Lv.3 + learns Quick Movements; Basic Sword-Shield Techniques Lv.5, Pain Tolerance Lv.2, Composure Lv.3 | Ch. 11 |
+| Hansen bleeding, begs for rescue; **Hansen dies** | Ch. 11 |
+| Aaron's foot freed by Han's blade; bleeding + on the brink of death; pulled up the wall | Ch. 11 |
+| Last-stand wall defence (goblins piling up); Jenna loses the spear, kicks goblins | Ch. 11 |
+| Game time 00:32 — Han overwhelmed in pain (cliffhanger) | Ch. 11 |
 
 ---
 

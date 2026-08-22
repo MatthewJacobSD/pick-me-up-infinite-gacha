@@ -36,7 +36,7 @@
 | Level | 7 (as of Ch. 5; leveled up Lv.6→7 after first synthesis) |
 | Strength | Low (physical), compensating with game knowledge |
 | Intelligence | High (player knowledge) |
-| Skills | Basic Sword-Shield Techniques (Lv.3, Ch. 4), Pain Tolerance (Ch. 4), Composure (Ch. 5) |
+| Skills (after Ch.11 Awakening) | Basic Sword-Shield Techniques (Lv.5), Basic Swordsmanship (Lv.3), Quick Movements, Pain Tolerance (Lv.2), Composure (Lv.3) |
 
 ---
 
@@ -62,6 +62,7 @@
 6. **Ch. 8**: Assigned non-combat roles, thinned weak heroes
 7. **Ch. 9**: Stayed out of the Floor 4 fight so trainees practised formations; led Party 1 into the Floor 5 survival mission (funnel defence in an alley, corpse-wall barricades)
 8. **Ch. 10**: Ran the survival battle through strict rotations and one-slash efficiency; kicked Gide out of his fear spiral; ordered all of Jenna's arrows to Hansen's side to prevent a breach
+9. **Ch. 11**: Cold triage under collapse (declared Gide dead and kept fighting); skills Awakened mid-battle; freed Aaron's trapped foot with his blade; led the last-stand wall defence to the final seconds
 
 ---
 
