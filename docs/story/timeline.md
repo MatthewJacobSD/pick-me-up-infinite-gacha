@@ -1,6 +1,6 @@
 # Story Timeline
 
-> Chronological events through Chapter 12.
+> Chronological events through Chapter 13.
 >
 > **Note:** The timeline is not 1 chapter = 1 day. Time skips between chapters are normal and expected.
 
@@ -68,7 +68,9 @@
 
 ---
 
-## Day 7-8 (approx., after time skip)
+## Day 7+ (approx., after time skip)
+
+> Spans multiple skipped days; by the Floor 5 clear (Ch. 12) the story has reached the ~1-month mark (Ch. 13 anchor).
 
 | Event | Chapter |
 |---|---|
@@ -98,11 +100,30 @@
 
 ---
 
+## Day 30 (approx.) — 1 Month In-Game
+
+| Event | Chapter |
+|---|---|
+| Morning after Floor 5: Aaron grieving in his room; Dika takes the deaths badly | Ch. 13 |
+| Han reflects: Composure + Berserker can't co-exist — a bug tied to being half master, half hero | Ch. 13 |
+| Han reaches **Lv.9** (exp 54/70); promotion to 2★ imminent (1★ cap = Lv.10) | Ch. 13 |
+| Jenna gained an unnamed skill from the Floor 5 battle; trains obsessively ("Because I don't want to die!") | Ch. 13 |
+| Master login pattern deduced: three logins per real-world day (morning, afternoon, night) | Ch. 13 |
+| Iselle praises Han; he deflects — "business secret" (concealing his identity) | Ch. 13 |
+| **Party 4 formed**: Han, Jenna, Louis, Joffrey, Owen | Ch. 13 |
+| Daily dungeon first run: Kendert Forest (lowest rank), ~11 hours, material gathering | Ch. 13 |
+| Gathering mechanics learned: Trash(F) discarded; Branch x100 → Lumber via carpenter's shop; dimension window storage | Ch. 13 |
+| Jenna hunts and butchers wild game (father was a hunter) | Ch. 13 |
+| **Queen of the Forest** found near dungeon end — drops low-rank attribute stone (promotion material); fight begins at chapter end | Ch. 13 |
+
+---
+
 ## Pending Events
 
 | Event | Expected Chapter |
 |---|---|
-| Floor 5 survival mission outcome | Ch. 10 |
+| Queen of the Forest fight outcome + first attribute stone | Ch. 14 |
+| Han's promotion to 2★ | Ch. 14 (imminent) |
 | Sirris arrives | Ch. 10+ |
 | Yurneth finds master | Ch. 10+ |
 | Han vs Niflheimr | Ch. 15+ |
@@ -113,7 +134,8 @@
 
 | Aspect | Details |
 |---|---|
-| Earth Time | ~30 minutes per chapter |
-| Game Time | Hours to days per chapter |
-| Current Game Time | ~7-8 days since summoning (after Ch. 9 time skip) |
-| Master Logoff | Time between logins has increased a lot (Ch. 9) |
+| Earth Time | ~10 real days for the first month in-game (Ch. 13); early chapters ≈ 30 minutes of Earth time each |
+| Game Time | Hours to days per chapter; waiting room runs **3x faster than Earth** (confirmed Ch. 13) |
+| Battle Stages | Time flows the same as real time during battle stages (Ch. 13); if dilated 3x, a 30-minute stage would take 1.5 real hours |
+| Current Game Time | **~1 month since summoning / ~10 days real time** (Ch. 13) |
+| Master Logins | Three logins per real-world day — morning, afternoon, night (deduced Ch. 13); logoff time had increased a lot (Ch. 9) |

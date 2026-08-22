@@ -53,3 +53,38 @@
 
 - `docs/characters/han.md` records Han's development **up to the latest chapter** (current-state snapshot).
 - `docs/story/player-progression.md` tracks the player's/master's growth **per chapter** (chapter-by-chapter log).
+
+---
+
+## Cross-Document Audit Workflow (Standing Convention)
+
+Story chapter updates require a dependency audit **before** propagating changes into other documents. The chapter document itself may be updated per the original request, but secondary documents are never modified silently.
+
+Process:
+
+1. **Story chapter update** follows `docs/technical/script-format.md`.
+2. **Cross-document dependency search** across `docs/characters/`, `docs/psychology/`, `docs/systems/`, and Story docs (`timeline.md`, `player-progression.md`, `character-tracker.md`), plus any other doc referencing changed facts.
+3. **Only genuine dependencies are flagged** — sharing a topic with the change is not enough; there must be a real consistency or dependency issue.
+4. **Game vs Manhwa classification**: identify whether each affected item is game-specific, manhwa-specific, shared canon, or a deliberate adaptation/difference. Never overwrite one version using information from the other unless documentation establishes shared canon.
+5. **Report before modifying**: for each affected document provide (a) file, (b) section, (c) story change creating the dependency, (d) why existing info is now inconsistent, (e) proposed update. Then **stop and wait for approval**.
+6. **Apply approved secondary updates only.**
+7. **Final consistency check** after approved updates: search for stale chapter ranges ("through Chapter N", "Based on Chapters 1-N"), outdated counts, names, and statuses across all affected files.
+8. **Preserve established characterization and canon distinctions**; verify interpretation of ambiguous lines against surrounding context rather than assuming from isolated lines.
+
+---
+
+## Game vs Manhwa Documentation (Monitoring Rule)
+
+- Continuously classify information as **game-specific**, **manhwa-specific**, **shared canon**, or an **adaptation/difference** when documenting.
+- Keep the current folder structure while it remains small and manageable — no restructuring purely for the sake of separation.
+- As the project grows and separation becomes difficult to manage, **proactively recommend and implement** a clearer Game/Manhwa split — do not wait until the structure is chaotic.
+- When an update introduces a distinction between Game and Manhwa versions, reflect that distinction explicitly in the relevant documents.
+
+---
+
+## Psychology vs Characters Documentation Methodology
+
+- **`docs/psychology/` = Character + Behaviour records.** Where a character has meaningful behavioural, emotional, psychological, or developmental evidence, maintain a dedicated record tracking that development **across chapters** (`han_behaviour.md` is the model). Purpose: behavioural progression and psychological continuity — not restating the character sheet.
+- **`docs/characters/` = named characters only.** Dedicated character records are created/maintained exclusively for characters **explicitly named in the story**. Do not create permanent records for generic/unnamed NPCs or background/temporary NPCs merely because they appear in a chapter.
+- **Promotion rule:** if an unnamed NPC later gains a name, becomes established/recurring, or is otherwise promoted into a defined character, create their record at that point and **backfill** relevant information from earlier appearances where useful.
+- Keep these two concepts separate during audits so the project does not accumulate dozens of unnecessary NPC documents.

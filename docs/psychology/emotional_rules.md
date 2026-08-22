@@ -1,7 +1,7 @@
 # Emotional Rules
 
 > Comprehensive emotional states, triggers, and responses for all characters.
-> Based on Chapters 1-8. Ensures human-like emotional continuity.
+> Based on Chapters 1-13. Ensures human-like emotional continuity.
 
 ---
 
@@ -25,6 +25,10 @@ Every character must show consistent emotional responses across chapters. Emotio
 | **Dark Humor** | Death of weak heroes | "No need to explain to people who die on the lowest stage" | Ch.8: cold pragmatism |
 | **Pride** | Team improving | Internal satisfaction, minimal outward shows | Ch.8: "Good. You understood the intent." |
 | **Acceptance** | His fate | Resignation, strategic thinking | Ch.2: "But I didn't need a long time to accept reality" |
+| **Rage/Defiance** | Edge of death | Despair breaks into berserk rage (Berserker awakening) | Ch.12: "DO YOU WANT TO KILL ME?! GIVE IT YOUR BEST SHOT!" |
+| **Contempt** | Cowardice — NPCs dodging sacrifice | Deems them worthless, expendable | Ch.13: "Those guys should have died instead of the other two" |
+| **Respect** | Worthy fighters, even dead ones | Praises their potential openly | Ch.13: "Gide and Hansen actually had good potential" |
+| **Detachment** | Death of heroes in general | Doesn't mourn; states it plainly | Ch.13: "I didn't care much about who died." |
 
 ### Emotional Patterns
 
@@ -74,6 +78,9 @@ Every character must show consistent emotional responses across chapters. Emotio
 | **Encouragement** | New recruits | Motivating words | Ch.8: "I haven't fought at all before I got here either. Everyone, you got this" |
 | **Trust** | Han's guidance | Follows his lead | Ch.1: "Yes!", Ch.3-8: consistent loyalty |
 | **Tactlessness** | Speaking freely | Says inappropriate things | Ch.8: "that Oppa, was he always like that?" |
+| **Survival Drive** | Post-Floor 5 mortality awareness | Trains obsessively, earlier than everyone | Ch.13: "Because I don't want to die!" |
+| **Excitement** | Meat hunt in daily dungeon | Shouts, charges off ahead | Ch.13: "Wait for me, meat!" |
+| **Grief (managed)** | Comrades lost at Floor 5 | Grieves through action, not paralysis | Ch.11-13: told to grieve after surviving; back to training first thing |
 
 ### Emotional Patterns
 
@@ -82,6 +89,7 @@ Every character must show consistent emotional responses across chapters. Emotio
 - Ch.2: Following orders ("Yes!")
 - Ch.3-4: Growing bond (calls him "Oppa")
 - Ch.8: Complete trust ("Everyone, you got this" — echoing Han's teaching)
+- Ch.13: Fights alongside him by default (Party 4); comfortable enough to cling to his abs and get pinched for it
 
 **Fear Response:**
 - Doesn't freeze like other NPCs
@@ -97,9 +105,9 @@ Every character must show consistent emotional responses across chapters. Emotio
 
 | Gap | Risk | Solution |
 |---|---|---|
-| No anger shown | May seem passive | Show frustration with master or situation |
-| No sadness for dead comrades | May seem cold | Add moments of reflection |
-| No romantic tension with Han | May seem flat | Add subtle hints (already has "Oppa" dynamic) |
+| ~~No anger shown~~ | May seem passive | Partially addressed — "Tch" annoyance at hunt duty (Ch.13) |
+| ~~No sadness for dead comrades~~ | May seem cold | Shown — collapsed in relieved tears after surviving Floor 5 (Ch.12); grief channelled into training |
+| No romantic tension with Han | May seem flat | Subtle hints growing (abs-clinging, "Oppa" dynamic, Ch.13) |
 
 ---
 
@@ -114,6 +122,8 @@ Every character must show consistent emotional responses across chapters. Emotio
 | **Loyalty** | Han's orders | "Got it" compliance | Ch.8: "Got it" |
 | **Humility** | Skill limitations | Acknowledges he's not strong enough | Ch.8: "H-Hyung-nim, you are strong" → "Because I'm high-level, idiot" |
 | **Respect** | Han's knowledge | Calls him "Hyung-nim" | Ch.8: "They have been calling me hyung-nim" |
+| **Grief** | Deaths of Gide and Hansen | Withdraws to his room; late to training; makes a pained face | Ch.13: "Sorry for being late." |
+| **Guilt/Self-blame** | Not being stronger than he was | Blames his own weakness for their deaths | Ch.13: "If I had been a little stringer, the two of them…" (sic — source typo for "stronger") |
 
 ### Emotional Patterns
 
@@ -129,15 +139,15 @@ Every character must show consistent emotional responses across chapters. Emotio
 
 **Frustration:**
 - Spear skill stuck at Lv.2 despite hard work
-- No shown frustration — may be internalizing
+- Now shown indirectly as guilt/self-blame after Gide's and Hansen's deaths (Ch.13) rather than frustration at the plateau itself
 
 ### Emotional Gaps
 
 | Gap | Risk | Solution |
 |---|---|---|
-| No frustration with skill plateau | May seem unrealistic | Show internal disappointment |
-| No fear of death | May seem reckless | Add moments of hesitation |
-| No bonding with other trainees | May seem isolated | Add camaraderie with Gide, Hansen, Dika |
+| ~~No frustration with skill plateau~~ | May seem unrealistic | Partially filled — surfaces as self-blame (Ch.13) |
+| ~~No fear of death~~ | May seem reckless | Filled — brink of death at Floor 5 (Ch.11); survived |
+| ~~No bonding with other trainees~~ | May seem isolated | Canon-filled — was close to Gide and Hansen (Ch.13 confirms); grieves them deeply |
 
 ---
 
@@ -154,6 +164,8 @@ Every character must show consistent emotional responses across chapters. Emotio
 | **Curiosity** | Han's knowledge | Surprised, questioning | Ch.2: "N-Not you, how do you know my name?" |
 | **Authority** | Managing heroes | Aggressive commands | Throughout |
 | **Excitement** | Loki mention | Fangirling | Referenced (Ragnar Loki Club) |
+| **Performative Pride** | Praising Han in front of others | Scripted, over-the-top flattery | Ch.13: "learn from Han, who's made us all proud! …He's indeed the master of masters!" |
+| **Indignation** | Heroes slacking while she works | Shouts threats | Ch.13: "sleep your asses off while I'm working so hard? I won't let it slide!" |
 
 ### Emotional Patterns
 
@@ -298,7 +310,7 @@ Every character must show consistent emotional responses across chapters. Emotio
 
 ---
 
-## Gide, Hansen, Dika (Trainees)
+## Gide, Hansen (Deceased), Dika (Trainees)
 
 ### Primary Emotions
 
@@ -306,11 +318,17 @@ Every character must show consistent emotional responses across chapters. Emotio
 |---|---|---|---|
 | **Respect** | Han's strength | "H-Hyung-nim, you are strong" | Ch.8 |
 | **Fear** | Han's authority | Obedience | Ch.8 |
+| **Panic** | Overwhelming battle (Gide) | Fear spiral (-30% stats), hand injury, collapse | Ch.10: bleeding + fear → brink of death |
+| **Desperation** | Dying (Hansen) | Begged Han to save him | Ch.11: died begging |
+
+- **Gide**: died from his wounds mid-battle (Ch. 11).
+- **Hansen**: died while begging for rescue (Ch. 11).
+- **Dika**: took both deaths hard; one of the few who trains as hard as Aaron (Ch. 13).
 
 ### Emotional Gaps:
-- No individual personalities shown
-- No bonding with each other
-- May be interchangeable without emotional loss
+
+- ~~No individual personalities shown~~ — Partially filled by their distinct final reactions (Ch.10-11)
+- ~~No bonding with each other~~ — Canon-filled: Aaron and Dika were close to them (Ch.13)
 
 ---
 
@@ -359,13 +377,15 @@ Heroes facing death should show fear, acceptance, or defiance — not just silen
 | Character | Fear | Anger | Joy | Sadness | Trust | Determination |
 |---|---|---|---|---|---|---|
 | Han | ✅ | ✅ | ⚠️ | ⚠️ | ✅ | ✅ |
-| Jenna | ✅ | ⚠️ | ✅ | ⚠️ | ✅ | ✅ |
-| Aaron | ⚠️ | ⚠️ | ⚠️ | ⚠️ | ✅ | ✅ |
+| Jenna | ✅ | ⚠️ | ✅ | ✅ | ✅ | ✅ |
+| Aaron | ✅ | ⚠️ | ⚠️ | ✅ | ✅ | ✅ |
 | Iselle | ✅ | ✅ | ✅ | ❌ | ❌ | ✅ |
 | Shay | ❌ | ❌ | ❌ | ⚠️ | ✅ | ✅ |
 | Dolf | ✅ | ❌ | ❌ | ❌ | ❌ | ❌ |
 | Enok | ⚠️ | ❌ | ❌ | ❌ | ⚠️ | ❌ |
 | Chloe | ✅ | ❌ | ⚠️ | ❌ | ⚠️ | ❌ |
-| Gide/Hansen/Dika | ⚠️ | ❌ | ❌ | ❌ | ✅ | ⚠️ |
+| Gide†/Hansen†/Dika | ✅ | ❌ | ❌ | ⚠️ | ✅ | ✅ |
 
-**Legend:** ✅ = Shown | ⚠️ = Implied/Partial | ❌ = Not Shown
+**Legend:** ✅ = Shown | ⚠️ = Implied/Partial | ❌ = Not Shown | † = Deceased
+
+> Matrix updated through Ch. 13. Changes from the Ch.1-8 version: Jenna Sadness ⚠️→✅ (relieved tears, Ch.12); Aaron Fear ⚠️→✅ (brink of death, Ch.11), Sadness ⚠️→✅ (grief/guilt, Ch.13); trainees Determination ⚠️→✅ (they trained hard; Han confirms their effort, Ch.13).

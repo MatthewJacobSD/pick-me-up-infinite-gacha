@@ -23,6 +23,7 @@
 - **Hardworking**: First to train, last to leave
 - **Humble**: Acknowledges his limitations
 - **Protective**: Wants to fight alongside weaker heroes
+- **Deeply bonded**: Took Gide's and Hansen's deaths hard — withdrew to his room grieving (Ch. 13)
 
 ---
 
@@ -60,6 +61,9 @@
 2. **Ch. 7**: Added to favourites
 3. **Ch. 7**: Crafted weapons with Han
 4. **Ch. 8**: Spear skill stuck at Lv.2 despite training
+5. **Ch. 11**: Trapped foot freed by Han's blade; bleeding + brink of death, but pulled up the wall and survived
+6. **Ch. 12**: Levelled up after the Floor 5 clear
+7. **Ch. 13**: Grieving Gide and Hansen — late to training for the first time; blames his own strength deficit for their deaths
 
 ---
 
@@ -70,3 +74,7 @@
 > "I'll fight with you!"
 
 > "Got it."
+
+> "If I had been a little stronger, the two of them…" (Ch.13)
+
+> "Sorry for being late." (Ch.13)

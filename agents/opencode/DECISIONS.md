@@ -26,6 +26,10 @@
 | Auth flow | Mock only — no real OAuth, no passwords, no backend | Prototype requirement |
 | Memory routing | Root `AGENTS.md` auto-loads and points every session to `agents/opencode/OPENCODE.md` | Guarantees memory is read without the user reminding |
 | Interfaces isolation | `interfaces/` is a self-contained UI prototyping experiment, isolated from project structure; kept to preview the game before implementation | User clarification (v0.0.23+) |
+| Cross-document audit | Story chapter updates require a dependency audit → report affected docs → wait for approval → apply → final consistency check; never propagate silently | Standing convention (v0.0.29); full workflow in `docs/decisions.md` |
+| Game vs Manhwa split | Classify info as game-specific / manhwa-specific / shared canon / adaptation; keep current structure while manageable; proactively recommend separation before it becomes chaotic | User direction (v0.0.29) |
+| Psychology scope | `docs/psychology/` = Character + Behaviour records accumulating chapter evidence where meaningful (`han_behaviour.md` model) — progression/continuity, not character-sheet restatement | User direction (v0.0.29) |
+| Characters scope | Dedicated character records for explicitly named characters only; unnamed/background NPCs get no permanent record unless later named/recurring, then backfill | User direction (v0.0.29) |
 
 ## Historical Decision Log (by version)
 
@@ -43,10 +47,12 @@
 - **v0.0.26:** Chapter 11 documented — Gide and Hansen confirmed dead; Awakening mechanic added to heroes.md; roster/trackers updated to 6 alive.
 - **v0.0.27:** Chapter 12 documented — Floor 5 cleared at 00:00, Han awakens Berserker, MVP; daily dungeon unlocked + waiting room concept added.
 - **v0.0.28:** Chapter 13 documented — daily dungeon Kendert Forest run; promotion system (1★ cap Lv.10 → 2★), growth cost fixed at 5, Composure/Berserker conflict bug, master login pattern (3x/day), gathering mechanics (Branch x100 → Lumber), Queen of the Forest + attribute stone; Louis/Joffrey/Owen named (alive 9, total 33).
+- **v0.0.29:** Approved Ch.13 audit propagation — timeline anchored to ~1 month in-game / ~10 days real; psychology docs extended to Ch.13 with corrected characterization (Han praises Gide/Hansen, contempt aimed at synthesis-dodgers, "business secret" = identity concealment); jenna.md/aaron.md updated; standing conventions recorded (cross-document audit workflow, Game/Manhwa monitoring, Psychology/Characters documentation methodology).
 
 ## Open Questions / Pending
 
 - Chapter 14 content: not yet provided by user; Queen of the Forest fight outcome next; Han's promotion to 2★ imminent.
+- Game/Manhwa folder separation deferred until the structure becomes hard to manage (monitor actively).
 - Task statuses (backend/frontend/design) remain Pending — code development has not been announced.
 - `docs/licenses/` directory exists but is empty (placeholder).
 - Whether the prototype should be wired to real backend APIs or remain mock-only.

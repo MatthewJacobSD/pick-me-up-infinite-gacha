@@ -57,6 +57,26 @@
 
 - Repeated panels/lines across chapters are **intentional** (connections between chapters, e.g. the well-forged longsword). Do not treat them as errors to remove.
 
+## 6b. Cross-Document Audit Workflow (from `docs/decisions.md`)
+
+Story chapter updates require a dependency audit **before** touching other documents:
+
+1. Update the chapter document per the original request.
+2. Search Character/, Psychology/, Systems/, Story docs for genuine downstream dependencies.
+3. Classify affected info: game-specific / manhwa-specific / shared canon / adaptation difference. Never overwrite one with the other unless shared canon is established.
+4. **Report** each affected doc (file, section, dependency cause, inconsistency, proposed update) and **stop**.
+5. Apply secondary changes only after user approval.
+6. Run a final consistency check (stale "through Chapter N"/"Chapters 1-N" ranges, counts, names, statuses).
+7. Preserve established characterization; interpret ambiguous lines against surrounding context, not in isolation.
+
+## 6c. Documentation Scope Rules (from `docs/decisions.md`)
+
+- **Psychology/** = Character + Behaviour records accumulating chapter-by-chapter evidence where meaningful evidence exists (`han_behaviour.md` is the model). Tracks progression and continuity, not character-sheet restatement.
+- **Characters/** = dedicated records for **explicitly named characters only**. No permanent records for unnamed/background NPCs.
+- If an unnamed NPC later becomes named/recurring/promoted → create their record then and backfill earlier appearances where useful.
+- Keep Psychology vs Characters vs unnamed-NPC concepts separate during audits.
+- Game vs Manhwa separation: monitor continuously; structure stays while manageable; proactively recommend a split before it becomes chaotic.
+
 ## 7. Architecture "Must" Rules (from `docs/technical/`)
 
 - **Gacha must be an atomic REST transaction** (`server-modules.md`).

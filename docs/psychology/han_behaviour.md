@@ -1,7 +1,7 @@
 # Han's Behaviour Patterns
 
 > How Han Seojin thinks, acts, and adapts in the game world.
-> Based on Chapters 1-8 with chapter-by-chapter evidence.
+> Based on Chapters 1-13 with chapter-by-chapter evidence.
 
 ---
 
@@ -28,11 +28,14 @@ Han actively suppresses emotions:
 - Ch.1: "I guess that's why they're 1 star" (after Party 1 annihilation)
 - Ch.2: "Watch me survive until the end" (determination, not grief)
 - Ch.8: "No need to explain to people who die on the lowest stage" (cold pragmatism)
+- Ch.11: "Gide is already dead. Help over here." (triage mid-collapse — no pause to mourn)
+- Ch.13: "I didn't care much about who died." (detachment stated outright, as self-description)
 
 **When Suppression Breaks:**
 - Ch.1: "Shit..." (frustration when things go wrong)
 - Ch.2: "You damned bastard!" (anger at being trapped)
 - Ch.8: "This is the last time I'll overlook this" (anger at deception)
+- Ch.12: Berserker rage at the edge of death — despair breaking into defiance, not grief ("DO YOU WANT TO KILL ME?! GIVE IT YOUR BEST SHOT!")
 
 ---
 
@@ -80,6 +83,24 @@ Han actively suppresses emotions:
 - **Action**: Acknowledges progress ("Good. You understood the intent.")
 - **Quote**: "Aaron, how many goblins did you kill? ... Good."
 
+### When Allies Die Mid-Battle (Ch.11)
+- **Emotion**: None shown outwardly — cold triage
+- **Action**: Declares the lost cause dead, reallocates survivors, keeps fighting
+- **Quote**: "Gide is already dead. Help over here."
+
+### When Judging the Fallen (Ch.13)
+Han separates the worthy dead from the unworthy:
+- **Respect/praise** for Gide and Hansen: they "actually had good potential" and "would've been useful if they were allowed to become a little stronger". Their deaths are a loss, not a deserved outcome.
+- **Contempt** for the NPCs "who'd do anything to avoid being synthesized" (the ones who hide instead of training). Han despised that cowardice and felt *those* should have died instead of Gide and Hansen.
+- **Important distinction**: his harsh verdict targets the cowards' behaviour, never the deceased trainees themselves.
+- **Quote**: "They simply died because they were weak. That's all there is to it." (to Aaron, blunt comfort without ceremony)
+
+### When Praised Publicly (Ch.13)
+- **Emotion**: Deflection — not modesty, but concealment
+- **Context**: Iselle hails him as "the master of masters"; Jenna asks why she's acting like that
+- **Response**: "It's a business secret."
+- **Purpose**: protects his real identity (Loki), which must stay hidden even from allies
+
 ---
 
 ## Decision Matrix
@@ -93,6 +114,9 @@ Han actively suppresses emotions:
 | Master makes bad choice | Internal criticism | Can't intervene directly | Ch.2 |
 | Ally wants to help | Allow with boundaries | Growth through risk | Ch.8 (Aaron) |
 | Knowledge gap exists | Selective sharing | Protect allies from worry | Ch.8 (boss floor info) |
+| Ally dies mid-battle | Cold triage; keep fighting | Survival of the remaining many | Ch.11 (Gide) |
+| Cowardice observed | Contempt; deems them expendable | Fear of synthesis = worthless to him | Ch.13 |
+| Praised in public | Deflect ("business secret") | Conceal Loki identity | Ch.13 |
 
 ---
 
@@ -118,18 +142,36 @@ Han actively suppresses emotions:
 - **End**: Team management, role assignment
 - **Key Moment**: Forming combat/support teams
 
+### Ch.9-10: Command Under Pressure
+- **Start**: Delegating practice (stays out of the Floor 4 fight so trainees learn)
+- **End**: Running a survival battle through strict rotations and one-slash efficiency
+- **Key Moment**: Kicking Gide out of his fear spiral — discipline as care
+
+### Ch.11-12: Loss and Rage
+- **Start**: Cold triage while the formation collapses (Gide, then Hansen die)
+- **End**: Edge-of-death despair breaks into rage → **Berserker awakening**; carries the party to Stage Clear, MVP
+- **Key Moment**: "I won't fall here… I will never stop!"
+
+### Ch.13: Detachment as Doctrine + Hidden Identity
+- **Start**: Openly states he doesn't mourn much ("I didn't care much about who died")
+- **Middle**: Separates worthy dead (Gide/Hansen, praised) from unworthy survivors (synthesis-dodgers, despised)
+- **End**: Deflects Iselle's public praise to protect his Loki identity; leads Party 4 into the daily dungeon and hunts the Queen of the Forest for promotion materials
+- **Key Moment**: "It's a business secret."
+
 ---
 
 ## Emotional Gaps (Potential Issues)
 
 | Gap | Risk | Solution | Priority |
 |---|---|---|---|
-| No grief shown for dead heroes | May seem sociopathic | Show internal conflict occasionally | Medium |
+| No grief shown for dead heroes | May seem sociopathic | ~~Show internal conflict occasionally~~ → **Canon-confirmed in Ch.13** ("I didn't care much about who died") — genuine detachment is deliberate characterization, not a writing gap. He does distinguish worthy from unworthy dead. | Resolved (canon) |
 | No homesickness for Earth | May seem detached | Add internal monologue about old life | Low |
 | No fear of Niflheimr directly | May seem overconfident | Show strategic worry, not panic | High |
-| No joy in victories | May seem robotic | Add small moments of satisfaction | Medium |
+| No joy in victories | May seem robotic | ~~Add small moments of satisfaction~~ → Partially addressed (MVP Ch.12; quiet satisfaction at team growth) | Partially resolved |
 | No frustration with master | May seem passive | Add internal criticism (already present in Ch.2) | Low |
 | No anger at being trapped | May seem accepting too quickly | Show lingering resentment | Medium |
+
+> Note (added after Ch.13): Han's lack of grief should be played as **selective valuation** — respect for fighters who tried (Gide/Hansen), contempt for cowards who dodge sacrifice — not as blanket sociopathy.
 
 ---
 
@@ -170,3 +212,17 @@ Han actively suppresses emotions:
 
 ### Deflection
 > "Because I'm high-level, idiot." (Ch.8)
+
+### Rage/Defiance
+> "DO YOU WANT TO KILL ME?! GIVE IT YOUR BEST SHOT!" (Ch.12)
+> "I won't fall here… I will never stop!" (Ch.12)
+
+### Contempt (for cowardice, not for the dead)
+> "They're people who'd do anything to avoid being synthesized." (Ch.13)
+> "Those guys should have died instead of the other two." (Ch.13 — the synthesis-dodgers vs Gide/Hansen)
+
+### Respect for the Worthy Dead
+> "Gide and Hansen actually had good potential. They'd have been useful if they were allowed to become a little stronger." (Ch.13)
+
+### Identity Concealment
+> "It's a business secret." (Ch.13)

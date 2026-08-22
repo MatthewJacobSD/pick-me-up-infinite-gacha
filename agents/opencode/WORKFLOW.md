@@ -50,12 +50,15 @@ All current work happens on `master`.
 When a new manhwa chapter arrives (e.g. Chapter 9):
 
 1. Add `docs/story/chapters/chapter-09.md` in `script-format.md` format.
-2. Update `docs/story/character-tracker.md` (statuses, deaths).
-3. Update `docs/story/timeline.md` (remember: time skips are normal).
-4. Update `docs/story/player-progression.md` (per-chapter player/master growth).
-5. Refresh `docs/characters/*.md` latest-state snapshots (e.g. `han.md`).
-6. Update systems/psychology docs if mechanics/emotional beats change.
-7. Bump version and commit once.
+2. **Run the cross-document audit** (RULES.md §6b / `docs/decisions.md`): search Character/, Psychology/, Systems/, Story docs for genuine dependencies; classify game/manhwa/shared canon; **report affected documents to the user and wait for approval before modifying them**.
+3. After approval, apply approved updates:
+   - `docs/story/character-tracker.md` (statuses, deaths)
+   - `docs/story/timeline.md` (remember: time skips are normal)
+   - `docs/story/player-progression.md` (per-chapter player/master growth)
+   - `docs/characters/*.md` latest-state snapshots (named characters only — RULES.md §6c)
+   - systems/psychology docs if mechanics/emotional beats change
+4. Bump version and commit once.
+5. **Final consistency check:** grep for stale "through Chapter N" / "Based on Chapters 1-N" ranges, old counts, and outdated statuses.
 
 ## interfaces/ Development Pattern
 
