@@ -92,6 +92,7 @@ Every character must show consistent emotional responses across chapters. Emotio
 - Ch.3-4: Growing bond (calls him "Oppa")
 - Ch.8: Complete trust ("Everyone, you got this" — echoing Han's teaching)
 - Ch.13: Fights alongside him by default (Party 4); comfortable enough to cling to his abs and get pinched for it
+- Ch.15: Social bridge to newcomers — greets Edis first and vouches for Han ("He might look indifferent but he's warm-hearted")
 
 **Fear Response:**
 - Doesn't freeze like other NPCs
@@ -349,6 +350,21 @@ Every character must show consistent emotional responses across chapters. Emotio
 - Consistently fearful
 - No courage shown
 - Die from fear-induced mistakes
+
+---
+
+## Pulverizing Wolves (Ch. 15)
+
+| Character | Emotion | Trigger | Response | Chapter Evidence |
+|---|---|---|---|---|
+| Edis Callen | Guarded caution | New environment, strangers | Polite, hesitant ("H-hello…"), answers carefully | Ch.15 |
+| Edis Callen | Memory distress | Recalling her summoning | Head pain; avoids digging | Ch.15: "My head would hurt if I tried to remember more..." |
+| Edis Callen | Tentative hope | Jenna's admiration of mercenary life | "R-Really? But now…" — pride undercut by displacement | Ch.15 |
+| Jaken | Impulsive enthusiasm | Food, action, spectacle | Stole a drumstick; "Let's go crazy!" | Ch.15 |
+
+**Group pattern:** confident to the point of arrogance ("We already know") with an intimidating edge other NPCs sense instantly ("They already have weapons!") — strong but not obviously good people.
+
+> The five share an affinity link (consecutive summons) and are stronger in the same party together.
 
 ---
 

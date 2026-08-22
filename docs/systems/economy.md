@@ -19,6 +19,9 @@
 ### Stage Reward Example (Floor 5 clear — survival mission, Ch. 12)
 5,000G, Iron Ore (C) x1, Leather (C) x3, Wooden Planks (B) x2
 
+### Stage Reward Example (Floor 6 clear — explore, Ch. 15)
+5,000G
+
 ---
 
 ## Material Gathering (Daily Dungeon, Ch. 13)
@@ -50,6 +53,7 @@
 |---|---|
 | Free Gems | Very rare, hard to obtain |
 | Paid Gems | Real money (ANYTNG spends 65,000 won packages) |
+| Packages | 'Newbie potent package': 50,000 won → 2,500 gems + 50,000 gold (Ch. 15) |
 | Usage | Advanced summoning, premium upgrades |
 | Strategy | Save for critical moments |
 

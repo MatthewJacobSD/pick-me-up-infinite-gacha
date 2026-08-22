@@ -9,7 +9,7 @@
 | Aspect | Details |
 |---|---|
 | Total Floors | 100 |
-| Current Progress | Floor 5 cleared (survival mission, Ch. 9-12) |
+| Current Progress | Floor 6 cleared (Explore mission, Ch. 14-15) |
 | Boss Floors | Every 5 stages (5, 10, 15, etc.) |
 | Difficulty Scaling | Exponential after boss floors |
 | Daily Dungeon | Unlocked after clearing the 5th floor (Ch. 12); first run in Ch. 13 |
@@ -115,6 +115,18 @@ Material-gathering dungeon accessed through the space-time crack. No mandatory c
 - Used in many item crafting recipes **and hero promotion**
 - **Plants of Life** spawn on the Sinmiel Plateau — key ingredient in healing potions (Ch. 14)
 - Harvestable by-products: Queen's blood, teeth/claws ripped off and separated
+
+---
+
+## Streams (Ch. 15)
+
+Linked quests that start with exploration hints found during main dungeon stages.
+
+- Exploration missions seed hints for what comes next (Floor 6 hint: goblin village → likely a **large goblin habitat**)
+- "Being able to analyze streams would depend on how competent the master is" — the master must notice and connect the hints
+- Han worries ANYTNG missed what he saw ("This is so frustrating")
+- Streams are appearing **earlier than Han expected** from his game knowledge — pacing anomaly worth tracking
+- Han scouts ahead after a clear precisely to read these hints before the next stage
 
 ---
 

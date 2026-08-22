@@ -1,6 +1,6 @@
 # Story Timeline
 
-> Chronological events through Chapter 14.
+> Chronological events through Chapter 15.
 >
 > **Note:** The timeline is not 1 chapter = 1 day. Time skips between chapters are normal and expected.
 
@@ -143,8 +143,9 @@
 
 | Event | Expected Chapter |
 |---|---|
-| Floor 6 Explore outcome (goblin village ambush) | Ch. 15 |
-| Han's promotion to 2★ (wind/water elemental stones acquired) | Ch. 15 (imminent) |
+| Large goblin habitat / next stream chain | Ch. 16 |
+| Han's promotion to 2★ (wind/water elemental stones acquired) | Ch. 16 (imminent) |
+| Pulverizing Wolves integration & party dynamics | Ch. 16+ |
 | Plants of Life gathering | Ch. 15+ |
 | Sirris arrives | Ch. 10+ |
 | Yurneth finds master | Ch. 10+ |

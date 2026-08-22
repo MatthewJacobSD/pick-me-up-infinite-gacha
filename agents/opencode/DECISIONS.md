@@ -49,10 +49,11 @@
 - **v0.0.28:** Chapter 13 documented — daily dungeon Kendert Forest run; promotion system (1★ cap Lv.10 → 2★), growth cost fixed at 5, Composure/Berserker conflict bug, master login pattern (3x/day), gathering mechanics (Branch x100 → Lumber), Queen of the Forest + attribute stone; Louis/Joffrey/Owen named (alive 9, total 33).
 - **v0.0.29:** Approved Ch.13 audit propagation — timeline anchored to ~1 month in-game / ~10 days real; psychology docs extended to Ch.13 with corrected characterization (Han praises Gide/Hansen, contempt aimed at synthesis-dodgers, "business secret" = identity concealment); jenna.md/aaron.md updated; standing conventions recorded (cross-document audit workflow, Game/Manhwa monitoring, Psychology/Characters documentation methodology).
 - **v0.0.30:** Chapter 14 documented via audit workflow (first full run) — Queen defeated + wind stone D-, Jenna awakens 'Hunter of the Forest' (achievement-triggered awakening broadens the mechanic), Sinmiel Plateau water stone, Plants of Life, Floor 6 Explore mission + Dika joins Party 1, goblin village trap cliffhanger. Also repaired Tracking Notes header accidentally removed in v0.0.28.
+- **v0.0.31:** Chapter 15 documented via audit workflow — Floor 6 clear (MVP Han), streams concept + glossary terms, affinity-link consecutive summons, summon-rank knowledge gap, 'newbie potent package' economy, Pulverizing Wolves 3★ x5 added to trackers (alive 14, total 38); Jenna quote/key moment additions approved by user.
 
 ## Open Questions / Pending
 
-- Chapter 15 content: not yet provided by user; Floor 6 ambush outcome next; Han's promotion to 2★ imminent (materials acquired).
+- Chapter 16 content: not yet provided by user; large goblin habitat / next stream chain next; Han's promotion to 2★ imminent.
 - Game/Manhwa folder separation deferred until the structure becomes hard to manage (monitor actively).
 - Task statuses (backend/frontend/design) remain Pending — code development has not been announced.
 - `docs/licenses/` directory exists but is empty (placeholder).

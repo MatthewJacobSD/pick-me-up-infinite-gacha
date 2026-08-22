@@ -13,6 +13,13 @@
 | Free 10-Pull | Free | Every few days |
 | Equipment 10-Pull | 50,000 Gold | Unlimited |
 
+### Affinity Link (Ch. 15)
+
+- TIP: when performing **consecutive summons**, there is a very low chance to summon heroes that have affinity with each other
+- Affinity heroes are **more powerful when in the same party** together
+- Notification: "A strong link can be sensed between the five summons" (Pulverizing Wolves mercenaries)
+- Related: Intimacy System below (bond bonuses formed through shared combat)
+
 ---
 
 ## Star Ranks
@@ -93,6 +100,13 @@
 ### Class Evolution
 - Novice → Specialized class (based on skills/stats)
 - Class determines role in party
+- Higher-rank summons can arrive with a class **already assigned** — Edis Callen spawned as a 3★ Thief with a full skill kit (Ch. 15); 1★ heroes start as Novice
+
+### Summon-Rank Knowledge Gap (Ch. 15)
+- "There's indeed a gap in information that we know depending on the summon rank"
+- Higher-rank summons innately know key concepts without being told — Edis knew what synthesis is
+- Memories of how they were summoned are suppressed: Edis recalls her mercenary life in Halsia, but trying to remember the summoning itself causes head pain
+- Lower-rank heroes (1★) arrive knowing little to nothing
 
 ### Combat Desire
 - Heroes perform better when they want to fight
@@ -193,18 +207,23 @@
 
 ---
 
-## Current Roster (Ch. 14)
+## Current Roster (Ch. 15)
 
 | Name | Star | Role | Status |
 |---|---|---|---|
 | Han Islat | 1★ | Combat (Leader) | Alive — Lv.9 (exp 54/70), near 1★ cap; Berserker awakened; promotion materials acquired |
 | Jenna Cirai | 1★ | Combat (Ranged) / Hunter | Alive — awakened 'Hunter of the Forest' (Ch. 14); dreams of a non-combat life, Han hinted at a spot for her |
-| Aaron Delcut | 1★ | Combat (Melee) | Alive — no new skills despite hard training (Ch. 13); Floor 6 ambush spear role |
-| Dika | 1★ | Combat (Trainee) | Alive — joined Party 1 for the Floor 6 Explore mission as reserve (Ch. 14) |
+| Aaron Delcut | 1★ | Combat (Melee) | Alive — Floor 6 ambush spear role (Ch. 14) |
+| Dika | 1★ | Combat (Trainee) | Alive — Party 1 reserve on Floor 6; asked "Is it over?" (Ch. 15) |
 | Enok | 1★ | Support (Carpenter) | Alive |
-| Chloe | 1★ | Support (Cook) | Alive |
-| Louis | 1★ | Gatherer (Party 4) | Named Ch. 13 — daily dungeon runs, feast (Ch. 14) |
-| Joffrey | 1★ | Gatherer (Party 4) | Named Ch. 13 — daily dungeon runs; startled by the Forest Queen (Ch. 14) |
-| Owen | 1★ | Gatherer (Party 4) | Named Ch. 13 — nervous; told he won't have to fight |
+| Chloe | 1★ | Support (Cook) | Alive — first to notice the newcomers felt "off" (Ch. 15) |
+| Louis | 1★ | Gatherer (Party 4) | Named Ch. 13 |
+| Joffrey | 1★ | Gatherer (Party 4) | Named Ch. 13 |
+| Owen | 1★ | Gatherer (Party 4) | Named Ch. 13 |
+| Avant Dejacques | 3★ | Party 5 Leader | Pulverizing Wolves; auto-chosen team leader (Ch. 15) |
+| Edis Callen | 3★ | Thief (Dagger) | Ex-mercenary from Halsia; skilled even among mercenaries (Ch. 15) |
+| Beignin | 3★ | — | Pulverizing Wolves (Ch. 15) |
+| Jaken | 3★ | — | Pulverizing Wolves; meat enthusiast (Ch. 15) |
+| Wave | 3★ | — | Pulverizing Wolves (Ch. 15) |
 
-> Gide and Hansen (trainees) died during the Floor 5 survival mission (Ch. 11).
+> Gide and Hansen (trainees) died during the Floor 5 survival mission (Ch. 11). The five 3★ mercenaries arrived via consecutive-summon affinity link and are stronger in the same party together (Ch. 15).

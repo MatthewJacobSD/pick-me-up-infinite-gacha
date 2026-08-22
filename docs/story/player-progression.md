@@ -131,6 +131,16 @@
 - **Floor 6 revealed**: new mission type — **Explore** ("Investigate the Unfamiliar location!"). Uncommon mission, no enemies visible at start. Dika joins Party 1.
 - Trap discovery: goblin Level 8 x3 carrying a **blowing horn** = reinforcements nearby; Jenna spots a goblin village (~100). Ambush planned (Han aggro / Jenna right goblin / Aaron spear / Dika reserve). Cliffhanger as engagement begins.
 
+### Chapter 15
+
+- Floor 6 ambush resolved → **Stage Clear! MVP – Han**; rewards 5,000G. Han warns Dika "Not yet" and scouts ahead.
+- **Stream analysis**: exploration hints seed linked quest chains ("streams"); reading them depends on master competence. Han worries ANYTNG missed the hint (large goblin habitat ahead). Streams appearing earlier than his game knowledge predicted.
+- **Master spending escalation**: bought the 'newbie potent package' (50,000 won → 2,500 gems + 50,000 gold).
+- Consecutive-summon **affinity link** produced five 3★ mercenaries: **Pulverizing Wolves** (Avant Dejacques, Edis Callen, Beignin, Jaken, Wave). Strong link between them; stronger in the same party. Party 5 formed; Avant auto-chosen leader.
+- Han's critique: he'd have saved such summons for the Floor 5 boss challenge.
+- Edis intel: 3★ arrive with classes and multi-skill kits; innate knowledge of concepts like synthesis; summoning memories suppressed (recall causes head pain). She's skilled even among mercenaries — a clear gap vs Molmont (2★).
+- Han dismissed Party 1 before the newcomers arrived ("Nothing changes just because some unique newbies are here") and coldly rebuffed slacker NPCs begging protection — they barely avoided synthesis by pretending to work.
+
 ---
 
 ## Tracking Notes

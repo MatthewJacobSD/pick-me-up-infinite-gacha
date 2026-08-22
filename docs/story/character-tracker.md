@@ -1,7 +1,7 @@
 # Character Tracker — Pick Me Up, Infinite Gacha
 
 > Tracks all characters introduced, their status, and fate.
-> Updated through Chapter 14.
+> Updated through Chapter 15.
 
 ---
 
@@ -18,6 +18,13 @@
 | **Louis** | 1★ | Gatherer | Named Ch. 13 — Party 4 member for the Kendert Forest daily dungeon run; present at the post-Queen feast (Ch. 14). |
 | **Joffrey** | 1★ | Gatherer | Named Ch. 13 — Party 4 member for the Kendert Forest daily dungeon run; startled by the Forest Queen (Ch. 14). |
 | **Owen** | 1★ | Gatherer | Named Ch. 13 (spoke as NPC1). Nervous about fighting; Han told the gatherers they won't have to fight. Witnessed Han fight the Forest Queen (Ch. 14). |
+| **Avant Dejacques** | 3★ | Party 5 Leader | Summoned Ch. 15 with the Pulverizing Wolves mercenaries (affinity link); auto-chosen team leader of Party 5 'Pulverizing Wolves'. |
+| **Edis Callen** | 3★ | Thief | Named Ch. 15 (first appeared as NPC1). Level 1 (exp 0/10). STR 13/13, INT 10/10, HP 14/14, AGI 17/17 — typical thief build (low STR/HP, high AGI), dagger-type over bow. Skills: Basic Dagger (Lv.3), Basic Archery (Lv.1), Nimble Movement (Lv.1). Ex-Pulverizing Wolves mercenary from Halsia; remembers her old life but not how she was summoned (trying causes head pain) — higher-rank summons innately know concepts like synthesis. Jenna's first friend among the newcomers; Han rates her skilled even among mercenaries. |
+| **Beignin** | 3★ | — | Named Ch. 15 — Pulverizing Wolves member; Party 5. |
+| **Jaken** | 3★ | — | Named Ch. 15 — Pulverizing Wolves member; Party 5. Meat enthusiast (took a whole drumstick; "Let's go crazy!"). |
+| **Wave** | 3★ | — | Named Ch. 15 — Pulverizing Wolves member; Party 5. |
+
+> The five Pulverizing Wolves arrived via a consecutive-summon affinity link and are more powerful in the same party together (Ch. 15).
 
 ---
 
@@ -83,8 +90,8 @@
 
 | Status | Count |
 |---|---|
-| **Alive** | 9 (Islat Han, Jenna Cirai, Aaron, Enok, Chloe, Dika + newly named: Louis, Joffrey, Owen) |
+| **Alive** | 14 (Han, Jenna, Aaron, Enok, Chloe, Dika, Louis, Joffrey, Owen + Pulverizing Wolves: Avant, Edis, Beignin, Jaken, Wave) |
 | **Deceased (Combat)** | 15 |
 | **Deceased (Synthesis)** | 4 (Shay, Toby, Yelson, Dolf) |
 | **Niflheimr Elite** | 5 (Nihaku, Muden, Lidigyon, Sirris, Yurneth) |
-| **Total Introduced** | 33 |
+| **Total Introduced** | 38 |

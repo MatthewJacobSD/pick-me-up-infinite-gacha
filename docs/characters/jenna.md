@@ -74,6 +74,7 @@
 6. **Ch. 12**: Survived Floor 5; levelled up; collapsed in relieved tears
 7. **Ch. 14**: Awakens **'Hunter of the Forest'** during the Queen of the Forest kill; runs the Sinmiel Plateau with Han (wolf hunt, water elemental stone)
 8. **Ch. 14**: Reveals her dream of a peaceful non-combat life; Han hints he could make a spot for her if things improve
+9. **Ch. 15**: First to welcome the Pulverizing Wolves; befriends Edis Callen and vouches for Han
 
 ---
 
@@ -94,3 +95,5 @@
 > "This would be paradise if there wasn't a master!" (Ch.14)
 
 > "I hope master never comes back." (Ch.14)
+
+> "He might look indifferent but he's warm-hearted." (Ch.15)
