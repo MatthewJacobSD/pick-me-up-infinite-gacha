@@ -12,7 +12,7 @@
 - **Platform:** PC, Mobile, Console (cross-platform), fully online
 - **Mode:** Fully online; 24/7 server connectivity; client never trusted
 
-## The Story (as of Ch. 15)
+## The Story (as of Ch. 16)
 
 - **Protagonist:** Han Seojin, real player from Seoul (Gangseo-Gu, South Earth). Summoned into his own game as a **1★ hero "Islat Han"** by a Level-999 bugged entity (the God of Death).
 - **Big reveal:** Han **is Loki** (Account #46631913, Rank 5, "Master of Masters"). Heroes are real humans from across ~1M worlds.
@@ -22,23 +22,26 @@
 - **Aaron:** Loyal disciple, calls Han "Hyung-nim"; spear skill stuck at Lv.2.
 - **Niflheimr:** The evil guild/order that killed Loki; their **Elite 5** (6★ Lv.99) are investigating Loki's return — Sirris dispatched to find Han, Yurneth investigating the master.
 
-## Current State Snapshot (through Ch. 15)
+## Current State Snapshot (through Ch. 16)
 
-- **Alive (14):** Han, Jenna, Aaron, Enok, Chloe, Dika, Louis, Joffrey, Owen + **Pulverizing Wolves (3★, Ch.15): Avant Dejacques (Party 5 leader), Edis Callen (Thief), Beignin, Jaken, Wave.**
+- **Alive (14):** Han, Jenna, Aaron, Enok, Chloe, Dika, Louis, Joffrey, Owen + **Pulverizing Wolves (3★, Ch.15): Avant Dejacques (Party 5 leader), Edis Callen (Thief), Beignin, Jaken, Wave.** Plus Sorial & Daniel (1★, Ch.16) seized for synthesis — fate unresolved at the cliffhanger.
 - **Tower progress:** **Floor 6 Explore cleared** — MVP Han, 5,000G. Stream hints point to a large goblin habitat; streams appearing earlier than Han expected. Daily dungeons running; Plants of Life gathering pending; Han's promotion materials acquired.
-- **New mechanics:** Streams (linked quest chains from exploration hints, master-competence-gated); affinity link via consecutive summons (stronger in same party); summon-rank knowledge gap (3★ know synthesis innately; summoning memories suppressed); 3★ arrive with classes/skill kits.
+- **Ch.16 crisis:** ANYTNG ran another 10 consecutive summons and **synthesized immediately without examination** — Diman & Lexigel consumed (Jaken levelled up); Sorial & Daniel seized next. Han sent advice to the master through Iselle as a TIP notification; Jaken attacked him (blocked by Jenna's deliberate miss); Han exposed the Wolves as a **thief troupe** → hostility formed with the whole team; Iselle admitted hero-vs-hero fighting isn't strictly forbidden.
+- **Cliffhanger:** **Open duel — Han vs Avant**, condition 'synthesizing' (winner consumes the loser); Avant accepted.
+- **New mechanics:** Streams (linked quest chains from exploration hints, master-competence-gated); affinity link via consecutive summons (stronger in same party); summon-rank knowledge gap (3★ know synthesis innately; summoning memories suppressed); 3★ arrive with classes/skill kits; Open Duel system with agreed conditions; hostility notifications + tracked hero relationships; heroes can reach the master via TIP through Iselle; synthesis grants the consumer an immediate level-up.
 - **Master spending:** 'newbie potent package' — 50,000 won → 2,500 gems + 50,000 gold.
 - **Han:** Lv.9, near 1★ cap; Composure+Berserker bug insight stands. Dismissed Party 1 before the newcomers arrived; rebuffed slacker NPCs begging protection.
-- **Jenna:** 'Hunter of the Forest' awakened; dreams of non-combat life; social bridge to Edis.
-- **Edis Callen:** ex-Pulverizing Wolves mercenary (Halsia); dagger-type Thief; skilled even among mercenaries — clear gap above Molmont (2★).
-- **Standing facts:** Facilities include Lodging, Restaurant, Training Center, Equipment Workshop, Square, Weapons Storage + Blacksmith's Forge. Synthesis used: Toby → Han, Yelson → Jenna, Shay (4★) by ANYTNG, Dolf + 2 inactive. Equipment production: blacksmith + tanner + Enok mass-produce E-rank gear. Awakening triggers: limit-tests (Han) or achievement (Jenna). ANYTNG logs in 3x/day; waiting room 3x dilation; battle stages real-time.
-- **Deaths (unchanged):** ~15 combat + 4 synthesis + 1 thinning. Total introduced: 38.
+- **Jenna:** 'Hunter of the Forest' awakened; dreams of non-combat life; social bridge to Edis; first moral rebellion against synthesis (Ch.16).
+- **Edis Callen:** ex-Pulverizing Wolves mercenary (Halsia); dagger-type Thief; skilled even among mercenaries — clear gap above Molmont (2★). Showed conscience during synthesis ("Avant, let's stop here for today") — fracture line inside the Wolves.
+- **Standing facts:** Facilities include Lodging, Restaurant, Training Center, Equipment Workshop, Square, Weapons Storage + Blacksmith's Forge. Synthesis used: Toby → Han, Yelson → Jenna, Shay (4★) by ANYTNG, Dolf + 2 inactive, Diman + Lexigel (Ch.16, unexamined). Equipment production: blacksmith + tanner + Enok mass-produce E-rank gear. Awakening triggers: limit-tests (Han) or achievement (Jenna). ANYTNG logs in 3x/day; waiting room 3x dilation; battle stages real-time.
+- **Deaths:** ~15 combat + 6 synthesis (incl. Diman, Lexigel) + 1 thinning. Total introduced: 42.
 
 ## Pending Story Beats
 
-- Large goblin habitat / next stream chain (Ch. 16 expected).
+- Han vs Avant duel outcome — synthesis stake (Ch. 17).
+- Sorial & Daniel's fate (Ch. 17).
+- Large goblin habitat / next stream chain (Ch. 17+).
 - Han's promotion to 2★ (materials acquired, imminent).
-- Pulverizing Wolves integration and party dynamics.
 - Plants of Life gathering run.
 - Sirris arrives (Ch. 10+).
 - Yurneth finds the master (Ch. 10+).

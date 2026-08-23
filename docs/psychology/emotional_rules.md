@@ -93,6 +93,7 @@ Every character must show consistent emotional responses across chapters. Emotio
 - Ch.8: Complete trust ("Everyone, you got this" — echoing Han's teaching)
 - Ch.13: Fights alongside him by default (Party 4); comfortable enough to cling to his abs and get pinched for it
 - Ch.15: Social bridge to newcomers — greets Edis first and vouches for Han ("He might look indifferent but he's warm-hearted")
+- Ch.16: First moral rebellion against the master's system — protests unexamined synthesis ("This is wrong! At the very least, they should be given a chance!"); shields Han from Jaken with a deliberate miss
 
 **Fear Response:**
 - Doesn't freeze like other NPCs
@@ -361,8 +362,12 @@ Every character must show consistent emotional responses across chapters. Emotio
 | Edis Callen | Memory distress | Recalling her summoning | Head pain; avoids digging | Ch.15: "My head would hurt if I tried to remember more..." |
 | Edis Callen | Tentative hope | Jenna's admiration of mercenary life | "R-Really? But now…" — pride undercut by displacement | Ch.15 |
 | Jaken | Impulsive enthusiasm | Food, action, spectacle | Stole a drumstick; "Let's go crazy!" | Ch.15 |
+| Avant | Arrogant probing | Assessing the plaza's strength | Casually asks if the roster is everyone while sizing people up | Ch.16 |
+| Jaken | Cruelty-joy | Consuming heroes in synthesis | Laughs while levelling up on Diman and Lexigel; attacks Han when challenged ("I'll kill you first!") | Ch.16 |
+| Edis Callen | Conscience | Unexamined synthesis of Sorial & Daniel | "Avant, let's stop here for today" — soft protest, shouted down by the leader | Ch.16 |
+| Wave | Dismissive boredom | Weak goblin-stage opponents | "Not even enough to get me excited" | Ch.16 |
 
-**Group pattern:** confident to the point of arrogance ("We already know") with an intimidating edge other NPCs sense instantly ("They already have weapons!") — strong but not obviously good people.
+**Group pattern:** confident to the point of arrogance ("We already know") with an intimidating edge other NPCs sense instantly ("They already have weapons!") — strong but not obviously good people. Ch. 16 confirms it: they run synthesis like a feeding frenzy, with only Edis objecting.
 
 > The five share an affinity link (consecutive summons) and are stronger in the same party together.
 

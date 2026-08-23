@@ -140,8 +140,33 @@
 
 ### Synthesis Examples
 - **Toby** → Han gains Composure
-- **Yelson** → Jenna gains Eagle's Eye
+- **Yelson (Elson)** → Jenna gains Eagle's Eye
 - **Shay (4★)** → Han gains enhanced stats
+
+### Synthesis Without Examination (Ch. 16)
+- The master synthesized brand-new summons immediately after a 10-pull, without testing them first ("using 1-star heroes for synthesis without any form of examination")
+- Han's counter: heroes can send advice to the master **through Iselle as a TIP notification** ("If you don't try using the 1-star hero, you won't know if they're good…")
+- Consumption grants the receiving hero an **immediate level-up** (Jaken levelled up after consuming Diman and Lexigel)
+- Iselle enforces the master's orders ("just shut up and go in") but visibly dislikes wasting summons ("Master has summoned useless people again!")
+
+---
+
+## Duel System (Ch. 16)
+
+| Aspect | Details |
+|---|---|
+| Purpose | Resolve conflicts between heroes |
+| Initiation | "Open duel." — a formal request notification to the target |
+| Conditions | Special conditions can be set if both sides agree (here: the winner synthesizes the loser) |
+| Rules | Hero-vs-hero fighting is not strictly forbidden — Iselle admits "That's true, but…" and threatens punishment instead |
+
+---
+
+## Hostility & Relationships (Ch. 16)
+
+- Hostile actions generate notifications: "You've shown hostility to Avant (3 stars)!" (one per targeted hero)
+- Team-wide warning: "Hostility has been formed between Han (1 star) and the Pulverizing Wolves team. Please take note of the relationships between heroes!"
+- Relationship states between heroes are tracked and surfaced to the master — related systems: Intimacy (positive), Combat Desire
 
 ---
 

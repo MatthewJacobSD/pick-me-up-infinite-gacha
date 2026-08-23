@@ -50,10 +50,11 @@
 - **v0.0.29:** Approved Ch.13 audit propagation — timeline anchored to ~1 month in-game / ~10 days real; psychology docs extended to Ch.13 with corrected characterization (Han praises Gide/Hansen, contempt aimed at synthesis-dodgers, "business secret" = identity concealment); jenna.md/aaron.md updated; standing conventions recorded (cross-document audit workflow, Game/Manhwa monitoring, Psychology/Characters documentation methodology).
 - **v0.0.30:** Chapter 14 documented via audit workflow (first full run) — Queen defeated + wind stone D-, Jenna awakens 'Hunter of the Forest' (achievement-triggered awakening broadens the mechanic), Sinmiel Plateau water stone, Plants of Life, Floor 6 Explore mission + Dika joins Party 1, goblin village trap cliffhanger. Also repaired Tracking Notes header accidentally removed in v0.0.28.
 - **v0.0.31:** Chapter 15 documented via audit workflow — Floor 6 clear (MVP Han), streams concept + glossary terms, affinity-link consecutive summons, summon-rank knowledge gap, 'newbie potent package' economy, Pulverizing Wolves 3★ x5 added to trackers (alive 14, total 38); Jenna quote/key moment additions approved by user.
+- **v0.0.32:** Chapter 16 documented via audit workflow — unexamined post-pull synthesis (Diman & Lexigel consumed, Jaken level-up), Sorial & Daniel seized (cliffhanger), Han's TIP-via-Iselle channel to the master, thief-troupe exposure → team-wide hostility notifications, Open Duel system (Han vs Avant, synthesis stake); heroes.md Duel/Hostility sections added; glossary 'Open Duel' term; counts updated (synthesis deaths 6, total 42). Speaker-tag fix: the "S-save me please!!" line belongs to Sorial, not Lexigel.
 
 ## Open Questions / Pending
 
-- Chapter 16 content: not yet provided by user; large goblin habitat / next stream chain next; Han's promotion to 2★ imminent.
+- Chapter 17 content: not yet provided by user; duel outcome next; Sorial & Daniel's fate; Han's promotion to 2★ imminent.
 - Game/Manhwa folder separation deferred until the structure becomes hard to manage (monitor actively).
 - Task statuses (backend/frontend/design) remain Pending — code development has not been announced.
 - `docs/licenses/` directory exists but is empty (placeholder).

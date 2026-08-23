@@ -12,3 +12,4 @@
 | Space Rift | Latency/Lag | Network delay we must mitigate via prediction |
 | Streams | Linked Quest Chain | Quest sequences seeded by exploration hints; chain analysis is player-skill dependent (Ch. 15) |
 | Affinity Link | Summon Cohort Bonus | Rare consecutive-summon outcome; linked heroes are stronger in the same party (Ch. 15) |
+| Open Duel | Formal Hero Challenge | In-game duel request between heroes; special conditions allowed if both sides agree (Ch. 16: winner synthesizes loser) |

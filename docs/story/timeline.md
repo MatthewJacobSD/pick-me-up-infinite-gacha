@@ -1,6 +1,6 @@
 # Story Timeline
 
-> Chronological events through Chapter 15.
+> Chronological events through Chapter 16.
 >
 > **Note:** The timeline is not 1 chapter = 1 day. Time skips between chapters are normal and expected.
 
@@ -118,9 +118,9 @@
 
 ---
 
-## Days 31+ (Sinmiel Plateau → Floor 6)
+## Days 31+ (Sinmiel Plateau → Floor 6 → Newcomers)
 
-> Explicit time skips: Kendert Forest day → Sinmiel Plateau day (Fri/Sat rotation) → "A few days later" → Floor 6.
+> Explicit time skips: Kendert Forest day → Sinmiel Plateau day (Fri/Sat rotation) → "A few days later" → Floor 6. Ch.15-16 continue the same stretch of days.
 
 | Event | Chapter |
 |---|---|
@@ -136,6 +136,16 @@
 | Dika joins Party 1 for Floor 6 | Ch. 14 |
 | Goblin scouts (Level 8 x3) carry a blowing horn — allies nearby; Jenna spots a goblin village of ~100 behind them: trap confirmed | Ch. 14 |
 | Ambush set (Han aggroes, Jenna shoots the right goblin, Aaron spears the other, Dika reserve); "I won't let you call for reinforcements!" cliffhanger | Ch. 14 |
+| Ambush executed — **Stage Clear! Floor 6 Explore cleared**, MVP – Han, rewards 5,000G | Ch. 15 |
+| Han scouts ahead: stream hints point to a large goblin habitat — chains appearing earlier than expected | Ch. 15 |
+| Master buys 'newbie potent package' (50,000 won → 2,500 gems + 50,000 gold): consecutive summon produces the **Pulverizing Wolves mercenaries** (5x 3★ with affinity link) | Ch. 15 |
+| Party 5 named 'Pulverizing Wolves'; Avant Dejacques chosen leader; Jenna befriends Edis Callen | Ch. 15 |
+| Slacker NPCs beg Han for protection; rebuffed ("Get lost, before I get angry") | Ch. 15 |
+| Party 5 clears a goblin stage; arrogant first contact with Han ("No, I was a farmer") — Avant probes whether the plaza's roster is everyone | Ch. 16 |
+| Master runs another 10 consecutive summons and **synthesizes immediately**: Diman & Lexigel consumed without examination (Jaken levels up); Sorial & Daniel seized next — Edis hesitates, is shouted down | Ch. 16 |
+| Han sends a TIP to the master via Iselle (test 1★ heroes before synthesizing); Jaken attacks him; Jenna blocks with a deliberate miss | Ch. 16 |
+| Han exposes the Wolves as a **thief troupe**; hostility formed with the whole team; Iselle admits hero-vs-hero fighting isn't strictly forbidden | Ch. 16 |
+| **Open duel requested**: Han vs Avant, condition 'synthesizing' — winner consumes the loser; Avant agrees (cliffhanger) | Ch. 16 |
 
 ---
 
@@ -143,9 +153,10 @@
 
 | Event | Expected Chapter |
 |---|---|
-| Large goblin habitat / next stream chain | Ch. 16 |
-| Han's promotion to 2★ (wind/water elemental stones acquired) | Ch. 16 (imminent) |
-| Pulverizing Wolves integration & party dynamics | Ch. 16+ |
+| Han vs Avant duel outcome (synthesis stake) | Ch. 17 |
+| Sorial & Daniel's fate | Ch. 17 |
+| Large goblin habitat / next stream chain | Ch. 17+ |
+| Han's promotion to 2★ (wind/water elemental stones acquired) | Ch. 17 (imminent) |
 | Plants of Life gathering | Ch. 15+ |
 | Sirris arrives | Ch. 10+ |
 | Yurneth finds master | Ch. 10+ |

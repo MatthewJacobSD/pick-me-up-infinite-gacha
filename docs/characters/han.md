@@ -73,6 +73,7 @@
 11. **Ch. 13**: Identified the Composure/Berserker co-existence as a bug tied to being half master, half hero; deduced ANYTNG's login pattern (three logins/day); led Party 4 into the Kendert Forest daily dungeon; hunted down the Queen of the Forest for its promotion material
 12. **Ch. 14**: Defeated the Queen of the Forest (wind elemental stone); spotted Plants of Life and planned a later gathering run; offered Jenna a possible non-combat spot; on Floor 6 read the blowing-horn trap before engaging and set an ambush to keep the goblin village from reinforcing
 13. **Ch. 15**: Cleared Floor 6 as MVP; read the stream hint pointing to a large goblin habitat and worried ANYTNG missed it; probed Edis for intel (confirming rank-based knowledge gaps); dismissed Party 1 ahead of the high-rank arrivals — "Nothing changes" — and coldly rebuffed slacker NPCs begging protection
+14. **Ch. 16**: Confronted the Wolves' unexamined synthesis — sent advice to the master through Iselle as a TIP notification (test heroes before consuming); blocked Jaken's strike via Jenna's deliberate miss; exposed the troupe as thieves, triggering team-wide hostility; staked himself in an open duel with Avant — winner consumes the loser
 
 ---
 

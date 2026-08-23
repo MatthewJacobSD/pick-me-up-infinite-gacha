@@ -141,6 +141,19 @@
 - Edis intel: 3★ arrive with classes and multi-skill kits; innate knowledge of concepts like synthesis; summoning memories suppressed (recall causes head pain). She's skilled even among mercenaries — a clear gap vs Molmont (2★).
 - Han dismissed Party 1 before the newcomers arrived ("Nothing changes just because some unique newbies are here") and coldly rebuffed slacker NPCs begging protection — they barely avoided synthesis by pretending to work.
 
+- Han dismissed Party 1 before the newcomers arrived ("Nothing changes just because some unique newbies are here") and coldly rebuffed slacker NPCs begging protection — they barely avoided synthesis by pretending to work.
+
+### Chapter 16
+
+- Party 5 clears a goblin replay stage; arrogant first contact. Avant probes whether the plaza holds everyone (later revealed as a strength check).
+- **Master runs another 10 consecutive summons and synthesizes immediately** — no examination: Diman & Lexigel consumed (Jaken levels up on the spot); Sorial & Daniel seized next.
+- Han's assessment: ANYTNG is making "a great mistake" — most 1★s are useless, but testing them first is the only way to know; synthesizing blind wastes potential talent.
+- **Han's intervention**: sends advice through Iselle as a TIP notification to the master ("If you don't try using the 1-star hero, you won't know if they're good…").
+- Jenna's first moral rebellion: "This is wrong! At the very least, they should be given a chance!" When Jaken moves to strike Han, she blocks with an arrow — "I missed on purpose."
+- Edis shows conscience ("Avant, let's stop here for today") and is shouted down — fracture line inside the Wolves.
+- Han exposes the Wolves as a **thief troupe**, not mercenaries; hostility notifications fire against the whole team; Iselle concedes hero-vs-hero fighting isn't strictly forbidden.
+- **Open duel**: Han wagers himself — winner consumes the loser via synthesis. Avant accepts; condition 'synthesizing' confirmed. Cliffhanger.
+
 ---
 
 ## Tracking Notes
