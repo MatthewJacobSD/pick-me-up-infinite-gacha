@@ -22,7 +22,7 @@ That directory (`agents/opencode/`) is OpenCode's persistent development memory:
 
 ## Open Questions / Awaiting User Input
 
-- **Chapter 17**: not yet provided. Ch.16 cliffhanger: open duel Han vs Avant (winner consumes the loser via synthesis); Sorial & Daniel seized for unexamined synthesis; hostility formed between Han and the Pulverizing Wolves team; Han holds promotion materials for 2★.
+- **Chapter 18**: not yet provided. Ch.17 resolved the cliffhanger: Han won the Open Duel vs Avant in Berserk mode (Avant consumed); Iselle's self-defence killed interfering Jaken/Wave/Beignin; Edis defected (party disbanded); Sorial & Daniel saved; Han is Lv.10 MAX with promotion materials ready.
 - **Task definitions**: backend/frontend/design tasks are all "Pending" with no definition of done; code development has not been announced.
 - **`docs/licenses/`**: empty placeholder folder.
 

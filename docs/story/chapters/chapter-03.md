@@ -73,7 +73,7 @@ Notification:
 •	Class: novice
 •	Strength: 11/11 intelligence: 10/10
 •	Stamina: 11/11 dexterity: 12/12
-•	Unique skills: low-rank archery (level 1)
+•	Unique Skills: Low-Rank Archery (level 1)
 
 Han: *in his mind* I guess she got four points in stats from yesterday.
 Han: *in his mind* She's lower than me in stats, but she has her own unique skills.
@@ -228,7 +228,7 @@ Notification:
 •	Class: novice
 •	Strength: 15/15 Intelligence: 15/15
 •	Stamina: 15/15 Dexterity 15/15
-•	Unique skills: Low-rank swordsmanship (level 1), low-rank shield techniques (level1)
+•	Unique Skills: Low-Rank Swordsmanship (level 1), Low-Rank Shield Techniques (level 1)
 
 Han: *in his mind* I got two new skills from training.
 Han: *in his mind* I did all that I could.

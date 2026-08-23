@@ -170,6 +170,9 @@ Every character must show consistent emotional responses across chapters. Emotio
 | **Excitement** | Loki mention | Fangirling | Referenced (Ragnar Loki Club) |
 | **Performative Pride** | Praising Han in front of others | Scripted, over-the-top flattery | Ch.13: "learn from Han, who's made us all proud! …He's indeed the master of masters!" |
 | **Indignation** | Heroes slacking while she works | Shouts threats | Ch.13: "sleep your asses off while I'm working so hard? I won't let it slide!" |
+| **Worry (for Han)** | His reckless duel vs a 3★ | "Will you really be okay?" — first open concern for him | Ch.17 |
+| **Fierce enforcement** | Duel interference after warning | Self-defence activated; "I won't let it slide a second time" | Ch.17 |
+| **Jubilant pride** | Han acknowledging her kill | Fangirl celebration: "Loki, how was I?! Was I amazing? Did I do great? How was I?!" | Ch.17 |
 
 ### Emotional Patterns
 
@@ -192,8 +195,8 @@ Every character must show consistent emotional responses across chapters. Emotio
 
 | Gap | Risk | Solution |
 |---|---|---|
-| No vulnerability shown | May seem one-dimensional | Add moments of doubt or fear |
-| No bond with heroes | May seem antagonistic | Show grudging respect for Han/Jenna |
+| No vulnerability shown | May seem one-dimensional | Add moments of doubt or fear — partially filled Ch. 17 (worry for Han before his duel) |
+| No bond with heroes | May seem antagonistic | Show grudging respect for Han/Jenna — advanced Ch. 17 (open celebration with him as Loki) |
 | No backstory for aggression | May seem cartoonish | Add reasons for her behaviour |
 
 ---
@@ -354,7 +357,7 @@ Every character must show consistent emotional responses across chapters. Emotio
 
 ---
 
-## Pulverizing Wolves (Ch. 15)
+## Pulverizing Wolves (Ch. 15-17)
 
 | Character | Emotion | Trigger | Response | Chapter Evidence |
 |---|---|---|---|---|
@@ -366,8 +369,13 @@ Every character must show consistent emotional responses across chapters. Emotio
 | Jaken | Cruelty-joy | Consuming heroes in synthesis | Laughs while levelling up on Diman and Lexigel; attacks Han when challenged ("I'll kill you first!") | Ch.16 |
 | Edis Callen | Conscience | Unexamined synthesis of Sorial & Daniel | "Avant, let's stop here for today" — soft protest, shouted down by the leader | Ch.16 |
 | Wave | Dismissive boredom | Weak goblin-stage opponents | "Not even enough to get me excited" | Ch.16 |
+| Avant | Humiliated rage → broken surrender | Losing to a 1★ in front of everyone | "I-I'll make you regret for… messing with me… Gahhhh!" → finally "Surrr… ender…" | Ch.17 |
+| Wave | Fear-panic | Han's one-sided domination | Begs Han to stop ("We lost! Leave him alone!"); dies interfering anyway | Ch.17 |
+| Beignin | Bluster masking fear | Challenges from the safety of numbers | "Do you know who we are?!" (Ch.16) → fatal interference ("I'll kill you if you get in our way!") | Ch.16-17 |
+| Jaken | Rage at betrayal | Edis defecting mid-duel | "Edis, you know the price a traitor has to pay, right?!" | Ch.17 |
+| Edis Callen | Conflicted loyalty → defection | Han's offer vs her father's request | Hesitant admission ("B-Because of my father's request…"), then quits and joins Han's side | Ch.17 |
 
-**Group pattern:** confident to the point of arrogance ("We already know") with an intimidating edge other NPCs sense instantly ("They already have weapons!") — strong but not obviously good people. Ch. 16 confirms it: they run synthesis like a feeding frenzy, with only Edis objecting.
+**Group pattern:** confident to the point of arrogance ("We already know") with an intimidating edge other NPCs sense instantly ("They already have weapons!") — strong but not obviously good people. Ch. 16 confirms it: they run synthesis like a feeding frenzy, with only Edis objecting. **Ch. 17 ends them**: Avant consumed via the duel condition; Jaken/Wave/Beignin die by system sudden death after interfering; only the defector survives.
 
 > The five share an affinity link (consecutive summons) and are stronger in the same party together.
 

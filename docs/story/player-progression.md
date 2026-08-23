@@ -154,6 +154,20 @@
 - Han exposes the Wolves as a **thief troupe**, not mercenaries; hostility notifications fire against the whole team; Iselle concedes hero-vs-hero fighting isn't strictly forbidden.
 - **Open duel**: Han wagers himself — winner consumes the loser via synthesis. Avant accepts; condition 'synthesizing' confirmed. Cliffhanger.
 
+### Chapter 17
+
+- **ANYTNG approves the duel** via the Yes/No prompt — "he didn't even know the duel system existed" (Han: "Anytng is a coward, huh?").
+- Jenna ordered to bring Sorial & Daniel back to the accommodations — **both saved**; she asks "Will you be okay alone?" and accepts his confidence ("Guess not!").
+- Han fights Avant without unsheathing his sword: reads Avant's panel (Lv.2, strength near level 20, Basic Swordsmanship Lv.3), then activates **Berserk** (+5 STR/HP/AGI over cap, −10 INT) and dominates one-handedly, deliberately stalling Avant's surrender attempts.
+- Mid-duel politics: Wave begs to stop; Han calls out the hypocrisy ("Were you guys going to leave those other people alone just now?"); Beignin blusters.
+- **Edis interrogation**: the Wolves "used to be" mercenaries; Edis stayed only because of her father's request. Han's offer: "Are you going to be with trash like them? Or will you come over to my side?" — plus coercion ("You know what it'll be like if you don't join us, right?").
+- Edis defects → "Edis (3 stars) has quit the Pulverizing Wolves mercenary!" → **party disbanded**. Jaken threatens her as a traitor.
+- Interference punished: Jaken/Wave/Beignin rush in; Iselle blocks them ("The duel isn't over!") then triggers **self-defence** — all three die instantly: "[Sudden Death!] suicide due to stress", each "returned to the goddess' embrace". Iselle celebrates: "Loki, how was I?! Was I amazing?"
+- Avant surrenders for real after a warning that surrender = consumption anyway. Victory notification: Avant will be used for synthesis. Master's cancel attempt comes too late.
+- **Han levels up to Lv.10 (1★ MAX)**; 'Basic Sword-Shield Technique' and 'Pain Tolerance' level up; promotion prompt shown (promotion stone or same-star hero; cap 7★). Berserker aftermath: headache — avoid using it outside real fights.
+- Han's read on ANYTNG: not quitting (he didn't quit after synthesizing 4★ Shay); the Wolves were duds he's now fuming over; leaving them would have thrown the waiting room into chaos — "He'll probably thank me in the future."
+- Han's position: Lv.10 with total stats close to a 3★ and MVP of most battles — too valuable to synthesize now ("Try synthesizing me if you dare").
+
 ---
 
 ## Tracking Notes

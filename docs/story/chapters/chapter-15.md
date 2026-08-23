@@ -188,11 +188,11 @@ NPC1: They already have weapons!
 
 Han: I have a weapon too.
 
-NPC2: But they feel like…
+Joffrey: But they feel like…
 
 Han: It doesn't feel like they're good people?
 
-NPC2: Exactly!
+Joffrey: Exactly!
 
 Han - narrating: The cause of the commotion is trivial.
 
@@ -214,11 +214,11 @@ Jenna: Edis looks kind but I'm not sure about the rest.
 
 Han: What do you want me to do? Protect you?
 
-NPC2: It'd be great if you'd do that…
+Joffrey: It'd be great if you'd do that…
 
 Han: For free?
 
-NPC2: Th-that's…
+Joffrey: Th-that's…
 
 NPC3: You're strong, aren't you?!
 

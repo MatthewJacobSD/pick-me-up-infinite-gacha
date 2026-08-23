@@ -49,6 +49,21 @@
 
 ---
 
+## Skill Name Capitalization
+
+- Skill names always capitalize every word, including hyphenated segments: `Basic Swordsmanship`, `Low-Rank Archery`, `Basic Sword-Shield Technique`.
+- Applies to transcripts and all documentation. Generic prose uses of words like "basic" are untouched.
+- Retroactively applied to Ch. 3, 4, 17 stat panels/notifications (v0.0.33).
+
+---
+
+## Stat Panel Discrepancies
+
+- When a later panel contradicts an earlier one with no in-story explanation, treat it as a source error and normalize to the consistent value.
+- Example: Han's exp at Lv.9 was 54/70 (Ch. 13); the Ch. 17 pre-duel panel showed 11/70 — user confirmed it as a manhwa error; kept at 54/70.
+
+---
+
 ## Progression Tracking (Two Viewpoints)
 
 - `docs/characters/han.md` records Han's development **up to the latest chapter** (current-state snapshot).

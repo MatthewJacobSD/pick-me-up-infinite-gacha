@@ -76,6 +76,7 @@
 8. **Ch. 14**: Reveals her dream of a peaceful non-combat life; Han hints he could make a spot for her if things improve
 9. **Ch. 15**: First to welcome the Pulverizing Wolves; befriends Edis Callen and vouches for Han
 10. **Ch. 16**: First moral rebellion against synthesis — protests the unexamined sacrifices; shields Han from Jaken's strike with a deliberate miss ("I missed on purpose")
+11. **Ch. 17**: Trusted with the seized heroes — brings Sorial & Daniel back to the accommodations during the duel ("Will you be okay alone?" / "Guess not!")
 
 ---
 

@@ -1,7 +1,7 @@
 # Character Tracker — Pick Me Up, Infinite Gacha
 
 > Tracks all characters introduced, their status, and fate.
-> Updated through Chapter 16.
+> Updated through Chapter 17.
 
 ---
 
@@ -9,24 +9,20 @@
 
 | Name | Star | Class | Notes |
 |---|---|---|---|
-| **Islat Han** (Han Seojin) | 1★ | Novice | Protagonist. Real player from Earth (Seoul, Gangseo-Gu). Summoned by Level 999 bugged entity. In-game identity: Han Islat from Hime province. **Revealed as Loki** (Rank 5, "Master of Masters"). Floor 5 MVP. Lv.9 (exp 54/70) in Ch. 13 — near the 1★ cap of 10, promotion to 2★ imminent. Skills: Basic Swordsmanship (Lv.5), Pain Tolerance (Lv.2), Composure (Lv.3), Berserker (Lv.1). Holds Composure + Berserker simultaneously — a bug tied to being half master, half hero (Ch. 13). Growth cost fixed at 5 = normal 3★ rate. |
+| **Islat Han** (Han Seojin) | 1★ | Novice | Protagonist. Real player from Earth (Seoul, Gangseo-Gu). Summoned by Level 999 bugged entity. In-game identity: Han Islat from Hime province. **Revealed as Loki** (Rank 5, "Master of Masters"). Floor 5 and Floor 6 MVP. **Lv.10 — MAX for 1★**, promotion pending (Ch. 17). Won the Open Duel vs Avant in Berserk mode; 'Basic Sword-Shield Technique' and 'Pain Tolerance' levelled up (new levels not shown); total stats close to a 3★. Berserker side effects: stat swings (+5 STR/HP/AGI, −10 INT) and a headache afterwards — avoid using it outside real fights (Ch. 17). Skills: Basic Swordsmanship (Lv.5), Basic Sword-Shield Technique, Pain Tolerance (Lv.2→up), Composure (Lv.3), Berserker (Lv.1). Holds Composure + Berserker simultaneously — a bug tied to being half master, half hero (Ch. 13). Growth cost fixed at 5 = normal 3★ rate. |
 | **Jenna Cirai** | 1★ | Novice | From remote forest. Father was a hunter (taught her butchering; can sex a deer from its head — lived in the forest). Calm, analytical. Can use a bow. Calls Han "Oppa". Skills: Low-rank archery (Lv.5), Low-rank dagger (Lv.2), Eagle's Eye, **Hunter of the Forest** (awakened dressing the Forest Queen, Ch. 14). Intimacy bonus with Han. Survived Floor 5; levelled up. Trains obsessively ("Because I don't want to die!"); hunts and butchers game in daily dungeons. Dreams of a peaceful life without a master (Ch. 14); Han hinted at a future non-combat spot for her. |
 | **Aaron** | 1★ | — | Summoned Ch. 3. Weapon: Spear. Has younger sister. Training under Han. Spear skill Lv.2 (stuck). Added to favourites (Ch.7). Survived Floor 5 (foot freed by Han's blade); levelled up (Ch.12). Grieved hard for Gide and Hansen; no new skills despite hard training (Ch. 13). |
 | **Enok** | 1★ | Carpenter | Non-combat role. Assigned as carpenter. Produces equipment with blacksmith/tanner (Ch.9). |
 | **Chloe** | 1★ | Cook | Non-combat role. Assigned as cook (replaced Dolf). |
 | **Dika** | 1★ | Trainee | Joined training Ch.8. Age under 20. Swordsmanship Lv.1. Not in Party 1 for Floor 5. Trains very hard; took Gide's and Hansen's deaths badly (Ch. 13). Joins Party 1 for the Floor 6 Explore mission (Ch. 14) — assigned as reserve ("Help us if a situation occurs"). |
 | **Louis** | 1★ | Gatherer | Named Ch. 13 — Party 4 member for the Kendert Forest daily dungeon run; present at the post-Queen feast (Ch. 14). |
-| **Joffrey** | 1★ | Gatherer | Named Ch. 13 — Party 4 member for the Kendert Forest daily dungeon run; startled by the Forest Queen (Ch. 14). |
+| **Joffrey** | 1★ | Gatherer | Named Ch. 13 — Party 4 member for the Kendert Forest daily dungeon run; startled by the Forest Queen (Ch. 14). Reacted warily to the Pulverizing Wolves' arrival and was among the slackers begging Han for protection — rebuffed (Ch. 15). |
 | **Owen** | 1★ | Gatherer | Named Ch. 13 (spoke as NPC1). Nervous about fighting; Han told the gatherers they won't have to fight. Witnessed Han fight the Forest Queen (Ch. 14). |
-| **Avant Dejacques** | 3★ | Party 5 Leader | Summoned Ch. 15 with the Pulverizing Wolves mercenaries (affinity link); auto-chosen team leader of Party 5 'Pulverizing Wolves'. |
-| **Edis Callen** | 3★ | Thief | Named Ch. 15 (first appeared as NPC1). Level 1 (exp 0/10). STR 13/13, INT 10/10, HP 14/14, AGI 17/17 — typical thief build (low STR/HP, high AGI), dagger-type over bow. Skills: Basic Dagger (Lv.3), Basic Archery (Lv.1), Nimble Movement (Lv.1). Ex-Pulverizing Wolves mercenary from Halsia; remembers her old life but not how she was summoned (trying causes head pain) — higher-rank summons innately know concepts like synthesis. Jenna's first friend among the newcomers; Han rates her skilled even among mercenaries. Showed conscience during the Ch. 16 synthesis ("Avant, let's stop here for today") and was shouted down. |
-| **Beignin** | 3★ | — | Named Ch. 15 — Pulverizing Wolves member; Party 5. |
-| **Jaken** | 3★ | — | Named Ch. 15 — Pulverizing Wolves member; Party 5. Meat enthusiast; "Let's go crazy!". Levelled up by consuming Diman and Lexigel in synthesis (Ch. 16); attacked Han, blocked by Jenna's deliberate miss. |
-| **Wave** | 3★ | — | Named Ch. 15 — Pulverizing Wolves member; Party 5. Dismissive of goblin-stage opponents ("not even enough to get me excited", Ch. 16). |
-| **Sorial** | 1★ | — | Summoned Ch. 16 in the second 10-pull; named by Iselle and seized for synthesis by Avant's group — fate unresolved at the Ch. 16 cliffhanger ("S-save me please!!"). |
-| **Daniel** | 1★ | — | Summoned Ch. 16 in the second 10-pull; named by Iselle; seized for synthesis alongside Sorial — fate unresolved at the cliffhanger ("Wh-what?! What are you trying to do?!"). |
+| **Edis Callen** | 3★ | Thief | Named Ch. 15 (first appeared as NPC1). Level 1 (exp 0/10). STR 13/13, INT 10/10, HP 14/14, AGI 17/17 — typical thief build (low STR/HP, high AGI), dagger-type over bow. Skills: Basic Dagger (Lv.3), Basic Archery (Lv.1), Nimble Movement (Lv.1). Ex-Pulverizing Wolves mercenary from Halsia; remembers her old life but not how she was summoned (trying causes head pain) — higher-rank summons innately know concepts like synthesis. Jenna's first friend among the newcomers; Han rates her skilled even among mercenaries. Showed conscience during the Ch. 16 synthesis ("Avant, let's stop here for today") and was shouted down. **Defected to Han's side during his duel vs Avant (Ch. 17)** — revealed she stayed with the Wolves only because of her father's request; quit the party, disbanding it, and joined Han ("We happen to need one person"). |
+| **Sorial** | 1★ | — | Summoned Ch. 16 in the second 10-pull; named by Iselle and seized for synthesis by Avant's group ("S-save me please!!") — saved when Jenna brought the seized heroes back to the accommodations before the duel (Ch. 17). |
+| **Daniel** | 1★ | — | Summoned Ch. 16 in the second 10-pull; named by Iselle; seized alongside Sorial ("Wh-what?! What are you trying to do?!") — saved when Jenna brought them back to the accommodations (Ch. 17). |
 
-> The five Pulverizing Wolves arrived via a consecutive-summon affinity link and are more powerful in the same party together (Ch. 15). Hostility has formed between Han and the whole Wolves team after he exposed them as a thief troupe (Ch. 16).
+> The five Pulverizing Wolves arrived via a consecutive-summon affinity link and were stronger in the same party together (Ch. 15). **The party disbanded in Ch. 17**: Edis defected to Han's side mid-duel; Avant lost the Open Duel and was consumed per its synthesis condition; Jaken, Wave and Beignin died by system sudden death when Iselle's self-defence punished their interference in the active duel.
 
 ---
 
@@ -54,6 +50,10 @@
 | 1 unnamed hero | 1★ | — | Died in thinning process | Ch. 8 |
 | **Gide** | 1★ | Trainee | Floor 5 survival battle — bleeding, fear (-30% stats), hand injured; died from wounds (Han: "He's resting") | Ch. 11 |
 | **Hansen** | 1★ | Trainee | Floor 5 survival battle — sword went blunt (Ch.10), then bleeding; begged Han to save him while dying | Ch. 11 |
+| **Avant Dejacques** | 3★ | Party 5 Leader (Pulverizing Wolves) | Summoned Ch. 15 via affinity link; auto-chosen leader. Lost the Open Duel to Han — consumed per the agreed 'synthesizing' condition | Ch. 17 |
+| **Jaken** | 3★ | Pulverizing Wolves | Named Ch. 15. Meat enthusiast ("Let's go crazy!"); levelled up consuming Diman and Lexigel (Ch. 16); attacked Han, blocked by Jenna's deliberate miss. Sudden death (logged as "suicide due to stress") — interfered in the active duel, struck down by Iselle's self-defence | Ch. 17 |
+| **Wave** | 3★ | Pulverizing Wolves | Named Ch. 15. Dismissive of goblin-stage opponents ("not even enough to get me excited"). Begged Han to stop the duel; died by sudden death (suicide due to stress) interfering in the duel | Ch. 17 |
+| **Beignin** | 3★ | Pulverizing Wolves | Named Ch. 15. Threatened Han during the duel ("I'll kill you if you get in our way!" — to Iselle); died by sudden death (suicide due to stress) interfering in the duel | Ch. 17 |
 
 ---
 
@@ -94,8 +94,9 @@
 
 | Status | Count |
 |---|---|
-| **Alive** | 14 (Han, Jenna, Aaron, Enok, Chloe, Dika, Louis, Joffrey, Owen + Pulverizing Wolves: Avant, Edis, Beignin, Jaken, Wave) — plus Sorial & Daniel seized for synthesis, fate unresolved (Ch. 16 cliffhanger) |
+| **Alive** | 12 (Han, Jenna, Aaron, Enok, Chloe, Dika, Louis, Joffrey, Owen, Edis Callen, Sorial, Daniel) |
 | **Deceased (Combat)** | 15 |
-| **Deceased (Synthesis)** | 6 (Shay, Toby, Yelson, Dolf, Diman, Lexigel) |
+| **Deceased (Synthesis)** | 7 (Shay, Toby, Yelson, Dolf, Diman, Lexigel, Avant) |
+| **Deceased (Sudden Death)** | 3 (Jaken, Wave, Beignin — Iselle's self-defence during the duel) |
 | **Niflheimr Elite** | 5 (Nihaku, Muden, Lidigyon, Sirris, Yurneth) |
 | **Total Introduced** | 42 |

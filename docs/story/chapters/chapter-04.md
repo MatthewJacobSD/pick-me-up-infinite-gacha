@@ -56,7 +56,7 @@ Islat Han (1 star) level 6 (exp 13/50)
 Class: Novice
 Strength: 17/17 Intelligence: 14/14
 Stamina: 16/16 Dexterity 16/16
-Unique Skills: Basic swordsmanship (level 1), basic shield techniques (level1)
+Unique Skills: Basic Swordsmanship (level 1), Basic Shield Techniques (level 1)
 
 Han: *in his mind* although my intelligence decreased by one, my strength increased by two.
 Han: *in his mind* My stats have gone up by four in total, but my efficiency at levelling up has gotten better. That means my physique is improving.

@@ -29,20 +29,21 @@
 
 ---
 
-## Current Stats (Ch. 13)
+## Current Stats (Ch. 17)
 
 | Stat | Value |
 |---|---|
-| Level | 9 (exp 54/70) — close to the 1★ cap of 10; promotion to 2★ imminent |
-| Strength | 23/23 |
-| Intelligence | 11/11 |
-| Health/HP | 21/21 |
-| Agility | 21/21 |
-| Skills | Basic Swordsmanship (Lv.5), Pain Tolerance (Lv.2), Composure (Lv.3), Berserker (Lv.1) |
+| Level | **10 — MAX for 1★**; promotion pending (materials acquired Ch. 14; prompt shown after the duel) |
+| Strength | 23/23 base (28 while Berserk) |
+| Intelligence | 11/11 base (1 while Berserk) |
+| Health/HP | 21/21 base (26 while Berserk) |
+| Agility | 21/21 base (26 while Berserk) |
+| Skills | Basic Swordsmanship (Lv.5), Basic Sword-Shield Technique (levelled up Ch. 17), Pain Tolerance (Lv.2→up), Composure (Lv.3), Berserker (Lv.1) |
 | Growth Cost | Fixed at 5 — normal growth rate at 3★ |
-| Condition | Recovered from Floor 5; resting |
+| Condition | Won the Open Duel vs Avant in Berserk mode; headache aftermath — avoid Berserk outside real fights |
 
-> Ch. 13 stat block no longer lists Quick Movements or Basic Sword-Shield Techniques (Lv.5) — skill set shown as of Lv.9.
+> Ch. 13 stat block no longer lists Quick Movements or Basic Sword-Shield Techniques (Lv.5) — skill set shown as of Lv.9. The Ch. 17 level-up notification names 'Basic Sword-Shield Technique' again (levelled up together with Pain Tolerance; new levels not displayed).
+> Total stats are close to a 3★ ("I'm level 10… And I've gotten MVP most of the battles") — too valuable for ANYTNG to synthesize now.
 
 ---
 
@@ -52,9 +53,10 @@
 |---|---|
 | Jenna Cirai | First ally, calls him "Oppa", growing bond |
 | Aaron Delcut | Loyal disciple, calls him "Hyung-nim" |
-| Iselle | Tense — she manages him, he knows more than she does |
-| ANYTNG (Master) | Watching his own game being played recklessly |
+| Iselle | Tense — she manages him, he knows more than she does; now openly calls him "Loki" and seeks his praise (Ch. 17) |
+| ANYTNG (Master) | Watching his own game being played recklessly; Han taunts him after destroying the Wolves ("Try synthesizing me if you dare") |
 | Niflheimr | They know Loki is back — hunting him |
+| Edis Callen | Recruited defector from the disbanded Pulverizing Wolves (Ch. 17) |
 
 ---
 
@@ -74,6 +76,7 @@
 12. **Ch. 14**: Defeated the Queen of the Forest (wind elemental stone); spotted Plants of Life and planned a later gathering run; offered Jenna a possible non-combat spot; on Floor 6 read the blowing-horn trap before engaging and set an ambush to keep the goblin village from reinforcing
 13. **Ch. 15**: Cleared Floor 6 as MVP; read the stream hint pointing to a large goblin habitat and worried ANYTNG missed it; probed Edis for intel (confirming rank-based knowledge gaps); dismissed Party 1 ahead of the high-rank arrivals — "Nothing changes" — and coldly rebuffed slacker NPCs begging protection
 14. **Ch. 16**: Confronted the Wolves' unexamined synthesis — sent advice to the master through Iselle as a TIP notification (test heroes before consuming); blocked Jaken's strike via Jenna's deliberate miss; exposed the troupe as thieves, triggering team-wide hostility; staked himself in an open duel with Avant — winner consumes the loser
+15. **Ch. 17**: Executed the duel — approved by the oblivious master; went Berserk and dominated Avant without unsheathing his sword, deliberately delaying the surrender; cleared the bystanders first (Jenna escorts Sorial & Daniel to safety); recruited Edis mid-duel with carrot-and-stick, disbanding the Wolves; let Iselle's self-defence kill the three interferers ("Gotcha… Goodbye"); consumed Avant per the condition; read ANYTNG's psychology correctly (not quitting, fuming, unable to synthesize his best hero) and taunted him
 
 ---
 

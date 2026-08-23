@@ -36,12 +36,15 @@
 
 ---
 
-## Level Cap & Promotion (Ch. 13)
+## Level Cap & Promotion (Ch. 13, 17)
 
 | Rule | Details |
 |---|---|
 | Max Level per Rank | Each star rank has a level cap — 1★ max is **Level 10** |
+| Max-Level Prompt | At the cap: "This hero has reached the max level. If you want to increase his level, please promote him!" |
 | Promotion | At the cap, a hero can be promoted to the next star rank (1★ → 2★) |
+| Promotion Paths | A promotion stone **or** a hero of the same star at a certain level can be used as promotion material |
+| Promotion Ceiling | "You can promote a hero up to 7 stars." |
 | Promotion Materials | Attribute stones — e.g., low rank attribute stone from the Queen of the Forest (rare daily dungeon monster) |
 
 ---
@@ -91,6 +94,12 @@
 - At the absolute edge of death, despair can break into rage and awaken a defining skill: Han obtained **'Berserker'** (Ch. 12)
 - **Not only mortal danger** — awakening can also trigger in moments of achievement/mastery: Jenna awakened **'Hunter of the Forest'** while field-dressing the defeated Queen of the Forest (Ch. 14), a successful hunt rather than a limit-test
 - Han's comment ("Another awakening? Promotion should be easy for her") suggests awakened heroes promote more easily
+
+### Berserker State (Ch. 12, 17)
+- Awakened by Han at the brink of death on Floor 5; activated again during the Open Duel vs Avant
+- Stat modifiers while active: STR/HP/AGI **+5 above their caps** (28/23, 26/21), INT **−10** (1/11)
+- Side effect: a headache afterwards — Han resolves to avoid using it outside real fights
+- Can be dispelled manually ("Han (1 star) dispelled Berserker mode")
 
 ### Skill Conflicts (Ch. 13)
 - Contradictory skills normally cannot co-exist: Composure (keeps one rational) vs Berserker (loses rationality for battle power)
@@ -151,14 +160,43 @@
 
 ---
 
-## Duel System (Ch. 16)
+## Duel System (Ch. 16-17)
 
 | Aspect | Details |
 |---|---|
 | Purpose | Resolve conflicts between heroes |
 | Initiation | "Open duel." — a formal request notification to the target |
-| Conditions | Special conditions can be set if both sides agree (here: the winner synthesizes the loser) |
+| Master Approval | The master must confirm the duel via a Yes/No prompt ("Both heroes have decided on the condition of 'synthesizing'. Do you agree?") — ANYTNG approved without understanding it |
+| Conditions | Special conditions can be set if both sides agree (Ch. 17: 'synthesizing' — the loser becomes the winner's synthesis material) |
+| Surrender | A surrender ends the beating, but does NOT void the condition — the loser is still consumed ("Don't forget that you'd be consumed by me if you do that") |
+| No Interference | Third parties cannot interfere in an active duel — Iselle enforced it and the system punished violators (see Manager Self-Defence) |
+| No Cancellation | Once allowed, the master cannot cancel it — "Master is touching the screen!" but the duel ran to completion; Han: "If he was going to do that, he shouldn't have allowed the duel" |
+| Rewards | Winner gains a level + skill level-ups (Han levelled up; 'Basic Sword-Shield Technique' and 'Pain Tolerance' levelled up) |
 | Rules | Hero-vs-hero fighting is not strictly forbidden — Iselle admits "That's true, but…" and threatens punishment instead |
+
+### First Executed Duel (Ch. 17)
+- Han (1★, Lv.9) vs Avant (3★, Lv.2 — strength near level 20, Basic Swordsmanship Lv.3)
+- Han never unsheathed his sword: went Berserk and dominated; stalling Avant's surrender to make a point
+- Mid-duel he interrogated/recruited Edis; her defection disbanded 'Pulverizing Wolves'
+- Outcome notification: "Han (1 star) has won against Avant (3 stars) in a duel! Avant will be used for synthesis."
+
+---
+
+## Manager Self-Defence (Ch. 17)
+
+- Iselle has an official **self-defence power** (`*self defence activated*`) — first shown killing Molmont in Ch. 1 without a named mechanic
+- Trigger: interfering in an active duel after being warned ("I won't let it slide a second time")
+- Effect: instant death for the interferers — all three (Jaken, Wave, Beignin) died simultaneously
+- Death logging: "[Sudden Death!] Cause of death – suicide due to stress" with the standard "returned to the goddess' embrace / fighting spirit will be remembered for eternity" messages
+- Interpretation: the system attributes self-defence kills to the victims themselves — relevant for cause-of-death classification
+
+---
+
+## Party Disbanding (Ch. 17)
+
+- A hero quitting a named party triggers a notification: "Edis (3 stars) has quit the Pulverizing Wolves mercenary!"
+- When members leave/die, the party dissolves: "The 'Pulverizing Wolves mercenary' has been disbanded."
+- Free agents can then be recruited by others (Han: "Come over. We happen to need one person.")
 
 ---
 
@@ -232,23 +270,21 @@
 
 ---
 
-## Current Roster (Ch. 15)
+## Current Roster (Ch. 17)
 
 | Name | Star | Role | Status |
 |---|---|---|---|
-| Han Islat | 1★ | Combat (Leader) | Alive — Lv.9 (exp 54/70), near 1★ cap; Berserker awakened; promotion materials acquired |
-| Jenna Cirai | 1★ | Combat (Ranged) / Hunter | Alive — awakened 'Hunter of the Forest' (Ch. 14); dreams of a non-combat life, Han hinted at a spot for her |
+| Han Islat | 1★ | Combat (Leader) | Alive — **Lv.10 (MAX)**, promotion pending; won the Open Duel vs Avant in Berserk mode; total stats close to a 3★ |
+| Jenna Cirai | 1★ | Combat (Ranged) / Hunter | Alive — awakened 'Hunter of the Forest' (Ch. 14); brought the seized heroes back to the accommodations during the duel (Ch. 17) |
 | Aaron Delcut | 1★ | Combat (Melee) | Alive — Floor 6 ambush spear role (Ch. 14) |
 | Dika | 1★ | Combat (Trainee) | Alive — Party 1 reserve on Floor 6; asked "Is it over?" (Ch. 15) |
 | Enok | 1★ | Support (Carpenter) | Alive |
 | Chloe | 1★ | Support (Cook) | Alive — first to notice the newcomers felt "off" (Ch. 15) |
 | Louis | 1★ | Gatherer (Party 4) | Named Ch. 13 |
-| Joffrey | 1★ | Gatherer (Party 4) | Named Ch. 13 |
-| Owen | 1★ | Gatherer (Party 4) | Named Ch. 13 |
-| Avant Dejacques | 3★ | Party 5 Leader | Pulverizing Wolves; auto-chosen team leader (Ch. 15) |
-| Edis Callen | 3★ | Thief (Dagger) | Ex-mercenary from Halsia; skilled even among mercenaries (Ch. 15) |
-| Beignin | 3★ | — | Pulverizing Wolves (Ch. 15) |
-| Jaken | 3★ | — | Pulverizing Wolves; meat enthusiast (Ch. 15) |
-| Wave | 3★ | — | Pulverizing Wolves (Ch. 15) |
+| Joffrey | 1★ | Gatherer (Party 4) | Named Ch. 13; spoke as NPC2 in Ch. 15 (wolves reaction, slacker begging) |
+| Owen | 1★ | Gatherer (Party 4) | Named Ch. 13 (spoke as NPC1) |
+| Edis Callen | 3★ | Thief (Dagger) | Alive — defected from the disbanded Pulverizing Wolves to Han's side during the duel (Ch. 17); stayed with them only for her father's request |
+| Sorial | 1★ | — | Alive — saved from synthesis when Jenna returned the seized heroes (Ch. 17) |
+| Daniel | 1★ | — | Alive — saved alongside Sorial (Ch. 17) |
 
-> Gide and Hansen (trainees) died during the Floor 5 survival mission (Ch. 11). The five 3★ mercenaries arrived via consecutive-summon affinity link and are stronger in the same party together (Ch. 15).
+> Gide and Hansen (trainees) died during the Floor 5 survival mission (Ch. 11). The five 3★ mercenaries arrived via consecutive-summon affinity link and were stronger in the same party together (Ch. 15) — the party disbanded in Ch. 17: Avant consumed via the duel's synthesis condition, Jaken/Wave/Beignin dead by system sudden death, Edis defected to Han.

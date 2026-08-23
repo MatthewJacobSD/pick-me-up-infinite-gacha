@@ -1,6 +1,6 @@
 # Story Timeline
 
-> Chronological events through Chapter 16.
+> Chronological events through Chapter 17.
 >
 > **Note:** The timeline is not 1 chapter = 1 day. Time skips between chapters are normal and expected.
 
@@ -146,6 +146,12 @@
 | Han sends a TIP to the master via Iselle (test 1★ heroes before synthesizing); Jaken attacks him; Jenna blocks with a deliberate miss | Ch. 16 |
 | Han exposes the Wolves as a **thief troupe**; hostility formed with the whole team; Iselle admits hero-vs-hero fighting isn't strictly forbidden | Ch. 16 |
 | **Open duel requested**: Han vs Avant, condition 'synthesizing' — winner consumes the loser; Avant agrees (cliffhanger) | Ch. 16 |
+| Duel confirmed — ANYTNG approves the Yes/No prompt without understanding it ("he didn't even know the duel system existed"); Jenna brings Sorial & Daniel back to the accommodations (**saved**) | Ch. 17 |
+| Han fights Avant sword-unsheathed: goes **Berserk** (+5 STR/HP/AGI, −10 INT) and dominates; stalls Avant's surrender | Ch. 17 |
+| Mid-duel interrogation: Edis stayed with the Wolves only for her **father's request**; Han recruits her ("We happen to need one person") — she quits, **'Pulverizing Wolves mercenary' disbands** | Ch. 17 |
+| Jaken, Wave & Beignin interfere in the active duel — Iselle's **self-defence** kills all three ("[Sudden Death!] suicide due to stress"); she celebrates to Han as "Loki" | Ch. 17 |
+| Avant surrenders — consumed by Han per the synthesis condition; master's cancel attempt fails (duel already allowed) | Ch. 17 |
+| Han reaches **Lv.10 (MAX)**; 'Basic Sword-Shield Technique' + 'Pain Tolerance' level up; promotion prompt appears (stone or same-star hero, up to 7★); Berserker headache side effect noted | Ch. 17 |
 
 ---
 
@@ -153,10 +159,10 @@
 
 | Event | Expected Chapter |
 |---|---|
-| Han vs Avant duel outcome (synthesis stake) | Ch. 17 |
-| Sorial & Daniel's fate | Ch. 17 |
+| ANYTNG's reaction to losing all five Pulverizing Wolves (and Han's taunt: "Try synthesizing me if you dare") | Ch. 18 |
+| Han's promotion to 2★ (materials acquired; Lv.10 max) | Ch. 18 (imminent) |
+| Edis integration into Han's side / Party 5 rebuild ("We happen to need one person") | Ch. 18+ |
 | Large goblin habitat / next stream chain | Ch. 17+ |
-| Han's promotion to 2★ (wind/water elemental stones acquired) | Ch. 17 (imminent) |
 | Plants of Life gathering | Ch. 15+ |
 | Sirris arrives | Ch. 10+ |
 | Yurneth finds master | Ch. 10+ |

@@ -12,36 +12,38 @@
 - **Platform:** PC, Mobile, Console (cross-platform), fully online
 - **Mode:** Fully online; 24/7 server connectivity; client never trusted
 
-## The Story (as of Ch. 16)
+## The Story (as of Ch. 17)
 
 - **Protagonist:** Han Seojin, real player from Seoul (Gangseo-Gu, South Earth). Summoned into his own game as a **1★ hero "Islat Han"** by a Level-999 bugged entity (the God of Death).
 - **Big reveal:** Han **is Loki** (Account #46631913, Rank 5, "Master of Masters"). Heroes are real humans from across ~1M worlds.
-- **The Master:** **ANYTNG** — a reckless office worker playing the gacha on the other side; 65,000-won packages; Han is being managed by a "semi-newbie".
-- **Iselle:** Pixie lounge manager; Loki fangirl; administrates the Sanctuary.
+- **The Master:** **ANYTNG** — a reckless office worker playing the gacha on the other side; 65,000-won packages; Han is being managed by a "semi-newbie" who approved a lethal duel without understanding it.
+- **Iselle:** Pixie lounge manager; Loki fangirl; administrates the Sanctuary; openly calls Han "Loki" and seeks his praise after her Ch. 17 self-defence kills.
 - **Jenna Cirai:** First ally, calls Han "Oppa", growing bond; archery Lv.5.
 - **Aaron:** Loyal disciple, calls Han "Hyung-nim"; spear skill stuck at Lv.2.
 - **Niflheimr:** The evil guild/order that killed Loki; their **Elite 5** (6★ Lv.99) are investigating Loki's return — Sirris dispatched to find Han, Yurneth investigating the master.
 
-## Current State Snapshot (through Ch. 16)
+## Current State Snapshot (through Ch. 17)
 
-- **Alive (14):** Han, Jenna, Aaron, Enok, Chloe, Dika, Louis, Joffrey, Owen + **Pulverizing Wolves (3★, Ch.15): Avant Dejacques (Party 5 leader), Edis Callen (Thief), Beignin, Jaken, Wave.** Plus Sorial & Daniel (1★, Ch.16) seized for synthesis — fate unresolved at the cliffhanger.
-- **Tower progress:** **Floor 6 Explore cleared** — MVP Han, 5,000G. Stream hints point to a large goblin habitat; streams appearing earlier than Han expected. Daily dungeons running; Plants of Life gathering pending; Han's promotion materials acquired.
-- **Ch.16 crisis:** ANYTNG ran another 10 consecutive summons and **synthesized immediately without examination** — Diman & Lexigel consumed (Jaken levelled up); Sorial & Daniel seized next. Han sent advice to the master through Iselle as a TIP notification; Jaken attacked him (blocked by Jenna's deliberate miss); Han exposed the Wolves as a **thief troupe** → hostility formed with the whole team; Iselle admitted hero-vs-hero fighting isn't strictly forbidden.
-- **Cliffhanger:** **Open duel — Han vs Avant**, condition 'synthesizing' (winner consumes the loser); Avant accepted.
-- **New mechanics:** Streams (linked quest chains from exploration hints, master-competence-gated); affinity link via consecutive summons (stronger in same party); summon-rank knowledge gap (3★ know synthesis innately; summoning memories suppressed); 3★ arrive with classes/skill kits; Open Duel system with agreed conditions; hostility notifications + tracked hero relationships; heroes can reach the master via TIP through Iselle; synthesis grants the consumer an immediate level-up.
+- **Alive (12):** Han, Jenna, Aaron, Enok, Chloe, Dika, Louis, Joffrey, Owen + **Edis Callen** (defected from Wolves mid-duel — stayed only for her father's request) + **Sorial & Daniel** (saved: Jenna returned them to the accommodations before the duel).
+- **Pulverizing Wolves destroyed (Ch. 17):** Avant consumed by Han via duel synthesis condition; Jaken/Wave/Beignin died by system sudden death ("suicide due to stress") when Iselle's self-defence punished their interference; party disbanded when Edis quit.
+- **Han:** **Lv.10 — MAX for 1★**, promotion pending (materials acquired Ch. 14). Won the Open Duel vs Avant in Berserk mode without unsheathing his sword; 'Basic Sword-Shield Technique' + 'Pain Tolerance' levelled up; total stats close to a 3★. Berserk modifiers: +5 STR/HP/AGI over cap, −10 INT; headache side effect — avoid outside real fights.
+- **Ch.16 crisis (resolved):** ANYTNG synthesized new pulls without examination (Diman & Lexigel consumed); Han exposed the Wolves as a thief troupe and staked himself in an Open Duel.
+- **Duel system mechanics:** master Yes/No approval gate; conditions bind (surrender ≠ escape from consumption); no cancellation once allowed; interference forbidden — enforced lethally by Manager Self-Defence; winner gains level + skill-ups.
+- **Promotion rules expanded:** promotion stone OR same-star hero at certain level; heroes promotable up to 7 stars; max-level prompt at Lv.10 for 1★.
+- **Tower progress:** Floor 6 cleared (MVP Han); large goblin habitat stream chain pending; Plants of Life gathering pending; daily dungeons running.
+- **New mechanics (cumulative):** Streams; affinity link; summon-rank knowledge gap; Open Duel; hostility notifications + tracked relationships; TIP-via-Iselle channel; synthesis grants immediate level-up; party disbanding on member exit; Sudden Death cause-of-death logging.
 - **Master spending:** 'newbie potent package' — 50,000 won → 2,500 gems + 50,000 gold.
-- **Han:** Lv.9, near 1★ cap; Composure+Berserker bug insight stands. Dismissed Party 1 before the newcomers arrived; rebuffed slacker NPCs begging protection.
-- **Jenna:** 'Hunter of the Forest' awakened; dreams of non-combat life; social bridge to Edis; first moral rebellion against synthesis (Ch.16).
-- **Edis Callen:** ex-Pulverizing Wolves mercenary (Halsia); dagger-type Thief; skilled even among mercenaries — clear gap above Molmont (2★). Showed conscience during synthesis ("Avant, let's stop here for today") — fracture line inside the Wolves.
-- **Standing facts:** Facilities include Lodging, Restaurant, Training Center, Equipment Workshop, Square, Weapons Storage + Blacksmith's Forge. Synthesis used: Toby → Han, Yelson → Jenna, Shay (4★) by ANYTNG, Dolf + 2 inactive, Diman + Lexigel (Ch.16, unexamined). Equipment production: blacksmith + tanner + Enok mass-produce E-rank gear. Awakening triggers: limit-tests (Han) or achievement (Jenna). ANYTNG logs in 3x/day; waiting room 3x dilation; battle stages real-time.
-- **Deaths:** ~15 combat + 6 synthesis (incl. Diman, Lexigel) + 1 thinning. Total introduced: 42.
+- **Jenna:** 'Hunter of the Forest' awakened; dreams of non-combat life; first moral rebellion vs synthesis (Ch. 16); trusted with saving the seized heroes (Ch. 17).
+- **Standing facts:** Facilities include Lodging, Restaurant, Training Center, Equipment Workshop, Square, Weapons Storage + Blacksmith's Forge. Synthesis used: Toby → Han, Yelson → Jenna, Shay (4★) by ANYTNG, Dolf + 2 inactive, Diman + Lexigel (unexamined), Avant (duel condition). Awakening triggers: limit-tests (Han) or achievement (Jenna). ANYTNG logs in 3x/day; waiting room 3x dilation; battle stages real-time.
+- **Deaths:** 15 combat + 7 synthesis (incl. Avant) + 3 sudden death (Wolves trio) + 1 thinning. Total introduced: 42.
+- **Data note:** Han's Lv.9 exp normalized to 54/70 (Ch. 17 panel showed 11/70 — user confirmed manhwa error).
 
 ## Pending Story Beats
 
-- Han vs Avant duel outcome — synthesis stake (Ch. 17).
-- Sorial & Daniel's fate (Ch. 17).
+- ANYTNG's reaction to losing all five Wolves + Han's taunt ("Try synthesizing me if you dare") (Ch. 18).
+- Han's promotion to 2★ (Lv.10 max, materials ready — imminent).
+- Edis integration / Party 5 rebuild ("We happen to need one person").
 - Large goblin habitat / next stream chain (Ch. 17+).
-- Han's promotion to 2★ (materials acquired, imminent).
 - Plants of Life gathering run.
 - Sirris arrives (Ch. 10+).
 - Yurneth finds the master (Ch. 10+).
