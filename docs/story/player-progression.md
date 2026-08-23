@@ -141,8 +141,6 @@
 - Edis intel: 3★ arrive with classes and multi-skill kits; innate knowledge of concepts like synthesis; summoning memories suppressed (recall causes head pain). She's skilled even among mercenaries — a clear gap vs Molmont (2★).
 - Han dismissed Party 1 before the newcomers arrived ("Nothing changes just because some unique newbies are here") and coldly rebuffed slacker NPCs begging protection — they barely avoided synthesis by pretending to work.
 
-- Han dismissed Party 1 before the newcomers arrived ("Nothing changes just because some unique newbies are here") and coldly rebuffed slacker NPCs begging protection — they barely avoided synthesis by pretending to work.
-
 ### Chapter 16
 
 - Party 5 clears a goblin replay stage; arrogant first contact. Avant probes whether the plaza holds everyone (later revealed as a strength check).
@@ -167,6 +165,58 @@
 - **Han levels up to Lv.10 (1★ MAX)**; 'Basic Sword-Shield Technique' and 'Pain Tolerance' level up; promotion prompt shown (promotion stone or same-star hero; cap 7★). Berserker aftermath: headache — avoid using it outside real fights.
 - Han's read on ANYTNG: not quitting (he didn't quit after synthesizing 4★ Shay); the Wolves were duds he's now fuming over; leaving them would have thrown the waiting room into chaos — "He'll probably thank me in the future."
 - Han's position: Lv.10 with total stats close to a 3★ and MVP of most battles — too valuable to synthesize now ("Try synthesizing me if you dare").
+
+### Chapter 18
+
+- **ANYTNG vents his rage via synthesis**: calls out six slackers by name (Louis, Joffrey, Owen, Andio, Arnold, Duncan) and consumes all of them into **Edis Callen** — she levels up and gains the skill 'Trap Disarm'. Iselle enforces the plaza summons ("You guys always try to climb over my head when I'm being nice!").
+- Han had predicted the target ("Probably Edis. Since she's a new summon, her level is still low.") — he let it happen.
+- **Han's survival doctrine speech** to the frightened remainder: "Don't try to piggyback off us… If you want to live, then prove that you're useful." Belittles the dead as "livestock" when challenged.
+- **Mentor framework established**: Chloe/Enok/Alter/Patrick teach their trades; Jenna takes hunting/butchering students; Enok carpentry; Han personally trains anyone who wants to fight ("I'll beat you to a pulp").
+- Han's private read: the synthesis was ANYTNG venting, but those six were eventual fodder anyway. Second party needed before Floor 10 — "one that's strong enough to be on par with the main party."
+- Next morning: waiting-room life improves (Chloe's potato bread; wheat obtainable in Sinmiel Plateau daily dungeon). Edis starts dagger sparring vs Jenna; Han gives her an honest growth-stats pep talk.
+
+### Chapter 19
+
+- **Usher Roderick hand-picked** by Han (ex-mercenary porter who internalized the doctrine) for a potential test.
+- **Evening "weeding"**: master synthesizes 2 unnamed newbies into Usher (**Lv. 3**) without caring about supporter potential; Aaron not chosen despite fighting on Floor 7. Fire-attribute stone mine still closed.
+- **Two-party restructure**: Han proposes splitting into two 3-person parties by lot at dawn ("The master probably won't be able to reject"). Leaders: Han (Red: Han, Jenna, Aaron) and Edis (Blue: Edis, Usher, Dika). Rationale: annihilation risk, growth efficiency, future special missions needing tens–hundreds of same-level heroes, secondary-party insurance (5th-floor lesson: Gide & Hansen gap).
+- **Party suggestion mechanic**: "Hero Han(1 star) has party suggestions!" — hero-submitted rosters the master may accept or reject (TIPS).
+- **Floor 7 cleared** (Subjugation: Goblin Lv.8 ×13): Han goes berserk soloing most of the stage; deliberately leaves one goblin alive suspecting a linked quest. Stage traits: rain + flowing river → "Did the dam collapse?". MVP – Han; **Aaron levels up**; rewards 10,000G, Iron ore (C) x2, Leather (C) x1.
+- **Master spending continues**: buys 'newbie potent double package!' — 90,000 won → 5,000 gems + 100,000 gold (charged to next month's phone bill), his third purchase, pushed by a Moebius banner ("If there's anything you want, please buy it now!"). Then starts **2 consecutive high-rank summons** (1,000 gems): Han orders lots fetched and Edis brought over — "There'll be newcomers." Cliffhanger.
+
+### Chapter 20
+
+- **Whale pattern confirmed** by Han's meta-knowledge: "people who never purchase anything but won't stop at one once they purchase" — the master's spending was predictable.
+- **Loki nostalgia**: Han narrates what hooked him as a past player — the AI's intelligence, observing humans, supporting heroes, strategy, PVP — "There's no way it wouldn't be fun to be able to control their lives."
+- **Summon results (2× Rare 3★)**: **Eolka** and **Roderick**. Eolka Rivel Strashur is an immature aristocrat (collapses in embarrassment; Intermediate Fire Magic Lv.2 — a gacha-exclusive class per Han: growing 1★s only ever yields warriors/thieves). Roderick is an old veteran big-city guard with a strangely high sense of duty — knows 'master'/'summon'/'synthesis' but not levels/skills.
+- **Lot contest**: both party leaders cheat (Han reads Jenna's arrangement; Edis peeks too); Eolka's accidental fire magic interrupts; Jenna catches them and remixes the lots. Outcome: **Eolka → Party 1** (formal invite with master Yes/No accept prompt), **Roderick → Party 2**. Edis regretful; Han justifies via archer synergy ("fire magic works better with archers").
+- **Object lesson synthesis**: failed supporters **Yon & Zenin** consumed into Eolka (levels up) in front of the newcomers — "If you lag behind, that's what will become of you… There's no way to avoid synthesis"; more unnamed fodder into Roderick (levels up).
+- **Crack of time and space opened** by Iselle — newcomer test stage; Party 2 enters with Roderick as "the main character of this battle". Chapter ends mid-interrogation as Han presses Eolka on her magic.
+
+### Chapter 21
+
+- **Eolka interrogation concludes**: can cast up to third-circle fire magic, refuses/can't support magic ("that's magic that a 3-runa would learn"), no skill window → awakening possibility checked and seemingly absent. Han's read: "She needs to be skilled as she is arrogant"; forced acknowledgment that she fights with them going forward. Her self-proclaimed title: **"Rivel's Witch"** — monster-fighting experience.
+- **Master's revenge**: ANYTNG sends Party 1 not to the planned **Floor 4 test stage** (mix of harpies + goblins) but straight to **Floor 8** — Han immediately decodes the motive: "Was he pissed off about what happened last time?! Being stingy about eating one 3-star… He's telling us to get fucked." First active master-vs-hero spite move in the story.
+- **Main dungeon screen**: "7 stages conquered"; current challenge floor = 8th.
+- **Floor 8 — Goblin Raider Level 9 ×27**: cavalry-scale raiders on uneven topography; crossbow bolts, **mage-first target-priority AI**. Han's stand-down plan collapses; orders Jenna to shoot, Aaron to flank, and Eolka to cast.
+- **Eolka's casting reality check**: 1-minute stationary cast time for "La Gran Sedus"; can't hold a barrier while casting; **can't mobile-cast** — Han's defensive reading of her was right all along. Bolts nail her mid-cast; chapter ends mid-crisis as Han realizes she's completely immobile under fire.
+- **Eolka stat panel update**: Level 2 (exp 0/20), STR 7/7, INT 36/36, HP 8/8, AGI 7/7, Intermediate Fire Magic (Lv.2).
+
+### Chapter 22
+
+- **Second Berserk of the day**: Han activates Berserk again to buy time while Eolka repositions — fatigued ("It's already the second time I went berserk today! Although I'm quite fatigued, I need to buy time here"); stamina drains completely mid-battle ("Damn it, my stamina…!") and he's forced out of berserk state. Meaningful power-limit data: two consecutive Berserks in one day exhausts him.
+- **Eolka rescued**: Han physically carries her into the forested zone of Floor 8 ("Don't tell me she can't even use mobile casting?!") — confirmed in combat that she cannot move and cast simultaneously. Her mana/firepower output hurts her hands; she complained ("A handful?! Did you see the amount of mana and fire power I used?!"). Han's response: "How can anyone treat you badly if you die?"
+- **Forest on Floor 8**: "connecting field that links the forest and the plains"; Jenna noted it was "blocked off a while ago" — newly accessible; possibly connected to the dam-collapse linked-quest thread.
+- **Goblin raider tactics**: mounted hit-and-run, crossbow bolts targeting both Jenna and Eolka; Han lures them in a group while Aaron holds the line; Aaron takes hits shielding the retreat.
+- **Cliffhanger**: Jenna's archery prep complete; Eolka fires "Ignite!" from forest cover.
+
+### Chapter 23
+
+- **Floor 8 cleared (MVP Eolka)**: full spell sequence — "Ignite! Burn! Transcend!" — destroyed 20+ Goblin Raiders in one go. **Aaron and Eolka levelled up**. Rewards: 20,000G, Iron Ore (B) ×3, Wolf Leather ×5.
+- **Eolka's mana fully depleted** after the sequence; collapses mid-victory boast ("I'm the witch of Count Rivel's Spirit! Eolka Rive… Keok!"). Han: "She consumed all her mana…"
+- **Tank-without-armor doctrine** (Han): mages like Eolka are "just like a tank, if you take away the armor plate and infinite tracks… made for war" — firepower in exchange for defense and mobility. Nearby party members must protect her during the ~1-minute cast.
+- **Han's arc shift**: "I think I'm slowly approaching the time where I'll no longer be at the center" — recognizing that Eolka's firepower exceeds his own and his role is evolving from primary damage to leadership/strategy. First time he acknowledges outgrowing the protagonist-damage role.
+- **Rarity note** (Han): mages like Eolka are very rare even among the many he summoned as a past master; "a type that was very rare."
 
 ---
 

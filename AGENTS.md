@@ -22,7 +22,8 @@ That directory (`agents/opencode/`) is OpenCode's persistent development memory:
 
 ## Open Questions / Awaiting User Input
 
-- **Chapter 18**: not yet provided. Ch.17 resolved the cliffhanger: Han won the Open Duel vs Avant in Berserk mode (Avant consumed); Iselle's self-defence killed interfering Jaken/Wave/Beignin; Edis defected (party disbanded); Sorial & Daniel saved; Han is Lv.10 MAX with promotion materials ready.
+- **Chapters 18-19**: transcribed (`docs/story/chapters/`). Ch.17's cliffhanger resolved: ANYTNG vented via mass synthesis (six slackers → Edis, Ch.18); two-party restructure by lots (Ch.19); Floor 7 cleared; 3rd package purchase + 2× high-rank summon cliffhanger. **Chapter 20**: transcribed — introduces Eolka Rivel Strashur (3★ Magician, Party 1) and Roderick (3★ veteran guard, Party 2); name collision with Usher *Roderick* ruled by user as two distinct people (family name vs given name).
+- **Standing rulings (user)**: roster screens show active heroes only; Sorial & Daniel remain Alive until source says otherwise; Usher Roderick ≠ Roderick (3★) (see `docs/decisions.md` → Story Conventions).
 - **Task definitions**: backend/frontend/design tasks are all "Pending" with no definition of done; code development has not been announced.
 - **`docs/licenses/`**: empty placeholder folder.
 

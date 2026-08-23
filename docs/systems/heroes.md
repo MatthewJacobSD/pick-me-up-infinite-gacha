@@ -95,9 +95,10 @@
 - **Not only mortal danger** — awakening can also trigger in moments of achievement/mastery: Jenna awakened **'Hunter of the Forest'** while field-dressing the defeated Queen of the Forest (Ch. 14), a successful hunt rather than a limit-test
 - Han's comment ("Another awakening? Promotion should be easy for her") suggests awakened heroes promote more easily
 
-### Berserker State (Ch. 12, 17)
-- Awakened by Han at the brink of death on Floor 5; activated again during the Open Duel vs Avant
+### Berserker State (Ch. 12, 17, 22)
+- Awakened by Han at the brink of death on Floor 5; activated again during the Open Duel vs Avant; used twice in one day on Floor 8 (Ch. 22)
 - Stat modifiers while active: STR/HP/AGI **+5 above their caps** (28/23, 26/21), INT **−10** (1/11)
+- **Stamina drain on repeated use**: a second Berserk on the same day fatigued Han significantly ("It's already the second time I went berserk today! Although I'm quite fatigued…") and burned out completely mid-battle ("Damn it, my stamina…!") — forced out of Berserk state prematurely; meaning cap on consecutive uses
 - Side effect: a headache afterwards — Han resolves to avoid using it outside real fights
 - Can be dispelled manually ("Han (1 star) dispelled Berserker mode")
 
@@ -155,8 +156,14 @@
 ### Synthesis Without Examination (Ch. 16)
 - The master synthesized brand-new summons immediately after a 10-pull, without testing them first ("using 1-star heroes for synthesis without any form of examination")
 - Han's counter: heroes can send advice to the master **through Iselle as a TIP notification** ("If you don't try using the 1-star hero, you won't know if they're good…")
-- Consumption grants the receiving hero an **immediate level-up** (Jaken levelled up after consuming Diman and Lexigel)
+- Consumption grants the receiving hero an **immediate level-up** (Jaken levelled up after consuming Diman and Lexigel) and can grant **skills** (Edis Callen gained 'Trap Disarm' from the Ch. 18 batch)
 - Iselle enforces the master's orders ("just shut up and go in") but visibly dislikes wasting summons ("Master has summoned useless people again!")
+
+### Rage Synthesis / Weeding (Ch. 18-19)
+- A furious ANYTNG vented the Wolves' destruction by consuming six slacker heroes at once (Louis, Joffrey, Owen, Andio, Arnold, Duncan — all 1★) into Edis Callen
+- Iselle dragged them to the plaza by name; they begged for one more chance — none given ("The master doesn't care if they want to become supporters or not", Ch. 19)
+- The next evening's "weeding" consumed 2 unnamed newbies into **Usher** (→ Lv. 3); Aaron participated in Floor 7 but was passed over
+- Han's doctrine frames synthesis as survivable: increase your worth or become fodder
 
 ---
 
@@ -197,6 +204,29 @@
 - A hero quitting a named party triggers a notification: "Edis (3 stars) has quit the Pulverizing Wolves mercenary!"
 - When members leave/die, the party dissolves: "The 'Pulverizing Wolves mercenary' has been disbanded."
 - Free agents can then be recruited by others (Han: "Come over. We happen to need one person.")
+
+---
+
+## Party Suggestions & Invites (Ch. 19)
+
+- Heroes can submit **party suggestions** to the master: "Hero Han(1 star) has party suggestions!" with full rosters per party
+- The master chooses whether to accept ("It is up to you whether you want to accept the suggestions or not. May you make a wise decision!" — TIPS); ANYTNG accepted the two-party proposal
+- **Party invitations** work the other way around too — a hero invites another into their party and the master confirms via Yes/No prompt: "Han (1 star) has invited Eolka (3 stars) to 'Party 1'. Do you accept?" (Ch. 20); joins generate notifications ("Roderick (3 stars) has joined 'Party 2'!")
+- Party membership changes generate notifications (joins/leaves tracked)
+- Party size is flexible: standard parties have five names (Jenna, Ch. 18), but Han split six heroes into two three-man parties for risk spread and growth efficiency
+- **Two-party structure (Ch. 19):** Party 1 (Red) = Islat Han, Jenna Cirai, Aaron Delcut — leader Han; Party 2 (Blue) = Edis Callen, Usher, Dika — leader Edis. **Ch. 20 additions:** Eolka → Party 1; Roderick → Party 2.
+- Special missions will need tens or even hundreds of heroes around the same levels; a secondary party insures against main-party annihilation (5th-floor lesson: the Gide/Hansen ability gap endangered everyone)
+
+---
+
+## Class Availability & Rank Knowledge (Ch. 20)
+
+- Growing 1★ heroes can produce **warriors and thieves**, but **magicians are different**: "a rare character that can only be gotten from Gacha" — very low appearance chance even in high-rank summons (Eolka)
+- Concept awareness varies by hero background, not just star rank:
+  - Edis (3★ mercenary): innately knows concepts like synthesis; memories of summoning suppressed
+  - Roderick (3★ guard): knows 'master', 'summon', 'synthesis' — but NOT 'levels' or 'skills'; feels a hypnotic compulsion toward duty ("It's like I've been hypnotized")
+  - Eolka (3★ aristocrat): grasps situations slowest of the newcomers ("How am I supposed to know what situation this is when I was dragged here out of nowhere?!")
+- Newcomers receive a **test stage** via the crack of time and space immediately after joining (see `tower.md`)
 
 ---
 
@@ -270,21 +300,28 @@
 
 ---
 
-## Current Roster (Ch. 17)
+## Current Roster (Ch. 20)
+
+**Party 1 (Red) — leader Han:** Islat Han, Jenna Cirai, Aaron Delcut, Eolka Rivel Strashur (3★ Magician)
+**Party 2 (Blue) — leader Edis:** Edis Callen, Usher, Dika, Roderick (3★ Guard)
 
 | Name | Star | Role | Status |
 |---|---|---|---|
-| Han Islat | 1★ | Combat (Leader) | Alive — **Lv.10 (MAX)**, promotion pending; won the Open Duel vs Avant in Berserk mode; total stats close to a 3★ |
-| Jenna Cirai | 1★ | Combat (Ranged) / Hunter | Alive — awakened 'Hunter of the Forest' (Ch. 14); brought the seized heroes back to the accommodations during the duel (Ch. 17) |
-| Aaron Delcut | 1★ | Combat (Melee) | Alive — Floor 6 ambush spear role (Ch. 14) |
-| Dika | 1★ | Combat (Trainee) | Alive — Party 1 reserve on Floor 6; asked "Is it over?" (Ch. 15) |
-| Enok | 1★ | Support (Carpenter) | Alive |
-| Chloe | 1★ | Support (Cook) | Alive — first to notice the newcomers felt "off" (Ch. 15) |
-| Louis | 1★ | Gatherer (Party 4) | Named Ch. 13 |
-| Joffrey | 1★ | Gatherer (Party 4) | Named Ch. 13; spoke as NPC2 in Ch. 15 (wolves reaction, slacker begging) |
-| Owen | 1★ | Gatherer (Party 4) | Named Ch. 13 (spoke as NPC1) |
-| Edis Callen | 3★ | Thief (Dagger) | Alive — defected from the disbanded Pulverizing Wolves to Han's side during the duel (Ch. 17); stayed with them only for her father's request |
-| Sorial | 1★ | — | Alive — saved from synthesis when Jenna returned the seized heroes (Ch. 17) |
-| Daniel | 1★ | — | Alive — saved alongside Sorial (Ch. 17) |
+| Han Islat | 1★ | Combat (Party 1 Leader) | Alive — **Lv.10 (MAX)**, promotion pending; won the Open Duel vs Avant; total stats close to a 3★; Floor 7 MVP (Ch. 19) |
+| Jenna Cirai | 1★ | Combat (Ranged) / Hunter | Alive — awakened 'Hunter of the Forest' (Ch. 14); cross-training daggers with Edis on Han's order (Ch. 18); Party 1 |
+| Aaron Delcut | 1★ | Combat (Melee) | Alive — levelled up on Floor 7 (Ch. 19); Party 1 |
+| Dika | 1★ | Combat (Trainee) | Alive — Party 2 under Edis after the lot draw (Ch. 19) |
+| Edis Callen | 3★ | Thief (Dagger), Party 2 Leader | Alive — defected from the disbanded Pulverizing Wolves (Ch. 17); levelled up + gained 'Trap Disarm' from the Ch. 18 synthesis batch |
+| Eolka Rivel Strashur | 3★ | Magician (Fire) | Alive — Rare pull Ch. 20; Lv.1: STR 7/7, INT 31/31, HP 8/8, AGI 7/7, Intermediate Fire Magic (Lv.2); aristocrat; levelled up via Yon & Zenin synthesis; Party 1 |
+| Roderick (given name) | 3★ | Veteran city guard | Alive — Rare pull Ch. 20; old man, strangely high sense of duty; levelled up via unnamed fodder synthesis; Party 2; **distinct person from Usher *Roderick*** (family name), user ruling |
+| Usher Roderick | 1★ | Porter → Mercenary trainee | Alive — Lv. 3 after the Ch. 19 weeding synthesis; hand-picked by Han; Party 2 |
+| Enok | 1★ | Support (Carpenter) | Alive — mentor for carpentry students (Ch. 18) |
+| Chloe | 1★ | Support (Cook) | Alive — bakes potato bread; mentor list member (Ch. 18) |
+| Patrick | 1★ | Supporter | Alive — named Ch. 18 among the technique-teaching mentors |
+| Alter | 1★ | Blacksmith | Alive — named Ch. 18 ("not that easy to learn blacksmithing"); likely the Ch. 9 unnamed blacksmith |
+| Amarin | 1★ | Supporter | Alive — named on the Ch. 19 support roster |
+| Sorial | 1★ | — | Alive — saved from synthesis when Jenna returned the seized heroes (Ch. 17); not on the active roster screen, kept Alive per user ruling |
+| Daniel | 1★ | — | Alive — saved alongside Sorial (Ch. 17); not on the active roster screen, kept Alive per user ruling |
 
 > Gide and Hansen (trainees) died during the Floor 5 survival mission (Ch. 11). The five 3★ mercenaries arrived via consecutive-summon affinity link and were stronger in the same party together (Ch. 15) — the party disbanded in Ch. 17: Avant consumed via the duel's synthesis condition, Jaken/Wave/Beignin dead by system sudden death, Edis defected to Han.
+> Louis, Joffrey and Owen (Party 4 gatherers) were synthesized into Edis in Ch. 18; Yon and Zenin into Eolka in Ch. 20. Roster screens show **active heroes only** — absence is not death (`docs/decisions.md` → Story Conventions).

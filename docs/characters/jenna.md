@@ -61,6 +61,7 @@
 | Han Islat | "Oppa" — trusted leader, growing bond |
 | Aaron | Teammate, friends |
 | Iselle | Manager, sometimes frustrated with her |
+| Edis Callen | First friend among the newcomers; now her dagger-sparring partner (Ch. 18) |
 
 ---
 
@@ -77,6 +78,9 @@
 9. **Ch. 15**: First to welcome the Pulverizing Wolves; befriends Edis Callen and vouches for Han
 10. **Ch. 16**: First moral rebellion against synthesis — protests the unexamined sacrifices; shields Han from Jaken's strike with a deliberate miss ("I missed on purpose")
 11. **Ch. 17**: Trusted with the seized heroes — brings Sorial & Daniel back to the accommodations during the duel ("Will you be okay alone?" / "Guess not!")
+12. **Ch. 18**: Revealed as the one who spread word of Han's duel deed — cheek-pinched for it ("Whut ar eww swing?!"); ordered to cross-train daggers with Edis despite being bow-only; now takes hunting/butchering students per Han's mentor framework
+13. **Ch. 19**: Drew the red lot — Party 1 with Han and Aaron ("I was going to make a ruckus if I got blue")
+14. **Ch. 20**: Referees the leader lot-draw — trips while bringing the lots (letting both leaders peek), then catches the cheating and remixes them ("That's cheating! Things like that should be dependent on pure luck"); amazed magicians are real ("Wow! There really are magicians, huh~?")
 
 ---
 
@@ -103,3 +107,7 @@
 > "This is wrong! At the very least, they should be given a chance!" (Ch.16)
 
 > "I missed on purpose." (Ch.16)
+
+> "I'm not young. I'm old enough!" (Ch.18)
+
+> "You're so friendly. You told them all to survive, didn't you?" (Ch.18)

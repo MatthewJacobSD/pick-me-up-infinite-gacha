@@ -52,8 +52,9 @@
 | Aspect | Details |
 |---|---|
 | Free Gems | Very rare, hard to obtain |
-| Paid Gems | Real money (ANYTNG spends 65,000 won packages) |
-| Packages | 'Newbie potent package': 50,000 won → 2,500 gems + 50,000 gold (Ch. 15) |
+| Paid Gems | Real money (ANYTNG's purchases: 65,000-won packages early; 50,000- and 90,000-won packages by Ch. 19) |
+| Packages | 'Newbie potent package': 50,000 won → 2,500 gems + 50,000 gold (Ch. 15); 'newbie potent double package!': 90,000 won → 5,000 gems + 100,000 gold (Ch. 19) |
+| Payment | Charged to the next month's phone bill (Ch. 19); Moebius push-banners encourage spending ("If there's anything you want, please buy it now!") |
 | Usage | Advanced summoning, premium upgrades |
 | Strategy | Save for critical moments |
 

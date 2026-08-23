@@ -1,7 +1,7 @@
 # Han's Behaviour Patterns
 
 > How Han Seojin thinks, acts, and adapts in the game world.
-> Based on Chapters 1-13 with chapter-by-chapter evidence.
+> Based on Chapters 1-13 with chapter-by-chapter evidence; Ch. 14-23 behavioural notes appended (Ch. 14-17 not yet backfilled; Ch. 18-23 evidence present).
 
 ---
 
@@ -157,6 +157,32 @@ Han separates the worthy dead from the unworthy:
 - **Middle**: Separates worthy dead (Gide/Hansen, praised) from unworthy survivors (synthesis-dodgers, despised)
 - **End**: Deflects Iselle's public praise to protect his Loki identity; leads Party 4 into the daily dungeon and hunts the Queen of the Forest for promotion materials
 - **Key Moment**: "It's a business secret."
+
+### Ch.18-19: The Mentor-General (appended)
+- **Doctrine made explicit**: turns the mass synthesis into a lesson — "If you want to live, then prove that you're useful"; insults the dead as "livestock" to shock the survivors into self-preservation
+- **Delegation**: builds a mentor framework instead of hoarding responsibility (trades → Chloe/Enok/Alter/Patrick; hunting/butchering → Jenna; carpentry → Enok; fighters → himself, "I'll beat you to a pulp")
+- **Hidden mercy**: privately classifies the synthesized six as eventual fodder, but frames his speech as survival instruction — "If they do as I say, then they wouldn't die a senseless death" (narration: "You're so friendly" / "Me? You must be kidding.")
+- **Reassurance under fear**: catches Dika's panic at the lot split — "Relax no one's getting abandoned here"
+- **Honest encouragement**: tells Edis her growth stats beat other 1★s; lets Aaron's protest ("He's lyinggggggg!") stand without correcting it — the gap is real and he doesn't pretend otherwise
+- **Strategic patience with ANYTNG**: hopes paid summons will teach him method ("I can only hope he realizes this"); engineers the two-party restructure knowing "the master probably won't be able to reject"
+- **Ch. 20 additions**:
+  - **Whale-psychology read**: predicts the master's spending spiral from past-master experience — "people who never purchase anything but won't stop at one once they purchase"
+  - **Loki nostalgia surfaces**: admits the original appeal of Pick Me Up was control — "There's no way it wouldn't be fun to be able to control their lives" (rare first-person confession of the god-complex under his pragmatism)
+  - **Gamesmanship, not rigidity**: cheats at the lot draw without guilt; when caught and remixed, accepts Eolka gracefully and re-frames her as an asset ("fire magic works better with archers") — outcome-focused, never sour
+  - **Teaching through terror**: schedules Yon & Zenin's synthesis as a live demonstration for the newcomers ("If you lag behind, that's what will become of you"), then follows with survival instruction ("the only thing you can do is to work hard")
+- **Ch. 21 additions**:
+  - **Assessment under fire doctrine**: designed a stand-down test for Eolka (Floor 4, mix of harpies/goblins) to assess her magic in controlled conditions — then ANYTNG overrides the destination to Floor 8 mid-activation
+  - **Instant threat-pivot**: the moment Floor 8 was announced, Han abandoned the assessment plan and issued hard orders with zero transition ("It's the eighth floor! Everyone, focus and take out your weapons!")
+  - **Master-relationship reading**: decoded ANYTNG's retaliation instantly ("Was he pissed off about what happened last time?! Being stingy about eating one 3-star… He's telling us to get fuck. Or he's saying that using the fourth floor as a test is boring?") — the relationship has shifted from observer-vs-incompetent to **spite-versus-spite**
+  - **Assessment-through-chaos**: even under unexpected danger, still assessing Eolka — ordered Aaron to shield bolts so she could cast, gauged her mobility in real time; recognized she can't mobile-cast before she herself did
+  - **Ch. 22 additions**:
+    - **Terrain-first problem-solving**: the moment Eolka proved immobile under cavalry fire, Han didn't try to fix her — he moved her ("Forget it. Let's change locations. See that forest?"). Switching from adaptation-of-weakness to exploitation-of-environment with zero sentimentality
+    - **Physical carrying over sentimentality**: literally carried Eolka while under fire; his comment "How can anyone treat you badly if you die?" shows his doctrine applied to allies too — survival justifies any indignity
+    - **Stamina-management blind spot**: two Berserks in one day drained him completely — he knew the headache risk (Ch. 17) but not the stamina cap; first time his game-knowledge was insufficient
+    - **Aaron trust**: ordered Aaron to hold the goblin line alone while he group-lured away — a delegation he'd never have given in Ch. 3; trusts Aaron's competence now even under pressure
+  - **Ch. 23 additions**:
+    - **"Tank without armor" doctrine**: codifies Eolka as firepower-for-defense trade-off; "made for war" if protected — shifts his thinking from individual strength to party composition as a system
+    - **Arc shift acknowledgement**: "I think I'm slowly approaching the time where I'll no longer be at the center" — first explicit recognition that his role is evolving from primary damage to leadership/strategy; not resentment, not fear, just a strategic read of a changing reality
 
 ---
 

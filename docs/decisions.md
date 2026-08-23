@@ -46,6 +46,8 @@
 
 - Repeated panels/lines across chapters are **intentional** (connections between chapters, e.g. the well-forged longsword). Do not treat them as errors to fix.
 - The timeline is **not** 1 chapter = 1 day. Time skips between chapters are normal.
+- **Roster screens show the active roster only** (confirmed Ch. 19 end screen). Absence from a roster screen does NOT mean death or departure — heroes stay at their last known status until the source explicitly states otherwise (user ruling after Ch. 19: Sorial & Daniel remain Alive; if a later chapter synthesizes or mentions them, the user will flag it).
+- **Usher Roderick ≠ Roderick (3★)**: two distinct people (Ch. 20 source name collision). Usher Roderick (1★ porter, Ch. 19) uses "Roderick" as his **family name**; the Ch. 20 veteran city guard uses Roderick as his **given name**. User ruling — preserved as separate characters, never merged.
 
 ---
 
@@ -54,6 +56,14 @@
 - Skill names always capitalize every word, including hyphenated segments: `Basic Swordsmanship`, `Low-Rank Archery`, `Basic Sword-Shield Technique`.
 - Applies to transcripts and all documentation. Generic prose uses of words like "basic" are untouched.
 - Retroactively applied to Ch. 3, 4, 17 stat panels/notifications (v0.0.33).
+
+---
+
+## Mage Terminology (World-Building, Ch. 21)
+
+- **3-runa** = a magic caster type designation (how mage classes are designated in-world; "support magic is magic that a 3-runa would learn"). Preserve verbatim in all documentation; do not normalize.
+- **3-circle** = a mage rank measure (the scale of magic a mage can cast; Eolka's max is "third-circle fire magic"). Keep as transcribed.
+- Both terms are intentional world-building elements from the manhwa source; future chapters may expand the classification further.
 
 ---
 

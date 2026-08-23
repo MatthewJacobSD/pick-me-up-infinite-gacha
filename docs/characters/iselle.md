@@ -23,6 +23,7 @@
 - **Panicky**: When things go wrong, she freaks out
 - **Manipulative**: Uses tips to guide the master's decisions
 - **Cowardly**: Can't act against heroes except in self-defence or when master orders are disobeyed
+- **Resentful enforcer**: Executes the master's orders while griping about being taken for granted — "You guys always try to climb over my head when I'm being nice!" (Ch. 18)
 
 ---
 
@@ -35,6 +36,9 @@
 5. **Ch. 6**: Discovered Han is Loki. Became his #1 "servant"
 6. **Ch. 7**: Helped with facility upgrades. Watched Han craft weapons
 7. **Ch. 8**: Assigned roles to new heroes, conducted thinning
+8. **Ch. 17**: Enforced the duel's no-interference rule — her self-defence killed Jaken, Wave and Beignin; celebrated to Han as "Loki" ("How was I?! Was I amazing?")
+9. **Ch. 18**: Dragged the six marked slackers out to the plaza for the mass synthesis on the master's orders
+10. **Ch. 20**: Drags Yon/Zenin in screaming ("Shut up and go in already!"); orders Eolka in after them; invokes **"Open up, crack of time and space!!!"** and dispatches Party 2 into the newcomer test stage
 
 ---
 

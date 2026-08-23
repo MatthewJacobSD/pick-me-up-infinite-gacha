@@ -64,6 +64,10 @@
 5. **Ch. 11**: Trapped foot freed by Han's blade; bleeding + brink of death, but pulled up the wall and survived
 6. **Ch. 12**: Levelled up after the Floor 5 clear
 7. **Ch. 13**: Grieving Gide and Hansen — late to training for the first time; blames his own strength deficit for their deaths
+8. **Ch. 18**: Objects to Han's growth-stats pep talk to Edis ("H-He's lyinggggggg! I couldn't catch up no matter how hard I trained!") — proof the gap is real even if the encouragement is sincere
+9. **Ch. 19**: Levelled up on the Floor 7 clear (MVP Han); drew the red lot — Party 1 with Han and Jenna; after the battle Han told him "Don't overtrain and ruin your body… Aaron, stay here." (reason unrevealed)
+10. **Ch. 22**: Takes crossbow hits shielding Han's group during the Floor 8 retreat ("Islat!!", "Islat, me too!"); holds the goblin line while Han group-lures the raiders away
+11. **Ch. 23**: "If you're tired, I'll protect you" — growing confidence; levelled up after Floor 8 clear (MVP Eolka); witnessed Eolka's full spell destroy 20+ raiders ("So this is magic…")
 
 ---
 
@@ -78,3 +82,7 @@
 > "If I had been a little stronger, the two of them…" (Ch.13)
 
 > "Sorry for being late." (Ch.13)
+
+> "H-He's lyinggggggg! I couldn't catch up no matter how hard I trained!" (Ch.18)
+
+> "What a relief, Han! I think we can handle this!" (Ch.19)

@@ -9,7 +9,7 @@
 | Aspect | Details |
 |---|---|
 | Total Floors | 100 |
-| Current Progress | Floor 6 cleared (Explore mission, Ch. 14-15) |
+| Current Progress | Floor 7 cleared (Subjugation, Ch. 19); Floor 6 cleared (Explore mission, Ch. 14-15) |
 | Boss Floors | Every 5 stages (5, 10, 15, etc.) |
 | Difficulty Scaling | Exponential after boss floors |
 | Daily Dungeon | Unlocked after clearing the 5th floor (Ch. 12); first run in Ch. 13 |
@@ -24,7 +24,7 @@
 
 | Category | Goal | Seen On |
 |---|---|---|
-| Subjugation | Annihilate all the enemies | Floors 1-4 (Ch. 9 replay) |
+| Subjugation | Annihilate all the enemies | Floors 1-4 (Ch. 9 replay), Floor 7 (Ch. 19: Goblin Lv.8 ×13) |
 | Survival | Survive the horde for a set time | Floor 5 (Ch. 9) |
 | Explore | Investigate an unfamiliar location — satisfy requirements to pass safely | Floor 6 (Ch. 14) |
 
@@ -40,6 +40,21 @@
 - **Grinding**: Earlier floors can be replayed for reduced rewards
 - **Reward Scaling**: First clear gives more gold/materials than replays
 - **Blowing horn alarm** (Floor 6, Ch. 14): goblin scouts carrying horns signal nearby allies; killing them quietly (or ambushing fast) prevents a village-sized reinforcement swarm from surrounding the party
+- **Environmental storytelling** (Floor 7, Ch. 19): rain + a flowing river where none should be — Han suspects a **dam collapse** linked quest/stream ("Did the dam collapse?"); he deliberately left one goblin alive rather than clear instantly, since a linked quest would need the stage kept open
+
+### Floor 7 (Ch. 19) — CLEARED
+- Mission: Subjugation — Goblin Level 8 ×13; Han went Berserk and ordered the rest to observe ("I'll get rid of them all!")
+- Held the stage open on purpose (suspected linked quest) and explored before the clear registered
+- Stage clear: MVP – Han; Aaron levelled up; rewards 10,000G, Iron ore (C) x2, Leather (C) x1
+
+### Floor 8 (Ch. 21-23) — CLEARED
+- Mission: Subjugation — **Goblin Raider Level 9 ×27** (~cavalry-scale raiders)
+- Key traits: uneven topography; **crossbow bolts** with **mage-first target-priority AI**; overwhelming numbers
+- Entry was a **master's revenge play**: ANYTNG overrode Han's intended Floor 4 test-stage destination (mix of harpies + goblins) and sent Party 1 to Floor 8 instead — retaliation for the Wolves; Han decoded it in real time
+- **Goblin tactics**: mounted hit-and-run, crossbow bolts targeting Jenna and Eolka in rotation; Han goes Berserk twice to buy time but stamina collapses
+- **Forest zone** on Floor 8: "connecting field that links the forest and the plains" — Jenna noted it was "blocked off a while ago"; newly accessible zone; possibly connected to the dam-collapse linked-quest thread
+- **Stage clear (Ch. 23)**: Eolka's full spell sequence "Ignite! Burn! Transcend!" destroyed 20+ Goblin Raiders in one go — **MVP Eolka**; Aaron and Eolka levelled up; rewards 20,000G, Iron Ore (B) ×3, Wolf Leather ×5
+- **Eolka collapsed** from total mana depletion after the full sequence; Han codifies her as "tank without armor" — firepower for defense/mobility trade-off
 
 ### Boss Floors (5, 10, 15, etc.)
 - **Major difficulty spike** — "completely different level"
@@ -115,6 +130,8 @@ Material-gathering dungeon accessed through the space-time crack. No mandatory c
 - Used in many item crafting recipes **and hero promotion**
 - **Plants of Life** spawn on the Sinmiel Plateau — key ingredient in healing potions (Ch. 14)
 - Harvestable by-products: Queen's blood, teeth/claws ripped off and separated
+- **Sinmiel Plateau is also the wheat source** — Han sends gatherers there for food variety, which lowers waiting-room stress (Ch. 18; Chloe grinds potatoes as a stopgap)
+- **Fire-attribute stone mine still not open** as of Ch. 19
 
 ---
 
@@ -127,6 +144,19 @@ Linked quests that start with exploration hints found during main dungeon stages
 - Han worries ANYTNG missed what he saw ("This is so frustrating")
 - Streams are appearing **earlier than Han expected** from his game knowledge — pacing anomaly worth tracking
 - Han scouts ahead after a clear precisely to read these hints before the next stage
+
+---
+
+## Crack of Time and Space (Ch. 20)
+
+A portal invoked by Iselle ("Open up, crack of time and space!!!") used to deploy parties into **newcomer test stages** immediately after high-rank summons join.
+
+- Purpose: put brand-new heroes to the test in a live battle ("Putting newcomers to the test" — Han)
+- The new hero is showcased: Edis tells Roderick "You'll be the main character of this battle after all"
+- Party 2 (Edis, Usher, Dika + Roderick) entered as the escort/evaluation party
+- **Master controls the destination floor** — the crack can be overridden to a different floor at the master's discretion; ANYTNG used this to retaliate against Han (Ch. 21, see Floor 8 block above)
+- Naming variance in source: "crack of time and space" (Ch. 20) vs "crack of space and time" (Ch. 21) — preserved as-is
+- Related structure: daily dungeons are also accessed through the space-time crack (see Daily Dungeon above)
 
 ---
 

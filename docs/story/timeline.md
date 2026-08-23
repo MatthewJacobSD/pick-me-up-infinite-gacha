@@ -1,6 +1,6 @@
 # Story Timeline
 
-> Chronological events through Chapter 17.
+> Chronological events through Chapter 23.
 >
 > **Note:** The timeline is not 1 chapter = 1 day. Time skips between chapters are normal and expected.
 
@@ -118,9 +118,9 @@
 
 ---
 
-## Days 31+ (Sinmiel Plateau → Floor 6 → Newcomers)
+## Days 31+ (Sinmiel Plateau → Floor 6 → Newcomers → Two-Party Era)
 
-> Explicit time skips: Kendert Forest day → Sinmiel Plateau day (Fri/Sat rotation) → "A few days later" → Floor 6. Ch.15-16 continue the same stretch of days.
+> Explicit time skips: Kendert Forest day → Sinmiel Plateau day (Fri/Sat rotation) → "A few days later" → Floor 6. Ch.15-16 continue the same stretch of days; Ch. 18-19 span roughly three more days (duel aftermath → next morning → weeding evening → dawn of Floor 7).
 
 | Event | Chapter |
 |---|---|
@@ -152,6 +152,30 @@
 | Jaken, Wave & Beignin interfere in the active duel — Iselle's **self-defence** kills all three ("[Sudden Death!] suicide due to stress"); she celebrates to Han as "Loki" | Ch. 17 |
 | Avant surrenders — consumed by Han per the synthesis condition; master's cancel attempt fails (duel already allowed) | Ch. 17 |
 | Han reaches **Lv.10 (MAX)**; 'Basic Sword-Shield Technique' + 'Pain Tolerance' level up; promotion prompt appears (stone or same-star hero, up to 7★); Berserker headache side effect noted | Ch. 17 |
+| Dika leads the post-duel thanks; Jenna revealed as the spreader of Han's deed — cheek-pinched; Han coldly disclaims saving the old-timers ("This has got nothing to do with you all") | Ch. 18 |
+| **Mass synthesis**: a furious ANYTNG calls out Louis, Joffrey, Owen, Andio, Arnold & Duncan and consumes all six into **Edis Callen** — she levels up + gains **'Trap Disarm'** | Ch. 18 |
+| Han's survival doctrine speech: "prove that you're useful"; mentor assignments (Chloe/Enok/Alter/Patrick teach trades, Jenna hunts/butchering, Enok carpentry, Han takes fighters) | Ch. 18 |
+| Next morning: Chloe's potato bread; wheat source identified (Sinmiel Plateau daily dungeon); Edis begins dagger sparring vs Jenna; Han's growth-stats pep talk (Aaron objects: "H-He's lyinggggggg!") | Ch. 18 |
+| Han hand-picks **Usher Roderick** (ex-mercenary porter) for a potential test | Ch. 19 |
+| Evening "weeding": master synthesizes 2 unnamed newbies into Usher (**Lv. 3**); Aaron not chosen despite participating in the fight; fire-attribute stone mine still closed | Ch. 19 |
+| Dawn gathering: **two-party split by lots** — Party 1 (Red): Han, Jenna, Aaron; Party 2 (Blue): Edis, Usher, Dika; leaders Han & Edis; hero-submitted party suggestions sent to the master | Ch. 19 |
+| **Floor 7 cleared** (Subjugation: 13 goblins Lv.8): MVP Han (berserk), Aaron levels up; rewards 10,000G + Iron ore (C) x2 + Leather (C) x1; rainy river stage — Han suspects a dam-collapse linked quest (leaves one goblin alive) | Ch. 19 |
+| Master buys 'newbie potent double package!' (90,000 won → 5,000 gems + 100,000 gold, phone-bill charge) — third purchase; then starts **2 consecutive high-rank summons** (1,000 gems): "There'll be newcomers" (cliffhanger) | Ch. 19 |
+| Han's whale-psychology read on the master: "people who never purchase anything but won't stop at one once they purchase" | Ch. 20 |
+| Loki nostalgia narration: the original appeal of Pick Me Up — observing humans, supporting heroes, "the fun… to be able to control their lives" | Ch. 20 |
+| Summon results: **Rare — Eolka (3★)** and **Rare — Roderick (3★)**; Eolka collapses in embarrassment on arrival (Edis IDs her as an aristocrat); Roderick is a veteran big-city guard who knows master/summon/synthesis but not levels/skills | Ch. 20 |
+| **Lot contest**: Han and Edis both peek ("The left is the correct one!!"); Eolka accidentally reveals fire magic mid-scuffle; Jenna catches the cheating, remixes the lots | Ch. 20 |
+| Assignments: **Eolka → Party 1** via party invitation (master Yes/No prompt) over Edis's regretful objection; Han rationalizes: "fire magic works better with archers"; Roderick joins Party 2 | Ch. 20 |
+| **Object lesson synthesis**: Yon & Zenin (1★, failed supporters) consumed into Eolka (levels up) while she watches; further unnamed fodder into Roderick (levels up) — "If you lag behind, that's what will become of you" | Ch. 20 |
+| Iselle opens the **crack of time and space**: Party 2 enters for the newcomer test with Roderick featured; Han interrogates Eolka about her magic — "I'll ask you again. What magic can you use?" (cliffhanger) | Ch. 20 |
+| **Eolka interrogation (Ch. 21):** max third-circle fire magic, no support magic, no skill window → awakening seemingly absent; known as "Rivel's Witch"; Han deduces she must be skilled despite her arrogance; forced agreement to fight with Party 1 | Ch. 21 |
+| **Master's revenge (Ch. 21):** ANYTNG retaliates by sending Party 1 to **Floor 8** (not the planned Floor 4 test stage) — "Was he pissed off about what happened last time?! Being stingy about eating one 3-star… He's telling us to get fucked." | Ch. 21 |
+| **Floor 8 (Ch. 21):** Goblin Raider Level 9 ×27 (~cavalry), uneven topography, crossbow bolts targeting the mage-first; Han orders Jenna to shoot, Aaron to flank/bolt-shield; Eolka casts "La Gran Sedus" with 1-minute stationary cast time; bolts nail her, Han realizes she can't mobile-cast — cliffhanger mid-battle | Ch. 21 |
+| Han rescues Eolka from the open field — physically carries her into a forested area; goblin raiders pursue; "Don't tell me she can't even use mobile casting?!" confirmed; Eolka's mana expenditure hurts her hands | Ch. 22 |
+| **Forest on Floor 8**: "connecting field that links the forest and the plains" — Jenna notes it was "blocked off a while ago"; newly accessible zone within the stage | Ch. 22 |
+| **Han goes Berserk a second time in one day** to buy time for Eolka's repositioning — fatigued ("Although I'm quite fatigued, I need to buy time here"); stamina runs out mid-battle ("Damn it, my stamina…!"); goblins use hit-and-run cavalry tactics against him | Ch. 22 |
+| Aaron takes crossbow hits shielding Han and Eolka's retreat; Han orders him to hold the line while luring the group away; Jenna confirms her archery prep is complete — Eolka fires "Ignite!" from the forest cover (cliffhanger) | Ch. 22 |
+| **Floor 8 cleared (Ch. 23):** Eolka's full spell sequence — "Ignite! Burn! Transcend!" — destroys 20+ Goblin Raiders in one go; **MVP Eolka**; rewards 20,000G, Iron Ore (B) x3, Wolf Leather x5; Aaron and Eolka level up; Eolka collapses from total mana depletion; Han's analysis: "tank without armor" — firepower in return for defense and mobility; Han notes he's "slowly approaching the time where I'll no longer be at the center" — arc shift from primary damage to leadership/strategy | Ch. 23 |
 
 ---
 
@@ -159,9 +183,10 @@
 
 | Event | Expected Chapter |
 |---|---|
-| ANYTNG's reaction to losing all five Pulverizing Wolves (and Han's taunt: "Try synthesizing me if you dare") | Ch. 18 |
-| Han's promotion to 2★ (materials acquired; Lv.10 max) | Ch. 18 (imminent) |
-| Edis integration into Han's side / Party 5 rebuild ("We happen to need one person") | Ch. 18+ |
+| Han's stamina recovery after double Berserk | Ch. 24 |
+| Han's promotion to 2★ (materials acquired; Lv.10 max) | Overdue since Ch. 14/17 |
+| Forest / linked-quest thread (dam-collapse; was "blocked off") | Ch. 24+ |
+| Whatever Han kept Aaron behind for (Ch. 19) | Ch. 23+ |
 | Large goblin habitat / next stream chain | Ch. 17+ |
 | Plants of Life gathering | Ch. 15+ |
 | Sirris arrives | Ch. 10+ |

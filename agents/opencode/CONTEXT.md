@@ -12,42 +12,40 @@
 - **Platform:** PC, Mobile, Console (cross-platform), fully online
 - **Mode:** Fully online; 24/7 server connectivity; client never trusted
 
-## The Story (as of Ch. 17)
+## The Story (as of Ch. 23)
 
-- **Protagonist:** Han Seojin, real player from Seoul (Gangseo-Gu, South Earth). Summoned into his own game as a **1★ hero "Islat Han"** by a Level-999 bugged entity (the God of Death).
+- **Protagonist:** Han Seojin, real player from Seoul (Gangseo-Gu, South Earth). Summoned into his own game as a **1★ hero "Islat Han"** by a Level-999 bugged entity (the God of Death). As past master/Loki he confesses the appeal: "There's no way it wouldn't be fun to be able to control their lives." **Arc shift (Ch. 23):** "I think I'm slowly approaching the time where I'll no longer be at the center" — acknowledging his role is evolving from primary damage to leadership/strategy as Eolka's firepower outpaces his.
 - **Big reveal:** Han **is Loki** (Account #46631913, Rank 5, "Master of Masters"). Heroes are real humans from across ~1M worlds.
-- **The Master:** **ANYTNG** — a reckless office worker playing the gacha on the other side; 65,000-won packages; Han is being managed by a "semi-newbie" who approved a lethal duel without understanding it.
-- **Iselle:** Pixie lounge manager; Loki fangirl; administrates the Sanctuary; openly calls Han "Loki" and seeks his praise after her Ch. 17 self-defence kills.
-- **Jenna Cirai:** First ally, calls Han "Oppa", growing bond; archery Lv.5.
-- **Aaron:** Loyal disciple, calls Han "Hyung-nim"; spear skill stuck at Lv.2.
-- **Niflheimr:** The evil guild/order that killed Loki; their **Elite 5** (6★ Lv.99) are investigating Loki's return — Sirris dispatched to find Han, Yurneth investigating the master.
+- **The Master:** **ANYTNG** — reckless office worker; whale-psychology read; retaliated by sending Party 1 to Floor 8 instead of Floor 4 (Ch. 21).
+- **Iselle:** Pixie lounge manager; Loki fangirl; invokes the crack for test/deployment stages.
+- **Jenna Cirai:** First ally, calls Han "Oppa"; archery Lv.5; cross-training daggers with Edis; callled Eolka "Unnie" (Ch. 22-23) — growing familiarity.
+- **Aaron:** Loyal disciple, calls Han "Hyung-nim"; spear stuck at Lv.2; levelled up on Floor 7 and again on Floor 8 (Ch. 23); "If you're tired, I'll protect you" — growing confidence (Ch. 22).
+- **Edis Callen (3★):** Ex-Wolves defector; + Trap Disarm; Party 2 leader.
+- **Usher Roderick (1★→Lv.3):** Porter; Roderick = family name (distinct from Roderick 3★); Party 2.
+- **Roderick (3★):** Veteran city guard; entered crack test with Party 2 (Ch. 20); performed better than Edis expected.
+- **Eolka Rivel Strashur (3★):** **MVP of Floor 8 clear (Ch. 23)**; levelled up; full spell sequence **"Ignite! Burn! Transcend!"** — destroyed 20+ Goblin Raiders; collapsed from total mana depletion. All stats below 1★ (STR/HP/AGI all 7/7) — **"tank without armor"** (Han's analogy: firepower for defense/mobility; made for war if protected). ~1-minute stationary cast; party members must protect her during cast. No support magic; no skill window; "Rivel's Witch" / "witch of Count Rivel's Spirit".
+- **Floor 8 CLEARED (Ch. 23):** Goblin Raider Lv.9 ×27; rewards 20,000G, Iron Ore (B) ×3, Wolf Leather ×5. Forest zone ("connecting field between forest and plains") was newly accessible — may connect to dam-collapse thread.
 
-## Current State Snapshot (through Ch. 17)
+## Current State Snapshot (through Ch. 23)
 
-- **Alive (12):** Han, Jenna, Aaron, Enok, Chloe, Dika, Louis, Joffrey, Owen + **Edis Callen** (defected from Wolves mid-duel — stayed only for her father's request) + **Sorial & Daniel** (saved: Jenna returned them to the accommodations before the duel).
-- **Pulverizing Wolves destroyed (Ch. 17):** Avant consumed by Han via duel synthesis condition; Jaken/Wave/Beignin died by system sudden death ("suicide due to stress") when Iselle's self-defence punished their interference; party disbanded when Edis quit.
-- **Han:** **Lv.10 — MAX for 1★**, promotion pending (materials acquired Ch. 14). Won the Open Duel vs Avant in Berserk mode without unsheathing his sword; 'Basic Sword-Shield Technique' + 'Pain Tolerance' levelled up; total stats close to a 3★. Berserk modifiers: +5 STR/HP/AGI over cap, −10 INT; headache side effect — avoid outside real fights.
-- **Ch.16 crisis (resolved):** ANYTNG synthesized new pulls without examination (Diman & Lexigel consumed); Han exposed the Wolves as a thief troupe and staked himself in an Open Duel.
-- **Duel system mechanics:** master Yes/No approval gate; conditions bind (surrender ≠ escape from consumption); no cancellation once allowed; interference forbidden — enforced lethally by Manager Self-Defence; winner gains level + skill-ups.
-- **Promotion rules expanded:** promotion stone OR same-star hero at certain level; heroes promotable up to 7 stars; max-level prompt at Lv.10 for 1★.
-- **Tower progress:** Floor 6 cleared (MVP Han); large goblin habitat stream chain pending; Plants of Life gathering pending; daily dungeons running.
-- **New mechanics (cumulative):** Streams; affinity link; summon-rank knowledge gap; Open Duel; hostility notifications + tracked relationships; TIP-via-Iselle channel; synthesis grants immediate level-up; party disbanding on member exit; Sudden Death cause-of-death logging.
-- **Master spending:** 'newbie potent package' — 50,000 won → 2,500 gems + 50,000 gold.
-- **Jenna:** 'Hunter of the Forest' awakened; dreams of non-combat life; first moral rebellion vs synthesis (Ch. 16); trusted with saving the seized heroes (Ch. 17).
-- **Standing facts:** Facilities include Lodging, Restaurant, Training Center, Equipment Workshop, Square, Weapons Storage + Blacksmith's Forge. Synthesis used: Toby → Han, Yelson → Jenna, Shay (4★) by ANYTNG, Dolf + 2 inactive, Diman + Lexigel (unexamined), Avant (duel condition). Awakening triggers: limit-tests (Han) or achievement (Jenna). ANYTNG logs in 3x/day; waiting room 3x dilation; battle stages real-time.
-- **Deaths:** 15 combat + 7 synthesis (incl. Avant) + 3 sudden death (Wolves trio) + 1 thinning. Total introduced: 42.
+- **Roster per Ch. 20: Party 1 (Red):** Islat Han, Jenna Cirai, Aaron Delcut (levelled up, Ch.23), Eolka Rivel Strashur (3★, MVP, levelled up, Ch.23). **Party 2 (Blue):** Edis Callen, Usher, Dika, Roderick (3★). Support: Patrick, Enok, Chloe, Amarin, Alter. (Sorial & Daniel off-screen, kept Alive per user ruling.)
+- **Floor 8 CLEARED (Ch. 23):** Eolka's "Ignite! Burn! Transcend!" destroyed 20+ Goblin Raiders; MVP Eolka; rewards 20,000G, Iron Ore (B) ×3, Wolf Leather ×5. Eolka collapsed from total mana depletion. Han's arc shift: "slowly approaching the time where I'll no longer be at the center."
+- **Berkerk stamina cap confirmed**: two uses in one day exhausts Han completely (Ch. 22); headache + forced out of berserk state.
+- **Han:** **Lv.10 — MAX for 1★**, promotion STILL pending. Double Berserk fatigue on Floor 8; arc shifting toward leadership role.
+- **Standing facts:** ANYTNG logs in 3x/day; waiting room 3x dilation; battle stages real-time; master controls crack destination (retaliation precedent). Forest zone on Floor 8 may link to dam-collapse thread. Synthesis death count: 18+.
 - **Data note:** Han's Lv.9 exp normalized to 54/70 (Ch. 17 panel showed 11/70 — user confirmed manhwa error).
 
 ## Pending Story Beats
 
-- ANYTNG's reaction to losing all five Wolves + Han's taunt ("Try synthesizing me if you dare") (Ch. 18).
-- Han's promotion to 2★ (Lv.10 max, materials ready — imminent).
-- Edis integration / Party 5 rebuild ("We happen to need one person").
-- Large goblin habitat / next stream chain (Ch. 17+).
-- Plants of Life gathering run.
-- Sirris arrives (Ch. 10+).
-- Yurneth finds the master (Ch. 10+).
-- Han vs Niflheimr (Ch. 15+).
+- Han's stamina recovery after double Berserk (Ch. 24)
+- Han's promotion to 2★ (Lv.10 max, materials ready)
+- Forest / linked-quest thread (dam-collapse; was "blocked off") (Ch. 24+)
+- Whatever Han kept Aaron behind for (Ch. 19)
+- Large goblin habitat / next stream chain (Ch. 17+)
+- Plants of Life gathering (Ch. 15+)
+- Sirris arrives (Ch. 10+)
+- Yurneth finds master (Ch. 10+)
+- Han vs Niflheimr (Ch. 15+)
 
 ## UI Prototype State (interfaces/)
 
@@ -91,3 +89,4 @@ Device Select → Initial → Connecting → Creating Account
 
 - A reply appearing only at the top of the chat does not mean the session is broken — it is a TUI viewport issue; scroll down. The chat remains functional.
 - The user transcribes the manhwa as it comes; author name inconsistencies between chapters are to be expected and preserved, not "fixed".
+- Transcription typo handling (established Ch. 18–20): obvious fast-typing errors are cleaned in chapter docs (e.g. "string"→"strong", "misurderstandng"→"misunderstanding", "Audio"→"Andio", "mux"→mix); intentional stylized speech is preserved verbatim (e.g. Jenna's pinched-cheek slur "Whut ar eww swing?!"). The user writes quickly and misses typos — fix them proactively and report each normalization so it can be vetoed.
