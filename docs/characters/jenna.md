@@ -37,6 +37,9 @@
 | Low-rank Dagger | Lv.2 | Secondary weapon |
 | Eagle's Eye | — | Gained via synthesis (Yelson sacrificed) |
 | Hunter of the Forest | — | **Awakened** while field-dressing the Queen of the Forest (Ch. 14) — her forest upbringing made it inevitable |
+| Switching | In training | Assigned Ch. 24 — instant dagger/arrow swaps mid-fight ("Anytime, short or long distance, you can fight and change"); learns at an abnormal rate for a 1★ origin (Ch. 25) |
+
+> **Level:** Lv.8 as of Ch. 25 — maxed for the current floors (Han 10, Jenna 8, Aaron 6, Eolka 4).
 
 ---
 
@@ -81,6 +84,8 @@
 12. **Ch. 18**: Revealed as the one who spread word of Han's duel deed — cheek-pinched for it ("Whut ar eww swing?!"); ordered to cross-train daggers with Edis despite being bow-only; now takes hunting/butchering students per Han's mentor framework
 13. **Ch. 19**: Drew the red lot — Party 1 with Han and Aaron ("I was going to make a ruckus if I got blue")
 14. **Ch. 20**: Referees the leader lot-draw — trips while bringing the lots (letting both leaders peek), then catches the cheating and remixes them ("That's cheating! Things like that should be dependent on pure luck"); amazed magicians are real ("Wow! There really are magicians, huh~?")
+15. **Ch. 24**: Assigned **Switching** training; balks at the fire-resistance brazier ("I don't.. want to do it… Since I stand at the back.") until Han offers to hold her hand in the flames; given triangular-formation defender duty for Eolka ("She's high maintenance…") and warned pain resistance awaits her in the future
+16. **Ch. 25**: Learns Switching at an abnormal rate — "Her origin is 1-star, but she has great potential. The rate at which she's learning is abnormal." (Han: "If I didn't know about Pick Me Up, Jenna would've been seriously underdeveloped."); runs Han's arrow-dodge drills that yield him <Projectile Defense>; reaches **Lv.8**
 
 ---
 
@@ -111,3 +116,5 @@
 > "I'm not young. I'm old enough!" (Ch.18)
 
 > "You're so friendly. You told them all to survive, didn't you?" (Ch.18)
+
+> "She's high maintenance…" (Ch.24)

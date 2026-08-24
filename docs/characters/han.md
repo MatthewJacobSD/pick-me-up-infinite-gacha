@@ -29,7 +29,7 @@
 
 ---
 
-## Current Stats (Ch. 20)
+## Current Stats (Ch. 25)
 
 | Stat | Value |
 |---|---|
@@ -55,7 +55,7 @@
 | Jenna Cirai | First ally, calls him "Oppa", growing bond |
 | Aaron Delcut | Loyal disciple, calls him "Hyung-nim" |
 | Iselle | Tense — she manages him, he knows more than she does; now openly calls him "Loki" and seeks his praise (Ch. 17) |
-| ANYTNG (Master) | Watching his own game being played recklessly; Han taunts him after destroying the Wolves ("Try synthesizing me if you dare"); **ANYTNG retaliates by sending Party 1 to Floor 8 instead of the planned Floor 4** (Ch. 21) — Han decodes it immediately: "Was he pissed off about what happened last time?! He's telling us to get fuck. Or he's saying that using the fourth floor as a test is boring?" — first active master-vs-hero spite move in the story |
+| ANYTNG (Master) | Watching his own game being played recklessly; Han taunts him after destroying the Wolves ("Try synthesizing me if you dare"); **ANYTNG retaliates by sending Party 1 to Floor 8 instead of the planned Floor 4** (Ch. 21) — Han decodes it immediately: "Was he pissed off about what happened last time?! He's telling us to get fucked. Or he's saying that using the fourth floor as a test is boring?" — first active master-vs-hero spite move in the story |
 | Niflheimr | They know Loki is back — hunting him |
 | Edis Callen | Recruited defector from the disbanded Pulverizing Wolves (Ch. 17); appointed Party 2 (Blue) leader under him (Ch. 19) |
 | Usher Roderick | Hand-picked protégé — ex-porter who absorbed his survival doctrine; tested and levelled via synthesis (Ch. 19) |
@@ -88,7 +88,7 @@
 20. **Ch. 22**: Rescued Eolka from the open field by physically carrying her into a forested zone — confirmed she can't mobile-cast in real time; went **Berserk a second time in one day** to buy time for repositioning; stamina drained completely mid-battle ("Damn it, my stamina…!"); ordered Aaron to hold the goblin line while he group-lured them away; forest on Floor 8 may connect to the dam-collapse linked-quest thread
 21. **Ch. 23**: Floor 8 cleared (MVP Eolka); her full "Ignite! Burn! Transcend!" spell destroyed 20+ Goblin Raiders; Han codifies her as "tank without armor" — firepower for defense/mobility trade-off; **"I think I'm slowly approaching the time where I'll no longer be at the center"** — first explicit acknowledgement that his role is shifting from primary damage to leadership as Eolka's firepower outpaces his
 22. **Ch. 24**: Built the Magic Hall (magic research lab + alchemy lab + library + training annex combined); crafted 6 health potions + 2 magic potions via rhythm-game mini-game; walked through Eolka's fire 10 seconds to train fire resistance — obtained <Fire Resistance> skill; established triangular formation with Eolka at centre; trained Aaron in pain resistance and Jenna in Switching (dagger/arrow quick-switch); Party 2 likely headed to Floor 9; Floor 10 cooperation mission requires at least 2 parties
-23. **Ch. 25**: Obtained <Projectile Defense> via arrow-dodge training without shield; <Beginner Sword-Shield Technique> levelled to Lv.6; pushed Eolka to decrease magic strength for faster casting/lower mana consumption (class 1-3 system explained); received Edis's Floor 9 report (muddy ground — linked-quest clue); ANYTNG challenged Floor 10 without waiting for full preparation; Floor 10 revealed as **pre-ruined city from Floor 5** ("It's that it hasn't been destroyed yet"); tactical station mechanic introduced; told Shurn to hide; 6 health potions distributed (3 per party); Edis tasked with regrouping at centre if separated
+23. **Ch. 25**: Obtained <Projectile Defense> via arrow-dodge training without shield; <Basic Sword-Shield Technique> levelled to Lv.6; pushed Eolka to decrease magic strength for faster casting/lower mana consumption (class 1-3 system explained); received Edis's Floor 9 report (muddy ground — linked-quest clue); ANYTNG challenged Floor 10 without waiting for full preparation; Floor 10 revealed as **pre-ruined city from Floor 5** ("It's that it hasn't been destroyed yet"); tactical station mechanic introduced; told Shurn to hide; 6 health potions distributed (3 per party); Edis tasked with regrouping at centre if separated
 
 ---
 

@@ -31,8 +31,10 @@
 
 | Skill | Level | Notes |
 |---|---|---|
-| Spear | Lv.2 | Stuck — not progressing |
-| Swordsmanship | — | Not learned |
+| Basic Spearmanship | Lv.3 | Was stuck at Lv.2 through Ch. 13; reached Lv.3 by Ch. 25 — "that's all he has" (Han: an ordinary 1-star) |
+| Pain Resistance | In training | Assigned Ch. 24; holed up in his room training it since (Ch. 25) |
+
+> **Level:** Lv.6 as of Ch. 25. Equipment upgraded to D-rank iron plating with a dagger as support weapon (Ch. 25).
 
 ---
 
@@ -68,6 +70,8 @@
 9. **Ch. 19**: Levelled up on the Floor 7 clear (MVP Han); drew the red lot — Party 1 with Han and Jenna; after the battle Han told him "Don't overtrain and ruin your body… Aaron, stay here." (reason unrevealed)
 10. **Ch. 22**: Takes crossbow hits shielding Han's group during the Floor 8 retreat ("Islat!!", "Islat, me too!"); holds the goblin line while Han group-lures the raiders away
 11. **Ch. 23**: "If you're tired, I'll protect you" — growing confidence; levelled up after Floor 8 clear (MVP Eolka); witnessed Eolka's full spell destroy 20+ raiders ("So this is magic…")
+12. **Ch. 24**: Assigned **Pain Resistance** training ("Aaron, I'm sorry, but you also have another thing to do") — rationale: health potions heal injuries but cause extreme pain in exchange; a fighter must endure it
+13. **Ch. 25**: Holed up in his room training pain resistance (absent from the training hall); basic spearmanship reached Lv.3; level snapshot Lv.6; issued a D-rank iron-plated armor and a support dagger
 
 ---
 

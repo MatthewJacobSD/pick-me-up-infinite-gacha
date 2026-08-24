@@ -39,6 +39,8 @@
 8. **Ch. 17**: Enforced the duel's no-interference rule — her self-defence killed Jaken, Wave and Beignin; celebrated to Han as "Loki" ("How was I?! Was I amazing?")
 9. **Ch. 18**: Dragged the six marked slackers out to the plaza for the mass synthesis on the master's orders
 10. **Ch. 20**: Drags Yon/Zenin in screaming ("Shut up and go in already!"); orders Eolka in after them; invokes **"Open up, crack of time and space!!!"** and dispatches Party 2 into the newcomer test stage
+11. **Ch. 24**: Praises Han's potion crafting ("Ohh! As expected of Loki!"); guards Eolka mid-training so she can't run ("Eolka, keep running. Do your best!")
+12. **Ch. 25**: Asks Loki whether he predicted the Floor 10 mission ("You are a god!"); wants to watch the fight but Han refuses — reassured instead: "Don't worry. I'll make sure you climb the tower."
 
 ---
 

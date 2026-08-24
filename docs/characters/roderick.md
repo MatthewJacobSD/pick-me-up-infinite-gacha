@@ -64,6 +64,7 @@
 3. **Ch. 20**: Loses the lot contest indirectly — assigned to Party 2 ("Roderick (3 stars) has joined 'Party 2'!")
 4. **Ch. 20**: Watches the object-lesson synthesis; levels up from unnamed fodder himself; reacts: "How horrifying.."
 5. **Ch. 20**: Enters the crack of time and space with Party 2 as the test stage's featured hero
+6. **Ch. 25**: Surname **Sajan** confirmed on the Floor 10 party screen; his Floor 9 performance came out stronger than Edis expected — the veteran guard is delivering
 
 ---
 

@@ -52,7 +52,7 @@ Han: We're in the middle of training. I don't need compliments.
 
 Notification: Han (1 star) has obtained the skill <Projectile Defense>!
 
-Notification: Han (1 star)'s <Beginner Sword-Shield Technique> has increased to level 6!
+Notification: Han (1 star)'s <Basic Sword-Shield Technique> has increased to level 6!
 
 Han: *in his mind* Nice, I gained the skill I needed.
 

@@ -42,7 +42,9 @@
 12. **Ch. 18**: Vented rage: synthesized Louis, Joffrey, Owen, Andio, Arnold & Duncan into Edis Callen
 13. **Ch. 19**: Synthesized 2 unnamed newbies into Usher; accepted Han's two-party suggestion; cleared Floor 7 with Party 1; bought 'newbie potent double package!' then launched 2 consecutive high-rank summons (cliffhanger)
 14. **Ch. 20**: Summon results — Rare Eolka + Rare Roderick; watched Han run the lot contest; accepted both party suggestions and invitation prompts
-15. **Ch. 21**: **Retaliates against Han** — when Party 1 enters the crack of space and time, ANYTNG overrides the destination from Floor 4 (Han's chosen test stage) to **Floor 8** (Goblin Raider Lv.9 ×27). Han reads it instantly: "Was he pissed off about what happened last time?! Being stingy about eating one 3-star… He's telling us to get fuck. Or he's saying that using the fourth floor as a test is boring?" — first master-as-active-hostility moment
+15. **Ch. 21**: **Retaliates against Han** — when Party 1 enters the crack of space and time, ANYTNG overrides the destination from Floor 4 (Han's chosen test stage) to **Floor 8** (Goblin Raider Lv.9 ×27). Han reads it instantly: "Was he pissed off about what happened last time?! Being stingy about eating one 3-star… He's telling us to get fucked. Or he's saying that using the fourth floor as a test is boring?" — first master-as-active-hostility moment
+16. **Ch. 24**: First act on login — builds the **Magic Hall** (magic research lab + alchemy lab + library combined); Isralta Mine opens, completing the three weekday dungeons; watches Eolka's stamina training as entertainment instead of helping ("Well, it is fun to watch even if you're not doing anything."); logs out mid-session
+17. **Ch. 25**: **Challenges Floor 10** despite Han's wish for one week's preparation and the party's incomplete state (Shurn/Mehkin unadjusted; Han unpromoted at Lv.10 cap); ignores/receives warnings about free reinforcement summons, the tactical station, and unused consumables; distributes the 6 health potions across both parties
 
 ---
 
@@ -57,6 +59,8 @@
 | Frequency | Escalating spender — third purchase by Ch. 19, pushed by Moebius banners ("If there's anything you want, please buy it now!") |
 | Strategy | Still none (Han: "there's a certain way to go about it for paid summons… I can only hope he realizes this") |
 | Spite when crossed | Retaliated against Han by sending Party 1 to **Floor 8** instead of the requested Floor 4 test stage — first active master-vs-hero hostility (Ch. 21) |
+| Impatience | Challenges Floor 10 with incomplete parties rather than waiting a week (Ch. 25); Han: "A Pick Me Up master grows through their failures. But right now, ANYTNG doesn't know what failure is." |
+| Facility investment | Built the Magic Hall (research lab + alchemy lab + library) as his first Ch. 24 act; opened the Isralta Mine — first serious infrastructure push since Ch. 7 |
 
 ---
 

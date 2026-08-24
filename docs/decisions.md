@@ -63,6 +63,11 @@
 - Applies to transcripts and all documentation. Generic prose uses of words like "basic" are untouched.
 - Retroactively applied to Ch. 3, 4, 17 stat panels/notifications (v0.0.33).
 
+### Name Variants (v0.0.37)
+
+- The source alternates between `Basic` (Ch. 4, 11, 17) and `Beginner` (Ch. 25, alongside the typo "sword-shied") for Han's shield skill. Per Stat Panel Discrepancies, normalized to **Basic Sword-Shield Technique** everywhere — transcripts included — as the dominant form across four chapters.
+- Same ruling fixed the Ch. 24 fire-resistance count: it is a **10-second endurance count** at the brazier (escalating punctuation in source), not ten separate walks through fire.
+
 ---
 
 ## Mage Terminology (World-Building, Ch. 21)

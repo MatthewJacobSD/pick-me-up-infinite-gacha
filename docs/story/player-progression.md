@@ -218,9 +218,20 @@
 - **Han's arc shift**: "I think I'm slowly approaching the time where I'll no longer be at the center" — recognizing that Eolka's firepower exceeds his own and his role is evolving from primary damage to leadership/strategy. First time he acknowledges outgrowing the protagonist-damage role.
 - **Rarity note** (Han): mages like Eolka are very rare even among the many he summoned as a past master; "a type that was very rare."
 
+### Chapter 24
+
+- **Magic Hall built (Ch. 24)**: ANYTNG's first act on login — combined magic research lab + alchemy lab + library + training annex into one facility; research skills unlocked; alchemy lab enables item synthesis; library enables mage knowledge development.
+- **Isralta Mine opened**: all three weekday dungeons (Kendert Forest, Sinmiel Plateau, Isralta Mine) now accessible; full material stockpile ready.
+- **Potion crafting via mini-game**: Han crafted 6 low-grade health potions + 2 magic potions using a rhythm-game mechanic; "Greeted a 'low-grade health potion'" — unusual phrasing preserved from source.
+- **Eolka stamina training**: 3 laps daily, no weights, slow speed; Han uses potato-threat as leverage; Eolka's custom magic clothing (family heirloom) increases fire magic strength.
+- **Fire resistance training**: Han endured Eolka's fire for a 10-second count at the brazier → obtained <Fire Resistance> skill; Jenna and Aaron must train the same way; Aaron also assigned Pain Resistance training; Jenna assigned Switching (dagger/arrow quick-switch).
+- **New triangular formation**: Eolka at centre; Aaron and Han can't protect her alone — Jenna must defend her too ("She's high maintenance…" / "It's totally protecting the princess").
+- **Floor 10 cooperation mission** confirmed: at least 2 parties required; mission types: subjugation, survival, escort, breakthrough, assassination, protection, siege, pursuit, escape; Party 2 likely to go to Floor 9 first for experience.
+- **Chain quest hint**: "1~?? Parties Enter" — multi-floor scaling beyond Floor 10.
+
 ### Chapter 25
 
-- **Training montage**: Han obtained <Projectile Defense> (arrow-dodge without shield) + <Beginner Sword-Shield Technique> Lv.6; Jenna learning Switching at abnormal rate ("If I didn't know about Pick Me Up, Jenna would've been seriously underdeveloped"); Aaron holed up training pain resistance; Eolka training class 1 casting speed at magic hall. Level snapshot: **Han 10, Jenna 8, Aaron 6, Eolka 4** — maxed for current floors.
+- **Training montage**: Han obtained <Projectile Defense> (arrow-dodge without shield) + <Basic Sword-Shield Technique> Lv.6; Jenna learning Switching at abnormal rate ("If I didn't know about Pick Me Up, Jenna would've been seriously underdeveloped"); Aaron holed up training pain resistance; Eolka training class 1 casting speed at magic hall. Level snapshot: **Han 10, Jenna 8, Aaron 6, Eolka 4** — maxed for current floors.
 - **Equipment upgraded**: E-rank Flimsy leather armor → D-rank iron plating; Aaron and Han got daggers as support weapons.
 - **Shurn and Mehkin join**: two random 1-stars fill Party 1 and Party 2 to five each — not on par with the parties but "there was nothing we could do."
 - **Floor 9 report**: Edis' Party 2 subjugated a goblin village (~50 goblins); ground was muddy "like it has rained so much" — linked-quest clue (dam-collapse connection).
@@ -229,17 +240,6 @@
 - **Tactical station mechanic** introduced for cooperation missions; Han notes ANYTNG "probably doesn't know how to use it — quite a complicated system for a newbie."
 - **Consumables**: 6 health potions total (3 per party); mana potions exclusively for Eolka; TIPS confirms consumables are key to survival and becoming a "Pick Me Up pro."
 - **Formation plan**: if separated, Edis must travel to centre (find high vantage point); Han told Shurn to hide during combat ("he'll only get in the way").
-
-### Chapter 24
-
-- **Magic Hall built (Ch. 24)**: ANYTNG's first act on login — combined magic research lab + alchemy lab + library + training annex into one facility; research skills unlocked; alchemy lab enables item synthesis; library enables mage knowledge development.
-- **Isralta Mine opened**: all three weekday dungeons (Kendert Forest, Sinmiel Plateau, Isralta Mine) now accessible; full material stockpile ready.
-- **Potion crafting via mini-game**: Han crafted 6 low-grade health potions + 2 magic potions using a rhythm-game mechanic; "Greeted a 'low-grade health potion'" — unusual phrasing preserved from source.
-- **Eolka stamina training**: 3 laps daily, no weights, slow speed; Han uses potato-threat as leverage; Eolka's custom magic clothing (family heirloom) increases fire magic strength.
-- **Fire resistance training**: Han walked through Eolka's fire10 times → obtained <Fire Resistance> skill; Jenna and Aaron must train the same way; Aaron also assigned Pain Resistance training; Jenna assigned Switching (dagger/arrow quick-switch).
-- **New triangular formation**: Eolka at centre; Aaron and Han can't protect her alone — Jenna must defend her too ("She's high maintenance…" / "It's totally protecting the princess").
-- **Floor 10 cooperation mission** confirmed: at least 2 parties required; mission types: subjugation, survival, escort, breakthrough, assassination, protection, siege, pursuit, escape; Party 2 likely to go to Floor 9 first for experience.
-- **Chain quest hint**: "1~?? Parties Enter" — multi-floor scaling beyond Floor 10.
 
 ---
 

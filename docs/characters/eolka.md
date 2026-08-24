@@ -57,6 +57,25 @@ Skills: Intermediate Fire Magic (level 2)
 
 ---
 
+## Fire Magic Classes (Ch. 25)
+
+| Class | Effect | Mana Cost |
+|---|---|---|
+| Class 1 | Ignition | Lowest |
+| Class 2 | Burning, explosive fire | Higher |
+| Class 3 | Directs the explosion upward and modifies it | Highest |
+
+> The higher the class, the more mana consumed. Han's directive (Ch. 25): decrease magic strength, increase casting speed, reduce mana consumption — use **class 1** for most situations.
+
+---
+
+## Gear & Sustenance
+
+- **Custom magic clothing**: family-made magic item that increases the strength of her fire magic (Ch. 24)
+- **Mana potions**: the party's mana potions are exclusively hers (Ch. 25)
+
+---
+
 ## Combat Role
 
 - **Primary**: Ranged artillery (fire magic) — powerful but completely stationary
@@ -89,6 +108,8 @@ Skills: Intermediate Fire Magic (level 2)
 7. **Ch. 22**: Han physically rescues her from the open field, carries her into a forested zone ("Don't tell me she can't even use mobile casting?!"); she complains her hands hurt from mana/firepower output — "A handful?! Did you see the amount of mana and fire power I used?!"
 8. **Ch. 22**: Finally casts from forest cover ("Ignite!") after repositioning — still not confirmed if the spell lands
 9. **Ch. 23**: Full spell sequence — "Ignite! Burn! Transcend!" — destroys 20+ Goblin Raiders in one go; **MVP of Floor 8**; Aaron and Eolka level up; collapses mid-victory boast from total mana depletion; Han analyses: "tank without armor" — firepower for defense/mobility trade-off
+10. **Ch. 24**: Stamina training imposed — 3 laps daily, no weights, slow speed; potato-dinner threat as leverage ("Using food against me, how cheap!"); trains at the magic hall's exclusive training room
+11. **Ch. 25**: Class system drilled (casting speed up, mana down, class-1 usage); **MVP** of the fourth-floor practice clear — levels up to **Lv.4**; level snapshot: maxed for current floors
 
 ---
 
@@ -123,3 +144,9 @@ Skills: Intermediate Fire Magic (level 2)
 > "I'm the witch of count Rivel's Spirit!" (Ch.23)
 
 > "Fire power is the answer!" (Ch.23)
+
+> "E-Eeeeek!!! Using food against me, how cheap!" (Ch.24)
+
+> "That 'dress' is a custom made magic clothing from my family!" (Ch.24)
+
+> "*shouts* How dare you say something so insulting?!!" (Ch.25)

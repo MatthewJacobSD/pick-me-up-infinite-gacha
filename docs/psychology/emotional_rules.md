@@ -1,7 +1,7 @@
 # Emotional Rules
 
 > Comprehensive emotional states, triggers, and responses for all characters.
-> Based on Chapters 1-14. Ensures human-like emotional continuity.
+> Based on Chapters 1-25. Ensures human-like emotional continuity.
 
 ---
 
@@ -381,6 +381,59 @@ Every character must show consistent emotional responses across chapters. Emotio
 
 ---
 
+## Two-Party Era Additions (Ch. 18-25)
+
+### Eolka Rivel Strashur
+
+| Emotion | Trigger | Response | Chapter Evidence |
+|---|---|---|---|
+| **Embarrassment/Shame** | Arriving underdressed before strangers | Collapses, cannot get up — "She's probably more embarrassed than in pain" (Han) | Ch.20 |
+| **Aristocratic Indignation** | Being judged/ordered around | "How could they treat people like this…", "Why am I being treated this way…?", "How dare you say something so insulting?!!" | Ch.20-25 |
+| **Fear-Driven Compliance** | Witnessing synthesis | "..That's repulsive." → fights anyway; accepts stamina training under potato-threat leverage ("Using food against me, how cheap!") | Ch.20, 24 |
+| **Vindication Jubilation** | Her magic devastating the enemy | "This is the power of the great fire! Hahahahah!" — collapses mid-boast from mana depletion | Ch.23 |
+| **Grudging Respect** (developing) | Han's correct reads and rescue | Complies with class-1 drilling; no longer questions his orders by Ch.25 | Ch.24-25 |
+
+### ANYTNG (Master)
+
+| Emotion | Trigger | Response | Chapter Evidence |
+|---|---|---|---|
+| **Spite/Rage** | Losing the Wolves to Han's duel gambit | Mass-synthesizes six slackers into Edis (Ch. 18); overrides Party 1's test floor to Floor 8 (Ch. 21) | Ch.18, 21 |
+| **Spender Compulsion** | First purchase succeeded | "People who never purchase anything but won't stop at one once they purchase" (Han's whale read) | Ch.19-20 |
+| **Impatience** | Floor 10 within reach | Challenges immediately despite incomplete parties; ignores tactical station and reinforcement warnings | Ch.25 |
+| **Detached Entertainment** | Heroes training/suffering | Watches fire-resistance prep without helping ("it is fun to watch") | Ch.24 |
+
+### Edis Callen
+
+| Emotion | Trigger | Response | Chapter Evidence |
+|---|---|---|---|
+| **Leadership Anxiety** | Being named Blue-lot leader over Jenna | "Looking at your expressions… I guess you don't trust me. I'm new here and don't have much experience in real fights." → resolves: "Don't worry, we won't lose to you." | Ch.19 |
+| **Regret** | Losing the Eolka lot draw | "*regretful* …. ." — accepts the fair-remix ruling without protest | Ch.20 |
+
+### Jenna Cirai
+
+| Emotion | Trigger | Response | Chapter Evidence |
+|---|---|---|---|
+| **Fire Fear** | Brazier resistance training | "Th-Then, you're telling us to do this right now?!", "I don't.. want to do it… Since I stand at the back." — complies when Han offers to hold her hand in the flames | Ch.24 |
+| **Relief → Horror** | Excused from pain resistance, then deferred | "Phew" → "Heok?! Can I p-please do it later…" | Ch.24 |
+| **Playful Confidence** | Han's growth acknowledged | Teases him about needing compliments ("Who was it~?"); cheek-pinched for it | Ch.25 |
+
+### Aaron Delcut
+
+| Emotion | Trigger | Response | Chapter Evidence |
+|---|---|---|---|
+| **Protective Courage** | Han/Eolka exposed during retreat | Takes crossbow bolts shielding them; holds the goblin line alone | Ch.22 |
+| **Growing Confidence** | Surviving Floor 8 beside a mage | "If you're tired, I'll protect you." (Han: "Seems like you've learnt how to say cocky things.") | Ch.23 |
+| **Dutiful Endurance** | Pain-resistance assignment | Accepts without protest despite dread ("*relieved* I… understand."); trains alone in his room since | Ch.24-25 |
+
+### Iselle
+
+| Emotion | Trigger | Response | Chapter Evidence |
+|---|---|---|---|
+| **Loki Worship** (sustained) | Han's competence | "Ohh! As expected of Loki!", "You are a god!" | Ch.24-25 |
+| **Rebuffed Concern** | Forbidden from watching the Floor 10 fight | "R-Really?!" → soothed by Han's promise: "I'll make sure you climb the tower." | Ch.25 |
+
+---
+
 ## Emotional Continuity Rules
 
 ### Rule 1: Emotions Persist
@@ -416,7 +469,9 @@ Heroes facing death should show fear, acceptance, or defiance — not just silen
 | Enok | ⚠️ | ❌ | ❌ | ❌ | ⚠️ | ❌ |
 | Chloe | ✅ | ❌ | ⚠️ | ❌ | ⚠️ | ❌ |
 | Gide†/Hansen†/Dika | ✅ | ❌ | ❌ | ⚠️ | ✅ | ✅ |
+| Edis Callen | ⚠️ | ❌ | ⚠️ | ❌ | ⚠️ | ✅ |
+| Eolka Rivel Strashur | ✅ | ✅ | ✅ | ❌ | ❌ | ⚠️ |
 
 **Legend:** ✅ = Shown | ⚠️ = Implied/Partial | ❌ = Not Shown | † = Deceased
 
-> Matrix updated through Ch. 13. Changes from the Ch.1-8 version: Jenna Sadness ⚠️→✅ (relieved tears, Ch.12); Aaron Fear ⚠️→✅ (brink of death, Ch.11), Sadness ⚠️→✅ (grief/guilt, Ch.13); trainees Determination ⚠️→✅ (they trained hard; Han confirms their effort, Ch.13).
+> Matrix updated through Ch. 13. Changes from the Ch.1-8 version: Jenna Sadness ⚠️→✅ (relieved tears, Ch.12); Aaron Fear ⚠️→✅ (brink of death, Ch.11), Sadness ⚠️→✅ (grief/guilt, Ch.13); trainees Determination ⚠️→✅ (they trained hard; Han confirms their effort, Ch.13). Ch. 25 additions: Edis and Eolka rows added (see Two-Party Era section above).

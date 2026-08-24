@@ -15,7 +15,7 @@
 ## The Story (as of Ch. 25)
 
 - **Protagonist:** Han Seojin, real player from Seoul (Gangseo-Gu, South Earth). Summoned into his own game as a **1★ hero "Islat Han"** by a Level-999 bugged entity (the God of Death). As past master/Loki he confesses the appeal: "There's no way it wouldn't be fun to be able to control their lives." **Arc shift (Ch. 23):** "I think I'm slowly approaching the time where I'll no longer be at the center" — acknowledging his role is evolving from primary damage to leadership/strategy as Eolka's firepower outpaces his. **Master of Masters**: highest-ranking user in Pick Me Up; took 2 years to reach Floor 88 with dozens of party annihilations — "A Pick Me Up master grows through their failures."
-- **Skills now include:** <Fire Resistance> (Ch. 24), <Projectile Defense> (Ch. 25), <Beginner Sword-Shield Technique> Lv.6 (Ch. 25).
+- **Skills now include:** <Fire Resistance> (Ch. 24), <Projectile Defense> (Ch. 25), Basic Sword-Shield Technique Lv.6 (Ch. 25).
 - **Big reveal:** Han **is Loki** (Account #46631913, Rank 5, "Master of Masters"). Heroes are real humans from across ~1M worlds.
 - **The Master:** **ANYTNG** — built Magic Hall on login (Ch. 24); challenged Floor 10 without waiting for Han's preferred week's preparation; watching fire-resistance training as entertainment.
 - **Iselle:** Pixie lounge manager; Loki fangirl; reassured by Han: "I'll make sure you climb the tower."

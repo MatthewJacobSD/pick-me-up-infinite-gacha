@@ -173,7 +173,7 @@ Han separates the worthy dead from the unworthy:
 - **Ch. 21 additions**:
   - **Assessment under fire doctrine**: designed a stand-down test for Eolka (Floor 4, mix of harpies/goblins) to assess her magic in controlled conditions — then ANYTNG overrides the destination to Floor 8 mid-activation
   - **Instant threat-pivot**: the moment Floor 8 was announced, Han abandoned the assessment plan and issued hard orders with zero transition ("It's the eighth floor! Everyone, focus and take out your weapons!")
-  - **Master-relationship reading**: decoded ANYTNG's retaliation instantly ("Was he pissed off about what happened last time?! Being stingy about eating one 3-star… He's telling us to get fuck. Or he's saying that using the fourth floor as a test is boring?") — the relationship has shifted from observer-vs-incompetent to **spite-versus-spite**
+  - **Master-relationship reading**: decoded ANYTNG's retaliation instantly ("Was he pissed off about what happened last time?! Being stingy about eating one 3-star… He's telling us to get fucked. Or he's saying that using the fourth floor as a test is boring?") — the relationship has shifted from observer-vs-incompetent to **spite-versus-spite**
   - **Assessment-through-chaos**: even under unexpected danger, still assessing Eolka — ordered Aaron to shield bolts so she could cast, gauged her mobility in real time; recognized she can't mobile-cast before she herself did
   - **Ch. 22 additions**:
     - **Terrain-first problem-solving**: the moment Eolka proved immobile under cavalry fire, Han didn't try to fix her — he moved her ("Forget it. Let's change locations. See that forest?"). Switching from adaptation-of-weakness to exploitation-of-environment with zero sentimentality
@@ -184,7 +184,7 @@ Han separates the worthy dead from the unworthy:
     - **"Tank without armor" doctrine**: codifies Eolka as firepower-for-defense trade-off; "made for war" if protected — shifts his thinking from individual strength to party composition as a system
     - **Arc shift acknowledgement**: "I think I'm slowly approaching the time where I'll no longer be at the center" — first explicit recognition that his role is evolving from primary damage to leadership/strategy; not resentment, not fear, just a strategic read of a changing reality
   - **Ch. 24 additions**:
-    - **Lead-by-example doctrine**: walked through Eolka's fire 10 times himself before asking others to — "I'll be doing it too" — credibility through shared suffering
+    - **Lead-by-example doctrine**: endured Eolka's fire for a 10-second count himself before asking others to — "I'll be doing it too" — credibility through shared suffering
     - **Threat-as-motivation**: potato deprivation for Eolka, partnered-joint fire-walking threat for Jenna ("If I hold your hand and put it together, it won't be hot") — finds leverage specific to each person's weakness
     - **Pain resistance foresight**: assigns Aaron pain-resistance training for potion-healing context — "Health potions can heal injuries, but you are in extreme pain in exchange" — multi-step tactical thinking
     - **Formation restructure**: abandons old close/mid/long for triangle-with-caster-at-centre; trusts Aaron with a specific pain-resistance assignment, Jenna with a new switching skill — delegation is now individualised

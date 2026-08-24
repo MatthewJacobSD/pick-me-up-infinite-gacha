@@ -18,7 +18,7 @@ Aaron & Jenna: We're waiting for you!
 
 Han: *in his mind* Shit, I'm getting pushed back because I'm tired…
 
-Han: *in my mind* However,
+Han: *in his mind* However,
 
 Han: *in his mind* If I can't beat them using force, I'll beat them with skill!
 
