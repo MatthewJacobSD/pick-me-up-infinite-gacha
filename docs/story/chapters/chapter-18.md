@@ -2,7 +2,7 @@
 
 ## Chapter 18
 
-### Misunderstanding
+### Pinched Cheeks
 
 Dika: Han, you're really amazing!
 
@@ -10,9 +10,9 @@ Han: Jenna, did you do this? I told you not to say anything, didn't I?
 
 Jenna: OUchhhhhhh!
 
-Jenna: Whut ar eww swing?! *Han has pinched Jenna cheeks*
+Jenna: Whut ar eww swing?! *Han has pinched Jenna's cheeks*
 
-Jenna: I onwi twold dem de twitch! *Han has pinched Jenna cheeks*
+Jenna: I onwi twold dem de twitch! *Han has pinched Jenna's cheeks*
 
 Han: Shut up.
 
@@ -42,7 +42,7 @@ Joffrey: Wh-what are you talking about?
 
 ---
 
-### Synthesis
+### Six Names
 
 Han: Master seems pretty furious.
 
@@ -54,7 +54,7 @@ Han - narrating: He was quick at catching hints. That's how he was able to move 
 
 NPCs: ?!!
 
-Joffrey: *panics, tries to keep things stable* E-everyone, it's okay! We're just going to kill some goblins as usual.
+Joffrey: *panic, tries to keep things stable* E-everyone, it's okay! We're just going to kill some goblins as usual.
 
 Jenna: If a party is being formed, there'd only be five names being called. But why are there six people being called right now?
 
@@ -88,7 +88,7 @@ Iselle: I said, come out to the plaza! Do you not hear me?! You guys always try 
 
 NPCs: !!
 
-Joffrey: *shouts* Please help us! Master will do everything you ask!
+Joffrey: *shout* Please help us! Master will do everything you ask!
 
 Jenna: Who will they be synthesized with?
 
@@ -113,7 +113,7 @@ Notification:
 
 ---
 
-### Prove That You're Useful
+### Prove You're Useful
 
 Han: Before you guys arrived here, it didn't matter who it was.
 
@@ -141,10 +141,6 @@ Han: If you want to learn hunting and butchering, then go to Jenna. And if you w
 
 Han: There are tons of ways to survive. You guys just haven't been doing anything.
 
----
-
-### You're So Friendly
-
 Notification:
 •	Master, would you like to log out?
 •	Yes / No
@@ -163,13 +159,13 @@ Han: *in his mind* The synthesis that happened was just ANYTNG venting his anger
 
 Han: *in his mind* We're closing on the 10th floor.
 
-Han: *in his mind* It's time a second party is needed
+Han: *in his mind* It's time a second party is needed.
 
 Han: *in his mind* Not just a lousy secondary party, but one that's strong enough to be on par with the main party.
 
 ---
 
-### The Next Morning
+### Bread From Potatoes
 
 Han - narrating: The next morning.
 
@@ -183,7 +179,11 @@ Han: I don't think we have wheat though…
 
 Chloe: I grinded potatoes to make wheat.
 
-Han: That's great. We can reduce the level of stress in the waiting room with more types of food. Wheat can be found in the daily dungeon, Sinmiel Plateau, Go and get what you need from there.
+Han: That's great. We can reduce the level of stress in the waiting room with more types of food. Wheat can be found in the daily dungeon, Sinmiel Plateau. Go and get what you need from there.
+
+---
+
+### Dagger Training
 
 Han: Edis, follow me to the training center.
 

@@ -301,28 +301,30 @@
 
 ---
 
-## Current Roster (Ch. 20)
+## Current Roster (Ch. 25)
 
-**Party 1 (Red) — leader Han:** Islat Han, Jenna Cirai, Aaron Delcut, Eolka Rivel Strashur (3★ Magician)
-**Party 2 (Blue) — leader Edis:** Edis Callen, Usher, Dika, Roderick (3★ Guard)
+**Party 1 (Red) — leader Han:** Islat Han, Jenna Cirai, Aaron Delcut, Eolka Rivel Strashur (3★ Magician), Shurn (1★)
+**Party 2 (Blue) — leader Edis:** Edis Callen, Usher Roderick, Dika, Roderick Sajan (3★ Guard), Mehkin (1★)
 
 | Name | Star | Role | Status |
 |---|---|---|---|
-| Han Islat | 1★ | Combat (Party 1 Leader) | Alive — **Lv.10 (MAX)**, promotion pending; won the Open Duel vs Avant; total stats close to a 3★; Floor 7 MVP (Ch. 19) |
-| Jenna Cirai | 1★ | Combat (Ranged) / Hunter | Alive — awakened 'Hunter of the Forest' (Ch. 14); cross-training daggers with Edis on Han's order (Ch. 18); Party 1 |
-| Aaron Delcut | 1★ | Combat (Melee) | Alive — levelled up on Floor 7 (Ch. 19); Party 1 |
-| Dika | 1★ | Combat (Trainee) | Alive — Party 2 under Edis after the lot draw (Ch. 19) |
-| Edis Callen | 3★ | Thief (Dagger), Party 2 Leader | Alive — defected from the disbanded Pulverizing Wolves (Ch. 17); levelled up + gained 'Trap Disarm' from the Ch. 18 synthesis batch |
-| Eolka Rivel Strashur | 3★ | Magician (Fire) | Alive — Rare pull Ch. 20; Lv.1: STR 7/7, INT 31/31, HP 8/8, AGI 7/7, Intermediate Fire Magic (Lv.2); aristocrat; levelled up via Yon & Zenin synthesis; Party 1 |
-| Roderick (given name) | 3★ | Veteran city guard | Alive — Rare pull Ch. 20; old man, strangely high sense of duty; levelled up via unnamed fodder synthesis; Party 2; **distinct person from Usher *Roderick*** (family name), user ruling |
-| Usher Roderick | 1★ | Porter → Mercenary trainee | Alive — Lv. 3 after the Ch. 19 weeding synthesis; hand-picked by Han; Party 2 |
-| Enok | 1★ | Support (Carpenter) | Alive — mentor for carpentry students (Ch. 18) |
-| Chloe | 1★ | Support (Cook) | Alive — bakes potato bread; mentor list member (Ch. 18) |
-| Patrick | 1★ | Supporter | Alive — named Ch. 18 among the technique-teaching mentors |
-| Alter | 1★ | Blacksmith | Alive — named Ch. 18 ("not that easy to learn blacksmithing"); likely the Ch. 9 unnamed blacksmith |
+| Han Islat | 1★ | Combat (Party 1 Leader) | Alive — **Lv.10 (MAX)**, promotion pending; Open Duel winner; Floor 7 & 8 MVP; skills: Swordsmanship Lv.5, Sword-Shield Lv.6, Pain Tolerance, Composure Lv.3, Berserker, Fire Resistance, Projectile Defense |
+| Jenna Cirai | 1★ | Combat (Ranged) / Hunter | Alive — Lv.8; archery Lv.5; learning Switching (dagger/arrow quick-switch) at abnormal rate; cross-training daggers; fire resistance training pending; Party 1 |
+| Aaron Delcut | 1★ | Combat (Melee) | Alive — Lv.6; basic spearmanship Lv.3; pain resistance training (holed up in room); fire resistance training pending; Party 1 |
+| Dika | 1★ | Combat (Trainee) | Alive — Party 2 under Edis |
+| Edis Callen | 3★ | Thief (Dagger), Party 2 Leader | Alive — defected Ch. 17; levelled up + Trap Disarm (Ch. 18); cleared Floor 9 with Party 2 |
+| Eolka Rivel Strashur | 3★ | Magician (Fire) | Alive — **Lv.4**; MVP Floor 8; spell sequence "Ignite! Burn! Transcend!"; magic classes: 1=ignition, 2=explosive, 3=directed; Han directive: use class 1 for speed/mana; custom magic clothing (family heirloom); stationary casting; Party 1 |
+| Roderick Sajan | 3★ | Veteran city guard | Alive — Rare pull Ch. 20; surname confirmed Ch. 25; old man, high sense of duty; Party 2; **distinct from Usher *Roderick*** (family name), user ruling |
+| Usher Roderick | 1★ | Porter → Mercenary trainee | Alive — Lv.3; hand-picked by Han; Party 2 |
+| Shurn | 1★ | Trainee | Alive — Lv.1, basic swordsmanship Lv.3; joined Party 1 Ch. 25; too inexperienced for combat (Han: hide during fights) |
+| Mehkin | 1★ | Trainee | Alive — joined Party 2 Ch. 25 |
+| Enok | 1★ | Support (Carpenter) | Alive — mentor for carpentry students |
+| Chloe | 1★ | Support (Cook) | Alive — bakes potato bread; mentor list member |
+| Patrick | 1★ | Supporter | Alive — named Ch. 18 among technique-teaching mentors |
+| Alter | 1★ | Blacksmith | Alive — named Ch. 18; likely the Ch. 9 unnamed blacksmith |
 | Amarin | 1★ | Supporter | Alive — named on the Ch. 19 support roster |
-| Sorial | 1★ | — | Alive — saved from synthesis when Jenna returned the seized heroes (Ch. 17); not on the active roster screen, kept Alive per user ruling |
-| Daniel | 1★ | — | Alive — saved alongside Sorial (Ch. 17); not on the active roster screen, kept Alive per user ruling |
+| Sorial | 1★ | — | Alive — saved from synthesis Ch. 17; not on active roster screen, kept Alive per user ruling |
+| Daniel | 1★ | — | Alive — saved alongside Sorial Ch. 17; not on active roster screen, kept Alive per user ruling |
 
-> Gide and Hansen (trainees) died during the Floor 5 survival mission (Ch. 11). The five 3★ mercenaries arrived via consecutive-summon affinity link and were stronger in the same party together (Ch. 15) — the party disbanded in Ch. 17: Avant consumed via the duel's synthesis condition, Jaken/Wave/Beignin dead by system sudden death, Edis defected to Han.
-> Louis, Joffrey and Owen (Party 4 gatherers) were synthesized into Edis in Ch. 18; Yon and Zenin into Eolka in Ch. 20. Roster screens show **active heroes only** — absence is not death (`docs/decisions.md` → Story Conventions).
+> **Level snapshot (Ch. 25):** Han 10, Jenna 8, Aaron 6, Eolka 4 — maxed for current floors.
+> Gide and Hansen (trainees) died during the Floor 5 survival mission (Ch. 11). The five 3★ mercenaries arrived via consecutive-summon affinity link (Ch. 15) — party disbanded Ch. 17. Louis, Joffrey, Owen synthesized into Edis (Ch. 18); Yon, Zenin into Eolka (Ch. 20). Roster screens show **active heroes only** — absence is not death (`docs/decisions.md` → Story Conventions).

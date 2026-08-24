@@ -29,15 +29,26 @@
 - **Eolka Rivel Strashur (3★):** MVP Floor 8; spell sequence "Ignite! Burn! Transcend!"; magic classes: Class 1 = ignition, Class 2 = burning/explosive, Class 3 = directing explosion upward; higher class = more mana. Han's directive: decrease strength, increase speed, reduce mana consumption — use class 1 for most situations. Custom magic clothing (family heirloom) increases fire magic strength. Training at magic hall.
 - **Floor 10 (Ch. 25):** pre-ruined city from Floor 5 — "it hasn't been destroyed yet"; NPC present who can't see the heroes; tactical station mechanic (complicated for ANYTNG); 6 health potions (3 per party); mana potions for Eolka only; two parties of five each.
 
-## Current State Snapshot (through Ch. 24)
+## Current State Snapshot (through Ch. 25)
 
-- **Roster: Party 1 (Red):** Islat Han, Jenna Cirai, Aaron Delcut, Eolka Rivel Strashur (3★ MVP). **Party 2 (Blue):** Edis Callen, Usher, Dika, Roderick (3★). Support: Patrick, Enok, Chloe, Amarin, Alter. (Sorial & Daniel off-screen, kept Alive per user ruling.)
-- **Magic Hall built (Ch. 24):** research skills unlocked; alchemy lab for item synthesis; library for mages; Isralta Mine opened (all weekday dungeons accessible); potion crafting via rhythm-game mini-game (6 health + 2 magic potions crafted).
-- **Fire resistance training (Ch. 24):** Han walked through Eolka's fire10 times → obtained <Fire Resistance> skill; Aaron assigned Pain Resistance; Jenna assigned Switching (dagger/arrow quick-switch); new triangular formation with Eolka at centre.
-- **Floor 10 cooperation mission confirmed (Ch. 24):** at least 2 parties; mission types: subjugation, survival, escort, breakthrough, assassination, protection, siege, pursuit, escape; chain quest hint: "1~?? Parties Enter"; Party 2 likely to Floor 9 first.
-- **Han:** **Lv.10 — MAX for 1★**, promotion STILL pending. Skills now include <Fire Resistance>; arc shifting toward leadership.
-- **Standing facts:** ANYTNG logs in 3x/day; waiting room 3x dilation; battle stages real-time; master controls crack destination. Synthesis death count: 18+.
-- **Data note:** Han's Lv.9 exp normalized to 54/70 (Ch. 17 panel showed 11/70 — user confirmed manhwa error).
+**Party 1 (Red, leader Han):** Islat Han (Lv.10), Jenna Cirai (Lv.8), Aaron Delcut (Lv.6), Eolka Rivel Strashur (3★, Lv.4), Shurn (1★, Lv.1)
+**Party 2 (Blue, leader Edis):** Edis Callen (3★), Usher Roderick (1★, Lv.3), Dika (1★), Roderick Sajan (3★), Mehkin (1★)
+**Support:** Patrick, Enok, Chloe, Amarin, Alter
+**Off-screen (kept Alive per user ruling):** Sorial, Daniel
+
+**Total Alive:** 17 named individuals. **Deceased:** 15 combat + 18+ synthesis + 3 sudden death + 1 thinning.
+
+**Floor progress:** Floor 8 cleared (Ch. 23); Floor 9 cleared by Party 2 (Ch. 25); Floor 10 entered — pre-ruined city from Floor 5 ("it hasn't been destroyed yet"); two-party cooperation mission in progress.
+
+**Han:** Lv.10 MAX 1★, promotion pending. Skills: Swordsmanship Lv.5, Sword-Shield Lv.6, Pain Tolerance, Composure Lv.3, Berserker, Fire Resistance, Projectile Defense. Arc shifting from primary damage to leadership/strategy.
+
+**Eolka:** MVP Floor 8; spell "Ignite! Burn! Transcend!"; magic class system: 1=ignition, 2=explosive, 3=directed; Han's directive: class 1 for most situations (speed/mana); stationary casting, party must protect; custom magic clothing (family heirloom) boosts fire magic; mana fully depletes after full sequence.
+
+**Master (ANYTNG):** Built Magic Hall (Ch. 24); challenged Floor 10 without Han's preferred week's prep; tactical station mechanic available but likely unused (complicated for newbie); 6 health potions distributed (3 per party); mana potions for Eolka only.
+
+**Key mechanics in play:** cooperation missions (2+ parties); tactical station; consumables system; triangular formation (Eolka at centre); fire/pain resistance training; Switching (Jenna); linked-quest thread (muddy ground, dam-collapse, pre-ruin city).
+
+**World-building terms:** "3-runa" = caster type; "3-circle" = mage rank; "Pick Me Up" = game title (always capitalised).
 
 ## Pending Story Beats
 
