@@ -156,25 +156,25 @@ Han: *in pain* If Eolka can use fire…
 
 Han: *in pain* We also… need to get used to it!
 
-Han: *in his mind* 1
+Han: *in his mind* One…
 
-Han: *in his mind* 2
+Han: *in his mind* Two…
 
-Han: *in his mind* 3
+Han: *in his mind* Three…
 
-Han: *in his mind* 4
+Han: *in his mind* Four…
 
-Han: *in his mind* 5
+Han: *in his mind* Five…
 
-Han: *in his mind* …6
+Han: *in his mind* …Six…
 
-Han: *in his mind* …7!
+Han: *in his mind* …Seven!!
 
-Han: *in his mind* 8!!
+Han: *in his mind* Eight!!!
 
-Han: *in his mind* 9!!!
+Han: *in his mind* Nine!!!!
 
-Han: *in his mind* …10!!
+Han: *in his mind* …Ten!!!!
 
 Han: Phew… I'm fine.
 
