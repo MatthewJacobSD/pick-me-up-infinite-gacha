@@ -1,6 +1,6 @@
 # Story Timeline
 
-> Chronological events through Chapter 23.
+> Chronological events through Chapter 24.
 >
 > **Note:** The timeline is not 1 chapter = 1 day. Time skips between chapters are normal and expected.
 
@@ -176,6 +176,10 @@
 | **Han goes Berserk a second time in one day** to buy time for Eolka's repositioning — fatigued ("Although I'm quite fatigued, I need to buy time here"); stamina runs out mid-battle ("Damn it, my stamina…!"); goblins use hit-and-run cavalry tactics against him | Ch. 22 |
 | Aaron takes crossbow hits shielding Han and Eolka's retreat; Han orders him to hold the line while luring the group away; Jenna confirms her archery prep is complete — Eolka fires "Ignite!" from the forest cover (cliffhanger) | Ch. 22 |
 | **Floor 8 cleared (Ch. 23):** Eolka's full spell sequence — "Ignite! Burn! Transcend!" — destroys 20+ Goblin Raiders in one go; **MVP Eolka**; rewards 20,000G, Iron Ore (B) x3, Wolf Leather x5; Aaron and Eolka level up; Eolka collapses from total mana depletion; Han's analysis: "tank without armor" — firepower in return for defense and mobility; Han notes he's "slowly approaching the time where I'll no longer be at the center" — arc shift from primary damage to leadership/strategy | Ch. 23 |
+| **Magic Hall built (Ch. 24):** ANYTNG builds magic research lab + alchemy lab + library + training annex combined; Isralta Mine opened (all three weekday dungeons accessible); Han crafts 6 health potions + 2 magic potions via rhythm-game mini-game | Ch. 24 |
+| **Eolka stamina training (Ch. 24):** 3 laps daily, no weights; Han uses potato-threat as leverage; Eolka's custom magic clothing (family heirloom) increases fire magic strength | Ch. 24 |
+| **Fire resistance training (Ch. 24):** Han walks through Eolka's fire 10 times → obtained <Fire Resistance> skill; Aaron assigned Pain Resistance; Jenna assigned Switching (dagger/arrow quick-switch); new triangular formation with Eolka at centre — "protecting the princess" | Ch. 24 |
+| **Floor 10 cooperation mission confirmed (Ch. 24):** at least 2 parties required; mission types: subjugation, survival, escort, breakthrough, assassination, protection, siege, pursuit, escape; Party 2 likely to Floor 9 first for experience; chain quest hint: "1~?? Parties Enter" | Ch. 24 |
 
 ---
 
@@ -183,10 +187,10 @@
 
 | Event | Expected Chapter |
 |---|---|
-| Han's stamina recovery after double Berserk | Ch. 24 |
 | Han's promotion to 2★ (materials acquired; Lv.10 max) | Overdue since Ch. 14/17 |
-| Forest / linked-quest thread (dam-collapse; was "blocked off") | Ch. 24+ |
-| Whatever Han kept Aaron behind for (Ch. 19) | Ch. 23+ |
+| Forest / linked-quest thread (dam-collapse; was "blocked off") | Ch. 25+ |
+| Whatever Han kept Aaron behind for (Ch. 19) | Ch. 24+ |
+| Party 2's Floor 9 run (experience gain) | Ch. 25+ |
 | Large goblin habitat / next stream chain | Ch. 17+ |
 | Plants of Life gathering | Ch. 15+ |
 | Sirris arrives | Ch. 10+ |

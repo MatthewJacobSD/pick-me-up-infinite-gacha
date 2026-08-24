@@ -1,7 +1,7 @@
 # Character Tracker — Pick Me Up, Infinite Gacha
 
 > Tracks all characters introduced, their status, and fate.
-> Updated through Chapter 23.
+> Updated through Chapter 24.
 
 ---
 

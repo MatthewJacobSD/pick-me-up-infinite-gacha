@@ -24,9 +24,10 @@
 
 | Category | Goal | Seen On |
 |---|---|---|
-| Subjugation | Annihilate all the enemies | Floors 1-4 (Ch. 9 replay), Floor 7 (Ch. 19: Goblin Lv.8 ×13) |
+| Subjugation | Annihilate all the enemies | Floors 1-4 (Ch. 9 replay), Floor 7 (Ch. 19), Floor 8 (Ch. 21-23) |
 | Survival | Survive the horde for a set time | Floor 5 (Ch. 9) |
 | Explore | Investigate an unfamiliar location — satisfy requirements to pass safely | Floor 6 (Ch. 14) |
+| Cooperation | At least 2 parties required (multi-party scaling) | Floor 10+ (Ch. 24 hint: "1~?? Parties Enter") |
 
 ---
 
@@ -187,9 +188,21 @@ A portal invoked by Iselle ("Open up, crack of time and space!!!") used to deplo
 Floor 1-4: Tutorial zone (easy, subjugation)
 Floor 5:   Survival mission spike (medium) — horde defence
 Floor 6-9: Gradual increase
-Floor 10:  Major boss spike (hard)
+Floor 10:  Major boss spike (hard) — cooperation mission (2+ parties)
+Floor 11+: Multi-party scaling (1~?? parties)
 Floor 15+: Endgame territory
 ```
+
+---
+
+## Cooperation Missions (Ch. 24)
+
+Floor 10+ introduces missions requiring **at least 2 parties** to participate.
+
+- Hint: `<1~?? Parties Enter>` — scaling number of parties per floor
+- **Mission types** (revealed Ch. 24): subjugation, survival, escort, breakthrough, assassination, protection, siege, pursuit, escape
+- Party 2 is likely to run Floor 9 first for experience before the main group tackles Floor 10
+- The most effective party composition for Eolka-style mages would be 2 mages (ideally one support mage) — Han notes this as a gap
 
 ---
 

@@ -285,7 +285,8 @@
 | Automation | Combat is fully automated — no player control |
 | MVP | Awarded to highest contributor after stage clear |
 | Experience | Only participants gain XP — non-participants get zero |
-| Mission Types | Subjugation, Conquest, Survival (varies by floor) |
+| Mission Types | Subjugation, Survival, Explore, Cooperation (Floor 10+) |
+| Party Formation | Evolved: close/mid/long → **triangular formation** (mage at centre) when a fragile ranged-caster is present (Ch. 24) |
 
 ---
 

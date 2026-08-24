@@ -1,7 +1,7 @@
 # Han's Behaviour Patterns
 
 > How Han Seojin thinks, acts, and adapts in the game world.
-> Based on Chapters 1-13 with chapter-by-chapter evidence; Ch. 14-23 behavioural notes appended (Ch. 14-17 not yet backfilled; Ch. 18-23 evidence present).
+> Based on Chapters 1-13 with chapter-by-chapter evidence; Ch. 14-24 behavioural notes appended (Ch. 14-17 not yet backfilled; Ch. 18-24 evidence present).
 
 ---
 
@@ -183,6 +183,11 @@ Han separates the worthy dead from the unworthy:
   - **Ch. 23 additions**:
     - **"Tank without armor" doctrine**: codifies Eolka as firepower-for-defense trade-off; "made for war" if protected — shifts his thinking from individual strength to party composition as a system
     - **Arc shift acknowledgement**: "I think I'm slowly approaching the time where I'll no longer be at the center" — first explicit recognition that his role is evolving from primary damage to leadership/strategy; not resentment, not fear, just a strategic read of a changing reality
+  - **Ch. 24 additions**:
+    - **Lead-by-example doctrine**: walked through Eolka's fire 10 times himself before asking others to — "I'll be doing it too" — credibility through shared suffering
+    - **Threat-as-motivation**: potato deprivation for Eolka, partnered-joint fire-walking threat for Jenna ("If I hold your hand and put it together, it won't be hot") — finds leverage specific to each person's weakness
+    - **Pain resistance foresight**: assigns Aaron pain-resistance training for potion-healing context — "Health potions can heal injuries, but you are in extreme pain in exchange" — multi-step tactical thinking
+    - **Formation restructure**: abandons old close/mid/long for triangle-with-caster-at-centre; trusts Aaron with a specific pain-resistance assignment, Jenna with a new switching skill — delegation is now individualised
 
 ---
 

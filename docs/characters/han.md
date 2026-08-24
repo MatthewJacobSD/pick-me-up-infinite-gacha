@@ -38,9 +38,9 @@
 | Intelligence | 11/11 base (1 while Berserk) |
 | Health/HP | 21/21 base (26 while Berserk) |
 | Agility | 21/21 base (26 while Berserk) |
-| Skills | Basic Swordsmanship (Lv.5), Basic Sword-Shield Technique (levelled up Ch. 17), Pain Tolerance (Lv.2→up), Composure (Lv.3), Berserker (Lv.1) |
+| Skills | Basic Swordsmanship (Lv.5), Basic Sword-Shield Technique (levelled up Ch. 17), Pain Tolerance (Lv.2→up), Composure (Lv.3), Berserker (Lv.1), **Fire Resistance** (Ch. 24 — obtained via brazier endurance training through Eolka's fire) |
 | Growth Cost | Fixed at 5 — normal growth rate at 3★ |
-| Condition | Won the Open Duel vs Avant in Berserk mode; used Berserk again on Floor 7 (Ch. 19) — headache aftermath, avoid outside real fights |
+| Condition | Won the Open Duel vs Avant in Berserk mode; used Berserk again on Floor 7 (Ch. 19) and twice on Floor 8 (Ch. 22, stamina collapsed); obtained <Fire Resistance> skill via brazier endurance training (Ch. 24) |
 | Position | **Party 1 (Red) leader**; proposed and won approval for the two-party restructure (Ch. 19) |
 
 > Ch. 13 stat block no longer lists Quick Movements or Basic Sword-Shield Techniques (Lv.5) — skill set shown as of Lv.9. The Ch. 17 level-up notification names 'Basic Sword-Shield Technique' again (levelled up together with Pain Tolerance; new levels not displayed).
@@ -87,6 +87,7 @@
 19. **Ch. 21**: Completed the Eolka assessment under fire — max third-circle fire magic, no support magic, no skill window → awakening absent; forced her into Party 1 combat role; designed a stand-down test (floor 4 assessment) then **watched ANYTNG blow it up in real time** — master sent them to Floor 8 instead (revenge for the Wolves) — instantly pivoted to high-threat orders (Jenna arrows, Aaron flanking, Eolka cast): "Everyone, focus and take out your weapons!"
 20. **Ch. 22**: Rescued Eolka from the open field by physically carrying her into a forested zone — confirmed she can't mobile-cast in real time; went **Berserk a second time in one day** to buy time for repositioning; stamina drained completely mid-battle ("Damn it, my stamina…!"); ordered Aaron to hold the goblin line while he group-lured them away; forest on Floor 8 may connect to the dam-collapse linked-quest thread
 21. **Ch. 23**: Floor 8 cleared (MVP Eolka); her full "Ignite! Burn! Transcend!" spell destroyed 20+ Goblin Raiders; Han codifies her as "tank without armor" — firepower for defense/mobility trade-off; **"I think I'm slowly approaching the time where I'll no longer be at the center"** — first explicit acknowledgement that his role is shifting from primary damage to leadership as Eolka's firepower outpaces his
+22. **Ch. 24**: Built the Magic Hall (magic research lab + alchemy lab + library + training annex combined); crafted 6 health potions + 2 magic potions via rhythm-game mini-game; walked through Eolka's fire10 times to train fire resistance — obtained <Fire Resistance> skill; established triangular formation with Eolka at centre; trained Aaron in pain resistance and Jenna in Switching (dagger/arrow quick-switch); Party 2 likely headed to Floor 9; Floor 10 cooperation mission requires at least 2 parties
 
 ---
 

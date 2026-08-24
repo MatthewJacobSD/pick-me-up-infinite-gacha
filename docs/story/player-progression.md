@@ -218,6 +218,17 @@
 - **Han's arc shift**: "I think I'm slowly approaching the time where I'll no longer be at the center" — recognizing that Eolka's firepower exceeds his own and his role is evolving from primary damage to leadership/strategy. First time he acknowledges outgrowing the protagonist-damage role.
 - **Rarity note** (Han): mages like Eolka are very rare even among the many he summoned as a past master; "a type that was very rare."
 
+### Chapter 24
+
+- **Magic Hall built (Ch. 24)**: ANYTNG's first act on login — combined magic research lab + alchemy lab + library + training annex into one facility; research skills unlocked; alchemy lab enables item synthesis; library enables mage knowledge development.
+- **Isralta Mine opened**: all three weekday dungeons (Kendert Forest, Sinmiel Plateau, Isralta Mine) now accessible; full material stockpile ready.
+- **Potion crafting via mini-game**: Han crafted 6 low-grade health potions + 2 magic potions using a rhythm-game mechanic; "Greeted a 'low-grade health potion'" — unusual phrasing preserved from source.
+- **Eolka stamina training**: 3 laps daily, no weights, slow speed; Han uses potato-threat as leverage; Eolka's custom magic clothing (family heirloom) increases fire magic strength.
+- **Fire resistance training**: Han walked through Eolka's fire10 times → obtained <Fire Resistance> skill; Jenna and Aaron must train the same way; Aaron also assigned Pain Resistance training; Jenna assigned Switching (dagger/arrow quick-switch).
+- **New triangular formation**: Eolka at centre; Aaron and Han can't protect her alone — Jenna must defend her too ("She's high maintenance…" / "It's totally protecting the princess").
+- **Floor 10 cooperation mission** confirmed: at least 2 parties required; mission types: subjugation, survival, escort, breakthrough, assassination, protection, siege, pursuit, escape; Party 2 likely to go to Floor 9 first for experience.
+- **Chain quest hint**: "1~?? Parties Enter" — multi-floor scaling beyond Floor 10.
+
 ---
 
 ## Tracking Notes
