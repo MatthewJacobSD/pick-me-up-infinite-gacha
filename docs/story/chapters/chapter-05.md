@@ -202,14 +202,14 @@ Han: The tips you sent were probably from the strategy forum. Put 1 level into t
 
 Iselle: How do you know that?
 
-Han: Why wouldn't I know the popular post in pick me up's official forum? Loki uploaded that.
+Han: Why wouldn't I know the popular post in Pick Me Up's official forum? Loki uploaded that.
 
 Iselle: Y-You know Loki?
 
-Han: Of course. I'm a pick me up user too.
+Han: Of course. I'm a Pick Me Up user too.
 
 Iselle: Heh, even so, you're just a low-level hero in the lower levels right now.
-Iselle: Sir Loki is a master among masters. The god of Pick me up!
+Iselle: Sir Loki is a master among masters. The god of Pick Me Up!
 Iselle: He'd have been rank 1 if he has a 7 star hero!
 
 Han: Why do you like Loki?
@@ -218,7 +218,7 @@ Iselle: Because he's someone who makes the impossible possible!
 
 Han: Oho. Making the impossible possible, huh?
 
-Iselle: Aren't you a pick me up user? Isn't that basic knowledge?
+Iselle: Aren't you a Pick Me Up user? Isn't that basic knowledge?
 Iselle: You know, Sir Loki…
 
 Han: …I feel so sorry for you.

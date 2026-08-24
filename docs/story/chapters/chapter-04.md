@@ -171,7 +171,7 @@ Notification: Han (1 star)'s 'Basic Sword-Shield Techniques (level 3)' have been
 
 ### Square Unlock
 
-Notification: Welcome to Pick me up!
+Notification: Welcome to Pick Me Up!
 
 Iselle: *shouts, authoritative* If the master appears, tell them to come to the square!
 Iselle: *shouts, authoritative* Do you want to get into trouble?

@@ -4,12 +4,12 @@
 
 Han - narrating: I decided to accept it.
 Han - narrating: Whining is for children. I won't complain anymore.
-Han - narrating: This is the world of pick me up,
+Han - narrating: This is the world of Pick Me Up,
 Han - narrating: and I was summoned as a 1 star hero from birth.
 Han - narrating: There are two ways for a hero to die.
 Han - narrating: In a battle or by being synthesized. I'm only a 1-star.
 
-Han: *in his mind* It's meaningless to be a 1-star hero in pick me up.
+Han: *in his mind* It's meaningless to be a 1-star hero in Pick Me Up.
 Han: *in his mind* 1-stars are disposable, and the lowest quality ones too.
 Han: *in his mind* Our basic stats are pathetic, and our growth rate is low, too.
 Han: *in his mind* At this rate, I won't be able to escape the danger of being synthesized.
@@ -137,7 +137,7 @@ Han: *in his mind* He synthesized a 4-star with a 1-star.
 Han: *in his mind* There's a 1% chance of getting a 4-star with a paid summoning.
 Han: *in his mind* He wasted that luck on this mistake.
 
-Han: *in his mind* Pick me up is interlocked with the phone, so it can't even be restarted.
+Han: *in his mind* Pick Me Up is interlocked with the phone, so it can't even be restarted.
 Han: *in his mind* Last time, I went on it a week after the first time.
 
 Han: Is the time here different from Earth's?
@@ -194,7 +194,7 @@ Han - narrating: and if you imagine something you would like to have, it appears
 Han - narrating: Of course, guns and similar things don't work.
 
 Han - narrating: The result of training are also different.
-Han - narrating: I can now understand some thing that I didn't know while playing pick me up.
+Han - narrating: I can now understand some thing that I didn't know while playing Pick Me Up.
 Han - narrating: There are occasionally heroes that have different combat power than others despite being the same rank.
 Han - narrating: They have one thing in common: They don't slack with their training.
 Han - narrating: Training doesn't increase stats or level.
@@ -219,7 +219,7 @@ Han - narrating: It's what I'm trying to improve right now.
 
 Han - narrating: On the third day of training,
 
-Notification: Welcome to pick me up!
+Notification: Welcome to Pick Me Up!
 
 Han - narrating: Master logged in.
 

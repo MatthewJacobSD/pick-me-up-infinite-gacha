@@ -21,7 +21,7 @@ Han - narrating: Even with thousands of paid Gacha pulls, I've never gotten a he
 
 Han: A dungeon that has a low drop rate of the "book of reserval", which can make 7 stars. There's no reason not to join.
 
-Han - narrating: Unlike other similar games, pick me up has hardcore rules to it.
+Han - narrating: Unlike other similar games, Pick Me Up has hardcore rules to it.
 Han - narrating: Even the heroes that you put your all into, if they die once, they cannot be revived.
 
 Han: *in his mind* So regardless of whether it's a 1 star or 6 star, if they die a single time, it's over.
@@ -100,7 +100,7 @@ Notification: Yes
 
 Han: *shouts, in his mind, sudden panic* I'm not entering it! What is it doing?! It's acting on its own!
 
-Notification: Anytng, welcome to the world of pick me up!
+Notification: Anytng, welcome to the world of Pick Me Up!
 
 Notification:
 •	Will you start the tutorial? On competition, you will receive a predetermined reward.
@@ -145,7 +145,7 @@ Notification:
 
 Han: *pants* What happened?!
 Han: *pants* Am I inside of a game?
-Han: This familiar scene… Pick me up?
+Han: This familiar scene… Pick Me Up?
 
 Notification: Master, will you pull for a comrade before the next stage?
 
@@ -242,7 +242,7 @@ Han: *curious, doubting* …Iselle?
 Iselle: *shocked* Yes, I'm Iselle…
 Iselle: N-Not, you, how do you know my name? What are you?!
 
-Han: *duh, bruh, in his mind* I know because I was a pick me up user…
+Han: *duh, bruh, in his mind* I know because I was a Pick Me Up user…
 
 Han: Me? I'm Han Seojin.
 
@@ -345,7 +345,7 @@ Goblin: KYACK!!
 
 ### Realization
 
-Han - narrating: I don't know how I was summoned inside pick me up.
+Han - narrating: I don't know how I was summoned inside Pick Me Up.
 Han - narrating: But I knew one thing,
 Han - narrating: Han Seojin, me, got summoned as a 1 star hero Han Islat.
 
@@ -372,7 +372,7 @@ Han - narrating: You can observe this world like a god.
 
 Han: Are you having fun?
 
-Han - narrating: I was also a player who enjoyed pick me up.
+Han - narrating: I was also a player who enjoyed Pick Me Up.
 Han - narrating: Item crafting, tactics and strategy, hero ascension.
 Han - narrating: With hidden features.
 

@@ -34,6 +34,12 @@
 
 ---
 
+## Game Title Capitalization
+
+- The game's name is always written as **`Pick Me Up`** — three words, each capitalised. Never "pick me up", "Pick me up", or any other variation. Retroactively applied to Ch. 2-7 (v0.0.36).
+
+---
+
 ## NPC Numbering
 
 - NPC ids **start from 1 each chapter** and **reset each chapter** (no global counter, so no `NPC672920`).

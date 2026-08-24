@@ -8,7 +8,7 @@ Iselle: Because he's someone who makes the impossible possible!
 
 Han: Oho. Making the impossible possible…?
 
-Iselle: You don't know that as a pick me up player?
+Iselle: You don't know that as a Pick Me Up player?
 
 Han: …really sorry.
 Han: I'm
@@ -18,7 +18,7 @@ Iselle: Y-You what…
 Iselle: What kind of lie…
 
 Han: Account number 46631913
-Han: Because of reasons such as hacking, the pick me up account number is only known by the account holder and the server managers.
+Han: Because of reasons such as hacking, the Pick Me Up account number is only known by the account holder and the server managers.
 Han: Check it yourself. If you don't believe me, should I tell you my google account too?
 
 Iselle: Y-You? Really? Loki-nim…
@@ -73,7 +73,7 @@ Han: And the heroes being summoned aren't AI's.
 Iselle: Right. Their origin world is a bit different, but they're all humans.
 
 Han: *in his mind* Master "Anytng" doesn't know that we're living humans.
-Han: *in his mind* He's just a player who likes playing the game pick me up.
+Han: *in his mind* He's just a player who likes playing the game Pick Me Up.
 Han: *in his mind* Since the heroes are just products of entertainment, they face all sort of danger.
 
 Han: Anyway, if I reach the 100th stage, can I return to Earth?

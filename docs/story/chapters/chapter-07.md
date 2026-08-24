@@ -156,7 +156,7 @@ Iselle: *chuckles* Hehe. It's better than a broke student, right? He's rich enou
 
 ### Gem Economy
 
-Han - narrating: Pick me up isn't a game that gives you gems for completing missions like other games. And there are barely any events that gives you a bunch of gems either.
+Han - narrating: Pick Me Up isn't a game that gives you gems for completing missions like other games. And there are barely any events that gives you a bunch of gems either.
 
 Han: There are only a few ways to get gems for free, so a user who spends money is good.
 
