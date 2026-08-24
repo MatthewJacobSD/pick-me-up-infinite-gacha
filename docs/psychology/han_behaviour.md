@@ -1,7 +1,7 @@
 # Han's Behaviour Patterns
 
 > How Han Seojin thinks, acts, and adapts in the game world.
-> Based on Chapters 1-13 with chapter-by-chapter evidence; Ch. 14-24 behavioural notes appended (Ch. 14-17 not yet backfilled; Ch. 18-24 evidence present).
+> Based on Chapters 1-13 with chapter-by-chapter evidence; Ch. 14-25 behavioural notes appended (Ch. 14-17 not yet backfilled; Ch. 18-25 evidence present).
 
 ---
 
@@ -188,6 +188,11 @@ Han separates the worthy dead from the unworthy:
     - **Threat-as-motivation**: potato deprivation for Eolka, partnered-joint fire-walking threat for Jenna ("If I hold your hand and put it together, it won't be hot") — finds leverage specific to each person's weakness
     - **Pain resistance foresight**: assigns Aaron pain-resistance training for potion-healing context — "Health potions can heal injuries, but you are in extreme pain in exchange" — multi-step tactical thinking
     - **Formation restructure**: abandons old close/mid/long for triangle-with-caster-at-centre; trusts Aaron with a specific pain-resistance assignment, Jenna with a new switching skill — delegation is now individualised
+  - **Ch. 25 additions**:
+    - **Eolka management**: tells her to decrease magic strength for faster casting/lower mana — managing her as a system ("class 1 for most situations"), not just unleashing her; the general in him now outweighs the warrior
+    - **Self-awareness of incomplete preparation**: knows he needs a week to max his 1-star skills; recognises ANYTNG won't give it ("judging by ANYTNG's actions thus far, he won't do that") — and accepts it anyway; first time he enters a floor knowing he's not at his ceiling
+    - **NPC reading**: immediately identifies the Floor 10 NPC as an NPC ("Is he an NPC?") and reads the ruined city faster than anyone — game-knowledge superiority still his sharpest weapon even as his combat centrality fades
+    - **Iselle reassurance**: "Don't worry. I'll make sure you climb the tower." — without hesitation, without boasting; the promise of a leader, not a lone carry
 
 ---
 

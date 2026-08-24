@@ -218,6 +218,18 @@
 - **Han's arc shift**: "I think I'm slowly approaching the time where I'll no longer be at the center" — recognizing that Eolka's firepower exceeds his own and his role is evolving from primary damage to leadership/strategy. First time he acknowledges outgrowing the protagonist-damage role.
 - **Rarity note** (Han): mages like Eolka are very rare even among the many he summoned as a past master; "a type that was very rare."
 
+### Chapter 25
+
+- **Training montage**: Han obtained <Projectile Defense> (arrow-dodge without shield) + <Beginner Sword-Shield Technique> Lv.6; Jenna learning Switching at abnormal rate ("If I didn't know about Pick Me Up, Jenna would've been seriously underdeveloped"); Aaron holed up training pain resistance; Eolka training class 1 casting speed at magic hall. Level snapshot: **Han 10, Jenna 8, Aaron 6, Eolka 4** — maxed for current floors.
+- **Equipment upgraded**: E-rank Flimsy leather armor → D-rank iron plating; Aaron and Han got daggers as support weapons.
+- **Shurn and Mehkin join**: two random 1-stars fill Party 1 and Party 2 to five each — not on par with the parties but "there was nothing we could do."
+- **Floor 9 report**: Edis' Party 2 subjugated a goblin village (~50 goblins); ground was muddy "like it has rained so much" — linked-quest clue (dam-collapse connection).
+- **ANYTNG challenges Floor 10** without waiting for Han's preferred week's preparation. Han: "If he left us alone for one week, I could've upgraded my skills to a 1-star's max level."
+- **Floor 10 = pre-ruined city from Floor 5**: the same city but "it hasn't been destroyed yet"; NPC present who can't see the heroes; Aaron and Han recognise it; time-shifted stage.
+- **Tactical station mechanic** introduced for cooperation missions; Han notes ANYTNG "probably doesn't know how to use it — quite a complicated system for a newbie."
+- **Consumables**: 6 health potions total (3 per party); mana potions exclusively for Eolka; TIPS confirms consumables are key to survival and becoming a "Pick Me Up pro."
+- **Formation plan**: if separated, Edis must travel to centre (find high vantage point); Han told Shurn to hide during combat ("he'll only get in the way").
+
 ### Chapter 24
 
 - **Magic Hall built (Ch. 24)**: ANYTNG's first act on login — combined magic research lab + alchemy lab + library + training annex into one facility; research skills unlocked; alchemy lab enables item synthesis; library enables mage knowledge development.

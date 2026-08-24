@@ -195,14 +195,17 @@ Floor 15+: Endgame territory
 
 ---
 
-## Cooperation Missions (Ch. 24)
+## Cooperation Missions (Ch. 24-25)
 
 Floor 10+ introduces missions requiring **at least 2 parties** to participate.
 
 - Hint: `<1~?? Parties Enter>` — scaling number of parties per floor
 - **Mission types** (revealed Ch. 24): subjugation, survival, escort, breakthrough, assassination, protection, siege, pursuit, escape
-- Party 2 is likely to run Floor 9 first for experience before the main group tackles Floor 10
+- Party 2 ran Floor 9 first (subjugated ~50 goblins; muddy ground — linked-quest clue)
 - The most effective party composition for Eolka-style mages would be 2 mages (ideally one support mage) — Han notes this as a gap
+- **Tactical station** (Ch. 25): a system that lets the master give tactical guidelines to heroes during cooperation missions; complex for a newbie master; Han doubts ANYTNG knows how to use it
+- **Consumables system** (Ch. 25): health/mana potions can be carried by heroes and used in battle; 6 health potions total (3 per party); mana potions exclusively for Eolka; potions crafted in alchemy lab or magic hall; TIPS: "Consumables are a must for a hero's survival and victory, as well as to becoming a Pick Me Up pro."
+- **Floor 10 revealed (Ch. 25):** pre-ruined city from Floor 5 — the same city but "it hasn't been destroyed yet"; NPC present who can't see the heroes; time-shifted version of a familiar stage
 
 ---
 

@@ -12,20 +12,22 @@
 - **Platform:** PC, Mobile, Console (cross-platform), fully online
 - **Mode:** Fully online; 24/7 server connectivity; client never trusted
 
-## The Story (as of Ch. 24)
+## The Story (as of Ch. 25)
 
-- **Protagonist:** Han Seojin, real player from Seoul (Gangseo-Gu, South Earth). Summoned into his own game as a **1★ hero "Islat Han"** by a Level-999 bugged entity (the God of Death). As past master/Loki he confesses the appeal: "There's no way it wouldn't be fun to be able to control their lives." **Arc shift (Ch. 23):** "I think I'm slowly approaching the time where I'll no longer be at the center" — acknowledging his role is evolving from primary damage to leadership/strategy as Eolka's firepower outpaces his. **Skills now include:** <Fire Resistance> (Ch. 24, obtained via brazier training).
+- **Protagonist:** Han Seojin, real player from Seoul (Gangseo-Gu, South Earth). Summoned into his own game as a **1★ hero "Islat Han"** by a Level-999 bugged entity (the God of Death). As past master/Loki he confesses the appeal: "There's no way it wouldn't be fun to be able to control their lives." **Arc shift (Ch. 23):** "I think I'm slowly approaching the time where I'll no longer be at the center" — acknowledging his role is evolving from primary damage to leadership/strategy as Eolka's firepower outpaces his. **Master of Masters**: highest-ranking user in Pick Me Up; took 2 years to reach Floor 88 with dozens of party annihilations — "A Pick Me Up master grows through their failures."
+- **Skills now include:** <Fire Resistance> (Ch. 24), <Projectile Defense> (Ch. 25), <Beginner Sword-Shield Technique> Lv.6 (Ch. 25).
 - **Big reveal:** Han **is Loki** (Account #46631913, Rank 5, "Master of Masters"). Heroes are real humans from across ~1M worlds.
-- **The Master:** **ANYTNG** — reckless office worker; built Magic Hall on login (Ch. 24); watching the fire-resistance training as entertainment ("it is fun to watch even if you're not doing anything").
-- **Iselle:** Pixie lounge manager; Loki fangirl; praises Han's potion crafting ("As expected of Loki!").
-- **Jenna Cirai:** First ally, calls Han "Oppa"; archery Lv.5; assigned Switching skill (dagger/arrow quick-switch); fire resistance training pending; "high maintenance" comment re: Eolka.
-- **Aaron:** Loyal disciple, calls Han "Hyung-nim"; spear stuck at Lv.2; levelled up Floor 7 + Floor 8; assigned Pain Resistance training; "If you're tired, I'll protect you" (Ch. 22).
-- **Edis Callen (3★):** Ex-Wolves defector; + Trap Disarm; Party 2 leader.
+- **The Master:** **ANYTNG** — built Magic Hall on login (Ch. 24); challenged Floor 10 without waiting for Han's preferred week's preparation; watching fire-resistance training as entertainment.
+- **Iselle:** Pixie lounge manager; Loki fangirl; reassured by Han: "I'll make sure you climb the tower."
+- **Jenna Cirai:** First ally, calls Han "Oppa"; archery Lv.5; learning Switching at abnormal rate; assigned fire resistance training (pending); cheeks pinched again (Ch. 25).
+- **Aaron:** Loyal disciple, calls Han "Hyung-nim"; basic spearmanship Lv.3; pain resistance training holed up in room; assigned fire resistance training (pending).
+- **Edis Callen (3★):** Party 2 leader; cleared Floor 9 (muddy ground report — linked-quest clue); tasked with regrouping at centre if separated on Floor 10.
 - **Usher Roderick (1★→Lv.3):** Porter; Roderick = family name; Party 2.
-- **Roderick (3★):** Veteran city guard; crack test with Party 2 (Ch. 20).
-- **Eolka Rivel Strashur (3★):** **MVP Floor 8**; levelled up; spell sequence "Ignite! Burn! Transcend!"; "tank without armor"; custom magic clothing (family heirloom) increases fire magic strength; stamina training (3 laps daily); collapsing after full spell from mana depletion. Triangle formation: Eolka at centre.
-- **Magic Hall (Ch. 24):** magic research lab + alchemy lab + library + training annex; Isralta Mine opened (all weekday dungeons accessible); potion crafting via rhythm-game mini-game (6 health + 2 magic potions crafted).
-- **Floor 10 cooperation mission:** at least 2 parties required; mission types: subjugation, survival, escort, breakthrough, assassination, protection, siege, pursuit, escape; chain quest hint: "1~?? Parties Enter"; Party 2 likely to Floor 9 first.
+- **Roderick Sajan (3★):** Surname confirmed (Ch. 25); veteran city guard; Party 2.
+- **Shurn (1★):** NEW (Ch. 25); joined Party 1 as fifth member; Lv.1, basic swordsmanship Lv.3; too inexperienced — Han told him to hide during combat.
+- **Mehkin (1★):** NEW (Ch. 25); joined Party 2 as fifth member.
+- **Eolka Rivel Strashur (3★):** MVP Floor 8; spell sequence "Ignite! Burn! Transcend!"; magic classes: Class 1 = ignition, Class 2 = burning/explosive, Class 3 = directing explosion upward; higher class = more mana. Han's directive: decrease strength, increase speed, reduce mana consumption — use class 1 for most situations. Custom magic clothing (family heirloom) increases fire magic strength. Training at magic hall.
+- **Floor 10 (Ch. 25):** pre-ruined city from Floor 5 — "it hasn't been destroyed yet"; NPC present who can't see the heroes; tactical station mechanic (complicated for ANYTNG); 6 health potions (3 per party); mana potions for Eolka only; two parties of five each.
 
 ## Current State Snapshot (through Ch. 24)
 

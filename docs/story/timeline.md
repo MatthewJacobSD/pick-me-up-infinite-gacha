@@ -1,6 +1,6 @@
 # Story Timeline
 
-> Chronological events through Chapter 24.
+> Chronological events through Chapter 25.
 >
 > **Note:** The timeline is not 1 chapter = 1 day. Time skips between chapters are normal and expected.
 
@@ -180,6 +180,10 @@
 | **Eolka stamina training (Ch. 24):** 3 laps daily, no weights; Han uses potato-threat as leverage; Eolka's custom magic clothing (family heirloom) increases fire magic strength | Ch. 24 |
 | **Fire resistance training (Ch. 24):** Han walks through Eolka's fire 10 times → obtained <Fire Resistance> skill; Aaron assigned Pain Resistance; Jenna assigned Switching (dagger/arrow quick-switch); new triangular formation with Eolka at centre — "protecting the princess" | Ch. 24 |
 | **Floor 10 cooperation mission confirmed (Ch. 24):** at least 2 parties required; mission types: subjugation, survival, escort, breakthrough, assassination, protection, siege, pursuit, escape; Party 2 likely to Floor 9 first for experience; chain quest hint: "1~?? Parties Enter" | Ch. 24 |
+| **Training montage (Ch. 25):** Han obtains <Projectile Defense> + Sword-Shield Lv.6 via arrow-dodge training; Jenna learns Switching at abnormal rate; Aaron holed up training pain resistance; Eolka at magic hall training class 1 casting speed; level snapshot: Han 10, Jenna 8, Aaron 6, Eolka 4; equipment upgraded to D-rank iron plating; Shurn joins Party 1, Mehkin joins Party 2 | Ch. 25 |
+| **Floor 9 report (Ch. 25):** Edis' Party 2 returned — subjugated goblin village (~50 goblins); ground was muddy "like it has rained so much" — linked-quest clue | Ch. 25 |
+| **ANYTNG challenges Floor 10 (Ch. 25):** despite Han's wish for a week's preparation; tactical station mechanic introduced; 6 health potions distributed (3 per party); mana potions exclusively for Eolka; Edis tasked with regrouping at centre if separated; Iselle reassured ("I'll make sure you climb the tower") | Ch. 25 |
+| **Floor 10 revealed (Ch. 25):** the ruined city from Floor 5 — but **not yet destroyed**; NPC present who can't see the heroes; Aaron and Han recognise it; "It's that it hasn't been destroyed yet" — time-shifted pre-ruin version of a familiar stage | Ch. 25 |
 
 ---
 
@@ -187,10 +191,9 @@
 
 | Event | Expected Chapter |
 |---|---|
+| Floor 10 battle — pre-ruined city, two parties, NPC, time-shift mechanics | Ch. 26 |
+| Linked-quest thread (muddy ground, dam-collapse, pre-ruin city connection) | Ch. 26+ |
 | Han's promotion to 2★ (materials acquired; Lv.10 max) | Overdue since Ch. 14/17 |
-| Forest / linked-quest thread (dam-collapse; was "blocked off") | Ch. 25+ |
-| Whatever Han kept Aaron behind for (Ch. 19) | Ch. 24+ |
-| Party 2's Floor 9 run (experience gain) | Ch. 25+ |
 | Large goblin habitat / next stream chain | Ch. 17+ |
 | Plants of Life gathering | Ch. 15+ |
 | Sirris arrives | Ch. 10+ |
