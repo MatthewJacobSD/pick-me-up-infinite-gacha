@@ -59,9 +59,11 @@
 
 - **v0.0.39:** Chapter 27 documented via audit workflow — sortie executes: La Gran Integio flame wall + Ignite/Burn gate blast (stage discipline), gate closes behind Party 1 (no retreat), 20-second cast-cycle doctrine with position rotations vs mage-targeting goblins, mana potion per cast, rain extinguishes fire barricades rapidly, advance toward river/dam; Shurn reassigned to Edis mid-battle (fear Notification −30% all stats) with Han's conditional acknowledgment promise. **`docs/characters/edis.md` created** (user request; full Ch.15–27 arc — first dedicated file for a Party 2 member); no shurn.md (user: not relevant). heroes.md cast-cycle/environmental sections + roster Ch.27, tower.md sortie execution section, glossary +4 terms, emotional_rules Shurn/NPC subsections + Eolka battle-pride row, character file updates (han/jenna/aaron/eolka).
 
+- **v0.0.40:** Chapter 28 documented via audit workflow — decorated goblin commander counters the cast-cycle plan (charges through cast delays, low-oxygen fire zone; Fire Resistance = tolerance not immunity); Han's all-in rally + Eolka double-cast kills the commander → horde collapses to fortress objective, Party 1 slips past; potions down to one per person (dual-use protocol: burns + gulp); north wall still under siege (Edis holding); Ogre Lv.23 + Goblin Lv.9 ×19 wave intercepts — strongest enemy yet. heroes.md Enemy Command Structure + Health Potion Protocol sections, tower.md sortie extension, glossary +4 terms, emotional_rules all-in command / weary resolve / indignation range rows, character updates (han/jenna/aaron/eolka).
+
 ## Open Questions / Pending
 
-- **Chapter 28**: not yet provided; Floor 10 sortie underway — Party 1 advancing to the dam behind rotating fire walls, Party 2 holding north wall vs ladder carts.
+- **Chapter 29**: not yet provided; Floor 10 — Party 1 facing Ogre Lv.23 wave en route to the dam, Party 2 holding north wall.
 - Game/Manhwa folder separation deferred until the structure becomes hard to manage (monitor actively).
 - Task statuses (backend/frontend/design) remain Pending — code development has not been announced.
 - `docs/licenses/` directory exists but is empty (placeholder).

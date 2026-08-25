@@ -37,3 +37,7 @@
 | Cast-Cycle Rotation | Mage-Timing Combat Rhythm | ~20-second cast windows counted by Han; party changes positions every cycle because enemies lock onto the casting mage (Ch. 27) |
 | Mana Potion Protocol | Per-Cast Resource Rule | Caster drinks a mana potion after every cast ("Drink one each time you use it." — Ch. 27) |
 | Fear Notification | Stat Debuff Popup | System message surfacing a hero's fear with stat effects: "All stats have been decreased by 30%" (Shurn, Ch. 27) |
+| Decorated Commander | Goblin Field Officer | Ornamented goblin officer directing adaptive tactics (charges timed to cast delays); its death collapses horde coordination back onto the original objective (Ch. 28) |
+| Fire Resistance Limits | Tolerance-Not-Immunity Skill | Raises fire tolerance only — smoke/oxygen depletion inside a fire zone remains lethal regardless of the skill (Han, Ch. 28) |
+| Potion Dual-Use Protocol | Topical + Oral Healing | Health potions applied to burns and drunk (one gulp); supply rationed to one per person after the sortie's first stretch (Ch. 28) |
+| Ogre | High-Level Monster Escort | Level 23 — strongest enemy encountered to date; arrived with a Goblin Lv.9 ×19 wave during the Floor 10 sortie (Ch. 28) |

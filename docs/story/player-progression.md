@@ -262,6 +262,14 @@
 - **Rain interaction**: rain rapidly extinguishes fire barricades — advance pace dictated by weather; heat through leather armor "somewhat bearable" (Fire Resistance synergy).
 - **Advance continues toward the river** using fire as a moving shield — dam destruction is the objective.
 
+### Chapter 28
+
+- **Commander counter**: a decorated goblin officer reads the cast-cycle plan and orders relentless charges through fire during Eolka's casting delay — Party 1 pinned in a low-oxygen fire zone; Fire Resistance confirmed as tolerance, not immunity.
+- **All-in commander kill**: Han rallies ("We can't fail, and we only have one chance!") and calls the double-cast — Ignite→Burn tears the decorated commander apart; horde coordination collapses to the original objective (the fortress) and Party 1 slips past unengaged.
+- **Resource cliff**: health potions down to exactly one per person; protocol extended — apply to burns + one gulp ("Ack, it's so bitter!").
+- **North wall status**: still under siege; outer wall standing — Edis's party still pushing through (Han's mid-battle assessment).
+- **Ogre wave**: Goblin Lv.9 ×19 + Ogre Lv.23 intercept after the breather — strongest enemy encountered to date; chapter ends on its arrival.
+
 ---
 
 ## Tracking Notes

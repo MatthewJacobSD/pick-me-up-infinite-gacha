@@ -332,9 +332,20 @@ Sortie combat runs on a repeating rhythm built around Eolka's ~20-second cast wi
 - **Heat bleed**: flame heat passes through leather armor but is "somewhat bearable" — Fire Resistance training synergy
 - **Fear notification**: fear debuffs surface as system Notifications with stat effects — "Shurn (1 star) is scared! All stats have been decreased by 30%."
 
+### Enemy Command Structure (Ch. 28)
+
+- **Decorated commanders**: ornamented goblin officers direct adaptive tactics — one saw through the cast-cycle plan and ordered charges through fire during Eolka's casting delay ("He's uselessly intelligent.")
+- **Commander-kill collapse**: killing the commander breaks mob coordination — the goblins revert to their original objective (the fortress) and ignore the heroes entirely; removing leadership beats fighting the horde
+- **Fire Resistance limits**: the skill raises tolerance only — "it's not a skill that makes you immune to it"; smoke/oxygen depletion inside a fire zone remains lethal regardless
+
+### Health Potion Protocol (Ch. 28)
+
+- **Dual use**: apply to burns topically **and** drink one gulp
+- **Rationing**: after the sortie's first stretch, exactly **one potion left per person** — "don't use it all"
+
 ---
 
-## Current Roster (Ch. 27)
+## Current Roster (Ch. 28)
 
 **Party 1 (Red) — leader Han:** Islat Han, Jenna Cirai, Aaron Delcut, Eolka Rivel Strashur (3★ Magician) *(Shurn reassigned to Party 2 mid-mission, Ch. 27)*
 **Party 2 (Blue) — leader Edis:** Edis Callen, Usher Roderick, Dika, Roderick Sajan (3★ Guard), Mehkin (1★), Shurn (1★, joined Ch. 27)

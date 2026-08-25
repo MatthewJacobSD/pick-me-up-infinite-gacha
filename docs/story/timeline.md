@@ -1,6 +1,6 @@
 # Story Timeline
 
-> Chronological events through Chapter 27.
+> Chronological events through Chapter 28.
 >
 > **Note:** The timeline is not 1 chapter = 1 day. Time skips between chapters are normal and expected.
 
@@ -193,6 +193,10 @@
 | **Gate closed behind Party 1** — escape route blocked, forward only: "I'll kill you all!" | Ch. 27 |
 | **Shurn reassigned mid-battle** to Edis/Party 2 — fear shown via Notification (all stats −30%); Han's conditional promise: "If you're still alive after the fight, I'll acknowledge you." | Ch. 27 |
 | **20-second cast-cycle advance (Ch. 27):** party rotates positions every cycle (goblins lock onto Eolka — mage-first targeting again); mana potion per cast; rain extinguishes fire barricades rapidly but not Eolka's flames; advance toward the river continues using fire as a moving shield | Ch. 27 |
+| **Commander counter (Ch. 28):** a decorated goblin commander sees through the cast-cycle plan — charges through fire during Eolka's casting delay; low oxygen inside the fire zone; Fire Resistance = tolerance, not immunity | Ch. 28 |
+| **Commander killed (Ch. 28):** Han's all-in rally ("We can't fail, and we only have one chance!") → Eolka double-cast Ignite→Burn tears the decorated commander apart; horde coordination collapses to the original objective (the fortress) and Party 1 slips past | Ch. 28 |
+| **Breather + resource cliff (Ch. 28):** health potion protocol extended — apply to burns + one gulp; **one potion left per person**; north wall still under siege, outer wall standing (Edis holding) | Ch. 28 |
+| **New wave (Ch. 28):** Goblin Lv.9 ×19 + **Ogre Lv.23** — strongest enemy encountered to date; chapter ends on its arrival ("They brought a big friend.") | Ch. 28 |
 
 ---
 
@@ -200,8 +204,9 @@
 
 | Event | Expected Chapter |
 |---|---|
-| Floor 10 Defend outcome — Party 1 advancing to the river/dam through the horde; identity of the blocked reinforcement cavalry | Ch. 28+ |
-| Linked-quest thread — dam destruction confirmed as the win condition; sortie in progress; remaining: what lies beyond the dam / who sent reinforcements | Ch. 28+ |
+| Floor 10 Defend outcome — Party 1 slipped past the horde but is engaged by Ogre Lv.23 + Goblin Lv.9 ×19; identity of the blocked reinforcement cavalry | Ch. 29+ |
+| Linked-quest thread — dam destruction confirmed as the win condition; sortie past the horde, dam still standing; remaining: what lies beyond the dam / who sent reinforcements | Ch. 29+ |
+| Ogre Lv.23 encounter outcome | Ch. 29 |
 | Han's promotion to 2★ (materials acquired; Lv.10 max) | Overdue since Ch. 14/17 |
 | Large goblin habitat / next stream chain | Ch. 17+ |
 | Plants of Life gathering | Ch. 15+ |

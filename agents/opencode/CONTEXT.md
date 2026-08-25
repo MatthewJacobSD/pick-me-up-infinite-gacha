@@ -12,7 +12,7 @@
 - **Platform:** PC, Mobile, Console (cross-platform), fully online
 - **Mode:** Fully online; 24/7 server connectivity; client never trusted
 
-## The Story (as of Ch. 27)
+## The Story (as of Ch. 28)
 
 - **Protagonist:** Han Seojin, real player from Seoul (Gangseo-Gu, South Earth). Summoned into his own game as a **1★ hero "Islat Han"** by a Level-999 bugged entity (the God of Death). As past master/Loki he confesses the appeal: "There's no way it wouldn't be fun to be able to control their lives." **Arc shift (Ch. 23):** "I think I'm slowly approaching the time where I'll no longer be at the center" — acknowledging his role is evolving from primary damage to leadership/strategy as Eolka's firepower outpaces his. **Master of Masters**: highest-ranking user in Pick Me Up; took 2 years to reach Floor 88 with dozens of party annihilations — "A Pick Me Up master grows through their failures."
 - **Skills now include:** <Fire Resistance> (Ch. 24), <Projectile Defense> (Ch. 25), Basic Sword-Shield Technique Lv.6 (Ch. 25).
@@ -30,8 +30,9 @@
 - **Floor 10 (Ch. 25):** pre-ruined city from Floor 5 — "it hasn't been destroyed yet"; NPC present who can't see the heroes; tactical station mechanic (complicated for ANYTNG); 6 health potions (3 per party); mana potions for Eolka only; two parties of five each.
 - **Floor 10 Defend mission (Ch. 26):** three-part warning = highest difficulty; objective "Stop the fall of the city"; fail condition = destruction of the 'Twin Goddesses' statue on the central tower → all heroes die, no exceptions. Enemy survey: goblins ×2,213 north forest (only force with ladder carts) + ×899 east across the river vs Human soldiers ×353 (~360 with heroes); ratio >10:1. Heroes are visible/touchable but unseen/unheard by NPCs. Linked quest confirmed: dam collapse flooded the river — reinforcement cavalry (gallops Jenna heard) blocked; clues from Floors 5–9 converge on the dam. Strategy: Party 2 holds the north outer wall vs ladder carts (~fifty-soldiers worth), fallback inner wall, bait doctrine sanctioned; Party 1 sorties east gate to kill goblins and stop the dam collapse ("we're going after their heads"). Roderick Sajan's guerrilla-retreat proposal rejected.
 - **Floor 10 sortie execution (Ch. 27):** Party 1 exits the east gate — La Gran Integio + Ignite/Burn clears the horde outside ("Don't blow up the gate!"); gate closes behind them (escape route blocked — "I'll kill you all!"); refugees funnel to inner wall; NPCs panic at invisible heroes ("evil spirit", "goddess abandoned us"); 20-second cast-cycle advance with position rotations (goblins lock onto Eolka); rain rapidly extinguishes fire barricades but not her flames; advance toward the river/dam continues using fire as a moving shield.
+- **Commander kill & Ogre wave (Ch. 28):** a decorated goblin commander reads the cast-cycle plan — charges through fire during Eolka's cast delay pin Party 1 in a low-oxygen fire zone (Fire Resistance = tolerance, not immunity); Han's all-in rally + Eolka double-cast kills the commander → horde coordination collapses to the original objective (fortress) and Party 1 slips past; health potions down to one per person (apply to burns + one gulp); north wall still under siege, outer wall standing (Edis holding); new wave intercepts: Goblin Lv.9 ×19 + Ogre Lv.23 — strongest enemy yet.
 
-## Current State Snapshot (through Ch. 27)
+## Current State Snapshot (through Ch. 28)
 
 **Party 1 (Red, leader Han):** Islat Han (Lv.10), Jenna Cirai (Lv.8), Aaron Delcut (Lv.6), Eolka Rivel Strashur (3★, Lv.4) — Shurn reassigned out mid-mission
 **Party 2 (Blue, leader Edis):** Edis Callen (3★), Usher Roderick (1★, Lv.3), Dika (1★), Roderick Sajan (3★), Mehkin (1★), Shurn (1★, joined Ch. 27)
@@ -40,15 +41,15 @@
 
 **Total Alive:** 17 named individuals. **Deceased:** 15 combat + 18+ synthesis + 3 sudden death + 1 thinning.
 
-**Floor progress:** Floor 8 cleared (Ch. 23); Floor 9 cleared by Party 2 (Ch. 25); Floor 10 Defend mission active (Ch. 26-27) — Party 2 holding north wall, Party 1 through the east gate advancing toward the river/dam behind a rotating fire wall.
+**Floor progress:** Floor 8 cleared (Ch. 23); Floor 9 cleared by Party 2 (Ch. 25); Floor 10 Defend mission active (Ch. 26-28) — Party 2 holding north wall, Party 1 slipped past the horde (commander kill) but engaged by Ogre Lv.23 + Goblin ×19 wave en route to the river/dam.
 
-**Han:** Lv.10 MAX 1★, promotion pending. Skills: Swordsmanship Lv.5, Sword-Shield Lv.6, Pain Tolerance, Composure Lv.3, Berserker, Fire Resistance, Projectile Defense. Arc shifting from primary damage to leadership/strategy — now running cast-cycle command in the field (Ch. 27).
+**Han:** Lv.10 MAX 1★, promotion pending. Skills: Swordsmanship Lv.5, Sword-Shield Lv.6, Pain Tolerance, Composure Lv.3, Berserker, Fire Resistance, Projectile Defense. Arc shifting from primary damage to leadership/strategy — cast-cycle command in the field (Ch. 27), all-in commander kill (Ch. 28).
 
 **Eolka:** MVP Floor 8; spell "Ignite! Burn! Transcend!"; named spells La Gran Sedus / La Gran Integio; magic class system: 1=ignition, 2=explosive, 3=directed; Han's directive: class 1 for most situations (speed/mana); stationary casting, party must protect; custom magic clothing (family heirloom) boosts fire magic; mana potion per cast during the sortie.
 
 **Master (ANYTNG):** Built Magic Hall (Ch. 24); challenged Floor 10 without Han's preferred week's prep; tactical station mechanic available but likely unused (complicated for newbie); 6 health potions distributed (3 per party); mana potions for Eolka only.
 
-**Key mechanics in play:** cooperation missions (2+ parties); Defend missions (fail = death, no exceptions; Twin Goddesses statue fail-object); three-part warning = highest difficulty; NPC perception gap (seen/touchable but unheard/unseen); cast-cycle rotation + mana-potion protocol; rain vs fire barricades; tactical station; consumables system; triangular formation (Eolka at centre); fire/pain resistance training; Switching (Jenna); linked-quest thread — dam destruction is the win condition, sortie underway.
+**Key mechanics in play:** cooperation missions (2+ parties); Defend missions (fail = death, no exceptions; Twin Goddesses statue fail-object); three-part warning = highest difficulty; NPC perception gap (seen/touchable but unheard/unseen); cast-cycle rotation + mana-potion protocol; enemy command structure (decorated commanders; commander-kill collapses horde to objective); rain vs fire barricades; Fire Resistance = tolerance not immunity; potion dual-use protocol (one left per person); tactical station; consumables system; triangular formation (Eolka at centre); fire/pain resistance training; Switching (Jenna); linked-quest thread — dam destruction is the win condition.
 
 **World-building terms:** "3-runa" = caster type; "3-circle" = mage rank; "Pick Me Up" = game title (always capitalised).
 
@@ -56,8 +57,8 @@
 
 - Han's stamina recovery after double Berserk (Ch. 24)
 - Han's promotion to 2★ (Lv.10 max, materials ready)
-- Floor 10 Defend outcome — Party 1 advancing to the river/dam; identity of the blocked reinforcement cavalry (Ch. 28+)
-- Whatever lies beyond the dam / who sent the reinforcements (Ch. 28+)
+- Floor 10 Defend outcome — Party 1 engaged by Ogre Lv.23 + Goblin ×19; identity of the blocked reinforcement cavalry (Ch. 29+)
+- Whatever lies beyond the dam / who sent the reinforcements (Ch. 29+)
 - Whether Shurn survives to earn Han's acknowledgment (Ch. 27+)
 - Whatever Han kept Aaron behind for (Ch. 19)
 - Large goblin habitat / next stream chain (Ch. 17+)

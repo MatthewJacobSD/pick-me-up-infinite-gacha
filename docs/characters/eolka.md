@@ -114,6 +114,7 @@ Skills: Intermediate Fire Magic (level 2)
 11. **Ch. 25**: Class system drilled (casting speed up, mana down, class-1 usage); **MVP** of the fourth-floor practice clear — levels up to **Lv.4**; level snapshot: maxed for current floors
 12. **Ch. 26**: Enters the Floor 10 Defend mission with Party 1; Han's narration earmarks her as the area-defense mage of the defense plan (no dialogue this chapter)
 13. **Ch. 27**: Sortie execution — casts **La Gran Integio** then the Ignite→Burn gate blast on Han's timing; runs 20-second cast cycles with a mana potion after every cast; vows "I can use it a hundred times more!" when asked if she can keep going — the party's mobile artillery through the horde
+14. **Ch. 28**: Delivers the commander kill — double-cast Ignite→Burn tears the decorated goblin officer apart on Han's all-in call; carried to safety by Aaron afterward ("Couldn't you have put me down more gently?!")
 
 ---
 
@@ -132,6 +133,8 @@ Skills: Intermediate Fire Magic (level 2)
 > "*shouts, proud* Of course! They call me Rivel's Witch!" (Ch.21)
 
 > "I can. Who do you take me for?! I can use it a hundred times more!" (Ch.27)
+
+> "*shouts, angry* Couldn't you have put me down more gently?!" (Ch.28)
 
 > "*shouts* One minute!" (Ch.21)
 

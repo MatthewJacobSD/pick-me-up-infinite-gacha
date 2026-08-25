@@ -234,6 +234,8 @@ First cooperation mission; first **Defend** type; opened with a **three-part war
 - Gate-opening sequence: Eolka's large-scale flame wall **La Gran Integio** → Aaron opens the pulley gate → "Ignite!" / "Burn!" detonated **outside** (Han: "Don't blow up the gate!") to clear the gathered horde
 - Advance runs on the **20-second cast-cycle doctrine** (see heroes.md): rotate positions every cycle, advance behind the fire as a moving shield toward the river
 - Rain extinguishes fire barricades rapidly — weather directly shapes magic tactics on this stage
+- **Commander counter-kill (Ch. 28)**: a decorated goblin commander adapted (charges through cast delays); Han's all-in rally + Eolka double-cast killed it — the horde abandoned threat-removal and resumed its march on the fortress, letting Party 1 slip past toward the river/dam
+- **Ogre wave (Ch. 28)**: Goblin Lv.9 ×19 escorting an **Ogre Lv.23** — the strongest enemy encountered to date; intercepted Party 1 after their breather
 
 ---
 

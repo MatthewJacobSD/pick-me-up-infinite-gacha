@@ -32,6 +32,7 @@ Every character must show consistent emotional responses across chapters. Emotio
 | **Wistful Empathy** | Heroes wishing the master away | Private acknowledgment of his own past as a player-master; muses on Niflheimr's masterless heroes | Ch.14: "Hey, I was a past master too." |
 | **Cold Command Under Pressure** | Impossible mission brief | Withholds despair from the troops: "It'll be rougher for you, so I can't say things that'll make us sound weak." — morale managed by omission | Ch.26 |
 | **Vindicated Obsession** | Clue-hunting pays off | Floor 5–9 clue chain (stream, muddy ground, pre-ruin city) converges on the dam — his linked-quest playstyle is validated | Ch.26 |
+| **All-In Command** | Plan seen through, party pinned in a lethal fire zone | Refuses incremental retreat: "We can't fail, and we only have one chance!" — bets everything on a commander kill; privately credits survival to it afterward | Ch.28 |
 
 ### Emotional Patterns
 
@@ -383,14 +384,14 @@ Every character must show consistent emotional responses across chapters. Emotio
 
 ---
 
-## Two-Party Era Additions (Ch. 18-27)
+## Two-Party Era Additions (Ch. 18-28)
 
 ### Eolka Rivel Strashur
 
 | Emotion | Trigger | Response | Chapter Evidence |
 |---|---|---|---|
 | **Embarrassment/Shame** | Arriving underdressed before strangers | Collapses, cannot get up — "She's probably more embarrassed than in pain" (Han) | Ch.20 |
-| **Aristocratic Indignation** | Being judged/ordered around | "How could they treat people like this…", "Why am I being treated this way…?", "How dare you say something so insulting?!!" | Ch.20-25 |
+| **Aristocratic Indignation** | Being judged/ordered around | "How could they treat people like this…", "Why am I being treated this way…?", "How dare you say something so insulting?!!" — extends to rough rescue handling: "Couldn't you have put me down more gently?!" | Ch.20-28 |
 | **Fear-Driven Compliance** | Witnessing synthesis | "..That's repulsive." → fights anyway; accepts stamina training under potato-threat leverage ("Using food against me, how cheap!") | Ch.20, 24 |
 | **Vindication Jubilation** | Her magic devastating the enemy | "This is the power of the great fire! Hahahahah!" — collapses mid-boast from mana depletion | Ch.23 |
 | **Grudging Respect** (developing) | Han's correct reads and rescue | Complies with class-1 drilling; no longer questions his orders by Ch.25 | Ch.24-25 |
@@ -436,6 +437,7 @@ Every character must show consistent emotional responses across chapters. Emotio
 | **Relief → Horror** | Excused from pain resistance, then deferred | "Phew" → "Heok?! Can I p-please do it later…" | Ch.24 |
 | **Playful Confidence** | Han's growth acknowledged | Teases him about needing compliments ("Who was it~?"); cheek-pinched for it | Ch.25 |
 | **Withheld-Intel Guilt** | Forgot/dared not report the gallops beyond the river | "Ugh, I wosn't shure…" (cheek-pinched) — delayed report nearly buried the dam deduction | Ch.26 |
+| **Weary Resolve** | No pause between crises | "I thought I was going to die." / "They won't give us a break." — complains, keeps moving | Ch.28 |
 
 ### Aaron Delcut
 
@@ -503,4 +505,4 @@ Heroes facing death should show fear, acceptance, or defiance — not just silen
 
 **Legend:** ✅ = Shown | ⚠️ = Implied/Partial | ❌ = Not Shown | † = Deceased
 
-> Matrix updated through Ch. 13. Changes from the Ch.1-8 version: Jenna Sadness ⚠️→✅ (relieved tears, Ch.12); Aaron Fear ⚠️→✅ (brink of death, Ch.11), Sadness ⚠️→✅ (grief/guilt, Ch.13); trainees Determination ⚠️→✅ (they trained hard; Han confirms their effort, Ch.13). Ch. 25 additions: Edis and Eolka rows added (see Two-Party Era section above). Ch. 26 addition: Roderick Sajan row added; Edis Dread→Resolve, Jenna withheld-intel guilt, Aaron protective worry, Han cold command (see Two-Party Era section above). Ch. 27 additions: Shurn fear/compliance and Floor 10 NPC terror/despair subsections; Eolka battle-pride row.
+> Matrix updated through Ch. 13. Changes from the Ch.1-8 version: Jenna Sadness ⚠️→✅ (relieved tears, Ch.12); Aaron Fear ⚠️→✅ (brink of death, Ch.11), Sadness ⚠️→✅ (grief/guilt, Ch.13); trainees Determination ⚠️→✅ (they trained hard; Han confirms their effort, Ch.13). Ch. 25 additions: Edis and Eolka rows added (see Two-Party Era section above). Ch. 26 addition: Roderick Sajan row added; Edis Dread→Resolve, Jenna withheld-intel guilt, Aaron protective worry, Han cold command (see Two-Party Era section above). Ch. 27 additions: Shurn fear/compliance and Floor 10 NPC terror/despair subsections; Eolka battle-pride row. Ch. 28 additions: Han all-in command; Jenna weary resolve; Eolka indignation range extended.
