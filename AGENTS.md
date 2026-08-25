@@ -22,7 +22,7 @@ That directory (`agents/opencode/`) is OpenCode's persistent development memory:
 
 ## Open Questions / Awaiting User Input
 
-- **Chapters 18-25**: transcribed (`docs/story/chapters/`). Ch.17's cliffhanger resolved: ANYTNG vented via mass synthesis (six slackers → Edis, Ch.18); two-party restructure by lots (Ch.19); Floor 7 cleared; Eolka & Roderick summoned (Ch.20); master's revenge Floor 8 (Ch.21-23, MVP Eolka); Magic Hall + fire resistance training (Ch.24); Floor 10 entered — pre-ruined city from Floor 5 (Ch.25). **Chapter 26**: not yet provided.
+- **Chapters 18-26**: transcribed (`docs/story/chapters/`). Ch.17's cliffhanger resolved: ANYTNG vented via mass synthesis (six slackers → Edis, Ch.18); two-party restructure by lots (Ch.19); Floor 7 cleared; Eolka & Roderick summoned (Ch.20); master's revenge Floor 8 (Ch.21-23, MVP Eolka); Magic Hall + fire resistance training (Ch.24); Floor 10 entered — pre-ruined city from Floor 5 (Ch.25); Floor 10 = highest-difficulty Defend mission, Twin Goddesses fail condition, dam sortie planned (Ch.26). **Chapter 27**: not yet provided.
 - **Standing rulings (user)**: roster screens show active heroes only; Sorial & Daniel remain Alive until source says otherwise; Usher Roderick ≠ Roderick Sajan (family name vs given name); game title always "Pick Me Up" (capitalised); "3-runa" = caster type, "3-circle" = mage rank (preserve verbatim); skill-name variants normalize to dominant form — `Basic Sword-Shield Technique` (not "Beginner"); Ch.24 brazier count = 10 seconds. See `docs/decisions.md`.
 - **Task definitions**: backend/frontend/design tasks are all "Pending" with no definition of done; code development has not been announced.
 - **`docs/licenses/`**: empty placeholder folder.

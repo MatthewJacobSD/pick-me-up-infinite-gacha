@@ -86,6 +86,7 @@
 14. **Ch. 20**: Referees the leader lot-draw — trips while bringing the lots (letting both leaders peek), then catches the cheating and remixes them ("That's cheating! Things like that should be dependent on pure luck"); amazed magicians are real ("Wow! There really are magicians, huh~?")
 15. **Ch. 24**: Assigned **Switching** training; balks at the fire-resistance brazier ("I don't.. want to do it… Since I stand at the back.") until Han offers to hold her hand in the flames; given triangular-formation defender duty for Eolka ("She's high maintenance…") and warned pain resistance awaits her in the future
 16. **Ch. 25**: Learns Switching at an abnormal rate — "Her origin is 1-star, but she has great potential. The rate at which she's learning is abnormal." (Han: "If I didn't know about Pick Me Up, Jenna would've been seriously underdeveloped."); runs Han's arrow-dodge drills that yield him <Projectile Defense>; reaches **Lv.8**
+17. **Ch. 26**: Tests the NPC perception rule on a porter (spoke with no reply; he felt his load grow heavy when touched) — heroes can be seen and touched but not heard/seen by NPCs; hears horse gallops beyond the river but withholds it until pressed ("Ugh, I wosn't shure…", cheek-pinched) — her intel unlocks Han's dam-collapse deduction and the east-gate sortie
 
 ---
 
@@ -106,6 +107,8 @@
 > "This would be paradise if there wasn't a master!" (Ch.14)
 
 > "I hope master never comes back." (Ch.14)
+
+> "Ugh, I wosn't shure…" (Ch.26 — cheek-pinched distortion, preserved verbatim)
 
 > "He might look indifferent but he's warm-hearted." (Ch.15)
 

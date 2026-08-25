@@ -1,6 +1,6 @@
 # Story Timeline
 
-> Chronological events through Chapter 25.
+> Chronological events through Chapter 26.
 >
 > **Note:** The timeline is not 1 chapter = 1 day. Time skips between chapters are normal and expected.
 
@@ -184,6 +184,11 @@
 | **Floor 9 report (Ch. 25):** Edis' Party 2 returned — subjugated goblin village (~50 goblins); ground was muddy "like it has rained so much" — linked-quest clue | Ch. 25 |
 | **ANYTNG challenges Floor 10 (Ch. 25):** despite Han's wish for a week's preparation; tactical station mechanic introduced; 6 health potions distributed (3 per party); mana potions exclusively for Eolka; Edis tasked with regrouping at centre if separated; Iselle reassured ("I'll make sure you climb the tower") | Ch. 25 |
 | **Floor 10 revealed (Ch. 25):** the ruined city from Floor 5 — but **not yet destroyed**; NPC present who can't see the heroes; Aaron and Han recognise it; "It's that it hasn't been destroyed yet" — time-shifted pre-ruin version of a familiar stage | Ch. 25 |
+| **Floor 10 recon (Ch. 26):** five-minute scouting order; soldiers' morale at rock bottom; enemy survey — Goblin Lv.??? ×2,213 north forest (only force with siege equipment: ladder carts), ×899 east across the river, Human soldiers Lv.??? ×353 defending; ratio >10:1 — "the worst case scenario" | Ch. 26 |
+| **Defend mission decoded (Ch. 26):** three-part warning = highest difficulty; Mission type – Defend ("Stop the fall of the city"); fail condition = destruction of the 'Twin Goddesses' statue on the central tower → all heroes die, no exceptions | Ch. 26 |
+| **NPC perception rule discovered (Ch. 26):** heroes are visible and touchable to NPCs but cannot be seen or heard by them (Jenna's test on a porter NPC) | Ch. 26 |
+| **Linked quest confirmed (Ch. 26):** the dam collapse flooded the river — reinforcement cavalry (horse gallops Jenna heard beyond it) can't cross; Floor 5–9 clues converge on the dam | Ch. 26 |
+| **Floor 10 strategy split (Ch. 26):** Party 2 (Edis) holds the north outer wall vs ladder carts (~fifty-soldiers worth of power), fallback inner wall, bait doctrine sanctioned; Party 1 sorties through the east gate to kill goblins and stop the dam collapse — "we're going after their heads"; Roderick's guerrilla-retreat proposal rejected | Ch. 26 |
 
 ---
 
@@ -191,8 +196,8 @@
 
 | Event | Expected Chapter |
 |---|---|
-| Floor 10 battle — pre-ruined city, two parties, NPC, time-shift mechanics | Ch. 26 |
-| Linked-quest thread (muddy ground, dam-collapse, pre-ruin city connection) | Ch. 26+ |
+| Floor 10 Defend outcome — Party 1's dam sortie; identity of the blocked reinforcement cavalry | Ch. 27+ |
+| Linked-quest thread — dam destruction now confirmed as the win condition; remaining: what lies beyond the dam / who sent reinforcements | Ch. 27+ |
 | Han's promotion to 2★ (materials acquired; Lv.10 max) | Overdue since Ch. 14/17 |
 | Large goblin habitat / next stream chain | Ch. 17+ |
 | Plants of Life gathering | Ch. 15+ |

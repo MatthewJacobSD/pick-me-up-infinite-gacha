@@ -241,6 +241,17 @@
 - **Consumables**: 6 health potions total (3 per party); mana potions exclusively for Eolka; TIPS confirms consumables are key to survival and becoming a "Pick Me Up pro."
 - **Formation plan**: if separated, Edis must travel to centre (find high vantage point); Han told Shurn to hide during combat ("he'll only get in the way").
 
+### Chapter 26
+
+- **Floor 10 mission materialized as Defend** — highest difficulty (three-part warning); objective "Stop the fall of the city"; Han's meta-read: he hoped for survival, got defense — "I thought I could survive if I just endured it. But it wasn't like that at all."
+- **Five-minute recon doctrine**: ordered scouts to survey within five minutes; morale of the defending army at rock bottom; refugees inside the walls.
+- **Enemy survey**: Goblin Lv.??? ×2,213 north forest (only force with siege equipment: ladder carts), ×899 east across the river, Human soldiers Lv.??? ×353 + 10 heroes; ratio >10:1 — "the worst case scenario"; no battering rams anywhere.
+- **Fail condition decoded**: destruction of the 'Twin Goddesses' statue on the central tower = mission failure → all heroes die, no exceptions. Mission success guessed as annihilating the invading army.
+- **NPC perception rule**: heroes visible/touchable but unseen and unheard by NPCs (Jenna's test).
+- **Linked quest validated**: dam collapse flooded the river; reinforcement cavalry (gallops Jenna heard) blocked; Floor 5–9 clues converge on the dam — Han's clue-hunting playstyle vindicated.
+- **Strategy split executed**: Party 2 holds north outer wall vs ladder carts (fallback inner wall; bait doctrine sanctioned); Party 1 sorties east gate to kill goblins and stop the dam collapse — "we're going after their heads."
+- **Roderick Sajan's retreat proposal rejected** — guerrilla-style attacks outside the city denied by Han.
+
 ---
 
 ## Tracking Notes

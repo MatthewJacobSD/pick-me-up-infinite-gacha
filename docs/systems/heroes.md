@@ -285,7 +285,7 @@
 | Automation | Combat is fully automated — no player control |
 | MVP | Awarded to highest contributor after stage clear |
 | Experience | Only participants gain XP — non-participants get zero |
-| Mission Types | Subjugation, Survival, Explore, Cooperation (Floor 10+) |
+| Mission Types | Subjugation, Survival, Explore, Cooperation, **Defend** (Floor 10+, Ch. 26) |
 | Party Formation | Evolved: close/mid/long → **triangular formation** (mage at centre) when a fragile ranged-caster is present (Ch. 24) |
 
 ---
@@ -301,7 +301,22 @@
 
 ---
 
-## Current Roster (Ch. 25)
+## Defend Missions & Special Rules (Ch. 26)
+
+New mechanics surfaced by the Floor 10 Defend mission:
+
+- **Defend mission**: objective is to protect — "Stop the fall of the city." Success condition guessed as annihilating the invading army; the stated fail condition is stricter than any prior mission
+- **Three-part warning** = highest difficulty tier (first time a mission opened with three consecutive warnings)
+- **Mission-fail = death**: on failure every hero dies regardless of location or progress — "No matter where we are, the moment we fail, we'll die."
+- **Special-mission object — 'Twin Goddesses' statue** (central tower): if destroyed, the mission fails even if all enemies are killed
+- **NPC perception gap**: heroes can be seen and touched by NPCs, but NPCs cannot see or hear them (Jenna's test: no reply when she spoke; porter felt his load grow heavy when she touched it)
+- **Hero combat-power equivalence**: a five-hero party led by 3★s ≈ **fifty soldiers** (Han's estimate)
+- **Bait doctrine sanctioned**: Han authorized using soldiers/refugees as bait if the outer wall breaks ("It might be necessary.")
+- **Ladder carts**: the only siege equipment present; exclusive to the northern goblin army — counter is destroying ladders as they hook onto walls
+
+---
+
+## Current Roster (Ch. 26)
 
 **Party 1 (Red) — leader Han:** Islat Han, Jenna Cirai, Aaron Delcut, Eolka Rivel Strashur (3★ Magician), Shurn (1★)
 **Party 2 (Blue) — leader Edis:** Edis Callen, Usher Roderick, Dika, Roderick Sajan (3★ Guard), Mehkin (1★)

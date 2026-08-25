@@ -45,6 +45,7 @@
 15. **Ch. 21**: **Retaliates against Han** — when Party 1 enters the crack of space and time, ANYTNG overrides the destination from Floor 4 (Han's chosen test stage) to **Floor 8** (Goblin Raider Lv.9 ×27). Han reads it instantly: "Was he pissed off about what happened last time?! Being stingy about eating one 3-star… He's telling us to get fucked. Or he's saying that using the fourth floor as a test is boring?" — first master-as-active-hostility moment
 16. **Ch. 24**: First act on login — builds the **Magic Hall** (magic research lab + alchemy lab + library combined); Isralta Mine opens, completing the three weekday dungeons; watches Eolka's stamina training as entertainment instead of helping ("Well, it is fun to watch even if you're not doing anything."); logs out mid-session
 17. **Ch. 25**: **Challenges Floor 10** despite Han's wish for one week's preparation and the party's incomplete state (Shurn/Mehkin unadjusted; Han unpromoted at Lv.10 cap); ignores/receives warnings about free reinforcement summons, the tactical station, and unused consumables; distributes the 6 health potions across both parties
+18. **Ch. 26**: The Floor 10 challenge materializes as the highest-difficulty tier — a three-part warning opens a **Defend** mission ("Stop the fall of the city") with the Twin Goddesses statue as the fail condition (master not directly shown this chapter)
 
 ---
 

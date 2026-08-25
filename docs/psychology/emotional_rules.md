@@ -30,6 +30,8 @@ Every character must show consistent emotional responses across chapters. Emotio
 | **Respect** | Worthy fighters, even dead ones | Praises their potential openly | Ch.13: "Gide and Hansen actually had good potential" |
 | **Detachment** | Death of heroes in general | Doesn't mourn; states it plainly | Ch.13: "I didn't care much about who died." |
 | **Wistful Empathy** | Heroes wishing the master away | Private acknowledgment of his own past as a player-master; muses on Niflheimr's masterless heroes | Ch.14: "Hey, I was a past master too." |
+| **Cold Command Under Pressure** | Impossible mission brief | Withholds despair from the troops: "It'll be rougher for you, so I can't say things that'll make us sound weak." — morale managed by omission | Ch.26 |
+| **Vindicated Obsession** | Clue-hunting pays off | Floor 5–9 clue chain (stream, muddy ground, pre-ruin city) converges on the dam — his linked-quest playstyle is validated | Ch.26 |
 
 ### Emotional Patterns
 
@@ -381,7 +383,7 @@ Every character must show consistent emotional responses across chapters. Emotio
 
 ---
 
-## Two-Party Era Additions (Ch. 18-25)
+## Two-Party Era Additions (Ch. 18-26)
 
 ### Eolka Rivel Strashur
 
@@ -408,6 +410,8 @@ Every character must show consistent emotional responses across chapters. Emotio
 |---|---|---|---|
 | **Leadership Anxiety** | Being named Blue-lot leader over Jenna | "Looking at your expressions… I guess you don't trust me. I'm new here and don't have much experience in real fights." → resolves: "Don't worry, we won't lose to you." | Ch.19 |
 | **Regret** | Losing the Eolka lot draw | "*regretful* …. ." — accepts the fair-remix ruling without protest | Ch.20 |
+| **Dread → Resolve** | Handed the north-wall holding job vs ladder carts | "N-No way…" → objects twice ("That's not what I meant… we still can't win.") → accepts: "I got it. We'll do our best." | Ch.26 |
+| **Objection Courage** | Plan flaws she can't accept | Challenges Han's strategy openly despite his authority — he values it ("unlike you, is smart") | Ch.26 |
 
 ### Jenna Cirai
 
@@ -416,6 +420,7 @@ Every character must show consistent emotional responses across chapters. Emotio
 | **Fire Fear** | Brazier resistance training | "Th-Then, you're telling us to do this right now?!", "I don't.. want to do it… Since I stand at the back." — complies when Han offers to hold her hand in the flames | Ch.24 |
 | **Relief → Horror** | Excused from pain resistance, then deferred | "Phew" → "Heok?! Can I p-please do it later…" | Ch.24 |
 | **Playful Confidence** | Han's growth acknowledged | Teases him about needing compliments ("Who was it~?"); cheek-pinched for it | Ch.25 |
+| **Withheld-Intel Guilt** | Forgot/dared not report the gallops beyond the river | "Ugh, I wosn't shure…" (cheek-pinched) — delayed report nearly buried the dam deduction | Ch.26 |
 
 ### Aaron Delcut
 
@@ -424,6 +429,14 @@ Every character must show consistent emotional responses across chapters. Emotio
 | **Protective Courage** | Han/Eolka exposed during retreat | Takes crossbow bolts shielding them; holds the goblin line alone | Ch.22 |
 | **Growing Confidence** | Surviving Floor 8 beside a mage | "If you're tired, I'll protect you." (Han: "Seems like you've learnt how to say cocky things.") | Ch.23 |
 | **Dutiful Endurance** | Pain-resistance assignment | Accepts without protest despite dread ("*relieved* I… understand."); trains alone in his room since | Ch.24-25 |
+| **Protective Worry** | Party 1 sortying outside the walls | "It's too dangerous." — questions the east-gate plan before complying | Ch.26 |
+
+### Roderick Sajan
+
+| Emotion | Trigger | Response | Chapter Evidence |
+|---|---|---|---|
+| **Absurdity/Duty Conflict** | Learning the Defend fail condition | "How absurd… So we need to protect that statue while fighting enemies?" — protests, then takes up north-wall duty | Ch.26 |
+| **Pragmatic Retreat Instinct** | Impossible odds (3,000+ goblins) | Proposes abandoning the city for guerrilla attacks — rejected; complies without resentment | Ch.26 |
 
 ### Iselle
 
@@ -471,7 +484,8 @@ Heroes facing death should show fear, acceptance, or defiance — not just silen
 | Gide†/Hansen†/Dika | ✅ | ❌ | ❌ | ⚠️ | ✅ | ✅ |
 | Edis Callen | ⚠️ | ❌ | ⚠️ | ❌ | ⚠️ | ✅ |
 | Eolka Rivel Strashur | ✅ | ✅ | ✅ | ❌ | ❌ | ⚠️ |
+| Roderick Sajan | ⚠️ | ❌ | ❌ | ❌ | ⚠️ | ✅ |
 
 **Legend:** ✅ = Shown | ⚠️ = Implied/Partial | ❌ = Not Shown | † = Deceased
 
-> Matrix updated through Ch. 13. Changes from the Ch.1-8 version: Jenna Sadness ⚠️→✅ (relieved tears, Ch.12); Aaron Fear ⚠️→✅ (brink of death, Ch.11), Sadness ⚠️→✅ (grief/guilt, Ch.13); trainees Determination ⚠️→✅ (they trained hard; Han confirms their effort, Ch.13). Ch. 25 additions: Edis and Eolka rows added (see Two-Party Era section above).
+> Matrix updated through Ch. 13. Changes from the Ch.1-8 version: Jenna Sadness ⚠️→✅ (relieved tears, Ch.12); Aaron Fear ⚠️→✅ (brink of death, Ch.11), Sadness ⚠️→✅ (grief/guilt, Ch.13); trainees Determination ⚠️→✅ (they trained hard; Han confirms their effort, Ch.13). Ch. 25 additions: Edis and Eolka rows added (see Two-Party Era section above). Ch. 26 addition: Roderick Sajan row added; Edis Dread→Resolve, Jenna withheld-intel guilt, Aaron protective worry, Han cold command (see Two-Party Era section above).

@@ -28,6 +28,7 @@
 | Survival | Survive the horde for a set time | Floor 5 (Ch. 9) |
 | Explore | Investigate an unfamiliar location — satisfy requirements to pass safely | Floor 6 (Ch. 14) |
 | Cooperation | At least 2 parties required (multi-party scaling) | Floor 10+ (Ch. 24 hint: "1~?? Parties Enter") |
+| Defend | Protect an objective — stop the enemy from taking it | Floor 10 (Ch. 26) — first three-part warning = highest difficulty tier |
 
 ---
 
@@ -206,6 +207,26 @@ Floor 10+ introduces missions requiring **at least 2 parties** to participate.
 - **Tactical station** (Ch. 25): a system that lets the master give tactical guidelines to heroes during cooperation missions; complex for a newbie master; Han doubts ANYTNG knows how to use it
 - **Consumables system** (Ch. 25): health/mana potions can be carried by heroes and used in battle; 6 health potions total (3 per party); mana potions exclusively for Eolka; potions crafted in alchemy lab or magic hall; TIPS: "Consumables are a must for a hero's survival and victory, as well as to becoming a Pick Me Up pro."
 - **Floor 10 revealed (Ch. 25):** pre-ruined city from Floor 5 — the same city but "it hasn't been destroyed yet"; NPC present who can't see the heroes; time-shifted version of a familiar stage
+
+---
+
+## Floor 10 — Defend Mission (Ch. 26) — IN PROGRESS
+
+First cooperation mission; first **Defend** type; opened with a **three-part warning** — Han: "A three part warning message that signifies the highest difficulty."
+
+| Aspect | Details |
+|---|---|
+| Objective | "Stop the fall of the city" |
+| Fail condition | Destruction of the **'Twin Goddesses' statue** on the central tower → **all heroes die, no exceptions** (even if every goblin dies) |
+| Enemy forces | North forest: **Goblin Lv.??? ×2,213** (the only force with siege equipment); east, across the river: **Goblin Lv.??? ×899** |
+| Defenders | **Human soldiers Lv.??? ×353** + 10 heroes ≈ 360 vs 3,000+ goblins — ratio >10 to 1 ("Just by looking at this, it is the worst case scenario.") |
+| Siege equipment | **Ladder carts** (north army only); no battering rams anywhere — counter: destroy the ladders as they hook onto the walls |
+
+- **NPC perception rule**: heroes are visible and touchable to NPCs, but NPCs cannot see or hear them (Jenna's test — she spoke, got no reply; a porter felt his load suddenly grow heavy when touched)
+- **Mission failure = death**: there is no retreating out of a failed Defend mission — "No matter where we are, the moment we fail, we'll die."
+- **Hero combat power equivalence**: a five-hero party led by 3★s is worth about **fifty soldiers** (Han's estimate of Party 2)
+- **Linked quest confirmed**: the dam collapse flooded the river — reinforcement cavalry (horse gallops Jenna heard beyond it) cannot cross; clues from Floors 5–9 all converge on the dam
+- **Strategy split**: Party 2 (Edis) holds the north outer wall against ladder carts, falls back to the inner wall if it breaks, may use soldiers/refugees as bait; Party 1 sorties through the east gate to kill goblins and stop the dam collapse — "we're going after their heads"
 
 ---
 

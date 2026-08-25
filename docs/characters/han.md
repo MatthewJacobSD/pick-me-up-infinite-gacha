@@ -40,8 +40,8 @@
 | Agility | 21/21 base (26 while Berserk) |
 | Skills | Basic Swordsmanship (Lv.5), Basic Sword-Shield Technique (Lv.6, Ch. 25), Pain Tolerance (Lv.2→up), Composure (Lv.3), Berserker (Lv.1), Fire Resistance (Ch. 24), **Projectile Defense** (Ch. 25 — obtained via arrow-dodge training without shield) |
 | Growth Cost | Fixed at 5 — normal growth rate at 3★ |
-| Condition | Won the Open Duel vs Avant in Berserk mode; used Berserk again on Floor 7 (Ch. 19) and twice on Floor 8 (Ch. 22, stamina collapsed); obtained <Fire Resistance> skill via brazier endurance training (Ch. 24) |
-| Position | **Party 1 (Red) leader**; proposed and won approval for the two-party restructure (Ch. 19) |
+| Condition | Won the Open Duel vs Avant in Berserk mode; used Berserk again on Floor 7 (Ch. 19) and twice on Floor 8 (Ch. 22, stamina collapsed); obtained <Fire Resistance> skill via brazier endurance training (Ch. 24); now inside the Floor 10 Defend mission — commanding the city's defense (Ch. 26) |
+| Position | **Party 1 (Red) leader**; proposed and won approval for the two-party restructure (Ch. 19); de facto field commander of the Floor 10 defense (Ch. 26) |
 
 > Ch. 13 stat block no longer lists Quick Movements or Basic Sword-Shield Techniques (Lv.5) — skill set shown as of Lv.9. The Ch. 17 level-up notification names 'Basic Sword-Shield Technique' again (levelled up together with Pain Tolerance; new levels not displayed).
 > Total stats are close to a 3★ ("I'm level 10… And I've gotten MVP most of the battles") — too valuable for ANYTNG to synthesize now.
@@ -57,10 +57,10 @@
 | Iselle | Tense — she manages him, he knows more than she does; now openly calls him "Loki" and seeks his praise (Ch. 17) |
 | ANYTNG (Master) | Watching his own game being played recklessly; Han taunts him after destroying the Wolves ("Try synthesizing me if you dare"); **ANYTNG retaliates by sending Party 1 to Floor 8 instead of the planned Floor 4** (Ch. 21) — Han decodes it immediately: "Was he pissed off about what happened last time?! He's telling us to get fucked. Or he's saying that using the fourth floor as a test is boring?" — first active master-vs-hero spite move in the story |
 | Niflheimr | They know Loki is back — hunting him |
-| Edis Callen | Recruited defector from the disbanded Pulverizing Wolves (Ch. 17); appointed Party 2 (Blue) leader under him (Ch. 19) |
+| Edis Callen | Recruited defector from the disbanded Pulverizing Wolves (Ch. 17); appointed Party 2 (Blue) leader under him (Ch. 19); entrusted her with the Floor 10 north-wall holding job — "unlike you, is smart" (his private assessment, Ch. 26) |
 | Usher Roderick | Hand-picked protégé — ex-porter who absorbed his survival doctrine; tested and levelled via synthesis (Ch. 19) |
 | Eolka Rivel Strashur | Party 1's new magician (Ch. 20) — won her via lot after both leaders cheated; pressing her about her magic ("What magic can you use?"); uses synthesis-fear to motivate her |
-| Roderick (3★) | The Ch. 20 veteran guard he wanted for himself; lost him to Edis in the remix, sent to Party 2 |
+| Roderick (3★) | The Ch. 20 veteran guard he wanted for himself; lost him to Edis in the remix, sent to Party 2; rejected his guerrilla-retreat proposal on Floor 10 (Ch. 26) |
 
 ---
 
@@ -89,6 +89,7 @@
 21. **Ch. 23**: Floor 8 cleared (MVP Eolka); her full "Ignite! Burn! Transcend!" spell destroyed 20+ Goblin Raiders; Han codifies her as "tank without armor" — firepower for defense/mobility trade-off; **"I think I'm slowly approaching the time where I'll no longer be at the center"** — first explicit acknowledgement that his role is shifting from primary damage to leadership as Eolka's firepower outpaces his
 22. **Ch. 24**: Built the Magic Hall (magic research lab + alchemy lab + library + training annex combined); crafted 6 health potions + 2 magic potions via rhythm-game mini-game; walked through Eolka's fire 10 seconds to train fire resistance — obtained <Fire Resistance> skill; established triangular formation with Eolka at centre; trained Aaron in pain resistance and Jenna in Switching (dagger/arrow quick-switch); Party 2 likely headed to Floor 9; Floor 10 cooperation mission requires at least 2 parties
 23. **Ch. 25**: Obtained <Projectile Defense> via arrow-dodge training without shield; <Basic Sword-Shield Technique> levelled to Lv.6; pushed Eolka to decrease magic strength for faster casting/lower mana consumption (class 1-3 system explained); received Edis's Floor 9 report (muddy ground — linked-quest clue); ANYTNG challenged Floor 10 without waiting for full preparation; Floor 10 revealed as **pre-ruined city from Floor 5** ("It's that it hasn't been destroyed yet"); tactical station mechanic introduced; told Shurn to hide; 6 health potions distributed (3 per party); Edis tasked with regrouping at centre if separated
+24. **Ch. 26**: Floor 10 opened as a highest-difficulty **Defend** mission — decoded objective ("Stop the fall of the city") and the Twin Goddesses fail condition within five minutes of recon; surveyed all enemy forces (2,213 + 899 goblins vs ~360 defenders); rejected Roderick's guerrilla-retreat plan (mission failure = death anywhere); assigned Edis the north-wall holding job vs ladder carts with fallback/bait doctrine; deduced the dam chain from Jenna's gallop intel (reinforcements blocked by the flooded river); chose the sortie: Party 1 exits the east gate to kill goblins and stop the dam collapse — "we're going after their heads"
 
 ---
 

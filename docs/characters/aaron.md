@@ -72,6 +72,7 @@
 11. **Ch. 23**: "If you're tired, I'll protect you" — growing confidence; levelled up after Floor 8 clear (MVP Eolka); witnessed Eolka's full spell destroy 20+ raiders ("So this is magic…")
 12. **Ch. 24**: Assigned **Pain Resistance** training ("Aaron, I'm sorry, but you also have another thing to do") — rationale: health potions heal injuries but cause extreme pain in exchange; a fighter must endure it
 13. **Ch. 25**: Holed up in his room training pain resistance (absent from the training hall); basic spearmanship reached Lv.3; level snapshot Lv.6; issued a D-rank iron-plated armor and a support dagger
+14. **Ch. 26**: Enters the Floor 10 Defend mission; delivers refugee intel — goblins sighted at the north forest and east gate, no south/west exits, outer-wall massacre warning; questions the sortie plan ("It's too dangerous.")
 
 ---
 

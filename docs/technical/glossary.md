@@ -27,3 +27,9 @@
 | Fire Magic Classes | Mana Tier System | Class 1 ignition, Class 2 burning/explosive, Class 3 upward-directed explosion; higher class = higher mana consumption (Ch. 25) |
 | Tactical Station | Cooperation Command Layer | Mission system letting the master issue tactical guidelines to heroes during cooperation missions; complex for new players (Ch. 25) |
 | Tank Without Armor | Artillery-Caster Doctrine | Han's analogy for fragile heavy-damage mages: firepower in exchange for defense and mobility — party must protect the cast window (Ch. 23) |
+| Defend Mission | Objective-Protection Instance | Mission type where the goal is to protect an objective ("Stop the fall of the city"); mission failure kills every hero regardless of location (Ch. 26) |
+| Three-Part Warning | Highest Difficulty Tier | Mission opening with three consecutive "Warning!" messages — signifier of maximum difficulty (first seen Ch. 26) |
+| Twin Goddesses | Fail-Condition Object | Statue on the central tower; its destruction fails the Defend mission even if all enemies are killed (Ch. 26) |
+| Ladder Cart | Anti-Wall Siege Equipment | The only siege equipment on Floor 10; exclusive to the northern goblin army; counter: destroy ladders as they hook onto walls (Ch. 26) |
+| NPC Perception Gap | Observer-Only Presence | Heroes are visible and touchable to NPCs but cannot be heard or seen by them (Jenna's porter test, Ch. 26) |
+| Bait Doctrine | Sanctioned Attrition Tactic | Master-approved use of soldiers/refugees as bait when defenses break ("It might be necessary." — Han, Ch. 26) |

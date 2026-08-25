@@ -110,6 +110,7 @@ Skills: Intermediate Fire Magic (level 2)
 9. **Ch. 23**: Full spell sequence — "Ignite! Burn! Transcend!" — destroys 20+ Goblin Raiders in one go; **MVP of Floor 8**; Aaron and Eolka level up; collapses mid-victory boast from total mana depletion; Han analyses: "tank without armor" — firepower for defense/mobility trade-off
 10. **Ch. 24**: Stamina training imposed — 3 laps daily, no weights, slow speed; potato-dinner threat as leverage ("Using food against me, how cheap!"); trains at the magic hall's exclusive training room
 11. **Ch. 25**: Class system drilled (casting speed up, mana down, class-1 usage); **MVP** of the fourth-floor practice clear — levels up to **Lv.4**; level snapshot: maxed for current floors
+12. **Ch. 26**: Enters the Floor 10 Defend mission with Party 1; Han's narration earmarks her as the area-defense mage of the defense plan (no dialogue this chapter)
 
 ---
 
