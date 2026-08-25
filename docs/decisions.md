@@ -124,3 +124,4 @@ Process:
 - **`docs/characters/` = named characters only.** Dedicated character records are created/maintained exclusively for characters **explicitly named in the story**. Do not create permanent records for generic/unnamed NPCs or background/temporary NPCs merely because they appear in a chapter.
 - **Promotion rule:** if an unnamed NPC later gains a name, becomes established/recurring, or is otherwise promoted into a defined character, create their record at that point and **backfill** relevant information from earlier appearances where useful.
 - Keep these two concepts separate during audits so the project does not accumulate dozens of unnecessary NPC documents.
+- **Character-file relevance ruling (v0.0.39):** naming alone doesn't force a dedicated file — the user confirms per character. Edis Callen got `edis.md` (Party 2 leader with a full arc); Shurn did not (user: "not relevant" — tracked via character-tracker only).

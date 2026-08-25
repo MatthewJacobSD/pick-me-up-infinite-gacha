@@ -383,7 +383,7 @@ Every character must show consistent emotional responses across chapters. Emotio
 
 ---
 
-## Two-Party Era Additions (Ch. 18-26)
+## Two-Party Era Additions (Ch. 18-27)
 
 ### Eolka Rivel Strashur
 
@@ -394,6 +394,21 @@ Every character must show consistent emotional responses across chapters. Emotio
 | **Fear-Driven Compliance** | Witnessing synthesis | "..That's repulsive." → fights anyway; accepts stamina training under potato-threat leverage ("Using food against me, how cheap!") | Ch.20, 24 |
 | **Vindication Jubilation** | Her magic devastating the enemy | "This is the power of the great fire! Hahahahah!" — collapses mid-boast from mana depletion | Ch.23 |
 | **Grudging Respect** (developing) | Han's correct reads and rescue | Complies with class-1 drilling; no longer questions his orders by Ch.25 | Ch.24-25 |
+| **Battle Pride** | Asked if she can sustain the sortie | "I can. Who do you take me for?! I can use it a hundred times more!" — mana potion discipline accepted without complaint | Ch.27 |
+
+### Shurn
+
+| Emotion | Trigger | Response | Chapter Evidence |
+|---|---|---|---|
+| **Fear Paralysis** | Following the sortie to the gate | Found hiding at the pulley; Notification: all stats −30%; "*scared* Yes? Yes!" | Ch.27 |
+| **Compliance via Earned Acknowledgment** | Han's conditional promise instead of comfort | "Go to Edis… If you're still alive after the fight, I'll acknowledge you." → "*shouts* I-I understand. Ack!" | Ch.27 |
+
+### Floor 10 City NPCs
+
+| Emotion | Trigger | Response | Chapter Evidence |
+|---|---|---|---|
+| **Terror of the Unseen** | Heroes' invisible work at the gate | "Did an evil spirit invade?!", "Heok!", "Ackkk!" — attribute the heroes' effects to spirits/ghosts | Ch.26-27 |
+| **Despair** | Siege pressure + unexplainable events | "…*cry* Did the goddess abandon us?!" — morale already at rock bottom before the battle | Ch.26-27 |
 
 ### ANYTNG (Master)
 
@@ -488,4 +503,4 @@ Heroes facing death should show fear, acceptance, or defiance — not just silen
 
 **Legend:** ✅ = Shown | ⚠️ = Implied/Partial | ❌ = Not Shown | † = Deceased
 
-> Matrix updated through Ch. 13. Changes from the Ch.1-8 version: Jenna Sadness ⚠️→✅ (relieved tears, Ch.12); Aaron Fear ⚠️→✅ (brink of death, Ch.11), Sadness ⚠️→✅ (grief/guilt, Ch.13); trainees Determination ⚠️→✅ (they trained hard; Han confirms their effort, Ch.13). Ch. 25 additions: Edis and Eolka rows added (see Two-Party Era section above). Ch. 26 addition: Roderick Sajan row added; Edis Dread→Resolve, Jenna withheld-intel guilt, Aaron protective worry, Han cold command (see Two-Party Era section above).
+> Matrix updated through Ch. 13. Changes from the Ch.1-8 version: Jenna Sadness ⚠️→✅ (relieved tears, Ch.12); Aaron Fear ⚠️→✅ (brink of death, Ch.11), Sadness ⚠️→✅ (grief/guilt, Ch.13); trainees Determination ⚠️→✅ (they trained hard; Han confirms their effort, Ch.13). Ch. 25 additions: Edis and Eolka rows added (see Two-Party Era section above). Ch. 26 addition: Roderick Sajan row added; Edis Dread→Resolve, Jenna withheld-intel guilt, Aaron protective worry, Han cold command (see Two-Party Era section above). Ch. 27 additions: Shurn fear/compliance and Floor 10 NPC terror/despair subsections; Eolka battle-pride row.

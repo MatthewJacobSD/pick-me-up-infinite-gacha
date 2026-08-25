@@ -33,6 +33,8 @@
 |---|---|---|
 | Intermediate Fire Magic | Lv.2 | Max cast up to **third-circle fire magic** (Ch. 21); rare gacha-only class (growing 1★s never yields magicians) |
 | Support Magic | — | **Cannot or refuses** ("Support magic? That's magic that a 3-runa would learn. Asking if a fire magic can use support magic, gosh…" — Ch. 21). "3-runa" = magic caster type designation; "3-circle" = mage rank measure (both intentional world-building per user ruling) |
+| Named Spells | La Gran Sedus (Ch. 21), **La Gran Integio** (Ch. 27) | La Gran Integio = large-scale flame wall laid before the east gate; distinct incantation from the Ch. 21 cast |
+| Spell Sequence | "Ignite! Burn! Transcend!" | Multi-stage finisher (Ch. 23); stage discipline in normal combat: stage two for blasts, stage one spread for coverage (Ch. 26-27) |
 
 ### Stat Panel (Ch. 21 — post-level-up from Yon/Zenin synthesis)
 
@@ -111,6 +113,7 @@ Skills: Intermediate Fire Magic (level 2)
 10. **Ch. 24**: Stamina training imposed — 3 laps daily, no weights, slow speed; potato-dinner threat as leverage ("Using food against me, how cheap!"); trains at the magic hall's exclusive training room
 11. **Ch. 25**: Class system drilled (casting speed up, mana down, class-1 usage); **MVP** of the fourth-floor practice clear — levels up to **Lv.4**; level snapshot: maxed for current floors
 12. **Ch. 26**: Enters the Floor 10 Defend mission with Party 1; Han's narration earmarks her as the area-defense mage of the defense plan (no dialogue this chapter)
+13. **Ch. 27**: Sortie execution — casts **La Gran Integio** then the Ignite→Burn gate blast on Han's timing; runs 20-second cast cycles with a mana potion after every cast; vows "I can use it a hundred times more!" when asked if she can keep going — the party's mobile artillery through the horde
 
 ---
 
@@ -127,6 +130,8 @@ Skills: Intermediate Fire Magic (level 2)
 > "You have a complaint, or something?" (Ch.21)
 
 > "*shouts, proud* Of course! They call me Rivel's Witch!" (Ch.21)
+
+> "I can. Who do you take me for?! I can use it a hundred times more!" (Ch.27)
 
 > "*shouts* One minute!" (Ch.21)
 

@@ -87,6 +87,7 @@
 15. **Ch. 24**: Assigned **Switching** training; balks at the fire-resistance brazier ("I don't.. want to do it… Since I stand at the back.") until Han offers to hold her hand in the flames; given triangular-formation defender duty for Eolka ("She's high maintenance…") and warned pain resistance awaits her in the future
 16. **Ch. 25**: Learns Switching at an abnormal rate — "Her origin is 1-star, but she has great potential. The rate at which she's learning is abnormal." (Han: "If I didn't know about Pick Me Up, Jenna would've been seriously underdeveloped."); runs Han's arrow-dodge drills that yield him <Projectile Defense>; reaches **Lv.8**
 17. **Ch. 26**: Tests the NPC perception rule on a porter (spoke with no reply; he felt his load grow heavy when touched) — heroes can be seen and touched but not heard/seen by NPCs; hears horse gallops beyond the river but withholds it until pressed ("Ugh, I wosn't shure…", cheek-pinched) — her intel unlocks Han's dam-collapse deduction and the east-gate sortie
+18. **Ch. 27**: Wall overwatch during the gate opening ("there are already so many goblins gathered right outside"), then point position through the fire path: "Yes sir! I'll be going ahead!"
 
 ---
 

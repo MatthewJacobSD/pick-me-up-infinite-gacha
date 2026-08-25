@@ -1,6 +1,6 @@
 # Story Timeline
 
-> Chronological events through Chapter 26.
+> Chronological events through Chapter 27.
 >
 > **Note:** The timeline is not 1 chapter = 1 day. Time skips between chapters are normal and expected.
 
@@ -189,6 +189,10 @@
 | **NPC perception rule discovered (Ch. 26):** heroes are visible and touchable to NPCs but cannot be seen or heard by them (Jenna's test on a porter NPC) | Ch. 26 |
 | **Linked quest confirmed (Ch. 26):** the dam collapse flooded the river — reinforcement cavalry (horse gallops Jenna heard beyond it) can't cross; Floor 5–9 clues converge on the dam | Ch. 26 |
 | **Floor 10 strategy split (Ch. 26):** Party 2 (Edis) holds the north outer wall vs ladder carts (~fifty-soldiers worth of power), fallback inner wall, bait doctrine sanctioned; Party 1 sorties through the east gate to kill goblins and stop the dam collapse — "we're going after their heads"; Roderick's guerrilla-retreat proposal rejected | Ch. 26 |
+| **East-gate sortie launches (Ch. 27):** refugees funnel to the inner wall; Jenna takes wall overwatch, Aaron the gate pulley; Eolka's new large-scale spell **La Gran Integio** + Ignite→Burn clears a path outside the gate; NPCs panic at the invisible heroes' work ("Did an evil spirit invade?!", "Did the goddess abandon us?!") | Ch. 27 |
+| **Gate closed behind Party 1** — escape route blocked, forward only: "I'll kill you all!" | Ch. 27 |
+| **Shurn reassigned mid-battle** to Edis/Party 2 — fear shown via Notification (all stats −30%); Han's conditional promise: "If you're still alive after the fight, I'll acknowledge you." | Ch. 27 |
+| **20-second cast-cycle advance (Ch. 27):** party rotates positions every cycle (goblins lock onto Eolka — mage-first targeting again); mana potion per cast; rain extinguishes fire barricades rapidly but not Eolka's flames; advance toward the river continues using fire as a moving shield | Ch. 27 |
 
 ---
 
@@ -196,8 +200,8 @@
 
 | Event | Expected Chapter |
 |---|---|
-| Floor 10 Defend outcome — Party 1's dam sortie; identity of the blocked reinforcement cavalry | Ch. 27+ |
-| Linked-quest thread — dam destruction now confirmed as the win condition; remaining: what lies beyond the dam / who sent reinforcements | Ch. 27+ |
+| Floor 10 Defend outcome — Party 1 advancing to the river/dam through the horde; identity of the blocked reinforcement cavalry | Ch. 28+ |
+| Linked-quest thread — dam destruction confirmed as the win condition; sortie in progress; remaining: what lies beyond the dam / who sent reinforcements | Ch. 28+ |
 | Han's promotion to 2★ (materials acquired; Lv.10 max) | Overdue since Ch. 14/17 |
 | Large goblin habitat / next stream chain | Ch. 17+ |
 | Plants of Life gathering | Ch. 15+ |

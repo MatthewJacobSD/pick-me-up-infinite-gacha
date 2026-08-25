@@ -301,7 +301,7 @@
 
 ---
 
-## Defend Missions & Special Rules (Ch. 26)
+## Defend Missions & Special Rules (Ch. 26-27)
 
 New mechanics surfaced by the Floor 10 Defend mission:
 
@@ -309,17 +309,35 @@ New mechanics surfaced by the Floor 10 Defend mission:
 - **Three-part warning** = highest difficulty tier (first time a mission opened with three consecutive warnings)
 - **Mission-fail = death**: on failure every hero dies regardless of location or progress — "No matter where we are, the moment we fail, we'll die."
 - **Special-mission object — 'Twin Goddesses' statue** (central tower): if destroyed, the mission fails even if all enemies are killed
-- **NPC perception gap**: heroes can be seen and touched by NPCs, but NPCs cannot see or hear them (Jenna's test: no reply when she spoke; porter felt his load grow heavy when she touched it)
+- **NPC perception gap**: heroes can be seen and touched by NPCs, but NPCs cannot see or hear them (Jenna's test: no reply when she spoke; porter felt his load grow heavy when she touched it) — NPC crowds panic at the heroes' invisible work ("Did an evil spirit invade?!")
 - **Hero combat-power equivalence**: a five-hero party led by 3★s ≈ **fifty soldiers** (Han's estimate)
 - **Bait doctrine sanctioned**: Han authorized using soldiers/refugees as bait if the outer wall breaks ("It might be necessary.")
 - **Ladder carts**: the only siege equipment present; exclusive to the northern goblin army — counter is destroying ladders as they hook onto walls
 
+### Cast-Cycle Doctrine (Ch. 27)
+
+Sortie combat runs on a repeating rhythm built around Eolka's ~20-second cast window:
+
+| Rule | Details |
+|---|---|
+| Countdown | Han counts down each cycle aloud in his mind ("Twenty seconds left until Eolka casts!") |
+| Rotation | The party **changes positions every cycle** — goblins lock onto the casting mage (mage-first targeting confirmed again) |
+| Stage discipline | Stage two flames for the initial path-clearing blast; stage one spread flames for sustained area coverage |
+| Mana protocol | Eolka drinks a mana potion after every cast — "Drink one each time you use it." |
+| Moving shield | The party advances behind the fire wall, using it as cover toward the river |
+
+### Environmental Interaction (Ch. 27)
+
+- **Rain vs fire**: rain extinguishes fire barricades rapidly, forcing shorter cast cycles; it does **not** stop Eolka's spells themselves
+- **Heat bleed**: flame heat passes through leather armor but is "somewhat bearable" — Fire Resistance training synergy
+- **Fear notification**: fear debuffs surface as system Notifications with stat effects — "Shurn (1 star) is scared! All stats have been decreased by 30%."
+
 ---
 
-## Current Roster (Ch. 26)
+## Current Roster (Ch. 27)
 
-**Party 1 (Red) — leader Han:** Islat Han, Jenna Cirai, Aaron Delcut, Eolka Rivel Strashur (3★ Magician), Shurn (1★)
-**Party 2 (Blue) — leader Edis:** Edis Callen, Usher Roderick, Dika, Roderick Sajan (3★ Guard), Mehkin (1★)
+**Party 1 (Red) — leader Han:** Islat Han, Jenna Cirai, Aaron Delcut, Eolka Rivel Strashur (3★ Magician) *(Shurn reassigned to Party 2 mid-mission, Ch. 27)*
+**Party 2 (Blue) — leader Edis:** Edis Callen, Usher Roderick, Dika, Roderick Sajan (3★ Guard), Mehkin (1★), Shurn (1★, joined Ch. 27)
 
 | Name | Star | Role | Status |
 |---|---|---|---|
@@ -331,7 +349,7 @@ New mechanics surfaced by the Floor 10 Defend mission:
 | Eolka Rivel Strashur | 3★ | Magician (Fire) | Alive — **Lv.4**; MVP Floor 8; spell sequence "Ignite! Burn! Transcend!"; magic classes: 1=ignition, 2=explosive, 3=directed; Han directive: use class 1 for speed/mana; custom magic clothing (family heirloom); stationary casting; Party 1 |
 | Roderick Sajan | 3★ | Veteran city guard | Alive — Rare pull Ch. 20; surname confirmed Ch. 25; old man, high sense of duty; Party 2; **distinct from Usher *Roderick*** (family name), user ruling |
 | Usher Roderick | 1★ | Porter → Mercenary trainee | Alive — Lv.3; hand-picked by Han; Party 2 |
-| Shurn | 1★ | Trainee | Alive — Lv.1, basic swordsmanship Lv.3; joined Party 1 Ch. 25; too inexperienced for combat (Han: hide during fights) |
+| Shurn | 1★ | Trainee | Alive — Lv.1, basic swordsmanship Lv.3; joined Party 1 Ch. 25; too inexperienced for combat (Han: hide during fights); **reassigned to Party 2 mid-mission (Ch. 27)** after fear debuff (all stats −30%) |
 | Mehkin | 1★ | Trainee | Alive — joined Party 2 Ch. 25 |
 | Enok | 1★ | Support (Carpenter) | Alive — mentor for carpentry students |
 | Chloe | 1★ | Support (Cook) | Alive — bakes potato bread; mentor list member |

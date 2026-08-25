@@ -210,7 +210,7 @@ Floor 10+ introduces missions requiring **at least 2 parties** to participate.
 
 ---
 
-## Floor 10 — Defend Mission (Ch. 26) — IN PROGRESS
+## Floor 10 — Defend Mission (Ch. 26-27) — IN PROGRESS
 
 First cooperation mission; first **Defend** type; opened with a **three-part warning** — Han: "A three part warning message that signifies the highest difficulty."
 
@@ -227,6 +227,13 @@ First cooperation mission; first **Defend** type; opened with a **three-part war
 - **Hero combat power equivalence**: a five-hero party led by 3★s is worth about **fifty soldiers** (Han's estimate of Party 2)
 - **Linked quest confirmed**: the dam collapse flooded the river — reinforcement cavalry (horse gallops Jenna heard beyond it) cannot cross; clues from Floors 5–9 all converge on the dam
 - **Strategy split**: Party 2 (Edis) holds the north outer wall against ladder carts, falls back to the inner wall if it breaks, may use soldiers/refugees as bait; Party 1 sorties through the east gate to kill goblins and stop the dam collapse — "we're going after their heads"
+
+### Sortie Execution (Ch. 27)
+
+- Refugees funnel to the inner wall behind the departing party; the gate **closes** once they're out — escape route blocked, forward only
+- Gate-opening sequence: Eolka's large-scale flame wall **La Gran Integio** → Aaron opens the pulley gate → "Ignite!" / "Burn!" detonated **outside** (Han: "Don't blow up the gate!") to clear the gathered horde
+- Advance runs on the **20-second cast-cycle doctrine** (see heroes.md): rotate positions every cycle, advance behind the fire as a moving shield toward the river
+- Rain extinguishes fire barricades rapidly — weather directly shapes magic tactics on this stage
 
 ---
 

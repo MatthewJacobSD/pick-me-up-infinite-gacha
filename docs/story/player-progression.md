@@ -252,6 +252,16 @@
 - **Strategy split executed**: Party 2 holds north outer wall vs ladder carts (fallback inner wall; bait doctrine sanctioned); Party 1 sorties east gate to kill goblins and stop the dam collapse — "we're going after their heads."
 - **Roderick Sajan's retreat proposal rejected** — guerrilla-style attacks outside the city denied by Han.
 
+### Chapter 27
+
+- **East-gate sortie launches**: refugees funnel to the inner wall; Jenna on wall overwatch, Aaron on the gate pulley; Eolka casts stage two on Han's signal.
+- **New spell — La Gran Integio**: large-scale flame wall laid before the gate; Ignite→Burn detonated outside to clear the gathered horde ("Don't blow up the gate! Make it explode outside!").
+- **Gate closed behind Party 1** — escape route blocked; "The only way now is forward." / "I'll kill you all!"
+- **Shurn reassigned** to Edis mid-battle after a fear Notification (all stats −30%); Han attaches a conditional promise: "If you're still alive after the fight, I'll acknowledge you."
+- **Cast-cycle doctrine in action**: ~20-second cast windows counted by Han; party rotates positions every cycle (goblins lock onto Eolka); mana potion per cast; stage-one spread flames for area coverage.
+- **Rain interaction**: rain rapidly extinguishes fire barricades — advance pace dictated by weather; heat through leather armor "somewhat bearable" (Fire Resistance synergy).
+- **Advance continues toward the river** using fire as a moving shield — dam destruction is the objective.
+
 ---
 
 ## Tracking Notes

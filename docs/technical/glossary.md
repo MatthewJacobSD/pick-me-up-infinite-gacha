@@ -33,3 +33,7 @@
 | Ladder Cart | Anti-Wall Siege Equipment | The only siege equipment on Floor 10; exclusive to the northern goblin army; counter: destroy ladders as they hook onto walls (Ch. 26) |
 | NPC Perception Gap | Observer-Only Presence | Heroes are visible and touchable to NPCs but cannot be heard or seen by them (Jenna's porter test, Ch. 26) |
 | Bait Doctrine | Sanctioned Attrition Tactic | Master-approved use of soldiers/refugees as bait when defenses break ("It might be necessary." — Han, Ch. 26) |
+| La Gran Integio | Large-Scale Flame Wall | Eolka's second named incantation (first: La Gran Sedus, Ch. 21); laid before the east gate to open the sortie path (Ch. 27) |
+| Cast-Cycle Rotation | Mage-Timing Combat Rhythm | ~20-second cast windows counted by Han; party changes positions every cycle because enemies lock onto the casting mage (Ch. 27) |
+| Mana Potion Protocol | Per-Cast Resource Rule | Caster drinks a mana potion after every cast ("Drink one each time you use it." — Ch. 27) |
+| Fear Notification | Stat Debuff Popup | System message surfacing a hero's fear with stat effects: "All stats have been decreased by 30%" (Shurn, Ch. 27) |

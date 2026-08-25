@@ -61,6 +61,7 @@
 | Usher Roderick | Hand-picked protégé — ex-porter who absorbed his survival doctrine; tested and levelled via synthesis (Ch. 19) |
 | Eolka Rivel Strashur | Party 1's new magician (Ch. 20) — won her via lot after both leaders cheated; pressing her about her magic ("What magic can you use?"); uses synthesis-fear to motivate her |
 | Roderick (3★) | The Ch. 20 veteran guard he wanted for himself; lost him to Edis in the remix, sent to Party 2; rejected his guerrilla-retreat proposal on Floor 10 (Ch. 26) |
+| Shurn | Dead weight he refuses to coddle — sent back mid-battle with a conditional acknowledgment promise instead of comfort (Ch. 27) |
 
 ---
 
@@ -90,6 +91,7 @@
 22. **Ch. 24**: Built the Magic Hall (magic research lab + alchemy lab + library + training annex combined); crafted 6 health potions + 2 magic potions via rhythm-game mini-game; walked through Eolka's fire 10 seconds to train fire resistance — obtained <Fire Resistance> skill; established triangular formation with Eolka at centre; trained Aaron in pain resistance and Jenna in Switching (dagger/arrow quick-switch); Party 2 likely headed to Floor 9; Floor 10 cooperation mission requires at least 2 parties
 23. **Ch. 25**: Obtained <Projectile Defense> via arrow-dodge training without shield; <Basic Sword-Shield Technique> levelled to Lv.6; pushed Eolka to decrease magic strength for faster casting/lower mana consumption (class 1-3 system explained); received Edis's Floor 9 report (muddy ground — linked-quest clue); ANYTNG challenged Floor 10 without waiting for full preparation; Floor 10 revealed as **pre-ruined city from Floor 5** ("It's that it hasn't been destroyed yet"); tactical station mechanic introduced; told Shurn to hide; 6 health potions distributed (3 per party); Edis tasked with regrouping at centre if separated
 24. **Ch. 26**: Floor 10 opened as a highest-difficulty **Defend** mission — decoded objective ("Stop the fall of the city") and the Twin Goddesses fail condition within five minutes of recon; surveyed all enemy forces (2,213 + 899 goblins vs ~360 defenders); rejected Roderick's guerrilla-retreat plan (mission failure = death anywhere); assigned Edis the north-wall holding job vs ladder carts with fallback/bait doctrine; deduced the dam chain from Jenna's gallop intel (reinforcements blocked by the flooded river); chose the sortie: Party 1 exits the east gate to kill goblins and stop the dam collapse — "we're going after their heads"
+25. **Ch. 27**: Executed the sortie — stage-disciplined gate blast (La Gran Integio + Ignite/Burn detonated outside), ran the 20-second cast-cycle advance with position rotations against Eolka-targeting goblins; adapted to rain shortening his fire barricades; cut Shurn loose mid-battle with a conditional promise ("If you're still alive after the fight, I'll acknowledge you") — leadership via earned acknowledgment, not pity; sealed the party's resolve when the gate closed: "I'll kill you all!"
 
 ---
 
