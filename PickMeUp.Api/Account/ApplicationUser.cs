@@ -3,9 +3,7 @@ using PickMeUp.Api.Account.Authentication;
 
 namespace PickMeUp.Api.Account
 {
-    // User account entity.
-    // Extends ASP.NET Identity with domain-specific fields (email value object,
-    // password value object, display name, account status).
+    // User account entity extending ASP.NET Identity with domain fields.
 
     public class ApplicationUser
     {
@@ -18,7 +16,6 @@ namespace PickMeUp.Api.Account
 
         // ── Profile ───────────────────────────────────────────────
 
-        // Optional public display name (distinct from Username).
         public string? ShowUsername { get; private set; }
 
         // ── Status ────────────────────────────────────────────────
@@ -28,16 +25,13 @@ namespace PickMeUp.Api.Account
         public DateTime CreatedAtUtc { get; private set; } = DateTime.UtcNow;
 
         // ── External Logins ───────────────────────────────────────
-        // Linked OAuth logins (Google, Facebook). Managed by ASP.NET Identity.
 
         public ICollection<IdentityUserLogin<Guid>> Logins { get; private set; } = [];
 
         // ── Constructors ──────────────────────────────────────────
 
-        // Private constructor for EF Core materialisation.
         private ApplicationUser() { }
 
-        // Local account (email + password).
         public ApplicationUser(string username, Email email, Password password)
         {
             Id = Guid.NewGuid();
@@ -46,7 +40,6 @@ namespace PickMeUp.Api.Account
             PasswordValue = password;
         }
 
-        // OAuth account (no local password).
         public ApplicationUser(string username, Email email)
         {
             Id = Guid.NewGuid();
@@ -56,7 +49,6 @@ namespace PickMeUp.Api.Account
 
         // ── Password Management ───────────────────────────────────
 
-        // Changes password after verifying the current one.
         public void ChangePassword(string currentPlainPassword, string newPlainPassword, IPasswordHasher<ApplicationUser> hasher)
         {
             if (PasswordValue is null)

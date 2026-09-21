@@ -1,7 +1,6 @@
 ﻿namespace PickMeUp.Api.Account.Authentication.Session
 {
     // Base class for token configuration (access and refresh).
-    // Holds the signing key and expiry duration.
 
     public abstract class TokenConfig
     {

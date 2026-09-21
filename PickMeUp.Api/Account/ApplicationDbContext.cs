@@ -5,7 +5,6 @@ using Microsoft.EntityFrameworkCore;
 namespace PickMeUp.Api.Account
 {
     // EF Core DbContext for ASP.NET Identity.
-    // Maps ApplicationUser and IdentityRole<Guid> to the database.
 
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser, IdentityRole<Guid>, Guid>
     {

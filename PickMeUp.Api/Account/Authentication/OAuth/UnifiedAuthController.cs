@@ -4,16 +4,7 @@ using PickMeUp.Api.Account.Authentication.Session;
 
 namespace PickMeUp.Api.Account.Authentication.OAuth
 {
-    // Main OAuth controller. Bridges the browser OAuth flow with the Unity client.
-    //
-    // Flow:
-    //   1. Unity calls GET /api/auth/login/{provider} → gets redirect URL.
-    //   2. Browser follows redirect, provider authenticates, redirects to callback.
-    //   3. GET /api/auth/callback/{provider} → validates state, exchanges code,
-    //      creates account, generates a short-lived loginCode.
-    //   4. Unity polls POST /api/auth/consume-login-code → exchanges loginCode
-    //      for accessToken + refreshToken.
-    //   5. POST /api/auth/logout → revokes the session.
+    // Main OAuth controller bridging the browser OAuth flow with the Unity client.
 
     [ApiController]
     [Route("api/auth")]
@@ -40,7 +31,7 @@ namespace PickMeUp.Api.Account.Authentication.OAuth
         private readonly Jwt _jwt = jwt;
         private readonly IDistributedCache _cache = cache;
 
-        // Step 1 — Unity calls this to get the provider's redirect URL.
+        // 1. Unity calls GET /api/auth/login/{provider} → gets redirect URL.
         [HttpGet("login/{provider}")]
         public IActionResult Login(string provider)
         {
@@ -52,8 +43,8 @@ namespace PickMeUp.Api.Account.Authentication.OAuth
             return Ok(new { redirectUrl });
         }
 
-        // Step 2 — Provider redirects here after user authenticates.
-        // Creates account if needed, generates loginCode for Unity.
+        // 2. GET /api/auth/callback/{provider} → validates state, exchanges code,
+        //    creates account, generates a short-lived loginCode.
         [HttpGet("callback/{provider}")]
         public async Task<IActionResult> Callback(
             string provider,
@@ -86,11 +77,11 @@ namespace PickMeUp.Api.Account.Authentication.OAuth
                 }
             );
 
-            // Redirect browser to a page Unity can detect.
             return Redirect($"https://yourgame.com/auth/complete?loginCode={loginCode}");
         }
 
-        // Step 3 — Unity polls this with the loginCode to get JWT tokens.
+        // 3. Unity polls POST /api/auth/consume-login-code → exchanges loginCode
+        //    for accessToken + refreshToken.
         [HttpPost("consume-login-code")]
         public async Task<IActionResult> ConsumeLoginCode([FromBody] LoginCodeRequest req)
         {
@@ -127,7 +118,7 @@ namespace PickMeUp.Api.Account.Authentication.OAuth
             });
         }
 
-        // Step 4 — Unity calls this on logout to revoke the session.
+        // 4. POST /api/auth/logout → revokes the session.
         [HttpPost("logout")]
         public async Task<IActionResult> Logout([FromBody] LogoutRequest req)
         {

@@ -2,6 +2,7 @@
 
 namespace PickMeUp.Api.Account.Profile.ProfileSettings.Social
 {
+    // ── Social Repository ──────────────────────────────
     // MongoDB implementation of ISocialRepository.
     // Each user has one SocialDocument in the "social" collection.
     // Friend/block operations are bidirectional (update both users).
@@ -10,7 +11,7 @@ namespace PickMeUp.Api.Account.Profile.ProfileSettings.Social
     {
         private readonly IMongoCollection<SocialDocument> _collection = db.GetCollection<SocialDocument>("social");
 
-        // Returns existing document or creates a new one.
+        // 1. Look up existing document or create a new one.
         private async Task<SocialDocument> GetOrCreateAsync(string userId)
         {
             var doc = await _collection.Find(x => x.UserId == userId).FirstOrDefaultAsync();
@@ -24,7 +25,7 @@ namespace PickMeUp.Api.Account.Profile.ProfileSettings.Social
             return doc;
         }
 
-        // ── Friends ───────────────────────────────────────────────
+        // ── Friends ────────────────────────────────────
 
         public async Task<bool> AreFriendsAsync(string userA, string userB)
         {
@@ -62,7 +63,7 @@ namespace PickMeUp.Api.Account.Profile.ProfileSettings.Social
             return doc.Friends;
         }
 
-        // ── Blocks ────────────────────────────────────────────────
+        // ── Blocks ─────────────────────────────────────
 
         public async Task<bool> IsBlockedAsync(string blockerId, string targetId)
         {
@@ -91,7 +92,7 @@ namespace PickMeUp.Api.Account.Profile.ProfileSettings.Social
             return doc.Blocks;
         }
 
-        // ── Friend Requests ───────────────────────────────────────
+        // ── Friend Requests ────────────────────────────
 
         public async Task<bool> HasPendingRequestAsync(string senderId, string receiverId)
         {
@@ -117,7 +118,9 @@ namespace PickMeUp.Api.Account.Profile.ProfileSettings.Social
                 Builders<SocialDocument>.Update.AddToSet(x => x.FriendRequests, request));
         }
 
-        // Updates the status of a specific friend request using positional operator.
+        // 1. Filter to receiver's document.
+        // 2. Match the specific request by sender/receiver IDs.
+        // 3. Set status via positional operator.
         public async Task UpdateFriendRequestStatusAsync(string senderId, string receiverId, FriendRequestStatus status)
         {
             var filter = Builders<SocialDocument>.Filter.And(
@@ -131,7 +134,7 @@ namespace PickMeUp.Api.Account.Profile.ProfileSettings.Social
             await _collection.UpdateOneAsync(filter, update);
         }
 
-        // ── Party Invites ─────────────────────────────────────────
+        // ── Party Invites ──────────────────────────────
 
         public async Task AddPartyInviteAsync(PartyInvite invite)
         {
@@ -148,6 +151,9 @@ namespace PickMeUp.Api.Account.Profile.ProfileSettings.Social
                 r.ToUserId == receiverId);
         }
 
+        // 1. Filter to receiver's document.
+        // 2. Match the specific invite by sender/receiver IDs.
+        // 3. Set status via positional operator.
         public async Task UpdatePartyInviteStatusAsync(string senderId, string receiverId, PartyInviteStatus status)
         {
             var filter = Builders<SocialDocument>.Filter.And(

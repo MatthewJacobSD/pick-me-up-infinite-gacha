@@ -1,7 +1,6 @@
 ﻿namespace PickMeUp.Api.Account.Authentication.Session
 {
-    // JWT configuration root. Holds issuer, audience, and token configs.
-    // Maps to the "Jwt" section in appsettings.
+    // JWT configuration root mapping to the "Jwt" section in appsettings.
 
     public sealed class Jwt
     {
@@ -34,7 +33,6 @@
             SessionConfig = sessionConfig;
         }
 
-        // Factory — validates all parts before creating the config object.
         public static Jwt Create(
             string issuer,
             string audience,

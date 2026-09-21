@@ -5,12 +5,6 @@ using PickMeUp.Api.Account.Authentication.OAuth.Provider.Google;
 namespace PickMeUp.Api.Account.Authentication.OAuth
 {
     // Handles the OAuth callback from Google/Facebook.
-    //
-    // Flow:
-    //   1. Validate the CSRF state token.
-    //   2. Exchange the authorization code for an access token.
-    //   3. Fetch user info (email, name, external ID) from the provider.
-    //   4. Return a normalised ExternalIdentity.
 
     public sealed class OAuthCallbackHandler(OAuthProviderRegistry registry, OAuthStateValidator stateValidator, HttpClient http)
     {
@@ -18,12 +12,16 @@ namespace PickMeUp.Api.Account.Authentication.OAuth
         private readonly OAuthStateValidator _stateValidator = stateValidator;
         private readonly HttpClient _http = http;
 
+        // 1. Validate the CSRF state token.
+        // 2. Exchange the authorization code for an access token.
+        // 3. Fetch user info (email, name, external ID) from the provider.
+        // 4. Return a normalised ExternalIdentity.
+
         public async Task<ExternalIdentity> HandleAsync(
             OAuthProvider provider,
             string code,
             string state)
         {
-            // CSRF check — reject if state doesn't match what we stored.
             if (!_stateValidator.ValidateState(state))
                 throw new OAuthException(provider, "Invalid OAuth state (possible CSRF attack");
 
@@ -39,7 +37,6 @@ namespace PickMeUp.Api.Account.Authentication.OAuth
         }
 
         // ── Google ────────────────────────────────────────────────
-        // POST code to /token, then GET /oauth2/v2/userinfo.
 
         private async Task<ExternalIdentity> HandleGoogleAsync(string code)
         {
@@ -72,7 +69,6 @@ namespace PickMeUp.Api.Account.Authentication.OAuth
         }
 
         // ── Facebook ──────────────────────────────────────────────
-        // GET code to /oauth/access_token, then GET /me.
 
         private async Task<ExternalIdentity> HandleFacebookAsync(string code)
         {

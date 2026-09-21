@@ -4,6 +4,7 @@ using static PickMeUp.Api.Account.Profile.Avatar;
 namespace PickMeUp.Api.Account.Authentication.OAuth
 {
     // Repository interface for account persistence.
+
     public interface IAccountRepository
     {
         Account? FindByEmail(string email);
@@ -11,7 +12,7 @@ namespace PickMeUp.Api.Account.Authentication.OAuth
     }
 
     // Minimal account entity used by the OAuth flow.
-    // Separate from ApplicationUser — used for account creation before Identity is involved.
+
     public sealed class Account
     {
         public Guid Id { get; init; }
@@ -21,15 +22,14 @@ namespace PickMeUp.Api.Account.Authentication.OAuth
     }
 
     // Creates a new account from an external OAuth identity.
-    //
-    // Flow:
-    //   1. Check if an account with this email already exists → return it.
-    //   2. Otherwise, build Email, Username, Avatar value objects.
-    //   3. Persist the new account via IAccountRepository.
 
     public sealed class AccountCreationService(IAccountRepository accounts)
     {
         private readonly IAccountRepository _accounts = accounts;
+
+        // 1. Check if an account with this email already exists → return it.
+        // 2. Otherwise, build Email, Username, Avatar value objects.
+        // 3. Persist the new account via IAccountRepository.
 
         public Account CreateFromExternal(ExternalIdentity identity)
         {
@@ -52,7 +52,6 @@ namespace PickMeUp.Api.Account.Authentication.OAuth
             return _accounts.Create(account);
         }
 
-        // Generates a username from the provider's display name.
         private static string GenerateUsername(ExternalIdentity identity)
         {
             return identity.Name.Replace(" ", "").ToLowerInvariant();

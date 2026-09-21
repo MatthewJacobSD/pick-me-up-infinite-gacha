@@ -1,6 +1,7 @@
 ﻿namespace PickMeUp.Api.Account.Authentication.OAuth.Provider.Google
 {
     // Deserialisation target for Google's /token response.
+
     public sealed class GoogleTokenResponse
     {
         public string AccessToken { get; init; } = string.Empty;

@@ -1,5 +1,6 @@
 ﻿namespace PickMeUp.Api.Account.Profile.ProfileSettings.Social.Social
 {
+    // ── Friend Command ─────────────────────────────────
     // Command object for friend operations.
 
     public sealed class FriendCommand

@@ -3,7 +3,6 @@
 namespace PickMeUp.Api.Account.Authentication.OAuth
 {
     // Reads provider credentials from IConfiguration and builds an OauthConfig.
-    // Called once at startup to populate OAuthProviderRegistry.
 
     public sealed class OAuthConfigLoader(IConfiguration config)
     {

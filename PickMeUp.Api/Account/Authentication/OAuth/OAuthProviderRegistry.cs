@@ -1,7 +1,6 @@
 ﻿namespace PickMeUp.Api.Account.Authentication.OAuth
 {
     // Checks whether a provider is configured and returns its config object.
-    // Used by OAuthCallbackHandler and ExternalLoginService to get credentials.
 
     public sealed class OAuthProviderRegistry(OauthConfig config)
     {

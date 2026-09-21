@@ -1,7 +1,6 @@
 ﻿namespace PickMeUp.Api.Account.Authentication.OAuth.Provider
 {
     // Google OAuth provider config value object.
-    // Created by OAuthConfigLoader from appsettings, stored in OauthConfig.
 
     public sealed class GoogleProvider
     {
@@ -14,7 +13,6 @@
             ClientSecret = clientSecret;
         }
 
-        // Validates and creates the provider. Throws if credentials look invalid.
         public static GoogleProvider Create(string clientId, string clientSecret)
         {
             if (clientId is null)

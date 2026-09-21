@@ -1,7 +1,6 @@
 ﻿namespace PickMeUp.Api.Account.Authentication
 {
     // Value object for a validated email address.
-    // Normalises to lowercase, trims whitespace, and detects the provider domain.
 
     public sealed class Email : IEquatable<Email>
     {
@@ -14,7 +13,6 @@
             Provider = provider;
         }
 
-        // Factory — validates, normalises, and detects provider.
         public static Email Create(string address)
         {
             if (string.IsNullOrWhiteSpace(address))
@@ -61,8 +59,6 @@
         }
 
         // ── Provider Detection ────────────────────────────────────
-        // Maps domain to EmailProvider for display/labelling only.
-        // Actual OAuth sign-in is handled separately.
 
         private static EmailProvider DetectProvider(string email)
         {
@@ -79,7 +75,6 @@
     }
 
     // Categorises an email by its domain for display purposes.
-    // Does not control which OAuth providers are available for sign-in.
 
     public enum EmailProvider
     {

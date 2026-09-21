@@ -1,7 +1,7 @@
 ﻿namespace PickMeUp.Api.Account.Profile.ProfileSettings.Social
 {
-    // Service interface for social operations.
-    // Orchestrates commands through the repository and lifecycle engine.
+    // ── Social Service Interface ───────────────────────
+    // Orchestrates social commands through the repository and lifecycle engine.
 
     public interface ISocialService
     {

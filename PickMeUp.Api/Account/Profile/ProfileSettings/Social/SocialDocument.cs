@@ -2,6 +2,7 @@
 
 namespace PickMeUp.Api.Account.Profile.ProfileSettings.Social
 {
+    // ── Social Document ────────────────────────────────
     // MongoDB document for a player's social state.
     // One document per user in the "social" collection.
 

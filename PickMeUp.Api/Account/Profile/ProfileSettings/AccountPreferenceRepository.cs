@@ -2,6 +2,7 @@
 
 namespace PickMeUp.Api.Account.Profile.ProfileSettings
 {
+    // ── Account Preferences Repository ─────────────────
     // MongoDB implementation of IAccountPreferencesRepository.
     // One document per user in the "account_preferences" collection.
     // Each update increments the Version field for optimistic concurrency.
@@ -11,7 +12,7 @@ namespace PickMeUp.Api.Account.Profile.ProfileSettings
         private readonly IMongoCollection<AccountPreferencesDocument> _collection =
             db.GetCollection<AccountPreferencesDocument>("account_preferences");
 
-        // Returns existing document or creates a new one with defaults.
+        // 1. Look up existing document or create a new one with defaults.
         private async Task<AccountPreferencesDocument> GetOrCreateAsync(string userId)
         {
             var doc = await _collection.Find(x => x.UserId == userId).FirstOrDefaultAsync();
@@ -28,7 +29,7 @@ namespace PickMeUp.Api.Account.Profile.ProfileSettings
         public Task<AccountPreferencesDocument> GetAsync(string userId)
             => GetOrCreateAsync(userId);
 
-        // ── Gameplay ──────────────────────────────────────────────
+        // ── Gameplay ───────────────────────────────────
 
         public async Task<Gameplay.GameplaySettings> GetGameplaySettingsAsync(string userId)
         {
@@ -45,7 +46,7 @@ namespace PickMeUp.Api.Account.Profile.ProfileSettings
             await _collection.UpdateOneAsync(x => x.UserId == userId, update);
         }
 
-        // ── Accessibility ─────────────────────────────────────────
+        // ── Accessibility ──────────────────────────────
 
         public async Task<Accessibility.AccessibilitySettings> GetAccessibilitySettingsAsync(string userId)
         {
@@ -61,5 +62,36 @@ namespace PickMeUp.Api.Account.Profile.ProfileSettings
 
             await _collection.UpdateOneAsync(x => x.UserId == userId, update);
         }
+
+        public async Task<Language.LanguageSettings> GetLanguageSettingsAsync(string userId)
+        {
+            var doc = await GetOrCreateAsync(userId);
+            return doc.Language;
+        }
+
+        public async Task UpdateLanguageSettingsAsync(string userId, Language.LanguageSettings settings)
+        {
+            var update = Builders<AccountPreferencesDocument>.Update
+                .Set(x => x.Language, settings)
+                .Inc(x => x.Version, 1);
+
+            await _collection.UpdateOneAsync(x => x.UserId == userId, update);
+        }
+
+        public async Task<Notifications.NotificationSettings> GetNotificationSettingsAsync(string userId)
+        {
+            var doc = await GetOrCreateAsync(userId);
+            return doc.Notifications;
+        }
+
+        public async Task UpdateNotificationSettingsAsync(string userId, Notifications.NotificationSettings settings)
+        {
+            var update = Builders<AccountPreferencesDocument>.Update
+                .Set(x => x.Notifications, settings)
+                .Inc(x => x.Version, 1);
+
+            await _collection.UpdateOneAsync(x => x.UserId == userId, update);
+        }
+
     }
 }

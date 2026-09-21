@@ -1,6 +1,6 @@
 ﻿namespace PickMeUp.Api.Account.Authentication.OAuth
 {
-    // Base exception for all OAuth errors. Carries the provider that failed.
+    // Base exception for all OAuth errors.
 
     public class OAuthException(OAuthProvider provider, string message) :
         Exception(message)

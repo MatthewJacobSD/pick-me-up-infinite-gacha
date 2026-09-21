@@ -2,6 +2,7 @@ using PickMeUp.Api.Account.Profile.ProfileSettings.Social.Social;
 
 namespace PickMeUp.Api.Account.Profile.ProfileSettings.Social
 {
+    // ── Social Service ─────────────────────────────────
     // Concrete implementation of ISocialService.
     // Orchestrates friend/block/party commands through the repository
     // and lifecycle engine.
@@ -17,7 +18,7 @@ namespace PickMeUp.Api.Account.Profile.ProfileSettings.Social
             _lifecycle = lifecycle;
         }
 
-        // ── Friends ───────────────────────────────────────────────
+        // ── Friends ────────────────────────────────────
 
         public async Task<IReadOnlyList<string>> GetFriendsAsync(string userId)
         {
@@ -34,16 +35,17 @@ namespace PickMeUp.Api.Account.Profile.ProfileSettings.Social
             await _repo.RemoveFriendAsync(userId, targetUserId);
         }
 
-        // ── Blocks ────────────────────────────────────────────────
+        // ── Blocks ─────────────────────────────────────
 
         public async Task<IReadOnlyList<string>> GetBlocksAsync(string userId)
         {
             return await _repo.GetBlocksAsync(userId);
         }
 
+        // 1. Remove existing friendship if present.
+        // 2. Add block.
         public async Task BlockUserAsync(string userId, BlockCommand command)
         {
-            // Remove friendship if it exists, then block.
             if (await _repo.AreFriendsAsync(userId, command.TargetUserId))
                 await _repo.RemoveFriendAsync(userId, command.TargetUserId);
 
@@ -55,11 +57,12 @@ namespace PickMeUp.Api.Account.Profile.ProfileSettings.Social
             await _repo.RemoveBlockAsync(userId, targetUserId);
         }
 
-        // ── Party ─────────────────────────────────────────────────
+        // ── Party ──────────────────────────────────────
 
+        // 1. Verify target has not blocked the sender.
+        // 2. Create and persist pending invite.
         public async Task HandlePartyInviteAsync(string userId, PartyCommand command)
         {
-            // Block enforcement
             if (await _repo.IsBlockedAsync(command.TargetUserId, userId))
                 throw new InvalidOperationException("Cannot invite blocked user.");
 

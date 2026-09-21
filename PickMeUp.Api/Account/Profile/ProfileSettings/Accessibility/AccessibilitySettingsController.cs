@@ -3,11 +3,11 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace PickMeUp.Api.Account.Profile.ProfileSettings.Accessibility
 {
-    // REST controller for accessibility preferences.
+    // ── Accessibility Settings Controller ──────────────
+    // REST endpoints for accessibility preferences.
     //
-    // Endpoints:
-    //   GET /account/preferences/accessibility  — returns current settings
-    //   PUT /account/preferences/accessibility  — updates settings
+    // 1. GET  /account/preferences/accessibility  — returns current settings
+    // 2. PUT  /account/preferences/accessibility  — updates settings
 
     [ApiController]
     [Route("account/preferences/accessibility")]

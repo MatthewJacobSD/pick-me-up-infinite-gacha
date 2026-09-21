@@ -1,7 +1,6 @@
 ﻿namespace PickMeUp.Api.Account.Authentication.Session
 {
-    // Session config — controls session lifetime and optional bindings.
-    // Loaded from appsettings via Jwt section.
+    // Session config controlling lifetime and optional bindings.
 
     public sealed class SessionConfig
     {

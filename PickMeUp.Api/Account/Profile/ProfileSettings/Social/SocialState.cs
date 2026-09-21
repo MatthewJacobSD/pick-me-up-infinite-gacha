@@ -1,12 +1,11 @@
 ﻿namespace PickMeUp.Api.Account.Profile.ProfileSettings.Social
 {
-    // Domain models for the social system.
-    //
-    // SocialState — read-only snapshot of a player's social data.
-    // FriendRequest — tracks pending/accepted/declined/cancelled/expired states.
-    // PartyInvite — tracks party invitation lifecycle.
-    //
+    // ── Social Domain Models ───────────────────────────
+    // Read-only snapshot of a player's social data.
     // These are social domain entities, NOT settings.
+
+    // ── SocialState ────────────────────────────────────
+    // Immutable snapshot of friends, blocks, requests, and invites.
 
     public sealed class SocialState
     {
@@ -16,7 +15,9 @@
         public IReadOnlyList<PartyInvite> PartyInvites { get; init; } = [];
     }
 
-    // A friend request between two players.
+    // ── FriendRequest ──────────────────────────────────
+    // Tracks pending/accepted/declined/cancelled/expired states.
+
     public sealed class FriendRequest
     {
         public string FromUserId { get; init; } = string.Empty;
@@ -34,7 +35,9 @@
         Expired = 4
     }
 
-    // A party invitation between two players.
+    // ── PartyInvite ────────────────────────────────────
+    // Tracks party invitation lifecycle.
+
     public sealed class PartyInvite
     {
         public string FromUserId { get; init; } = string.Empty;

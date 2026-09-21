@@ -7,15 +7,11 @@ using System.IdentityModel.Tokens.Jwt;
 namespace PickMeUp.Api.Account.Authentication.Session
 {
     // Generates JWT access tokens and random refresh tokens.
-    //
-    // Access token: signed JWT with Sub + accountId claims, short-lived.
-    // Refresh token: 512-bit random hex string, stored in Redis.
 
     public sealed class TokenGeneratorService(Jwt jwt)
     {
         private readonly Jwt _jwt = jwt;
 
-        // Creates a signed JWT access token for the given account.
         public string GenerateAccessToken(Guid accountId)
         {
             var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_jwt.AccessToken.Key));
@@ -38,7 +34,6 @@ namespace PickMeUp.Api.Account.Authentication.Session
             return new JwtSecurityTokenHandler().WriteToken(token);
         }
 
-        // Generates a cryptographically random refresh token.
         public string GenerateRefreshToken(Guid accountId)
         {
             byte[] bytes = RandomNumberGenerator.GetBytes(64);

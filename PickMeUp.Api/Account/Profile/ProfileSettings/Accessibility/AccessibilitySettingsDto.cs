@@ -1,6 +1,7 @@
 ﻿namespace PickMeUp.Api.Account.Profile.ProfileSettings.Accessibility
 {
-    // DTO for incoming accessibility settings updates (PUT requests).
+    // ── Accessibility Settings DTO ─────────────────────
+    // Incoming payload for accessibility settings updates (PUT).
     // No defaults — values come from the client.
 
     public sealed class AccessibilitySettingsDto

@@ -2,6 +2,7 @@
 
 namespace PickMeUp.Api.Account.Profile.ProfileSettings.Accessibility
 {
+    // ── Accessibility Settings Validator ───────────────
     // Validates accessibility settings before they reach the repository.
     // Enforces known colorblind modes and numeric ranges.
 

@@ -2,6 +2,7 @@
 
 namespace PickMeUp.Api.Account.Profile.ProfileSettings.Gameplay
 {
+    // ── Gameplay Settings Validator ────────────────────
     // Validates gameplay settings before they reach the repository.
     // Rejects out-of-range values for action bars, sensitivity, and FOV.
 

@@ -1,11 +1,6 @@
 ﻿namespace PickMeUp.Api.Account.Profile
 {
-    // Avatar value object.
-    //
-    // Types:
-    //   Default — system-provided placeholder (no upload).
-    //   Static  — uploaded image, stored at a fixed URL.
-    //   Custom  — user-customisable (animated, layered, etc.).
+    // Avatar value object with Default, Static, and Custom types.
 
     public sealed class Avatar
     {
@@ -24,7 +19,6 @@
             IsDefault = type == AvatarTypeStatus.Default;
         }
 
-        // Factory — validates the URL path before creating.
         public static Avatar Create(string value, string pathUrl, AvatarTypeStatus type = AvatarTypeStatus.Default)
         {
             if (string.IsNullOrWhiteSpace(pathUrl))

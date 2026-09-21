@@ -3,11 +3,11 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace PickMeUp.Api.Account.Profile.ProfileSettings.Gameplay
 {
-    // REST controller for gameplay preferences.
+    // ── Gameplay Settings Controller ───────────────────
+    // REST endpoints for gameplay preferences.
     //
-    // Endpoints:
-    //   GET /account/preferences/gameplay  — returns current settings
-    //   PUT /account/preferences/gameplay  — updates settings
+    // 1. GET  /account/preferences/gameplay  — returns current settings
+    // 2. PUT  /account/preferences/gameplay  — updates settings
 
     [ApiController]
     [Route("account/preferences/gameplay")]

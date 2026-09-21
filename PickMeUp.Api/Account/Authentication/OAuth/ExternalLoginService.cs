@@ -3,16 +3,15 @@
 namespace PickMeUp.Api.Account.Authentication.OAuth
 {
     // Builds the redirect URL that sends the user to the OAuth provider.
-    //
-    // Flow:
-    //   1. Generate a CSRF state token via OAuthStateValidator.
-    //   2. Look up the provider's client ID from the registry.
-    //   3. Construct the full authorization URL with client_id, redirect_uri, scope, state.
 
     public sealed class ExternalLoginService(OAuthProviderRegistry registry, OAuthStateValidator stateValidator)
     {
         private readonly OAuthProviderRegistry _registry = registry;
         private readonly OAuthStateValidator _stateValidator = stateValidator;
+
+        // 1. Generate a CSRF state token via OAuthStateValidator.
+        // 2. Look up the provider's client ID from the registry.
+        // 3. Construct the full authorization URL with client_id, redirect_uri, scope, state.
 
         public string BuildRedirectUrl(OAuthProvider provider)
         {

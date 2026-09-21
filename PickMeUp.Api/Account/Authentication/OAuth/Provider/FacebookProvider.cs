@@ -1,7 +1,6 @@
 ﻿namespace PickMeUp.Api.Account.Authentication.OAuth.Provider
 {
     // Facebook OAuth provider config value object.
-    // Created by OAuthConfigLoader from appsettings, stored in OauthConfig.
 
     public sealed class FacebookProvider
     {
@@ -14,7 +13,6 @@
             AppSecret = appSecret;
         }
 
-        // Validates and creates the provider. Throws if credentials look invalid.
         public static FacebookProvider Create(string appId, string appSecret)
         {
             if (appId is null)

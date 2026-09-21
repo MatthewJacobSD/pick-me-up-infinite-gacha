@@ -3,16 +3,16 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace PickMeUp.Api.Account.Profile.ProfileSettings.Social
 {
-    // REST controller for social operations.
+    // ── Social Controller ──────────────────────────────
+    // REST endpoints for social operations.
     //
-    // Endpoints:
-    //   GET    /account/social/friends           — list friends
-    //   POST   /account/social/friends/requests  — send friend request
-    //   DELETE /account/social/friends/{id}      — remove friend
-    //   GET    /account/social/blocks            — list blocks
-    //   POST   /account/social/blocks            — block user
-    //   DELETE /account/social/blocks/{id}       — unblock user
-    //   POST   /account/social/party             — party invite
+    // 1. GET    /account/social/friends           — list friends
+    // 2. POST   /account/social/friends/requests  — send friend request
+    // 3. DELETE /account/social/friends/{id}      — remove friend
+    // 4. GET    /account/social/blocks            — list blocks
+    // 5. POST   /account/social/blocks            — block user
+    // 6. DELETE /account/social/blocks/{id}       — unblock user
+    // 7. POST   /account/social/party             — party invite
 
     [ApiController]
     [Route("account/social")]
@@ -26,7 +26,7 @@ namespace PickMeUp.Api.Account.Profile.ProfileSettings.Social
             _socialService = socialService;
         }
 
-        // ── Friends ───────────────────────────────────────────────
+        // ── Friends ────────────────────────────────────
 
         [HttpGet("friends")]
         public async Task<IActionResult> GetFriends()
@@ -52,7 +52,7 @@ namespace PickMeUp.Api.Account.Profile.ProfileSettings.Social
             return Ok();
         }
 
-        // ── Blocks ────────────────────────────────────────────────
+        // ── Blocks ─────────────────────────────────────
 
         [HttpGet("blocks")]
         public async Task<IActionResult> GetBlocks()
@@ -78,7 +78,7 @@ namespace PickMeUp.Api.Account.Profile.ProfileSettings.Social
             return Ok();
         }
 
-        // ── Party ─────────────────────────────────────────────────
+        // ── Party ──────────────────────────────────────
 
         [HttpPost("party")]
         public async Task<IActionResult> PartyInvite([FromBody] PartyCommand command)

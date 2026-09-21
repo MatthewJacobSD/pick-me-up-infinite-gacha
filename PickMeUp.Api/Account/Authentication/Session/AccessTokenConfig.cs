@@ -1,7 +1,6 @@
 ﻿namespace PickMeUp.Api.Account.Authentication.Session
 {
     // Access token config — short-lived, measured in minutes.
-    // ExpiresInDays is always 0.
 
     public sealed class AccessTokenConfig : TokenConfig
     {

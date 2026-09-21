@@ -1,5 +1,6 @@
 ﻿namespace PickMeUp.Api.Account.Profile.ProfileSettings.Social
 {
+    // ── Block Command ──────────────────────────────────
     // Command object for block/unblock operations.
 
     public sealed class BlockCommand

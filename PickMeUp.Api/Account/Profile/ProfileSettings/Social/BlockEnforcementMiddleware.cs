@@ -2,10 +2,8 @@
 
 namespace PickMeUp.Api.Account.Profile.ProfileSettings.Social
 {
+    // ── Block Enforcement Middleware ───────────────────
     // ASP.NET middleware that blocks social actions between mutually blocked users.
-    //
-    // Extracts the current user and target user from the route.
-    // If either has blocked the other, returns 403 Forbidden.
     // Place in the pipeline before authorization for social endpoints.
 
     public sealed class BlockEnforcementMiddleware
@@ -19,6 +17,10 @@ namespace PickMeUp.Api.Account.Profile.ProfileSettings.Social
             _repo = repo;
         }
 
+        // 1. Extract the current user from the authenticated context.
+        // 2. Extract the target user from the route.
+        // 3. If either has blocked the other, return 403 Forbidden.
+        // 4. Otherwise, pass through to the next middleware.
         public async Task InvokeAsync(HttpContext context)
         {
             var userId = context.User.Identity?.Name;
@@ -29,7 +31,6 @@ namespace PickMeUp.Api.Account.Profile.ProfileSettings.Social
                 return;
             }
 
-            // Extract target user from route
             var targetUserId = context.Request.RouteValues["targetUserId"]?.ToString();
 
             if (string.IsNullOrWhiteSpace(targetUserId))
@@ -38,7 +39,6 @@ namespace PickMeUp.Api.Account.Profile.ProfileSettings.Social
                 return;
             }
 
-            // Bidirectional block check
             if (await _repo.IsBlockedAsync(userId, targetUserId) ||
                 await _repo.IsBlockedAsync(targetUserId, userId))
             {

@@ -2,12 +2,7 @@
 
 namespace PickMeUp.Api.Account.Profile
 {
-    // Username value object.
-    //
-    // Rules:
-    //   - 3–20 characters
-    //   - Lowercase, alphanumeric with underscores/hyphens only
-    //   - Trimmed and lowercased on creation
+    // Username value object (3–20 chars, lowercase alphanumeric with underscores/hyphens).
 
     public sealed partial class Username
     {
@@ -18,7 +13,6 @@ namespace PickMeUp.Api.Account.Profile
             Value = value;
         }
 
-        // Factory — validates length and character set.
         public static Username Create(string value)
         {
             if (string.IsNullOrWhiteSpace(value))

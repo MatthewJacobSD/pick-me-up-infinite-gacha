@@ -1,6 +1,7 @@
 ﻿namespace PickMeUp.Api.Account.Profile.ProfileSettings.Gameplay
 {
-    // DTO for incoming gameplay settings updates (PUT requests).
+    // ── Gameplay Settings DTO ──────────────────────────
+    // Incoming payload for gameplay settings updates (PUT).
     // No defaults — values come from the client.
 
     public sealed class GameplaySettingsDto
