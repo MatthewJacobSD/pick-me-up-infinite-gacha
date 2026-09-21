@@ -72,6 +72,7 @@ interfaces/dist/
 interfaces/tsconfig.tsbuildinfo
 
 # Environment
+PickMeUp.Api/.env.*
 .env
 .env.local
 .env.*.local

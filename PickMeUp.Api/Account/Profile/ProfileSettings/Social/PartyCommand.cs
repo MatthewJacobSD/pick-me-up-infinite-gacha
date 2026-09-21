@@ -3,7 +3,7 @@
     // ── Party Command ──────────────────────────────────
     // Command object for party invite operations.
 
-    public class PartyCommand
+    public sealed class PartyCommand
     {
         public string TargetUserId { get; private init; } = string.Empty;
         public PartyAction Action { get; private init; }
