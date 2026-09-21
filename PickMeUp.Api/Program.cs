@@ -5,6 +5,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using PickMeUp.Api.Account;
 using PickMeUp.Api.Account.Authentication.Session;
+using PickMeUp.Api.Account.Profile.ProfileSettings;
 using PickMeUp.Api.Account.Profile.ProfileSettings.Social;
 using System.Text;
 
@@ -136,6 +137,8 @@ builder.Services.AddSingleton<ISocialRepository, SocialRepository>();
 builder.Services.AddSingleton<IFriendRequestLifecycleEngine, FriendRequestLifecycleEngine>();
 builder.Services.AddScoped<ISocialService, SocialService>();
 
+// ── Account Preferences (MongoDB) ───────────────────────────────
+builder.Services.AddSingleton<IAccountPreferencesRepository, AccountPreferencesRepository>();
 
 // ── Identity + EF Core (MySQL) ───────────────────────────────────
 builder.Services.AddIdentity<ApplicationUser, IdentityRole<Guid>>(options =>
