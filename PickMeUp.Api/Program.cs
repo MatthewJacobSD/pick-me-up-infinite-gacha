@@ -3,10 +3,10 @@ using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
-using PickMeUp.Api.Account;
+using PickMeUp.Api.Account.AccountPreferences;
+using PickMeUp.Api.Account.AccountPreferences.Social;
 using PickMeUp.Api.Account.Authentication.Session;
-using PickMeUp.Api.Account.Profile.ProfileSettings;
-using PickMeUp.Api.Account.Profile.ProfileSettings.Social;
+using PickMeUp.Api.DoNotTouchFolder;
 using System.Text;
 
 // ── Load .env ────────────────────────────────────────────────────

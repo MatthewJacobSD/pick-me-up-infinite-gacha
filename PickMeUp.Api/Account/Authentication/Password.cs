@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Identity;
+using PickMeUp.Api.DoNotTouchFolder;
 using System.Text.RegularExpressions;
 
 namespace PickMeUp.Api.Account.Authentication

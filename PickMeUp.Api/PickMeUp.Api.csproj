@@ -28,8 +28,6 @@
 
   <ItemGroup>
     <Folder Include="Account\AccountSettings\" />
-    <Folder Include="Account\Profile\ProfileSettings\" />
-    <Folder Include="SharedSettings\" />
   </ItemGroup>
 
 </Project>

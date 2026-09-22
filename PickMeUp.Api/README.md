@@ -1,6 +1,6 @@
 # PickMeUp.Api — Backend API
 
-**Runtime:** .NET 10 · **Language:** C# · **Database:** MySQL + Redis
+**Runtime:** .NET 10 · **Language:** C# · **Database:** MySQL + MongoDB + Redis
 
 ---
 
@@ -18,6 +18,7 @@ graph TB
         Auth["Authentication Layer<br>OAuth · JWT · Sessions"]
         API["API Contracts<br>REST Endpoints"]
         Data["Data Layer<br>EF Core · MySQL"]
+        Mongo["MongoDB<br>Social · Preferences"]
         Cache["Cache Layer<br>Redis"]
     end
 
@@ -28,6 +29,7 @@ graph TB
 
     subgraph Storage
         MySQL[("MySQL<br>Accounts · Identity")]
+        MongoDB[("MongoDB<br>Social · Preferences")]
         Redis[("Redis<br>Sessions · Tokens · CSRF")]
     end
 
@@ -35,8 +37,10 @@ graph TB
     UE -->|REST| Auth
     Auth --> API
     API --> Data
+    API --> Mongo
     Auth --> Cache
     Data --> MySQL
+    Mongo --> MongoDB
     Cache --> Redis
     Auth -->|OAuth| G
     Auth -->|OAuth| F
@@ -53,57 +57,97 @@ graph TB
 
 ```
 PickMeUp.Api/
-├── Program.cs                         Entry point, service wiring
+├── Program.cs                              Entry point, service wiring
+├── .csproj                                 Project file
+├── .slnx                                   Solution file
+├── appsettings.json                        Configuration
 │
 ├── Account/
-│   ├── ApplicationDbContext.cs        EF Core Identity DbContext
-│   ├── ApplicationUser.cs             User entity (Identity)
-│   ├── Settings.cs                    Game settings (placeholder)
+│   ├── ApplicationDbContext.cs             EF Core Identity DbContext
+│   ├── ApplicationUser.cs                  User entity (Identity)
 │   │
 │   ├── Authentication/
-│   │   ├── Email.cs                   Email value object
-│   │   ├── Password.cs                Password value object (hashed)
+│   │   ├── Email.cs                        Email value object
+│   │   ├── Password.cs                     Password value object (hashed)
 │   │   │
-│   │   ├── OAuth/                     ── OAuth Flow ──
+│   │   ├── OAuth/
 │   │   │   ├── Provider/
 │   │   │   │   ├── GoogleProvider.cs       Google config value object
 │   │   │   │   ├── FacebookProvider.cs     Facebook config value object
 │   │   │   │   ├── Google/                 Google API DTOs
 │   │   │   │   └── Facebook/               Facebook API DTOs
-│   │   │   │
 │   │   │   ├── UnifiedAuthController.cs    Main auth controller
 │   │   │   ├── ExternalLoginService.cs     Redirect URL builder
 │   │   │   ├── OAuthCallbackHandler.cs     Code exchange + userinfo
 │   │   │   ├── AccountCreationService.cs   New account from OAuth
 │   │   │   ├── AccountLinkingService.cs    Link OAuth to account
 │   │   │   ├── OAuthStateValidator.cs      CSRF protection (Redis)
-│   │   │   ├── OAuthConfigLoader.cs        Reads config → provider objects
+│   │   │   ├── OAuthConfigLoader.cs        Config → provider objects
 │   │   │   ├── OAuthProviderRegistry.cs    Provider lookup
 │   │   │   ├── OAuthErrorHandler.cs        HTTP + JSON error handling
 │   │   │   ├── OAuthExceptions.cs          Exception hierarchy
 │   │   │   ├── ExternalIdentity.cs         Normalised identity record
-│   │   │   └── OAuthProviderExtentions.cs  Enum + extension methods
+│   │   │   └── OAuthProviderExtentions.cs  Enum + extensions
 │   │   │
-│   │   └── Session/                   ── JWT + Sessions ──
-│   │       ├── Jwt.cs                     JWT config root
-│   │       ├── TokenConfig.cs             Base token config
-│   │       ├── AccessTokenConfig.cs       Short-lived (minutes)
-│   │       ├── RefreshTokenConfig.cs      Long-lived (days)
-│   │       ├── TokenGeneratorService.cs   Token creation
-│   │       ├── RefreshTokenService.cs     Token rotation
-│   │       ├── SessionService.cs          Server-side sessions
-│   │       ├── SessionConfig.cs           Session config
-│   │       └── RefreshController.cs       Refresh endpoint
+│   │   └── Session/
+│   │       ├── Jwt.cs                      JWT config root
+│   │       ├── TokenConfig.cs              Base token config
+│   │       ├── AccessTokenConfig.cs        Short-lived (minutes)
+│   │       ├── RefreshTokenConfig.cs       Long-lived (days)
+│   │       ├── TokenGeneratorService.cs    Token creation
+│   │       ├── RefreshTokenService.cs      Token rotation
+│   │       ├── SessionService.cs           Server-side sessions
+│   │       ├── SessionConfig.cs            Session config
+│   │       └── RefreshController.cs        Refresh endpoint
 │   │
 │   ├── Profile/
-│   │   ├── Avatar.cs                  Avatar value object
-│   │   └── Username.cs                Username value object
+│   │   ├── Avatar.cs                       Avatar value object
+│   │   ├── Username.cs                     Username value object
+│   │   │
+│   │   └── ProfileSettings/
+│   │       ├── AccountPreferencesDocument.cs   MongoDB document
+│   │       ├── AccountPreferenceRepository.cs  MongoDB repository
+│   │       ├── IAccountPreferenceRepository.cs Repository interface
+│   │       │
+│   │       ├── Gameplay/
+│   │       │   ├── GameplaySettings.cs         Domain model (20 settings)
+│   │       │   ├── GameplaySettingsDto.cs      DTO
+│   │       │   ├── GameplaySettingsController.cs  GET + PUT
+│   │       │   └── GameplaySettingsValidator.cs   FluentValidation
+│   │       │
+│   │       ├── Accessibility/
+│   │       │   ├── AccessibilitySettings.cs    Domain model (14 settings)
+│   │       │   ├── AccessibilitySettingsDto.cs DTO
+│   │       │   ├── AccessibilitySettingsController.cs  GET + PUT
+│   │       │   └── AccessibilitySettingsValidator.cs   FluentValidation
+│   │       │
+│   │       ├── Language/
+│   │       │   ├── LanguageSettings.cs         Domain model
+│   │       │   ├── LanaguageSettingsDto.cs     DTO
+│   │       │   ├── LanguageSettingsController.cs  GET + PUT
+│   │       │   └── LanguageSettingsValidator.cs   FluentValidation
+│   │       │
+│   │       ├── Notifications/
+│   │       │   ├── NotificationSettings.cs     Domain model (5 toggles)
+│   │       │   ├── NotificationSettingsDto.cs  DTO
+│   │       │   ├── NotificationSettingsController.cs  GET + PUT
+│   │       │   └── NotificationSettingsValidator.cs   FluentValidation
+│   │       │
+│   │       └── Social/
+│   │           ├── SocialState.cs              Domain models
+│   │           ├── SocialDocument.cs           MongoDB document
+│   │           ├── ISocialRepository.cs        Repository interface
+│   │           ├── SocialRepository.cs         MongoDB implementation
+│   │           ├── ISocialService.cs           Service interface
+│   │           ├── SocialService.cs            Service implementation
+│   │           ├── IFriendRequestLifecycleEngine.cs  Request lifecycle
+│   │           ├── BlockEnforcementMiddleware.cs     Block check middleware
+│   │           ├── SocialController.cs         REST endpoints
+│   │           ├── FriendCommand.cs            Friend action command
+│   │           ├── BlockCommand.cs             Block action command
+│   │           └── PartyCommand.cs             Party invite command
 │   │
-│   └── UserCenter/                    User center (placeholder)
-│       ├── Agreement.cs
-│       ├── BindAccount.cs
-│       ├── OTP.cs
-│       └── TestCenter/
+│   └── UserCenter/                         (placeholder, not committed)
 │
 └── Properties/
 ```
@@ -116,12 +160,53 @@ PickMeUp.Api/
 |---|---|---|
 | Runtime | .NET 10 | Host |
 | Database | MySQL (Pomelo EF Core 9.0) | Account persistence |
-| Cache | Redis (StackExchange) | Sessions, refresh tokens, CSRF state |
-| Identity | ASP.NET Identity (EF Core) | User management, password hashing |
+| Database | MongoDB (Driver 3.12) | Social, preferences |
+| Cache | Redis (StackExchange) | Sessions, tokens, CSRF |
+| Identity | ASP.NET Identity (EF Core) | User management |
 | Auth | Google OAuth, Facebook OAuth | External sign-in |
 | Tokens | JWT (HMAC-SHA256) | API authentication |
-| Env | DotNetEnv 3.1 | Secret loading from `.env` |
+| Validation | FluentValidation 11.11 | Input validation |
+| Env | DotNetEnv 3.1 | Secret loading |
 | API | OpenAPI | Documentation |
+
+---
+
+## API Endpoints
+
+### Authentication
+
+| Method | Endpoint | Purpose |
+|---|---|---|
+| GET | `/api/auth/login/{provider}` | Get OAuth redirect URL |
+| GET | `/api/auth/callback/{provider}` | OAuth callback |
+| POST | `/api/auth/consume-login-code` | Exchange loginCode for tokens |
+| POST | `/api/auth/refresh` | Refresh access token |
+| POST | `/api/auth/logout` | Revoke session |
+
+### Account Preferences
+
+| Method | Endpoint | Purpose |
+|---|---|---|
+| GET | `/account/preferences/gameplay` | Get gameplay settings |
+| PUT | `/account/preferences/gameplay` | Update gameplay settings |
+| GET | `/account/preferences/accessibility` | Get accessibility settings |
+| PUT | `/account/preferences/accessibility` | Update accessibility settings |
+| GET | `/account/preferences/language` | Get language settings |
+| PUT | `/account/preferences/language` | Update language settings |
+| GET | `/account/preferences/notifications` | Get notification settings |
+| PUT | `/account/preferences/notifications` | Update notification settings |
+
+### Social
+
+| Method | Endpoint | Purpose |
+|---|---|---|
+| GET | `/account/social/friends` | List friends |
+| POST | `/account/social/friends/requests` | Send friend request |
+| DELETE | `/account/social/friends/{id}` | Remove friend |
+| GET | `/account/social/blocks` | List blocks |
+| POST | `/account/social/blocks` | Block user |
+| DELETE | `/account/social/blocks/{id}` | Unblock user |
+| POST | `/account/social/party` | Party invite |
 
 ---
 
@@ -240,78 +325,6 @@ erDiagram
     ApplicationUser ||--|| Username : "has"
     ApplicationUser ||--|| Avatar : "has"
     ApplicationUser ||--o{ ExternalAccountLink : "linked to"
-```
-
----
-
-## Middleware Pipeline
-
-```mermaid
-graph LR
-    Request["Incoming Request"] --> HTTPS["HTTPS Redirection"]
-    HTTPS --> AuthN["Authentication<br>JWT Bearer"]
-    AuthN --> AuthZ["Authorization"]
-    AuthZ --> Controller["Controller"]
-    Controller --> Response["Response"]
-
-    style Request fill:#533483,color:#fff
-    style Response fill:#533483,color:#fff
-    style AuthN fill:#e94560,color:#fff
-    style AuthZ fill:#e94560,color:#fff
-```
-
----
-
-## Folder Dependency Map
-
-```mermaid
-graph TD
-    Program["Program.cs"] --> JWT["Jwt.cs"]
-    Program --> Redis["Redis Cache"]
-    Program --> MySQL["MySQL / EF Core"]
-    Program --> Identity["ASP.NET Identity"]
-
-    JWT --> AccessTokenConfig
-    JWT --> RefreshTokenConfig
-    JWT --> SessionConfig
-
-    AccessTokenConfig --> TokenConfig
-    RefreshTokenConfig --> TokenConfig
-
-    TokenGeneratorService --> JWT
-    RefreshTokenService --> TokenGeneratorService
-    RefreshTokenService --> Redis
-    SessionService --> Redis
-
-    UnifiedAuthController --> ExternalLoginService
-    UnifiedAuthController --> OAuthCallbackHandler
-    UnifiedAuthController --> AccountCreationService
-    UnifiedAuthController --> AccountLinkingService
-    UnifiedAuthController --> SessionService
-    UnifiedAuthController --> TokenGeneratorService
-    UnifiedAuthController --> RefreshTokenService
-
-    ExternalLoginService --> OAuthProviderRegistry
-    ExternalLoginService --> OAuthStateValidator
-    OAuthCallbackHandler --> OAuthProviderRegistry
-    OAuthCallbackHandler --> OAuthStateValidator
-    OAuthCallbackHandler --> HttpClient
-
-    OAuthProviderRegistry --> OauthConfig
-    OAuthConfigLoader --> OauthConfig
-
-    AccountCreationService --> IAccountRepository
-    AccountLinkingService --> IExternalAccountRepository
-
-    ApplicationUser --> Email
-    ApplicationUser --> Password
-    ApplicationUser --> Username
-    ApplicationUser --> Avatar
-
-    style Program fill:#0f3460,color:#fff
-    style UnifiedAuthController fill:#e94560,color:#fff
-    style TokenGeneratorService fill:#533483,color:#fff
-    style SessionService fill:#533483,color:#fff
 ```
 
 ---
