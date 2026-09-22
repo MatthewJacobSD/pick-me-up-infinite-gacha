@@ -15,11 +15,10 @@ graph TB
 
     subgraph Backend["Backend — PickMeUp.Api"]
         direction TB
-        Auth["Authentication Layer<br>OAuth · JWT · Sessions"]
-        API["API Contracts<br>REST Endpoints"]
-        Data["Data Layer<br>EF Core · MySQL"]
-        Mongo["MongoDB<br>Social · Preferences"]
-        Cache["Cache Layer<br>Redis"]
+        Auth["Authentication<br>OAuth · JWT · Sessions"]
+        AccPref["Account Preferences<br>7 domains · MongoDB"]
+        Soc["Social System<br>Friends · Blocks · Party"]
+        API["Controllers<br>REST Endpoints"]
     end
 
     subgraph Providers["External Providers"]
@@ -28,20 +27,20 @@ graph TB
     end
 
     subgraph Storage
-        MySQL[("MySQL<br>Accounts · Identity")]
-        MongoDB[("MongoDB<br>Social · Preferences")]
+        MySQL[("MySQL<br>Identity · Accounts")]
+        MongoDB[("MongoDB<br>Preferences · Social")]
         Redis[("Redis<br>Sessions · Tokens · CSRF")]
     end
 
-    U -->|REST| Auth
-    UE -->|REST| Auth
-    Auth --> API
-    API --> Data
-    API --> Mongo
-    Auth --> Cache
-    Data --> MySQL
-    Mongo --> MongoDB
-    Cache --> Redis
+    U -->|REST| API
+    UE -->|REST| API
+    API --> Auth
+    API --> AccPref
+    API --> Soc
+    Auth --> Redis
+    AccPref --> MongoDB
+    Soc --> MongoDB
+    Auth --> MySQL
     Auth -->|OAuth| G
     Auth -->|OAuth| F
 
@@ -57,15 +56,11 @@ graph TB
 
 ```
 PickMeUp.Api/
-├── Program.cs                              Entry point, service wiring
-├── .csproj                                 Project file
-├── .slnx                                   Solution file
-├── appsettings.json                        Configuration
+├── Program.cs                              Service wiring, middleware pipeline
+├── .csproj                                 11 NuGet packages
+├── .slnx                                   Solution (single project)
 │
 ├── Account/
-│   ├── ApplicationDbContext.cs             EF Core Identity DbContext
-│   ├── ApplicationUser.cs                  User entity (Identity)
-│   │
 │   ├── Authentication/
 │   │   ├── Email.cs                        Email value object
 │   │   ├── Password.cs                     Password value object (hashed)
@@ -74,8 +69,8 @@ PickMeUp.Api/
 │   │   │   ├── Provider/
 │   │   │   │   ├── GoogleProvider.cs       Google config value object
 │   │   │   │   ├── FacebookProvider.cs     Facebook config value object
-│   │   │   │   ├── Google/                 Google API DTOs
-│   │   │   │   └── Facebook/               Facebook API DTOs
+│   │   │   │   ├── Google/                 Token + UserInfo DTOs
+│   │   │   │   └── Facebook/               Token + UserInfo DTOs
 │   │   │   ├── UnifiedAuthController.cs    Main auth controller
 │   │   │   ├── ExternalLoginService.cs     Redirect URL builder
 │   │   │   ├── OAuthCallbackHandler.cs     Code exchange + userinfo
@@ -100,54 +95,42 @@ PickMeUp.Api/
 │   │       ├── SessionConfig.cs            Session config
 │   │       └── RefreshController.cs        Refresh endpoint
 │   │
-│   ├── Profile/
-│   │   ├── Avatar.cs                       Avatar value object
-│   │   ├── Username.cs                     Username value object
+│   ├── AccountPreferences/
+│   │   ├── IAccountPreferencesRepository.cs    Repository interface
+│   │   ├── AccountPreferencesRepository.cs     MongoDB implementation
+│   │   ├── AccountPreferencesDocument.cs       MongoDB document
 │   │   │
-│   │   └── ProfileSettings/
-│   │       ├── AccountPreferencesDocument.cs   MongoDB document
-│   │       ├── AccountPreferenceRepository.cs  MongoDB repository
-│   │       ├── IAccountPreferenceRepository.cs Repository interface
-│   │       │
-│   │       ├── Gameplay/
-│   │       │   ├── GameplaySettings.cs         Domain model (20 settings)
-│   │       │   ├── GameplaySettingsDto.cs      DTO
-│   │       │   ├── GameplaySettingsController.cs  GET + PUT
-│   │       │   └── GameplaySettingsValidator.cs   FluentValidation
-│   │       │
-│   │       ├── Accessibility/
-│   │       │   ├── AccessibilitySettings.cs    Domain model (14 settings)
-│   │       │   ├── AccessibilitySettingsDto.cs DTO
-│   │       │   ├── AccessibilitySettingsController.cs  GET + PUT
-│   │       │   └── AccessibilitySettingsValidator.cs   FluentValidation
-│   │       │
-│   │       ├── Language/
-│   │       │   ├── LanguageSettings.cs         Domain model
-│   │       │   ├── LanaguageSettingsDto.cs     DTO
-│   │       │   ├── LanguageSettingsController.cs  GET + PUT
-│   │       │   └── LanguageSettingsValidator.cs   FluentValidation
-│   │       │
-│   │       ├── Notifications/
-│   │       │   ├── NotificationSettings.cs     Domain model (5 toggles)
-│   │       │   ├── NotificationSettingsDto.cs  DTO
-│   │       │   ├── NotificationSettingsController.cs  GET + PUT
-│   │       │   └── NotificationSettingsValidator.cs   FluentValidation
-│   │       │
-│   │       └── Social/
-│   │           ├── SocialState.cs              Domain models
-│   │           ├── SocialDocument.cs           MongoDB document
-│   │           ├── ISocialRepository.cs        Repository interface
-│   │           ├── SocialRepository.cs         MongoDB implementation
-│   │           ├── ISocialService.cs           Service interface
-│   │           ├── SocialService.cs            Service implementation
-│   │           ├── IFriendRequestLifecycleEngine.cs  Request lifecycle
-│   │           ├── BlockEnforcementMiddleware.cs     Block check middleware
-│   │           ├── SocialController.cs         REST endpoints
-│   │           ├── FriendCommand.cs            Friend action command
-│   │           ├── BlockCommand.cs             Block action command
-│   │           └── PartyCommand.cs             Party invite command
+│   │   ├── Gameplay/                       20 settings (action bars, combat, camera, etc.)
+│   │   ├── Accessibility/                  14 settings (colors, subtitles, audio, etc.)
+│   │   ├── Language/                       Preferred language (12 supported codes)
+│   │   ├── Notifications/                  5 boolean toggles
+│   │   ├── SocialPreferences/              4 visibility rules (who can message, invite, etc.)
+│   │   ├── Audio/                          9 settings (volumes + mute states)
+│   │   └── UiPreferences/                  13 settings (layout, positions, scales)
 │   │
-│   └── UserCenter/                         (placeholder, not committed)
+│   ├── AccountSettings/                    (empty, reserved)
+│   └── Profile/
+│       ├── Avatar.cs                       Avatar value object
+│       └── Username.cs                     Username value object
+│
+├── Social/                                 (top-level module)
+│   ├── ISocialRepository.cs                Repository interface
+│   ├── SocialRepository.cs                 MongoDB implementation
+│   ├── SocialDocument.cs                   MongoDB document
+│   ├── ISocialService.cs                   Service interface
+│   ├── SocialService.cs                    Service implementation
+│   ├── IFriendRequestLifecycleEngine.cs    Request lifecycle
+│   ├── BlockEnforcementMiddleware.cs       Block check middleware
+│   ├── SocialController.cs                 REST endpoints
+│   ├── FriendCommand.cs                    Friend action command
+│   ├── BlockCommand.cs                     Block action command
+│   ├── PartyCommand.cs                     Party invite command
+│   └── SocialState.cs                      Domain models
+│
+├── DoNotTouchFolder/                       (do not modify)
+│   ├── ApplicationUser.cs                  User entity (Identity)
+│   ├── ApplicationDbContext.cs             EF Core DbContext
+│   └── SharedSettings/UserCenter/          (placeholders)
 │
 └── Properties/
 ```
@@ -159,8 +142,8 @@ PickMeUp.Api/
 | Layer | Technology | Purpose |
 |---|---|---|
 | Runtime | .NET 10 | Host |
-| Database | MySQL (Pomelo EF Core 9.0) | Account persistence |
-| Database | MongoDB (Driver 3.12) | Social, preferences |
+| Database | MySQL (Pomelo EF Core 9.0) | Identity persistence |
+| Database | MongoDB (Driver 3.12) | Preferences, social |
 | Cache | Redis (StackExchange) | Sessions, tokens, CSRF |
 | Identity | ASP.NET Identity (EF Core) | User management |
 | Auth | Google OAuth, Facebook OAuth | External sign-in |
@@ -185,16 +168,15 @@ PickMeUp.Api/
 
 ### Account Preferences
 
-| Method | Endpoint | Purpose |
+| Method | Endpoint | Domain |
 |---|---|---|
-| GET | `/account/preferences/gameplay` | Get gameplay settings |
-| PUT | `/account/preferences/gameplay` | Update gameplay settings |
-| GET | `/account/preferences/accessibility` | Get accessibility settings |
-| PUT | `/account/preferences/accessibility` | Update accessibility settings |
-| GET | `/account/preferences/language` | Get language settings |
-| PUT | `/account/preferences/language` | Update language settings |
-| GET | `/account/preferences/notifications` | Get notification settings |
-| PUT | `/account/preferences/notifications` | Update notification settings |
+| GET/PUT | `/account/preferences/gameplay` | Gameplay (20 settings) |
+| GET/PUT | `/account/preferences/accessibility` | Accessibility (14 settings) |
+| GET/PUT | `/account/preferences/language` | Language |
+| GET/PUT | `/account/preferences/notifications` | Notifications (5 toggles) |
+| GET/PUT | `/account/preferences/social` | Social preferences (4 rules) |
+| GET/PUT | `/account/preferences/audio` | Audio (9 settings) |
+| GET/PUT | `/account/preferences/ui` | UI (13 settings) |
 
 ### Social
 
@@ -207,125 +189,6 @@ PickMeUp.Api/
 | POST | `/account/social/blocks` | Block user |
 | DELETE | `/account/social/blocks/{id}` | Unblock user |
 | POST | `/account/social/party` | Party invite |
-
----
-
-## Authentication Flow
-
-### OAuth Login
-
-```mermaid
-sequenceDiagram
-    autonumber
-    participant U as Unity Client
-    participant B as Backend API
-    participant P as OAuth Provider
-    participant R as Redis
-
-    U->>B: GET /api/auth/login/google
-    B->>R: Generate CSRF state (256-bit)
-    R-->>B: state stored (5 min TTL)
-    B-->>U: { redirectUrl }
-
-    Note over U,P: Browser opens provider URL
-
-    U->>P: User authenticates
-    P-->>B: GET /api/auth/callback/google?code=...&state=...
-
-    B->>R: Validate state
-    R-->>B: valid (single-use, delete)
-
-    B->>P: POST /token (exchange code)
-    P-->>B: { access_token }
-
-    B->>P: GET /userinfo
-    P-->>B: { id, email, name }
-
-    B->>B: Create/link account
-    B->>R: Store session (account_id, TTL)
-    B->>R: Store loginCode (2 min TTL)
-
-    B-->>U: Redirect to /auth/complete?loginCode=...
-
-    U->>B: POST /consume-login-code
-    B->>R: Validate loginCode
-    R-->>B: session_id
-
-    B->>B: Generate JWT access + refresh tokens
-    B->>R: Store refresh token (TTL)
-    B-->>U: { sessionId, accessToken, refreshToken }
-```
-
-### Token Lifecycle
-
-```mermaid
-stateDiagram-v2
-    [*] --> Authenticated: Login / OAuth callback
-
-    Authenticated --> Active: Got access + refresh tokens
-
-    Active --> Active: API call with valid access token
-
-    Active --> AccessExpired: Access token expired (10 min)
-
-    AccessExpired --> Active: POST /refresh, new tokens
-    AccessExpired --> Expired: Refresh token invalid or expired (7 days)
-
-    Active --> LoggedOut: POST /logout
-    AccessExpired --> LoggedOut: POST /logout
-
-    Expired --> [*]
-    LoggedOut --> [*]
-```
-
----
-
-## Entity Relationships
-
-```mermaid
-erDiagram
-    ApplicationUser {
-        Guid Id PK
-        string Username
-        bool IsActive
-        bool IsLocked
-        DateTime CreatedAtUtc
-    }
-
-    Email {
-        string Address
-        EmailProvider Provider
-    }
-
-    Password {
-        string Hash
-    }
-
-    Username {
-        string Value
-    }
-
-    Avatar {
-        Guid Id PK
-        AvatarTypeStatus AvatarType
-        string Value
-        string AvatarUrlPath
-        bool IsDefault
-    }
-
-    ExternalAccountLink {
-        Guid AccountId FK
-        OAuthProvider Provider
-        string ExternalId
-        string Email
-    }
-
-    ApplicationUser ||--|| Email : "has"
-    ApplicationUser ||--o| Password : "has, null for OAuth"
-    ApplicationUser ||--|| Username : "has"
-    ApplicationUser ||--|| Avatar : "has"
-    ApplicationUser ||--o{ ExternalAccountLink : "linked to"
-```
 
 ---
 

@@ -708,3 +708,67 @@ Ask:
 - Is it a raw value or an effective runtime value?
 
 If those answers exist first, the C# structure is easy.
+
+---
+
+## 19. Implementation Status
+
+> Last updated: September 2026
+
+### Resolved — Backend (PickMeUp.Api)
+
+| Domain | Status | Files | Notes |
+|---|---|---|---|
+| **Gameplay** | ✅ Complete | Settings, DTO, Controller, Validator | 20 settings, FluentValidation |
+| **Accessibility** | ✅ Complete | Settings, DTO, Controller, Validator | 14 settings, FluentValidation |
+| **Language** | ✅ Complete | Settings, DTO, Controller, Validator | 12 supported codes |
+| **Notifications** | ✅ Complete | Settings, DTO, Controller, Validator | 5 boolean toggles |
+| **Social Preferences** | ✅ Complete | Settings, DTO, Controller, Validator | 4 visibility rules (enum) |
+| **Audio** | ✅ Complete | Settings, DTO, Controller, Validator | 9 settings (volumes + mutes) |
+| **UI Preferences** | ✅ Complete | Settings, DTO, Controller, Validator | 13 settings (layout, positions) |
+| **Social (relationships)** | ✅ Complete | Repository, Service, Controller, Middleware | Friends, blocks, party invites (MongoDB) |
+| **Authentication** | ✅ Complete | OAuth + Session + JWT | Google, Facebook, token rotation, Redis |
+| **Persistence** | ✅ Complete | IAccountPreferencesRepository + MongoDB | Per-domain get/update, versioned |
+
+### Resolved — Infrastructure
+
+| Component | Status | Notes |
+|---|---|---|
+| **Program.cs** | ✅ Wired | All services registered, middleware pipeline |
+| **.csproj** | ✅ Complete | 11 packages (MongoDB, FluentValidation, Redis, etc.) |
+| **.env loading** | ✅ Working | DotNetEnv, all secrets mapped to config |
+| **JWT** | ✅ Working | Access + refresh tokens, Redis-backed sessions |
+| **OAuth** | ✅ Working | Google + Facebook, CSRF state, callback flow |
+
+### Still Missing / Needs Work
+
+| Domain | Status | What's needed |
+|---|---|---|
+| **Account Settings** | ⬜ Empty folder | `AccountSettings/` — reserved, no files yet |
+| **Profile (Avatar)** | ⚠️ Placeholder | Value object exists, no controller or persistence |
+| **Profile (Username)** | ⚠️ Placeholder | Value object exists, no controller or persistence |
+| **Social Preferences** | ⚠️ Partial | Controller exists, but no block enforcement on preference updates |
+| **Device Configuration** | ⬜ Not started | Resolution, refresh rate, VSync, GPU — client-side only |
+| **Input Configuration** | ⬜ Not started | Logical actions ↔ physical mappings — client-side only |
+| **Hybrid Resolution** | ⬜ Not started | Account preference + device capability → effective runtime |
+| **Effective Runtime Config** | ⬜ Not started | Calculated object, not a database entity |
+| **Settings Versioning** | ⚠️ Partial | Version field exists, no migration logic |
+| **Conflict Resolution** | ⬜ Not started | Last-write-wins vs version checks |
+| **Client Settings Manager** | ⬜ Not started | Client-side settings coordinator |
+| **Tests** | ⬜ Not started | No unit or integration tests yet |
+| **MongoDB Index Setup** | ⬜ Not started | Index creation on startup |
+| **Health Checks** | ⬜ Not started | `/health`, `/ready` endpoints |
+| **CORS** | ⬜ Not started | Required for client communication |
+| **Rate Limiting** | ⬜ Not started | User-based request throttling |
+
+### Folder Ownership Summary
+
+| Folder | Owner | Purpose |
+|---|---|---|
+| `Account/Authentication/` | Shared backend | OAuth, JWT, sessions |
+| `Account/AccountPreferences/` | Shared backend | Per-user preference storage |
+| `Account/Profile/` | Shared backend | Value objects (Avatar, Username) |
+| `Social/` | Shared backend | Friend/block/party relationships |
+| `DoNotTouchFolder/` | Reserved | Identity entities, UserCenter placeholders |
+| `v1/` | Unity client | Engine-specific implementation |
+| `v2/` | Unreal client | Engine-specific implementation |
