@@ -4,9 +4,9 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using PickMeUp.Api.Account.AccountPreferences;
-using PickMeUp.Api.Account.AccountPreferences.Social;
 using PickMeUp.Api.Account.Authentication.Session;
 using PickMeUp.Api.DoNotTouchFolder;
+using PickMeUp.Api.Social;
 using System.Text;
 
 // ── Load .env ────────────────────────────────────────────────────

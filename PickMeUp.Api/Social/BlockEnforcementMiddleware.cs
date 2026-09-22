@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Http;
 
-namespace PickMeUp.Api.Account.AccountPreferences.Social
+namespace PickMeUp.Api.Social
 {
     // ── Block Enforcement Middleware ───────────────────
     // ASP.NET middleware that blocks social actions between mutually blocked users.

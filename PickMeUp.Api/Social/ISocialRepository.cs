@@ -1,4 +1,4 @@
-﻿namespace PickMeUp.Api.Account.AccountPreferences.Social
+﻿namespace PickMeUp.Api.Social
 {
     // ── Social Repository Interface ────────────────────
     // Persistence for friends, blocks, friend requests, and party invites.

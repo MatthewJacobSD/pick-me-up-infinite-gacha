@@ -1,6 +1,6 @@
 ﻿using MongoDB.Bson.Serialization.Attributes;
 
-namespace PickMeUp.Api.Account.AccountPreferences.Social
+namespace PickMeUp.Api.Social
 {
     // ── Social Document ────────────────────────────────
     // MongoDB document for a player's social state.

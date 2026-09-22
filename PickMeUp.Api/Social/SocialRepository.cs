@@ -1,6 +1,6 @@
 ﻿using MongoDB.Driver;
 
-namespace PickMeUp.Api.Account.AccountPreferences.Social
+namespace PickMeUp.Api.Social
 {
     // ── Social Repository ──────────────────────────────
     // MongoDB implementation of ISocialRepository.

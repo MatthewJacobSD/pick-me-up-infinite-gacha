@@ -1,4 +1,6 @@
-﻿namespace PickMeUp.Api.Account.AccountPreferences
+﻿using PickMeUp.Api.Account.AccountPreferences.SocialPreferences;
+
+namespace PickMeUp.Api.Account.AccountPreferences
 {
     // MongoDB document holding all account preferences.
     // One per user. Contains domain-specific settings objects and a version counter.
@@ -11,7 +13,7 @@
         public Accessibility.AccessibilitySettings Accessibility { get; init; } = new();
         public Language.LanguageSettings Language { get; init; } = new();
         public Notifications.NotificationSettings Notifications { get; init; } = new();
-        public SocialPreferences.SocialPreferencesSettings SocialPreferences { get; init; } = new();
+        public SocialPreferencesSettings SocialPreferences { get; init; } = new();
         public Audio.AudioPreferencesSettings Audio { get; init; } = new();
         public UiPreferences.UiPreferencesSettings UiPreferences { get; init; } = new();
 

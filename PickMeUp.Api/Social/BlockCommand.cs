@@ -1,4 +1,4 @@
-﻿namespace PickMeUp.Api.Account.AccountPreferences.Social
+﻿namespace PickMeUp.Api.Social
 {
     // ── Block Command ──────────────────────────────────
     // Command object for block/unblock operations.

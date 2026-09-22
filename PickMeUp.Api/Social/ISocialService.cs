@@ -1,4 +1,4 @@
-﻿namespace PickMeUp.Api.Account.AccountPreferences.Social
+﻿namespace PickMeUp.Api.Social
 {
     // ── Social Service Interface ───────────────────────
     // Orchestrates social commands through the repository and lifecycle engine.

@@ -1,4 +1,4 @@
-﻿namespace PickMeUp.Api.Account.AccountPreferences.Social
+﻿namespace PickMeUp.Api.Social
 {
     // ── Friend Request Lifecycle ───────────────────────
     // Manages Send, Accept, Decline, Cancel, Expire transitions.

@@ -1,4 +1,4 @@
-﻿namespace PickMeUp.Api.Account.AccountPreferences.Social
+﻿namespace PickMeUp.Api.Social
 {
     // ── Party Command ──────────────────────────────────
     // Command object for party invite operations.

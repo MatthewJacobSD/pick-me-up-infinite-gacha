@@ -1,4 +1,4 @@
-namespace PickMeUp.Api.Account.AccountPreferences.Social
+namespace PickMeUp.Api.Social
 {
     // ── Social Service ─────────────────────────────────
     // Concrete implementation of ISocialService.

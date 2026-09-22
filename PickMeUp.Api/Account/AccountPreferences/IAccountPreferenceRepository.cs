@@ -1,4 +1,6 @@
-﻿namespace PickMeUp.Api.Account.AccountPreferences
+﻿using PickMeUp.Api.Account.AccountPreferences.SocialPreferences;
+
+namespace PickMeUp.Api.Account.AccountPreferences
 {
     // ── Account Preferences Repository ─────────────────
     // Per-user document in MongoDB with per-domain get/update.
@@ -20,8 +22,8 @@
         Task<Notifications.NotificationSettings> GetNotificationSettingsAsync(string userId);
         Task UpdateNotificationSettingsAsync(string userId, Notifications.NotificationSettings settings);
 
-        Task<SocialPreferences.SocialPreferencesSettings> GetSocialPreferencesAsync(string userId);
-        Task UpdateSocialPreferencesAsync(string userId, SocialPreferences.SocialPreferencesSettings settings);
+        Task<SocialPreferencesSettings> GetSocialPreferencesAsync(string userId);
+        Task UpdateSocialPreferencesAsync(string userId, SocialPreferencesSettings settings);
 
         Task<Audio.AudioPreferencesSettings> GetAudioPreferencesAsync(string userId);
         Task UpdateAudioPreferencesAsync(string userId, Audio.AudioPreferencesSettings settings);

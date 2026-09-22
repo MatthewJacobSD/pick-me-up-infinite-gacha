@@ -1,4 +1,4 @@
-﻿namespace PickMeUp.Api.Account.AccountPreferences.Social
+﻿namespace PickMeUp.Api.Social
 {
     // ── Social Domain Models ───────────────────────────
     // Read-only snapshot of a player's social data.

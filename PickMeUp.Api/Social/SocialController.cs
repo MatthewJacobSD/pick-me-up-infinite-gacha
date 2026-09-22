@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
-namespace PickMeUp.Api.Account.AccountPreferences.Social
+namespace PickMeUp.Api.Social
 {
     // ── Social Controller ──────────────────────────────
     // REST endpoints for social operations.
