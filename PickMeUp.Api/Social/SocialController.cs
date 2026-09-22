@@ -5,7 +5,7 @@ using PickMeUp.Api.Common.Authentication;
 namespace PickMeUp.Api.Social;
 
 [ApiController]
-[Route("v1/account/social")]
+[Route("account/social")]
 [Authorize]
 public sealed class SocialController(ISocialService social, ICurrentUser currentUser) : ControllerBase
 {
