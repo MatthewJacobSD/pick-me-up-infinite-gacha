@@ -39,7 +39,7 @@ namespace PickMeUp.Api.Account.Authentication.OAuth
 
             var email = Email.Create(identity.Email);
             var username = Username.Create(GenerateUsername(identity));
-            var avatar = Avatar.Create("/avatars/default.png", AvatarTypeStatus.Default);
+            var avatar = Avatar.Create(string.Empty, "/avatars/default.png", AvatarTypeStatus.Default);
 
             var account = new Account
             {

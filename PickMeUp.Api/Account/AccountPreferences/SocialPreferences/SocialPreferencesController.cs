@@ -1,7 +1,5 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using PickMeUp.Api.Account.AccountPreferences;
-using PickMeUp.Api.Account.SocialState.SocialPreferences;
 
 namespace PickMeUp.Api.Account.AccountPreferences.SocialPreferences
 {

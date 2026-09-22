@@ -43,7 +43,7 @@ namespace PickMeUp.Api.Account.Authentication.OAuth
     {
         public const string SectionName = "OAuth";
 
-        public GoogleProvider Google { get; init; } = default!;
-        public FacebookProvider Facebook { get; init; } = default!;
+        public Provider.GoogleProvider Google { get; init; } = default!;
+        public Provider.FacebookProvider Facebook { get; init; } = default!;
     }
 }

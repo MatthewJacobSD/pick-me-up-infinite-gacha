@@ -108,5 +108,39 @@ namespace PickMeUp.Api.Account.AccountPreferences
             await _collection.UpdateOneAsync(x => x.UserId == userId, update);
         }
 
+        // ── SocialPreferences ──────────────────────────
+
+        public async Task<SocialPreferences.SocialPreferencesSettings> GetSocialPreferencesAsync(string userId)
+        {
+            var doc = await GetOrCreateAsync(userId);
+            return doc.SocialPreferences;
+        }
+
+        public async Task UpdateSocialPreferencesAsync(string userId, SocialPreferences.SocialPreferencesSettings settings)
+        {
+            var update = Builders<AccountPreferencesDocument>.Update
+                .Set(x => x.SocialPreferences, settings)
+                .Inc(x => x.Version, 1);
+
+            await _collection.UpdateOneAsync(x => x.UserId == userId, update);
+        }
+
+        // ── UiPreferences ──────────────────────────────
+
+        public async Task<UiPreferences.UiPreferencesSettings> GetUiPreferencesAsync(string userId)
+        {
+            var doc = await GetOrCreateAsync(userId);
+            return doc.UiPreferences;
+        }
+
+        public async Task UpdateUiPreferencesAsync(string userId, UiPreferences.UiPreferencesSettings settings)
+        {
+            var update = Builders<AccountPreferencesDocument>.Update
+                .Set(x => x.UiPreferences, settings)
+                .Inc(x => x.Version, 1);
+
+            await _collection.UpdateOneAsync(x => x.UserId == userId, update);
+        }
+
     }
 }

@@ -5,7 +5,7 @@ namespace PickMeUp.Api.DoNotTouchFolder
 {
     // User account entity extending ASP.NET Identity with domain fields.
 
-    public class ApplicationUser
+    public class ApplicationUser : IdentityUser<Guid>
     {
         // ── Identity ──────────────────────────────────────────────
 
