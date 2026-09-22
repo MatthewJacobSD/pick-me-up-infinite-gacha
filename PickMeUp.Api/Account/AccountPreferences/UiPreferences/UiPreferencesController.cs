@@ -1,5 +1,7 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using PickMeUp.Api.Account.AccountPreferences;
+using PickMeUp.Api.Common.Authentication;
 
 namespace PickMeUp.Api.Account.AccountPreferences.UiPreferences
 {
@@ -9,46 +11,27 @@ namespace PickMeUp.Api.Account.AccountPreferences.UiPreferences
     public sealed class UiPreferencesController : ControllerBase
     {
         private readonly IAccountPreferencesRepository _repo;
+        private readonly ICurrentUser _currentUser;
 
-        public UiPreferencesController(IAccountPreferencesRepository repo)
+        public UiPreferencesController(IAccountPreferencesRepository repo, ICurrentUser currentUser)
         {
             _repo = repo;
+            _currentUser = currentUser;
         }
 
         [HttpGet]
         public async Task<IActionResult> Get()
         {
-            var userId = User.Identity!.Name!;
-            var prefs = await _repo.GetUiPreferencesAsync(userId);
-            return Ok(prefs);
+            var doc = await _repo.GetOrCreateAsync(_currentUser.AccountId);
+            return Ok(new { doc.UiPreferences, doc.Version });
         }
 
         [HttpPut]
         public async Task<IActionResult> Update([FromBody] UiPreferencesDto dto)
         {
-            var userId = User.Identity!.Name!;
-            var settings = new UiPreferencesSettings
-            {
-                UiScale = dto.UiScale,
-                TextSize = dto.TextSize,
-                IconSize = dto.IconSize,
-
-                ShowMinimap = dto.ShowMinimap,
-                ShowChatWindow = dto.ShowChatWindow,
-                ShowQuestTracker = dto.ShowQuestTracker,
-                ShowActionBars = dto.ShowActionBars,
-
-                MinimapPosition = dto.MinimapPosition,
-                ChatWindowPosition = dto.ChatWindowPosition,
-                QuestTrackerPosition = dto.QuestTrackerPosition,
-                ActionBarLayout = dto.ActionBarLayout,
-
-                InventoryLayout = dto.InventoryLayout,
-                ChatLayout = dto.ChatLayout
-            };
-
-            await _repo.UpdateUiPreferencesAsync(userId, settings);
-            return Ok();
+            var newVersion = await _repo.UpdateUiPreferencesAsync(_currentUser.AccountId, dto.ToSettings(), dto.Version);
+            var doc = await _repo.GetOrCreateAsync(_currentUser.AccountId);
+            return Ok(new { doc.UiPreferences, Version = newVersion });
         }
     }
 }

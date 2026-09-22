@@ -2,33 +2,30 @@
 
 namespace PickMeUp.Api.Account.AccountPreferences
 {
-    // ── Account Preferences Repository ─────────────────
-    // Per-user document in MongoDB with per-domain get/update.
-    // Each update increments the Version field for optimistic concurrency.
-
     public interface IAccountPreferencesRepository
     {
-        Task<AccountPreferencesDocument> GetAsync(string userId);
+        Task<AccountPreferencesDocument> GetOrCreateAsync(Guid accountId);
+        Task<AccountPreferencesDocument?> FindAsync(Guid accountId);
 
-        Task<Gameplay.GameplaySettings> GetGameplaySettingsAsync(string userId);
-        Task UpdateGameplaySettingsAsync(string userId, Gameplay.GameplaySettings settings);
+        Task<Gameplay.GameplaySettings> GetGameplaySettingsAsync(Guid accountId);
+        Task<int> UpdateGameplaySettingsAsync(Guid accountId, Gameplay.GameplaySettings settings, int expectedVersion);
 
-        Task<Accessibility.AccessibilitySettings> GetAccessibilitySettingsAsync(string userId);
-        Task UpdateAccessibilitySettingsAsync(string userId, Accessibility.AccessibilitySettings settings);
+        Task<Accessibility.AccessibilitySettings> GetAccessibilitySettingsAsync(Guid accountId);
+        Task<int> UpdateAccessibilitySettingsAsync(Guid accountId, Accessibility.AccessibilitySettings settings, int expectedVersion);
 
-        Task<Language.LanguageSettings> GetLanguageSettingsAsync(string userId);
-        Task UpdateLanguageSettingsAsync(string userId, Language.LanguageSettings settings);
+        Task<Language.LanguageSettings> GetLanguageSettingsAsync(Guid accountId);
+        Task<int> UpdateLanguageSettingsAsync(Guid accountId, Language.LanguageSettings settings, int expectedVersion);
 
-        Task<Notifications.NotificationSettings> GetNotificationSettingsAsync(string userId);
-        Task UpdateNotificationSettingsAsync(string userId, Notifications.NotificationSettings settings);
+        Task<Notifications.NotificationSettings> GetNotificationSettingsAsync(Guid accountId);
+        Task<int> UpdateNotificationSettingsAsync(Guid accountId, Notifications.NotificationSettings settings, int expectedVersion);
 
-        Task<SocialPreferencesSettings> GetSocialPreferencesAsync(string userId);
-        Task UpdateSocialPreferencesAsync(string userId, SocialPreferencesSettings settings);
+        Task<SocialPreferencesSettings> GetSocialPreferencesAsync(Guid accountId);
+        Task<int> UpdateSocialPreferencesAsync(Guid accountId, SocialPreferencesSettings settings, int expectedVersion);
 
-        Task<Audio.AudioPreferencesSettings> GetAudioPreferencesAsync(string userId);
-        Task UpdateAudioPreferencesAsync(string userId, Audio.AudioPreferencesSettings settings);
+        Task<Audio.AudioPreferencesSettings> GetAudioPreferencesAsync(Guid accountId);
+        Task<int> UpdateAudioPreferencesAsync(Guid accountId, Audio.AudioPreferencesSettings settings, int expectedVersion);
 
-        Task<UiPreferences.UiPreferencesSettings> GetUiPreferencesAsync(string userId);
-        Task UpdateUiPreferencesAsync(string userId, UiPreferences.UiPreferencesSettings settings);
+        Task<UiPreferences.UiPreferencesSettings> GetUiPreferencesAsync(Guid accountId);
+        Task<int> UpdateUiPreferencesAsync(Guid accountId, UiPreferences.UiPreferencesSettings settings, int expectedVersion);
     }
 }

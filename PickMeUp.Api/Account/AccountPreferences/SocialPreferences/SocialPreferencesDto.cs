@@ -6,5 +6,15 @@
         public SocialVisibility Messages { get; init; }
         public SocialVisibility PartyInvites { get; init; }
         public SocialVisibility OnlineStatus { get; init; }
+
+        public int Version { get; init; }
+
+        public SocialPreferencesSettings ToSettings() => new()
+        {
+            FriendRequests = FriendRequests,
+            Messages = Messages,
+            PartyInvites = PartyInvites,
+            OnlineStatus = OnlineStatus
+        };
     }
 }

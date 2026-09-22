@@ -15,5 +15,24 @@
 
         public float AmbientVolume { get; init; }
         public bool AmbientMuted { get; init; }
+
+        public int Version { get; init; }
+
+        public AudioPreferencesSettings ToSettings() => new()
+        {
+            MasterVolume = MasterVolume,
+
+            MusicVolume = MusicVolume,
+            MusicMuted = MusicMuted,
+
+            SfxVolume = SfxVolume,
+            SfxMuted = SfxMuted,
+
+            VoiceVolume = VoiceVolume,
+            VoiceMuted = VoiceMuted,
+
+            AmbientVolume = AmbientVolume,
+            AmbientMuted = AmbientMuted
+        };
     }
 }

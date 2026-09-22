@@ -1,146 +1,137 @@
-﻿using MongoDB.Driver;
+﻿using System.Linq.Expressions;
+using MongoDB.Driver;
+using PickMeUp.Api.Account.AccountPreferences.SocialPreferences;
+using PickMeUp.Api.Common.Errors;
 
 namespace PickMeUp.Api.Account.AccountPreferences
 {
-    // ── Account Preferences Repository ─────────────────
-    // MongoDB implementation of IAccountPreferencesRepository.
-    // One document per user in the "account_preferences" collection.
-    // Each update increments the Version field for optimistic concurrency.
-
     public sealed class AccountPreferencesRepository(IMongoDatabase db) : IAccountPreferencesRepository
     {
         private readonly IMongoCollection<AccountPreferencesDocument> _collection =
             db.GetCollection<AccountPreferencesDocument>("account_preferences");
 
-        // 1. Look up existing document or create a new one with defaults.
-        private async Task<AccountPreferencesDocument> GetOrCreateAsync(string userId)
+        public async Task<AccountPreferencesDocument> GetOrCreateAsync(Guid accountId)
         {
-            var doc = await _collection.Find(x => x.UserId == userId).FirstOrDefaultAsync();
+            var update = Builders<AccountPreferencesDocument>.Update
+                .SetOnInsert(x => x.AccountId, accountId)
+                .SetOnInsert(x => x.UserId, accountId.ToString())
+                .SetOnInsert(x => x.Gameplay, new Gameplay.GameplaySettings())
+                .SetOnInsert(x => x.Accessibility, new Accessibility.AccessibilitySettings())
+                .SetOnInsert(x => x.Language, new Language.LanguageSettings())
+                .SetOnInsert(x => x.Notifications, new Notifications.NotificationSettings())
+                .SetOnInsert(x => x.SocialPreferences, new SocialPreferencesSettings())
+                .SetOnInsert(x => x.Audio, new Audio.AudioPreferencesSettings())
+                .SetOnInsert(x => x.UiPreferences, new UiPreferences.UiPreferencesSettings())
+                .SetOnInsert(x => x.Version, 1);
 
-            if (doc is null)
-            {
-                doc = new AccountPreferencesDocument { UserId = userId };
-                await _collection.InsertOneAsync(doc);
-            }
+            await _collection.UpdateOneAsync(
+                x => x.AccountId == accountId,
+                update,
+                new UpdateOptions { IsUpsert = true });
 
-            return doc;
+            return (await _collection.Find(x => x.AccountId == accountId).FirstOrDefaultAsync())!;
         }
 
-        public Task<AccountPreferencesDocument> GetAsync(string userId)
-            => GetOrCreateAsync(userId);
+        public async Task<AccountPreferencesDocument?> FindAsync(Guid accountId)
+            => await _collection.Find(x => x.AccountId == accountId).FirstOrDefaultAsync();
 
         // ── Gameplay ───────────────────────────────────
 
-        public async Task<Gameplay.GameplaySettings> GetGameplaySettingsAsync(string userId)
+        public async Task<Gameplay.GameplaySettings> GetGameplaySettingsAsync(Guid accountId)
         {
-            var doc = await GetOrCreateAsync(userId);
+            var doc = await GetOrCreateAsync(accountId);
             return doc.Gameplay;
         }
 
-        public async Task UpdateGameplaySettingsAsync(string userId, Gameplay.GameplaySettings settings)
-        {
-            var update = Builders<AccountPreferencesDocument>.Update
-                .Set(x => x.Gameplay, settings)
-                .Inc(x => x.Version, 1);
-
-            await _collection.UpdateOneAsync(x => x.UserId == userId, update);
-        }
+        public Task<int> UpdateGameplaySettingsAsync(Guid accountId, Gameplay.GameplaySettings settings, int expectedVersion)
+            => UpdateSliceAsync(accountId, x => x.Gameplay, settings, expectedVersion);
 
         // ── Accessibility ──────────────────────────────
 
-        public async Task<Accessibility.AccessibilitySettings> GetAccessibilitySettingsAsync(string userId)
+        public async Task<Accessibility.AccessibilitySettings> GetAccessibilitySettingsAsync(Guid accountId)
         {
-            var doc = await GetOrCreateAsync(userId);
+            var doc = await GetOrCreateAsync(accountId);
             return doc.Accessibility;
         }
 
-        public async Task UpdateAccessibilitySettingsAsync(string userId, Accessibility.AccessibilitySettings settings)
-        {
-            var update = Builders<AccountPreferencesDocument>.Update
-                .Set(x => x.Accessibility, settings)
-                .Inc(x => x.Version, 1);
+        public Task<int> UpdateAccessibilitySettingsAsync(Guid accountId, Accessibility.AccessibilitySettings settings, int expectedVersion)
+            => UpdateSliceAsync(accountId, x => x.Accessibility, settings, expectedVersion);
 
-            await _collection.UpdateOneAsync(x => x.UserId == userId, update);
-        }
+        // ── Language ───────────────────────────────────
 
-        public async Task<Language.LanguageSettings> GetLanguageSettingsAsync(string userId)
+        public async Task<Language.LanguageSettings> GetLanguageSettingsAsync(Guid accountId)
         {
-            var doc = await GetOrCreateAsync(userId);
+            var doc = await GetOrCreateAsync(accountId);
             return doc.Language;
         }
 
-        public async Task UpdateLanguageSettingsAsync(string userId, Language.LanguageSettings settings)
-        {
-            var update = Builders<AccountPreferencesDocument>.Update
-                .Set(x => x.Language, settings)
-                .Inc(x => x.Version, 1);
+        public Task<int> UpdateLanguageSettingsAsync(Guid accountId, Language.LanguageSettings settings, int expectedVersion)
+            => UpdateSliceAsync(accountId, x => x.Language, settings, expectedVersion);
 
-            await _collection.UpdateOneAsync(x => x.UserId == userId, update);
-        }
+        // ── Notifications ──────────────────────────────
 
-        public async Task<Notifications.NotificationSettings> GetNotificationSettingsAsync(string userId)
+        public async Task<Notifications.NotificationSettings> GetNotificationSettingsAsync(Guid accountId)
         {
-            var doc = await GetOrCreateAsync(userId);
+            var doc = await GetOrCreateAsync(accountId);
             return doc.Notifications;
         }
 
-        public async Task UpdateNotificationSettingsAsync(string userId, Notifications.NotificationSettings settings)
-        {
-            var update = Builders<AccountPreferencesDocument>.Update
-                .Set(x => x.Notifications, settings)
-                .Inc(x => x.Version, 1);
-
-            await _collection.UpdateOneAsync(x => x.UserId == userId, update);
-        }
-
-        public async Task<Audio.AudioPreferencesSettings> GetAudioPreferencesAsync(string userId)
-        {
-            var doc = await GetOrCreateAsync(userId);
-            return doc.Audio;
-        }
-
-        public async Task UpdateAudioPreferencesAsync(string userId, Audio.AudioPreferencesSettings settings)
-        {
-            var update = Builders<AccountPreferencesDocument>.Update
-                .Set(x => x.Audio, settings)
-                .Inc(x => x.Version, 1);
-
-            await _collection.UpdateOneAsync(x => x.UserId == userId, update);
-        }
+        public Task<int> UpdateNotificationSettingsAsync(Guid accountId, Notifications.NotificationSettings settings, int expectedVersion)
+            => UpdateSliceAsync(accountId, x => x.Notifications, settings, expectedVersion);
 
         // ── SocialPreferences ──────────────────────────
 
-        public async Task<SocialPreferences.SocialPreferencesSettings> GetSocialPreferencesAsync(string userId)
+        public async Task<SocialPreferencesSettings> GetSocialPreferencesAsync(Guid accountId)
         {
-            var doc = await GetOrCreateAsync(userId);
+            var doc = await GetOrCreateAsync(accountId);
             return doc.SocialPreferences;
         }
 
-        public async Task UpdateSocialPreferencesAsync(string userId, SocialPreferences.SocialPreferencesSettings settings)
-        {
-            var update = Builders<AccountPreferencesDocument>.Update
-                .Set(x => x.SocialPreferences, settings)
-                .Inc(x => x.Version, 1);
+        public Task<int> UpdateSocialPreferencesAsync(Guid accountId, SocialPreferencesSettings settings, int expectedVersion)
+            => UpdateSliceAsync(accountId, x => x.SocialPreferences, settings, expectedVersion);
 
-            await _collection.UpdateOneAsync(x => x.UserId == userId, update);
+        // ── Audio ──────────────────────────────────────
+
+        public async Task<Audio.AudioPreferencesSettings> GetAudioPreferencesAsync(Guid accountId)
+        {
+            var doc = await GetOrCreateAsync(accountId);
+            return doc.Audio;
         }
+
+        public Task<int> UpdateAudioPreferencesAsync(Guid accountId, Audio.AudioPreferencesSettings settings, int expectedVersion)
+            => UpdateSliceAsync(accountId, x => x.Audio, settings, expectedVersion);
 
         // ── UiPreferences ──────────────────────────────
 
-        public async Task<UiPreferences.UiPreferencesSettings> GetUiPreferencesAsync(string userId)
+        public async Task<UiPreferences.UiPreferencesSettings> GetUiPreferencesAsync(Guid accountId)
         {
-            var doc = await GetOrCreateAsync(userId);
+            var doc = await GetOrCreateAsync(accountId);
             return doc.UiPreferences;
         }
 
-        public async Task UpdateUiPreferencesAsync(string userId, UiPreferences.UiPreferencesSettings settings)
+        public Task<int> UpdateUiPreferencesAsync(Guid accountId, UiPreferences.UiPreferencesSettings settings, int expectedVersion)
+            => UpdateSliceAsync(accountId, x => x.UiPreferences, settings, expectedVersion);
+
+        // ── Shared helper ──────────────────────────────
+
+        private async Task<int> UpdateSliceAsync<TField>(
+            Guid accountId,
+            Expression<Func<AccountPreferencesDocument, TField>> field,
+            TField value,
+            int expectedVersion)
         {
             var update = Builders<AccountPreferencesDocument>.Update
-                .Set(x => x.UiPreferences, settings)
+                .Set(field, value)
                 .Inc(x => x.Version, 1);
 
-            await _collection.UpdateOneAsync(x => x.UserId == userId, update);
-        }
+            var result = await _collection.UpdateOneAsync(
+                x => x.AccountId == accountId && x.Version == expectedVersion,
+                update);
 
+            if (result.MatchedCount == 0)
+                throw new VersionConflictException();
+
+            return expectedVersion + 1;
+        }
     }
 }

@@ -1,9 +1,5 @@
 ﻿namespace PickMeUp.Api.Account.AccountPreferences.Gameplay
 {
-    // ── Gameplay Settings DTO ──────────────────────────
-    // Incoming payload for gameplay settings updates (PUT).
-    // No defaults — values come from the client.
-
     public sealed class GameplaySettingsDto
     {
         public int VisibleActionBars { get; init; }
@@ -31,5 +27,36 @@
 
         public bool AutoRunToggle { get; init; }
         public bool ToggleSprint { get; init; }
+
+        public int Version { get; init; }
+
+        public GameplaySettings ToSettings() => new()
+        {
+            VisibleActionBars = VisibleActionBars,
+            ShowCooldownNumbers = ShowCooldownNumbers,
+            ShowKeybindLabels = ShowKeybindLabels,
+            LockActionBars = LockActionBars,
+
+            ShowDamageNumbers = ShowDamageNumbers,
+            ShowHealingNumbers = ShowHealingNumbers,
+            ShowCriticalEffects = ShowCriticalEffects,
+            ShowFloatingCombatText = ShowFloatingCombatText,
+
+            InvertYAxis = InvertYAxis,
+            InvertXAxis = InvertXAxis,
+            CameraSensitivity = CameraSensitivity,
+            FieldOfView = FieldOfView,
+
+            AutoLoot = AutoLoot,
+            HighlightInteractables = HighlightInteractables,
+
+            ShowNameplates = ShowNameplates,
+            ShowEnemyNameplates = ShowEnemyNameplates,
+            ShowFriendlyNameplates = ShowFriendlyNameplates,
+            ShowPingIndicators = ShowPingIndicators,
+
+            AutoRunToggle = AutoRunToggle,
+            ToggleSprint = ToggleSprint
+        };
     }
 }

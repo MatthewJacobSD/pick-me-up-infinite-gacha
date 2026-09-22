@@ -1,5 +1,7 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using PickMeUp.Api.Account.AccountPreferences;
+using PickMeUp.Api.Common.Authentication;
 
 namespace PickMeUp.Api.Account.AccountPreferences.Audio
 {
@@ -9,43 +11,27 @@ namespace PickMeUp.Api.Account.AccountPreferences.Audio
     public sealed class AudioPreferencesController : ControllerBase
     {
         private readonly IAccountPreferencesRepository _repo;
+        private readonly ICurrentUser _currentUser;
 
-        public AudioPreferencesController(IAccountPreferencesRepository repo)
+        public AudioPreferencesController(IAccountPreferencesRepository repo, ICurrentUser currentUser)
         {
             _repo = repo;
+            _currentUser = currentUser;
         }
 
         [HttpGet]
         public async Task<IActionResult> Get()
         {
-            var userId = User.Identity!.Name!;
-            var prefs = await _repo.GetAudioPreferencesAsync(userId);
-            return Ok(prefs);
+            var doc = await _repo.GetOrCreateAsync(_currentUser.AccountId);
+            return Ok(new { doc.Audio, doc.Version });
         }
 
         [HttpPut]
         public async Task<IActionResult> Update([FromBody] AudioPreferencesDto dto)
         {
-            var userId = User.Identity!.Name!;
-            var settings = new AudioPreferencesSettings
-            {
-                MasterVolume = dto.MasterVolume,
-
-                MusicVolume = dto.MusicVolume,
-                MusicMuted = dto.MusicMuted,
-
-                SfxVolume = dto.SfxVolume,
-                SfxMuted = dto.SfxMuted,
-
-                VoiceVolume = dto.VoiceVolume,
-                VoiceMuted = dto.VoiceMuted,
-
-                AmbientVolume = dto.AmbientVolume,
-                AmbientMuted = dto.AmbientMuted
-            };
-
-            await _repo.UpdateAudioPreferencesAsync(userId, settings);
-            return Ok();
+            var newVersion = await _repo.UpdateAudioPreferencesAsync(_currentUser.AccountId, dto.ToSettings(), dto.Version);
+            var doc = await _repo.GetOrCreateAsync(_currentUser.AccountId);
+            return Ok(new { doc.Audio, Version = newVersion });
         }
     }
 }

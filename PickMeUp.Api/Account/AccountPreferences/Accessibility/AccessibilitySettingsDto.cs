@@ -1,9 +1,5 @@
 ﻿namespace PickMeUp.Api.Account.AccountPreferences.Accessibility
 {
-    // ── Accessibility Settings DTO ─────────────────────
-    // Incoming payload for accessibility settings updates (PUT).
-    // No defaults — values come from the client.
-
     public sealed class AccessibilitySettingsDto
     {
         public string ColorblindMode { get; init; } = string.Empty;
@@ -23,5 +19,28 @@
         public bool DisableFlashingEffects { get; init; }
         public bool SimplifiedUI { get; init; }
         public int TextSize { get; init; }
+
+        public int Version { get; init; }
+
+        public AccessibilitySettings ToSettings() => new()
+        {
+            ColorblindMode = ColorblindMode,
+            HighContrastMode = HighContrastMode,
+
+            SubtitlesEnabled = SubtitlesEnabled,
+            SubtitleSize = SubtitleSize,
+            SubtitleOpacity = SubtitleOpacity,
+            SubtitleSpeakerNames = SubtitleSpeakerNames,
+            SubtitleSoundEffects = SubtitleSoundEffects,
+
+            VisualAudioIndicators = VisualAudioIndicators,
+            FootstepVisualization = FootstepVisualization,
+            GunshotVisualization = GunshotVisualization,
+
+            ReducedMotion = ReducedMotion,
+            DisableFlashingEffects = DisableFlashingEffects,
+            SimplifiedUI = SimplifiedUI,
+            TextSize = TextSize
+        };
     }
 }

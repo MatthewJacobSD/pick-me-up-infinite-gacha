@@ -1,12 +1,12 @@
-﻿using PickMeUp.Api.Account.AccountPreferences.SocialPreferences;
+﻿using MongoDB.Bson.Serialization.Attributes;
+using PickMeUp.Api.Account.AccountPreferences.SocialPreferences;
 
 namespace PickMeUp.Api.Account.AccountPreferences
 {
-    // MongoDB document holding all account preferences.
-    // One per user. Contains domain-specific settings objects and a version counter.
-
     public sealed class AccountPreferencesDocument
     {
+        [BsonId]
+        public Guid AccountId { get; init; }
         public string UserId { get; init; } = string.Empty;
 
         public Gameplay.GameplaySettings Gameplay { get; init; } = new();
@@ -17,7 +17,6 @@ namespace PickMeUp.Api.Account.AccountPreferences
         public Audio.AudioPreferencesSettings Audio { get; init; } = new();
         public UiPreferences.UiPreferencesSettings UiPreferences { get; init; } = new();
 
-        // Optimistic concurrency counter — increments on every update.
         public int Version { get; init; } = 1;
     }
 }

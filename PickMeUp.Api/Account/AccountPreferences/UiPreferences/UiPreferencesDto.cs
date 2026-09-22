@@ -18,5 +18,27 @@
 
         public InventoryLayoutMode InventoryLayout { get; init; }
         public ChatLayoutMode ChatLayout { get; init; }
+
+        public int Version { get; init; }
+
+        public UiPreferencesSettings ToSettings() => new()
+        {
+            UiScale = UiScale,
+            TextSize = TextSize,
+            IconSize = IconSize,
+
+            ShowMinimap = ShowMinimap,
+            ShowChatWindow = ShowChatWindow,
+            ShowQuestTracker = ShowQuestTracker,
+            ShowActionBars = ShowActionBars,
+
+            MinimapPosition = MinimapPosition,
+            ChatWindowPosition = ChatWindowPosition,
+            QuestTrackerPosition = QuestTrackerPosition,
+            ActionBarLayout = ActionBarLayout,
+
+            InventoryLayout = InventoryLayout,
+            ChatLayout = ChatLayout
+        };
     }
 }

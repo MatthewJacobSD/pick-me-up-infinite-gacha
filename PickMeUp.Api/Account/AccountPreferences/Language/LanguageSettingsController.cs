@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using PickMeUp.Api.Account.AccountPreferences;
+using PickMeUp.Api.Common.Authentication;
 
 namespace PickMeUp.Api.Account.AccountPreferences.Language
 {
@@ -10,31 +11,27 @@ namespace PickMeUp.Api.Account.AccountPreferences.Language
     public sealed class LanguageSettingsController : ControllerBase
     {
         private readonly IAccountPreferencesRepository _repo;
+        private readonly ICurrentUser _currentUser;
 
-        public LanguageSettingsController(IAccountPreferencesRepository repo)
+        public LanguageSettingsController(IAccountPreferencesRepository repo, ICurrentUser currentUser)
         {
             _repo = repo;
+            _currentUser = currentUser;
         }
 
         [HttpGet]
         public async Task<IActionResult> Get()
         {
-            var userId = User.Identity!.Name!;
-            var prefs = await _repo.GetLanguageSettingsAsync(userId);
-            return Ok(prefs);
+            var doc = await _repo.GetOrCreateAsync(_currentUser.AccountId);
+            return Ok(new { doc.Language, doc.Version });
         }
 
         [HttpPut]
         public async Task<IActionResult> Update([FromBody] LanguageSettingsDto dto)
         {
-            var userId = User.Identity!.Name!;
-            var settings = new LanguageSettings
-            {
-                PreferredLanguage = dto.PreferredLanguage
-            };
-
-            await _repo.UpdateLanguageSettingsAsync(userId, settings);
-            return Ok();
+            var newVersion = await _repo.UpdateLanguageSettingsAsync(_currentUser.AccountId, dto.ToSettings(), dto.Version);
+            var doc = await _repo.GetOrCreateAsync(_currentUser.AccountId);
+            return Ok(new { doc.Language, Version = newVersion });
         }
     }
 }
