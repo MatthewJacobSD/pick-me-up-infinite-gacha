@@ -1,53 +1,62 @@
-﻿using Microsoft.AspNetCore.Http;
+using System.Security.Claims;
+using System.Text.Json;
 
-namespace PickMeUp.Api.Social
+namespace PickMeUp.Api.Social;
+
+// Supplementary check for route ids only. Body targets are enforced by SocialPolicy in the service.
+public sealed class BlockEnforcementMiddleware(RequestDelegate next, ISocialRepository repository)
 {
-    // ── Block Enforcement Middleware ───────────────────
-    // ASP.NET middleware that blocks social actions between mutually blocked users.
-    // Place in the pipeline before authorization for social endpoints.
+    private readonly RequestDelegate _next = next;
+    private readonly ISocialRepository _repository = repository;
 
-    public sealed class BlockEnforcementMiddleware
+    public async Task InvokeAsync(HttpContext context)
     {
-        private readonly RequestDelegate _next;
-        private readonly ISocialRepository _repo;
+        var userId = ReadAccountId(context.User);
+        var targetUserId = FirstRouteId(context, "targetUserId", "senderId", "receiverId");
 
-        public BlockEnforcementMiddleware(RequestDelegate next, ISocialRepository repo)
+        if (userId is null || targetUserId is null)
         {
-            _next = next;
-            _repo = repo;
-        }
-
-        // 1. Extract the current user from the authenticated context.
-        // 2. Extract the target user from the route.
-        // 3. If either has blocked the other, return 403 Forbidden.
-        // 4. Otherwise, pass through to the next middleware.
-        public async Task InvokeAsync(HttpContext context)
-        {
-            var userId = context.User.Identity?.Name;
-
-            if (string.IsNullOrWhiteSpace(userId))
-            {
-                await _next(context);
-                return;
-            }
-
-            var targetUserId = context.Request.RouteValues["targetUserId"]?.ToString();
-
-            if (string.IsNullOrWhiteSpace(targetUserId))
-            {
-                await _next(context);
-                return;
-            }
-
-            if (await _repo.IsBlockedAsync(userId, targetUserId) ||
-                await _repo.IsBlockedAsync(targetUserId, userId))
-            {
-                context.Response.StatusCode = StatusCodes.Status403Forbidden;
-                await context.Response.WriteAsync("Social interaction blocked.");
-                return;
-            }
-
             await _next(context);
+            return;
         }
+
+        if (await _repository.IsBlockedEitherWayAsync(userId, targetUserId))
+        {
+            context.Response.StatusCode = StatusCodes.Status403Forbidden;
+            context.Response.ContentType = "application/problem+json";
+            await JsonSerializer.SerializeAsync(context.Response.Body, new
+            {
+                type = SocialExceptionHandler.TypeBase + "policy-denied",
+                title = "Forbidden",
+                status = 403,
+                detail = "A block between these players prevents this action.",
+                code = "social.blocked"
+            });
+            return;
+        }
+
+        await _next(context);
+    }
+
+    private static string? ReadAccountId(ClaimsPrincipal user)
+    {
+        var value = user.FindFirstValue(ClaimTypes.NameIdentifier)
+            ?? user.FindFirstValue("sub")
+            ?? user.FindFirstValue("accountId");
+        return Guid.TryParse(value, out var id) && id != Guid.Empty
+            ? id.ToString("D")
+            : null;
+    }
+
+    private static string? FirstRouteId(HttpContext context, params string[] keys)
+    {
+        foreach (var key in keys)
+        {
+            var value = context.Request.RouteValues[key]?.ToString();
+            if (!string.IsNullOrWhiteSpace(value))
+                return value;
+        }
+
+        return null;
     }
 }

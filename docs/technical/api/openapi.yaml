@@ -1,0 +1,297 @@
+openapi: 3.0.3
+info:
+  title: Pick Me Up API
+  version: 0.1.0
+  description: >
+    Engine-agnostic HTTP contract. Social paths are filled by the social module.
+    Preferences paths are owned by the preferences work and are not redefined here.
+paths:
+  /v1/account/social/friends:
+    get:
+      tags: [Social]
+      operationId: listFriends
+      security: [{ bearerAuth: [] }]
+      responses:
+        "200":
+          description: Friend account ids.
+          content:
+            application/json:
+              schema:
+                type: array
+                items: { type: string, format: uuid }
+        "401": { $ref: "#/components/responses/Unauthorized" }
+  /v1/account/social/friends/{targetUserId}:
+    delete:
+      tags: [Social]
+      operationId: removeFriend
+      security: [{ bearerAuth: [] }]
+      parameters:
+        - $ref: "#/components/parameters/TargetUserId"
+      responses:
+        "204": { description: Friendship removed. }
+        "400": { $ref: "#/components/responses/Validation" }
+        "401": { $ref: "#/components/responses/Unauthorized" }
+        "403": { $ref: "#/components/responses/PolicyDenied" }
+  /v1/account/social/friends/requests:
+    get:
+      tags: [Social]
+      operationId: listFriendRequests
+      security: [{ bearerAuth: [] }]
+      responses:
+        "200":
+          description: Pending incoming and outgoing friend requests.
+          content:
+            application/json:
+              schema:
+                type: array
+                items: { $ref: "#/components/schemas/FriendRequest" }
+        "401": { $ref: "#/components/responses/Unauthorized" }
+    post:
+      tags: [Social]
+      operationId: sendFriendRequest
+      security: [{ bearerAuth: [] }]
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: { $ref: "#/components/schemas/TargetAccountRequest" }
+      responses:
+        "200": { description: Request sent. }
+        "400": { $ref: "#/components/responses/Validation" }
+        "401": { $ref: "#/components/responses/Unauthorized" }
+        "403": { $ref: "#/components/responses/PolicyDenied" }
+        "409": { $ref: "#/components/responses/Conflict" }
+  /v1/account/social/friends/requests/{senderId}/accept:
+    post:
+      tags: [Social]
+      operationId: acceptFriendRequest
+      security: [{ bearerAuth: [] }]
+      parameters:
+        - $ref: "#/components/parameters/SenderId"
+      responses:
+        "200": { description: Accepted. Both players are friends. }
+        "400": { $ref: "#/components/responses/Validation" }
+        "401": { $ref: "#/components/responses/Unauthorized" }
+        "403": { $ref: "#/components/responses/PolicyDenied" }
+        "409": { $ref: "#/components/responses/Conflict" }
+  /v1/account/social/friends/requests/{senderId}/decline:
+    post:
+      tags: [Social]
+      operationId: declineFriendRequest
+      security: [{ bearerAuth: [] }]
+      parameters:
+        - $ref: "#/components/parameters/SenderId"
+      responses:
+        "200": { description: Declined. }
+        "401": { $ref: "#/components/responses/Unauthorized" }
+        "409": { $ref: "#/components/responses/Conflict" }
+  /v1/account/social/friends/requests/{receiverId}:
+    delete:
+      tags: [Social]
+      operationId: cancelFriendRequest
+      description: The caller cancels their own outgoing request. The path id is the receiver.
+      security: [{ bearerAuth: [] }]
+      parameters:
+        - $ref: "#/components/parameters/ReceiverId"
+      responses:
+        "204": { description: Cancelled. }
+        "401": { $ref: "#/components/responses/Unauthorized" }
+        "409": { $ref: "#/components/responses/Conflict" }
+  /v1/account/social/blocks:
+    get:
+      tags: [Social]
+      operationId: listBlocks
+      security: [{ bearerAuth: [] }]
+      responses:
+        "200":
+          description: Account ids blocked by the caller.
+          content:
+            application/json:
+              schema:
+                type: array
+                items: { type: string, format: uuid }
+        "401": { $ref: "#/components/responses/Unauthorized" }
+    post:
+      tags: [Social]
+      operationId: blockAccount
+      security: [{ bearerAuth: [] }]
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: { $ref: "#/components/schemas/TargetAccountRequest" }
+      responses:
+        "200": { description: Blocked. Friendship and pending requests or invites between the pair are void. }
+        "400": { $ref: "#/components/responses/Validation" }
+        "401": { $ref: "#/components/responses/Unauthorized" }
+  /v1/account/social/blocks/{targetUserId}:
+    delete:
+      tags: [Social]
+      operationId: unblockAccount
+      security: [{ bearerAuth: [] }]
+      parameters:
+        - $ref: "#/components/parameters/TargetUserId"
+      responses:
+        "204": { description: Unblocked. }
+        "401": { $ref: "#/components/responses/Unauthorized" }
+  /v1/account/social/party/invites:
+    get:
+      tags: [Social]
+      operationId: listPartyInvites
+      security: [{ bearerAuth: [] }]
+      responses:
+        "200":
+          description: Pending incoming and outgoing party invites.
+          content:
+            application/json:
+              schema:
+                type: array
+                items: { $ref: "#/components/schemas/PartyInvite" }
+        "401": { $ref: "#/components/responses/Unauthorized" }
+    post:
+      tags: [Social]
+      operationId: sendPartyInvite
+      security: [{ bearerAuth: [] }]
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: { $ref: "#/components/schemas/TargetAccountRequest" }
+      responses:
+        "200": { description: Invite sent. }
+        "400": { $ref: "#/components/responses/Validation" }
+        "401": { $ref: "#/components/responses/Unauthorized" }
+        "403": { $ref: "#/components/responses/PolicyDenied" }
+        "409": { $ref: "#/components/responses/Conflict" }
+  /v1/account/social/party/invites/{senderId}/accept:
+    post:
+      tags: [Social]
+      operationId: acceptPartyInvite
+      security: [{ bearerAuth: [] }]
+      parameters:
+        - $ref: "#/components/parameters/SenderId"
+      responses:
+        "200": { description: Accepted. }
+        "401": { $ref: "#/components/responses/Unauthorized" }
+        "403": { $ref: "#/components/responses/PolicyDenied" }
+        "409": { $ref: "#/components/responses/Conflict" }
+  /v1/account/social/party/invites/{senderId}/decline:
+    post:
+      tags: [Social]
+      operationId: declinePartyInvite
+      security: [{ bearerAuth: [] }]
+      parameters:
+        - $ref: "#/components/parameters/SenderId"
+      responses:
+        "200": { description: Declined. }
+        "401": { $ref: "#/components/responses/Unauthorized" }
+        "409": { $ref: "#/components/responses/Conflict" }
+  /v1/account/social/party/invites/{receiverId}:
+    delete:
+      tags: [Social]
+      operationId: cancelPartyInvite
+      description: The caller cancels their own outgoing invite. The path id is the receiver.
+      security: [{ bearerAuth: [] }]
+      parameters:
+        - $ref: "#/components/parameters/ReceiverId"
+      responses:
+        "204": { description: Cancelled. }
+        "401": { $ref: "#/components/responses/Unauthorized" }
+        "409": { $ref: "#/components/responses/Conflict" }
+components:
+  securitySchemes:
+    bearerAuth:
+      type: http
+      scheme: bearer
+      bearerFormat: JWT
+  parameters:
+    TargetUserId:
+      name: targetUserId
+      in: path
+      required: true
+      schema: { type: string, format: uuid }
+    SenderId:
+      name: senderId
+      in: path
+      required: true
+      schema: { type: string, format: uuid }
+    ReceiverId:
+      name: receiverId
+      in: path
+      required: true
+      schema: { type: string, format: uuid }
+  schemas:
+    TargetAccountRequest:
+      type: object
+      required: [targetUserId]
+      properties:
+        targetUserId: { type: string, format: uuid }
+    FriendRequest:
+      type: object
+      properties:
+        id: { type: string, format: uuid }
+        senderId: { type: string, format: uuid }
+        receiverId: { type: string, format: uuid }
+        status: { type: string, enum: [Pending, Accepted, Declined, Cancelled, Expired] }
+        createdAt: { type: string, format: date-time }
+        respondedAt: { type: string, format: date-time, nullable: true }
+        expiresAt: { type: string, format: date-time, nullable: true }
+    PartyInvite:
+      type: object
+      properties:
+        id: { type: string, format: uuid }
+        senderId: { type: string, format: uuid }
+        receiverId: { type: string, format: uuid }
+        status: { type: string, enum: [Pending, Accepted, Declined, Cancelled, Expired] }
+        createdAt: { type: string, format: date-time }
+        respondedAt: { type: string, format: date-time, nullable: true }
+        expiresAt: { type: string, format: date-time, nullable: true }
+    Problem:
+      type: object
+      properties:
+        type: { type: string, format: uri }
+        title: { type: string }
+        status: { type: integer }
+        detail: { type: string }
+        code: { type: string }
+  responses:
+    Validation:
+      description: The request is invalid.
+      content:
+        application/problem+json:
+          schema: { $ref: "#/components/schemas/Problem" }
+          example:
+            type: https://pickmeup/errors/validation
+            title: Bad Request
+            status: 400
+            code: social.validation
+    Unauthorized:
+      description: The caller is not authenticated.
+      content:
+        application/problem+json:
+          schema: { $ref: "#/components/schemas/Problem" }
+          example:
+            type: https://pickmeup/errors/unauthorized
+            title: Unauthorized
+            status: 401
+            code: social.unauthenticated
+    PolicyDenied:
+      description: Visibility or a block denied the action.
+      content:
+        application/problem+json:
+          schema: { $ref: "#/components/schemas/Problem" }
+          example:
+            type: https://pickmeup/errors/policy-denied
+            title: Forbidden
+            status: 403
+            code: social.blocked
+    Conflict:
+      description: Duplicate request, already friends, or the lifecycle action is no longer pending.
+      content:
+        application/problem+json:
+          schema: { $ref: "#/components/schemas/Problem" }
+          example:
+            type: https://pickmeup/errors/version-conflict
+            title: Conflict
+            status: 409
+            code: social.request_exists

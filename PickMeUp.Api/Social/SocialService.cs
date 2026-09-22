@@ -1,78 +1,132 @@
-namespace PickMeUp.Api.Social
+namespace PickMeUp.Api.Social;
+
+public sealed class SocialService(
+    ISocialRepository repository,
+    IFriendRequestLifecycleEngine lifecycle,
+    SocialPolicy policy) : ISocialService
 {
-    // ── Social Service ─────────────────────────────────
-    // Concrete implementation of ISocialService.
-    // Orchestrates friend/block/party commands through the repository
-    // and lifecycle engine.
+    private readonly ISocialRepository _repository = repository;
+    private readonly IFriendRequestLifecycleEngine _lifecycle = lifecycle;
+    private readonly SocialPolicy _policy = policy;
 
-    public sealed class SocialService : ISocialService
+    public Task<IReadOnlyList<string>> GetFriendsAsync(string userId)
+        => _repository.GetFriendsAsync(userId);
+
+    public async Task SendFriendRequestAsync(string actorId, string targetId)
     {
-        private readonly ISocialRepository _repo;
-        private readonly IFriendRequestLifecycleEngine _lifecycle;
+        RequireOtherPlayer(actorId, targetId);
+        await RequireAllowed(await _policy.CanSendFriendRequest(actorId, targetId));
+        await _lifecycle.SendAsync(actorId, targetId);
+    }
 
-        public SocialService(ISocialRepository repo, IFriendRequestLifecycleEngine lifecycle)
+    public async Task AcceptFriendRequestAsync(string actorId, string senderId)
+    {
+        RequireOtherPlayer(actorId, senderId);
+        await RequireNotBlocked(actorId, senderId);
+        await _lifecycle.AcceptAsync(actorId, senderId);
+    }
+
+    public async Task DeclineFriendRequestAsync(string actorId, string senderId)
+    {
+        RequireOtherPlayer(actorId, senderId);
+        await _lifecycle.DeclineAsync(actorId, senderId);
+    }
+
+    public async Task CancelFriendRequestAsync(string actorId, string receiverId)
+    {
+        RequireOtherPlayer(actorId, receiverId);
+        await _lifecycle.CancelAsync(actorId, receiverId);
+    }
+
+    public Task<IReadOnlyList<FriendRequestDocument>> ListPendingFriendRequestsAsync(string userId)
+        => _repository.ListPendingFriendRequestsAsync(userId);
+
+    public Task RemoveFriendAsync(string userId, string targetUserId)
+    {
+        RequireOtherPlayer(userId, targetUserId);
+        return _repository.RemoveFriendAsync(userId, targetUserId);
+    }
+
+    public Task<IReadOnlyList<string>> GetBlocksAsync(string userId)
+        => _repository.GetBlocksAsync(userId);
+
+    public async Task BlockUserAsync(string userId, string targetUserId)
+    {
+        RequireOtherPlayer(userId, targetUserId);
+        await _repository.RemoveFriendAsync(userId, targetUserId);
+        await _repository.VoidPendingFriendRequestsBetweenAsync(userId, targetUserId);
+        await _repository.VoidPendingPartyInvitesBetweenAsync(userId, targetUserId);
+        await _repository.AddBlockAsync(userId, targetUserId);
+    }
+
+    public Task UnblockUserAsync(string userId, string targetUserId)
+    {
+        RequireOtherPlayer(userId, targetUserId);
+        return _repository.RemoveBlockAsync(userId, targetUserId);
+    }
+
+    public async Task SendPartyInviteAsync(string actorId, string targetId)
+    {
+        RequireOtherPlayer(actorId, targetId);
+        await RequireAllowed(await _policy.CanInviteToParty(actorId, targetId));
+        await _lifecycle.SendPartyAsync(actorId, targetId);
+    }
+
+    public async Task AcceptPartyInviteAsync(string actorId, string senderId)
+    {
+        RequireOtherPlayer(actorId, senderId);
+        await RequireNotBlocked(actorId, senderId);
+        await _lifecycle.AcceptPartyAsync(actorId, senderId);
+    }
+
+    public async Task DeclinePartyInviteAsync(string actorId, string senderId)
+    {
+        RequireOtherPlayer(actorId, senderId);
+        await _lifecycle.DeclinePartyAsync(actorId, senderId);
+    }
+
+    public async Task CancelPartyInviteAsync(string actorId, string receiverId)
+    {
+        RequireOtherPlayer(actorId, receiverId);
+        await _lifecycle.CancelPartyAsync(actorId, receiverId);
+    }
+
+    public Task<IReadOnlyList<PartyInviteDocument>> ListPendingPartyInvitesAsync(string userId)
+        => _repository.ListPendingPartyInvitesAsync(userId);
+
+    private async Task RequireNotBlocked(string actorId, string otherId)
+    {
+        if (await _repository.IsBlockedEitherWayAsync(actorId, otherId))
         {
-            _repo = repo;
-            _lifecycle = lifecycle;
+            throw new SocialPolicyDeniedException(
+                "social.blocked",
+                "A block between these players prevents this action.");
+        }
+    }
+
+    private static void RequireOtherPlayer(string actorId, string otherId)
+    {
+        if (string.IsNullOrWhiteSpace(otherId) || !Guid.TryParse(otherId, out _))
+            throw new SocialValidationException("Target account id is not a valid account id.");
+
+        if (string.Equals(actorId, otherId, StringComparison.OrdinalIgnoreCase))
+            throw new SocialValidationException("A player cannot target their own account.");
+    }
+
+    private static Task RequireAllowed(SocialDecision decision)
+    {
+        if (decision.Allowed)
+            return Task.CompletedTask;
+
+        if (decision.Denial == SocialDenialKind.Blocked)
+        {
+            throw new SocialPolicyDeniedException(
+                "social.blocked",
+                "A block between these players prevents this action.");
         }
 
-        // ── Friends ────────────────────────────────────
-
-        public async Task<IReadOnlyList<string>> GetFriendsAsync(string userId)
-        {
-            return await _repo.GetFriendsAsync(userId);
-        }
-
-        public async Task SendFriendRequestAsync(string userId, FriendCommand command)
-        {
-            await _lifecycle.SendAsync(userId, command.TargetUserId);
-        }
-
-        public async Task RemoveFriendAsync(string userId, string targetUserId)
-        {
-            await _repo.RemoveFriendAsync(userId, targetUserId);
-        }
-
-        // ── Blocks ─────────────────────────────────────
-
-        public async Task<IReadOnlyList<string>> GetBlocksAsync(string userId)
-        {
-            return await _repo.GetBlocksAsync(userId);
-        }
-
-        // 1. Remove existing friendship if present.
-        // 2. Add block.
-        public async Task BlockUserAsync(string userId, BlockCommand command)
-        {
-            if (await _repo.AreFriendsAsync(userId, command.TargetUserId))
-                await _repo.RemoveFriendAsync(userId, command.TargetUserId);
-
-            await _repo.AddBlockAsync(userId, command.TargetUserId);
-        }
-
-        public async Task UnblockUserAsync(string userId, string targetUserId)
-        {
-            await _repo.RemoveBlockAsync(userId, targetUserId);
-        }
-
-        // ── Party ──────────────────────────────────────
-
-        // 1. Verify target has not blocked the sender.
-        // 2. Create and persist pending invite.
-        public async Task HandlePartyInviteAsync(string userId, PartyCommand command)
-        {
-            if (await _repo.IsBlockedAsync(command.TargetUserId, userId))
-                throw new InvalidOperationException("Cannot invite blocked user.");
-
-            var invite = new PartyInvite
-            {
-                FromUserId = userId,
-                ToUserId = command.TargetUserId,
-                Status = PartyInviteStatus.Pending,
-                CreatedAt = DateTime.UtcNow
-            };
-
-            await _repo.AddPartyInviteAsync(invite);
-        }
+        throw new SocialPolicyDeniedException(
+            "social.visibility_denied",
+            "The target player's visibility settings deny this action.");
     }
 }

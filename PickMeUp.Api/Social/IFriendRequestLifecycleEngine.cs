@@ -1,110 +1,121 @@
-﻿namespace PickMeUp.Api.Social
-{
-    // ── Friend Request Lifecycle ───────────────────────
-    // Manages Send, Accept, Decline, Cancel, Expire transitions.
-    //
-    // Each operation validates:
-    //   - No block exists between either user
-    //   - Not already friends (for Send)
-    //   - No duplicate pending request (for Send)
-    //   - Request exists and is pending (for Accept/Decline/Cancel)
+namespace PickMeUp.Api.Social;
 
-    public interface IFriendRequestLifecycleEngine
+public interface IFriendRequestLifecycleEngine
+{
+    Task SendAsync(string senderId, string receiverId);
+    Task AcceptAsync(string receiverId, string senderId);
+    Task DeclineAsync(string receiverId, string senderId);
+    Task CancelAsync(string senderId, string receiverId);
+    Task ExpireAsync(string senderId, string receiverId);
+
+    Task SendPartyAsync(string senderId, string receiverId);
+    Task AcceptPartyAsync(string receiverId, string senderId);
+    Task DeclinePartyAsync(string receiverId, string senderId);
+    Task CancelPartyAsync(string senderId, string receiverId);
+}
+
+public sealed class FriendRequestLifecycleEngine(ISocialRepository repository) : IFriendRequestLifecycleEngine
+{
+    private readonly ISocialRepository _repository = repository;
+
+    public async Task SendAsync(string senderId, string receiverId)
     {
-        Task SendAsync(string senderId, string receiverId);
-        Task AcceptAsync(string receiverId, string senderId);
-        Task DeclineAsync(string receiverId, string senderId);
-        Task CancelAsync(string senderId, string receiverId);
-        Task ExpireAsync(string senderId, string receiverId);
+        if (await _repository.AreFriendsAsync(senderId, receiverId))
+            throw new SocialConflictException("social.already_friends", "These players are already friends.");
+
+        if (await _repository.HasPendingFriendRequestEitherWayAsync(senderId, receiverId))
+            throw new SocialConflictException("social.request_exists", "A pending friend request already exists.");
+
+        var now = DateTime.UtcNow;
+        await _repository.AddFriendRequestAsync(new FriendRequestDocument
+        {
+            Id = Guid.NewGuid(),
+            SenderId = senderId,
+            ReceiverId = receiverId,
+            Status = FriendRequestStatus.Pending,
+            CreatedAt = now,
+            ExpiresAt = now.Add(SocialIndexDefinitions.RequestLifetime)
+        });
     }
 
-    public sealed class FriendRequestLifecycleEngine(ISocialRepository repo) : IFriendRequestLifecycleEngine
+    public async Task AcceptAsync(string receiverId, string senderId)
     {
-        private readonly ISocialRepository _repo = repo;
+        var request = await _repository.FindPendingFriendRequestAsync(senderId, receiverId);
+        if (request is null)
+            throw new SocialConflictException("social.no_pending", "No pending friend request to accept.");
 
-        // 1. Verify no block exists in either direction.
-        // 2. Verify not already friends.
-        // 3. Verify no duplicate pending request.
-        // 4. Create and persist the request.
-        public async Task SendAsync(string senderId, string receiverId)
+        await _repository.UpdateFriendRequestStatusAsync(request.Id, FriendRequestStatus.Accepted, DateTime.UtcNow);
+        await _repository.AddFriendAsync(senderId, receiverId);
+    }
+
+    public async Task DeclineAsync(string receiverId, string senderId)
+    {
+        var request = await _repository.FindPendingFriendRequestAsync(senderId, receiverId);
+        if (request is null)
+            throw new SocialConflictException("social.no_pending", "No pending friend request to decline.");
+
+        await _repository.UpdateFriendRequestStatusAsync(request.Id, FriendRequestStatus.Declined, DateTime.UtcNow);
+    }
+
+    public async Task CancelAsync(string senderId, string receiverId)
+    {
+        var request = await _repository.FindPendingFriendRequestAsync(senderId, receiverId);
+        if (request is null)
+            throw new SocialConflictException("social.no_pending", "No pending friend request to cancel.");
+
+        await _repository.UpdateFriendRequestStatusAsync(request.Id, FriendRequestStatus.Cancelled, DateTime.UtcNow);
+    }
+
+    public async Task ExpireAsync(string senderId, string receiverId)
+    {
+        var request = await _repository.FindPendingFriendRequestAsync(senderId, receiverId);
+        if (request is null)
+            return;
+
+        await _repository.UpdateFriendRequestStatusAsync(request.Id, FriendRequestStatus.Expired, DateTime.UtcNow);
+    }
+
+    public async Task SendPartyAsync(string senderId, string receiverId)
+    {
+        if (await _repository.HasPendingPartyInviteEitherWayAsync(senderId, receiverId))
+            throw new SocialConflictException("social.invite_exists", "A pending party invite already exists.");
+
+        var now = DateTime.UtcNow;
+        await _repository.AddPartyInviteAsync(new PartyInviteDocument
         {
-            if (await _repo.IsBlockedAsync(receiverId, senderId))
-                throw new InvalidOperationException("Receiver has blocked sender.");
+            Id = Guid.NewGuid(),
+            SenderId = senderId,
+            ReceiverId = receiverId,
+            Status = PartyInviteStatus.Pending,
+            CreatedAt = now,
+            ExpiresAt = now.Add(SocialIndexDefinitions.RequestLifetime)
+        });
+    }
 
-            if (await _repo.IsBlockedAsync(senderId, receiverId))
-                throw new InvalidOperationException("Sender has blocked receiver.");
+    public async Task AcceptPartyAsync(string receiverId, string senderId)
+    {
+        var invite = await _repository.FindPendingPartyInviteAsync(senderId, receiverId);
+        if (invite is null)
+            throw new SocialConflictException("social.no_pending", "No pending party invite to accept.");
 
-            if (await _repo.AreFriendsAsync(senderId, receiverId))
-                throw new InvalidOperationException("Already friends.");
+        await _repository.UpdatePartyInviteStatusAsync(invite.Id, PartyInviteStatus.Accepted, DateTime.UtcNow);
+    }
 
-            if (await _repo.HasPendingRequestAsync(senderId, receiverId))
-                throw new InvalidOperationException("Request already pending.");
+    public async Task DeclinePartyAsync(string receiverId, string senderId)
+    {
+        var invite = await _repository.FindPendingPartyInviteAsync(senderId, receiverId);
+        if (invite is null)
+            throw new SocialConflictException("social.no_pending", "No pending party invite to decline.");
 
-            var request = new FriendRequest
-            {
-                FromUserId = senderId,
-                ToUserId = receiverId,
-                Status = FriendRequestStatus.Pending,
-                CreatedAt = DateTime.UtcNow
-            };
+        await _repository.UpdatePartyInviteStatusAsync(invite.Id, PartyInviteStatus.Declined, DateTime.UtcNow);
+    }
 
-            await _repo.AddFriendRequestAsync(request);
-        }
+    public async Task CancelPartyAsync(string senderId, string receiverId)
+    {
+        var invite = await _repository.FindPendingPartyInviteAsync(senderId, receiverId);
+        if (invite is null)
+            throw new SocialConflictException("social.no_pending", "No pending party invite to cancel.");
 
-        // 1. Verify request exists and is pending.
-        // 2. Verify no block exists in either direction.
-        // 3. Mark request as accepted and create friendship.
-        public async Task AcceptAsync(string receiverId, string senderId)
-        {
-            var request = await _repo.GetFriendRequestAsync(senderId, receiverId);
-
-            if (request is null || request.Status != FriendRequestStatus.Pending)
-                throw new InvalidOperationException("No pending request to accept.");
-
-            if (await _repo.IsBlockedAsync(receiverId, senderId))
-                throw new InvalidOperationException("Receiver has blocked sender.");
-
-            if (await _repo.IsBlockedAsync(senderId, receiverId))
-                throw new InvalidOperationException("Sender has blocked receiver.");
-
-            await _repo.UpdateFriendRequestStatusAsync(senderId, receiverId, FriendRequestStatus.Accepted);
-            await _repo.AddFriendAsync(senderId, receiverId);
-        }
-
-        // 1. Verify request exists and is pending.
-        // 2. Mark request as declined.
-        public async Task DeclineAsync(string receiverId, string senderId)
-        {
-            var request = await _repo.GetFriendRequestAsync(senderId, receiverId);
-
-            if (request is null || request.Status != FriendRequestStatus.Pending)
-                throw new InvalidOperationException("No pending request to decline.");
-
-            await _repo.UpdateFriendRequestStatusAsync(senderId, receiverId, FriendRequestStatus.Declined);
-        }
-
-        // 1. Verify request exists and is pending.
-        // 2. Mark request as cancelled.
-        public async Task CancelAsync(string senderId, string receiverId)
-        {
-            var request = await _repo.GetFriendRequestAsync(senderId, receiverId);
-
-            if (request is null || request.Status != FriendRequestStatus.Pending)
-                throw new InvalidOperationException("No pending request to cancel.");
-
-            await _repo.UpdateFriendRequestStatusAsync(senderId, receiverId, FriendRequestStatus.Cancelled);
-        }
-
-        // 1. Verify request exists and is pending.
-        // 2. Mark request as expired (silent no-op if already resolved).
-        public async Task ExpireAsync(string senderId, string receiverId)
-        {
-            var request = await _repo.GetFriendRequestAsync(senderId, receiverId);
-
-            if (request is null || request.Status != FriendRequestStatus.Pending)
-                return;
-
-            await _repo.UpdateFriendRequestStatusAsync(senderId, receiverId, FriendRequestStatus.Expired);
-        }
+        await _repository.UpdatePartyInviteStatusAsync(invite.Id, PartyInviteStatus.Cancelled, DateTime.UtcNow);
     }
 }
