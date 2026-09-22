@@ -3,43 +3,428 @@ info:
   title: Pick Me Up API
   version: 0.1.0
   description: >
-    Engine-agnostic HTTP contract. Social paths are filled by the social module.
-    Preferences paths are owned by the preferences work and are not redefined here.
+    Engine-agnostic HTTP contract. Both Unity and Unreal clients connect
+    to this single backend. Routes are not prefixed with engine identifiers.
+
+servers:
+  - url: http://localhost:5137
+    description: Local development
+
+security:
+  - bearerAuth: []
+
 paths:
-  /v1/account/social/friends:
+  # ── Authentication ──────────────────────────────────────────────
+  /api/auth/login/{provider}:
+    get:
+      tags: [Auth]
+      operationId: login
+      summary: Get OAuth redirect URL
+      parameters:
+        - name: provider
+          in: path
+          required: true
+          schema: { type: string, enum: [google, facebook] }
+      responses:
+        "200":
+          description: Redirect URL for the provider.
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  redirectUrl: { type: string, format: uri }
+
+  /api/auth/callback/{provider}:
+    get:
+      tags: [Auth]
+      operationId: oauthCallback
+      summary: OAuth provider redirects here after authentication
+      parameters:
+        - name: provider
+          in: path
+          required: true
+          schema: { type: string, enum: [google, facebook] }
+        - name: code
+          in: query
+          required: true
+          schema: { type: string }
+        - name: state
+          in: query
+          required: true
+          schema: { type: string }
+      responses:
+        "302":
+          description: Redirect to client with loginCode.
+
+  /api/auth/consume-login-code:
+    post:
+      tags: [Auth]
+      operationId: consumeLoginCode
+      summary: Exchange loginCode for JWT tokens (called by engine)
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required: [loginCode]
+              properties:
+                loginCode: { type: string }
+      responses:
+        "200":
+          description: JWT tokens issued.
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  sessionId: { type: string }
+                  accessToken: { type: string }
+                  refreshToken: { type: string }
+        "401":
+          $ref: "#/components/responses/Unauthorized"
+
+  /api/auth/refresh:
+    post:
+      tags: [Auth]
+      operationId: refreshToken
+      summary: Refresh an expired access token
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required: [refreshToken]
+              properties:
+                refreshToken: { type: string }
+      responses:
+        "200":
+          description: New token pair.
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  accessToken: { type: string }
+                  refreshToken: { type: string }
+        "401":
+          $ref: "#/components/responses/Unauthorized"
+
+  /api/auth/logout:
+    post:
+      tags: [Auth]
+      operationId: logout
+      summary: Revoke session
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required: [sessionId]
+              properties:
+                sessionId: { type: string }
+      responses:
+        "200":
+          description: Session revoked.
+
+  # ── Account Preferences ─────────────────────────────────────────
+  /account/preferences:
+    get:
+      tags: [Preferences]
+      operationId: getAllPreferences
+      summary: Get all preference slices + version
+      responses:
+        "200":
+          description: All preferences with version.
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  version: { type: integer }
+                  gameplay: { $ref: "#/components/schemas/GameplaySettings" }
+                  accessibility: { $ref: "#/components/schemas/AccessibilitySettings" }
+                  language: { $ref: "#/components/schemas/LanguageSettings" }
+                  notifications: { $ref: "#/components/schemas/NotificationSettings" }
+                  socialPreferences: { $ref: "#/components/schemas/SocialPreferencesSettings" }
+                  audio: { $ref: "#/components/schemas/AudioSettings" }
+                  ui: { $ref: "#/components/schemas/UiSettings" }
+        "401": { $ref: "#/components/responses/Unauthorized" }
+
+  /account/preferences/gameplay:
+    get:
+      tags: [Preferences]
+      operationId: getGameplaySettings
+      summary: Get gameplay preferences
+      responses:
+        "200":
+          description: Gameplay settings + version.
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  settings: { $ref: "#/components/schemas/GameplaySettings" }
+                  version: { type: integer }
+        "401": { $ref: "#/components/responses/Unauthorized" }
+    put:
+      tags: [Preferences]
+      operationId: updateGameplaySettings
+      summary: Update gameplay preferences
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: { $ref: "#/components/schemas/GameplaySettingsDto" }
+      responses:
+        "200":
+          description: Updated settings + new version.
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  settings: { $ref: "#/components/schemas/GameplaySettings" }
+                  version: { type: integer }
+        "400": { $ref: "#/components/responses/Validation" }
+        "401": { $ref: "#/components/responses/Unauthorized" }
+        "409": { $ref: "#/components/responses/VersionConflict" }
+
+  /account/preferences/accessibility:
+    get:
+      tags: [Preferences]
+      operationId: getAccessibilitySettings
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  settings: { $ref: "#/components/schemas/AccessibilitySettings" }
+                  version: { type: integer }
+        "401": { $ref: "#/components/responses/Unauthorized" }
+    put:
+      tags: [Preferences]
+      operationId: updateAccessibilitySettings
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: { $ref: "#/components/schemas/AccessibilitySettingsDto" }
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  settings: { $ref: "#/components/schemas/AccessibilitySettings" }
+                  version: { type: integer }
+        "400": { $ref: "#/components/responses/Validation" }
+        "401": { $ref: "#/components/responses/Unauthorized" }
+        "409": { $ref: "#/components/responses/VersionConflict" }
+
+  /account/preferences/language:
+    get:
+      tags: [Preferences]
+      operationId: getLanguageSettings
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  settings: { $ref: "#/components/schemas/LanguageSettings" }
+                  version: { type: integer }
+        "401": { $ref: "#/components/responses/Unauthorized" }
+    put:
+      tags: [Preferences]
+      operationId: updateLanguageSettings
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: { $ref: "#/components/schemas/LanguageSettingsDto" }
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  settings: { $ref: "#/components/schemas/LanguageSettings" }
+                  version: { type: integer }
+        "400": { $ref: "#/components/responses/Validation" }
+        "401": { $ref: "#/components/responses/Unauthorized" }
+        "409": { $ref: "#/components/responses/VersionConflict" }
+
+  /account/preferences/notifications:
+    get:
+      tags: [Preferences]
+      operationId: getNotificationSettings
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  settings: { $ref: "#/components/schemas/NotificationSettings" }
+                  version: { type: integer }
+        "401": { $ref: "#/components/responses/Unauthorized" }
+    put:
+      tags: [Preferences]
+      operationId: updateNotificationSettings
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: { $ref: "#/components/schemas/NotificationSettingsDto" }
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  settings: { $ref: "#/components/schemas/NotificationSettings" }
+                  version: { type: integer }
+        "400": { $ref: "#/components/responses/Validation" }
+        "401": { $ref: "#/components/responses/Unauthorized" }
+        "409": { $ref: "#/components/responses/VersionConflict" }
+
+  /account/preferences/social:
+    get:
+      tags: [Preferences]
+      operationId: getSocialPreferences
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  settings: { $ref: "#/components/schemas/SocialPreferencesSettings" }
+                  version: { type: integer }
+        "401": { $ref: "#/components/responses/Unauthorized" }
+    put:
+      tags: [Preferences]
+      operationId: updateSocialPreferences
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: { $ref: "#/components/schemas/SocialPreferencesDto" }
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  settings: { $ref: "#/components/schemas/SocialPreferencesSettings" }
+                  version: { type: integer }
+        "400": { $ref: "#/components/responses/Validation" }
+        "401": { $ref: "#/components/responses/Unauthorized" }
+        "409": { $ref: "#/components/responses/VersionConflict" }
+
+  /account/preferences/audio:
+    get:
+      tags: [Preferences]
+      operationId: getAudioSettings
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  settings: { $ref: "#/components/schemas/AudioSettings" }
+                  version: { type: integer }
+        "401": { $ref: "#/components/responses/Unauthorized" }
+    put:
+      tags: [Preferences]
+      operationId: updateAudioSettings
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: { $ref: "#/components/schemas/AudioSettingsDto" }
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  settings: { $ref: "#/components/schemas/AudioSettings" }
+                  version: { type: integer }
+        "400": { $ref: "#/components/responses/Validation" }
+        "401": { $ref: "#/components/responses/Unauthorized" }
+        "409": { $ref: "#/components/responses/VersionConflict" }
+
+  /account/preferences/ui:
+    get:
+      tags: [Preferences]
+      operationId: getUiSettings
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  settings: { $ref: "#/components/schemas/UiSettings" }
+                  version: { type: integer }
+        "401": { $ref: "#/components/responses/Unauthorized" }
+    put:
+      tags: [Preferences]
+      operationId: updateUiSettings
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: { $ref: "#/components/schemas/UiSettingsDto" }
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  settings: { $ref: "#/components/schemas/UiSettings" }
+                  version: { type: integer }
+        "400": { $ref: "#/components/responses/Validation" }
+        "401": { $ref: "#/components/responses/Unauthorized" }
+        "409": { $ref: "#/components/responses/VersionConflict" }
+
+  # ── Social ──────────────────────────────────────────────────────
+  /account/social/friends:
     get:
       tags: [Social]
       operationId: listFriends
-      security: [{ bearerAuth: [] }]
+      summary: List friend account IDs
       responses:
         "200":
-          description: Friend account ids.
           content:
             application/json:
               schema:
                 type: array
                 items: { type: string, format: uuid }
         "401": { $ref: "#/components/responses/Unauthorized" }
-  /v1/account/social/friends/{targetUserId}:
-    delete:
-      tags: [Social]
-      operationId: removeFriend
-      security: [{ bearerAuth: [] }]
-      parameters:
-        - $ref: "#/components/parameters/TargetUserId"
-      responses:
-        "204": { description: Friendship removed. }
-        "400": { $ref: "#/components/responses/Validation" }
-        "401": { $ref: "#/components/responses/Unauthorized" }
-        "403": { $ref: "#/components/responses/PolicyDenied" }
-  /v1/account/social/friends/requests:
+
+  /account/social/friends/requests:
     get:
       tags: [Social]
       operationId: listFriendRequests
-      security: [{ bearerAuth: [] }]
+      summary: List pending incoming and outgoing friend requests
       responses:
         "200":
-          description: Pending incoming and outgoing friend requests.
           content:
             application/json:
               schema:
@@ -49,7 +434,7 @@ paths:
     post:
       tags: [Social]
       operationId: sendFriendRequest
-      security: [{ bearerAuth: [] }]
+      summary: Send a friend request
       requestBody:
         required: true
         content:
@@ -61,50 +446,72 @@ paths:
         "401": { $ref: "#/components/responses/Unauthorized" }
         "403": { $ref: "#/components/responses/PolicyDenied" }
         "409": { $ref: "#/components/responses/Conflict" }
-  /v1/account/social/friends/requests/{senderId}/accept:
+
+  /account/social/friends/requests/{senderId}/accept:
     post:
       tags: [Social]
       operationId: acceptFriendRequest
-      security: [{ bearerAuth: [] }]
       parameters:
-        - $ref: "#/components/parameters/SenderId"
+        - name: senderId
+          in: path
+          required: true
+          schema: { type: string, format: uuid }
       responses:
-        "200": { description: Accepted. Both players are friends. }
+        "200": { description: Accepted. Both players are now friends. }
         "400": { $ref: "#/components/responses/Validation" }
         "401": { $ref: "#/components/responses/Unauthorized" }
         "403": { $ref: "#/components/responses/PolicyDenied" }
         "409": { $ref: "#/components/responses/Conflict" }
-  /v1/account/social/friends/requests/{senderId}/decline:
+
+  /account/social/friends/requests/{senderId}/decline:
     post:
       tags: [Social]
       operationId: declineFriendRequest
-      security: [{ bearerAuth: [] }]
       parameters:
-        - $ref: "#/components/parameters/SenderId"
+        - name: senderId
+          in: path
+          required: true
+          schema: { type: string, format: uuid }
       responses:
         "200": { description: Declined. }
         "401": { $ref: "#/components/responses/Unauthorized" }
         "409": { $ref: "#/components/responses/Conflict" }
-  /v1/account/social/friends/requests/{receiverId}:
+
+  /account/social/friends/requests/{receiverId}:
     delete:
       tags: [Social]
       operationId: cancelFriendRequest
-      description: The caller cancels their own outgoing request. The path id is the receiver.
-      security: [{ bearerAuth: [] }]
+      description: Cancel your own outgoing request. Path ID is the receiver.
       parameters:
-        - $ref: "#/components/parameters/ReceiverId"
+        - name: receiverId
+          in: path
+          required: true
+          schema: { type: string, format: uuid }
       responses:
         "204": { description: Cancelled. }
         "401": { $ref: "#/components/responses/Unauthorized" }
         "409": { $ref: "#/components/responses/Conflict" }
-  /v1/account/social/blocks:
+
+  /account/social/friends/{targetUserId}:
+    delete:
+      tags: [Social]
+      operationId: removeFriend
+      parameters:
+        - name: targetUserId
+          in: path
+          required: true
+          schema: { type: string, format: uuid }
+      responses:
+        "204": { description: Friendship removed. }
+        "401": { $ref: "#/components/responses/Unauthorized" }
+
+  /account/social/blocks:
     get:
       tags: [Social]
       operationId: listBlocks
-      security: [{ bearerAuth: [] }]
+      summary: List blocked account IDs
       responses:
         "200":
-          description: Account ids blocked by the caller.
           content:
             application/json:
               schema:
@@ -114,34 +521,37 @@ paths:
     post:
       tags: [Social]
       operationId: blockAccount
-      security: [{ bearerAuth: [] }]
+      summary: Block a player (removes friendship, voids pending requests/invites)
       requestBody:
         required: true
         content:
           application/json:
             schema: { $ref: "#/components/schemas/TargetAccountRequest" }
       responses:
-        "200": { description: Blocked. Friendship and pending requests or invites between the pair are void. }
+        "200": { description: Blocked. }
         "400": { $ref: "#/components/responses/Validation" }
         "401": { $ref: "#/components/responses/Unauthorized" }
-  /v1/account/social/blocks/{targetUserId}:
+
+  /account/social/blocks/{targetUserId}:
     delete:
       tags: [Social]
       operationId: unblockAccount
-      security: [{ bearerAuth: [] }]
       parameters:
-        - $ref: "#/components/parameters/TargetUserId"
+        - name: targetUserId
+          in: path
+          required: true
+          schema: { type: string, format: uuid }
       responses:
         "204": { description: Unblocked. }
         "401": { $ref: "#/components/responses/Unauthorized" }
-  /v1/account/social/party/invites:
+
+  /account/social/party/invites:
     get:
       tags: [Social]
       operationId: listPartyInvites
-      security: [{ bearerAuth: [] }]
+      summary: List pending party invites
       responses:
         "200":
-          description: Pending incoming and outgoing party invites.
           content:
             application/json:
               schema:
@@ -151,7 +561,7 @@ paths:
     post:
       tags: [Social]
       operationId: sendPartyInvite
-      security: [{ bearerAuth: [] }]
+      summary: Send a party invite
       requestBody:
         required: true
         content:
@@ -163,47 +573,58 @@ paths:
         "401": { $ref: "#/components/responses/Unauthorized" }
         "403": { $ref: "#/components/responses/PolicyDenied" }
         "409": { $ref: "#/components/responses/Conflict" }
-  /v1/account/social/party/invites/{senderId}/accept:
+
+  /account/social/party/invites/{senderId}/accept:
     post:
       tags: [Social]
       operationId: acceptPartyInvite
-      security: [{ bearerAuth: [] }]
       parameters:
-        - $ref: "#/components/parameters/SenderId"
+        - name: senderId
+          in: path
+          required: true
+          schema: { type: string, format: uuid }
       responses:
         "200": { description: Accepted. }
         "401": { $ref: "#/components/responses/Unauthorized" }
         "403": { $ref: "#/components/responses/PolicyDenied" }
         "409": { $ref: "#/components/responses/Conflict" }
-  /v1/account/social/party/invites/{senderId}/decline:
+
+  /account/social/party/invites/{senderId}/decline:
     post:
       tags: [Social]
       operationId: declinePartyInvite
-      security: [{ bearerAuth: [] }]
       parameters:
-        - $ref: "#/components/parameters/SenderId"
+        - name: senderId
+          in: path
+          required: true
+          schema: { type: string, format: uuid }
       responses:
         "200": { description: Declined. }
         "401": { $ref: "#/components/responses/Unauthorized" }
         "409": { $ref: "#/components/responses/Conflict" }
-  /v1/account/social/party/invites/{receiverId}:
+
+  /account/social/party/invites/{receiverId}:
     delete:
       tags: [Social]
       operationId: cancelPartyInvite
-      description: The caller cancels their own outgoing invite. The path id is the receiver.
-      security: [{ bearerAuth: [] }]
+      description: Cancel your own outgoing invite. Path ID is the receiver.
       parameters:
-        - $ref: "#/components/parameters/ReceiverId"
+        - name: receiverId
+          in: path
+          required: true
+          schema: { type: string, format: uuid }
       responses:
         "204": { description: Cancelled. }
         "401": { $ref: "#/components/responses/Unauthorized" }
         "409": { $ref: "#/components/responses/Conflict" }
+
 components:
   securitySchemes:
     bearerAuth:
       type: http
       scheme: bearer
       bearerFormat: JWT
+
   parameters:
     TargetUserId:
       name: targetUserId
@@ -220,12 +641,16 @@ components:
       in: path
       required: true
       schema: { type: string, format: uuid }
+
   schemas:
+    # ── Auth ──────────────────────────────────────────
     TargetAccountRequest:
       type: object
       required: [targetUserId]
       properties:
         targetUserId: { type: string, format: uuid }
+
+    # ── Social ────────────────────────────────────────
     FriendRequest:
       type: object
       properties:
@@ -236,6 +661,7 @@ components:
         createdAt: { type: string, format: date-time }
         respondedAt: { type: string, format: date-time, nullable: true }
         expiresAt: { type: string, format: date-time, nullable: true }
+
     PartyInvite:
       type: object
       properties:
@@ -246,17 +672,171 @@ components:
         createdAt: { type: string, format: date-time }
         respondedAt: { type: string, format: date-time, nullable: true }
         expiresAt: { type: string, format: date-time, nullable: true }
+
+    # ── Preferences ───────────────────────────────────
+    GameplaySettings:
+      type: object
+      properties:
+        visibleActionBars: { type: integer, minimum: 1, maximum: 6 }
+        showCooldownNumbers: { type: boolean }
+        showKeybindLabels: { type: boolean }
+        lockActionBars: { type: boolean }
+        showDamageNumbers: { type: boolean }
+        showHealingNumbers: { type: boolean }
+        showCriticalEffects: { type: boolean }
+        showFloatingCombatText: { type: boolean }
+        invertYAxis: { type: boolean }
+        invertXAxis: { type: boolean }
+        cameraSensitivity: { type: number, minimum: 0.1, maximum: 10 }
+        fieldOfView: { type: number, minimum: 60, maximum: 120 }
+        autoLoot: { type: boolean }
+        highlightInteractables: { type: boolean }
+        showNameplates: { type: boolean }
+        showEnemyNameplates: { type: boolean }
+        showFriendlyNameplates: { type: boolean }
+        showPingIndicators: { type: boolean }
+        autoRunToggle: { type: boolean }
+        toggleSprint: { type: boolean }
+
+    GameplaySettingsDto:
+      allOf:
+        - $ref: "#/components/schemas/GameplaySettings"
+        - type: object
+          required: [version]
+          properties:
+            version: { type: integer }
+
+    AccessibilitySettings:
+      type: object
+      properties:
+        colorblindMode: { type: string, enum: [None, Protanopia, Deuteranopia, Tritanopia] }
+        highContrastMode: { type: boolean }
+        subtitlesEnabled: { type: boolean }
+        subtitleSize: { type: integer, minimum: 10, maximum: 40 }
+        subtitleOpacity: { type: number, minimum: 0, maximum: 1 }
+        subtitleSpeakerNames: { type: boolean }
+        subtitleSoundEffects: { type: boolean }
+        visualAudioIndicators: { type: boolean }
+        footstepVisualization: { type: boolean }
+        gunshotVisualization: { type: boolean }
+        reducedMotion: { type: boolean }
+        disableFlashingEffects: { type: boolean }
+        simplifiedUI: { type: boolean }
+        textSize: { type: integer, minimum: 10, maximum: 40 }
+
+    AccessibilitySettingsDto:
+      allOf:
+        - $ref: "#/components/schemas/AccessibilitySettings"
+        - type: object
+          required: [version]
+          properties:
+            version: { type: integer }
+
+    LanguageSettings:
+      type: object
+      properties:
+        preferredLanguage: { type: string, enum: [en, nl, fr, de, it, es, pt, pl, ru, ja, ko, zh] }
+
+    LanguageSettingsDto:
+      allOf:
+        - $ref: "#/components/schemas/LanguageSettings"
+        - type: object
+          required: [version]
+          properties:
+            version: { type: integer }
+
+    NotificationSettings:
+      type: object
+      properties:
+        eventNotifications: { type: boolean }
+        friendRequestNotifications: { type: boolean }
+        partyInviteNotifications: { type: boolean }
+        systemAnnouncements: { type: boolean }
+        rewardNotifications: { type: boolean }
+
+    NotificationSettingsDto:
+      allOf:
+        - $ref: "#/components/schemas/NotificationSettings"
+        - type: object
+          required: [version]
+          properties:
+            version: { type: integer }
+
+    SocialPreferencesSettings:
+      type: object
+      properties:
+        friendRequests: { type: string, enum: [Everyone, FriendsOnly, Nobody] }
+        messages: { type: string, enum: [Everyone, FriendsOnly, Nobody] }
+        partyInvites: { type: string, enum: [Everyone, FriendsOnly, Nobody] }
+        onlineStatus: { type: string, enum: [Everyone, FriendsOnly, Nobody] }
+
+    SocialPreferencesDto:
+      allOf:
+        - $ref: "#/components/schemas/SocialPreferencesSettings"
+        - type: object
+          required: [version]
+          properties:
+            version: { type: integer }
+
+    AudioSettings:
+      type: object
+      properties:
+        masterVolume: { type: number, minimum: 0, maximum: 1 }
+        musicVolume: { type: number, minimum: 0, maximum: 1 }
+        musicMuted: { type: boolean }
+        sfxVolume: { type: number, minimum: 0, maximum: 1 }
+        sfxMuted: { type: boolean }
+        voiceVolume: { type: number, minimum: 0, maximum: 1 }
+        voiceMuted: { type: boolean }
+        ambientVolume: { type: number, minimum: 0, maximum: 1 }
+        ambientMuted: { type: boolean }
+
+    AudioSettingsDto:
+      allOf:
+        - $ref: "#/components/schemas/AudioSettings"
+        - type: object
+          required: [version]
+          properties:
+            version: { type: integer }
+
+    UiSettings:
+      type: object
+      properties:
+        uiScale: { type: number, minimum: 0.5, maximum: 2 }
+        textSize: { type: string, enum: [Small, Medium, Large] }
+        iconSize: { type: string, enum: [Small, Medium, Large] }
+        showMinimap: { type: boolean }
+        showChatWindow: { type: boolean }
+        showQuestTracker: { type: boolean }
+        showActionBars: { type: boolean }
+        minimapPosition: { type: string, enum: [TopLeft, TopRight, BottomLeft, BottomRight, LeftSide, RightSide, Center] }
+        chatWindowPosition: { type: string, enum: [TopLeft, TopRight, BottomLeft, BottomRight, LeftSide, RightSide, Center] }
+        questTrackerPosition: { type: string, enum: [TopLeft, TopRight, BottomLeft, BottomRight, LeftSide, RightSide, Center] }
+        actionBarLayout: { type: string, enum: [Horizontal, Vertical] }
+        inventoryLayout: { type: string, enum: [Grid, List] }
+        chatLayout: { type: string, enum: [Compact, Expanded] }
+
+    UiSettingsDto:
+      allOf:
+        - $ref: "#/components/schemas/UiSettings"
+        - type: object
+          required: [version]
+          properties:
+            version: { type: integer }
+
+    # ── Errors ────────────────────────────────────────
     Problem:
       type: object
       properties:
-        type: { type: string, format: uri }
+        type: { type: string, format: uri, description: "Stable error type URI for engine branching" }
         title: { type: string }
         status: { type: integer }
         detail: { type: string }
-        code: { type: string }
+        code: { type: string, description: "Machine-readable error code" }
+
   responses:
     Validation:
-      description: The request is invalid.
+      description: Request validation failed.
       content:
         application/problem+json:
           schema: { $ref: "#/components/schemas/Problem" }
@@ -264,9 +844,10 @@ components:
             type: https://pickmeup/errors/validation
             title: Bad Request
             status: 400
-            code: social.validation
+            detail: "Validation failed."
+            code: validation.failed
     Unauthorized:
-      description: The caller is not authenticated.
+      description: Not authenticated.
       content:
         application/problem+json:
           schema: { $ref: "#/components/schemas/Problem" }
@@ -274,9 +855,8 @@ components:
             type: https://pickmeup/errors/unauthorized
             title: Unauthorized
             status: 401
-            code: social.unauthenticated
     PolicyDenied:
-      description: Visibility or a block denied the action.
+      description: Visibility rule or block denied the action.
       content:
         application/problem+json:
           schema: { $ref: "#/components/schemas/Problem" }
@@ -286,7 +866,17 @@ components:
             status: 403
             code: social.blocked
     Conflict:
-      description: Duplicate request, already friends, or the lifecycle action is no longer pending.
+      description: Duplicate request or lifecycle conflict.
+      content:
+        application/problem+json:
+          schema: { $ref: "#/components/schemas/Problem" }
+          example:
+            type: https://pickmeup/errors/conflict
+            title: Conflict
+            status: 409
+            code: social.request_exists
+    VersionConflict:
+      description: Stale version — another client updated first.
       content:
         application/problem+json:
           schema: { $ref: "#/components/schemas/Problem" }
@@ -294,4 +884,4 @@ components:
             type: https://pickmeup/errors/version-conflict
             title: Conflict
             status: 409
-            code: social.request_exists
+            detail: "The resource has been modified by another request."
