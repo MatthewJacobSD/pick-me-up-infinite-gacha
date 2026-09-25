@@ -1,8 +1,9 @@
 ﻿namespace PickMeUp.Api.Account.AccountPreferences.Accessibility
 {
-    public sealed class AccessibilitySettingsDto
+    //  PUT section
+    public sealed record AccessibilitySettingsDto
     {
-        public string ColorblindMode { get; init; } = string.Empty;
+        public ColorBlindType ColorBlindMode { get; init; } = ColorBlindType.None;
         public bool HighContrastMode { get; init; }
 
         public bool SubtitlesEnabled { get; init; }
@@ -24,7 +25,7 @@
 
         public AccessibilitySettings ToSettings() => new()
         {
-            ColorblindMode = ColorblindMode,
+            ColorBlindMode = ColorBlindMode,
             HighContrastMode = HighContrastMode,
 
             SubtitlesEnabled = SubtitlesEnabled,
@@ -43,4 +44,47 @@
             TextSize = TextSize
         };
     }
+
+
+    // PATCH section
+    public sealed record AccessibilitySettingsPatchDto
+    {
+        public ColorBlindType? ColorBlindMode { get; init; }
+        public bool? HighContrastMode { get; init; }
+        public bool? SubtitlesEnabled { get; init; }
+        public int? SubtitleSize { get; init; }
+        public float? SubtitleOpacity { get; init; }
+        public bool? SubtitleSpeakerNames { get; init; }
+        public bool? SubtitleSoundEffects { get; init; }
+        public bool? VisualAudioIndicators { get; init; }
+        public bool? FootstepVisualization { get; init; }
+        public bool? GunshotVisualization { get; init; }
+        public bool? ReducedMotion { get; init; }
+        public bool? DisableFlashingEffects { get; init; }
+        public bool? SimplifiedUI { get; init; }
+        public int? TextSize { get; init; }
+        public int Version { get; init; }
+        public AccessibilitySettings ApplyTo(AccessibilitySettings current) => current with
+        {
+            ColorBlindMode = ColorBlindMode ?? current.ColorBlindMode,
+            HighContrastMode = HighContrastMode ?? current.HighContrastMode,
+
+            SubtitlesEnabled = SubtitlesEnabled ?? current.SubtitlesEnabled,
+            SubtitleSize = SubtitleSize ?? current.SubtitleSize,
+            SubtitleOpacity = SubtitleOpacity ?? current.SubtitleOpacity,
+            SubtitleSpeakerNames = SubtitleSpeakerNames ?? current.SubtitleSpeakerNames,
+            SubtitleSoundEffects = SubtitleSoundEffects ?? current.SubtitleSoundEffects,
+
+            VisualAudioIndicators = VisualAudioIndicators ?? current.VisualAudioIndicators,
+            FootstepVisualization = FootstepVisualization ?? current.FootstepVisualization,
+            GunshotVisualization = GunshotVisualization ?? current.GunshotVisualization,
+
+            ReducedMotion = ReducedMotion ?? current.ReducedMotion,
+            DisableFlashingEffects = DisableFlashingEffects ?? current.DisableFlashingEffects,
+            SimplifiedUI = SimplifiedUI ?? current.SimplifiedUI,
+            TextSize = TextSize ?? current.TextSize
+        };
+    }
+
+    public sealed record VersionDto { public int Version { get; init; } }
 }

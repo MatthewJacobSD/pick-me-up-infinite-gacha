@@ -4,10 +4,10 @@
     // Personal settings that follow the player.
     // Account-owned, server-persisted, synced across devices.
 
-    public sealed class AccessibilitySettings
+    public sealed record AccessibilitySettings
     {
         // ── Colors ─────────────────────────────────────
-        public string ColorblindMode { get; init; } = "None"; // None, Protanopia, Deuteranopia, Tritanopia
+        public ColorBlindType ColorBlindMode { get; init; } = ColorBlindType.None;
         public bool HighContrastMode { get; init; } = false;
 
         // ── Subtitles ──────────────────────────────────
@@ -27,5 +27,16 @@
         public bool DisableFlashingEffects { get; init; } = false;
         public bool SimplifiedUI { get; init; } = false;
         public int TextSize { get; init; } = 16;
+
+        public static AccessibilitySettings Default { get; } = new();
     }
+
+    public enum ColorBlindType
+    { 
+        None, 
+        Protonopia,
+        Deuteranopia,
+        Tritanopia,
+    }
+
 }
