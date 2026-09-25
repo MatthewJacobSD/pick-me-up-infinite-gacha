@@ -17,8 +17,11 @@ graph TB
         direction TB
         Auth["Authentication<br>OAuth · JWT · Sessions"]
         AccPref["Account Preferences<br>7 domains · MongoDB"]
+        Prof["Profile<br>Username · Avatar"]
         Soc["Social System<br>Friends · Blocks · Party"]
+        AccSet["Account Settings<br>Password change"]
         API["Controllers<br>REST Endpoints"]
+        HC["Health Checks<br>/health · /ready"]
     end
 
     subgraph Providers["External Providers"]
@@ -28,7 +31,7 @@ graph TB
 
     subgraph Storage
         MySQL[("MySQL<br>Identity · Accounts")]
-        MongoDB[("MongoDB<br>Preferences · Social")]
+        MongoDB[("MongoDB<br>Preferences · Social · Profile")]
         Redis[("Redis<br>Sessions · Tokens · CSRF")]
     end
 
@@ -36,9 +39,13 @@ graph TB
     UE -->|REST| API
     API --> Auth
     API --> AccPref
+    API --> Prof
     API --> Soc
+    API --> AccSet
+    API --> HC
     Auth --> Redis
     AccPref --> MongoDB
+    Prof --> MongoDB
     Soc --> MongoDB
     Auth --> MySQL
     Auth -->|OAuth| G
@@ -56,81 +63,74 @@ graph TB
 
 ```
 PickMeUp.Api/
-├── Program.cs                              Service wiring, middleware pipeline
-├── .csproj                                 11 NuGet packages
-├── .slnx                                   Solution (single project)
+├── Program.cs                              Composition root
+├── Hosting/
+│   ├── EnvLoader.cs                        .env loading (priority precedence)
+│   ├── ConfigurationExtensions.cs          Typed options (Jwt, Mongo, MySql, Redis, OAuth)
+│   ├── DependencyInjection.cs              AddPickMeUpApi composition root
+│   └── RateLimitOptions.cs                 Rate limit config (100 req/min default)
+│
+├── Common/
+│   ├── Authentication/
+│   │   ├── ICurrentUser.cs                 Account identity interface
+│   │   └── CurrentUser.cs                  JWT claim reader
+│   └── Errors/
+│       ├── DomainException.cs              Base domain exception
+│       ├── ValidationException.cs          Validation error collection
+│       ├── VersionConflictException.cs     409 stale version
+│       ├── NotFoundException.cs            404 not found
+│       └── ProblemDetailsExtensions.cs     Exception → ProblemDetails middleware
 │
 ├── Account/
-│   ├── Authentication/
+│   ├── Authentication/                     OAuth + JWT + Session
 │   │   ├── Email.cs                        Email value object
-│   │   ├── Password.cs                     Password value object (hashed)
-│   │   │
-│   │   ├── OAuth/
-│   │   │   ├── Provider/
-│   │   │   │   ├── GoogleProvider.cs       Google config value object
-│   │   │   │   ├── FacebookProvider.cs     Facebook config value object
-│   │   │   │   ├── Google/                 Token + UserInfo DTOs
-│   │   │   │   └── Facebook/               Token + UserInfo DTOs
-│   │   │   ├── UnifiedAuthController.cs    Main auth controller
-│   │   │   ├── ExternalLoginService.cs     Redirect URL builder
-│   │   │   ├── OAuthCallbackHandler.cs     Code exchange + userinfo
-│   │   │   ├── AccountCreationService.cs   New account from OAuth
-│   │   │   ├── AccountLinkingService.cs    Link OAuth to account
-│   │   │   ├── OAuthStateValidator.cs      CSRF protection (Redis)
-│   │   │   ├── OAuthConfigLoader.cs        Config → provider objects
-│   │   │   ├── OAuthProviderRegistry.cs    Provider lookup
-│   │   │   ├── OAuthErrorHandler.cs        HTTP + JSON error handling
-│   │   │   ├── OAuthExceptions.cs          Exception hierarchy
-│   │   │   ├── ExternalIdentity.cs         Normalised identity record
-│   │   │   └── OAuthProviderExtentions.cs  Enum + extensions
-│   │   │
-│   │   └── Session/
-│   │       ├── Jwt.cs                      JWT config root
-│   │       ├── TokenConfig.cs              Base token config
-│   │       ├── AccessTokenConfig.cs        Short-lived (minutes)
-│   │       ├── RefreshTokenConfig.cs       Long-lived (days)
-│   │       ├── TokenGeneratorService.cs    Token creation
-│   │       ├── RefreshTokenService.cs      Token rotation
-│   │       ├── SessionService.cs           Server-side sessions
-│   │       ├── SessionConfig.cs            Session config
-│   │       └── RefreshController.cs        Refresh endpoint
+│   │   ├── Password.cs                     Password value object
+│   │   ├── OAuth/                          Google/Facebook flow
+│   │   └── Session/                        JWT + refresh tokens
 │   │
-│   ├── AccountPreferences/
-│   │   ├── IAccountPreferencesRepository.cs    Repository interface
-│   │   ├── AccountPreferencesRepository.cs     MongoDB implementation
-│   │   ├── AccountPreferencesDocument.cs       MongoDB document
-│   │   │
-│   │   ├── Gameplay/                       20 settings (action bars, combat, camera, etc.)
-│   │   ├── Accessibility/                  14 settings (colors, subtitles, audio, etc.)
-│   │   ├── Language/                       Preferred language (12 supported codes)
+│   ├── AccountPreferences/                 7 synced preference domains
+│   │   ├── IAccountRepository.cs           Repository interface
+│   │   ├── AccountRepository.cs            MongoDB (upsert, versioned PATCH)
+│   │   ├── AccountDocument.cs              MongoDB document
+│   │   ├── Gameplay/                       20 settings
+│   │   ├── Accessibility/                  14 settings
+│   │   ├── Language/                       ISO language code
 │   │   ├── Notifications/                  5 boolean toggles
-│   │   ├── SocialPreferences/              4 visibility rules (who can message, invite, etc.)
-│   │   ├── Audio/                          9 settings (volumes + mute states)
-│   │   └── UiPreferences/                  13 settings (layout, positions, scales)
+│   │   ├── SocialPreferences/              4 visibility rules
+│   │   ├── Audio/                          9 volume/mute settings
+│   │   └── UiPreferences/                  13 layout settings
 │   │
-│   ├── AccountSettings/                    (empty, reserved)
-│   └── Profile/
+│   ├── AccountSettings/                    Account management
+│   │   ├── ChangePasswordRequest.cs        Password change DTO
+│   │   ├── ChangePasswordValidator.cs      FluentValidation
+│   │   ├── AccountSettingsController.cs    POST /account/settings/password
+│   │   └── AccountSettingsExtensions.cs    DI stub
+│   │
+│   └── Profile/                            Display identity
 │       ├── Avatar.cs                       Avatar value object
-│       └── Username.cs                     Username value object
+│       ├── Username.cs                     Username value object
+│       ├── ProfileDocument.cs              MongoDB document
+│       ├── IProfileRepository.cs           Repository interface
+│       ├── ProfileRepository.cs            MongoDB implementation
+│       ├── ProfileController.cs            GET/PUT username, PUT avatar
+│       ├── ProfileDto.cs                   GET response DTO
+│       ├── UpdateUsernameDto.cs             PUT username DTO
+│       ├── UpdateAvatarDto.cs              PUT avatar DTO
+│       ├── ProfileValidator.cs             FluentValidation
+│       └── DependencyInjection.cs          DI registration
 │
-├── Social/                                 (top-level module)
-│   ├── ISocialRepository.cs                Repository interface
-│   ├── SocialRepository.cs                 MongoDB implementation
-│   ├── SocialDocument.cs                   MongoDB document
-│   ├── ISocialService.cs                   Service interface
-│   ├── SocialService.cs                    Service implementation
-│   ├── IFriendRequestLifecycleEngine.cs    Request lifecycle
-│   ├── BlockEnforcementMiddleware.cs       Block check middleware
-│   ├── SocialController.cs                 REST endpoints
-│   ├── FriendCommand.cs                    Friend action command
-│   ├── BlockCommand.cs                     Block action command
-│   ├── PartyCommand.cs                     Party invite command
-│   └── SocialState.cs                      Domain models
+├── Social/                                 Relationships + invites
+│   ├── ISocialRepository.cs
+│   ├── SocialRepository.cs
+│   ├── SocialController.cs
+│   ├── SocialService.cs
+│   ├── SocialPolicy.cs
+│   └── ... (12 more files)
 │
-├── DoNotTouchFolder/                       (do not modify)
-│   ├── ApplicationUser.cs                  User entity (Identity)
-│   ├── ApplicationDbContext.cs             EF Core DbContext
-│   └── SharedSettings/UserCenter/          (placeholders)
+├── DoNotTouchFolder/                       Identity placeholders
+│   ├── ApplicationUser.cs
+│   ├── ApplicationDbContext.cs
+│   └── SharedSettings/UserCenter/
 │
 └── Properties/
 ```
@@ -143,18 +143,26 @@ PickMeUp.Api/
 |---|---|---|
 | Runtime | .NET 10 | Host |
 | Database | MySQL (Pomelo EF Core 9.0) | Identity persistence |
-| Database | MongoDB (Driver 3.12) | Preferences, social |
+| Database | MongoDB (Driver 3.12) | Preferences, social, profile |
 | Cache | Redis (StackExchange) | Sessions, tokens, CSRF |
 | Identity | ASP.NET Identity (EF Core) | User management |
 | Auth | Google OAuth, Facebook OAuth | External sign-in |
 | Tokens | JWT (HMAC-SHA256) | API authentication |
 | Validation | FluentValidation 11.11 | Input validation |
 | Env | DotNetEnv 3.1 | Secret loading |
-| API | OpenAPI | Documentation |
+| Rate Limiting | Fixed window (100/min) | Per-user throttling |
+| Health | /health, /ready | Process + backing service checks |
 
 ---
 
 ## API Endpoints
+
+### Health
+
+| Method | Endpoint | Purpose |
+|---|---|---|
+| GET | `/health` | Process up check |
+| GET | `/ready` | Backing services check |
 
 ### Authentication
 
@@ -166,48 +174,57 @@ PickMeUp.Api/
 | POST | `/api/auth/refresh` | Refresh access token |
 | POST | `/api/auth/logout` | Revoke session |
 
+### Profile
+
+| Method | Endpoint | Purpose |
+|---|---|---|
+| GET | `/account/profile` | Get username + avatar + version |
+| PUT | `/account/profile/username` | Update username |
+| PUT | `/account/profile/avatar` | Update avatar |
+
+### Account Settings
+
+| Method | Endpoint | Purpose |
+|---|---|---|
+| POST | `/account/settings/password` | Change password |
+
 ### Account Preferences
 
-| Method | Endpoint | Domain |
+| Method | Endpoint | Purpose |
 |---|---|---|
-| GET/PUT | `/account/preferences/gameplay` | Gameplay (20 settings) |
-| GET/PUT | `/account/preferences/accessibility` | Accessibility (14 settings) |
-| GET/PUT | `/account/preferences/language` | Language |
-| GET/PUT | `/account/preferences/notifications` | Notifications (5 toggles) |
-| GET/PUT | `/account/preferences/social` | Social preferences (4 rules) |
-| GET/PUT | `/account/preferences/audio` | Audio (9 settings) |
-| GET/PUT | `/account/preferences/ui` | UI (13 settings) |
+| GET | `/account/preferences` | All slices + version |
+| GET/PUT/PATCH | `/account/preferences/{slice}` | Per-slice operations |
+| POST | `/account/preferences/{slice}/reset` | Reset to defaults |
+| GET | `/account/preferences/{slice}/defaults` | Get defaults (no auth) |
+
+**Slices:** gameplay, accessibility, language, notifications, social, audio, ui
 
 ### Social
 
 | Method | Endpoint | Purpose |
 |---|---|---|
-| GET | `/account/social/friends` | List friends |
-| POST | `/account/social/friends/requests` | Send friend request |
-| DELETE | `/account/social/friends/{id}` | Remove friend |
-| GET | `/account/social/blocks` | List blocks |
-| POST | `/account/social/blocks` | Block user |
-| DELETE | `/account/social/blocks/{id}` | Unblock user |
-| POST | `/account/social/party` | Party invite |
+| GET/DELETE | `/account/social/friends` | Manage friends |
+| GET/POST/DELETE | `/account/social/friends/requests` | Friend requests |
+| GET/POST/DELETE | `/account/social/blocks` | Block management |
+| GET/POST/DELETE | `/account/social/party/invites` | Party invites |
 
 ---
 
 ## Configuration
 
-All secrets are loaded from `.env` via DotNetEnv.
+All secrets loaded from `.env` via DotNetEnv.
 
 | Variable | Purpose |
 |---|---|
 | `GOOGLE_CLIENT_ID` / `GOOGLE_CLIENT_SECRET` | Google OAuth |
 | `FACEBOOK_APP_ID` / `FACEBOOK_APP_SECRET` | Facebook OAuth |
-| `MYSQL_HOST` / `MYSQL_PORT` / `MYSQL_DATABASE` / `MYSQL_USER` / `MYSQL_PASSWORD` | MySQL connection |
-| `REDIS_CONNECTION` | Redis connection string |
-| `JWT_SECRET` | Access token signing key |
-| `JWT_REFRESH_TOKEN` | Refresh token signing key |
+| `MYSQL_HOST` / `MYSQL_PORT` / `MYSQL_DATABASE` / `MYSQL_USER` / `MYSQL_PASSWORD` | MySQL |
+| `REDIS_CONNECTION` | Redis |
+| `JWT_SECRET` | Access token signing |
+| `JWT_REFRESH_TOKEN` | Refresh token signing |
 | `JWT_ISSUER` / `JWT_AUDIENCE` | JWT claims |
 | `JWT_EXPIRY_MINUTES` | Access token lifetime |
 | `JWT_REFRESH_EXPIRY_DAYS` | Refresh token lifetime |
-| `SESSION_EXPIRE_HOURS` | Server-side session lifetime |
 
 ---
 

@@ -5,11 +5,14 @@
     public sealed class Avatar
     {
         public Guid Id { get; set; } = Guid.NewGuid();
-        public AvatarTypeStatus AvatarType { get; private set; } = AvatarTypeStatus.Default;
-        public string Value { get; } = string.Empty;
-        public string AvatarUrlPath { get; } = string.Empty;
-        public DateTime CreatedAt { get; } = DateTime.UtcNow;
-        public bool IsDefault { get; private set; } = true;
+        public AvatarTypeStatus AvatarType { get; set; } = AvatarTypeStatus.Default;
+        public string Value { get; set; } = string.Empty;
+        public string AvatarUrlPath { get; set; } = string.Empty;
+        public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
+        public bool IsDefault { get; set; } = true;
+
+        // Parameterless constructor for MongoDB deserialization.
+        private Avatar() { }
 
         private Avatar(string value, string pathUrl, AvatarTypeStatus type)
         {

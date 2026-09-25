@@ -13,6 +13,15 @@ http://localhost:5137
 
 ---
 
+## Health
+
+| Method | Endpoint | Auth | Response |
+|---|---|---|---|
+| GET | `/health` | None | 200 if process is up |
+| GET | `/ready` | None | 200 if Mongo + MySQL + Redis are reachable |
+
+---
+
 ## Authentication
 
 ### Flow
@@ -77,16 +86,56 @@ All errors use RFC 9457 `application/problem+json`:
 
 ---
 
+## Rate Limiting
+
+All authenticated endpoints are rate-limited to **100 requests per minute per user**.
+Exceeding the limit returns `429 Too Many Requests`.
+
+---
+
+## Profile
+
+| Method | Endpoint | Auth | Body | Response |
+|---|---|---|---|---|
+| GET | `/account/profile` | Yes | — | `{ username, avatar, version }` |
+| PUT | `/account/profile/username` | Yes | `{ username, version }` | `{ username, version }` |
+| PUT | `/account/profile/avatar` | Yes | `{ avatarUrl, avatarType, version }` | `{ avatar, version }` |
+
+### Avatar Types
+
+```
+Default  — system placeholder (no upload)
+Static   — uploaded image at fixed URL
+Custom   — user-customisable (animated, layered, etc.)
+```
+
+---
+
+## Account Settings
+
+| Method | Endpoint | Auth | Body | Response |
+|---|---|---|---|---|
+| POST | `/account/settings/password` | Yes | `{ currentPassword, newPassword }` | 200 OK |
+
+- `newPassword` must be ≥12 chars, mixed case, digit, symbol
+- Returns 400 if current password is wrong or new password fails validation
+
+---
+
 ## Preferences
 
 Every domain follows the same pattern:
 
 ```
-GET  /account/preferences/{domain}  →  { settings: {...}, version: N }
-PUT  /account/preferences/{domain}  →  { settings: {...}, version: N+1 }
+GET    /account/preferences/{slice}              →  { settings: {...}, version: N }
+PUT    /account/preferences/{slice}              →  { settings: {...}, version: N+1 }
+PATCH  /account/preferences/{slice}              →  { settings: {...}, version: N+1 }
+POST   /account/preferences/{slice}/reset        →  { settings: {...}, version: N+1 }
+GET    /account/preferences/{slice}/defaults     →  default settings (no auth)
 ```
 
-PUT body must include `version` from the last GET. If someone else updated first, you get `409`.
+PUT replaces the entire slice. PATCH updates only provided fields (nullable).
+Both require `version` in the body. Stale version → 409.
 
 ### GET /account/preferences
 
@@ -105,39 +154,25 @@ Returns all slices + single version number.
 }
 ```
 
-### PUT /account/preferences/{domain}
+### PUT /account/preferences/{slice}
 
-Request body = domain DTO + `version` field.
+Request body = full domain DTO + `version` field.
 
-```json
-PUT /account/preferences/audio
-Content-Type: application/json
+### PATCH /account/preferences/{slice}
 
-{
-  "masterVolume": 0.8,
-  "musicVolume": 0.6,
-  "musicMuted": false,
-  "sfxVolume": 0.9,
-  "sfxMuted": false,
-  "voiceVolume": 0.7,
-  "voiceMuted": false,
-  "ambientVolume": 0.5,
-  "ambientMuted": false,
-  "version": 42
-}
-```
+Request body = partial DTO (nullable fields) + `version` field. Only provided fields are updated.
 
-Response:
-```json
-{
-  "settings": { ... },
-  "version": 43
-}
-```
+### POST /account/preferences/{slice}/reset
 
-### Domains
+Request body = `{ "version": N }`. Resets to default values.
 
-| Domain | Route | Key Fields |
+### GET /account/preferences/{slice}/defaults
+
+Returns the default settings for that slice. No authentication required.
+
+### Slices
+
+| Slice | Route | Key Fields |
 |---|---|---|
 | **Gameplay** | `/account/preferences/gameplay` | visibleActionBars (1-6), cameraSensitivity (0.1-10), fieldOfView (60-120), 16 booleans |
 | **Accessibility** | `/account/preferences/accessibility` | colorblindMode (enum), subtitleSize (10-40), subtitleOpacity (0-1), textSize (10-40) |
@@ -211,6 +246,7 @@ HudPosition:       TopLeft | TopRight | BottomLeft | BottomRight | LeftSide | Ri
 ActionBarLayout:   Horizontal | Vertical
 InventoryLayout:   Grid | List
 ChatLayout:        Compact | Expanded
+AvatarType:        Default | Static | Custom
 ```
 
 ---
@@ -226,7 +262,7 @@ All dates are ISO-8601 UTC:
 
 ## Version Conflict (Optimistic Concurrency)
 
-Every preferences PUT returns a `version`. The next PUT must include that same `version`.
+Every preferences PUT/PATCH returns a `version`. The next PUT/PATCH must include that same `version`.
 
 ```
 Client A: GET → version 42
@@ -242,16 +278,41 @@ Client B must re-GET to get the latest version, merge changes if needed, and ret
 ## Quick Reference
 
 ```bash
+# Health
+curl http://localhost:5137/health
+curl http://localhost:5137/ready
+
 # Login
 curl http://localhost:5137/api/auth/login/google
 
 # Get all preferences
 curl -H "Authorization: Bearer $TOKEN" http://localhost:5137/account/preferences
 
-# Update audio
+# Update audio (PUT)
 curl -X PUT -H "Authorization: Bearer $TOKEN" -H "Content-Type: application/json" \
   -d '{"masterVolume":0.8,"version":42}' \
   http://localhost:5137/account/preferences/audio
+
+# Partial update audio (PATCH)
+curl -X PATCH -H "Authorization: Bearer $TOKEN" -H "Content-Type: application/json" \
+  -d '{"musicVolume":0.5,"version":42}' \
+  http://localhost:5137/account/preferences/audio
+
+# Reset audio to defaults
+curl -X POST -H "Authorization: Bearer $TOKEN" -H "Content-Type: application/json" \
+  -d '{"version":42}' \
+  http://localhost:5137/account/preferences/audio/reset
+
+# Get audio defaults (no auth)
+curl http://localhost:5137/account/preferences/audio/defaults
+
+# Get profile
+curl -H "Authorization: Bearer $TOKEN" http://localhost:5137/account/profile
+
+# Change password
+curl -X POST -H "Authorization: Bearer $TOKEN" -H "Content-Type: application/json" \
+  -d '{"currentPassword":"old","newPassword":"NewP@ssw0rd!12"}' \
+  http://localhost:5137/account/settings/password
 
 # Send friend request
 curl -X POST -H "Authorization: Bearer $TOKEN" -H "Content-Type: application/json" \

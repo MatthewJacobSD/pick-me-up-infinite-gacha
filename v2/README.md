@@ -6,6 +6,17 @@
 
 ---
 
+## Architecture — Shared Backend
+
+The backend and authentication layer is **shared between both engines** (Unity and Unreal). Both clients consume the same engine-agnostic backend/API foundation.
+
+- `v1/` (Unity) and `v2/` (Unreal) contain **independent client implementations only**.
+- The backend/API contracts, authentication, and shared infrastructure are engine-agnostic and developed separately from either engine folder.
+- C# and C++ implementations will naturally differ; switching engines may require rewriting engine-side integration, but the backend/API contracts remain shared.
+- The purpose of this separation is to allow the frontend/UI and authentication/backend foundation to be developed and tested independently of the engine, while keeping Unreal available as a future alternative if the project needs to escalate or migrate engines.
+
+---
+
 ## Project Structure
 
 ```

@@ -6,7 +6,10 @@ namespace PickMeUp.Api.Account.Profile
 
     public sealed partial class Username
     {
-        public string Value { get; } = string.Empty;
+        public string Value { get; set; } = string.Empty;
+
+        // Parameterless constructor for MongoDB deserialization.
+        private Username() { }
 
         private Username(string value)
         {

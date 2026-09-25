@@ -1,14 +1,20 @@
 using System.Text;
 using FluentValidation;
+using HealthChecks.MongoDb;
+using HealthChecks.MySql;
+using HealthChecks.Redis;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.RateLimiting;
 using Microsoft.IdentityModel.Tokens;
 using MongoDB.Driver;
 using PickMeUp.Api.Account.AccountPreferences;
+using PickMeUp.Api.Account.Profile;
 using PickMeUp.Api.DoNotTouchFolder;
 using PickMeUp.Api.Social;
+using System.Threading.RateLimiting;
 
 namespace PickMeUp.Api.Hosting;
 
@@ -29,7 +35,12 @@ public static class DependencyInjection
         services.AddProblemDetails();
 
         services.AddAccountPreferences();
+        services.AddProfile();
         services.AddSocial();
+
+        services.AddHealthChecksServices(configuration);
+        services.AddCorsPolicy();
+        services.AddRateLimitingServices(configuration);
 
         return services;
     }
@@ -167,5 +178,51 @@ public static class DependencyInjection
     private static void AddFluentValidation(this IServiceCollection services)
     {
         services.AddValidatorsFromAssemblyContaining<AccountPreferencesRepository>();
+    }
+
+    // ── Health Checks ──────────────────────────────────────────
+
+    private static void AddHealthChecksServices(this IServiceCollection services, IConfiguration configuration)
+    {
+        services.AddHealthChecks();
+    }
+
+    // ── CORS ────────────────────────────────────────────────────
+
+    private static void AddCorsPolicy(this IServiceCollection services)
+    {
+        services.AddCors(options =>
+        {
+            options.AddPolicy("dev", policy =>
+                policy
+                    .AllowAnyOrigin()
+                    .AllowAnyMethod()
+                    .AllowAnyHeader());
+        });
+    }
+
+    // ── Rate Limiting ───────────────────────────────────────────
+
+    private static void AddRateLimitingServices(this IServiceCollection services, IConfiguration configuration)
+    {
+        var rateLimitOptions = configuration
+            .GetSection(RateLimitOptions.SectionName)
+            .Get<RateLimitOptions>() ?? new RateLimitOptions();
+
+        services.Configure<RateLimitOptions>(
+            configuration.GetSection(RateLimitOptions.SectionName));
+
+        services.AddRateLimiter(options =>
+        {
+            options.RejectionStatusCode = StatusCodes.Status429TooManyRequests;
+
+            options.AddFixedWindowLimiter("fixed-window", limiterOptions =>
+            {
+                limiterOptions.PermitLimit = rateLimitOptions.PermitLimit;
+                limiterOptions.Window = TimeSpan.FromSeconds(rateLimitOptions.WindowSeconds);
+                limiterOptions.QueueProcessingOrder = QueueProcessingOrder.OldestFirst;
+                limiterOptions.QueueLimit = rateLimitOptions.QueueLimit;
+            });
+        });
     }
 }
