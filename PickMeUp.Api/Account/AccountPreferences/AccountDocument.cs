@@ -1,4 +1,5 @@
-﻿using MongoDB.Bson.Serialization.Attributes;
+﻿using MongoDB.Bson;
+using MongoDB.Bson.Serialization.Attributes;
 using PickMeUp.Api.Account.AccountPreferences.Accessibility;
 using PickMeUp.Api.Account.AccountPreferences.Audio;
 using PickMeUp.Api.Account.AccountPreferences.Gameplay;
@@ -12,6 +13,7 @@ namespace PickMeUp.Api.Account.AccountPreferences
     public sealed class AccountDocument
     {
         [BsonId]
+        [BsonGuidRepresentation(GuidRepresentation.Standard)]
         public Guid AccountId { get; init; }
         public string UserId { get; init; } = string.Empty;
 
