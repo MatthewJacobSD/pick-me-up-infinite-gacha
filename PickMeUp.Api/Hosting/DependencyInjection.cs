@@ -1,20 +1,24 @@
 using System.Text;
+using System.Threading.RateLimiting;
 using FluentValidation;
 using HealthChecks.MongoDb;
 using HealthChecks.MySql;
 using HealthChecks.Redis;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.RateLimiting;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.AspNetCore.RateLimiting;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
 using MongoDB.Driver;
 using PickMeUp.Api.Account.AccountPreferences;
 using PickMeUp.Api.Account.Profile;
 using PickMeUp.Api.DoNotTouchFolder;
 using PickMeUp.Api.Social;
-using System.Threading.RateLimiting;
+using StackExchange.Redis;
 
 namespace PickMeUp.Api.Hosting;
 
@@ -33,6 +37,7 @@ public static class DependencyInjection
         services.AddOAuthProviders(configuration);
         services.AddFluentValidation();
         services.AddProblemDetails();
+        services.AddControllers();
 
         services.AddAccountPreferences();
         services.AddProfile();
@@ -184,6 +189,16 @@ public static class DependencyInjection
 
     private static void AddHealthChecksServices(this IServiceCollection services, IConfiguration configuration)
     {
+        var mongoConnectionString = configuration[$"{MongoOptions.SectionName}:ConnectionString"]
+            ?? throw new InvalidOperationException("MongoDB connection string is not configured.");
+
+        var mySqlConnectionString = configuration.GetConnectionString("MySql")
+            ?? configuration[$"{MySqlOptions.SectionName}:ConnectionString"]
+            ?? throw new InvalidOperationException("MySQL connection string is not configured.");
+
+        var redisConnection = configuration[$"{RedisOptions.SectionName}:Connection"]
+            ?? throw new InvalidOperationException("Redis connection string is not configured.");
+
         services.AddHealthChecks();
     }
 

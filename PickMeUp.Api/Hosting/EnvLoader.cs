@@ -7,14 +7,13 @@ namespace PickMeUp.Api.Hosting;
 /// Loads .env files with priority precedence:
 /// Process env (highest) → .env.{Environment} → .env.local → .env (lowest).
 /// Lower-priority sources never overwrite values from higher-priority sources.
+/// Flat env var names (JWT_SECRET) are mapped to nested config keys (Jwt:Secret).
 /// </summary>
 public static class EnvLoader
 {
     /// <summary>
     /// Loads .env files and pushes values into IConfiguration.
     /// </summary>
-    /// <param name="configuration">The configuration builder to merge into.</param>
-    /// <param name="environment">ASP.NET Core environment name (e.g. "Development"). Falls back to DOTNET_ENVIRONMENT / ASPNETCORE_ENVIRONMENT.</param>
     public static void Load(IConfigurationBuilder configuration, string? environment = null)
     {
         var env = environment
@@ -27,30 +26,60 @@ public static class EnvLoader
         configuration.AddInMemoryCollection(variables);
     }
 
-    /// <summary>
-    /// Loads .env files into process environment variables with priority precedence.
-    /// Uses NoClobber so that higher-priority sources are never overwritten.
-    /// Files are loaded lowest-priority-first so that NoClobber preserves the correct precedence.
-    /// </summary>
     private static Dictionary<string, string> LoadEnvFiles(string root, string environment)
     {
-        // NoClobber = true: first value encountered wins (already-set env vars are never overwritten).
-        // Files loaded in order: .env → .env.local → .env.{env}
-        // Because NoClobber prevents overwriting, the effective priority is:
-        //   .env.{env} (highest, set last) > .env.local > .env (lowest, set first)
-        // This matches: process env > .env.{env} > .env.local > .env
         DotNetEnv.Env.NoClobber().Load(Path.Combine(root, ".env"));
         DotNetEnv.Env.NoClobber().Load(Path.Combine(root, ".env.local"));
         DotNetEnv.Env.NoClobber().Load(Path.Combine(root, $".env.{environment}"));
 
-        // Snapshot all environment variables so we can push them into IConfiguration.
         var variables = new Dictionary<string, string>(StringComparer.OrdinalIgnoreCase);
 
-        // Collect from process environment (includes both original and .env-loaded values).
         foreach (System.Collections.DictionaryEntry entry in Environment.GetEnvironmentVariables())
         {
             if (entry.Key is string key && entry.Value is string value)
                 variables[key] = value;
+        }
+
+        // Map flat env var names → nested config keys.
+        var envToConfig = new Dictionary<string, string>(StringComparer.OrdinalIgnoreCase)
+        {
+            ["JWT_SECRET"] = "Jwt:Secret",
+            ["JWT_REFRESH_TOKEN"] = "Jwt:RefreshToken",
+            ["JWT_ISSUER"] = "Jwt:Issuer",
+            ["JWT_AUDIENCE"] = "Jwt:Audience",
+            ["JWT_EXPIRY_MINUTES"] = "Jwt:ExpiryMinutes",
+            ["JWT_REFRESH_EXPIRY_DAYS"] = "Jwt:RefreshExpiryDays",
+            ["SESSION_EXPIRE_HOURS"] = "Session:ExpireHours",
+            ["MONGODB_CONNECTION_STRING"] = "Mongo:ConnectionString",
+            ["MONGODB_DATABASE"] = "Mongo:Database",
+            ["REDIS_CONNECTION"] = "Redis:Connection",
+            ["MYSQL_HOST"] = "MySql:Host",
+            ["MYSQL_PORT"] = "MySql:Port",
+            ["MYSQL_DATABASE"] = "MySql:Database",
+            ["MYSQL_USER"] = "MySql:User",
+            ["MYSQL_PASSWORD"] = "MySql:Password",
+            ["GOOGLE_CLIENT_ID"] = "OAuth:Google:ClientId",
+            ["GOOGLE_CLIENT_SECRET"] = "OAuth:Google:ClientSecret",
+            ["GOOGLE_ENABLED"] = "OAuth:Google:Enabled",
+            ["FACEBOOK_APP_ID"] = "OAuth:Facebook:ClientId",
+            ["FACEBOOK_APP_SECRET"] = "OAuth:Facebook:ClientSecret",
+            ["FACEBOOK_ENABLED"] = "OAuth:Facebook:Enabled",
+        };
+
+        // Build MySql connection string from individual parts.
+        if (variables.TryGetValue("MYSQL_HOST", out var host) &&
+            variables.TryGetValue("MYSQL_PORT", out var port) &&
+            variables.TryGetValue("MYSQL_DATABASE", out var db) &&
+            variables.TryGetValue("MYSQL_USER", out var user) &&
+            variables.TryGetValue("MYSQL_PASSWORD", out var pass))
+        {
+            variables["MySql:ConnectionString"] = $"Server={host};Port={port};Database={db};User={user};Password={pass};";
+        }
+
+        foreach (var (envKey, configKey) in envToConfig)
+        {
+            if (variables.TryGetValue(envKey, out var envValue))
+                variables[configKey] = envValue;
         }
 
         return variables;
@@ -58,8 +87,6 @@ public static class EnvLoader
 
     /// <summary>
     /// Walks up from the entry assembly directory looking for a project or solution file.
-    /// Returns the first directory containing a .csproj, .sln, or .slnx file.
-    /// Falls back to the entry assembly's directory if no marker is found.
     /// </summary>
     private static string FindContentRoot()
     {
@@ -80,7 +107,6 @@ public static class EnvLoader
             current = current.Parent;
         }
 
-        // Fallback: use the assembly's directory.
         return directory;
     }
 }
