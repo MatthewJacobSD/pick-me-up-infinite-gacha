@@ -97,25 +97,25 @@ public static class ConfigurationExtensions
     {
         var missingKeys = new List<string>();
 
-        ValidateSection(configuration, JwtOptions.SectionName, new[]
-        {
+        ValidateSection(configuration, JwtOptions.SectionName,
+        [
             "Secret", "RefreshToken", "Issuer", "Audience"
-        }, missingKeys);
+        ], missingKeys);
 
-        ValidateSection(configuration, MongoOptions.SectionName, new[]
-        {
+        ValidateSection(configuration, MongoOptions.SectionName,
+        [
             "ConnectionString", "Database"
-        }, missingKeys);
+        ], missingKeys);
 
-        ValidateSection(configuration, MySqlOptions.SectionName, new[]
-        {
+        ValidateSection(configuration, MySqlOptions.SectionName,
+        [
             "ConnectionString"
-        }, missingKeys);
+        ], missingKeys);
 
-        ValidateSection(configuration, RedisOptions.SectionName, new[]
-        {
+        ValidateSection(configuration, RedisOptions.SectionName,
+        [
             "Connection"
-        }, missingKeys);
+        ], missingKeys);
 
         ValidateOAuthProvider(configuration, "Google", missingKeys);
         ValidateOAuthProvider(configuration, "Facebook", missingKeys);
@@ -150,10 +150,10 @@ public static class ConfigurationExtensions
         var enabled = configuration[$"OAuth:{provider}:Enabled"];
         if (string.Equals(enabled, "true", StringComparison.OrdinalIgnoreCase))
         {
-            ValidateSection(configuration, $"OAuth:{provider}", new[]
-            {
+            ValidateSection(configuration, $"OAuth:{provider}",
+            [
                 "ClientId", "ClientSecret"
-            }, missingKeys);
+            ], missingKeys);
         }
     }
 }

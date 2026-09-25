@@ -21,7 +21,7 @@
 
         public int Version { get; init; }
 
-        public UiPreferencesSettings ToSettings() => new()
+        public UiSettings ToSettings() => new()
         {
             UiScale = UiScale,
             TextSize = TextSize,

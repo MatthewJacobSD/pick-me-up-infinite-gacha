@@ -1,4 +1,3 @@
-using PickMeUp.Api.Common.Errors;
 using PickMeUp.Api.Hosting;
 
 var builder = WebApplication.CreateBuilder(args);
