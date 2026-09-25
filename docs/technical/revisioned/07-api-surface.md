@@ -1,6 +1,6 @@
 # 07 — API surface (Unity contract)
 
-Base: HTTPS. Auth: `Authorization: Bearer <access>`.  
+Base: HTTPS. Auth: `Authorization: Bearer <access>`.
 JSON. ProblemDetails on errors.
 
 ## Identity
@@ -9,19 +9,37 @@ See [04](./04-identity-and-authentication.md).
 
 ## Preferences
 
-All preference responses include `version`.
+### GET /account/preferences
 
-`GET /account/preferences` — full document for startup hydration.
+Returns the full document with all slices + version. Used at startup hydration.
 
-Slice GET/PUT:
+### Per-slice endpoints
 
-- `/account/preferences/gameplay`
-- `/account/preferences/accessibility`
-- `/account/preferences/language`
-- `/account/preferences/notifications`
-- `/account/preferences/social`
-- `/account/preferences/audio`
-- `/account/preferences/ui`
+All responses include `version`.
+
+| Method | Path | Body | Response |
+|---|---|---|---|
+| GET | `/account/preferences/{slice}` | — | `{ settings, version }` |
+| PUT | `/account/preferences/{slice}` | Full DTO + `version` | `{ settings, version }` |
+| PATCH | `/account/preferences/{slice}` | Partial DTO (nullable fields) + `version` | `{ settings, version }` |
+| POST | `/account/preferences/{slice}/reset` | `{ version }` | `{ settings, version }` |
+| GET | `/account/preferences/{slice}/defaults` | — | Default settings (no auth) |
+
+**Slices:** `gameplay`, `accessibility`, `language`, `notifications`, `social`, `audio`, `ui`
+
+### Version conflict
+
+If the `version` in the request doesn't match the server's current version, the server returns **409** with ProblemDetails. The client must re-GET, merge changes, and retry.
+
+### Error responses
+
+All errors use `application/problem+json`:
+
+| Status | `type` URI | When |
+|---|---|---|
+| 400 | `https://pickmeup/errors/validation` | Invalid input (FluentValidation) |
+| 401 | `https://pickmeup/errors/unauthorized` | Missing/invalid JWT |
+| 409 | `https://pickmeup/errors/version-conflict` | Stale version on PUT/PATCH/RESET |
 
 ## Social
 
@@ -41,7 +59,7 @@ See [06](./06-social.md).
 1. Load local device config
 2. Detect hardware
 3. Authenticate
-4. `GET /account/preferences`
+4. `GET /account/preferences` — full hydration
 5. Load social lists as needed
 6. Validate + defaults
 7. Resolve hybrid locally

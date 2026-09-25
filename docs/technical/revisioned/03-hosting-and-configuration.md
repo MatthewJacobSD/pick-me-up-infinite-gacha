@@ -18,7 +18,7 @@ Correct for **local development**. Incorrect as the production secret store.
 
 ### Behaviour
 
-- Library: existing `DotNetEnv`, wrapped as `IConfigurationSource` or loaded into configuration before bind.
+- Library: `DotNetEnv`, loaded before `WebApplication.CreateBuilder`
 - File order (first existing wins per key only if process env is empty): process environment → `.env.{Environment}` → `.env.local` → `.env`
 - Search: content root, current directory, project directory in Development.
 - **Do not overwrite** variables already set in the process (containers win).
@@ -46,10 +46,10 @@ Missing required keys fail startup with a single exception that lists names.
 - `.env` gitignored
 - `appsettings.json` non-secret defaults only (log level, database name, lifetimes)
 
-## Pipeline (target)
+## Pipeline
 
 ```
-Exception handler / ProblemDetails
+ExceptionHandler (ProblemDetails)
 HTTPS
 CORS (Development origins for interfaces + later editors)
 Authentication
@@ -63,27 +63,22 @@ Block *policy* belongs in Social services. A global block middleware that only r
 
 ```
 AddPickMeUpApi()
-  AddPickMeUpEnv-bound options
-  AddPickMeUpAuth()
-  AddPickMeUpPreferences()
-  AddPickMeUpSocial()
-  AddFluentValidation()
-  AddMongo()
-  AddIdentityMySql()
-  AddRedis()
+  AddPickMeUpOptions()          # bind JwtOptions, MongoOptions, MySqlOptions, RedisOptions
+  AddMySql()                    # DbContext + Identity (ApplicationUser, IdentityRole<Guid>)
+  AddMongoDb()                  # IMongoClient (singleton) + IMongoDatabase (singleton)
+  AddRedis()                    # StackExchange Redis cache
+  AddJwtAuthentication()        # JWT Bearer + Cookie auth schemes
+  AddOAuthProviders()           # Google/Facebook (conditional on config)
+  AddFluentValidation()         # assembly scan from AccountPreferencesRepository
+  AddProblemDetails()
+  AddAccountPreferences()       # currently empty stub
+  AddSocial()                   # full Social module registration
 ```
 
-Each module lives next to its domain as `DependencyInjection.cs`. That is the wrapper file. Not a class that “calls every feature.”
+Each module lives next to its domain as `DependencyInjection.cs`. That is the wrapper file. Not a class that "calls every feature."
 
-## Packages to add vs what exists
+## Packages
 
-Present: JwtBearer, Google, Facebook, Identity EF, Pomelo MySQL, Mongo driver, Redis cache, FluentValidation core, DotNetEnv, OpenAPI.
+Present: JwtBearer, Google, Facebook, Identity EF, Pomelo MySQL, Mongo driver, Redis cache, FluentValidation core + ASP.NET integration, DotNetEnv, OpenAPI.
 
-Missing for the design: FluentValidation ASP.NET integration (or a custom filter), explicit CORS, health checks.
-
-## Health
-
-`GET /health` — process up  
-`GET /ready` — Mongo ping + MySQL `CanConnect` + Redis ping  
-
-Required before a client team is told the API is up.
+Missing for full design: explicit CORS configuration, health checks.

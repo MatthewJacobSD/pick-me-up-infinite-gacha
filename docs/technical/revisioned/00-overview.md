@@ -26,11 +26,18 @@ There is no playable client hooked to the API. That is intentional until the bac
 7. **No TypeScript-style barrel files.** C# modules expose DI extension methods and namespaces.
 8. **Backend milestone before engine wiring.** Unity and Unreal consume a finished Account + Social contract.
 
-## Current honesty
+## Current state
 
-The settings architecture status table that marks Account slices “complete” is **not accurate**. On disk there are DTOs, controllers, and validators. They are not a running module: Mongo is unregistered, validators are unwired, the preferences repository does not implement its interface, and controllers read `User.Identity.Name` while tokens emit `sub`.
+The Account Preferences module is **implemented and builds**:
 
-This revisioned set describes the **target design** and the **gap**. Implementation follows [10-implementation-plan.md](./10-implementation-plan.md).
+- All 7 preference slices (Gameplay, Accessibility, Language, Notifications, Social, Audio, UI) have controllers, DTOs, validators, and settings records
+- Repository supports GET, PUT (replace), PATCH (partial update), and reset per slice
+- FluentValidation is wired via assembly scan
+- `ICurrentUser` abstraction reads JWT `sub` / `accountId` claims
+- Versioned writes with optimistic concurrency (409 on stale)
+- MongoDB persistence with atomic upsert
+
+The Social module is **partially implemented** — graph structure, policy, and controller exist but some lifecycle endpoints are still being completed.
 
 ## Engines
 
