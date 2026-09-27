@@ -35,7 +35,8 @@ export default function App() {
     device,
     setDevice,
     auth,
-    startMockAuth,
+    startOAuthLogin,
+    startRegister,
     completeAuth,
     mainMenuPanel,
     setMainMenuPanel,
@@ -56,7 +57,7 @@ export default function App() {
         return <CreatingAccountScreen onComplete={goNext} duration={2500} />;
 
       case "login-select":
-        return <LoginSelectScreen device={device} onSelect={startMockAuth} onBack={goBack} />;
+        return <LoginSelectScreen device={device} onSelect={startOAuthLogin} onRegister={startRegister} onBack={goBack} />;
 
       case "authenticating":
         return <AuthenticatingScreen provider={auth.provider!} onComplete={completeAuth} />;
