@@ -15,6 +15,9 @@ using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
 using MongoDB.Driver;
 using PickMeUp.Api.Account.AccountPreferences;
+using PickMeUp.Api.Account.Authentication.OAuth;
+using PickMeUp.Api.Account.Authentication.OAuth.Provider;
+using PickMeUp.Api.Account.Authentication.Session;
 using PickMeUp.Api.Account.Profile;
 using PickMeUp.Api.DoNotTouchFolder;
 using PickMeUp.Api.Social;
@@ -38,6 +41,56 @@ public static class DependencyInjection
         services.AddFluentValidation();
         services.AddProblemDetails();
         services.AddControllers();
+
+        // OAuth services
+        services.AddSingleton(sp =>
+        {
+            var config = sp.GetRequiredService<IConfiguration>();
+            var googleClientId = config["OAuth:Google:ClientId"] ?? "";
+            var googleSecret = config["OAuth:Google:ClientSecret"] ?? "";
+            var facebookAppId = config["OAuth:Facebook:ClientId"] ?? "";
+            var facebookSecret = config["OAuth:Facebook:ClientSecret"] ?? "";
+
+            var google = !string.IsNullOrWhiteSpace(googleClientId) && !string.IsNullOrWhiteSpace(googleSecret)
+                ? PickMeUp.Api.Account.Authentication.OAuth.Provider.GoogleProvider.Create(googleClientId, googleSecret)
+                : PickMeUp.Api.Account.Authentication.OAuth.Provider.GoogleProvider.Create("disabled", "disabled-placeholder-value");
+
+            var facebook = !string.IsNullOrWhiteSpace(facebookAppId) && !string.IsNullOrWhiteSpace(facebookSecret)
+                ? PickMeUp.Api.Account.Authentication.OAuth.Provider.FacebookProvider.Create(facebookAppId, facebookSecret)
+                : PickMeUp.Api.Account.Authentication.OAuth.Provider.FacebookProvider.Create("disabled", "disabled-placeholder-value");
+
+            return new OauthConfig { Google = google, Facebook = facebook };
+        });
+        services.AddSingleton<OAuthProviderRegistry>();
+        services.AddSingleton<OAuthConfigLoader>();
+        services.AddSingleton<ExternalLoginService>();
+        services.AddSingleton<OAuthCallbackHandler>();
+        services.AddSingleton<OAuthStateValidator>();
+        services.AddSingleton<IAccountRepository, MongoAccountRepository>();
+        services.AddSingleton<IExternalAccountRepository, MongoExternalAccountRepository>();
+        services.AddSingleton<AccountCreationService>();
+        services.AddSingleton<AccountLinkingService>();
+
+        // Session services
+        services.AddSingleton(sp =>
+        {
+            var jwtSection = configuration.GetSection(JwtOptions.SectionName);
+            var jwtOptions = jwtSection.Get<JwtOptions>()
+                ?? throw new InvalidOperationException("JWT configuration section is missing.");
+
+            var accessToken = AccessTokenConfig.Create(jwtOptions.Secret, jwtOptions.ExpiryMinutes);
+            var refreshToken = RefreshTokenConfig.Create(jwtOptions.RefreshToken, jwtOptions.RefreshExpiryDays);
+            var sessionConfig = SessionConfig.Create(24); // default 24 hours
+
+            return Jwt.Create(jwtOptions.Issuer, jwtOptions.Audience, accessToken, refreshToken, sessionConfig);
+        });
+        services.AddSingleton(sp => sp.GetRequiredService<Jwt>().AccessToken);
+        services.AddSingleton(sp => sp.GetRequiredService<Jwt>().RefreshToken);
+        services.AddSingleton(sp => sp.GetRequiredService<Jwt>().SessionConfig);
+        services.AddHttpClient();
+        services.AddSingleton<SessionService>();
+        services.AddSingleton<TokenGeneratorService>();
+        services.AddSingleton<RefreshTokenService>();
 
         services.AddAccountPreferences();
         services.AddProfile();
