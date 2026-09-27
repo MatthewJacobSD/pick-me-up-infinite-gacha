@@ -28,7 +28,7 @@ namespace PickMeUp.Api.Account.Authentication.OAuth
                         }&redirect_uri={callback}&response_type=code&scope=email profile&state={state}",
 
                 OAuthProvider.Facebook =>
-                    $"https://www.facebook.com/v18.0/dialog/oauth?client_id={
+                    $"https://www.facebook.com/v26.0/dialog/oauth?client_id={
                         ((FacebookProvider)_registry.GetProvider(provider)).AppId
                         }&redirect_uri={callback}&response_type=code&scope=email public_profile&state={state}",
 
