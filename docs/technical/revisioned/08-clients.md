@@ -2,7 +2,7 @@
 
 ## Rule
 
-Engines implement **device + runtime + presentation**.  
+Engines implement **device + runtime + presentation**.
 They do not own friends or account preference truth.
 
 ## `v1/` Unity
@@ -23,9 +23,14 @@ Do not duplicate Mongo access from Unity.
 
 Same contract, different storage (`GameUserSettings`, SaveGame, ini). Same HTTP.
 
-## `interfaces/`
+## `interfaces/` — Reference Viewer Only
 
-Vite + React gothic onboarding prototype. Not the production settings UI. May later point at `/api/auth` for flow testing. Not a third engine.
+Vite + React gothic onboarding prototype. This is **not** connected to the backend ecosystem. It exists solely as a visual reference for UI/UX design inspiration when building the Unity or Unreal client.
+
+- Not a production settings UI
+- Not a third engine
+- Does not consume the API contract
+- Used to understand screen flow, visual style, and layout patterns for client implementation
 
 ## Shared contracts (future)
 

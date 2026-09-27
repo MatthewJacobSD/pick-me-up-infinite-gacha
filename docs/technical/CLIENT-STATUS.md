@@ -9,46 +9,34 @@
 
 | Layer | Status | Notes |
 |---|---|---|
-| Backend API | ✅ Built | Auth (Google + Facebook), Preferences (7 slices), Social, Profile |
+| Backend API | ✅ Complete | Auth, Preferences (7 slices), Social, Profile, Health, Rate Limiting |
 | Unity (`v1/`) | ⬜ Empty | Only README and docs |
 | Unreal (`v2/`) | ⬜ Empty | Only README and docs |
-| Interface prototype | ⬜ Web only | Vite + React onboarding flow |
+| Interface reference | ⚠️ Reference only | Vite + React gothic onboarding prototype (not connected to backend) |
 
 ---
 
-## Verified Backend Features
+## Backend — Verified Working
 
-### OAuth (Google + Facebook) — ✅ Working in local development
-
-| Provider | Status | Redirect URI | Notes |
-|---|---|---|---|
-| Google | ✅ Working | `http://localhost:5137/api/auth/callback/google` | HTTP accepted by Google for localhost |
-| Facebook | ✅ Working | `https://localhost:7111/api/auth/callback/facebook` | HTTPS required by Facebook |
-
-**Tested flow:**
-1. `GET /api/auth/login/{provider}` → 302 to provider
-2. User authenticates → provider redirects to callback
-3. Backend exchanges code → creates/links account → returns `loginCode`
-4. In Development mode: returns JSON with `publicCode`, `sessionId`, `identity`
-
-**Multi-provider:** Same email links to same account. Both Google and Facebook can be linked to one account.
-
-**Public Code format:** `MOE-XXXXXXXXXX` (Crockford Base32, user-facing ID).
-
-**Account entity:** Two IDs — `Id` (Guid, server-only) + `PublicCode` (MOE-, user-facing).
-
-### Preferences — ✅ Working
-
-7 slices: Gameplay, Accessibility, Language, Notifications, Social, Audio, UI.
-All support GET, PUT, PATCH, reset, and defaults endpoints.
-
-### Social — ✅ Working
-
-Friends, friend requests, blocks, party invites. Server-authoritative.
-
-### Profile — ✅ Working
-
-Username + Avatar persistence via MongoDB.
+| Endpoint | Status |
+|---|---|
+| `GET /health` | ✅ Returns 200 |
+| `GET /ready` | ✅ Checks MySQL + MongoDB + Redis |
+| `GET /api/auth/login-url/google` | ✅ Returns redirect URL |
+| `GET /api/auth/login-url/facebook` | ✅ Returns redirect URL |
+| `POST /api/auth/register` | ✅ Email + password registration |
+| `POST /api/auth/consume-login-code` | ✅ Exchange loginCode for tokens |
+| `POST /api/auth/refresh` | ✅ Token rotation |
+| `POST /api/auth/recover` | ✅ Recover soft-deleted account |
+| `GET /account/preferences` | ✅ All slices + version |
+| `GET/PUT/PATCH /account/preferences/{slice}` | ✅ Per-slice operations |
+| `POST /account/preferences/{slice}/reset` | ✅ Reset to defaults |
+| `GET /account/preferences/{slice}/defaults` | ✅ Default values |
+| `GET /account/profile` | ✅ Username + avatar + version |
+| `PUT /account/profile/username` | ✅ Update username |
+| `PUT /account/profile/avatar` | ✅ Update avatar |
+| `POST /account/settings/delete` | ✅ Soft delete (30-day recovery) |
+| Social endpoints | ✅ Friends, requests, blocks, party |
 
 ---
 
