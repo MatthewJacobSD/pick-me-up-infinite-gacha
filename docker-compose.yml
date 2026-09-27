@@ -8,10 +8,10 @@ services:
     ports:
       - "3306:3306"
     environment:
-      MYSQL_ROOT_PASSWORD: root
-      MYSQL_DATABASE: MoebiusOrder
-      MYSQL_USER: MatthewJacobSD
-      MYSQL_PASSWORD: gyspor-kagnu4-gAcguj
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD:-root}
+      MYSQL_DATABASE: ${MYSQL_DATABASE:-MoebiusOrder}
+      MYSQL_USER: ${MYSQL_USER:-MatthewJacobSD}
+      MYSQL_PASSWORD: ${MYSQL_PASSWORD:-changeme}
     volumes:
       - mysql-data:/var/lib/mysql
     healthcheck:
