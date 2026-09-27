@@ -1,12 +1,21 @@
+using Microsoft.Extensions.DependencyInjection.Extensions;
+using PickMeUp.Api.Common.Authentication;
+
 namespace PickMeUp.Api.Account.AccountPreferences;
 
+/// <summary>
+/// Registers account-preferences-domain services into the DI container.
+/// </summary>
 public static class DependencyInjection
 {
     public static IServiceCollection AddAccountPreferences(this IServiceCollection services)
     {
-        // All preferences are registered via Hosting/DependencyInjection.cs
-        // (MongoDB client/database, repository, validators via assembly scan).
-        // This module has no additional services to register.
+        services.AddHttpContextAccessor();
+        services.TryAddScoped<ICurrentUser, CurrentUser>();
+
+        services.TryAddSingleton<IAccountPreferencesRepository, AccountPreferencesRepository>();
+        services.AddHostedService<AccountPreferencesIndexHostedService>();
+
         return services;
     }
 }

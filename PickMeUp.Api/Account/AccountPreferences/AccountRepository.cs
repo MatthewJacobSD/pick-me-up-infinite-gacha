@@ -34,18 +34,67 @@ public sealed class AccountPreferencesRepository(IMongoDatabase db) : IAccountPr
             .SetOnInsert(x => x.SocialPreferences, new SocialSettings())
             .SetOnInsert(x => x.Audio, new AudioSettings())
             .SetOnInsert(x => x.UiPreferences, new UiSettings())
-            .SetOnInsert(x => x.Version, 1);
+            .SetOnInsert(x => x.Version, 1)
+            .SetOnInsert(x => x.SettingsVersion, AccountDocument.CurrentSettingsVersion);
 
         await _collection.UpdateOneAsync(
             x => x.AccountId == accountId,
             update,
             new UpdateOptions { IsUpsert = true });
 
-        return (await _collection.Find(x => x.AccountId == accountId).FirstOrDefaultAsync())!;
+        var doc = await _collection.Find(x => x.AccountId == accountId).FirstOrDefaultAsync();
+        if (doc is null) return null!;
+
+        return await MigrateIfNeededAsync(accountId, doc);
     }
 
     public async Task<AccountDocument?> FindAsync(Guid accountId)
-        => await _collection.Find(x => x.AccountId == accountId).FirstOrDefaultAsync();
+    {
+        var doc = await _collection.Find(x => x.AccountId == accountId).FirstOrDefaultAsync();
+        if (doc is null) return null;
+
+        return await MigrateIfNeededAsync(accountId, doc);
+    }
+
+    /// <summary>
+    /// Checks <see cref="AccountDocument.SettingsVersion"/> against
+    /// <see cref="AccountDocument.CurrentSettingsVersion"/> and applies any
+    /// pending migrations. Currently a no-op placeholder — add migration
+    /// steps here as the schema evolves (e.g. v1 → v2 field renames).
+    /// </summary>
+    private async Task<AccountDocument> MigrateIfNeededAsync(Guid accountId, AccountDocument doc)
+    {
+        if (doc.SettingsVersion >= AccountDocument.CurrentSettingsVersion)
+            return doc;
+
+        // Future: apply sequential migrations here, e.g.
+        //   if (doc.SettingsVersion < 2) { doc = MigrateV1ToV2(doc); }
+        //   if (doc.SettingsVersion < 3) { doc = MigrateV2ToV3(doc); }
+
+        // Persist the updated SettingsVersion so we don't migrate again.
+        var update = Builders<AccountDocument>.Update
+            .Set(x => x.SettingsVersion, AccountDocument.CurrentSettingsVersion);
+
+        await _collection.UpdateOneAsync(
+            x => x.AccountId == accountId,
+            update);
+
+        // Return a copy with the bumped SettingsVersion (document is immutable init-only).
+        return new AccountDocument
+        {
+            AccountId = doc.AccountId,
+            UserId = doc.UserId,
+            Gameplay = doc.Gameplay,
+            Accessibility = doc.Accessibility,
+            Language = doc.Language,
+            Notifications = doc.Notifications,
+            SocialPreferences = doc.SocialPreferences,
+            Audio = doc.Audio,
+            UiPreferences = doc.UiPreferences,
+            Version = doc.Version,
+            SettingsVersion = AccountDocument.CurrentSettingsVersion,
+        };
+    }
 
     /**--------[Gameplay]--------**/
 

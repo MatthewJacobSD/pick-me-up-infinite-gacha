@@ -13,9 +13,17 @@ namespace PickMeUp.Api.Account.AccountPreferences
     /// <summary>
     /// MongoDB document holding all preference categories for a single account.
     /// Optimistic concurrency via <see cref="Version"/>.
+    /// Schema migration is tracked by <see cref="SettingsVersion"/>.
     /// </summary>
     public sealed class AccountDocument
     {
+        /// <summary>
+        /// Current schema version. Bump this when preference structures change
+        /// in a backward-incompatible way. The repository checks this on read
+        /// and applies any pending migrations before returning the document.
+        /// </summary>
+        public const int CurrentSettingsVersion = 1;
+
         [BsonId]
         [BsonGuidRepresentation(GuidRepresentation.Standard)]
         public Guid AccountId { get; init; }
@@ -30,5 +38,14 @@ namespace PickMeUp.Api.Account.AccountPreferences
         public UiSettings UiPreferences { get; init; } = UiSettings.Default;
 
         public int Version { get; init; } = 1;
+
+        /// <summary>
+        /// Tracks the schema version of the stored preference data.
+        /// When lower than <see cref="CurrentSettingsVersion"/>, the repository
+        /// applies pending migrations before returning the document to callers.
+        /// Documents created at the current version are stamped with
+        /// <see cref="CurrentSettingsVersion"/> automatically.
+        /// </summary>
+        public int SettingsVersion { get; init; } = 1;
     }
 }
