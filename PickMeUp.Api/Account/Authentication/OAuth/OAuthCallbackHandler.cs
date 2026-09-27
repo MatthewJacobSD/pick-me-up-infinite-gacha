@@ -7,21 +7,15 @@ using PickMeUp.Api.Account.Authentication.OAuth.Provider.Google;
 namespace PickMeUp.Api.Account.Authentication.OAuth
 {
     // Handles the OAuth callback from Google/Facebook.
+    // State validation is done by the controller — this handler assumes state is already validated.
 
-    public sealed class OAuthCallbackHandler(OAuthProviderRegistry registry, OAuthStateValidator stateValidator, HttpClient http)
+    public sealed class OAuthCallbackHandler(OAuthProviderRegistry registry, HttpClient http)
     {
         private readonly OAuthProviderRegistry _registry = registry;
-        private readonly OAuthStateValidator _stateValidator = stateValidator;
         private readonly HttpClient _http = http;
 
-        public async Task<ExternalIdentity> HandleAsync(
-            OAuthProvider provider,
-            string code,
-            string state)
+        public async Task<ExternalIdentity> HandleAsync(OAuthProvider provider, string code)
         {
-            if (!_stateValidator.ValidateState(state))
-                throw new OAuthException(provider, "Invalid OAuth state (possible CSRF attack)");
-
             if (!_registry.HasProvider(provider))
                 throw new InvalidOperationException("Provider not configured");
 
@@ -51,15 +45,14 @@ namespace PickMeUp.Api.Account.Authentication.OAuth
                 })
             );
 
-            // Check for errors before deserializing
-            if (!tokenResponse.IsSuccessStatusCode)
-            {
-                var errorBody = await tokenResponse.Content.ReadAsStringAsync();
-                throw new OAuthHttpException(OAuthProvider.Google, (int)tokenResponse.StatusCode,
-                    $"Google token exchange failed: {errorBody}");
-            }
+            var responseContent = await tokenResponse.Content.ReadAsStringAsync();
 
-            var token = await tokenResponse.Content.ReadFromJsonAsync<GoogleTokenResponse>()
+            if (!tokenResponse.IsSuccessStatusCode)
+                throw new OAuthHttpException(OAuthProvider.Google, (int)tokenResponse.StatusCode,
+                    $"Google token exchange failed: {responseContent}");
+
+            var token = JsonSerializer.Deserialize<GoogleTokenResponse>(responseContent,
+                new JsonSerializerOptions { PropertyNameCaseInsensitive = true })
                 ?? throw new OAuthTokenException(OAuthProvider.Google, "Google token response was null");
 
             var userInfo = await _http.GetFromJsonAsync<GoogleUserInfo>(
@@ -79,18 +72,19 @@ namespace PickMeUp.Api.Account.Authentication.OAuth
         private async Task<ExternalIdentity> HandleFacebookAsync(string code)
         {
             var facebook = (FacebookProvider)_registry.GetProvider(OAuthProvider.Facebook);
+            var redirectUri = Uri.EscapeDataString(OAuthProvider.Facebook.CallbackPath());
 
             var tokenResponse = await _http.GetAsync(
-                $"https://graph.facebook.com/v18.0/oauth/access_token?client_id={facebook.AppId}&client_secret={facebook.AppSecret}&code={code}&redirect_uri={OAuthProvider.Facebook.CallbackPath()}");
+                $"https://graph.facebook.com/v18.0/oauth/access_token?client_id={facebook.AppId}&client_secret={facebook.AppSecret}&code={code}&redirect_uri={redirectUri}");
+
+            var responseContent = await tokenResponse.Content.ReadAsStringAsync();
 
             if (!tokenResponse.IsSuccessStatusCode)
-            {
-                var errorBody = await tokenResponse.Content.ReadAsStringAsync();
                 throw new OAuthHttpException(OAuthProvider.Facebook, (int)tokenResponse.StatusCode,
-                    $"Facebook token exchange failed: {errorBody}");
-            }
+                    $"Facebook token exchange failed: {responseContent}");
 
-            var token = await tokenResponse.Content.ReadFromJsonAsync<FacebookTokenResponse>()
+            var token = JsonSerializer.Deserialize<FacebookTokenResponse>(responseContent,
+                new JsonSerializerOptions { PropertyNameCaseInsensitive = true })
                 ?? throw new OAuthTokenException(OAuthProvider.Facebook, "Facebook token response was null");
 
             var userInfo = await _http.GetFromJsonAsync<FacebookUserInfo>(

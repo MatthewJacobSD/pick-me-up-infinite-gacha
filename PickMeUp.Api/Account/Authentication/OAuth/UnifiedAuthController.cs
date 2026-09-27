@@ -1,10 +1,18 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using System.Net;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Caching.Distributed;
 using PickMeUp.Api.Account.Authentication.Session;
 
 namespace PickMeUp.Api.Account.Authentication.OAuth
 {
-    // Main OAuth controller bridging the browser OAuth flow with the Unity client.
+    // Main OAuth controller bridging the browser OAuth flow with the game client.
+    //
+    // Flow:
+    //   1. GET /api/auth/login/{provider}      → 302 to Google/Facebook
+    //   2. GET /api/auth/login-url/{provider}  → 200 JSON { redirectUrl }
+    //   3. GET /api/auth/callback/{provider}   → exchange code, create session, redirect with loginCode
+    //   4. POST /api/auth/consume-login-code   → exchange loginCode for tokens
+    //   5. POST /api/auth/logout               → revoke session
 
     [ApiController]
     [Route("api/auth")]
@@ -31,8 +39,8 @@ namespace PickMeUp.Api.Account.Authentication.OAuth
         private readonly Jwt _jwt = jwt;
         private readonly IDistributedCache _cache = cache;
 
-        // 1. GET /api/auth/login/{provider} → redirects browser to Google/Facebook.
-        //    For programmatic clients (Unity/Unreal), use /api/auth/login-url/{provider} instead.
+        // ── 1. Login (browser redirect) ──────────────────────────
+
         [HttpGet("login/{provider}")]
         public IActionResult Login(string provider)
         {
@@ -44,7 +52,8 @@ namespace PickMeUp.Api.Account.Authentication.OAuth
             return Redirect(redirectUrl);
         }
 
-        // 1b. GET /api/auth/login-url/{provider} → returns redirect URL as JSON.
+        // ── 1b. Login URL (JSON for programmatic clients) ─────────
+
         [HttpGet("login-url/{provider}")]
         public IActionResult LoginUrl(string provider)
         {
@@ -56,9 +65,8 @@ namespace PickMeUp.Api.Account.Authentication.OAuth
             return Ok(new { redirectUrl });
         }
 
-        // 2. GET /signin-{provider} → validates state, exchanges code,
-        //    creates account, generates a short-lived loginCode.
-        //    Also handles /api/auth/callback/{provider} for backward compatibility.
+        // ── 2. Callback (provider redirects here) ─────────────────
+
         [HttpGet("callback/{provider}")]
         [HttpGet("/signin-{provider}")]
         public async Task<IActionResult> Callback(
@@ -68,72 +76,106 @@ namespace PickMeUp.Api.Account.Authentication.OAuth
         {
             var parsed = OAuthProviderExtensions.FromString(provider);
             if (!parsed.IsSupported())
-                return BadRequest("Unsupported provider");
+                return BadRequest(new { error = "Unsupported provider" });
 
+            // Validate state once — this consumes the Redis key.
             if (!_stateValidator.ValidateState(state))
-                return Unauthorized("Invalid OAuth state");
+                return Unauthorized(new { error = "Invalid OAuth state" });
 
-            var identity = await _callbackHandler.HandleAsync(parsed, code, state);
+            try
+            {
+                // Handler assumes state is already validated — does NOT call ValidateState again.
+                var identity = await _callbackHandler.HandleAsync(parsed, code);
 
-            var account = _accountCreation.CreateFromExternal(identity);
-            _accountLinking.LinkOrGetExisting(account.Id, identity);
+                var account = _accountCreation.CreateFromExternal(identity);
+                _accountLinking.LinkOrGetExisting(account.Id, identity);
 
-            // Create session and a short-lived loginCode for Unity to consume.
-            string sessionId = Guid.NewGuid().ToString("N");
-            await _sessionService.CreateSession(account.Id, sessionId);
+                // Create session + loginCode.
+                string sessionId = Guid.NewGuid().ToString("N");
+                await _sessionService.CreateSession(account.Id, sessionId);
 
-            string loginCode = Guid.NewGuid().ToString("N");
-            await _cache.SetStringAsync(
-                $"login_code:{loginCode}",
-                sessionId,
-                new DistributedCacheEntryOptions
+                string loginCode = Guid.NewGuid().ToString("N");
+                await _cache.SetStringAsync(
+                    $"login_code:{loginCode}",
+                    sessionId,
+                    new DistributedCacheEntryOptions
+                    {
+                        AbsoluteExpirationRelativeToNow = TimeSpan.FromMinutes(2)
+                    });
+
+                // In development, return JSON with account info for debugging.
+                if (Environment.GetEnvironmentVariable("ASPNETCORE_ENVIRONMENT") == "Development")
                 {
-                    AbsoluteExpirationRelativeToNow = TimeSpan.FromMinutes(2)
+                    return Ok(new
+                    {
+                        loginCode,
+                        sessionId,
+                        identity = new { identity.Provider, identity.Email, identity.Name, identity.ExternalId }
+                    });
                 }
-            );
 
-            return Redirect($"https://yourgame.com/auth/complete?loginCode={loginCode}");
+                // In production, redirect to client app.
+                var clientUrl = Environment.GetEnvironmentVariable("CLIENT_COMPLETE_URL")
+                    ?? "https://yourgame.com/auth/complete";
+                return Redirect($"{clientUrl}?loginCode={loginCode}");
+            }
+            catch (OAuthHttpException ex)
+            {
+                return StatusCode((int)ex.StatusCode, new
+                {
+                    type = "https://pickmeup/errors/oauth",
+                    title = "OAuth Error",
+                    status = ex.StatusCode,
+                    detail = ex.Message,
+                    provider = ex.Provider.ToString()
+                });
+            }
+            catch (OAuthException ex)
+            {
+                return Unauthorized(new
+                {
+                    type = "https://pickmeup/errors/oauth",
+                    title = "OAuth Error",
+                    status = 401,
+                    detail = ex.Message,
+                    provider = ex.Provider.ToString()
+                });
+            }
         }
 
-        // 3. Unity polls POST /api/auth/consume-login-code → exchanges loginCode
-        //    for accessToken + refreshToken.
+        // ── 3. Consume loginCode → tokens ─────────────────────────
+
         [HttpPost("consume-login-code")]
         public async Task<IActionResult> ConsumeLoginCode([FromBody] LoginCodeRequest req)
         {
             string? sessionId = await _cache.GetStringAsync($"login_code:{req.LoginCode}");
             if (sessionId is null)
-                return Unauthorized();
+                return Unauthorized(new { error = "Invalid or expired login code" });
 
             await _cache.RemoveAsync($"login_code:{req.LoginCode}");
 
             string? accountId = await _sessionService.GetAccountIdFromSession(sessionId);
             if (accountId is null)
-                return Unauthorized();
+                return Unauthorized(new { error = "Session not found" });
 
             Guid accountGuid = Guid.Parse(accountId);
 
             string accessToken = _tokenGenerator.GenerateAccessToken(accountGuid);
             string refreshToken = _tokenGenerator.GenerateRefreshToken(accountGuid);
 
-            // Store refresh token in Redis.
             await _cache.SetStringAsync(
                 $"refresh:{refreshToken}",
                 accountId,
                 new DistributedCacheEntryOptions
                 {
                     AbsoluteExpirationRelativeToNow = TimeSpan.FromDays(_jwt.RefreshToken.ExpireInDays)
-                }
-            );
+                });
 
-            return Ok(new
-            {
-                sessionId,
-                accessToken,
-                refreshToken
-            });
+            return Ok(new { sessionId, accessToken, refreshToken });
         }
 
-        // 4. POST /api/auth/logout → revokes the session.
+        // ── 4. Logout ─────────────────────────────────────────────
+
         [HttpPost("logout")]
         public async Task<IActionResult> Logout([FromBody] LogoutRequest req)
         {
