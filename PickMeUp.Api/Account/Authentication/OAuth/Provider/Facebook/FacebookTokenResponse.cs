@@ -1,11 +1,17 @@
-﻿namespace PickMeUp.Api.Account.Authentication.OAuth.Provider.Facebook
+﻿using System.Text.Json.Serialization;
+
+namespace PickMeUp.Api.Account.Authentication.OAuth.Provider.Facebook
 {
     // Deserialisation target for Facebook's /oauth/access_token response.
-
     public sealed class FacebookTokenResponse
     {
+        [JsonPropertyName("access_token")]
         public string AccessToken { get; init; } = string.Empty;
+
+        [JsonPropertyName("token_type")]
         public string TokenType { get; init; } = string.Empty;
+
+        [JsonPropertyName("expires_in")]
         public int ExpiresIn { get; init; }
     }
 }
