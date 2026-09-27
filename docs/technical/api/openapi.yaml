@@ -14,6 +14,27 @@ security:
   - bearerAuth: []
 
 paths:
+  # ── Health ─────────────────────────────────────────────────────
+  /health:
+    get:
+      tags: [Health]
+      operationId: health
+      summary: Process up check
+      security: []
+      responses:
+        "200":
+          description: Healthy.
+
+  /ready:
+    get:
+      tags: [Health]
+      operationId: ready
+      summary: Backing services check (MySQL, MongoDB, Redis)
+      security: []
+      responses:
+        "200":
+          description: All backing services reachable.
+
   # ── Authentication ──────────────────────────────────────────────
   /api/auth/login/{provider}:
     get:
@@ -129,6 +150,85 @@ paths:
       responses:
         "200":
           description: Session revoked.
+
+  /api/auth/login-url/{provider}:
+    get:
+      tags: [Auth]
+      operationId: loginUrl
+      summary: Get OAuth redirect URL as JSON (for programmatic clients)
+      parameters:
+        - name: provider
+          in: path
+          required: true
+          schema: { type: string, enum: [google, facebook] }
+      responses:
+        "200":
+          description: Redirect URL.
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  redirectUrl: { type: string, format: uri }
+
+  /api/auth/register:
+    post:
+      tags: [Auth]
+      operationId: register
+      summary: Register with email + password
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required: [email, password]
+              properties:
+                email: { type: string, format: email }
+                password: { type: string, minLength: 12 }
+      responses:
+        "200":
+          description: Account created, loginCode issued.
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  loginCode: { type: string }
+                  publicCode: { type: string }
+                  gameEmail: { type: string, format: email }
+                  username: { type: string }
+        "400": { $ref: "#/components/responses/Validation" }
+        "409": { description: Email already registered or account soft-deleted. }
+
+  /api/auth/recover:
+    post:
+      tags: [Auth]
+      operationId: recover
+      summary: Recover soft-deleted account within 30-day window
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required: [email]
+              properties:
+                email: { type: string, format: email }
+      responses:
+        "200":
+          description: Account recovered.
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  publicCode: { type: string }
+                  gameEmail: { type: string, format: email }
+                  username: { type: string }
+        "400": { $ref: "#/components/responses/Validation" }
+        "404": { description: No deleted account found. }
+        "410": { description: Recovery window expired (30+ days). }
 
   # ── Account Preferences ─────────────────────────────────────────
   /account/preferences:
@@ -617,6 +717,116 @@ paths:
         "204": { description: Cancelled. }
         "401": { $ref: "#/components/responses/Unauthorized" }
         "409": { $ref: "#/components/responses/Conflict" }
+
+  # ── Profile ────────────────────────────────────────────────────
+  /account/profile:
+    get:
+      tags: [Profile]
+      operationId: getProfile
+      summary: Get username, avatar, and version
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  username: { type: string }
+                  avatar:
+                    type: object
+                    properties:
+                      avatarUrl: { type: string }
+                      avatarType: { type: string, enum: [Default, Static, Custom] }
+                  version: { type: integer }
+        "401": { $ref: "#/components/responses/Unauthorized" }
+
+  /account/profile/username:
+    put:
+      tags: [Profile]
+      operationId: updateUsername
+      summary: Update display username
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required: [username, version]
+              properties:
+                username: { type: string, minLength: 3, maxLength: 20 }
+                version: { type: integer }
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  username: { type: string }
+                  version: { type: integer }
+        "400": { $ref: "#/components/responses/Validation" }
+        "401": { $ref: "#/components/responses/Unauthorized" }
+        "409": { $ref: "#/components/responses/VersionConflict" }
+
+  /account/profile/avatar:
+    put:
+      tags: [Profile]
+      operationId: updateAvatar
+      summary: Update avatar
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required: [avatarUrl, avatarType, version]
+              properties:
+                avatarUrl: { type: string }
+                avatarType: { type: string, enum: [Default, Static, Custom] }
+                version: { type: integer }
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  avatar:
+                    type: object
+                    properties:
+                      avatarUrl: { type: string }
+                      avatarType: { type: string }
+                  version: { type: integer }
+        "400": { $ref: "#/components/responses/Validation" }
+        "401": { $ref: "#/components/responses/Unauthorized" }
+        "409": { $ref: "#/components/responses/VersionConflict" }
+
+  # ── Account Settings ────────────────────────────────────────────
+  /account/settings/delete:
+    post:
+      tags: [AccountSettings]
+      operationId: deleteAccount
+      summary: Soft-delete account (30-day recovery window)
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required: [password]
+              properties:
+                password: { type: string }
+      responses:
+        "200":
+          description: Account soft-deleted.
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  message: { type: string }
+                  recoveryDeadline: { type: string, format: date-time }
+        "401": { $ref: "#/components/responses/Unauthorized" }
 
 components:
   securitySchemes:

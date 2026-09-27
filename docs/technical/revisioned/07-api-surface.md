@@ -45,13 +45,36 @@ All errors use `application/problem+json`:
 
 See [06](./06-social.md).
 
+## Profile
+
+| Method | Path | Body | Response |
+|---|---|---|---|
+| GET | `/account/profile` | — | Profile document (auto-created on first hit) |
+| PUT | `/account/profile` | Full profile DTO | Updated profile |
+| PATCH | `/account/profile` | Partial DTO (nullable fields) | Updated profile |
+
+## Account Settings
+
+| Method | Path | Body | Response |
+|---|---|---|---|
+| POST | `/account/settings/change-password` | `{ currentPassword, newPassword }` | 204 |
+| POST | `/account/settings/delete-account` | `{ confirmation }` | 204 |
+
+## Health
+
+| Method | Path | Purpose |
+|---|---|---|
+| GET | `/health` | Liveness — always returns 200 if process is up |
+| GET | `/ready` | Readiness — checks MongoDB, MySQL, Redis connectivity |
+
+Health endpoints are unauthenticated. `/ready` only passes if backing services respond to their registered health checks.
+
 ## Not in this API
 
 | Path idea | Why not |
 |---|---|
 | `/account/device` | Device is local |
 | `/account/graphics` | Effective graphics are runtime |
-| `/account/settings` | Forbidden mega-resource |
 | `/account/redeem` | Other domain, later |
 
 ## Client startup sequence (when engines exist)

@@ -9,6 +9,8 @@ PickMeUp.Api/
     EnvLoader.cs                        # .env loading with priority precedence
     ConfigurationExtensions.cs          # typed options + AddDotNetEnv
     DependencyInjection.cs              # AddPickMeUpApi composition root
+    DistributedFixedWindowRateLimiter.cs # custom rate limiter implementation
+    RateLimitOptions.cs                 # rate limiter configuration options
   Common/
     Authentication/
       ICurrentUser.cs                   # account identity interface
@@ -23,11 +25,17 @@ PickMeUp.Api/
     Authentication/
       Email.cs                          # email value object
       Password.cs                       # password value object
+      RegisterRequest.cs               # registration request DTO
+      RegisterValidator.cs             # FluentValidation for registration
+      RecoverRequest.cs                # account recovery request DTO
+      RecoverValidator.cs              # FluentValidation for recovery
+      AccountPurgeService.cs           # account data purge logic
       OAuth/                            # OAuth flow (Google, Facebook)
         AccountCreationService.cs
         AccountLinkingService.cs
         ExternalIdentity.cs
         ExternalLoginService.cs
+        MongoRepositories.cs            # OAuth-specific Mongo repositories
         OAuthCallbackHandler.cs
         OAuthConfigLoader.cs
         OAuthErrorHandler.cs
@@ -97,9 +105,25 @@ PickMeUp.Api/
         UiPatchDto.cs                   # PATCH DTO
         UiController.cs                 # GET, PUT, PATCH, reset, defaults
         UiValidator.cs
+    AccountSettings/
+      AccountSettingsController.cs      # account-level operations (delete account)
+      AccountSettingsExtensions.cs      # DI extension for AccountSettings
+      ChangePasswordRequest.cs          # password change request DTO
+      ChangePasswordValidator.cs        # FluentValidation for password change
+      DeleteAccountRequest.cs           # account deletion request DTO
+      DeleteAccountValidator.cs         # FluentValidation for account deletion
     Profile/
-      Avatar.cs                         # avatar value object
+      IProfileRepository.cs            # profile repository interface
+      ProfileRepository.cs             # MongoDB implementation
+      ProfileDocument.cs               # MongoDB document
+      ProfileController.cs             # GET, PUT, PATCH
+      ProfileDto.cs                    # profile DTO
+      UpdateUsernameDto.cs             # username update DTO
+      UpdateAvatarDto.cs               # avatar update DTO
+      ProfileValidator.cs              # FluentValidation
       Username.cs                       # username value object
+      Avatar.cs                         # avatar value object
+      DependencyInjection.cs           # DI registration
   Social/
     DependencyInjection.cs
     ISocialRepository.cs
@@ -111,6 +135,7 @@ PickMeUp.Api/
     SocialDocument.cs
     FriendRequestDocument.cs
     PartyInviteDocument.cs
+    SocialState.cs
     BlockEnforcementMiddleware.cs
     FriendCommand.cs
     BlockCommand.cs
@@ -119,8 +144,10 @@ PickMeUp.Api/
     SocialExceptionHandler.cs
     SocialIndexDefinitions.cs
     SocialIndexHostedService.cs
+    IFriendRequestLifecycleEngine.cs    # state machine for request/invite transitions
     ISocialVisibilityQuery.cs
     PreferencesSocialVisibilityQuery.cs
+  DeviceSettings/                       # empty — device settings are client-only
   DoNotTouchFolder/
     ApplicationDbContext.cs
     ApplicationUser.cs
@@ -140,7 +167,13 @@ PickMeUp.Api/
 
 Keep a single `PickMeUp.Api.slnx` until contracts are extracted. Do not split microservices.
 
+## Test project
+
+`PickMeUp.Api.Tests/` mirrors the API structure:
+- `Tests/` — unit tests (CurrentUser, AccountPreferencesRepository, Validators/)
+- `Social/` — social behavior tests + InMemorySocialRepository
+
 ## Empty folders
 
-Do not add `DeviceSettings/` under the API.
-`AccountSettings/` stays empty or is removed until there is a real "account security / permissions" resource distinct from Identity and Preferences.
+`DeviceSettings/` stays empty — device settings are client-only.
+`AccountSettings/` was previously empty but now contains account-level operations (password change, account deletion) distinct from Identity and Preferences.

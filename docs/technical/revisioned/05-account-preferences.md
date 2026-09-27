@@ -106,7 +106,17 @@ Unknown future JSON fields must not crash old documents. Typed BSON mapping need
 - Per-slice `Replace*SettingsAsync(Guid, settings, version)` — full replace with version check
 - Per-slice `Patch*SettingsAsync(Guid, patchDto, version)` — partial update with version check
 
-Implementation uses `FindOneAndUpdateAsync` with `Version` filter for optimistic concurrency. A shared `ReplaceSliceAsync<T>` helper avoids per-slice duplication.
+Implementation uses `FindOneAndUpdateAsync` with `Version` filter for optimistic concurrency. A shared `ReplaceSliceAsync<T>` helper avoids per-slice duplication. All 7 slices are fully implemented with GET/PUT/PATCH/reset/defaults endpoints.
+
+## Implementation status
+
+All 7 domains (Gameplay, Accessibility, Language, Notifications, Social preferences, Audio, UI) are implemented:
+
+- Settings records (`*Settings`) — immutable C# records
+- DTOs (`*Dto` for PUT, `*PatchDto` for PATCH)
+- Controllers (GET/PUT/PATCH/reset/defaults for each slice)
+- FluentValidation validators (wired via assembly scan)
+- Repository with MongoDB atomic upsert and versioned writes
 
 ## Server must never
 

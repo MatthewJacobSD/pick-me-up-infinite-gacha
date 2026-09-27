@@ -69,8 +69,20 @@ All endpoints use `ICurrentUser.AccountId` for identity (no `User.Identity.Name`
 
 Domain denials are **403** or **409**, never unhandled 500. ProblemDetails code: `social.blocked`, `social.visibility`, `social.already_friends`, `social.no_pending`.
 
+## Implementation status
+
+The controller is complete with all endpoints (friends, requests, blocks, party invites). Supporting infrastructure:
+
+- `SocialPolicy` — reads block state + target's `SocialPreferences` to gate actions
+- `SocialExceptionHandler` — translates domain exceptions into ProblemDetails responses
+- `SocialIndexDefinitions` — defines MongoDB indexes for social collections (friend requests, party invites, blocks)
+- `SocialIndexHostedService` — ensures indexes are created at startup
+- `BlockEnforcementMiddleware` — checks block state before social actions
+- `IFriendRequestLifecycleEngine` — state machine for friend request and party invite transitions
+- `SocialVisibilityQuery` interface with `PreferencesSocialVisibilityQuery` — bridges Social to Account preferences
+
 ## Current gaps
 
 - Party invite expiry-on-read (7-day TTL) may need a hosted service for background cleanup
-- Social indexes hosted service exists but may need verification against production indexes
 - No integration tests for the full HTTP pipeline yet
+- No Profile controller tests
