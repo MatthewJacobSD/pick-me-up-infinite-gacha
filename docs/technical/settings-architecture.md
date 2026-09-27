@@ -713,62 +713,53 @@ If those answers exist first, the C# structure is easy.
 
 ## 19. Implementation Status
 
-> Last updated: September 2026
+> Last updated: September 2026 — after Profile, AccountSettings, health checks, CORS, rate limiting
 
 ### Resolved — Backend (PickMeUp.Api)
 
 | Domain | Status | Files | Notes |
 |---|---|---|---|
-| **Gameplay** | ✅ Complete | Settings, DTO, Controller, Validator | 20 settings, FluentValidation |
-| **Accessibility** | ✅ Complete | Settings, DTO, Controller, Validator | 14 settings, FluentValidation |
-| **Language** | ✅ Complete | Settings, DTO, Controller, Validator | 12 supported codes |
-| **Notifications** | ✅ Complete | Settings, DTO, Controller, Validator | 5 boolean toggles |
-| **Social Preferences** | ✅ Complete | Settings, DTO, Controller, Validator | 4 visibility rules (enum) |
-| **Audio** | ✅ Complete | Settings, DTO, Controller, Validator | 9 settings (volumes + mutes) |
-| **UI Preferences** | ✅ Complete | Settings, DTO, Controller, Validator | 13 settings (layout, positions) |
+| **Gameplay** | ✅ Complete | Settings, DTO, PatchDto, Controller, Validator | 20 settings, FluentValidation, PATCH support |
+| **Accessibility** | ✅ Complete | Settings, DTO, PatchDto, Controller, Validator | 14 settings, FluentValidation, PATCH support |
+| **Language** | ✅ Complete | Settings, DTO, PatchDto, Controller, Validator | 12 supported codes, PATCH support |
+| **Notifications** | ✅ Complete | Settings, DTO, PatchDto, Controller, Validator | 5 boolean toggles, PATCH support |
+| **Social Preferences** | ✅ Complete | Settings, DTO, PatchDto, Controller, Validator | 4 visibility rules, PATCH support |
+| **Audio** | ✅ Complete | Settings, DTO, PatchDto, Controller, Validator | 9 settings, PATCH support |
+| **UI Preferences** | ✅ Complete | Settings, DTO, PatchDto, Controller, Validator | 13 settings, PATCH support |
 | **Social (relationships)** | ✅ Complete | Repository, Service, Controller, Middleware | Friends, blocks, party invites (MongoDB) |
-| **Authentication** | ✅ Complete | OAuth + Session + JWT | Google, Facebook, token rotation, Redis |
-| **Persistence** | ✅ Complete | IAccountPreferencesRepository + MongoDB | Per-domain get/update, versioned |
+| **Authentication** | ✅ Complete | OAuth + Session + JWT + MongoRepositories | Google, Facebook, CSRF state, token rotation |
+| **Profile** | ✅ Complete | ProfileDocument, Repository, Controller, Validators | Username + Avatar persistence (MongoDB) |
+| **Account Settings** | ✅ Complete | ChangePasswordRequest, Validator, Controller | POST /account/settings/password |
+| **Persistence** | ✅ Complete | IAccountPreferencesRepository + MongoDB | Per-domain get/replace/patch, versioned writes |
 
 ### Resolved — Infrastructure
 
 | Component | Status | Notes |
 |---|---|---|
-| **Program.cs** | ✅ Wired | All services registered, middleware pipeline |
-| **.csproj** | ✅ Complete | 11 packages (MongoDB, FluentValidation, Redis, etc.) |
-| **.env loading** | ✅ Working | DotNetEnv, all secrets mapped to config |
+| **Program.cs** | ✅ Wired | Thin composition root, no inline construction |
+| **.csproj** | ✅ Complete | 11+ packages (MongoDB, FluentValidation, Redis, HealthChecks, etc.) |
+| **.env loading** | ✅ Working | DotNetEnv with flat→nested key mapping |
 | **JWT** | ✅ Working | Access + refresh tokens, Redis-backed sessions |
-| **OAuth** | ✅ Working | Google + Facebook, CSRF state, callback flow |
+| **OAuth** | ✅ Working | Google + Facebook, CSRF state, callback flow, browser testable |
+| **Health Checks** | ✅ Working | `/health` (process up), `/ready` (backing services) |
+| **CORS** | ✅ Working | Allow any origin (dev policy) |
+| **Rate Limiting** | ✅ Working | Fixed window 100 req/min per user |
 
-### Still Missing / Needs Work
+### Not in Backend (by design — client-side only)
 
-| Domain | Status | What's needed |
-|---|---|---|
-| **Account Settings** | ⬜ Empty folder | `AccountSettings/` — reserved, no files yet |
-| **Profile (Avatar)** | ⚠️ Placeholder | Value object exists, no controller or persistence |
-| **Profile (Username)** | ⚠️ Placeholder | Value object exists, no controller or persistence |
-| **Social Preferences** | ⚠️ Partial | Controller exists, but no block enforcement on preference updates |
-| **Device Configuration** | ⬜ Not started | Resolution, refresh rate, VSync, GPU — client-side only |
-| **Input Configuration** | ⬜ Not started | Logical actions ↔ physical mappings — client-side only |
-| **Hybrid Resolution** | ⬜ Not started | Account preference + device capability → effective runtime |
-| **Effective Runtime Config** | ⬜ Not started | Calculated object, not a database entity |
-| **Settings Versioning** | ⚠️ Partial | Version field exists, no migration logic |
-| **Conflict Resolution** | ⬜ Not started | Last-write-wins vs version checks |
-| **Client Settings Manager** | ⬜ Not started | Client-side settings coordinator |
-| **Tests** | ⬜ Not started | No unit or integration tests yet |
-| **MongoDB Index Setup** | ⬜ Not started | Index creation on startup |
-| **Health Checks** | ⬜ Not started | `/health`, `/ready` endpoints |
-| **CORS** | ⬜ Not started | Required for client communication |
-| **Rate Limiting** | ⬜ Not started | User-based request throttling |
+| Domain | Why not in backend |
+|---|---|
+| **Device Configuration** | Hardware-specific (resolution, VSync, GPU) |
+| **Input Configuration** | Physical mappings (keyboard, controller, touch) |
+| **Hybrid Resolution** | Account intent + device caps → calculated at runtime |
+| **Effective Runtime Config** | Merged result, not a database entity |
+| **Client Settings Manager** | Client-side coordinator |
 
-### Folder Ownership Summary
+### Not Started (future work)
 
-| Folder | Owner | Purpose |
-|---|---|---|
-| `Account/Authentication/` | Shared backend | OAuth, JWT, sessions |
-| `Account/AccountPreferences/` | Shared backend | Per-user preference storage |
-| `Account/Profile/` | Shared backend | Value objects (Avatar, Username) |
-| `Social/` | Shared backend | Friend/block/party relationships |
-| `DoNotTouchFolder/` | Reserved | Identity entities, UserCenter placeholders |
-| `v1/` | Unity client | Engine-specific implementation |
-| `v2/` | Unreal client | Engine-specific implementation |
+| Domain | What's needed |
+|---|---|
+| **Settings Versioning/Migration** | Schema migration logic on read |
+| **MongoDB Index Setup** | Hosted service for index creation |
+| **Tests** | Unit + integration tests |
+| **Game Systems** | Gacha, heroes, combat, dungeons, economy (from story docs) |
