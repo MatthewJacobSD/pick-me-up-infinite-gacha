@@ -1,4 +1,6 @@
-﻿namespace PickMeUp.Api.Account.Authentication.OAuth
+﻿using MongoDB.Bson.Serialization.Attributes;
+
+namespace PickMeUp.Api.Account.Authentication.OAuth
 {
     /**--------[Repository Interface]--------**/
 
@@ -14,11 +16,15 @@
     /// <summary>
     /// Maps an external provider identity to an internal account ID.
     /// </summary>
-    public sealed record ExternalAccountLink(
-        Guid AccountId,
-        OAuthProvider Provider,
-        string ExternalId,
-        string Email);
+    public sealed class ExternalAccountLink
+    {
+        [BsonId]
+        public Guid Id { get; init; } = Guid.NewGuid();
+        public Guid AccountId { get; init; }
+        public OAuthProvider Provider { get; init; }
+        public string ExternalId { get; init; } = string.Empty;
+        public string Email { get; init; } = string.Empty;
+    }
 
     /**--------[Account Linking Service]--------**/
 
@@ -40,12 +46,13 @@
             if (existingByEmail is not null)
                 return existingByEmail;
 
-            var link = new ExternalAccountLink(
-                AccountId: accountId,
-                Provider: identity.Provider,
-                ExternalId: identity.ExternalId,
-                Email: identity.Email
-            );
+            var link = new ExternalAccountLink
+            {
+                AccountId = accountId,
+                Provider = identity.Provider,
+                ExternalId = identity.ExternalId,
+                Email = identity.Email
+            };
 
             _externalAccounts.Add(link);
             return link;
