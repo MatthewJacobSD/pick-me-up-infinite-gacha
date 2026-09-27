@@ -17,8 +17,8 @@ namespace PickMeUp.Api.Account.Authentication.OAuth
             );
 
             var facebook = FacebookProvider.Create(
-                _config["OAuth:Facebook:AppId"]!,
-                _config["OAuth:Facebook:AppSecret"]!
+                _config["OAuth:Facebook:ClientId"]!,
+                _config["OAuth:Facebook:ClientSecret"]!
             );
 
             return new OauthConfig
