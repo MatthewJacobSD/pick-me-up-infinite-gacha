@@ -22,8 +22,8 @@ namespace PickMeUp.Api.Account.Authentication.OAuth
         Account? FindByPublicCode(string publicCode);
         Account? FindDeletedByEmail(string email);
         Account Create(Account account);
-        void SoftDeleteAsync(Guid accountId);
-        void RecoverAsync(string email);
+        Task SoftDeleteAsync(Guid accountId);
+        Task<Account> RecoverAsync(string email);
         void PurgeExpiredAsync();
     }
 
@@ -127,7 +127,7 @@ namespace PickMeUp.Api.Account.Authentication.OAuth
         }
 
         /// <summary>Public code: MOE- + 10 Crockford Base32 chars = 15 chars total.</summary>
-        private static string GeneratePublicCode()
+        public static string GeneratePublicCode()
         {
             var bytes = RandomNumberGenerator.GetBytes(5);
             var code = CrockfordBase32.Encode(bytes);

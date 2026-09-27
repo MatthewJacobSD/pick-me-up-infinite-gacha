@@ -1,4 +1,5 @@
 using MongoDB.Driver;
+using PickMeUp.Api.Common.Errors;
 using PickMeUp.Api.Account.Authentication.OAuth;
 
 namespace PickMeUp.Api.Account.Authentication.OAuth;
@@ -30,7 +31,7 @@ public sealed class MongoAccountRepository(IMongoDatabase db) : IAccountReposito
         return account;
     }
 
-    public void SoftDeleteAsync(Guid accountId)
+    public async Task SoftDeleteAsync(Guid accountId)
     {
         var filter = Builders<Account>.Filter.Eq(x => x.Id, accountId);
         var account = _collection.FindOneAndDelete(filter);
@@ -53,27 +54,29 @@ public sealed class MongoAccountRepository(IMongoDatabase db) : IAccountReposito
         }
     }
 
-    public void RecoverAsync(string email)
+    public async Task<Account> RecoverAsync(string email)
     {
         var filter = Builders<Account>.Filter.Eq(x => x.Email, email);
         var account = _deletedCollection.FindOneAndDelete(filter);
-        if (account is not null)
+        if (account is null)
+            throw new NotFoundException("No deleted account found.");
+
+        var recoveredAccount = new Account
         {
-            var recoveredAccount = new Account
-            {
-                Id = account.Id,
-                PublicCode = account.PublicCode,
-                Email = account.Email,
-                GameEmail = account.GameEmail,
-                Username = account.Username,
-                AvatarUrl = account.AvatarUrl,
-                Status = AccountStatus.Active,
-                CreatedAt = account.CreatedAt,
-                DeletedAt = null,
-                PurgeAt = null
-            };
-            _collection.InsertOne(recoveredAccount);
-        }
+            Id = account.Id,
+            PublicCode = account.PublicCode,
+            Email = account.Email,
+            GameEmail = account.GameEmail,
+            Username = account.Username,
+            AvatarUrl = account.AvatarUrl,
+            Status = AccountStatus.Active,
+            CreatedAt = account.CreatedAt,
+            DeletedAt = null,
+            PurgeAt = null
+        };
+
+        _collection.InsertOne(recoveredAccount);
+        return recoveredAccount;
     }
 
     public void PurgeExpiredAsync()
