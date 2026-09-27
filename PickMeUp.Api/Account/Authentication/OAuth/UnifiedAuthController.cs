@@ -84,11 +84,19 @@ namespace PickMeUp.Api.Account.Authentication.OAuth
 
             try
             {
-                // Handler assumes state is already validated — does NOT call ValidateState again.
-                var identity = await _callbackHandler.HandleAsync(parsed, code);
+                Console.WriteLine($"[OAuth] Callback: provider={parsed}, code={code?.Substring(0, Math.Min(15, code?.Length ?? 0))}...");
 
+                // Handler assumes state is already validated — does NOT call ValidateState again.
+                Console.WriteLine("[OAuth] Step 1: Exchanging code for token...");
+                var identity = await _callbackHandler.HandleAsync(parsed, code);
+                Console.WriteLine($"[OAuth] Step 2: Got identity: {identity.Email} ({identity.Name})");
+
+                Console.WriteLine("[OAuth] Step 3: Creating account...");
                 var account = _accountCreation.CreateFromExternal(identity);
+                Console.WriteLine($"[OAuth] Step 4: Account created: {account.Id}");
+
                 _accountLinking.LinkOrGetExisting(account.Id, identity);
+                Console.WriteLine("[OAuth] Step 5: Account linked");
 
                 // Create session + loginCode.
                 string sessionId = Guid.NewGuid().ToString("N");
@@ -121,6 +129,7 @@ namespace PickMeUp.Api.Account.Authentication.OAuth
             }
             catch (OAuthHttpException ex)
             {
+                Console.WriteLine($"[OAuth] ERROR: OAuthHttpException: {ex.StatusCode} - {ex.Message}");
                 return StatusCode((int)ex.StatusCode, new
                 {
                     type = "https://pickmeup/errors/oauth",
@@ -132,6 +141,7 @@ namespace PickMeUp.Api.Account.Authentication.OAuth
             }
             catch (OAuthException ex)
             {
+                Console.WriteLine($"[OAuth] ERROR: OAuthException: {ex.Message}");
                 return Unauthorized(new
                 {
                     type = "https://pickmeup/errors/oauth",
@@ -139,6 +149,18 @@ namespace PickMeUp.Api.Account.Authentication.OAuth
                     status = 401,
                     detail = ex.Message,
                     provider = ex.Provider.ToString()
+                });
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"[OAuth] UNEXPECTED ERROR: {ex.GetType().Name}: {ex.Message}");
+                Console.WriteLine($"[OAuth] Stack: {ex.StackTrace}");
+                return StatusCode(500, new
+                {
+                    type = "https://pickmeup/errors/internal",
+                    title = "Internal Server Error",
+                    status = 500,
+                    detail = ex.Message
                 });
             }
         }
