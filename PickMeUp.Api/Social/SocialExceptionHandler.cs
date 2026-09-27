@@ -9,7 +9,7 @@ namespace PickMeUp.Api.Social;
 /// </summary>
 public sealed class SocialExceptionHandler : IExceptionHandler
 {
-    public const string TypeBase = "https://moebius-pick_me_up_infinite_gacha/errors/";
+    public const string TypeBase = "https://pickmeup/errors/";
 
     public async ValueTask<bool> TryHandleAsync(
         HttpContext httpContext,
