@@ -199,36 +199,13 @@ public static class DependencyInjection
     }
 
     // ── OAuth Providers (conditional) ───────────────────────────
+    // Custom AuthController handles the entire OAuth flow.
+    // Do NOT register built-in AddGoogle()/AddFacebook() — they intercept
+    // the callback and conflict with the custom OAuthStateValidator.
 
     private static void AddOAuthProviders(this IServiceCollection services, IConfiguration configuration)
     {
-        var googleEnabled = configuration["OAuth:Google:Enabled"];
-        if (string.Equals(googleEnabled, "true", StringComparison.OrdinalIgnoreCase))
-        {
-            services.AddAuthentication()
-                .AddGoogle(options =>
-                {
-                    options.ClientId = configuration["OAuth:Google:ClientId"]
-                        ?? throw new InvalidOperationException("OAuth:Google:ClientId is not configured.");
-                    options.ClientSecret = configuration["OAuth:Google:ClientSecret"]
-                        ?? throw new InvalidOperationException("OAuth:Google:ClientSecret is not configured.");
-                    options.CallbackPath = "/api/auth/callback/google";
-                });
-        }
-
-        var facebookEnabled = configuration["OAuth:Facebook:Enabled"];
-        if (string.Equals(facebookEnabled, "true", StringComparison.OrdinalIgnoreCase))
-        {
-            services.AddAuthentication()
-                .AddFacebook(options =>
-                {
-                    options.AppId = configuration["OAuth:Facebook:ClientId"]
-                        ?? throw new InvalidOperationException("OAuth:Facebook:ClientId is not configured.");
-                    options.AppSecret = configuration["OAuth:Facebook:ClientSecret"]
-                        ?? throw new InvalidOperationException("OAuth:Facebook:ClientSecret is not configured.");
-                    options.CallbackPath = "/api/auth/callback/facebook";
-                });
-        }
+        // No-op: OAuth is handled by the custom AuthController + OAuthCallbackHandler.
     }
 
     // ── FluentValidation ────────────────────────────────────────
