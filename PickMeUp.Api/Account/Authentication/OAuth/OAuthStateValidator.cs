@@ -3,17 +3,18 @@ using Microsoft.Extensions.Caching.Distributed;
 
 namespace PickMeUp.Api.Account.Authentication.OAuth
 {
-    // CSRF protection for the OAuth flow.
-
+    /// <summary>
+    /// CSRF protection for the OAuth flow.
+    /// Generates a random 256-bit state token, stores it in Redis (5 min TTL),
+    /// and validates it exactly once (deletes on use).
+    /// </summary>
     public sealed class OAuthStateValidator(IDistributedCache cache)
     {
         private readonly IDistributedCache _cache = cache;
 
-        // 1. GenerateState() creates a random 256-bit token, stores it in Redis (5 min TTL).
-        // 2. The state is sent to the provider as a query parameter.
-        // 3. Provider redirects back with the same state.
-        // 4. ValidateState() checks Redis, then immediately deletes it (one-time use).
-
+        /// <summary>
+        /// Generates a random state token and persists it in Redis for 5 minutes.
+        /// </summary>
         public string GenerateState()
         {
             byte[] bytes = RandomNumberGenerator.GetBytes(32);
@@ -31,6 +32,9 @@ namespace PickMeUp.Api.Account.Authentication.OAuth
             return state;
         }
 
+        /// <summary>
+        /// Validates the returned state against Redis, then immediately deletes it.
+        /// </summary>
         public bool ValidateState(string? returnedState)
         {
             if (string.IsNullOrWhiteSpace(returnedState))

@@ -11,10 +11,16 @@ using PickMeUp.Api.Common.Errors;
 
 namespace PickMeUp.Api.Account.AccountPreferences;
 
+/// <summary>
+/// MongoDB implementation of <see cref="IAccountPreferencesRepository"/>.
+/// Uses upsert for GetOrCreate and atomic FindOneAndUpdate for patch operations.
+/// </summary>
 public sealed class AccountPreferencesRepository(IMongoDatabase db) : IAccountPreferencesRepository
 {
     private readonly IMongoCollection<AccountDocument> _collection =
         db.GetCollection<AccountDocument>("account_preferences");
+
+    /**--------[General]--------**/
 
     public async Task<AccountDocument> GetOrCreateAsync(Guid accountId)
     {
@@ -41,7 +47,7 @@ public sealed class AccountPreferencesRepository(IMongoDatabase db) : IAccountPr
     public async Task<AccountDocument?> FindAsync(Guid accountId)
         => await _collection.Find(x => x.AccountId == accountId).FirstOrDefaultAsync();
 
-    // ── Gameplay ──────────────────────────────────────────────────
+    /**--------[Gameplay]--------**/
 
     public async Task<GameplaySettings> GetGameplaySettingsAsync(Guid accountId)
     {
@@ -63,7 +69,7 @@ public sealed class AccountPreferencesRepository(IMongoDatabase db) : IAccountPr
         return await ReplaceSliceAsync(accountId, x => x.Gameplay, next, expectedVersion);
     }
 
-    // ── Accessibility ─────────────────────────────────────────────
+    /**--------[Accessibility]--------**/
 
     public async Task<AccessibilitySettings> GetAccessibilitySettingsAsync(Guid accountId)
     {
@@ -85,7 +91,7 @@ public sealed class AccountPreferencesRepository(IMongoDatabase db) : IAccountPr
         return await ReplaceSliceAsync(accountId, x => x.Accessibility, next, expectedVersion);
     }
 
-    // ── Language ──────────────────────────────────────────────────
+    /**--------[Language]--------**/
 
     public async Task<LanguageSettings> GetLanguageSettingsAsync(Guid accountId)
     {
@@ -107,7 +113,7 @@ public sealed class AccountPreferencesRepository(IMongoDatabase db) : IAccountPr
         return await ReplaceSliceAsync(accountId, x => x.Language, next, expectedVersion);
     }
 
-    // ── Notification ──────────────────────────────────────────────
+    /**--------[Notification]--------**/
 
     public async Task<NotificationSettings> GetNotificationSettingsAsync(Guid accountId)
     {
@@ -129,7 +135,7 @@ public sealed class AccountPreferencesRepository(IMongoDatabase db) : IAccountPr
         return await ReplaceSliceAsync(accountId, x => x.Notifications, next, expectedVersion);
     }
 
-    // ── Social Preferences ────────────────────────────────────────
+    /**--------[Social Preferences]--------**/
 
     public async Task<SocialSettings> GetSocialPreferencesAsync(Guid accountId)
     {
@@ -151,7 +157,7 @@ public sealed class AccountPreferencesRepository(IMongoDatabase db) : IAccountPr
         return await ReplaceSliceAsync(accountId, x => x.SocialPreferences, next, expectedVersion);
     }
 
-    // ── Audio ─────────────────────────────────────────────────────
+    /**--------[Audio]--------**/
 
     public async Task<AudioSettings> GetAudioPreferencesAsync(Guid accountId)
     {
@@ -173,7 +179,7 @@ public sealed class AccountPreferencesRepository(IMongoDatabase db) : IAccountPr
         return await ReplaceSliceAsync(accountId, x => x.Audio, next, expectedVersion);
     }
 
-    // ── UI ────────────────────────────────────────────────────────
+    /**--------[UI]--------**/
 
     public async Task<UiSettings> GetUiPreferencesAsync(Guid accountId)
     {
@@ -195,8 +201,12 @@ public sealed class AccountPreferencesRepository(IMongoDatabase db) : IAccountPr
         return await ReplaceSliceAsync(accountId, x => x.UiPreferences, next, expectedVersion);
     }
 
-    // ── Shared Helper ─────────────────────────────────────────────
+    /**--------[Shared Helper]--------**/
 
+    /// <summary>
+    /// Atomically replaces a single preference field and increments the version.
+    /// Throws <see cref="VersionConflictException"/> if the document was modified by another write.
+    /// </summary>
     private async Task<AccountDocument> ReplaceSliceAsync<TField>(
         Guid accountId,
         Expression<Func<AccountDocument, TField>> field,

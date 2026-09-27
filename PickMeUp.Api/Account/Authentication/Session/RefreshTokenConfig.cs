@@ -1,7 +1,8 @@
 ﻿namespace PickMeUp.Api.Account.Authentication.Session
 {
-    // Refresh token config — long-lived, measured in days.
-
+    /// <summary>
+    /// Refresh token config — long-lived, measured in days.
+    /// </summary>
     public sealed class RefreshTokenConfig : TokenConfig
     {
         private RefreshTokenConfig(string key, int expireInDays)

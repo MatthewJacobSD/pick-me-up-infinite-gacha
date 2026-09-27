@@ -1,6 +1,6 @@
 ﻿namespace PickMeUp.Api.Account.Authentication.OAuth
 {
-    // Repository interface for external account links.
+    /**--------[Repository Interface]--------**/
 
     public interface IExternalAccountRepository
     {
@@ -9,23 +9,26 @@
         void Add(ExternalAccountLink link);
     }
 
-    // Maps an external provider identity to an internal account ID.
+    /**--------[Account Link Entity]--------**/
 
+    /// <summary>
+    /// Maps an external provider identity to an internal account ID.
+    /// </summary>
     public sealed record ExternalAccountLink(
         Guid AccountId,
         OAuthProvider Provider,
         string ExternalId,
         string Email);
 
-    // Links an OAuth identity to an existing account, or returns an existing link.
+    /**--------[Account Linking Service]--------**/
 
+    /// <summary>
+    /// Links an OAuth identity to an existing account, or returns an existing link.
+    /// Priority: (provider + externalId) match > email match > create new.
+    /// </summary>
     public sealed class AccountLinkingService(IExternalAccountRepository externalAccounts)
     {
         private readonly IExternalAccountRepository _externalAccounts = externalAccounts;
-
-        // 1. If a link with this (provider, externalId) exists → return it.
-        // 2. If a link with this email exists → return it (different provider, same email).
-        // 3. Otherwise, create a new link.
 
         public ExternalAccountLink LinkOrGetExisting(Guid accountId, ExternalIdentity identity)
         {

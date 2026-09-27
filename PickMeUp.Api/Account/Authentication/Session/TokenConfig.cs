@@ -1,7 +1,8 @@
 ﻿namespace PickMeUp.Api.Account.Authentication.Session
 {
-    // Base class for token configuration (access and refresh).
-
+    /// <summary>
+    /// Base class for token configuration (access and refresh).
+    /// </summary>
     public abstract class TokenConfig
     {
         public string Key { get; }

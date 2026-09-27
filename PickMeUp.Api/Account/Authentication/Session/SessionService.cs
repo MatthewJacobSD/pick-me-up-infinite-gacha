@@ -2,17 +2,14 @@
 
 namespace PickMeUp.Api.Account.Authentication.Session
 {
-    // Manages server-side sessions in Redis.
-
+    /// <summary>
+    /// Manages server-side sessions in Redis.
+    /// Each session maps a sessionId to an accountId with a configurable TTL.
+    /// </summary>
     public sealed class SessionService(IDistributedCache cache, SessionConfig config)
     {
         private readonly IDistributedCache _cache = cache;
         private readonly SessionConfig _config = config;
-
-        // 1. CreateSession() — stores accountId keyed by sessionId.
-        // 2. ValidateSession() — checks if a session is still active.
-        // 3. GetAccountIdFromSession() — retrieves the account for token generation.
-        // 4. RevokeSession() — removes the session (logout).
 
         public async Task CreateSession(Guid accountId, string sessionId)
         {

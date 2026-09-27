@@ -1,7 +1,9 @@
 ﻿namespace PickMeUp.Api.Account.Authentication.OAuth.Provider
 {
-    // Facebook OAuth provider config value object.
-
+    /// <summary>
+    /// Facebook OAuth provider config value object.
+    /// Validates that both AppId and AppSecret are non-empty on creation.
+    /// </summary>
     public sealed class FacebookProvider
     {
         public string AppId { get; private init; } = string.Empty;

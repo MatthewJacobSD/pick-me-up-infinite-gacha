@@ -1,20 +1,18 @@
 ﻿using MongoDB.Bson.Serialization.Attributes;
 
-namespace PickMeUp.Api.Social
+namespace PickMeUp.Api.Social;
+
+/// <summary>
+/// MongoDB document for a player's social state. One document per user in the "social" collection.
+/// </summary>
+public sealed class SocialDocument
 {
-    // ── Social Document ────────────────────────────────
-    // MongoDB document for a player's social state.
-    // One document per user in the "social" collection.
+    [BsonId]
+    public string UserId { get; init; } = string.Empty;
 
-    public sealed class SocialDocument
-    {
-        [BsonId]
-        public string UserId { get; init; } = string.Empty;
+    public List<string> Friends { get; init; } = [];
+    public List<string> Blocks { get; init; } = [];
 
-        public List<string> Friends { get; init; } = [];
-        public List<string> Blocks { get; init; } = [];
-
-        public List<FriendRequest> FriendRequests { get; init; } = [];
-        public List<PartyInvite> PartyInvites { get; init; } = [];
-    }
+    public List<FriendRequest> FriendRequests { get; init; } = [];
+    public List<PartyInvite> PartyInvites { get; init; } = [];
 }

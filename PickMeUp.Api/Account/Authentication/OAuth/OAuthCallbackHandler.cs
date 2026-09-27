@@ -6,14 +6,19 @@ using PickMeUp.Api.Account.Authentication.OAuth.Provider.Google;
 
 namespace PickMeUp.Api.Account.Authentication.OAuth
 {
-    // Handles the OAuth callback from Google/Facebook.
-    // State validation is done by the controller — this handler assumes state is already validated.
-
+    /// <summary>
+    /// Handles the OAuth callback from Google/Facebook.
+    /// Exchanges the authorization code for an access token, then fetches user info.
+    /// State validation is done by the controller — this handler assumes state is already validated.
+    /// </summary>
     public sealed class OAuthCallbackHandler(OAuthProviderRegistry registry, HttpClient http)
     {
         private readonly OAuthProviderRegistry _registry = registry;
         private readonly HttpClient _http = http;
 
+        /// <summary>
+        /// Exchanges the authorization code for user identity via the appropriate provider.
+        /// </summary>
         public async Task<ExternalIdentity> HandleAsync(OAuthProvider provider, string code)
         {
             if (!_registry.HasProvider(provider))
@@ -27,7 +32,7 @@ namespace PickMeUp.Api.Account.Authentication.OAuth
             };
         }
 
-        // ── Google ────────────────────────────────────────────────
+        /**--------[Google]--------**/
 
         private async Task<ExternalIdentity> HandleGoogleAsync(string code)
         {
@@ -67,7 +72,7 @@ namespace PickMeUp.Api.Account.Authentication.OAuth
             );
         }
 
-        // ── Facebook ──────────────────────────────────────────────
+        /**--------[Facebook]--------**/
 
         private async Task<ExternalIdentity> HandleFacebookAsync(string code)
         {

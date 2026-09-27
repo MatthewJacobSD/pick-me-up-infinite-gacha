@@ -2,11 +2,16 @@ using MongoDB.Driver;
 
 namespace PickMeUp.Api.Social;
 
+/// <summary>
+/// MongoDB index definitions for the social collections.
+/// </summary>
 public static class SocialIndexDefinitions
 {
     public static readonly TimeSpan RequestLifetime = TimeSpan.FromDays(7);
 
-    // UserId is the social document _id, so the collection's _id index is the unique UserId index.
+    /// <summary>
+    /// UserId is the social document _id, so the collection's _id index is the unique UserId index.
+    /// </summary>
     public static CreateIndexModel<SocialDocument> UserIdUnique()
     {
         var keys = Builders<SocialDocument>.IndexKeys.Ascending(x => x.UserId);
@@ -17,6 +22,9 @@ public static class SocialIndexDefinitions
         });
     }
 
+    /// <summary>
+    /// Partial unique index: only one pending request per sender-receiver pair.
+    /// </summary>
     public static CreateIndexModel<FriendRequestDocument> PendingFriendPairUnique()
     {
         var keys = Builders<FriendRequestDocument>.IndexKeys
@@ -31,6 +39,9 @@ public static class SocialIndexDefinitions
         });
     }
 
+    /// <summary>
+    /// Partial unique index: only one pending invite per sender-receiver pair.
+    /// </summary>
     public static CreateIndexModel<PartyInviteDocument> PendingPartyPairUnique()
     {
         var keys = Builders<PartyInviteDocument>.IndexKeys

@@ -4,6 +4,8 @@ using static PickMeUp.Api.Account.Profile.Avatar;
 
 namespace PickMeUp.Api.Account.Authentication.OAuth
 {
+    /**--------[Repository Interface]--------**/
+
     public interface IAccountRepository
     {
         Account? FindByEmail(string email);
@@ -11,18 +13,27 @@ namespace PickMeUp.Api.Account.Authentication.OAuth
         Account Create(Account account);
     }
 
-    // Account entity for MongoDB persistence.
-    // Two IDs: AccountId (internal, server-only) + PublicCode (user-facing, MOE-XXXXXXXXXX).
+    /**--------[Account Entity]--------**/
 
+    /// <summary>
+    /// Account entity for MongoDB persistence.
+    /// Two IDs: Id (internal, server-only) and PublicCode (user-facing, MOE-XXXXXXXXXX).
+    /// </summary>
     public sealed class Account
     {
         public Guid Id { get; init; }
-        public string PublicCode { get; init; } = string.Empty; // MOE-XXXXXXXXXX (user-facing)
+        public string PublicCode { get; init; } = string.Empty;
         public string Email { get; init; } = string.Empty;
         public string Username { get; init; } = string.Empty;
         public string AvatarUrl { get; init; } = string.Empty;
     }
 
+    /**--------[Account Creation]--------**/
+
+    /// <summary>
+    /// Creates a new account from an external OAuth identity.
+    /// Returns the existing account if the email is already registered.
+    /// </summary>
     public sealed class AccountCreationService(IAccountRepository accounts)
     {
         private readonly IAccountRepository _accounts = accounts;
@@ -48,7 +59,7 @@ namespace PickMeUp.Api.Account.Authentication.OAuth
             return _accounts.Create(account);
         }
 
-        // Crypto-random username: "usr_" + 16 hex chars = 20 chars max
+        /// <summary>Crypto-random username: "usr_" + 16 hex chars = 20 chars max.</summary>
         private static string GenerateUsername()
         {
             var bytes = RandomNumberGenerator.GetBytes(8);
@@ -56,17 +67,21 @@ namespace PickMeUp.Api.Account.Authentication.OAuth
             return $"usr_{hex}";
         }
 
-        // Public code: MOE- + 10 Crockford Base32 chars = 15 chars total
+        /// <summary>Public code: MOE- + 10 Crockford Base32 chars = 15 chars total.</summary>
         private static string GeneratePublicCode()
         {
-            var bytes = RandomNumberGenerator.GetBytes(5); // 10 Base32 chars
+            var bytes = RandomNumberGenerator.GetBytes(5);
             var code = CrockfordBase32.Encode(bytes);
             return $"MOE-{code}";
         }
     }
 
-    // Crockford Base32 encoding (0-9, A-H, J-K, M-N, P-T, V-W, X-Y, Z)
-    // Excludes I, L, O, U to avoid confusion with 1, 1, 0, V
+    /**--------[Crockford Base32]--------**/
+
+    /// <summary>
+    /// Crockford Base32 encoding (0-9, A-H, J-K, M-N, P-T, V-W, X-Y, Z).
+    /// Excludes I, L, O, U to avoid confusion with 1, 1, 0, V.
+    /// </summary>
     internal static class CrockfordBase32
     {
         private const string Alphabet = "0123456789ABCDEFGHJKMNPQRSTVWXYZ";

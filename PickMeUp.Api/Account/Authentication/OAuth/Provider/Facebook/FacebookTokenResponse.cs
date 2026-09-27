@@ -2,7 +2,9 @@
 
 namespace PickMeUp.Api.Account.Authentication.OAuth.Provider.Facebook
 {
-    // Deserialisation target for Facebook's /oauth/access_token response.
+    /// <summary>
+    /// Deserialisation target for Facebook's /oauth/access_token endpoint response.
+    /// </summary>
     public sealed class FacebookTokenResponse
     {
         [JsonPropertyName("access_token")]

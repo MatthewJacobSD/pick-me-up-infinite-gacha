@@ -4,6 +4,8 @@ using PickMeUp.Api.Common.Authentication;
 
 namespace PickMeUp.Api.Social;
 
+/**--------[SocialController]--------**/
+
 [ApiController]
 [Route("account/social")]
 [Authorize]
@@ -11,6 +13,8 @@ public sealed class SocialController(ISocialService social, ICurrentUser current
 {
     private readonly ISocialService _social = social;
     private readonly ICurrentUser _currentUser = currentUser;
+
+    /**--------[Friends]--------**/
 
     [HttpGet("friends")]
     public async Task<IActionResult> GetFriends()
@@ -22,6 +26,8 @@ public sealed class SocialController(ISocialService social, ICurrentUser current
         await _social.RemoveFriendAsync(RequireAccountId(), targetUserId);
         return NoContent();
     }
+
+    /**--------[Friend Requests]--------**/
 
     [HttpPost("friends/requests")]
     public async Task<IActionResult> SendFriendRequest([FromBody] TargetAccountRequest request)
@@ -55,6 +61,8 @@ public sealed class SocialController(ISocialService social, ICurrentUser current
     public async Task<IActionResult> ListFriendRequests()
         => Ok((await _social.ListPendingFriendRequestsAsync(RequireAccountId())).Select(ToResponse));
 
+    /**--------[Blocks]--------**/
+
     [HttpGet("blocks")]
     public async Task<IActionResult> GetBlocks()
         => Ok(await _social.GetBlocksAsync(RequireAccountId()));
@@ -72,6 +80,8 @@ public sealed class SocialController(ISocialService social, ICurrentUser current
         await _social.UnblockUserAsync(RequireAccountId(), targetUserId);
         return NoContent();
     }
+
+    /**--------[Party Invites]--------**/
 
     [HttpPost("party/invites")]
     public async Task<IActionResult> SendPartyInvite([FromBody] TargetAccountRequest request)
@@ -105,6 +115,8 @@ public sealed class SocialController(ISocialService social, ICurrentUser current
     public async Task<IActionResult> ListPartyInvites()
         => Ok((await _social.ListPendingPartyInvitesAsync(RequireAccountId())).Select(ToResponse));
 
+    /**--------[Helpers]--------**/
+
     private string RequireAccountId()
     {
         if (!_currentUser.IsAuthenticated)
@@ -131,6 +143,8 @@ public sealed class SocialController(ISocialService social, ICurrentUser current
         invite.RespondedAt,
         invite.ExpiresAt);
 }
+
+/**--------[Request/Response DTOs]--------**/
 
 public sealed class TargetAccountRequest
 {

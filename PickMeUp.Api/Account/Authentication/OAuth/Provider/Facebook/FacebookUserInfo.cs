@@ -1,7 +1,8 @@
 ﻿namespace PickMeUp.Api.Account.Authentication.OAuth.Provider.Facebook
 {
-    // Deserialisation target for Facebook's /me response.
-
+    /// <summary>
+    /// Deserialisation target for Facebook's /me endpoint response.
+    /// </summary>
     public sealed class FacebookUserInfo
     {
         public string Id { get; init; } = string.Empty;

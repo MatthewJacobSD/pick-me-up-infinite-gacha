@@ -1,5 +1,10 @@
 namespace PickMeUp.Api.Social;
 
+/**--------[IFriendRequestLifecycleEngine]--------**/
+
+/// <summary>
+/// State machine for friend-request and party-invite lifecycle transitions.
+/// </summary>
 public interface IFriendRequestLifecycleEngine
 {
     Task SendAsync(string senderId, string receiverId);
@@ -14,9 +19,13 @@ public interface IFriendRequestLifecycleEngine
     Task CancelPartyAsync(string senderId, string receiverId);
 }
 
+/**--------[FriendRequestLifecycleEngine]--------**/
+
 public sealed class FriendRequestLifecycleEngine(ISocialRepository repository) : IFriendRequestLifecycleEngine
 {
     private readonly ISocialRepository _repository = repository;
+
+    /**--------[Friend Requests]--------**/
 
     public async Task SendAsync(string senderId, string receiverId)
     {
@@ -74,6 +83,8 @@ public sealed class FriendRequestLifecycleEngine(ISocialRepository repository) :
 
         await _repository.UpdateFriendRequestStatusAsync(request.Id, FriendRequestStatus.Expired, DateTime.UtcNow);
     }
+
+    /**--------[Party Invites]--------**/
 
     public async Task SendPartyAsync(string senderId, string receiverId)
     {

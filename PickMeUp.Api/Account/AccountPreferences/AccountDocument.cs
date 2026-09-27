@@ -10,6 +10,10 @@ using PickMeUp.Api.Account.AccountPreferences.UiPreferences;
 
 namespace PickMeUp.Api.Account.AccountPreferences
 {
+    /// <summary>
+    /// MongoDB document holding all preference categories for a single account.
+    /// Optimistic concurrency via <see cref="Version"/>.
+    /// </summary>
     public sealed class AccountDocument
     {
         [BsonId]

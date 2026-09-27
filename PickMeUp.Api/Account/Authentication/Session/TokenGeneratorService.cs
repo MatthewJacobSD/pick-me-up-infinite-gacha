@@ -6,8 +6,9 @@ using System.IdentityModel.Tokens.Jwt;
 
 namespace PickMeUp.Api.Account.Authentication.Session
 {
-    // Generates JWT access tokens and random refresh tokens.
-
+    /// <summary>
+    /// Generates JWT access tokens (signed, short-lived) and cryptographically random refresh tokens.
+    /// </summary>
     public sealed class TokenGeneratorService(Jwt jwt)
     {
         private readonly Jwt _jwt = jwt;
@@ -34,6 +35,9 @@ namespace PickMeUp.Api.Account.Authentication.Session
             return new JwtSecurityTokenHandler().WriteToken(token);
         }
 
+        /// <summary>
+        /// Generates a 512-bit random hex string for use as a refresh token.
+        /// </summary>
         public string GenerateRefreshToken(Guid accountId)
         {
             byte[] bytes = RandomNumberGenerator.GetBytes(64);

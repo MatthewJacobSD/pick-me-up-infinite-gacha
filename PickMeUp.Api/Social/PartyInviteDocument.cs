@@ -2,6 +2,10 @@ using MongoDB.Bson.Serialization.Attributes;
 
 namespace PickMeUp.Api.Social;
 
+/// <summary>
+/// Flat party-invite row. Pending pairs are unique so both incoming and outgoing
+/// reads stay a single collection query.
+/// </summary>
 public sealed class PartyInviteDocument
 {
     public const string CollectionName = "party_invites";

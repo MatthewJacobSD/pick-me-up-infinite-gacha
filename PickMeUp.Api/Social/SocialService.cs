@@ -9,6 +9,8 @@ public sealed class SocialService(
     private readonly IFriendRequestLifecycleEngine _lifecycle = lifecycle;
     private readonly SocialPolicy _policy = policy;
 
+    /**--------[Friends]--------**/
+
     public Task<IReadOnlyList<string>> GetFriendsAsync(string userId)
         => _repository.GetFriendsAsync(userId);
 
@@ -47,9 +49,14 @@ public sealed class SocialService(
         return _repository.RemoveFriendAsync(userId, targetUserId);
     }
 
+    /**--------[Blocks]--------**/
+
     public Task<IReadOnlyList<string>> GetBlocksAsync(string userId)
         => _repository.GetBlocksAsync(userId);
 
+    /// <summary>
+    /// Blocking removes the friendship and voids all pending requests/invites between the two players.
+    /// </summary>
     public async Task BlockUserAsync(string userId, string targetUserId)
     {
         RequireOtherPlayer(userId, targetUserId);
@@ -64,6 +71,8 @@ public sealed class SocialService(
         RequireOtherPlayer(userId, targetUserId);
         return _repository.RemoveBlockAsync(userId, targetUserId);
     }
+
+    /**--------[Party Invites]--------**/
 
     public async Task SendPartyInviteAsync(string actorId, string targetId)
     {
@@ -93,6 +102,8 @@ public sealed class SocialService(
 
     public Task<IReadOnlyList<PartyInviteDocument>> ListPendingPartyInvitesAsync(string userId)
         => _repository.ListPendingPartyInvitesAsync(userId);
+
+    /**--------[Guards]--------**/
 
     private async Task RequireNotBlocked(string actorId, string otherId)
     {

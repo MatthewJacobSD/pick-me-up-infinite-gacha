@@ -1,7 +1,8 @@
 ﻿namespace PickMeUp.Api.Account.Profile
 {
-    // Avatar value object with Default, Static, and Custom types.
-
+    /// <summary>
+    /// Avatar value object with Default, Static, and Custom types.
+    /// </summary>
     public sealed class Avatar
     {
         public Guid Id { get; set; } = Guid.NewGuid();
@@ -11,7 +12,6 @@
         public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
         public bool IsDefault { get; set; } = true;
 
-        // Parameterless constructor for MongoDB deserialization.
         private Avatar() { }
 
         private Avatar(string value, string pathUrl, AvatarTypeStatus type)

@@ -1,13 +1,18 @@
 namespace PickMeUp.Api.Account.Authentication.OAuth
 {
-    // Maps provider names to the OAuthProvider enum with callback paths.
+    /**--------[OAuthProvider Enum]--------**/
 
+    /// <summary>
+    /// Maps provider names to callback paths for the OAuth flow.
+    /// </summary>
     public enum OAuthProvider
     {
         Unknown = 0,
         Google = 1,
         Facebook = 2
     }
+
+    /**--------[Extensions]--------**/
 
     public static class OAuthProviderExtensions
     {
@@ -37,8 +42,11 @@ namespace PickMeUp.Api.Account.Authentication.OAuth
         }
     }
 
-    // Holds all provider configs loaded from appsettings.
+    /**--------[Config Root]--------**/
 
+    /// <summary>
+    /// Holds all provider configs loaded from appsettings.
+    /// </summary>
     public sealed class OauthConfig
     {
         public const string SectionName = "OAuth";

@@ -1,7 +1,8 @@
 ﻿namespace PickMeUp.Api.Account.Authentication.Session
 {
-    // Access token config — short-lived, measured in minutes.
-
+    /// <summary>
+    /// Access token config — short-lived, measured in minutes.
+    /// </summary>
     public sealed class AccessTokenConfig : TokenConfig
     {
         private AccessTokenConfig(string key, int expireInMinutes)

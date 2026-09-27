@@ -4,6 +4,9 @@ using PickMeUp.Api.Common.Errors;
 
 namespace PickMeUp.Api.Social;
 
+/// <summary>
+/// Translates social-domain exceptions into RFC 7807 Problem Details responses.
+/// </summary>
 public sealed class SocialExceptionHandler : IExceptionHandler
 {
     public const string TypeBase = "https://pickmeup/errors/";
@@ -30,6 +33,8 @@ public sealed class SocialExceptionHandler : IExceptionHandler
         }, cancellationToken: cancellationToken);
         return true;
     }
+
+    /**--------[Mapping]--------**/
 
     private static (int Status, string Type, string Title, string Code)? Map(Exception exception)
     {

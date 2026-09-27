@@ -2,8 +2,9 @@
 
 namespace PickMeUp.Api.Account.Authentication.Session
 {
-    // Endpoint for refreshing expired access tokens.
-
+    /// <summary>
+    /// Endpoint for refreshing expired access tokens via one-time refresh token rotation.
+    /// </summary>
     [ApiController]
     [Route("api/auth")]
     public sealed class RefreshController(
@@ -12,10 +13,6 @@ namespace PickMeUp.Api.Account.Authentication.Session
         private readonly RefreshTokenService _refreshTokenService = refreshTokenService;
 
         public sealed record RefreshRequest(string RefreshToken);
-
-        // 1. Client sends a valid refresh token.
-        // 2. RefreshTokenService rotates it (invalidates old, creates new).
-        // 3. Returns new access + refresh tokens.
 
         [HttpPost("refresh")]
         public async Task<IActionResult> Refresh([FromBody] RefreshRequest req)

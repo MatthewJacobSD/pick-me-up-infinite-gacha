@@ -4,14 +4,19 @@ using PickMeUp.Api.Common.Authentication;
 
 namespace PickMeUp.Api.Social;
 
+/// <summary>
+/// Registers all social-domain services into the DI container.
+/// </summary>
 public static class DependencyInjection
 {
     public static IServiceCollection AddSocial(this IServiceCollection services)
     {
         services.AddHttpContextAccessor();
         services.TryAddScoped<ICurrentUser, CurrentUser>();
+
         // Preferences DI is still an empty stub. Social registers the read it needs.
         services.TryAddSingleton<IAccountPreferencesRepository, AccountPreferencesRepository>();
+
         services.AddSingleton<ISocialVisibilityQuery, PreferencesSocialVisibilityQuery>();
         services.AddSingleton<ISocialRepository, SocialRepository>();
         services.AddSingleton<IFriendRequestLifecycleEngine, FriendRequestLifecycleEngine>();

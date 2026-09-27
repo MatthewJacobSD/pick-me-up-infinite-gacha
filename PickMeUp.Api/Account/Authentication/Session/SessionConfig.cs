@@ -1,7 +1,8 @@
 ﻿namespace PickMeUp.Api.Account.Authentication.Session
 {
-    // Session config controlling lifetime and optional bindings.
-
+    /// <summary>
+    /// Session config controlling lifetime and optional device/IP bindings.
+    /// </summary>
     public sealed class SessionConfig
     {
         public int ExpireInHours { get; }

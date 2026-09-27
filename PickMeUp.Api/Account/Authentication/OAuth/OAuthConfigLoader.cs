@@ -2,8 +2,9 @@
 
 namespace PickMeUp.Api.Account.Authentication.OAuth
 {
-    // Reads provider credentials from IConfiguration and builds an OauthConfig.
-
+    /// <summary>
+    /// Reads provider credentials from IConfiguration and builds an <see cref="OauthConfig"/>.
+    /// </summary>
     public sealed class OAuthConfigLoader(IConfiguration config)
     {
         private readonly IConfiguration _config = config;

@@ -2,8 +2,10 @@ using MongoDB.Bson.Serialization.Attributes;
 
 namespace PickMeUp.Api.Social;
 
-// Flat friend-request row. Pending pairs are unique so both incoming and outgoing
-// reads stay a single collection query.
+/// <summary>
+/// Flat friend-request row. Pending pairs are unique so both incoming and outgoing
+/// reads stay a single collection query.
+/// </summary>
 public sealed class FriendRequestDocument
 {
     public const string CollectionName = "friend_requests";

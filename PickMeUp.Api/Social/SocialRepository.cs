@@ -13,6 +13,8 @@ public sealed class SocialRepository(IMongoDatabase database) : ISocialRepositor
     private readonly IMongoCollection<PartyInviteDocument> _invites =
         database.GetCollection<PartyInviteDocument>(PartyInviteDocument.CollectionName);
 
+    /**--------[Users]--------**/
+
     public async Task EnsureUserAsync(string userId)
     {
         var update = Builders<SocialDocument>.Update
@@ -39,8 +41,8 @@ public sealed class SocialRepository(IMongoDatabase database) : ISocialRepositor
         await EnsureUserAsync(userA);
         await EnsureUserAsync(userB);
 
-        // Two writes. A retry is safe because $addToSet does not duplicate an id.
-        // If the process dies after the first write, the friendship is one-sided until a later retry.
+        // Two writes. Retry is safe because $addToSet does not duplicate.
+        // If the process dies after the first write, friendship is one-sided until retry.
         await _users.UpdateOneAsync(
             x => x.UserId == userA,
             Builders<SocialDocument>.Update.AddToSet(x => x.Friends, userB));
@@ -67,6 +69,8 @@ public sealed class SocialRepository(IMongoDatabase database) : ISocialRepositor
         var doc = await _users.Find(x => x.UserId == userId).FirstOrDefaultAsync();
         return doc?.Friends ?? [];
     }
+
+    /**--------[Blocks]--------**/
 
     public async Task<bool> IsBlockedAsync(string blockerId, string targetId)
     {
@@ -97,6 +101,8 @@ public sealed class SocialRepository(IMongoDatabase database) : ISocialRepositor
         var doc = await _users.Find(x => x.UserId == userId).FirstOrDefaultAsync();
         return doc?.Blocks ?? [];
     }
+
+    /**--------[Friend Requests]--------**/
 
     public async Task<FriendRequestDocument?> FindPendingFriendRequestAsync(string senderId, string receiverId)
     {
@@ -134,6 +140,7 @@ public sealed class SocialRepository(IMongoDatabase database) : ISocialRepositor
         }
         catch (MongoWriteException ex) when (ex.WriteError.Code == 11000)
         {
+            // Unique index violation — duplicate pending pair.
             throw new SocialConflictException("social.request_exists", "A pending friend request already exists.");
         }
     }
@@ -153,6 +160,8 @@ public sealed class SocialRepository(IMongoDatabase database) : ISocialRepositor
             .Set(x => x.RespondedAt, DateTime.UtcNow);
         return _requests.UpdateManyAsync(PendingFriendPair(userA, userB), update);
     }
+
+    /**--------[Party Invites]--------**/
 
     public async Task<PartyInviteDocument?> FindPendingPartyInviteAsync(string senderId, string receiverId)
     {
@@ -189,6 +198,7 @@ public sealed class SocialRepository(IMongoDatabase database) : ISocialRepositor
         }
         catch (MongoWriteException ex) when (ex.WriteError.Code == 11000)
         {
+            // Unique index violation — duplicate pending pair.
             throw new SocialConflictException("social.invite_exists", "A pending party invite already exists.");
         }
     }
@@ -209,6 +219,8 @@ public sealed class SocialRepository(IMongoDatabase database) : ISocialRepositor
         return _invites.UpdateManyAsync(PendingPartyPair(userA, userB), update);
     }
 
+    /**--------[Expiry]--------**/
+
     public async Task ExpireDueAsync(DateTime utcNow)
     {
         var requestFilter = Builders<FriendRequestDocument>.Filter.And(
@@ -227,6 +239,8 @@ public sealed class SocialRepository(IMongoDatabase database) : ISocialRepositor
             .Set(x => x.RespondedAt, utcNow);
         await _invites.UpdateManyAsync(inviteFilter, inviteUpdate);
     }
+
+    /**--------[Helpers]--------**/
 
     private static FilterDefinition<FriendRequestDocument> PendingFriendPair(string userA, string userB)
     {

@@ -1,7 +1,8 @@
 ﻿namespace PickMeUp.Api.Account.Authentication.Session
 {
-    // JWT configuration root mapping to the "Jwt" section in appsettings.
-
+    /// <summary>
+    /// JWT configuration root mapping to the "Jwt" section in appsettings.
+    /// </summary>
     public sealed class Jwt
     {
         public const string SectionName = "Jwt";
@@ -33,6 +34,9 @@
             SessionConfig = sessionConfig;
         }
 
+        /// <summary>
+        /// Factory that validates all sub-configs are present.
+        /// </summary>
         public static Jwt Create(
             string issuer,
             string audience,

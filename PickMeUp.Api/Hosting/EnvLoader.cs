@@ -11,9 +11,6 @@ namespace PickMeUp.Api.Hosting;
 /// </summary>
 public static class EnvLoader
 {
-    /// <summary>
-    /// Loads .env files and pushes values into IConfiguration.
-    /// </summary>
     public static void Load(IConfigurationBuilder configuration, string? environment = null)
     {
         var env = environment
@@ -25,6 +22,8 @@ public static class EnvLoader
         var variables = LoadEnvFiles(root, env);
         configuration.AddInMemoryCollection(variables);
     }
+
+    /**--------[Env File Loading]--------**/
 
     private static Dictionary<string, string> LoadEnvFiles(string root, string environment)
     {
@@ -84,6 +83,8 @@ public static class EnvLoader
 
         return variables;
     }
+
+    /**--------[Content Root Discovery]--------**/
 
     /// <summary>
     /// Walks up from the entry assembly directory looking for a project or solution file.

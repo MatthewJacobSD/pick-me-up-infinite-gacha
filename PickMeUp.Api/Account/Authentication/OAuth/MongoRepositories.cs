@@ -3,7 +3,11 @@ using PickMeUp.Api.Account.Authentication.OAuth;
 
 namespace PickMeUp.Api.Account.Authentication.OAuth;
 
-// Minimal MongoDB implementation of IAccountRepository for OAuth account creation.
+/**--------[MongoDB Repositories]--------**/
+
+/// <summary>
+/// MongoDB implementation of <see cref="IAccountRepository"/>.
+/// </summary>
 public sealed class MongoAccountRepository(IMongoDatabase db) : IAccountRepository
 {
     private readonly IMongoCollection<Account> _collection = db.GetCollection<Account>("accounts");
@@ -21,7 +25,9 @@ public sealed class MongoAccountRepository(IMongoDatabase db) : IAccountReposito
     }
 }
 
-// Minimal MongoDB implementation of IExternalAccountRepository for OAuth linking.
+/// <summary>
+/// MongoDB implementation of <see cref="IExternalAccountRepository"/>.
+/// </summary>
 public sealed class MongoExternalAccountRepository(IMongoDatabase db) : IExternalAccountRepository
 {
     private readonly IMongoCollection<ExternalAccountLink> _collection =

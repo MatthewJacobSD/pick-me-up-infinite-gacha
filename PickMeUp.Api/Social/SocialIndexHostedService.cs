@@ -2,6 +2,9 @@ using MongoDB.Driver;
 
 namespace PickMeUp.Api.Social;
 
+/// <summary>
+/// Ensures MongoDB indexes for social collections exist at startup.
+/// </summary>
 public sealed class SocialIndexHostedService(IMongoDatabase database) : IHostedService
 {
     private readonly IMongoDatabase _database = database;

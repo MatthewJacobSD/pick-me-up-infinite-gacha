@@ -2,13 +2,14 @@
 
 namespace PickMeUp.Api.Account.Profile
 {
-    // Username value object (3–20 chars, lowercase alphanumeric with underscores/hyphens).
-
+    /// <summary>
+    /// Username value object (3–20 chars, lowercase alphanumeric with underscores/hyphens).
+    /// Normalised to lowercase on creation.
+    /// </summary>
     public sealed partial class Username
     {
         public string Value { get; set; } = string.Empty;
 
-        // Parameterless constructor for MongoDB deserialization.
         private Username() { }
 
         private Username(string value)
@@ -35,7 +36,6 @@ namespace PickMeUp.Api.Account.Profile
             return new Username(value);
         }
 
-        // Allows: lowercase letters, digits, underscore, hyphen.
         [GeneratedRegex(@"^[a-z0-9_-]+$")]
         private static partial Regex MyRegex();
     }

@@ -3,7 +3,10 @@ using System.Text.Json;
 
 namespace PickMeUp.Api.Social;
 
-// Supplementary check for route ids only. Body targets are enforced by SocialPolicy in the service.
+/// <summary>
+/// Supplementary middleware that blocks route-level access when a block exists between the caller
+/// and the route target. Body-based targets are enforced by SocialPolicy in the service layer.
+/// </summary>
 public sealed class BlockEnforcementMiddleware(RequestDelegate next, ISocialRepository repository)
 {
     private readonly RequestDelegate _next = next;
@@ -37,6 +40,8 @@ public sealed class BlockEnforcementMiddleware(RequestDelegate next, ISocialRepo
 
         await _next(context);
     }
+
+    /**--------[Helpers]--------**/
 
     private static string? ReadAccountId(ClaimsPrincipal user)
     {

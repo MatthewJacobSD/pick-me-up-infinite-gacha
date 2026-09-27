@@ -1,7 +1,9 @@
 ﻿namespace PickMeUp.Api.Account.Authentication.OAuth.Provider
 {
-    // Google OAuth provider config value object.
-
+    /// <summary>
+    /// Google OAuth provider config value object.
+    /// Validates that both ClientId and ClientSecret are non-empty on creation.
+    /// </summary>
     public sealed class GoogleProvider
     {
         public string ClientId { get; private init; }

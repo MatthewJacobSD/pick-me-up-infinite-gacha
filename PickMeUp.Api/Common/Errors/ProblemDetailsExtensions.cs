@@ -4,6 +4,9 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace PickMeUp.Api.Common.Errors;
 
+/// <summary>
+/// Maps domain exceptions and FluentValidation errors into RFC 7807 Problem Details responses.
+/// </summary>
 public static class ProblemDetailsExtensions
 {
     private const string BaseUri = "https://pickmeup/errors/";
@@ -60,6 +63,8 @@ public static class ProblemDetailsExtensions
 
         return app;
     }
+
+    /**--------[Helpers]--------**/
 
     private static string FormatFluentValidationErrors(FluentValidation.ValidationException ex)
     {

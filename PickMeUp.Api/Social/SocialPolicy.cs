@@ -2,6 +2,8 @@ using PickMeUp.Api.Account.AccountPreferences.SocialPreferences;
 
 namespace PickMeUp.Api.Social;
 
+/**--------[SocialDecision]--------**/
+
 public enum SocialDenialKind
 {
     None = 0,
@@ -15,6 +17,11 @@ public readonly record struct SocialDecision(bool Allowed, SocialDenialKind Deni
     public static SocialDecision Deny(SocialDenialKind denial) => new(false, denial);
 }
 
+/**--------[SocialPolicy]--------**/
+
+/// <summary>
+/// Evaluates whether an actor is allowed to interact with a target based on block status and visibility settings.
+/// </summary>
 public sealed class SocialPolicy(ISocialRepository repository, ISocialVisibilityQuery visibility)
 {
     private readonly ISocialRepository _repository = repository;
@@ -32,6 +39,9 @@ public sealed class SocialPolicy(ISocialRepository repository, ISocialVisibility
     public Task<SocialDecision> CanViewOnlineStatus(string actorId, string targetId)
         => Evaluate(actorId, targetId, snapshot => snapshot.OnlineStatus);
 
+    /// <summary>
+    /// Checks blocks first (bidirectional), then resolves the target's visibility rule.
+    /// </summary>
     private async Task<SocialDecision> Evaluate(
         string actorId,
         string targetId,

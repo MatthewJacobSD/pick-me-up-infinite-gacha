@@ -1,6 +1,6 @@
 namespace PickMeUp.Api.Hosting;
 
-// ── Typed Options ──────────────────────────────────────────────
+/**--------[Typed Options]--------**/
 
 public sealed class JwtOptions
 {
@@ -58,7 +58,7 @@ public sealed class FacebookOptions
     public string ClientSecret { get; init; } = string.Empty;
 }
 
-// ── Configuration Extensions ───────────────────────────────────
+/**--------[Configuration Extensions]--------**/
 
 public static class ConfigurationExtensions
 {
@@ -87,6 +87,8 @@ public static class ConfigurationExtensions
 
         return services;
     }
+
+    /**--------[Validation]--------**/
 
     /// <summary>
     /// Validates that all required configuration keys are present.

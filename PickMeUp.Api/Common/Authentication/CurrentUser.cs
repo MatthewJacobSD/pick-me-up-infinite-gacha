@@ -2,6 +2,10 @@ using System.Security.Claims;
 
 namespace PickMeUp.Api.Common.Authentication;
 
+/// <summary>
+/// Resolves the current user from HttpContext claims. Supports multiple claim layouts
+/// (NameIdentifier, sub, accountId) for compatibility with different auth providers.
+/// </summary>
 public sealed class CurrentUser : ICurrentUser
 {
     private readonly IHttpContextAccessor _httpContextAccessor;

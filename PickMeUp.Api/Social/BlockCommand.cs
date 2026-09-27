@@ -1,31 +1,29 @@
-﻿namespace PickMeUp.Api.Social
+﻿namespace PickMeUp.Api.Social;
+
+/**--------[BlockCommand]--------**/
+
+public sealed class BlockCommand
 {
-    // ── Block Command ──────────────────────────────────
-    // Command object for block/unblock operations.
+    public string TargetUserId { get; private init; }
+    public BlockAction Action { get; private init; }
 
-    public sealed class BlockCommand
+    private BlockCommand(string targetUserId, BlockAction action)
     {
-        public string TargetUserId { get; private init; }
-        public BlockAction Action { get; private init; }
-
-        private BlockCommand(string targetUserId, BlockAction action)
-        {
-            TargetUserId = targetUserId;
-            Action = action;
-        }
-
-        public static BlockCommand Create(string targetUserId, BlockAction action)
-        {
-            if (string.IsNullOrWhiteSpace(targetUserId))
-                throw new ArgumentException("Cannot locate target user");
-
-            return new BlockCommand(targetUserId, action);
-        }
+        TargetUserId = targetUserId;
+        Action = action;
     }
 
-    public enum BlockAction
+    public static BlockCommand Create(string targetUserId, BlockAction action)
     {
-        BlockUser = 0,
-        UnblockUser = 1
+        if (string.IsNullOrWhiteSpace(targetUserId))
+            throw new ArgumentException("Cannot locate target user");
+
+        return new BlockCommand(targetUserId, action);
     }
+}
+
+public enum BlockAction
+{
+    BlockUser = 0,
+    UnblockUser = 1
 }

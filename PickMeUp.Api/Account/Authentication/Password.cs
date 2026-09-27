@@ -4,8 +4,10 @@ using System.Text.RegularExpressions;
 
 namespace PickMeUp.Api.Account.Authentication
 {
-    // Value object wrapping a hashed password with policy enforcement.
-
+    /// <summary>
+    /// Value object wrapping a hashed password with policy enforcement.
+    /// Policy: 12+ chars, at least one uppercase, lowercase, digit, and symbol.
+    /// </summary>
     public sealed partial class Password
     {
         private readonly string _hash;
@@ -16,8 +18,11 @@ namespace PickMeUp.Api.Account.Authentication
             _hash = hash;
         }
 
-        // ── Factory ───────────────────────────────────────────────
+        /**--------[Factory]--------**/
 
+        /// <summary>
+        /// Hashes a plain-text password after validating it against policy.
+        /// </summary>
         public static Password Create(string plainPassword, IPasswordHasher<ApplicationUser> hasher, ApplicationUser user)
         {
             if (string.IsNullOrWhiteSpace(plainPassword))
@@ -37,6 +42,9 @@ namespace PickMeUp.Api.Account.Authentication
             return new Password(hash);
         }
 
+        /// <summary>
+        /// Wraps an existing hash (e.g. loaded from the database).
+        /// </summary>
         public static Password FromHash(string hash)
         {
             if (string.IsNullOrWhiteSpace(hash))
@@ -48,7 +56,7 @@ namespace PickMeUp.Api.Account.Authentication
             return new Password(hash);
         }
 
-        // ── Verification ──────────────────────────────────────────
+        /**--------[Verification]--------**/
 
         public bool Verify(string plainPassword, IPasswordHasher<ApplicationUser> hasher, ApplicationUser user)
         {
@@ -61,7 +69,7 @@ namespace PickMeUp.Api.Account.Authentication
             return result != PasswordVerificationResult.Failed;
         }
 
-        // ── Policy Regex ──────────────────────────────────────────
+        /**--------[Policy Regex]--------**/
 
         [GeneratedRegex(
             @"^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[^\da-zA-Z]).{12,}$"

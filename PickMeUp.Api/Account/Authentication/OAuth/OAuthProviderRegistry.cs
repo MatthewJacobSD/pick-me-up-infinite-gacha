@@ -1,7 +1,8 @@
 ﻿namespace PickMeUp.Api.Account.Authentication.OAuth
 {
-    // Checks whether a provider is configured and returns its config object.
-
+    /// <summary>
+    /// Checks whether a provider is configured and returns its config object.
+    /// </summary>
     public sealed class OAuthProviderRegistry(OauthConfig config)
     {
         private readonly OauthConfig _config = config;
@@ -16,6 +17,10 @@
             };
         }
 
+        /// <summary>
+        /// Returns the raw config object for the given provider.
+        /// Caller must cast to the concrete type (e.g. GoogleProvider).
+        /// </summary>
         public object GetProvider(OAuthProvider provider)
         {
             return provider switch

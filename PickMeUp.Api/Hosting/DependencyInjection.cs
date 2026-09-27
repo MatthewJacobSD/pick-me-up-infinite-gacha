@@ -13,8 +13,6 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
-using MongoDB.Bson;
-using MongoDB.Bson.Serialization;
 using MongoDB.Driver;
 using PickMeUp.Api.Account.AccountPreferences;
 using PickMeUp.Api.Account.Authentication.OAuth;
@@ -27,6 +25,9 @@ using StackExchange.Redis;
 
 namespace PickMeUp.Api.Hosting;
 
+/// <summary>
+/// Composes all application services: infrastructure, auth, features, health checks, CORS, and rate limiting.
+/// </summary>
 public static class DependencyInjection
 {
     public static IServiceCollection AddPickMeUpApi(
@@ -44,7 +45,8 @@ public static class DependencyInjection
         services.AddProblemDetails();
         services.AddControllers();
 
-        // OAuth services
+        /**--------[OAuth]--------**/
+
         services.AddSingleton(sp =>
         {
             var config = sp.GetRequiredService<IConfiguration>();
@@ -73,7 +75,8 @@ public static class DependencyInjection
         services.AddSingleton<AccountCreationService>();
         services.AddSingleton<AccountLinkingService>();
 
-        // Session services
+        /**--------[Session]--------**/
+
         services.AddSingleton(sp =>
         {
             var jwtSection = configuration.GetSection(JwtOptions.SectionName);
@@ -94,6 +97,8 @@ public static class DependencyInjection
         services.AddSingleton<TokenGeneratorService>();
         services.AddSingleton<RefreshTokenService>();
 
+        /**--------[Features]--------**/
+
         services.AddAccountPreferences();
         services.AddProfile();
         services.AddSocial();
@@ -105,7 +110,7 @@ public static class DependencyInjection
         return services;
     }
 
-    // ── MySQL + Identity ────────────────────────────────────────
+    /**--------[MySQL + Identity]--------**/
 
     private static void AddMySql(this IServiceCollection services, IConfiguration configuration)
     {
@@ -130,13 +135,10 @@ public static class DependencyInjection
             .AddDefaultTokenProviders();
     }
 
-    // ── MongoDB ─────────────────────────────────────────────────
+    /**--------[MongoDB]--------**/
 
     private static void AddMongoDb(this IServiceCollection services, IConfiguration configuration)
     {
-        // Register Guid serializer globally — required for MongoDB Driver 3.x
-        BsonSerializer.RegisterSerializer(new GuidSerializer(GuidRepresentation.Standard));
-
         var mongoOptions = configuration
             .GetSection(MongoOptions.SectionName)
             .Get<MongoOptions>()
@@ -150,7 +152,7 @@ public static class DependencyInjection
         });
     }
 
-    // ── Redis ───────────────────────────────────────────────────
+    /**--------[Redis]--------**/
 
     private static void AddRedis(this IServiceCollection services, IConfiguration configuration)
     {
@@ -165,7 +167,7 @@ public static class DependencyInjection
         });
     }
 
-    // ── JWT Bearer Authentication ───────────────────────────────
+    /**--------[JWT Bearer Authentication]--------**/
 
     private static void AddJwtAuthentication(this IServiceCollection services, IConfiguration configuration)
     {
@@ -203,24 +205,24 @@ public static class DependencyInjection
         services.AddAuthorization();
     }
 
-    // ── OAuth Providers (conditional) ───────────────────────────
+    /**--------[OAuth Providers]--------**/
+
     // Custom AuthController handles the entire OAuth flow.
     // Do NOT register built-in AddGoogle()/AddFacebook() — they intercept
     // the callback and conflict with the custom OAuthStateValidator.
-
     private static void AddOAuthProviders(this IServiceCollection services, IConfiguration configuration)
     {
         // No-op: OAuth is handled by the custom AuthController + OAuthCallbackHandler.
     }
 
-    // ── FluentValidation ────────────────────────────────────────
+    /**--------[FluentValidation]--------**/
 
     private static void AddFluentValidation(this IServiceCollection services)
     {
         services.AddValidatorsFromAssemblyContaining<AccountPreferencesRepository>();
     }
 
-    // ── Health Checks ──────────────────────────────────────────
+    /**--------[Health Checks]--------**/
 
     private static void AddHealthChecksServices(this IServiceCollection services, IConfiguration configuration)
     {
@@ -237,7 +239,7 @@ public static class DependencyInjection
         services.AddHealthChecks();
     }
 
-    // ── CORS ────────────────────────────────────────────────────
+    /**--------[CORS]--------**/
 
     private static void AddCorsPolicy(this IServiceCollection services)
     {
@@ -251,7 +253,7 @@ public static class DependencyInjection
         });
     }
 
-    // ── Rate Limiting ───────────────────────────────────────────
+    /**--------[Rate Limiting]--------**/
 
     private static void AddRateLimitingServices(this IServiceCollection services, IConfiguration configuration)
     {

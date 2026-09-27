@@ -1,7 +1,9 @@
 ﻿namespace PickMeUp.Api.Account.Authentication
 {
-    // Value object for a validated email address.
-
+    /// <summary>
+    /// Value object for a validated email address.
+    /// Normalised to lowercase on creation; equality is based on the address string.
+    /// </summary>
     public sealed class Email : IEquatable<Email>
     {
         public string Address { get; }
@@ -13,6 +15,9 @@
             Provider = provider;
         }
 
+        /// <summary>
+        /// Factory that validates, trims, lowercases, and detects the provider.
+        /// </summary>
         public static Email Create(string address)
         {
             if (string.IsNullOrWhiteSpace(address))
@@ -26,7 +31,7 @@
             return new Email(address, DetectProvider(address));
         }
 
-        // ── Equality ──────────────────────────────────────────────
+        /**--------[Equality]--------**/
 
         public override string ToString() => Address;
 
@@ -37,13 +42,11 @@
         }
 
         public override bool Equals(object? obj) => Equals(obj as Email);
-
         public override int GetHashCode() => Address.GetHashCode(StringComparison.Ordinal);
-
         public static bool operator ==(Email? left, Email? right) => Equals(left, right);
         public static bool operator !=(Email? left, Email? right) => !Equals(left, right);
 
-        // ── Validation ────────────────────────────────────────────
+        /**--------[Validation]--------**/
 
         private static bool IsValidEmail(string email)
         {
@@ -58,7 +61,7 @@
             }
         }
 
-        // ── Provider Detection ────────────────────────────────────
+        /**--------[Provider Detection]--------**/
 
         private static EmailProvider DetectProvider(string email)
         {
@@ -73,8 +76,6 @@
             };
         }
     }
-
-    // Categorises an email by its domain for display purposes.
 
     public enum EmailProvider
     {

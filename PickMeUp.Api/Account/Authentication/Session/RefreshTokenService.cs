@@ -2,8 +2,11 @@
 
 namespace PickMeUp.Api.Account.Authentication.Session
 {
-    // Refresh token rotation service.
-
+    /// <summary>
+    /// Refresh token rotation service.
+    /// Invalidates the old token (one-time use), generates a new access + refresh pair,
+    /// and stores the new refresh token in Redis.
+    /// </summary>
     public sealed class RefreshTokenService(
         IDistributedCache cache,
         TokenGeneratorService tokenGenerator,
@@ -13,18 +16,13 @@ namespace PickMeUp.Api.Account.Authentication.Session
         private readonly TokenGeneratorService _tokenGenerator = tokenGenerator;
         private readonly RefreshTokenConfig _config = config;
 
-        // 1. Validate old refresh token against Redis.
-        // 2. Invalidate the old token (one-time use).
-        // 3. Generate new access + refresh tokens.
-        // 4. Store the new refresh token in Redis.
-        // 5. Return both tokens to the client.
-
         public async Task<(string accessToken, string refreshToken)> RotateAsync(string oldRefreshToken)
         {
             string? accountId = await _cache.GetStringAsync($"refresh:{oldRefreshToken}");
             if (accountId is null)
                 throw new UnauthorizedAccessException("Invalid refresh token");
 
+            // Invalidate old token immediately — single-use.
             await _cache.RemoveAsync($"refresh:{oldRefreshToken}");
 
             var newAccessToken = _tokenGenerator.GenerateAccessToken(Guid.Parse(accountId));

@@ -2,7 +2,9 @@
 
 namespace PickMeUp.Api.Account.Authentication.OAuth.Provider.Google
 {
-    // Deserialisation target for Google's /token response.
+    /// <summary>
+    /// Deserialisation target for Google's /token endpoint response.
+    /// </summary>
     public sealed class GoogleTokenResponse
     {
         [JsonPropertyName("access_token")]

@@ -8,6 +8,10 @@ using PickMeUp.Api.Account.AccountPreferences.UiPreferences;
 
 namespace PickMeUp.Api.Account.AccountPreferences;
 
+/// <summary>
+/// Repository for reading and writing per-account preference documents.
+/// Each preference category supports get, replace, and optimistic-concurrency patch operations.
+/// </summary>
 public interface IAccountPreferencesRepository
 {
     // General

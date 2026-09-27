@@ -1,7 +1,8 @@
 ﻿namespace PickMeUp.Api.Account.Authentication.OAuth.Provider.Google
 {
-    // Deserialisation target for Google's /oauth2/v2/userinfo response.
-
+    /// <summary>
+    /// Deserialisation target for Google's /oauth2/v2/userinfo endpoint response.
+    /// </summary>
     public sealed class GoogleUserInfo
     {
         public string Id { get; init; } = string.Empty;

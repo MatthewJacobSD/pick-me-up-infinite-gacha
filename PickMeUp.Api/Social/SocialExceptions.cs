@@ -1,5 +1,7 @@
 namespace PickMeUp.Api.Social;
 
+/**--------[Social Exceptions]--------**/
+
 public sealed class SocialValidationException(string message) : Exception(message);
 
 public sealed class SocialUnauthenticatedException(string message = "Authentication is required.")

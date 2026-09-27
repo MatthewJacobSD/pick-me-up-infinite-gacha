@@ -1,9 +1,13 @@
 ﻿namespace PickMeUp.Api.Account.Authentication.OAuth
 {
-    // Handles HTTP errors and null responses from OAuth provider APIs.
-
+    /// <summary>
+    /// Handles HTTP errors and null responses from OAuth provider APIs.
+    /// </summary>
     public sealed class OAuthErrorHandler
     {
+        /// <summary>
+        /// Deserialises a successful response or throws the appropriate OAuth exception.
+        /// </summary>
         public async Task<T> EnsureSuccess<T>(
             OAuthProvider provider,
             HttpResponseMessage response)
