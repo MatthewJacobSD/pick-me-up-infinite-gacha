@@ -118,7 +118,7 @@ namespace PickMeUp.Api.Account.Authentication.OAuth
                     {
                         loginCode,
                         sessionId,
-                        personalId = account.PersonalId,
+                        publicCode = account.PublicCode,
                         identity = new { identity.Provider, identity.Email, identity.Name, identity.ExternalId }
                     });
                 }
