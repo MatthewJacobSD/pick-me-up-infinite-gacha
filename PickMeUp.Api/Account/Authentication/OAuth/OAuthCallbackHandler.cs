@@ -80,7 +80,7 @@ namespace PickMeUp.Api.Account.Authentication.OAuth
             var redirectUri = Uri.EscapeDataString(OAuthProvider.Facebook.CallbackPath());
 
             var tokenResponse = await _http.GetAsync(
-                $"https://graph.facebook.com/v18.0/oauth/access_token?client_id={facebook.AppId}&client_secret={facebook.AppSecret}&code={code}&redirect_uri={redirectUri}");
+                $"https://graph.facebook.com/v26.0/oauth/access_token?client_id={facebook.AppId}&client_secret={facebook.AppSecret}&code={code}&redirect_uri={redirectUri}");
 
             var responseContent = await tokenResponse.Content.ReadAsStringAsync();
 
@@ -93,7 +93,7 @@ namespace PickMeUp.Api.Account.Authentication.OAuth
                 ?? throw new OAuthTokenException(OAuthProvider.Facebook, "Facebook token response was null");
 
             var userInfo = await _http.GetFromJsonAsync<FacebookUserInfo>(
-                $"https://graph.facebook.com/me?fields=id,name,email&access_token={token.AccessToken}")
+                $"https://graph.facebook.com/v26.0/me?fields=id,name,email&access_token={token.AccessToken}")
                 ?? throw new OAuthUserInfoException(OAuthProvider.Facebook, "Facebook user info was null");
 
             return new ExternalIdentity(

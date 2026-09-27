@@ -31,7 +31,7 @@ namespace PickMeUp.Api.Account.Authentication.OAuth
             return provider switch
             {
                 OAuthProvider.Google => "http://localhost:5137/api/auth/callback/google",
-                OAuthProvider.Facebook => "http://localhost:5137/api/auth/callback/facebook",
+                OAuthProvider.Facebook => "https://localhost:7111/api/auth/callback/facebook",
                 _ => string.Empty
             };
         }
