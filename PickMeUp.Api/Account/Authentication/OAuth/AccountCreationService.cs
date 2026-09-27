@@ -11,14 +11,15 @@ namespace PickMeUp.Api.Account.Authentication.OAuth
         Account Create(Account account);
     }
 
-    // Minimal account entity used by the OAuth flow.
+    // Minimal account entity for MongoDB persistence.
+    // Uses plain strings — value objects are for validation only, not storage.
 
     public sealed class Account
     {
         public Guid Id { get; init; }
-        public Email Email { get; init; } = null!;
-        public Username Username { get; init; } = null!;
-        public Avatar Avatar { get; init; } = null!;
+        public string Email { get; init; } = string.Empty;
+        public string Username { get; init; } = string.Empty;
+        public string AvatarUrl { get; init; } = string.Empty;
     }
 
     // Creates a new account from an external OAuth identity.
@@ -27,26 +28,24 @@ namespace PickMeUp.Api.Account.Authentication.OAuth
     {
         private readonly IAccountRepository _accounts = accounts;
 
-        // 1. Check if an account with this email already exists → return it.
-        // 2. Otherwise, build Email, Username, Avatar value objects.
-        // 3. Persist the new account via IAccountRepository.
-
         public Account CreateFromExternal(ExternalIdentity identity)
         {
+            // 1. Check if account already exists
             var existing = _accounts.FindByEmail(identity.Email);
             if (existing is not null)
                 return existing;
 
+            // 2. Validate with value objects
             var email = Email.Create(identity.Email);
             var username = Username.Create(GenerateUsername(identity));
-            var avatar = Avatar.Create(string.Empty, "/avatars/default.png", AvatarTypeStatus.Default);
 
+            // 3. Persist as plain strings
             var account = new Account
             {
                 Id = Guid.NewGuid(),
-                Email = email,
-                Username = username,
-                Avatar = avatar
+                Email = email.Address,
+                Username = username.Value,
+                AvatarUrl = "/avatars/default.png"
             };
 
             return _accounts.Create(account);

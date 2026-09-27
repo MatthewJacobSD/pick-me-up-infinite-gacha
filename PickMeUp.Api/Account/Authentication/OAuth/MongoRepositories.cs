@@ -9,7 +9,7 @@ public sealed class MongoAccountRepository(IMongoDatabase db) : IAccountReposito
     private readonly IMongoCollection<Account> _collection = db.GetCollection<Account>("accounts");
 
     public Account? FindByEmail(string email)
-        => _collection.Find(x => x.Email.Address == email).FirstOrDefault();
+        => _collection.Find(x => x.Email == email).FirstOrDefault();
 
     public Account Create(Account account)
     {
