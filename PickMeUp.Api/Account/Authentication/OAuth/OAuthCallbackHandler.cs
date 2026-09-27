@@ -1,4 +1,6 @@
-﻿using PickMeUp.Api.Account.Authentication.OAuth.Provider;
+﻿using System.Net.Http.Json;
+using System.Text.Json;
+using PickMeUp.Api.Account.Authentication.OAuth.Provider;
 using PickMeUp.Api.Account.Authentication.OAuth.Provider.Facebook;
 using PickMeUp.Api.Account.Authentication.OAuth.Provider.Google;
 
@@ -12,18 +14,13 @@ namespace PickMeUp.Api.Account.Authentication.OAuth
         private readonly OAuthStateValidator _stateValidator = stateValidator;
         private readonly HttpClient _http = http;
 
-        // 1. Validate the CSRF state token.
-        // 2. Exchange the authorization code for an access token.
-        // 3. Fetch user info (email, name, external ID) from the provider.
-        // 4. Return a normalised ExternalIdentity.
-
         public async Task<ExternalIdentity> HandleAsync(
             OAuthProvider provider,
             string code,
             string state)
         {
             if (!_stateValidator.ValidateState(state))
-                throw new OAuthException(provider, "Invalid OAuth state (possible CSRF attack");
+                throw new OAuthException(provider, "Invalid OAuth state (possible CSRF attack)");
 
             if (!_registry.HasProvider(provider))
                 throw new InvalidOperationException("Provider not configured");
@@ -54,10 +51,19 @@ namespace PickMeUp.Api.Account.Authentication.OAuth
                 })
             );
 
-            var token = await tokenResponse.Content.ReadFromJsonAsync<GoogleTokenResponse>();
+            // Check for errors before deserializing
+            if (!tokenResponse.IsSuccessStatusCode)
+            {
+                var errorBody = await tokenResponse.Content.ReadAsStringAsync();
+                throw new OAuthHttpException(OAuthProvider.Google, (int)tokenResponse.StatusCode,
+                    $"Google token exchange failed: {errorBody}");
+            }
+
+            var token = await tokenResponse.Content.ReadFromJsonAsync<GoogleTokenResponse>()
+                ?? throw new OAuthTokenException(OAuthProvider.Google, "Google token response was null");
 
             var userInfo = await _http.GetFromJsonAsync<GoogleUserInfo>(
-                $"https://www.googleapis.com/oauth2/v2/userinfo?access_token={token!.AccessToken}")
+                $"https://www.googleapis.com/oauth2/v2/userinfo?access_token={token.AccessToken}")
                 ?? throw new OAuthUserInfoException(OAuthProvider.Google, "Google user info was null");
 
             return new ExternalIdentity(
@@ -74,11 +80,21 @@ namespace PickMeUp.Api.Account.Authentication.OAuth
         {
             var facebook = (FacebookProvider)_registry.GetProvider(OAuthProvider.Facebook);
 
-            var token = await _http.GetFromJsonAsync<FacebookTokenResponse>(
+            var tokenResponse = await _http.GetAsync(
                 $"https://graph.facebook.com/v18.0/oauth/access_token?client_id={facebook.AppId}&client_secret={facebook.AppSecret}&code={code}&redirect_uri={OAuthProvider.Facebook.CallbackPath()}");
 
+            if (!tokenResponse.IsSuccessStatusCode)
+            {
+                var errorBody = await tokenResponse.Content.ReadAsStringAsync();
+                throw new OAuthHttpException(OAuthProvider.Facebook, (int)tokenResponse.StatusCode,
+                    $"Facebook token exchange failed: {errorBody}");
+            }
+
+            var token = await tokenResponse.Content.ReadFromJsonAsync<FacebookTokenResponse>()
+                ?? throw new OAuthTokenException(OAuthProvider.Facebook, "Facebook token response was null");
+
             var userInfo = await _http.GetFromJsonAsync<FacebookUserInfo>(
-                $"https://graph.facebook.com/me?fields=id,name,email&access_token={token!.AccessToken}")
+                $"https://graph.facebook.com/me?fields=id,name,email&access_token={token.AccessToken}")
                 ?? throw new OAuthUserInfoException(OAuthProvider.Facebook, "Facebook user info was null");
 
             return new ExternalIdentity(
