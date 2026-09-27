@@ -8,41 +8,61 @@ Authentication answers **who the player is**. It is not a setting. QR login, ses
 
 | Concern | Store |
 |---|---|
-| User row, password/lockout, roles | MySQL Identity |
-| External provider key | MySQL |
+| Account (Id, PublicCode, Email, Username) | MongoDB |
+| External provider links (Google, Facebook) | MongoDB (`oauth_identities`) |
 | Access token | Stateless JWT |
 | Refresh token, session, OAuth state | Redis |
 
-## Token contract (required)
+## Account Model
+
+Two IDs per account:
+- **`Id`** (Guid) — internal, server-only, never exposed to clients
+- **`PublicCode`** (MOE-XXXXXXXXXX) — user-facing, Crockford Base32, used for support/invites
+
+Multiple OAuth providers can link to the same account (matched by email).
+
+## Token contract
 
 Access token claims:
 
-- `sub` — `ApplicationUser.Id` as Guid string
+- `sub` — Account `Id` as Guid string
 - `accountId` — same value (explicit for clients)
-
-Do **not** use `User.Identity.Name` unless a `Name` claim is also issued. Controllers today do that; it is a defect.
 
 API code uses `ICurrentUser.AccountId` from `sub` / `NameIdentifier` / `accountId`.
 
-## HTTP (existing shape, keep)
+## HTTP endpoints
 
 | Method | Path | Notes |
 |---|---|---|
-| GET | `/api/auth/login/{provider}` | Google, Facebook |
-| GET | `/api/auth/callback/{provider}` | CSRF state one-time in Redis |
-| POST | `/api/auth/consume-login-code` | Exchange one-time code |
+| GET | `/api/auth/login/{provider}` | 302 redirect to Google/Facebook |
+| GET | `/api/auth/login-url/{provider}` | JSON redirect URL (for programmatic clients) |
+| GET | `/api/auth/callback/{provider}` | CSRF state validated, code exchanged, account created/linked |
+| POST | `/api/auth/consume-login-code` | Exchange one-time loginCode for tokens |
 | POST | `/api/auth/refresh` | Rotate refresh token |
 | POST | `/api/auth/logout` | Revoke session / refresh |
 
+## OAuth providers (verified working in local development)
+
+| Provider | Version | Callback URI | Redirect URI in Console |
+|---|---|---|---|
+| Google | default | `http://localhost:5137/api/auth/callback/google` | HTTP accepted for localhost |
+| Facebook | v26.0 | `https://localhost:7111/api/auth/callback/facebook` | HTTPS required |
+
+**Multi-provider support:** Same email links to same account. Both Google and Facebook can be linked to one account simultaneously.
+
 ## Post-login side effect
 
-After a MySQL user exists:
+After OAuth login:
 
-1. Upsert Mongo `account_preferences` with defaults if missing.
-2. Do not create social documents until the first social action (or create an empty graph doc — pick one and document it in Social). Preferred: create empty social doc lazily.
+1. Find or create `Account` in MongoDB (matched by email)
+2. Link `ExternalAccountLink` in `oauth_identities` (provider + externalId)
+3. Create session in Redis
+4. Generate short-lived `loginCode` (2 minutes)
+5. In Development: return JSON with `publicCode`, `sessionId`, `identity`
+6. In Production: redirect to `CLIENT_COMPLETE_URL` with `loginCode`
 
 ## Out of this milestone
 
-- Multiple simultaneous device session policy beyond “refresh in Redis”
-- Account linking UX polish
+- Multiple simultaneous device session policy beyond "refresh in Redis"
+- Account linking UX polish (unlink provider)
 - Email/password as a primary game login (Identity is present; OAuth is the intended path)

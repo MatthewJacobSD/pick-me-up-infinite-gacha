@@ -727,7 +727,7 @@ If those answers exist first, the C# structure is easy.
 | **Audio** | ✅ Complete | Settings, DTO, PatchDto, Controller, Validator | 9 settings, PATCH support |
 | **UI Preferences** | ✅ Complete | Settings, DTO, PatchDto, Controller, Validator | 13 settings, PATCH support |
 | **Social (relationships)** | ✅ Complete | Repository, Service, Controller, Middleware | Friends, blocks, party invites (MongoDB) |
-| **Authentication** | ✅ Complete | OAuth + Session + JWT + MongoRepositories | Google, Facebook, CSRF state, token rotation |
+| **Authentication** | ✅ Verified | OAuth + Session + JWT + MongoRepositories | Google (v26.0) + Facebook (v26.0), multi-provider linking, MOE- public codes |
 | **Profile** | ✅ Complete | ProfileDocument, Repository, Controller, Validators | Username + Avatar persistence (MongoDB) |
 | **Account Settings** | ✅ Complete | ChangePasswordRequest, Validator, Controller | POST /account/settings/password |
 | **Persistence** | ✅ Complete | IAccountPreferencesRepository + MongoDB | Per-domain get/replace/patch, versioned writes |
