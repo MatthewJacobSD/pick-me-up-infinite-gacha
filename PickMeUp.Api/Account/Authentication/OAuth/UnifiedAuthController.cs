@@ -31,9 +31,22 @@ namespace PickMeUp.Api.Account.Authentication.OAuth
         private readonly Jwt _jwt = jwt;
         private readonly IDistributedCache _cache = cache;
 
-        // 1. Unity calls GET /api/auth/login/{provider} → gets redirect URL.
+        // 1. GET /api/auth/login/{provider} → redirects browser to Google/Facebook.
+        //    For programmatic clients (Unity/Unreal), use /api/auth/login-url/{provider} instead.
         [HttpGet("login/{provider}")]
         public IActionResult Login(string provider)
+        {
+            var parsed = OAuthProviderExtensions.FromString(provider);
+            if (!parsed.IsSupported())
+                return BadRequest("Unsupported provider");
+
+            string redirectUrl = _loginService.BuildRedirectUrl(parsed);
+            return Redirect(redirectUrl);
+        }
+
+        // 1b. GET /api/auth/login-url/{provider} → returns redirect URL as JSON.
+        [HttpGet("login-url/{provider}")]
+        public IActionResult LoginUrl(string provider)
         {
             var parsed = OAuthProviderExtensions.FromString(provider);
             if (!parsed.IsSupported())
@@ -43,9 +56,11 @@ namespace PickMeUp.Api.Account.Authentication.OAuth
             return Ok(new { redirectUrl });
         }
 
-        // 2. GET /api/auth/callback/{provider} → validates state, exchanges code,
+        // 2. GET /signin-{provider} → validates state, exchanges code,
         //    creates account, generates a short-lived loginCode.
+        //    Also handles /api/auth/callback/{provider} for backward compatibility.
         [HttpGet("callback/{provider}")]
+        [HttpGet("/signin-{provider}")]
         public async Task<IActionResult> Callback(
             string provider,
             [FromQuery] string code,

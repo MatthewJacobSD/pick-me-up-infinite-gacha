@@ -8,7 +8,9 @@ builder.Services.AddPickMeUpApi(builder.Configuration);
 var app = builder.Build();
 
 app.UseExceptionHandler();
-app.UseHttpsRedirection();
+// HTTPS redirection disabled for local dev — OAuth callbacks use HTTP.
+// Re-enable in production with a proper reverse proxy.
+// app.UseHttpsRedirection();
 if (app.Environment.IsDevelopment())
 {
     app.UseCors("dev");
