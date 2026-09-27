@@ -38,14 +38,17 @@ namespace PickMeUp.Api.Account.Authentication.OAuth
 
         public ExternalAccountLink LinkOrGetExisting(Guid accountId, ExternalIdentity identity)
         {
+            // 1. Exact match: same provider + same external ID → already linked
             var existingByExternal = _externalAccounts.FindByExternalId(identity.Provider, identity.ExternalId);
             if (existingByExternal is not null)
                 return existingByExternal;
 
+            // 2. Same provider + same email → already linked (different session)
             var existingByEmail = _externalAccounts.FindByEmail(identity.Email);
-            if (existingByEmail is not null)
+            if (existingByEmail is not null && existingByEmail.Provider == identity.Provider)
                 return existingByEmail;
 
+            // 3. Different provider or new email → create new link
             var link = new ExternalAccountLink
             {
                 AccountId = accountId,
