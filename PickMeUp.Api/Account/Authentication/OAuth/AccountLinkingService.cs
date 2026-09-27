@@ -1,4 +1,5 @@
-﻿using MongoDB.Bson.Serialization.Attributes;
+﻿using MongoDB.Bson;
+using MongoDB.Bson.Serialization.Attributes;
 
 namespace PickMeUp.Api.Account.Authentication.OAuth
 {
@@ -19,6 +20,7 @@ namespace PickMeUp.Api.Account.Authentication.OAuth
     public sealed class ExternalAccountLink
     {
         [BsonId]
+        [BsonGuidRepresentation(GuidRepresentation.Standard)]
         public Guid Id { get; init; } = Guid.NewGuid();
         public Guid AccountId { get; init; }
         public OAuthProvider Provider { get; init; }

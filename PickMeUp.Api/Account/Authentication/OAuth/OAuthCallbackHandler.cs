@@ -96,9 +96,14 @@ namespace PickMeUp.Api.Account.Authentication.OAuth
                 $"https://graph.facebook.com/v26.0/me?fields=id,name,email&access_token={token.AccessToken}")
                 ?? throw new OAuthUserInfoException(OAuthProvider.Facebook, "Facebook user info was null");
 
+            // Facebook may not return email even with scope=email
+            var email = !string.IsNullOrWhiteSpace(userInfo.Email)
+                ? userInfo.Email
+                : $"noreply+{userInfo.Id}@facebook.invalid";
+
             return new ExternalIdentity(
                 Provider: OAuthProvider.Facebook,
-                Email: userInfo.Email,
+                Email: email,
                 Name: userInfo.Name,
                 ExternalId: userInfo.Id
             );

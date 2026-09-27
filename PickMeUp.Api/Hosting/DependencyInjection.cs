@@ -126,8 +126,9 @@ public static class DependencyInjection
             ?? configuration["MySql:ConnectionString"]
             ?? throw new InvalidOperationException("MySQL connection string is not configured.");
 
+        // Use explicit version to avoid Pomelo 9 + EF Core 10 AutoDetect incompatibility
         services.AddDbContext<ApplicationDbContext>(options =>
-            options.UseMySql(connectionString, Microsoft.EntityFrameworkCore.ServerVersion.AutoDetect(connectionString)));
+            options.UseMySql(connectionString, new MySqlServerVersion(new Version(8, 0, 36))));
 
         services.AddIdentity<ApplicationUser, IdentityRole<Guid>>(options =>
             {
