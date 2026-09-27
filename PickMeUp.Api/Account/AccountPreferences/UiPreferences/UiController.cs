@@ -1,23 +1,22 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using PickMeUp.Api.Account.AccountPreferences;
 using PickMeUp.Api.Common.Authentication;
 
 namespace PickMeUp.Api.Account.AccountPreferences.UiPreferences
 {
+    /// <summary>
+    /// Provides full-replace read/write for the UI preferences section of an account.
+    /// Covers HUD layout, scale, element visibility, and panel positions.
+    /// </summary>
     [ApiController]
     [Route("account/preferences/ui")]
     [Authorize]
-    public sealed class UiController : ControllerBase
+    public sealed class UiController(IAccountPreferencesRepository repo, ICurrentUser currentUser) : ControllerBase
     {
-        private readonly IAccountPreferencesRepository _repo;
-        private readonly ICurrentUser _currentUser;
+        private readonly IAccountPreferencesRepository _repo = repo;
+        private readonly ICurrentUser _currentUser = currentUser;
 
-        public UiController(IAccountPreferencesRepository repo, ICurrentUser currentUser)
-        {
-            _repo = repo;
-            _currentUser = currentUser;
-        }
+        /**--------[Endpoints]--------**/
 
         [HttpGet]
         public async Task<IActionResult> Get()
@@ -26,6 +25,9 @@ namespace PickMeUp.Api.Account.AccountPreferences.UiPreferences
             return Ok(new { doc.UiPreferences, doc.Version });
         }
 
+        /// <summary>
+        /// Replaces the entire UI preferences block, guarded by optimistic-concurrency version check.
+        /// </summary>
         [HttpPut]
         public async Task<IActionResult> Update([FromBody] UiPreferencesDto dto)
         {

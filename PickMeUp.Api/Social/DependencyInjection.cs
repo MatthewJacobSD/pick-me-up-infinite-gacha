@@ -14,7 +14,7 @@ public static class DependencyInjection
         services.AddHttpContextAccessor();
         services.TryAddScoped<ICurrentUser, CurrentUser>();
 
-        // Preferences DI is still an empty stub. Social registers the read it needs.
+        // Social registers the dependencies it needs.
         services.TryAddSingleton<IAccountPreferencesRepository, AccountPreferencesRepository>();
 
         services.AddSingleton<ISocialVisibilityQuery, PreferencesSocialVisibilityQuery>();

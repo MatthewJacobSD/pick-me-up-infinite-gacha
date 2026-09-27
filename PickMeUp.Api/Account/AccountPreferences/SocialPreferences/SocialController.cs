@@ -1,23 +1,22 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using PickMeUp.Api.Account.AccountPreferences;
 using PickMeUp.Api.Common.Authentication;
 
 namespace PickMeUp.Api.Account.AccountPreferences.SocialPreferences
 {
+    /// <summary>
+    /// Provides full-replace read/write for the social preferences section of an account.
+    /// Controls visibility of friend requests, messages, party invites, and online status.
+    /// </summary>
     [ApiController]
     [Route("account/preferences/social")]
     [Authorize]
-    public sealed class SocialController : ControllerBase
+    public sealed class SocialController(IAccountPreferencesRepository repo, ICurrentUser currentUser) : ControllerBase
     {
-        private readonly IAccountPreferencesRepository _repo;
-        private readonly ICurrentUser _currentUser;
+        private readonly IAccountPreferencesRepository _repo = repo;
+        private readonly ICurrentUser _currentUser = currentUser;
 
-        public SocialController(IAccountPreferencesRepository repo, ICurrentUser currentUser)
-        {
-            _repo = repo;
-            _currentUser = currentUser;
-        }
+        /**--------[Endpoints]--------**/
 
         [HttpGet]
         public async Task<IActionResult> Get()
@@ -26,6 +25,9 @@ namespace PickMeUp.Api.Account.AccountPreferences.SocialPreferences
             return Ok(new { doc.SocialPreferences, doc.Version });
         }
 
+        /// <summary>
+        /// Replaces the entire social settings block, guarded by optimistic-concurrency version check.
+        /// </summary>
         [HttpPut]
         public async Task<IActionResult> Update([FromBody] SocialDto dto)
         {

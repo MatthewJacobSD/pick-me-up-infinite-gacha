@@ -1,5 +1,8 @@
 namespace PickMeUp.Api.Account.AccountPreferences.Notifications;
 
+/// <summary>
+/// Partial-update DTO for notification preferences (PATCH). Null fields are left unchanged.
+/// </summary>
 public sealed record NotificationPatchDto
 {
     public bool? EventNotifications { get; init; }
@@ -9,6 +12,7 @@ public sealed record NotificationPatchDto
     public bool? RewardNotifications { get; init; }
     public int Version { get; init; }
 
+    /// <summary>Merges non-null patch values onto <paramref name="current"/>, returning a new record.</summary>
     public NotificationSettings ApplyTo(NotificationSettings current) => current with
     {
         EventNotifications = EventNotifications ?? current.EventNotifications,

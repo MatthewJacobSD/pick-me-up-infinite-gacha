@@ -1,23 +1,21 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using PickMeUp.Api.Account.AccountPreferences;
 using PickMeUp.Api.Common.Authentication;
 
 namespace PickMeUp.Api.Account.AccountPreferences.Language
 {
+    /// <summary>
+    /// Provides full-replace read/write for the language preferences section of an account.
+    /// </summary>
     [ApiController]
     [Route("account/preferences/language")]
     [Authorize]
-    public sealed class LanguageController : ControllerBase
+    public sealed class LanguageController(IAccountPreferencesRepository repo, ICurrentUser currentUser) : ControllerBase
     {
-        private readonly IAccountPreferencesRepository _repo;
-        private readonly ICurrentUser _currentUser;
+        private readonly IAccountPreferencesRepository _repo = repo;
+        private readonly ICurrentUser _currentUser = currentUser;
 
-        public LanguageController(IAccountPreferencesRepository repo, ICurrentUser currentUser)
-        {
-            _repo = repo;
-            _currentUser = currentUser;
-        }
+        /**--------[Endpoints]--------**/
 
         [HttpGet]
         public async Task<IActionResult> Get()
@@ -26,6 +24,9 @@ namespace PickMeUp.Api.Account.AccountPreferences.Language
             return Ok(new { doc.Language, doc.Version });
         }
 
+        /// <summary>
+        /// Replaces the entire language settings block, guarded by optimistic-concurrency version check.
+        /// </summary>
         [HttpPut]
         public async Task<IActionResult> Update([FromBody] LanguageSettingsDto dto)
         {

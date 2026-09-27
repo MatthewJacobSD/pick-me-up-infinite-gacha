@@ -1,15 +1,24 @@
 namespace PickMeUp.Api.Account.AccountPreferences.UiPreferences;
 
+/// <summary>
+/// Partial-update DTO for UI preferences (PATCH). Null fields are left unchanged.
+/// </summary>
 public sealed record UiPatchDto
 {
+    /**--------[Scale & Sizing]--------**/
+
     public float? UiScale { get; init; }
     public UiTextSize? TextSize { get; init; }
     public UiIconSize? IconSize { get; init; }
+
+    /**--------[Element Visibility]--------**/
 
     public bool? ShowMinimap { get; init; }
     public bool? ShowChatWindow { get; init; }
     public bool? ShowQuestTracker { get; init; }
     public bool? ShowActionBars { get; init; }
+
+    /**--------[Panel Positions & Layouts]--------**/
 
     public HudPosition? MinimapPosition { get; init; }
     public HudPosition? ChatWindowPosition { get; init; }
@@ -21,6 +30,7 @@ public sealed record UiPatchDto
 
     public int Version { get; init; }
 
+    /// <summary>Merges non-null patch values onto <paramref name="current"/>, returning a new record.</summary>
     public UiSettings ApplyTo(UiSettings current) => current with
     {
         UiScale = UiScale ?? current.UiScale,

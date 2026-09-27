@@ -2,6 +2,9 @@
 
 namespace PickMeUp.Api.Account.AccountPreferences.UiPreferences
 {
+    /// <summary>
+    /// FluentValidation rules for <see cref="UiPreferencesDto"/> — clamps UI scale and validates all enum fields.
+    /// </summary>
     public sealed class UiValidator : AbstractValidator<UiPreferencesDto>
     {
         public UiValidator()

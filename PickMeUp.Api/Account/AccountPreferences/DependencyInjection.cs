@@ -4,7 +4,9 @@ public static class DependencyInjection
 {
     public static IServiceCollection AddAccountPreferences(this IServiceCollection services)
     {
-        // Phase 1 agent will fill this in
+        // All preferences are registered via Hosting/DependencyInjection.cs
+        // (MongoDB client/database, repository, validators via assembly scan).
+        // This module has no additional services to register.
         return services;
     }
 }

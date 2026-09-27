@@ -4,9 +4,9 @@ using Xunit;
 
 namespace PickMeUp.Api.Tests.Tests.Validators;
 
-public class AudioPreferencesValidatorTests
+public class AudioValidatorTests
 {
-    private readonly AudioPreferencesValidator _sut = new();
+    private readonly AudioValidator _sut = new();
 
     [Theory]
     [InlineData(0f)]
@@ -14,7 +14,7 @@ public class AudioPreferencesValidatorTests
     [InlineData(1f)]
     public void Validate_ValidMasterVolume_ReturnsValid(float vol)
     {
-        var dto = new AudioPreferencesDto { MasterVolume = vol };
+        var dto = new AudioDto { MasterVolume = vol };
         var result = _sut.Validate(dto);
         result.IsValid.Should().BeTrue();
     }
@@ -27,10 +27,10 @@ public class AudioPreferencesValidatorTests
     [InlineData(float.NegativeInfinity)]
     public void Validate_InvalidMasterVolume_ReturnsInvalid(float vol)
     {
-        var dto = new AudioPreferencesDto { MasterVolume = vol };
+        var dto = new AudioDto { MasterVolume = vol };
         var result = _sut.Validate(dto);
         result.IsValid.Should().BeFalse();
-        result.Errors.Should().Contain(e => e.PropertyName == nameof(AudioPreferencesDto.MasterVolume));
+        result.Errors.Should().Contain(e => e.PropertyName == nameof(AudioDto.MasterVolume));
     }
 
     [Theory]
@@ -39,7 +39,7 @@ public class AudioPreferencesValidatorTests
     [InlineData(1f)]
     public void Validate_ValidMusicVolume_ReturnsValid(float vol)
     {
-        var dto = new AudioPreferencesDto { MusicVolume = vol };
+        var dto = new AudioDto { MusicVolume = vol };
         var result = _sut.Validate(dto);
         result.IsValid.Should().BeTrue();
     }
@@ -50,7 +50,7 @@ public class AudioPreferencesValidatorTests
     [InlineData(float.NaN)]
     public void Validate_InvalidMusicVolume_ReturnsInvalid(float vol)
     {
-        var dto = new AudioPreferencesDto { MusicVolume = vol };
+        var dto = new AudioDto { MusicVolume = vol };
         var result = _sut.Validate(dto);
         result.IsValid.Should().BeFalse();
     }
@@ -61,7 +61,7 @@ public class AudioPreferencesValidatorTests
     [InlineData(1f)]
     public void Validate_ValidSfxVolume_ReturnsValid(float vol)
     {
-        var dto = new AudioPreferencesDto { SfxVolume = vol };
+        var dto = new AudioDto { SfxVolume = vol };
         var result = _sut.Validate(dto);
         result.IsValid.Should().BeTrue();
     }
@@ -71,7 +71,7 @@ public class AudioPreferencesValidatorTests
     [InlineData(1.1f)]
     public void Validate_InvalidSfxVolume_ReturnsInvalid(float vol)
     {
-        var dto = new AudioPreferencesDto { SfxVolume = vol };
+        var dto = new AudioDto { SfxVolume = vol };
         var result = _sut.Validate(dto);
         result.IsValid.Should().BeFalse();
     }
@@ -82,7 +82,7 @@ public class AudioPreferencesValidatorTests
     [InlineData(1f)]
     public void Validate_ValidVoiceVolume_ReturnsValid(float vol)
     {
-        var dto = new AudioPreferencesDto { VoiceVolume = vol };
+        var dto = new AudioDto { VoiceVolume = vol };
         var result = _sut.Validate(dto);
         result.IsValid.Should().BeTrue();
     }
@@ -93,7 +93,7 @@ public class AudioPreferencesValidatorTests
     [InlineData(float.PositiveInfinity)]
     public void Validate_InvalidVoiceVolume_ReturnsInvalid(float vol)
     {
-        var dto = new AudioPreferencesDto { VoiceVolume = vol };
+        var dto = new AudioDto { VoiceVolume = vol };
         var result = _sut.Validate(dto);
         result.IsValid.Should().BeFalse();
     }
@@ -104,7 +104,7 @@ public class AudioPreferencesValidatorTests
     [InlineData(1f)]
     public void Validate_ValidAmbientVolume_ReturnsValid(float vol)
     {
-        var dto = new AudioPreferencesDto { AmbientVolume = vol };
+        var dto = new AudioDto { AmbientVolume = vol };
         var result = _sut.Validate(dto);
         result.IsValid.Should().BeTrue();
     }
@@ -115,7 +115,7 @@ public class AudioPreferencesValidatorTests
     [InlineData(float.NaN)]
     public void Validate_InvalidAmbientVolume_ReturnsInvalid(float vol)
     {
-        var dto = new AudioPreferencesDto { AmbientVolume = vol };
+        var dto = new AudioDto { AmbientVolume = vol };
         var result = _sut.Validate(dto);
         result.IsValid.Should().BeFalse();
     }
@@ -123,7 +123,7 @@ public class AudioPreferencesValidatorTests
     [Fact]
     public void Validate_AllDefaults_ReturnsValid()
     {
-        var dto = new AudioPreferencesDto();
+        var dto = new AudioDto();
         var result = _sut.Validate(dto);
         result.IsValid.Should().BeTrue();
     }

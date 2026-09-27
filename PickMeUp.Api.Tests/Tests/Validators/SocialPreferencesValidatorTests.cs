@@ -4,9 +4,9 @@ using Xunit;
 
 namespace PickMeUp.Api.Tests.Tests.Validators;
 
-public class SocialPreferencesValidatorTests
+public class SocialValidatorTests
 {
-    private readonly SocialPreferencesValidator _sut = new();
+    private readonly SocialValidator _sut = new();
 
     [Theory]
     [InlineData(SocialVisibility.Everyone)]
@@ -14,7 +14,7 @@ public class SocialPreferencesValidatorTests
     [InlineData(SocialVisibility.Nobody)]
     public void Validate_ValidFriendRequests_ReturnsValid(SocialVisibility vis)
     {
-        var dto = new SocialPreferencesDto { FriendRequests = vis };
+        var dto = new SocialDto { FriendRequests = vis };
         var result = _sut.Validate(dto);
         result.IsValid.Should().BeTrue();
     }
@@ -22,10 +22,10 @@ public class SocialPreferencesValidatorTests
     [Fact]
     public void Validate_InvalidFriendRequests_ReturnsInvalid()
     {
-        var dto = new SocialPreferencesDto { FriendRequests = (SocialVisibility)999 };
+        var dto = new SocialDto { FriendRequests = (SocialVisibility)999 };
         var result = _sut.Validate(dto);
         result.IsValid.Should().BeFalse();
-        result.Errors.Should().Contain(e => e.PropertyName == nameof(SocialPreferencesDto.FriendRequests));
+        result.Errors.Should().Contain(e => e.PropertyName == nameof(SocialDto.FriendRequests));
     }
 
     [Theory]
@@ -34,7 +34,7 @@ public class SocialPreferencesValidatorTests
     [InlineData(SocialVisibility.Nobody)]
     public void Validate_ValidMessages_ReturnsValid(SocialVisibility vis)
     {
-        var dto = new SocialPreferencesDto { Messages = vis };
+        var dto = new SocialDto { Messages = vis };
         var result = _sut.Validate(dto);
         result.IsValid.Should().BeTrue();
     }
@@ -42,10 +42,10 @@ public class SocialPreferencesValidatorTests
     [Fact]
     public void Validate_InvalidMessages_ReturnsInvalid()
     {
-        var dto = new SocialPreferencesDto { Messages = (SocialVisibility)999 };
+        var dto = new SocialDto { Messages = (SocialVisibility)999 };
         var result = _sut.Validate(dto);
         result.IsValid.Should().BeFalse();
-        result.Errors.Should().Contain(e => e.PropertyName == nameof(SocialPreferencesDto.Messages));
+        result.Errors.Should().Contain(e => e.PropertyName == nameof(SocialDto.Messages));
     }
 
     [Theory]
@@ -54,7 +54,7 @@ public class SocialPreferencesValidatorTests
     [InlineData(SocialVisibility.Nobody)]
     public void Validate_ValidPartyInvites_ReturnsValid(SocialVisibility vis)
     {
-        var dto = new SocialPreferencesDto { PartyInvites = vis };
+        var dto = new SocialDto { PartyInvites = vis };
         var result = _sut.Validate(dto);
         result.IsValid.Should().BeTrue();
     }
@@ -62,7 +62,7 @@ public class SocialPreferencesValidatorTests
     [Fact]
     public void Validate_InvalidPartyInvites_ReturnsInvalid()
     {
-        var dto = new SocialPreferencesDto { PartyInvites = (SocialVisibility)999 };
+        var dto = new SocialDto { PartyInvites = (SocialVisibility)999 };
         var result = _sut.Validate(dto);
         result.IsValid.Should().BeFalse();
     }
@@ -73,7 +73,7 @@ public class SocialPreferencesValidatorTests
     [InlineData(SocialVisibility.Nobody)]
     public void Validate_ValidOnlineStatus_ReturnsValid(SocialVisibility vis)
     {
-        var dto = new SocialPreferencesDto { OnlineStatus = vis };
+        var dto = new SocialDto { OnlineStatus = vis };
         var result = _sut.Validate(dto);
         result.IsValid.Should().BeTrue();
     }
@@ -81,7 +81,7 @@ public class SocialPreferencesValidatorTests
     [Fact]
     public void Validate_InvalidOnlineStatus_ReturnsInvalid()
     {
-        var dto = new SocialPreferencesDto { OnlineStatus = (SocialVisibility)999 };
+        var dto = new SocialDto { OnlineStatus = (SocialVisibility)999 };
         var result = _sut.Validate(dto);
         result.IsValid.Should().BeFalse();
     }
@@ -89,7 +89,7 @@ public class SocialPreferencesValidatorTests
     [Fact]
     public void Validate_AllDefaults_ReturnsValid()
     {
-        var dto = new SocialPreferencesDto();
+        var dto = new SocialDto();
         var result = _sut.Validate(dto);
         result.IsValid.Should().BeTrue();
     }

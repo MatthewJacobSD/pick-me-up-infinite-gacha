@@ -1,17 +1,11 @@
 using System.Text;
 using System.Threading.RateLimiting;
 using FluentValidation;
-using HealthChecks.MongoDb;
-using HealthChecks.MySql;
-using HealthChecks.Redis;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.RateLimiting;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
 using MongoDB.Bson;
 using MongoDB.Bson.Serialization;
@@ -20,12 +14,10 @@ using MongoDB.Driver;
 using PickMeUp.Api.Account.AccountPreferences;
 using PickMeUp.Api.Account.Authentication;
 using PickMeUp.Api.Account.Authentication.OAuth;
-using PickMeUp.Api.Account.Authentication.OAuth.Provider;
 using PickMeUp.Api.Account.Authentication.Session;
 using PickMeUp.Api.Account.Profile;
 using PickMeUp.Api.DoNotTouchFolder;
 using PickMeUp.Api.Social;
-using StackExchange.Redis;
 
 namespace PickMeUp.Api.Hosting;
 

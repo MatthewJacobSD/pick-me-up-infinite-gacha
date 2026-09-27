@@ -1,6 +1,3 @@
-using System.Threading.RateLimiting;
-using Microsoft.Extensions.Options;
-
 namespace PickMeUp.Api.Hosting;
 
 /// <summary>

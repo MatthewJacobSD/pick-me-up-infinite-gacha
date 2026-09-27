@@ -1,6 +1,5 @@
 using MongoDB.Driver;
 using PickMeUp.Api.Common.Errors;
-using PickMeUp.Api.Account.Authentication.OAuth;
 
 namespace PickMeUp.Api.Account.Authentication.OAuth;
 

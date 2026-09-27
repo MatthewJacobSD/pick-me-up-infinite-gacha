@@ -2,7 +2,6 @@
 using MongoDB.Bson;
 using MongoDB.Bson.Serialization.Attributes;
 using PickMeUp.Api.Account.Profile;
-using static PickMeUp.Api.Account.Profile.Avatar;
 
 namespace PickMeUp.Api.Account.Authentication.OAuth
 {

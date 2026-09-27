@@ -1,35 +1,51 @@
 ﻿namespace PickMeUp.Api.Account.AccountPreferences.Gameplay
 {
+    /// <summary>
+    /// Full-replace DTO for gameplay preferences (PUT). Every field is required.
+    /// </summary>
     public sealed class GameplayDto
     {
+        /**--------[Action Bars]--------**/
+
         public int VisibleActionBars { get; init; }
         public bool ShowCooldownNumbers { get; init; }
         public bool ShowKeybindLabels { get; init; }
         public bool LockActionBars { get; init; }
+
+        /**--------[Combat Display]--------**/
 
         public bool ShowDamageNumbers { get; init; }
         public bool ShowHealingNumbers { get; init; }
         public bool ShowCriticalEffects { get; init; }
         public bool ShowFloatingCombatText { get; init; }
 
+        /**--------[Camera]--------**/
+
         public bool InvertYAxis { get; init; }
         public bool InvertXAxis { get; init; }
         public float CameraSensitivity { get; init; }
         public float FieldOfView { get; init; }
 
+        /**--------[Interaction]--------**/
+
         public bool AutoLoot { get; init; }
         public bool HighlightInteractables { get; init; }
+
+        /**--------[Nameplates]--------**/
 
         public bool ShowNameplates { get; init; }
         public bool ShowEnemyNameplates { get; init; }
         public bool ShowFriendlyNameplates { get; init; }
         public bool ShowPingIndicators { get; init; }
 
+        /**--------[Movement]--------**/
+
         public bool AutoRunToggle { get; init; }
         public bool ToggleSprint { get; init; }
 
         public int Version { get; init; }
 
+        /// <summary>Maps this DTO to the domain <see cref="GameplaySettings"/> record.</summary>
         public GameplaySettings ToSettings() => new()
         {
             VisibleActionBars = VisibleActionBars,
@@ -60,6 +76,9 @@
         };
     }
 
+    /// <summary>
+    /// Partial-update DTO for gameplay preferences (PATCH). Null fields are left unchanged.
+    /// </summary>
     public sealed class GameplayPatchDto
     {
         public int? VisibleActionBars { get; init; }
@@ -90,6 +109,7 @@
 
         public int Version { get; init; }
 
+        /// <summary>Merges non-null patch values onto <paramref name="current"/>, returning a new record.</summary>
         public GameplaySettings ToApply(GameplaySettings current) => current with 
         {
             VisibleActionBars = VisibleActionBars ?? current.VisibleActionBars,

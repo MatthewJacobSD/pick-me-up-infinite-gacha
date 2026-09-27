@@ -9,9 +9,9 @@ namespace PickMeUp.Api.Tests.Tests;
 
 public class AccountPreferencesRepositoryTests
 {
-    private static AccountPreferencesDocument CreateDoc(Guid? accountId = null, int version = 1)
+    private static AccountDocument CreateDoc(Guid? accountId = null, int version = 1)
     {
-        return new AccountPreferencesDocument
+        return new AccountDocument
         {
             AccountId = accountId ?? Guid.NewGuid(),
             UserId = "test-user",
@@ -21,7 +21,7 @@ public class AccountPreferencesRepositoryTests
                 CameraSensitivity = 2.5f,
                 FieldOfView = 90f
             },
-            SocialPreferences = new SocialPreferencesSettings
+            SocialPreferences = new SocialSettings
             {
                 FriendRequests = SocialVisibility.FriendsOnly,
                 Messages = SocialVisibility.Nobody,
@@ -32,14 +32,14 @@ public class AccountPreferencesRepositoryTests
         };
     }
 
-    private static AccountPreferencesDocument CreateDefaultDoc(Guid accountId)
+    private static AccountDocument CreateDefaultDoc(Guid accountId)
     {
-        return new AccountPreferencesDocument
+        return new AccountDocument
         {
             AccountId = accountId,
             UserId = "new-user",
             Gameplay = new GameplaySettings(),
-            SocialPreferences = new SocialPreferencesSettings(),
+            SocialPreferences = new SocialSettings(),
             Version = 1
         };
     }
@@ -79,41 +79,41 @@ public class AccountPreferencesRepositoryTests
     }
 
     [Fact]
-    public async Task UpdateGameplaySettingsAsync_ValidVersion_ReturnsNewVersion()
+    public async Task ReplaceGameplaySettingsAsync_ValidVersion_ReturnsNewVersion()
     {
         var accountId = Guid.NewGuid();
         var updatedSettings = new GameplaySettings { VisibleActionBars = 3 };
 
         var mockRepo = new Mock<IAccountPreferencesRepository>();
-        mockRepo.Setup(r => r.UpdateGameplaySettingsAsync(accountId, updatedSettings, 1))
-            .ReturnsAsync(2);
+        mockRepo.Setup(r => r.ReplaceGameplaySettingsAsync(accountId, updatedSettings, 1))
+            .ReturnsAsync(CreateDoc(accountId, version: 2));
 
-        var result = await mockRepo.Object.UpdateGameplaySettingsAsync(accountId, updatedSettings, 1);
+        var result = await mockRepo.Object.ReplaceGameplaySettingsAsync(accountId, updatedSettings, 1);
 
-        result.Should().Be(2);
+        result.Version.Should().Be(2);
     }
 
     [Fact]
-    public async Task UpdateGameplaySettingsAsync_StaleVersion_ThrowsConcurrencyException()
+    public async Task ReplaceGameplaySettingsAsync_StaleVersion_ThrowsConcurrencyException()
     {
         var accountId = Guid.NewGuid();
         var updatedSettings = new GameplaySettings { VisibleActionBars = 3 };
 
         var mockRepo = new Mock<IAccountPreferencesRepository>();
-        mockRepo.Setup(r => r.UpdateGameplaySettingsAsync(accountId, updatedSettings, 1))
+        mockRepo.Setup(r => r.ReplaceGameplaySettingsAsync(accountId, updatedSettings, 1))
             .ThrowsAsync(new InvalidOperationException("Stale version"));
 
         await FluentActions.Invoking(() =>
-                mockRepo.Object.UpdateGameplaySettingsAsync(accountId, updatedSettings, 1))
+                mockRepo.Object.ReplaceGameplaySettingsAsync(accountId, updatedSettings, 1))
             .Should().ThrowAsync<InvalidOperationException>()
             .WithMessage("Stale version");
     }
 
     [Fact]
-    public async Task UpdateSocialPreferencesAsync_ValidVersion_ReturnsNewVersion()
+    public async Task ReplaceSocialPreferencesSettingsAsync_ValidVersion_ReturnsNewVersion()
     {
         var accountId = Guid.NewGuid();
-        var updatedSettings = new SocialPreferencesSettings
+        var updatedSettings = new SocialSettings
         {
             FriendRequests = SocialVisibility.Nobody,
             Messages = SocialVisibility.Nobody,
@@ -122,16 +122,16 @@ public class AccountPreferencesRepositoryTests
         };
 
         var mockRepo = new Mock<IAccountPreferencesRepository>();
-        mockRepo.Setup(r => r.UpdateSocialPreferencesAsync(accountId, updatedSettings, 2))
-            .ReturnsAsync(3);
+        mockRepo.Setup(r => r.ReplaceSocialPreferencesSettingsAsync(accountId, updatedSettings, 2))
+            .ReturnsAsync(CreateDoc(accountId, version: 3));
 
-        var result = await mockRepo.Object.UpdateSocialPreferencesAsync(accountId, updatedSettings, 2);
+        var result = await mockRepo.Object.ReplaceSocialPreferencesSettingsAsync(accountId, updatedSettings, 2);
 
-        result.Should().Be(3);
+        result.Version.Should().Be(3);
     }
 
     [Fact]
-    public async Task UpdateGameplaySettingsAsync_DifferentSlicesUntouched()
+    public async Task ReplaceGameplaySettingsAsync_DifferentSlicesUntouched()
     {
         var accountId = Guid.NewGuid();
         var originalDoc = CreateDoc(accountId, version: 1);
@@ -139,13 +139,13 @@ public class AccountPreferencesRepositoryTests
 
         var mockRepo = new Mock<IAccountPreferencesRepository>();
         mockRepo.Setup(r => r.GetOrCreateAsync(accountId)).ReturnsAsync(originalDoc);
-        mockRepo.Setup(r => r.UpdateGameplaySettingsAsync(accountId, updatedSettings, 1))
-            .ReturnsAsync(2);
+        mockRepo.Setup(r => r.ReplaceGameplaySettingsAsync(accountId, updatedSettings, 1))
+            .ReturnsAsync(CreateDoc(accountId, version: 2));
 
-        var newVersion = await mockRepo.Object.UpdateGameplaySettingsAsync(accountId, updatedSettings, 1);
+        var newVersion = await mockRepo.Object.ReplaceGameplaySettingsAsync(accountId, updatedSettings, 1);
         var doc = await mockRepo.Object.GetOrCreateAsync(accountId);
 
-        newVersion.Should().Be(2);
+        newVersion.Version.Should().Be(2);
         doc.SocialPreferences.FriendRequests.Should().Be(SocialVisibility.FriendsOnly);
         doc.SocialPreferences.Messages.Should().Be(SocialVisibility.Nobody);
     }
@@ -165,17 +165,17 @@ public class AccountPreferencesRepositoryTests
     }
 
     [Fact]
-    public async Task UpdateSocialPreferencesAsync_StaleVersion_Throws()
+    public async Task ReplaceSocialPreferencesSettingsAsync_StaleVersion_Throws()
     {
         var accountId = Guid.NewGuid();
-        var settings = new SocialPreferencesSettings();
+        var settings = new SocialSettings();
 
         var mockRepo = new Mock<IAccountPreferencesRepository>();
-        mockRepo.Setup(r => r.UpdateSocialPreferencesAsync(accountId, settings, 5))
+        mockRepo.Setup(r => r.ReplaceSocialPreferencesSettingsAsync(accountId, settings, 5))
             .ThrowsAsync(new InvalidOperationException("Stale version"));
 
         await FluentActions.Invoking(() =>
-                mockRepo.Object.UpdateSocialPreferencesAsync(accountId, settings, 5))
+                mockRepo.Object.ReplaceSocialPreferencesSettingsAsync(accountId, settings, 5))
             .Should().ThrowAsync<InvalidOperationException>()
             .WithMessage("Stale version");
     }

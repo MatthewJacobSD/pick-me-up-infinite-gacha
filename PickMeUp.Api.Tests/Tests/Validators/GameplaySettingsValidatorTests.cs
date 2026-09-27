@@ -4,11 +4,11 @@ using Xunit;
 
 namespace PickMeUp.Api.Tests.Tests.Validators;
 
-public class GameplaySettingsValidatorTests
+public class GameplayValidatorTests
 {
-    private readonly GameplaySettingsValidator _sut = new();
+    private readonly GameplayValidator _sut = new();
 
-    private static GameplaySettingsDto ValidDto(int? actionBars = null, float? sensitivity = null, float? fov = null) => new()
+    private static GameplayDto ValidDto(int? actionBars = null, float? sensitivity = null, float? fov = null) => new()
     {
         VisibleActionBars = actionBars ?? 3,
         CameraSensitivity = sensitivity ?? 1.0f,
@@ -35,7 +35,7 @@ public class GameplaySettingsValidatorTests
         var dto = ValidDto(actionBars: bars);
         var result = _sut.Validate(dto);
         result.IsValid.Should().BeFalse();
-        result.Errors.Should().Contain(e => e.PropertyName == nameof(GameplaySettingsDto.VisibleActionBars));
+        result.Errors.Should().Contain(e => e.PropertyName == nameof(GameplayDto.VisibleActionBars));
     }
 
     [Theory]

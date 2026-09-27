@@ -1,5 +1,4 @@
 using System.Reflection;
-using DotNetEnv;
 
 namespace PickMeUp.Api.Hosting;
 

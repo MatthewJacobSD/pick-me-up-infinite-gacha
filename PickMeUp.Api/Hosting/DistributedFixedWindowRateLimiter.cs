@@ -1,6 +1,4 @@
 using System.Threading.RateLimiting;
-using Microsoft.AspNetCore.Http;
-using Microsoft.Extensions.Options;
 using StackExchange.Redis;
 
 namespace PickMeUp.Api.Hosting;
@@ -11,24 +9,16 @@ namespace PickMeUp.Api.Hosting;
 /// The partition key is embedded at construction time so the <see cref="RateLimiter"/> API
 /// (which has no context parameter) works cleanly.
 /// </summary>
-public sealed class RedisBackedFixedWindowLimiter : RateLimiter
+public sealed class RedisBackedFixedWindowLimiter(
+    IConnectionMultiplexer redis,
+    DistributedFixedWindowRateLimiterOptions options,
+    string partitionKey) : RateLimiter()
 {
-    private readonly IDatabase _db;
-    private readonly DistributedFixedWindowRateLimiterOptions _options;
-    private readonly string _partitionKey;
+    private readonly IDatabase _db = (redis ?? throw new ArgumentNullException(nameof(redis))).GetDatabase();
+    private readonly DistributedFixedWindowRateLimiterOptions _options = options ?? throw new ArgumentNullException(nameof(options));
+    private readonly string _partitionKey = partitionKey ?? throw new ArgumentNullException(nameof(partitionKey));
     private long _totalFailedLeases;
     private long _totalSuccessfulLeases;
-
-    public RedisBackedFixedWindowLimiter(
-        IConnectionMultiplexer redis,
-        DistributedFixedWindowRateLimiterOptions options,
-        string partitionKey)
-        : base()
-    {
-        _db = (redis ?? throw new ArgumentNullException(nameof(redis))).GetDatabase();
-        _options = options ?? throw new ArgumentNullException(nameof(options));
-        _partitionKey = partitionKey ?? throw new ArgumentNullException(nameof(partitionKey));
-    }
 
     public override TimeSpan? IdleDuration => null;
 

@@ -4,6 +4,11 @@ using PickMeUp.Api.Common.Authentication;
 
 namespace PickMeUp.Api.Account.Profile;
 
+/**--------[Controller]--------**/
+
+/// <summary>
+/// REST endpoints for reading and updating the authenticated player's profile.
+/// </summary>
 [ApiController]
 [Route("account/profile")]
 [Authorize]
@@ -18,6 +23,7 @@ public sealed class ProfileController : ControllerBase
         _currentUser = currentUser;
     }
 
+    // GET /account/profile — returns the caller's profile (auto-created on first hit).
     [HttpGet]
     public async Task<IActionResult> Get()
     {
@@ -25,6 +31,8 @@ public sealed class ProfileController : ControllerBase
         return Ok(ProfileDto.FromDocument(doc));
     }
 
+    // PUT /account/profile/username — replaces the caller's display name.
+    // Version is required for optimistic concurrency; client must send the version it last read.
     [HttpPut("username")]
     public async Task<IActionResult> UpdateUsername([FromBody] UpdateUsernameDto dto)
     {
@@ -33,6 +41,7 @@ public sealed class ProfileController : ControllerBase
         return Ok(ProfileDto.FromDocument(doc));
     }
 
+    // PUT /account/profile/avatar — replaces the caller's avatar selection.
     [HttpPut("avatar")]
     public async Task<IActionResult> UpdateAvatar([FromBody] UpdateAvatarDto dto)
     {

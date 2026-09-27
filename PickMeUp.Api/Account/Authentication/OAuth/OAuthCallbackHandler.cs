@@ -1,5 +1,4 @@
-﻿using System.Net.Http.Json;
-using System.Text.Json;
+﻿using System.Text.Json;
 using PickMeUp.Api.Account.Authentication.OAuth.Provider;
 using PickMeUp.Api.Account.Authentication.OAuth.Provider.Facebook;
 using PickMeUp.Api.Account.Authentication.OAuth.Provider.Google;

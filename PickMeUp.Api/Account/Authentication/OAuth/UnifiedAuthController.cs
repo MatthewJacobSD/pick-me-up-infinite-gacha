@@ -113,7 +113,7 @@ public sealed class AuthController(
             }
 
             var clientUrl = Environment.GetEnvironmentVariable("CLIENT_COMPLETE_URL")
-                ?? "https://yourgame.com/auth/complete";
+                ?? "https://placeholder_game_url.com/auth/complete";
             return Redirect($"{clientUrl}?loginCode={loginCode}");
         }
         catch (OAuthHttpException ex)
@@ -121,7 +121,7 @@ public sealed class AuthController(
             Console.WriteLine($"[OAuth] ERROR: {ex.StatusCode} - {ex.Message}");
             return StatusCode((int)ex.StatusCode, new
             {
-                type = "https://pickmeup/errors/oauth",
+                type = "https://moebius-pick_me_up_infinite_gacha/errors/oauth",
                 title = "OAuth Error",
                 status = ex.StatusCode,
                 detail = ex.Message,
@@ -133,7 +133,7 @@ public sealed class AuthController(
             Console.WriteLine($"[OAuth] ERROR: {ex.Message}");
             return Unauthorized(new
             {
-                type = "https://pickmeup/errors/oauth",
+                type = "https://moebius-pick_me_up_infinite_gacha/errors/oauth",
                 title = "OAuth Error",
                 status = 401,
                 detail = ex.Message,

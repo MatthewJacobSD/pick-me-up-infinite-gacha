@@ -4,9 +4,9 @@ using Xunit;
 
 namespace PickMeUp.Api.Tests.Tests.Validators;
 
-public class UiPreferencesValidatorTests
+public class UiValidatorTests
 {
-    private readonly UiPreferencesValidator _sut = new();
+    private readonly UiValidator _sut = new();
 
     private static UiPreferencesDto ValidDto(
         float? scale = null,

@@ -6,14 +6,9 @@ namespace PickMeUp.Api.Common.Authentication;
 /// Resolves the current user from HttpContext claims. Supports multiple claim layouts
 /// (NameIdentifier, sub, accountId) for compatibility with different auth providers.
 /// </summary>
-public sealed class CurrentUser : ICurrentUser
+public sealed class CurrentUser(IHttpContextAccessor httpContextAccessor) : ICurrentUser
 {
-    private readonly IHttpContextAccessor _httpContextAccessor;
-
-    public CurrentUser(IHttpContextAccessor httpContextAccessor)
-    {
-        _httpContextAccessor = httpContextAccessor;
-    }
+    private readonly IHttpContextAccessor _httpContextAccessor = httpContextAccessor;
 
     public Guid AccountId
     {

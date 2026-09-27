@@ -4,9 +4,9 @@ using Xunit;
 
 namespace PickMeUp.Api.Tests.Tests.Validators;
 
-public class LanguageSettingsValidatorTests
+public class LanguageValidatorTests
 {
-    private readonly LanguageSettingsValidator _sut = new();
+    private readonly LanguageValidator _sut = new();
 
     [Theory]
     [InlineData("en")]

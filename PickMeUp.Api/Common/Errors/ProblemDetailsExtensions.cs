@@ -9,7 +9,7 @@ namespace PickMeUp.Api.Common.Errors;
 /// </summary>
 public static class ProblemDetailsExtensions
 {
-    private const string BaseUri = "https://pickmeup/errors/";
+    private const string BaseUri = "https://moebius-pick_me_up_infinite_gacha/errors/";
 
     public static IApplicationBuilder UseDomainExceptionHandling(this IApplicationBuilder app)
     {
