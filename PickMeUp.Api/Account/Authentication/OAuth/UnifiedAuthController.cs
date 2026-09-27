@@ -1,7 +1,10 @@
 ﻿using System.Net;
+using FluentValidation;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Caching.Distributed;
 using PickMeUp.Api.Account.Authentication.Session;
+using PickMeUp.Api.DoNotTouchFolder;
 
 namespace PickMeUp.Api.Account.Authentication.OAuth
 {
@@ -14,6 +17,8 @@ namespace PickMeUp.Api.Account.Authentication.OAuth
     ///   3. GET  /api/auth/callback/{provider}    → exchange code, create session, redirect with loginCode
     ///   4. POST /api/auth/consume-login-code     → exchange loginCode for tokens
     ///   5. POST /api/auth/logout                 → revoke session
+    ///   6. POST /api/auth/register               → email+password registration
+    ///   7. POST /api/auth/recover                → recover soft-deleted account
     /// </summary>
     [ApiController]
     [Route("api/auth")]
@@ -27,7 +32,11 @@ namespace PickMeUp.Api.Account.Authentication.OAuth
         TokenGeneratorService tokenGenerator,
         RefreshTokenService refreshTokenService,
         Jwt jwt,
-        IDistributedCache cache) : ControllerBase
+        IDistributedCache cache,
+        UserManager<ApplicationUser> userManager,
+        IAccountRepository accountRepository,
+        IValidator<RegisterRequest> registerValidator,
+        IValidator<RecoverRequest> recoverValidator) : ControllerBase
     {
         private readonly ExternalLoginService _loginService = loginService;
         private readonly OAuthCallbackHandler _callbackHandler = callbackHandler;
@@ -39,6 +48,10 @@ namespace PickMeUp.Api.Account.Authentication.OAuth
         private readonly RefreshTokenService _refreshTokenService = refreshTokenService;
         private readonly Jwt _jwt = jwt;
         private readonly IDistributedCache _cache = cache;
+        private readonly UserManager<ApplicationUser> _userManager = userManager;
+        private readonly IAccountRepository _accountRepository = accountRepository;
+        private readonly IValidator<RegisterRequest> _registerValidator = registerValidator;
+        private readonly IValidator<RecoverRequest> _recoverValidator = recoverValidator;
 
         /**--------[1. Login (Browser Redirect)]--------**/
 
@@ -200,6 +213,112 @@ namespace PickMeUp.Api.Account.Authentication.OAuth
         {
             await _sessionService.RevokeSession(req.SessionId);
             return Ok();
+        }
+
+        /**--------[5. Register (Email + Password)]--------**/
+
+        [HttpPost("register")]
+        public async Task<IActionResult> Register([FromBody] RegisterRequest request)
+        {
+            var validation = await _registerValidator.ValidateAsync(request);
+            if (!validation.IsValid)
+            {
+                return BadRequest(new
+                {
+                    errors = validation.Errors
+                        .Select(e => new { e.PropertyName, e.ErrorMessage })
+                });
+            }
+
+            // Check if email is already taken in Identity
+            var existingUser = await _userManager.FindByEmailAsync(request.Email);
+            if (existingUser is not null)
+                return Conflict(new { error = "An account with this email already exists." });
+
+            // Create Identity user
+            var validatedEmail = global::PickMeUp.Api.Account.Authentication.Email.Create(request.Email);
+            var user = new ApplicationUser(request.Email, validatedEmail);
+            var result = await _userManager.CreateAsync(user, request.Password);
+
+            if (!result.Succeeded)
+            {
+                var errorMessages = result.Errors.Select(e => e.Description).ToList();
+                return BadRequest(new { errors = errorMessages });
+            }
+
+            // Create MongoDB account with game email
+            var publicCode = GeneratePublicCode();
+            var username = $"usr_{Guid.NewGuid().ToString("N")[..16]}";
+            var account = _accountCreation.CreateFromRegistration(request.Email, username, publicCode);
+
+            // Link external account (email-only, no OAuth provider)
+            // Skip linking for now — OAuth linking happens via the OAuth flow.
+
+            // Create session + one-time loginCode
+            string sessionId = Guid.NewGuid().ToString("N");
+            await _sessionService.CreateSession(account.Id, sessionId);
+
+            string loginCode = Guid.NewGuid().ToString("N");
+            await _cache.SetStringAsync(
+                $"login_code:{loginCode}",
+                sessionId,
+                new DistributedCacheEntryOptions
+                {
+                    AbsoluteExpirationRelativeToNow = TimeSpan.FromMinutes(2)
+                });
+
+            return Ok(new
+            {
+                message = "Account registered successfully.",
+                publicCode = account.PublicCode,
+                gameEmail = account.GameEmail,
+                loginCode
+            });
+        }
+
+        /**--------[6. Recover Soft-Deleted Account]--------**/
+
+        [HttpPost("recover")]
+        public async Task<IActionResult> Recover([FromBody] RecoverRequest request)
+        {
+            var validation = await _recoverValidator.ValidateAsync(request);
+            if (!validation.IsValid)
+            {
+                return BadRequest(new
+                {
+                    errors = validation.Errors
+                        .Select(e => new { e.PropertyName, e.ErrorMessage })
+                });
+            }
+
+            // Look for the account in the deleted collection
+            var deletedAccount = _accountRepository.FindDeletedByEmail(request.Email);
+            if (deletedAccount is null)
+                return NotFound(new { error = "No deleted account found with this email." });
+
+            // Check 30-day recovery window
+            if (deletedAccount.PurgeAt is null || deletedAccount.PurgeAt <= DateTime.UtcNow)
+                return StatusCode(410, new { error = "Recovery window has expired. The account has been purged." });
+
+            // Recover: move back to active collection
+            _accountRepository.RecoverAsync(request.Email);
+
+            return Ok(new
+            {
+                message = "Account recovered successfully.",
+                publicCode = deletedAccount.PublicCode,
+                gameEmail = deletedAccount.GameEmail
+            });
+        }
+
+        /**--------[Helpers]--------**/
+
+        /// <summary>Public code: MOE- + 10 Crockford Base32 chars = 15 chars total.</summary>
+        private static string GeneratePublicCode()
+        {
+            var bytes = System.Security.Cryptography.RandomNumberGenerator.GetBytes(5);
+            var code = CrockfordBase32.Encode(bytes);
+            return $"MOE-{code}";
         }
     }
 

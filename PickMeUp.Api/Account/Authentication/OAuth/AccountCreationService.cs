@@ -6,13 +6,25 @@ using static PickMeUp.Api.Account.Profile.Avatar;
 
 namespace PickMeUp.Api.Account.Authentication.OAuth
 {
+    /**--------[Account Status Enum]--------**/
+
+    /// <summary>
+    /// Lifecycle status of a MongoDB account.
+    /// Active = normal; SoftDeleted = in grace period (30 days); Purged = permanently removed.
+    /// </summary>
+    public enum AccountStatus { Active = 0, SoftDeleted = 1, Purged = 2 }
+
     /**--------[Repository Interface]--------**/
 
     public interface IAccountRepository
     {
         Account? FindByEmail(string email);
         Account? FindByPublicCode(string publicCode);
+        Account? FindDeletedByEmail(string email);
         Account Create(Account account);
+        void SoftDeleteAsync(Guid accountId);
+        void RecoverAsync(string email);
+        void PurgeExpiredAsync();
     }
 
     /**--------[Account Entity]--------**/
@@ -28,8 +40,13 @@ namespace PickMeUp.Api.Account.Authentication.OAuth
         public Guid Id { get; init; }
         public string PublicCode { get; init; } = string.Empty;
         public string Email { get; init; } = string.Empty;
+        public string GameEmail { get; init; } = string.Empty;
         public string Username { get; init; } = string.Empty;
         public string AvatarUrl { get; init; } = string.Empty;
+        public AccountStatus Status { get; init; } = AccountStatus.Active;
+        public DateTime CreatedAt { get; init; } = DateTime.UtcNow;
+        public DateTime? DeletedAt { get; init; }
+        public DateTime? PurgeAt { get; init; }
     }
 
     /**--------[Account Creation]--------**/
@@ -50,17 +67,55 @@ namespace PickMeUp.Api.Account.Authentication.OAuth
 
             var email = Email.Create(identity.Email);
             var username = Username.Create(GenerateUsername());
+            var publicCode = GeneratePublicCode();
 
             var account = new Account
             {
                 Id = Guid.NewGuid(),
-                PublicCode = GeneratePublicCode(),
+                PublicCode = publicCode,
                 Email = email.Address,
+                GameEmail = GenerateGameEmail(publicCode),
                 Username = username.Value,
                 AvatarUrl = "/avatars/default.png"
             };
 
             return _accounts.Create(account);
+        }
+
+        /// <summary>
+        /// Creates a new account for email+password registration.
+        /// </summary>
+        public Account CreateFromRegistration(string email, string username, string publicCode)
+        {
+            var existing = _accounts.FindByEmail(email);
+            if (existing is not null)
+                return existing;
+
+            var validatedEmail = Email.Create(email);
+
+            var account = new Account
+            {
+                Id = Guid.NewGuid(),
+                PublicCode = publicCode,
+                Email = validatedEmail.Address,
+                GameEmail = GenerateGameEmail(publicCode),
+                Username = username,
+                AvatarUrl = "/avatars/default.png"
+            };
+
+            return _accounts.Create(account);
+        }
+
+        /// <summary>
+        /// Derives a hidden @moebius.com game email from a public code.
+        /// Example: MOE-K7N2M9Q4XH → k7n2m9q4xh@moebius.com
+        /// </summary>
+        internal static string GenerateGameEmail(string publicCode)
+        {
+            var local = publicCode.Replace("MOE-", "", StringComparison.OrdinalIgnoreCase)
+                                 .Replace("-", "")
+                                 .ToLowerInvariant();
+            return $"{local}@moebius.com";
         }
 
         /// <summary>Crypto-random username: "usr_" + 16 hex chars = 20 chars max.</summary>

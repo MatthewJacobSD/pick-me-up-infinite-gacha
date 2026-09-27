@@ -18,6 +18,7 @@ using MongoDB.Bson.Serialization;
 using MongoDB.Bson.Serialization.Serializers;
 using MongoDB.Driver;
 using PickMeUp.Api.Account.AccountPreferences;
+using PickMeUp.Api.Account.Authentication;
 using PickMeUp.Api.Account.Authentication.OAuth;
 using PickMeUp.Api.Account.Authentication.OAuth.Provider;
 using PickMeUp.Api.Account.Authentication.Session;
@@ -47,6 +48,10 @@ public static class DependencyInjection
         services.AddFluentValidation();
         services.AddProblemDetails();
         services.AddControllers();
+
+        /**--------[Account Lifecycle]--------**/
+
+        services.AddHostedService<AccountPurgeService>();
 
         /**--------[OAuth]--------**/
 
