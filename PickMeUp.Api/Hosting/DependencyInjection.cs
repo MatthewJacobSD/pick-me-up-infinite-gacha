@@ -13,6 +13,9 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
+using MongoDB.Bson;
+using MongoDB.Bson.Serialization;
+using MongoDB.Bson.Serialization.Serializers;
 using MongoDB.Driver;
 using PickMeUp.Api.Account.AccountPreferences;
 using PickMeUp.Api.Account.Authentication.OAuth;
@@ -139,6 +142,9 @@ public static class DependencyInjection
 
     private static void AddMongoDb(this IServiceCollection services, IConfiguration configuration)
     {
+        // Register Guid serializer globally — required for MongoDB Driver 3.x
+        BsonSerializer.RegisterSerializer(new GuidSerializer(GuidRepresentation.Standard));
+
         var mongoOptions = configuration
             .GetSection(MongoOptions.SectionName)
             .Get<MongoOptions>()

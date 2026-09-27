@@ -1,4 +1,6 @@
 ﻿using System.Security.Cryptography;
+using MongoDB.Bson;
+using MongoDB.Bson.Serialization.Attributes;
 using PickMeUp.Api.Account.Profile;
 using static PickMeUp.Api.Account.Profile.Avatar;
 
@@ -21,6 +23,8 @@ namespace PickMeUp.Api.Account.Authentication.OAuth
     /// </summary>
     public sealed class Account
     {
+        [BsonId]
+        [BsonGuidRepresentation(GuidRepresentation.Standard)]
         public Guid Id { get; init; }
         public string PublicCode { get; init; } = string.Empty;
         public string Email { get; init; } = string.Empty;
