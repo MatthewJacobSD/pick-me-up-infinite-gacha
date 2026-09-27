@@ -1,28 +1,27 @@
-﻿using PickMeUp.Api.Account.Profile;
+﻿using System.Security.Cryptography;
+using PickMeUp.Api.Account.Profile;
 using static PickMeUp.Api.Account.Profile.Avatar;
 
 namespace PickMeUp.Api.Account.Authentication.OAuth
 {
-    // Repository interface for account persistence.
-
     public interface IAccountRepository
     {
         Account? FindByEmail(string email);
+        Account? FindByPersonalId(string personalId);
         Account Create(Account account);
     }
 
-    // Minimal account entity for MongoDB persistence.
-    // Uses plain strings — value objects are for validation only, not storage.
+    // Account entity for MongoDB persistence.
+    // Two IDs: AccountId (internal, server-only) + PersonalId (user-facing, crypto-generated).
 
     public sealed class Account
     {
         public Guid Id { get; init; }
+        public string PersonalId { get; init; } = string.Empty; // PGMU-XXXXXXXX (user-facing)
         public string Email { get; init; } = string.Empty;
         public string Username { get; init; } = string.Empty;
         public string AvatarUrl { get; init; } = string.Empty;
     }
-
-    // Creates a new account from an external OAuth identity.
 
     public sealed class AccountCreationService(IAccountRepository accounts)
     {
@@ -37,12 +36,15 @@ namespace PickMeUp.Api.Account.Authentication.OAuth
 
             // 2. Validate with value objects
             var email = Email.Create(identity.Email);
-            var username = Username.Create(GenerateUsername(identity));
 
-            // 3. Persist as plain strings
+            // 3. Generate crypto-random username (max 20 chars)
+            var username = Username.Create(GenerateUsername());
+
+            // 4. Create account with personal ID
             var account = new Account
             {
                 Id = Guid.NewGuid(),
+                PersonalId = GeneratePersonalId(),
                 Email = email.Address,
                 Username = username.Value,
                 AvatarUrl = "/avatars/default.png"
@@ -51,11 +53,20 @@ namespace PickMeUp.Api.Account.Authentication.OAuth
             return _accounts.Create(account);
         }
 
-        private static string GenerateUsername(ExternalIdentity identity)
+        // Crypto-random username: "usr_" + 16 hex chars = 20 chars max
+        private static string GenerateUsername()
         {
-            // Remove spaces, lowercase, truncate to 20 chars (Username limit)
-            var raw = identity.Name.Replace(" ", "").ToLowerInvariant();
-            return raw.Length > 20 ? raw[..20] : raw;
+            var bytes = RandomNumberGenerator.GetBytes(8); // 16 hex chars
+            var hex = Convert.ToHexString(bytes).ToLowerInvariant();
+            return $"usr_{hex}"; // 4 + 16 = 20 chars
+        }
+
+        // Personal ID: "PGMU-" + 12 hex chars = 17 chars total
+        private static string GeneratePersonalId()
+        {
+            var bytes = RandomNumberGenerator.GetBytes(6); // 12 hex chars
+            var hex = Convert.ToHexString(bytes).ToUpperInvariant();
+            return $"PGMU-{hex}"; // 5 + 12 = 17 chars
         }
     }
 }

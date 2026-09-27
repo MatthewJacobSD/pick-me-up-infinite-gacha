@@ -11,6 +11,9 @@ public sealed class MongoAccountRepository(IMongoDatabase db) : IAccountReposito
     public Account? FindByEmail(string email)
         => _collection.Find(x => x.Email == email).FirstOrDefault();
 
+    public Account? FindByPersonalId(string personalId)
+        => _collection.Find(x => x.PersonalId == personalId).FirstOrDefault();
+
     public Account Create(Account account)
     {
         _collection.InsertOne(account);
