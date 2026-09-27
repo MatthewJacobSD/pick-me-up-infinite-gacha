@@ -53,7 +53,9 @@ namespace PickMeUp.Api.Account.Authentication.OAuth
 
         private static string GenerateUsername(ExternalIdentity identity)
         {
-            return identity.Name.Replace(" ", "").ToLowerInvariant();
+            // Remove spaces, lowercase, truncate to 20 chars (Username limit)
+            var raw = identity.Name.Replace(" ", "").ToLowerInvariant();
+            return raw.Length > 20 ? raw[..20] : raw;
         }
     }
 }
